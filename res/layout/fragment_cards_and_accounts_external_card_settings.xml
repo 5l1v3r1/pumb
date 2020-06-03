@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/card_settings_wrapper" android:background="@color/transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/button_back" android:layout_width="fill_parent" android:layout_height="@dimen/card_pager_height" android:layout_marginRight="@dimen/card_margin_right" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/toolbar" />
+    <ScrollView android:id="@id/scroll_wrapper" android:background="@color/default_backdrop_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:translationY="192.0dip">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/wrapper" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:id="@id/appCompatTextView" android:paddingTop="@dimen/_16dp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/main_card_account_settings_subtitle" android:layout_marginEnd="8.0dip" app:layout_constraintEnd_toStartOf="@id/guideline_v_right" app:layout_constraintStart_toStartOf="@id/guideline_v_left" app:layout_constraintTop_toTopOf="parent" style="@style/GilroyTitle" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/delete_card_layout" android:paddingTop="@dimen/_18dp" android:paddingBottom="@dimen/_18dp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10dp" android:paddingStart="@dimen/_12dp" android:paddingEnd="@dimen/_12dp" app:layout_constraintEnd_toStartOf="@id/guideline_v_right" app:layout_constraintStart_toStartOf="@id/guideline_v_left" app:layout_constraintTop_toBottomOf="@id/appCompatTextView">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_button_delete" />
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/main_card_account_settings_remove_card" android:layout_weight="1.0" android:layout_marginStart="@dimen/_24dp" style="@style/GilroyButton" />
+                <ProgressBar android:id="@id/progress_card_remove" android:padding="@dimen/_4dp" android:visibility="invisible" android:layout_width="@dimen/_36dp" android:layout_height="wrap_content" style="@style/SpinnerGeneral" />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_v_left" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="16.0dip" />
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_v_right" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="16.0dip" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

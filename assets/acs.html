@@ -1,0 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<body onload="document.getElementById('acs').submit()">
+<form id="acs" method="post" action="${acsUrl}">
+    <input style="display:none" type="submit">
+    <input type="hidden" id="MD" value="${md}" name="MD">
+    <input type="hidden" id="TermUrl" value="${termUrl}" name="TermUrl">
+    <input type="hidden" id="PaReq" value="${paReq}" name="PaReq">
+</form>
+</body>
+</html>

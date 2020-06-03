@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="@dimen/_16dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.fuib.android.spot.presentation.common.widget.LollipopFixedWebView android:id="@id/_3ds" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/progress_general" android:visibility="invisible" android:layout_width="@dimen/_64dp" android:layout_height="@dimen/_64dp" android:indeterminate="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Base.Widget.AppCompat.ProgressBar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

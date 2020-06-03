@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/content_holder" android:background="@drawable/background_transparent_ripple" android:layout_width="fill_parent" android:layout_height="@dimen/_90dp" android:paddingEnd="@dimen/_48dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ic_house" android:layout_width="@dimen/_48dp" android:layout_height="@dimen/_48dp" android:layout_marginTop="@dimen/_6dp" android:src="@drawable/ic_utilitiy_payments" android:paddingStart="@dimen/_12dp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/text_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_18dp" android:ellipsize="end" android:id="@id/tv_hh_name" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="@dimen/_12dp" style="@style/GilroyTitle" />
+        <androidx.appcompat.widget.AppCompatTextView android:ellipsize="end" android:id="@id/tv_street" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="@dimen/_12dp" style="@style/GilroyMedium" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_16dp" android:textColor="@color/palette_stas_vertiy_grey_50" android:ellipsize="end" android:id="@id/tv_locality" android:paddingBottom="@dimen/_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="@dimen/_12dp" style="@style/GilroyMedium" />
+    </LinearLayout>
+</LinearLayout>

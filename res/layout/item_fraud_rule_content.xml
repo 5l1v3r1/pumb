@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/content_holder" android:background="@drawable/background_transparent_ripple" android:layout_width="fill_parent" android:layout_height="@dimen/_90dp" android:paddingEnd="@dimen/_48dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="@dimen/_90dp">
+        <TextView android:ellipsize="end" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" app:layout_constraintBottom_toTopOf="@id/info" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" style="@style/GilroyMedium" />
+        <TextView android:textColor="@color/default_secondary_text_color" android:ellipsize="end" android:id="@id/info" android:layout_width="0.0dip" android:layout_height="20.0dip" android:maxLines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/name" app:layout_constraintStart_toStartOf="@id/name" app:layout_constraintTop_toBottomOf="@id/name" app:layout_constraintVertical_chainStyle="packed" style="@style/GilroySmall" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

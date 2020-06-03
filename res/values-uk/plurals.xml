@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_plurals">
+        <item quantity="other">днів</item>
+        <item quantity="one">день</item>
+        <item quantity="few">дні</item>
+        <item quantity="many">днів</item>
+    </plurals>
+    <plurals name="months_plurals">
+        <item quantity="other">місяців</item>
+        <item quantity="one">місяць</item>
+        <item quantity="few">місяці</item>
+        <item quantity="many">місяців</item>
+    </plurals>
+    <plurals name="weeks_plurals">
+        <item quantity="other">тижнів</item>
+        <item quantity="one">тиждень</item>
+        <item quantity="few">тижні</item>
+        <item quantity="many">тижнів</item>
+    </plurals>
+    <plurals name="years_plurals">
+        <item quantity="other">років</item>
+        <item quantity="one">рік</item>
+        <item quantity="few">роки</item>
+        <item quantity="many">років</item>
+    </plurals>
+</resources>

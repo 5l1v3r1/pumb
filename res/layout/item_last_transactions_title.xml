@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/default_backdrop_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_card_payment" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/text_last_transactions_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_16dp" android:layout_marginBottom="@dimen/_8dp" android:text="@string/main_card_account_info_history_title" android:layout_marginStart="@dimen/_16dp" style="@style/GilroyButton"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

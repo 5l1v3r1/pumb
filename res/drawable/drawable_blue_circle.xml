@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/transfers_general_bubble_size_to_acc" android:width="@dimen/transfers_general_bubble_size_to_acc" />
+    <solid android:color="@color/palette_stas_vertiy_active" />
+</shape>

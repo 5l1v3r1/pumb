@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_shortcut_templates" android:enabled="true">
+        <intent android:targetPackage="com.fuib.android.spot.online" android:action="com.fuib.android.spot.SHORTCUT_TEMPLATES" android:targetClass="com.fuib.android.spot.presentation.splash.SplashActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcut_transfers" android:enabled="true">
+        <intent android:targetPackage="com.fuib.android.spot.online" android:action="com.fuib.android.spot.SHORTCUT_TRANSFERS" android:targetClass="com.fuib.android.spot.presentation.splash.SplashActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcut_mobile" android:enabled="true">
+        <intent android:targetPackage="com.fuib.android.spot.online" android:action="com.fuib.android.spot.SHORTCUT_MOBILE" android:targetClass="com.fuib.android.spot.presentation.splash.SplashActivity" />
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/default_bg_color" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/contact_cell_height" android:elevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="end|center" android:id="@id/action_right" android:background="@drawable/background_template_delete_action" android:layout_width="@dimen/template_list_item_action_width" android:layout_height="@dimen/template_list_item_action_size" android:layout_margin="3.0dip" android:paddingStart="@dimen/_12dp" app:srcCompat="@drawable/ic_trash_white">
+        <ImageView android:layout_gravity="center" android:id="@id/icon" android:background="@drawable/background_template_delete_action" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_trash_white" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/spinner" android:layout_width="@dimen/_32dp" android:layout_height="@dimen/_32dp" android:alpha="0.0" style="@style/SpinnerWhite" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/action_left" android:background="@drawable/background_template_edit_action" android:padding="@dimen/template_list_item_action_icon_padding" android:layout_width="@dimen/template_list_item_action_width" android:layout_height="@dimen/template_list_item_action_size" android:layout_margin="3.0dip" android:paddingEnd="@dimen/_32dp" app:srcCompat="@drawable/ic_pencil_white" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_vertical" android:id="@id/layout_content" android:background="@drawable/background_grey_ripple" android:layout_width="fill_parent" android:layout_height="@dimen/template_list_item_action_size" android:layout_margin="@dimen/_2dp" android:elevation="2.0dip">
+        <TextView android:id="@id/v_barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/_16dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/GilroyMedium" />
+        <include layout="@layout/item_mobile_topup_template_merge" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_utilities" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/app_bar_layout" android:background="@drawable/drawable_background_toolbar_octopus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:translationY="0.0dip">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:alpha="1.0" android:elevation="0.0dip" style="@style/Toolbar.Backgroundless">
+            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/categories_toolbar_title" android:maxLines="1" android:paddingEnd="@dimen/_16dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="parent" style="@style/GilroyTitle" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|center" android:id="@id/ic_user_settings" android:background="?selectableItemBackgroundBorderless" android:padding="@dimen/_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_user_settings" />
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout android:id="@id/household_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabMode="fixed" style="@style/MainTabLayout">
+            <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/household_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.fuib.android.spot.presentation.common.widget.behaviour.CorrectAppBarScrollingBehavior" />
+</LinearLayout>

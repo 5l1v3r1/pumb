@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/_10dp" android:paddingEnd="@dimen/_10dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_utility_services" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <androidx.core.widget.ContentLoadingProgressBar android:id="@id/bottom_utility_progress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateBehavior="cycle" android:indeterminateTint="@color/colorAccent" android:indeterminateTintMode="src_atop" style="?android:progressBarStyleHorizontal" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/central_utility_progress" android:visibility="gone" android:layout_width="@dimen/_48dp" android:layout_height="@dimen/_48dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/SpinnerGeneral" />
+</merge>

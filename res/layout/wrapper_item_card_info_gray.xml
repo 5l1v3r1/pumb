@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wajahatkarim3.easyflipview.EasyFlipView android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FlipCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/item_external_card_reverse" />
+    <FrameLayout android:id="@id/wrapper_front" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/card_pager_height" android:paddingStart="@dimen/card_margin_left" android:paddingEnd="@dimen/card_margin_right">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|bottom|center" android:id="@id/image_gear" android:layout_width="@dimen/card_settings_icon_size" android:layout_height="@dimen/card_settings_icon_size" android:layout_marginBottom="@dimen/card_inner_controls_margin_bottom" android:layout_marginEnd="@dimen/_12dp" android:elevation="@dimen/_4dp" app:srcCompat="@drawable/ic_settings_icon_dark" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|bottom|center" android:id="@id/image_info" android:layout_width="@dimen/card_settings_icon_size" android:layout_height="@dimen/card_settings_icon_size" android:layout_marginBottom="@dimen/card_inner_controls_margin_bottom" android:layout_marginEnd="63.0dip" android:elevation="@dimen/_4dp" app:srcCompat="@drawable/ic_info_icon" />
+    </FrameLayout>
+</com.wajahatkarim3.easyflipview.EasyFlipView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?bgColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:clipChildren="true" android:layout_width="444.0dip" android:layout_height="444.0dip" android:layout_marginBottom="8.0dip" android:layout_marginEnd="24.0dip" app:layout_constraintBottom_toTopOf="@id/iv_logo_part_1" app:layout_constraintEnd_toStartOf="@id/guideline_for_top">
+        <ImageView android:layout_gravity="bottom" android:id="@id/octopus_top" android:layout_width="444.0dip" android:layout_height="422.0dip" android:alpha="0.0" app:srcCompat="@drawable/ic_octopus_splash" />
+        <View android:id="@id/white_mask_top" android:background="@drawable/drawable_circle_with_hole" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:clipChildren="true" android:layout_width="444.0dip" android:layout_height="444.0dip" android:layout_marginTop="12.0dip" android:layout_marginStart="22.0dip" app:layout_constraintStart_toEndOf="@id/guideline_for_bottom" app:layout_constraintTop_toBottomOf="@id/iv_logo_part_1">
+        <ImageView android:id="@id/octopus_bottom" android:layout_width="466.0dip" android:layout_height="443.0dip" android:alpha="0.0" app:srcCompat="@drawable/ic_octopus_splash" />
+        <View android:id="@id/white_mask_bottom" android:background="@drawable/drawable_circle_with_hole" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageView android:id="@id/iv_logo_part_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_big_logo_1" android:alpha="0.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/guideline" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_logo_part_2" android:layout_width="97.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_big_logo_2" android:alpha="0.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/iv_logo_part_1" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_logo_part_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_big_logo_3" android:alpha="0.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/guideline" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.65" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_for_top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="138.0dip" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_for_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="130.0dip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

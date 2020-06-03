@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/text_field_value" android:id="@id/amount_select_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="9.0dip" android:text="@string/_85_fields_select_amount_value" android:fontFamily="@font/gilroy_bold" android:paddingStart="@dimen/_16dp" android:paddingEnd="@dimen/_16dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/amount_items" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

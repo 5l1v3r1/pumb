@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="20.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="20.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/default_card_icon_color" android:pathData="M0,0h2v6H0z" android:fillType="evenOdd" />
+    <path android:fillColor="@color/default_card_icon_color" android:pathData="M6,0v2H0V0zM0,20h2v-6H0z" android:fillType="evenOdd" />
+    <path android:fillColor="@color/default_card_icon_color" android:pathData="M6,20v-2H0v2zM24,2V0h-6v2z" android:fillType="evenOdd" />
+    <path android:fillColor="@color/default_card_icon_color" android:pathData="M24,0h-2v6h2z" android:fillType="evenOdd" />
+    <path android:fillColor="@color/default_card_icon_color" android:pathData="M24,18v2h-6v-2z" android:fillType="evenOdd" />
+    <path android:fillColor="@color/default_card_icon_color" android:pathData="M24,20h-2v-6h2z" android:fillType="evenOdd" />
+    <path android:fillColor="@color/default_card_icon_color" android:pathData="M19.2,3L4.8,3c-0.999,0 -1.791,0.779 -1.791,1.75L3,15.25c0,0.971 0.801,1.75 1.8,1.75h14.4c0.999,0 1.8,-0.779 1.8,-1.75L21,4.75C21,3.779 20.199,3 19.2,3zM19.2,15.25L4.8,15.25L4.8,10h14.4v5.25zM19.2,6.5L4.8,6.5L4.8,4.75h14.4L19.2,6.5z" android:fillType="nonZero" />
+</vector>

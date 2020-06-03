@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginBottom="@dimen/_8dp" android:elevation="@dimen/card_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/merge_transfer_select_acc_header" />
+    <include layout="@layout/merge_transfer_select_acc_footer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

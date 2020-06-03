@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="amount_input_hint_color">@color/palette_stas_vertiy_grey_20</color>
+    <color name="amount_input_text_color">@color/palette_stas_vertiy_white</color>
+    <color name="auth_status_bar_default_color">@color/black</color>
+    <color name="bg_utilities">@color/palette_stas_vertiy_deep_dark</color>
+    <color name="black_toolbar">@color/black</color>
+    <color name="bottom_navigation_tint">@color/palette_stas_vertiy_grey_30</color>
+    <color name="card_background">@color/palette_stas_vertiy_dark</color>
+    <color name="card_value_text_color">@color/palette_stas_vertiy_white</color>
+    <color name="default_backdrop_bg_color">@color/palette_stas_vertiy_deep_dark</color>
+    <color name="default_bg_color">@color/black</color>
+    <color name="default_card_icon_color">@color/white</color>
+    <color name="default_main_text_color">@color/white</color>
+    <color name="flat_icon_main_text_color">@color/white</color>
+    <color name="highlighted_light_green_next_step">#6666bb6a</color>
+    <color name="highlighted_light_red_missing_step">#4df91f2b</color>
+    <color name="ic_ok_red_bg">@color/black</color>
+    <color name="ic_reuse_pin_bg">@color/black</color>
+    <color name="new_messages_background">@color/white_alfa_half_trans</color>
+    <color name="new_messages_content">@color/palette_stas_vertiy_dark</color>
+    <color name="otp_bg_color">@color/palette_stas_vertiy_deep_dark</color>
+    <color name="overlay_half_trans_color">@color/dark_alfa_half_trans</color>
+    <color name="save_as_template_bg_color">@color/palette_stas_vertiy_bg</color>
+    <color name="snack_bg_regular">@color/palette_stas_vertiy_grey_50</color>
+    <color name="text_field_label">@color/palette_stas_vertiy_grey_20</color>
+    <color name="text_field_value">@color/palette_stas_vertiy_white</color>
+    <color name="text_field_value_disabled">@color/palette_stas_vertiy_grey_50</color>
+    <color name="text_input_color_error">@color/palette_stas_vertiy_brand</color>
+    <color name="text_input_error_label">@color/palette_stas_vertiy_brand</color>
+    <color name="transparent_bg">@color/deep_dark_full_transparent</color>
+    <color name="uikit_divider_color">@color/palette_stas_vertiy_dark_light</color>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_details_text_value_size">14.0dip</dimen>
+    <dimen name="card_footer_numbers_size">12.0dip</dimen>
+    <dimen name="iban_transfer_item_text_size">13.0dip</dimen>
+    <dimen name="iban_transfer_select_account_text_size">13.0dip</dimen>
+    <dimen name="input_iban_widget_text_size">13.0dip</dimen>
+</resources>

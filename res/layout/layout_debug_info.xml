@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/_16sp" android:id="@id/tv_debug_label" android:background="#88ffffff" android:padding="@dimen/_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

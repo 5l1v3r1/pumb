@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alert_btn_margin_left">6.0dip</dimen>
+    <dimen name="auth_password_welcome_text_margin_top">80.0dip</dimen>
+    <dimen name="card_credit_arrow_padding_bottom">24.0dip</dimen>
+    <dimen name="card_left_amount_text_size">24.0dip</dimen>
+    <dimen name="card_min_payment_max_width">192.0dip</dimen>
+    <dimen name="card_min_payment_shape_margin_left">60.0dip</dimen>
+    <dimen name="card_overdraft_used_shape_margin_left">68.0dip</dimen>
+    <dimen name="card_right_amount_text_size">20.0dip</dimen>
+    <item type="dimen" name="circle_ratio_auth">1.7</item>
+    <item type="dimen" name="circle_ratio_auth_second">1.7</item>
+    <item type="dimen" name="circle_ratio_auth_success">1.5</item>
+    <item type="dimen" name="circle_ratio_change_pw">1.7</item>
+    <item type="dimen" name="circle_ratio_recover_pass">2.0</item>
+    <dimen name="currency_calc_spinner_gone_margin_top">350.0dip</dimen>
+    <dimen name="cvv_exp_date_text_size">24.0dip</dimen>
+    <dimen name="dep_calc_profit_font_zise">36.0sp</dimen>
+    <dimen name="enter_password_logo_margin_top">72.0dip</dimen>
+    <dimen name="enter_pin_dots_margin_top">38.0dip</dimen>
+    <dimen name="enter_pin_logo_margin_top">70.0dip</dimen>
+    <dimen name="limits_padding_info">48.0dip</dimen>
+    <dimen name="margin_top_auth_phone">32.0dip</dimen>
+    <dimen name="margin_top_inputs_enter_pw">64.0dip</dimen>
+    <dimen name="margin_top_recover_pass_first_input">32.0dip</dimen>
+    <dimen name="margin_top_recover_pass_input_fields">16.0dip</dimen>
+    <dimen name="privacy_label_margin_top">64.0dip</dimen>
+    <dimen name="text_size_recover_pass_input">24.0dip</dimen>
+    <dimen name="text_size_recover_pass_title">28.0dip</dimen>
+    <dimen name="transfers_amount_selector_font_size">30.0sp</dimen>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_plurals">
+        <item quantity="other">дней</item>
+        <item quantity="one">день</item>
+        <item quantity="few">дня</item>
+        <item quantity="many">дней</item>
+    </plurals>
+    <plurals name="months_plurals">
+        <item quantity="other">месяцев</item>
+        <item quantity="one">месяц</item>
+        <item quantity="few">месяца</item>
+        <item quantity="many">месяцев</item>
+    </plurals>
+    <plurals name="weeks_plurals">
+        <item quantity="other">недель</item>
+        <item quantity="one">неделя</item>
+        <item quantity="few">недели</item>
+        <item quantity="many">недель</item>
+    </plurals>
+    <plurals name="years_plurals">
+        <item quantity="other">лет</item>
+        <item quantity="one">год</item>
+        <item quantity="few">года</item>
+        <item quantity="many">лет</item>
+    </plurals>
+</resources>

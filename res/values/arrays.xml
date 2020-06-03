@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="CompositeCardInputLayoutActivation">
+        <item>@string/composite_card_input_layout_number_component_id</item>
+        <item>@string/composite_card_input_layout_scan_component_id</item>
+        <item>@string/composite_card_input_layout_nfc_component_id</item>
+    </string-array>
+    <string-array name="CompositeCardInputLayoutAddExternal">
+        <item>@string/composite_card_input_layout_number_component_id</item>
+        <item>@string/composite_card_input_layout_exp_date_component_id</item>
+        <item>@string/composite_card_input_layout_cvv_right_component_id</item>
+        <item>@string/composite_card_input_layout_scan_component_id</item>
+    </string-array>
+    <string-array name="CompositeCardInputLayoutPayer">
+        <item>@string/composite_card_input_layout_number_component_id</item>
+        <item>@string/composite_card_input_layout_exp_date_component_id</item>
+        <item>@string/composite_card_input_layout_cvv_centered_component_id</item>
+        <item>@string/composite_card_input_layout_proceed_component_id</item>
+        <item>@string/composite_card_input_layout_scan_component_id</item>
+    </string-array>
+    <string-array name="CompositeCardInputLayoutPwRecovery">
+        <item>@string/composite_card_input_layout_number_component_id</item>
+        <item>@string/composite_card_input_layout_cvv_right_component_id</item>
+        <item>@string/composite_card_input_layout_scan_component_id</item>
+    </string-array>
+    <string-array name="CompositeCardInputLayoutReceiver">
+        <item>@string/composite_card_input_layout_number_component_id</item>
+        <item>@string/composite_card_input_layout_proceed_component_id</item>
+        <item>@string/composite_card_input_layout_scan_component_id</item>
+    </string-array>
+    <array name="common_list_item_av_background">
+        <item>#ffd50000</item>
+        <item>#ffc51162</item>
+        <item>#ff6200ea</item>
+        <item>#ff304ffe</item>
+        <item>#ff00b8d4</item>
+        <item>#ff00bfa5</item>
+        <item>#ff00c853</item>
+        <item>#ffaeea00</item>
+        <item>#ffffd600</item>
+        <item>#ffff6d00</item>
+    </array>
+    <string-array name="crypto_fingerprint_fallback_prefixes">
+        <item>SM-G95</item>
+        <item>SM-G96</item>
+        <item>SM-G97</item>
+        <item>SM-N95</item>
+        <item>SM-N96</item>
+        <item>SM-N97</item>
+        <item>SM-A20</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-G97</item>
+        <item>SM-N97</item>
+    </string-array>
+</resources>

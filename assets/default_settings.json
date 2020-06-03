@@ -1,0 +1,84 @@
+{
+  "data": {
+    "settings": {
+      "catalog_versions": {
+        "countries_version": 1,
+        "mfo_version": 1
+      },
+      "config_version": 1,
+      "mobile_replenishment": {
+        "code_list": [
+          {
+            "code": "97"
+          },
+          {
+            "code": "67"
+          },
+          {
+            "code": "68"
+          },
+          {
+            "code": "98"
+          },
+          {
+            "code": "96"
+          },
+          {
+            "code": "39"
+          },
+          {
+            "code": "50"
+          },
+          {
+            "code": "66"
+          },
+          {
+            "code": "95"
+          },
+          {
+            "code": "99"
+          },
+          {
+            "code": "63"
+          },
+          {
+            "code": "93"
+          },
+          {
+            "code": "73"
+          }
+        ],
+        "commission": {
+          "max_value": 0,
+          "min_value": 0,
+          "percentage": 0
+        },
+        "icon": "https",
+        "max_amount": 800000,
+        "min_amount": 200,
+        "service_id": 12717,
+        "service_name": "Mobile topup"
+      },
+      "strings": [
+        {
+          "string_resource_id": "invalid_data",
+          "en": "Sorry, unexpected technical error, please try one more time later",
+          "ru": "Извините, непредвиденная техническая ошибка все-же произошла, пожалуйста, попробуйте позже",
+          "uk": "Вибачте, неочікувана технічна помилка все ж трапилась, будь ласка, спробуйте пізніше."
+        }
+      ],
+      "privacy_policy_url": "https://pumb.ua/Content/CmsFile/ru/Hidden__ua.pdf",
+      "dkbo_url": "https://retail.pumb.ua/content/cmsfile/ua/%D0%B4%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D1%86%D1%96%D0%B9%D0%BD%D1%96%20%D1%81%D0%B5%D1%80%D0%B2%D1%96%D1%81%D0%B8__pumb_online_rules_2018.pdf"
+    },
+    "cz": {
+      "functional": "SETTINGS",
+      "request": "SETTINGS_LIST",
+      "form": {
+        "id": "50.main"
+      }
+    }
+  },
+  "id": "2994a6de-740b-4850-a507-70d30a96d958",
+  "result": "ok",
+  "type": 2
+}

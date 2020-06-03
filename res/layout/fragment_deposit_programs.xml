@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/srl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.fuib.android.spot.presentation.common.widget.currencySelect.CurrencyFilterLayout android:id="@id/currency_selector" android:paddingTop="@dimen/_12dp" android:paddingBottom="@dimen/_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:alpha="0.0" android:paddingStart="@dimen/_10dp" android:paddingEnd="@dimen/_10dp" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:tag="@string/tag_transfer_deposits_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/img_empty" android:visibility="gone" android:layout_width="123.0dip" android:layout_height="104.0dip" android:layout_marginBottom="@dimen/_48dp" app:srcCompat="@drawable/ic_no_deposits" />
+            <TextView android:textSize="@dimen/_18sp" android:layout_gravity="center" android:id="@id/text_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_48dp" android:text="@string/empty_deposit_programs_label" style="@style/GilroyMedium" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

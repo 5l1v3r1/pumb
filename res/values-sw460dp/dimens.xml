@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="circle_ratio_auth_success">1.4</item>
+</resources>

@@ -1,0 +1,25 @@
+.class public interface abstract Lc/a/a/a/j/a$b;
+.super Ljava/lang/Object;
+.source "AutoFocusManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lc/a/a/a/j/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "b"
+.end annotation
+
+
+# virtual methods
+.method public abstract a()V
+.end method
+
+.method public abstract start()V
+.end method
+
+.method public abstract stop()V
+.end method

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/_16sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/text_card_short_number2" android:layout_width="wrap_content" android:layout_height="30.0dip" android:drawablePadding="@dimen/_12dp" android:drawableStart="@drawable/ic_mastercard_grey_logo_black_text" style="@style/CardText"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/av_layout" android:layout_width="fill_parent" android:layout_height="@dimen/card_field_min_height" android:paddingStart="@dimen/card_padding" android:paddingEnd="@dimen/card_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/av_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right_default" android:layout_alignTop="@id/av_value" android:layout_alignBottom="@id/av_value" android:layout_alignParentEnd="true" />
+    <View android:id="@id/av_underline" android:background="@color/text_input_underline_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/card_field_underline_margin_top" android:layout_below="@id/av_value" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/av_label" android:layout_width="fill_parent" android:layout_marginTop="@dimen/card_field_label_margin_top" style="@style/CardLabelStyle" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/amount_select_hint_color" android:id="@id/av_value" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_marginTop="@dimen/card_field_value_margin_top" android:text="@string/_85_fields_select_amount_value" android:layout_below="@id/av_label" android:paddingEnd="@dimen/_36dp" style="@style/CardValueStyle.Select" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/av_hint" android:layout_width="fill_parent" android:layout_below="@id/av_underline" style="@style/CardHintStyle" />
+    <requestFocus />
+</RelativeLayout>

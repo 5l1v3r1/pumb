@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/default_backdrop_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/_64dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.fuib.android.spot.presentation.common.widget.OptionalChildrenLayout android:id="@id/wrapper" android:background="@color/default_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_12dp" android:layout_marginEnd="@dimen/_12dp" app:cardCornerRadius="@dimen/_4dp" app:cardElevation="2.0dip" app:cardUseCompatPadding="true" app:layout="@layout/layout_expandable_credit_info" app:layout_constraintTop_toTopOf="parent" app:triggerCollapsedResId="@id/arrow_to_bottom" app:triggerExpandedResId="@id/arrow_to_top" />
+        <ProgressBar android:id="@id/progress_general" android:visibility="visible" android:layout_width="@dimen/_64dp" android:layout_height="@dimen/_64dp" android:indeterminate="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" style="@style/Base.Widget.AppCompat.ProgressBar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/amount_selector_layout" android:background="@drawable/utility_payment_field_background" android:layout_width="fill_parent" android:layout_height="@dimen/card_field_min_height" android:paddingStart="@dimen/card_padding" android:paddingEnd="@dimen/card_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/amount_select_label" android:layout_width="fill_parent" android:layout_marginTop="@dimen/card_field_label_margin_top" style="@style/CardLabelStyle" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/amount_select_hint_color" android:id="@id/amount_select_value" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_marginTop="@dimen/card_field_value_margin_top" android:text="@string/_85_fields_select_amount_value" android:layout_below="@id/amount_select_label" style="@style/CardValueStyle.Select" />
+    <ImageView android:id="@id/image_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right_default" android:layout_alignTop="@id/amount_select_value" android:layout_alignBottom="@id/amount_select_value" android:layout_alignParentEnd="true" />
+    <View android:id="@id/amount_select_underline" android:background="@color/text_input_underline_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/card_field_underline_margin_top" android:layout_below="@id/amount_select_value" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/amount_select_hint" android:layout_width="fill_parent" android:layout_below="@id/amount_select_underline" style="@style/CardHintStyle" />
+    <requestFocus />
+</RelativeLayout>

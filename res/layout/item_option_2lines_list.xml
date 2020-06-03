@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="58.0dip" android:paddingStart="@dimen/_16dp" android:paddingEnd="@dimen/_16dp" style="@style/SelectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/list_of_options_text_size" android:textColor="@color/default_main_text_color" android:ellipsize="end" android:id="@id/value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_18dp" android:maxLines="10" android:fontFamily="@font/gilroy_bold" />
+    <TextView android:textSize="@dimen/list_of_options_text_size" android:textColor="@color/palette_stas_vertiy_grey_50" android:ellipsize="end" android:id="@id/value_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2dp" android:layout_marginBottom="@dimen/_16dp" android:maxLines="10" android:fontFamily="@font/gilroy_medium" />
+    <View android:id="@id/view_list_of_options_underline" android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

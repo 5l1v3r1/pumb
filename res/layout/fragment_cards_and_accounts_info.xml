@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_info_wrapper" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_info_card_account" android:paddingBottom="42.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <androidx.core.widget.ContentLoadingProgressBar android:layout_gravity="bottom" android:id="@id/bottom_progress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_54dp" android:indeterminate="true" android:indeterminateBehavior="cycle" android:indeterminateTint="@color/colorAccent" android:indeterminateTintMode="src_atop" style="?android:progressBarStyleHorizontal" />
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <FrameLayout android:id="@id/layout_colored_toolbar" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/card_height" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

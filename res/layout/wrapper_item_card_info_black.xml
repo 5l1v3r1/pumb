@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wajahatkarim3.easyflipview.EasyFlipView android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FlipCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/item_debit_card_reverse" />
+    <FrameLayout android:id="@id/wrapper_front" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/card_pager_height" android:paddingStart="@dimen/card_margin_left" android:paddingEnd="@dimen/card_margin_right">
+        <com.facebook.shimmer.ShimmerFrameLayout android:layout_gravity="end|bottom|center" android:id="@id/shimmer_image_gear" android:visibility="gone" android:layout_width="@dimen/card_settings_icon_size" android:layout_height="@dimen/card_settings_icon_size" android:layout_marginBottom="@dimen/card_inner_controls_margin_bottom" android:layout_marginEnd="@dimen/_12dp" android:elevation="@dimen/_4dp" app:shimmer_auto_start="true" app:shimmer_base_color="@color/colorPrimary" app:shimmer_colored="true" app:shimmer_duration="1400" app:shimmer_highlight_color="@color/white">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/image_gear_highlight" android:layout_width="@dimen/card_settings_icon_size" android:layout_height="@dimen/card_settings_icon_size" app:srcCompat="@drawable/ic_settings_icon_highlight" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|bottom|center" android:id="@id/image_gear" android:visibility="visible" android:layout_width="@dimen/card_settings_icon_size" android:layout_height="@dimen/card_settings_icon_size" android:layout_marginBottom="@dimen/card_inner_controls_margin_bottom" android:layout_marginEnd="@dimen/_12dp" android:elevation="@dimen/_4dp" app:srcCompat="@drawable/ic_settings_icon" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|bottom|center" android:id="@id/image_info" android:layout_width="@dimen/card_settings_icon_size" android:layout_height="@dimen/card_settings_icon_size" android:layout_marginBottom="@dimen/card_inner_controls_margin_bottom" android:layout_marginEnd="@dimen/margin_end_info_button" android:elevation="@dimen/_4dp" app:srcCompat="@drawable/ic_info_icon" />
+    </FrameLayout>
+</com.wajahatkarim3.easyflipview.EasyFlipView>

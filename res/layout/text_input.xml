@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/text_input_layout" android:layout_width="fill_parent" android:layout_height="@dimen/card_field_min_height" android:paddingStart="@dimen/card_padding" android:paddingEnd="@dimen/card_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@android:color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/text_input_label_height" android:layout_marginTop="@dimen/card_field_label_margin_top">
+        <com.fuib.android.spot.uikit.household.textInput.TextInputEditText android:textColor="@color/amount_input_text_color" android:layout_gravity="bottom" android:id="@id/text_input_value" android:background="@android:color/transparent" android:paddingBottom="2.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:lineSpacingExtra="2.0dip" android:textCursorDrawable="@drawable/text_input_cursor" style="@style/CardValueStyle" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/card_value_text_size" android:layout_gravity="bottom" android:id="@id/text_input_label" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:transformPivotX="0.0dip" style="@style/CardLabelStyle" />
+    </FrameLayout>
+    <View android:id="@id/text_input_line_additional" android:background="@color/text_field_active_state" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <View android:id="@id/text_input_line" android:background="@color/text_input_underline_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/hint_label" android:layout_width="fill_parent" style="@style/CardHintStyle" />
+</LinearLayout>

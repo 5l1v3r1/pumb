@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="text_save_as_template_end_margin">0</integer>
+</resources>

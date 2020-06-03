@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_items_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/empty_cardlist_img" android:layout_width="164.0dip" android:layout_height="134.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_label_to" app:srcCompat="@drawable/ic_illustration_wallet_with_account" />
+        <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/empty_cardlist_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:maxWidth="264.0dip" android:text="@string/transfers_empty_list_label" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/empty_cardlist_img" style="@style/GilroyBody" />
+    </LinearLayout>
+</merge>

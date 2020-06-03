@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/drawable_debit_card_bg" android:layout_width="@dimen/card_width" android:layout_height="100.0dip" android:layout_marginLeft="@dimen/card_margin_left" android:layout_marginTop="@dimen/card_slave_margin_top" android:layout_marginRight="@dimen/card_margin_right" android:elevation="@dimen/card_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/merge_card_header" />
+    <include layout="@layout/merge_card_footer" />
+    <include layout="@layout/merge_card_overlay" />
+</androidx.constraintlayout.widget.ConstraintLayout>

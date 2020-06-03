@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/srl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:name="com.fuib.android.spot.presentation.tab.main.deposits.list.DepositsFragment" android:id="@id/list" android:tag="@string/tag_transfer_deposits_list" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/img_empty" android:visibility="gone" android:layout_width="123.0dip" android:layout_height="104.0dip" android:layout_marginBottom="@dimen/_48dp" app:srcCompat="@drawable/ic_no_deposits" />
+        <TextView android:layout_gravity="center" android:id="@id/text_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_48dp" android:text="@string/empty_deposits_label" style="@style/GilroyBody" />
+    </FrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

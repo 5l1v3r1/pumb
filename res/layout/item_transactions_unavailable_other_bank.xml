@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/default_backdrop_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/img_empty" android:visibility="visible" android:layout_width="122.0dip" android:layout_height="110.0dip" android:layout_marginTop="@dimen/_12dp" app:srcCompat="@drawable/ic_no_transactions" />
+    <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:id="@id/text_last_transactions_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_16dp" android:layout_marginBottom="@dimen/_32dp" android:text="@string/main_card_account_info_history_unavailable_other_bank" android:paddingStart="@dimen/_32dp" android:paddingEnd="@dimen/_32dp" style="@style/GilroyBody" />
+</LinearLayout>

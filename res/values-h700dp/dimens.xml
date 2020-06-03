@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="auth_change_password_margin_top">82.0dip</dimen>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_text_receiver" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="58.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="start|center" android:id="@id/image_arrow" android:background="@drawable/bg_history_stub_icon" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginStart="@dimen/_16dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_day_description" />
+    <androidx.appcompat.widget.AppCompatTextView android:layout_gravity="start|center" android:id="@id/text_receivers_name_shimmer_part" android:background="@drawable/bg_shimmer_account_text" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginStart="60.0dip" android:layout_marginEnd="60.0dip" />
+    <View android:layout_gravity="bottom" android:id="@id/bottomBorder" android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/_1dp" />
+</com.facebook.shimmer.ShimmerFrameLayout>

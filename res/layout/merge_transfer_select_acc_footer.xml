@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/iban_transfer_select_account_text_size" android:textColor="@color/palette_stas_vertiy_grey_30" android:id="@id/text_acc_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_4dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/image_logo" app:layout_constraintVertical_bias="1.0" style="@style/CardText" />
+</merge>

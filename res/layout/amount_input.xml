@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/amount_input_layout" android:background="@drawable/utility_payment_field_background" android:layout_width="fill_parent" android:layout_height="@dimen/card_field_min_height" android:paddingStart="@dimen/card_padding" android:paddingEnd="@dimen/card_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/amount_input_label" android:layout_width="fill_parent" android:layout_marginTop="@dimen/card_field_label_margin_top" style="@style/CardLabelStyle" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_field_value_margin_top" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title">
+        <com.fuib.android.spot.uikit.household.amount.input.AmountInputEditText android:textColorHint="@color/amount_input_hint_color" android:id="@id/amount_input_edit_text" android:background="@android:color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:singleLine="true" android:digits="0123456789 .," android:inputType="numberDecimal" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/text_input_cursor" android:layout_marginEnd="4.0dip" style="@style/CardValueStyle.Amount" />
+        <androidx.appcompat.widget.AppCompatTextView android:id="@id/amount_input_currency" android:layout_width="wrap_content" style="@style/CardValueStyle.Amount" />
+    </LinearLayout>
+    <View android:id="@id/amount_input_additional_underline" android:background="@color/text_field_active_state" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <View android:id="@id/amount_input_underline" android:background="@color/text_input_underline_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/amount_input_hint" android:layout_width="fill_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/CardHintStyle" />
+</LinearLayout>

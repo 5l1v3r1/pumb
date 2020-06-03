@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="55.0dip" android:paddingStart="@dimen/_16dp" android:paddingEnd="@dimen/_16dp" style="@style/SelectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/underline" android:background="@color/amount_select_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GilroyButton" />
+    <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="64.0dip" style="@style/GilroyMedium" />
+</FrameLayout>

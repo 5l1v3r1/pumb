@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="22.0dip" android:width="22.0dip" android:viewportWidth="22.0" android:viewportHeight="22.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/default_card_icon_color" android:pathData="M22,5.3036L13.3571,5.3036L13.3571,0L0,0L0,22L13.3571,22L13.3571,16.6964L22,16.6964L22,5.3036ZM11.7857,20.4286L1.5714,20.4286L1.5714,1.5714L3.9286,1.5714L3.9286,2.3571L9.4286,2.3571L9.4286,1.5714L11.7857,1.5714L11.7857,5.3036L4.7143,5.3036L4.7143,16.6964L11.7857,16.6964L11.7857,20.4286ZM13.3571,15.125L6.2857,15.125L6.2857,6.875L20.4286,6.875L20.4286,8.6429L8.6429,8.6429L8.6429,10.2143L20.4286,10.2143L20.4286,15.125L13.3571,15.125ZM14.9286,11.7857L18.0714,11.7857L18.0714,13.3571L14.9286,13.3571L14.9286,11.7857Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+</vector>

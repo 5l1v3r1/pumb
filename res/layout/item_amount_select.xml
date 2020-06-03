@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="74.0dip" android:paddingStart="@dimen/_16dp" android:paddingEnd="@dimen/_16dp" style="@style/SelectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/amount_select_underline" android:background="@color/amount_select_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="@dimen/amount_input_text_size" android:textColor="@color/amount_input_text_color" android:id="@id/amount_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20dp" android:fontFamily="@font/gilroy_bold" />
+    <TextView android:textSize="@dimen/amount_description_txt_size" android:textColor="@color/amount_input_hint_color" android:ellipsize="end" android:id="@id/amount_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_16dp" android:layout_marginBottom="@dimen/_20dp" android:fontFamily="@font/gilroy_medium" />
+</LinearLayout>

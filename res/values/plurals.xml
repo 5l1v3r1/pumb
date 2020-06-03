@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_plurals">
+        <item quantity="other">days</item>
+        <item quantity="one">day</item>
+        <item quantity="few">days</item>
+        <item quantity="many">days</item>
+    </plurals>
+    <plurals name="months_plurals">
+        <item quantity="other">months</item>
+        <item quantity="one">month</item>
+        <item quantity="few">months</item>
+        <item quantity="many">months</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="weeks_plurals">
+        <item quantity="other">weeks</item>
+        <item quantity="one">week</item>
+        <item quantity="few">weeks</item>
+        <item quantity="many">weeks</item>
+    </plurals>
+    <plurals name="years_plurals">
+        <item quantity="other">years</item>
+        <item quantity="one">year</item>
+        <item quantity="few">years</item>
+        <item quantity="many">years</item>
+    </plurals>
+</resources>

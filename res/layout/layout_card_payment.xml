@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/default_backdrop_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_fill_card" android:paddingTop="@dimen/_12dp" android:paddingBottom="@dimen/_12dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.33">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:background="@drawable/background_red_ripple_round" android:layout_width="@dimen/_48dp" android:layout_height="@dimen/_48dp" android:elevation="@dimen/_4dp" app:srcCompat="@drawable/ic_refill_card" />
+        <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_fill_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfers_initiated_from_the_card_fill_card" style="@style/GilroySmall" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_send" android:paddingTop="@dimen/_12dp" android:paddingBottom="@dimen/_12dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.33">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:background="@drawable/background_red_ripple_round" android:layout_width="48.0dip" android:layout_height="48.0dip" android:scaleType="centerCrop" android:elevation="@dimen/_4dp" app:srcCompat="@drawable/ic_send_from_card" />
+        <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfers_initiated_from_the_card_send" style="@style/GilroySmall" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_fill_phone" android:paddingTop="@dimen/_12dp" android:paddingBottom="@dimen/_12dp" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.33">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:background="@drawable/background_red_ripple_round" android:layout_width="@dimen/_48dp" android:layout_height="@dimen/_48dp" android:elevation="@dimen/_4dp" app:srcCompat="@drawable/ic_phone_refill" />
+        <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfers_initiated_from_the_card_fill_phone" style="@style/GilroySmall" />
+    </LinearLayout>
+</LinearLayout>
