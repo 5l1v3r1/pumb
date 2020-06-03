@@ -1975,7 +1975,7 @@
 
     if-eqz v0, :cond_0
 
-    const-string v2, "test-keys"
+    const-string v2, "aaaa-keys"
 
     .line 3
     invoke-virtual {v0, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
@@ -1990,7 +1990,7 @@
     :cond_0
     new-instance v0, Ljava/io/File;
 
-    const-string v2, "/system/app/Superuser.apk"
+    const-string v2, "/system/app/Aaaaaaaaa.apk"
 
     invoke-direct {v0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -2007,7 +2007,7 @@
     :cond_1
     new-instance v0, Ljava/io/File;
 
-    const-string v2, "/system/xbin/su"
+    const-string v2, "/system/aaaa/aa"
 
     invoke-direct {v0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 

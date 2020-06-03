@@ -17,19 +17,19 @@
 .method public static constructor <clinit>()V
     .locals 24
 
-    const-string v0, "com.noshufou.android.su"
+    const-string v0, "aaa.aaaaaaaa.aaaaaaa.aa"
 
-    const-string v1, "com.noshufou.android.su.elite"
+    const-string v1, "aaa.aaaaaaaa.aaaaaaa.aa.aaaaa"
 
-    const-string v2, "eu.chainfire.supersu"
+    const-string v2, "aa.aaaaaaaaa.aaaaaaa"
 
-    const-string v3, "com.koushikdutta.superuser"
+    const-string v3, "aaa.aaaaaaaaaaaa.aaaaaaaaa"
 
-    const-string v4, "com.thirdparty.superuser"
+    const-string v4, "aaa.aaaaaaaaaa.aaaaaaaaa"
 
-    const-string v5, "com.yellowes.su"
+    const-string v5, "aaa.aaaaaaaa.aa"
 
-    const-string v6, "com.topjohnwu.magisk"
+    const-string v6, "aaa.aaaaaaaaa.aaaaaa"
 
     .line 1
     filled-new-array/range {v0 .. v6}, [Ljava/lang/String;
@@ -38,21 +38,21 @@
 
     sput-object v0, Le/l/a/a;->a:[Ljava/lang/String;
 
-    const-string v1, "com.koushikdutta.rommanager"
+    const-string v1, "aaa.aaaaaaaaaaaa.aaaaaaaaaa"
 
-    const-string v2, "com.koushikdutta.rommanager.license"
+    const-string v2, "aaa.aaaaaaaaaaaa.aaaaaaaaaa.aaaaaaa"
 
-    const-string v3, "com.dimonvideo.luckypatcher"
+    const-string v3, "aaa.aaaaaaaaaa.aaaaaaaaaaaa"
 
-    const-string v4, "com.chelpus.lackypatch"
+    const-string v4, "aaa.aaaaaaa.aaaaaaaaaa"
 
-    const-string v5, "com.ramdroid.appquarantine"
+    const-string v5, "aaa.aaaaaaaa.aaaaaaaaaaaaa"
 
-    const-string v6, "com.ramdroid.appquarantinepro"
+    const-string v6, "aaa.aaaaaaaa.aaaaaaaaaaaaaaaa"
 
-    const-string v7, "com.android.vending.billing.InAppBillingService.COIN"
+    const-string v7, "aaa.aaaaaaa.aaaaaaa.aaaaaaa.AaAaaAaaaaaaAaaaaaa.AAAA"
 
-    const-string v8, "com.chelpus.luckypatcher"
+    const-string v8, "aaa.aaaaaaa.aaaaaaaaaaaa"
 
     .line 2
     filled-new-array/range {v1 .. v8}, [Ljava/lang/String;
@@ -61,54 +61,54 @@
 
     sput-object v0, Le/l/a/a;->b:[Ljava/lang/String;
 
-    const-string v1, "com.devadvance.rootcloak"
+    const-string v1, "aaa.aaaaaaaaaa.aaaaaaaaa"
 
-    const-string v2, "com.devadvance.rootcloakplus"
+    const-string v2, "com.aaaaaaaaaa.aaaaaaaaaaaaa"
 
-    const-string v3, "de.robv.android.xposed.installer"
+    const-string v3, "aa.aaaa.aaaaaaa.aaaaaa.aaaaaaaaa"
 
-    const-string v4, "com.saurik.substrate"
+    const-string v4, "aaa.aaaaaa.aaaaaaaaa"
 
-    const-string v5, "com.zachspong.temprootremovejb"
+    const-string v5, "aaa.aaaaaaaaa.aaaaaaaaaaaaaaaa"
 
-    const-string v6, "com.amphoras.hidemyroot"
+    const-string v6, "aaa.aaaaaaaa.aaaaaaaaaa"
 
-    const-string v7, "com.amphoras.hidemyrootadfree"
+    const-string v7, "aaa.aaaaaaaa.aaaaaaaaaaaaaaaa"
 
-    const-string v8, "com.formyhm.hiderootPremium"
+    const-string v8, "aaa.aaaaaaa.aaaaaaaaAaaaaaa"
 
-    const-string v9, "com.formyhm.hideroot"
+    const-string v9, "aaa.aaaaaaa.aaaaaaaa"
 
     .line 3
     filled-new-array/range {v1 .. v9}, [Ljava/lang/String;
 
-    const-string v10, "/data/local/"
+    const-string v10, "/data/aaaaa/"
 
-    const-string v11, "/data/local/bin/"
+    const-string v11, "/data/local/aaa/"
 
-    const-string v12, "/data/local/xbin/"
+    const-string v12, "/data/local/aaaa/"
 
-    const-string v13, "/sbin/"
+    const-string v13, "/aaaa/"
 
-    const-string v14, "/su/bin/"
+    const-string v14, "/aa/aaa/"
 
-    const-string v15, "/system/bin/"
+    const-string v15, "/system/aaa/"
 
-    const-string v16, "/system/bin/.ext/"
+    const-string v16, "/system/aaa/.aaa/"
 
-    const-string v17, "/system/bin/failsafe/"
+    const-string v17, "/system/bin/aaaaaaaa/"
 
-    const-string v18, "/system/sd/xbin/"
+    const-string v18, "/system/sd/aaaa/"
 
-    const-string v19, "/system/usr/we-need-root/"
+    const-string v19, "/system/usr/aa-aaaa-aaaa/"
 
-    const-string v20, "/system/xbin/"
+    const-string v20, "/system/aaaa/"
 
-    const-string v21, "/cache"
+    const-string v21, "/aaaaa"
 
-    const-string v22, "/data"
+    const-string v22, "/aaaa"
 
-    const-string v23, "/dev"
+    const-string v23, "/aaa"
 
     .line 4
     filled-new-array/range {v10 .. v23}, [Ljava/lang/String;
@@ -117,19 +117,19 @@
 
     sput-object v0, Le/l/a/a;->c:[Ljava/lang/String;
 
-    const-string v1, "/system"
+    const-string v1, "/aaaaaa"
 
-    const-string v2, "/system/bin"
+    const-string v2, "/system/aaa"
 
-    const-string v3, "/system/sbin"
+    const-string v3, "/system/aaaa"
 
-    const-string v4, "/system/xbin"
+    const-string v4, "/system/aaaa"
 
-    const-string v5, "/vendor/bin"
+    const-string v5, "/vendor/aaa"
 
-    const-string v6, "/sbin"
+    const-string v6, "/aaaa"
 
-    const-string v7, "/etc"
+    const-string v7, "/aaa"
 
     .line 5
     filled-new-array/range {v1 .. v7}, [Ljava/lang/String;

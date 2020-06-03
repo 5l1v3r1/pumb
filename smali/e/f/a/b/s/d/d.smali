@@ -137,7 +137,7 @@
     :cond_4
     iget-object v4, p0, Le/f/a/b/s/d/d;->a:Le/l/a/b;
 
-    const-string v5, "su"
+    const-string v5, "aa"
 
     invoke-virtual {v4, v5}, Le/l/a/b;->a(Ljava/lang/String;)Z
 
