@@ -256,7 +256,7 @@
 .method public b()Z
     .locals 1
 
-    const-string v0, "magisk"
+    const-string v0, "a"
 
     .line 6
     invoke-virtual {p0, v0}, Le/l/a/b;->a(Ljava/lang/String;)Z
@@ -414,7 +414,7 @@
 
     aget-object v1, v13, v15
 
-    const-string v7, "rw"
+    const-string v7, "a"
 
     .line 11
     invoke-virtual {v1, v7}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
@@ -525,7 +525,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v4, "su"
+    const-string v4, "a"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -580,9 +580,9 @@
 
     move-result-object v2
 
-    const-string v3, "which"
+    const-string v3, "a"
 
-    const-string v4, "su"
+    const-string v4, "a"
 
     filled-new-array {v3, v4}, [Ljava/lang/String;
 
@@ -670,7 +670,7 @@
 
     if-eqz v0, :cond_0
 
-    const-string v1, "test-keys"
+    const-string v1, "a-keys"
 
     .line 2
     invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
@@ -701,7 +701,7 @@
 
     move-result-object v1
 
-    const-string v2, "mount"
+    const-string v2, "a"
 
     invoke-virtual {v1, v2}, Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
 

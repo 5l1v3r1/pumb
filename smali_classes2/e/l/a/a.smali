@@ -17,19 +17,19 @@
 .method public static constructor <clinit>()V
     .locals 24
 
-    const-string v0, "com.noshufou.android.su"
+    const-string v0, "a"
 
-    const-string v1, "com.noshufou.android.su.elite"
+    const-string v1, "a"
 
-    const-string v2, "eu.chainfire.supersu"
+    const-string v2, "a"
 
-    const-string v3, "com.koushikdutta.superuser"
+    const-string v3, "a"
 
-    const-string v4, "com.thirdparty.superuser"
+    const-string v4, "a"
 
-    const-string v5, "com.yellowes.su"
+    const-string v5, "a"
 
-    const-string v6, "com.topjohnwu.magisk"
+    const-string v6, "a"
 
     .line 1
     filled-new-array/range {v0 .. v6}, [Ljava/lang/String;
@@ -38,21 +38,21 @@
 
     sput-object v0, Le/l/a/a;->a:[Ljava/lang/String;
 
-    const-string v1, "com.koushikdutta.rommanager"
+    const-string v1, "a"
 
-    const-string v2, "com.koushikdutta.rommanager.license"
+    const-string v2, "a"
 
-    const-string v3, "com.dimonvideo.luckypatcher"
+    const-string v3, "a"
 
-    const-string v4, "com.chelpus.lackypatch"
+    const-string v4, "a"
 
-    const-string v5, "com.ramdroid.appquarantine"
+    const-string v5, "a"
 
-    const-string v6, "com.ramdroid.appquarantinepro"
+    const-string v6, "a"
 
-    const-string v7, "com.android.vending.billing.InAppBillingService.COIN"
+    const-string v7, "a"
 
-    const-string v8, "com.chelpus.luckypatcher"
+    const-string v8, "a"
 
     .line 2
     filled-new-array/range {v1 .. v8}, [Ljava/lang/String;
@@ -61,54 +61,54 @@
 
     sput-object v0, Le/l/a/a;->b:[Ljava/lang/String;
 
-    const-string v1, "com.devadvance.rootcloak"
+    const-string v1, "a"
 
-    const-string v2, "com.devadvance.rootcloakplus"
+    const-string v2, "a"
 
-    const-string v3, "de.robv.android.xposed.installer"
+    const-string v3, "a"
 
-    const-string v4, "com.saurik.substrate"
+    const-string v4, "a"
 
-    const-string v5, "com.zachspong.temprootremovejb"
+    const-string v5, "a"
 
-    const-string v6, "com.amphoras.hidemyroot"
+    const-string v6, "a"
 
-    const-string v7, "com.amphoras.hidemyrootadfree"
+    const-string v7, "a"
 
-    const-string v8, "com.formyhm.hiderootPremium"
+    const-string v8, "a"
 
-    const-string v9, "com.formyhm.hideroot"
+    const-string v9, "a"
 
     .line 3
     filled-new-array/range {v1 .. v9}, [Ljava/lang/String;
 
-    const-string v10, "/data/local/"
+    const-string v10, "/a"
 
-    const-string v11, "/data/local/bin/"
+    const-string v11, "/a"
 
-    const-string v12, "/data/local/xbin/"
+    const-string v12, "/a"
 
-    const-string v13, "/sbin/"
+    const-string v13, "/a"
 
-    const-string v14, "/su/bin/"
+    const-string v14, "/a"
 
-    const-string v15, "/system/bin/"
+    const-string v15, "/a"
 
-    const-string v16, "/system/bin/.ext/"
+    const-string v16, "/a"
 
-    const-string v17, "/system/bin/failsafe/"
+    const-string v17, "/a"
 
-    const-string v18, "/system/sd/xbin/"
+    const-string v18, "/a"
 
-    const-string v19, "/system/usr/we-need-root/"
+    const-string v19, "/a"
 
-    const-string v20, "/system/xbin/"
+    const-string v20, "/a"
 
-    const-string v21, "/cache"
+    const-string v21, "/a"
 
-    const-string v22, "/data"
+    const-string v22, "/a"
 
-    const-string v23, "/dev"
+    const-string v23, "/a"
 
     .line 4
     filled-new-array/range {v10 .. v23}, [Ljava/lang/String;
@@ -117,19 +117,19 @@
 
     sput-object v0, Le/l/a/a;->c:[Ljava/lang/String;
 
-    const-string v1, "/system"
+    const-string v1, "/a"
 
-    const-string v2, "/system/bin"
+    const-string v2, "/a"
 
-    const-string v3, "/system/sbin"
+    const-string v3, "/a"
 
-    const-string v4, "/system/xbin"
+    const-string v4, "/a"
 
-    const-string v5, "/vendor/bin"
+    const-string v5, "/a"
 
-    const-string v6, "/sbin"
+    const-string v6, "/a"
 
-    const-string v7, "/etc"
+    const-string v7, "/a"
 
     .line 5
     filled-new-array/range {v1 .. v7}, [Ljava/lang/String;
