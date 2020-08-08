@@ -107,12 +107,12 @@
 
     invoke-direct {v2, p1, v3}, Lb/k/e/h$d;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    const v4, 0x7f080208
+    const v4, 0x7f08020e
 
     .line 6
     invoke-virtual {v2, v4}, Lb/k/e/h$d;->e(I)Lb/k/e/h$d;
 
-    const v4, 0x7f060045
+    const v4, 0x7f060046
 
     .line 7
     invoke-static {p1, v4}, Lb/k/f/a;->a(Landroid/content/Context;I)I

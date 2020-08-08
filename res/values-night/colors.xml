@@ -10,6 +10,7 @@
     <color name="card_value_text_color">@color/palette_stas_vertiy_white</color>
     <color name="default_backdrop_bg_color">@color/palette_stas_vertiy_deep_dark</color>
     <color name="default_bg_color">@color/black</color>
+    <color name="default_card_border_color">@color/white</color>
     <color name="default_card_icon_color">@color/white</color>
     <color name="default_main_text_color">@color/white</color>
     <color name="flat_icon_main_text_color">@color/white</color>
@@ -17,6 +18,9 @@
     <color name="highlighted_light_red_missing_step">#4df91f2b</color>
     <color name="ic_ok_red_bg">@color/black</color>
     <color name="ic_reuse_pin_bg">@color/black</color>
+    <color name="month_pager_gradient_center_color">@color/black</color>
+    <color name="month_pager_gradient_end_color">@color/black_full_transparent</color>
+    <color name="month_pager_gradient_start_color">@color/black</color>
     <color name="new_messages_background">@color/white_alfa_half_trans</color>
     <color name="new_messages_content">@color/palette_stas_vertiy_dark</color>
     <color name="otp_bg_color">@color/palette_stas_vertiy_deep_dark</color>

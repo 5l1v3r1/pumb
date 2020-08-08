@@ -23,14 +23,14 @@
 
 
 # direct methods
-.method public constructor <init>(Ll/g0/i/e;Lm/s;)V
+.method public constructor <init>(Ll/g0/i/e;Lm/t;)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Ll/g0/i/e$a;->f:Ll/g0/i/e;
 
     .line 2
-    invoke-direct {p0, p2}, Lm/h;-><init>(Lm/s;)V
+    invoke-direct {p0, p2}, Lm/h;-><init>(Lm/t;)V
 
     const/4 p1, 0x0
 
@@ -84,11 +84,11 @@
 
     .line 1
     :try_start_0
-    invoke-virtual {p0}, Lm/h;->a()Lm/s;
+    invoke-virtual {p0}, Lm/h;->a()Lm/t;
 
     move-result-object v0
 
-    invoke-interface {v0, p1, p2, p3}, Lm/s;->c(Lm/c;J)J
+    invoke-interface {v0, p1, p2, p3}, Lm/t;->c(Lm/c;J)J
 
     move-result-wide p1
 

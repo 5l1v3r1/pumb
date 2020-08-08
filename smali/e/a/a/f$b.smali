@@ -3,12 +3,12 @@
 .source "LottieDrawable.java"
 
 # interfaces
-.implements Le/a/a/f$l;
+.implements Le/a/a/f$q;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Le/a/a/f;->c(F)V
+    value = Le/a/a/f;->a(Ljava/lang/String;Ljava/lang/String;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,19 +18,27 @@
 
 
 # instance fields
-.field public final synthetic a:F
+.field public final synthetic a:Ljava/lang/String;
 
-.field public final synthetic b:Le/a/a/f;
+.field public final synthetic b:Ljava/lang/String;
+
+.field public final synthetic c:Z
+
+.field public final synthetic d:Le/a/a/f;
 
 
 # direct methods
-.method public constructor <init>(Le/a/a/f;F)V
+.method public constructor <init>(Le/a/a/f;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Le/a/a/f$b;->b:Le/a/a/f;
+    iput-object p1, p0, Le/a/a/f$b;->d:Le/a/a/f;
 
-    iput p2, p0, Le/a/a/f$b;->a:F
+    iput-object p2, p0, Le/a/a/f$b;->a:Ljava/lang/String;
+
+    iput-object p3, p0, Le/a/a/f$b;->b:Ljava/lang/String;
+
+    iput-boolean p4, p0, Le/a/a/f$b;->c:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,14 +48,18 @@
 
 # virtual methods
 .method public a(Le/a/a/d;)V
-    .locals 1
+    .locals 3
 
     .line 1
-    iget-object p1, p0, Le/a/a/f$b;->b:Le/a/a/f;
+    iget-object p1, p0, Le/a/a/f$b;->d:Le/a/a/f;
 
-    iget v0, p0, Le/a/a/f$b;->a:F
+    iget-object v0, p0, Le/a/a/f$b;->a:Ljava/lang/String;
 
-    invoke-virtual {p1, v0}, Le/a/a/f;->c(F)V
+    iget-object v1, p0, Le/a/a/f$b;->b:Ljava/lang/String;
+
+    iget-boolean v2, p0, Le/a/a/f$b;->c:Z
+
+    invoke-virtual {p1, v0, v1, v2}, Le/a/a/f;->a(Ljava/lang/String;Ljava/lang/String;Z)V
 
     return-void
 .end method

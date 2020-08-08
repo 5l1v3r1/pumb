@@ -556,7 +556,7 @@
     return-void
 .end method
 
-.method public d()Lm/r;
+.method public d()Lm/s;
     .locals 2
 
     .line 1
@@ -643,7 +643,7 @@
     throw p1
 .end method
 
-.method public e()Lm/s;
+.method public e()Lm/t;
     .locals 1
 
     .line 1
@@ -766,7 +766,7 @@
     throw v0
 .end method
 
-.method public h()Lm/t;
+.method public h()Lm/u;
     .locals 1
 
     .line 1
@@ -957,7 +957,7 @@
     throw v0
 .end method
 
-.method public l()Lm/t;
+.method public l()Lm/u;
     .locals 1
 
     .line 1

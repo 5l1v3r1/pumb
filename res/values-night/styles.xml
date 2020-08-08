@@ -78,4 +78,13 @@
     <style name="authCircleLight">
         <item name="android:background">@drawable/drawable_circle_dark</item>
     </style>
+    <style name="lottie_mail_send_v1">
+        <item name="lottie_fileName">ic_mail_step1_dark.json</item>
+    </style>
+    <style name="lottie_mail_send_v2">
+        <item name="lottie_fileName">ic_mail_step2_dark.json</item>
+    </style>
+    <style name="lottie_mail_send_v3">
+        <item name="lottie_fileName">ic_mail_step3_dark.json</item>
+    </style>
 </resources>

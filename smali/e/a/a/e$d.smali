@@ -1,4 +1,4 @@
-.class public final Le/a/a/e$d;
+.class public Le/a/a/e$d;
 .super Ljava/lang/Object;
 .source "LottieCompositionFactory.java"
 
@@ -8,11 +8,11 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Le/a/a/e;->a(Landroid/util/JsonReader;Ljava/lang/String;)Le/a/a/l;
+    value = Le/a/a/e;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Le/a/a/m;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x9
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "Ljava/util/concurrent/Callable<",
-        "Le/a/a/k<",
+        "Le/a/a/l<",
         "Le/a/a/d;",
         ">;>;"
     }
@@ -28,19 +28,23 @@
 
 
 # instance fields
-.field public final synthetic c:Landroid/util/JsonReader;
+.field public final synthetic c:Landroid/content/Context;
 
 .field public final synthetic d:Ljava/lang/String;
 
+.field public final synthetic e:Ljava/lang/String;
+
 
 # direct methods
-.method public constructor <init>(Landroid/util/JsonReader;Ljava/lang/String;)V
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Le/a/a/e$d;->c:Landroid/util/JsonReader;
+    iput-object p1, p0, Le/a/a/e$d;->c:Landroid/content/Context;
 
     iput-object p2, p0, Le/a/a/e$d;->d:Ljava/lang/String;
+
+    iput-object p3, p0, Le/a/a/e$d;->e:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,23 +53,25 @@
 
 
 # virtual methods
-.method public call()Le/a/a/k;
-    .locals 2
+.method public call()Le/a/a/l;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Le/a/a/k<",
+            "Le/a/a/l<",
             "Le/a/a/d;",
             ">;"
         }
     .end annotation
 
     .line 2
-    iget-object v0, p0, Le/a/a/e$d;->c:Landroid/util/JsonReader;
+    iget-object v0, p0, Le/a/a/e$d;->c:Landroid/content/Context;
 
     iget-object v1, p0, Le/a/a/e$d;->d:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Le/a/a/e;->b(Landroid/util/JsonReader;Ljava/lang/String;)Le/a/a/k;
+    iget-object v2, p0, Le/a/a/e$d;->e:Ljava/lang/String;
+
+    invoke-static {v0, v1, v2}, Le/a/a/e;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Le/a/a/l;
 
     move-result-object v0
 
@@ -76,7 +82,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Le/a/a/e$d;->call()Le/a/a/k;
+    invoke-virtual {p0}, Le/a/a/e$d;->call()Le/a/a/l;
 
     move-result-object v0
 

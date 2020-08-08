@@ -303,7 +303,7 @@
     invoke-static {v1, v2, v7}, Ll/g0/g/e;->a(Ll/m;Ll/s;Ll/r;)V
 
     .line 24
-    invoke-virtual {p1}, Ll/a0;->x()Ll/a0$a;
+    invoke-virtual {p1}, Ll/a0;->A()Ll/a0$a;
 
     move-result-object v1
 
@@ -343,7 +343,7 @@
 
     move-result-object v7
 
-    invoke-direct {v2, v7}, Lm/j;-><init>(Lm/s;)V
+    invoke-direct {v2, v7}, Lm/j;-><init>(Lm/t;)V
 
     .line 29
     invoke-virtual {p1}, Ll/a0;->e()Ll/r;
@@ -376,7 +376,7 @@
     .line 35
     new-instance v0, Ll/g0/g/h;
 
-    invoke-static {v2}, Lm/l;->a(Lm/s;)Lm/e;
+    invoke-static {v2}, Lm/l;->a(Lm/t;)Lm/e;
 
     move-result-object v2
 

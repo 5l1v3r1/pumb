@@ -49,7 +49,7 @@
 
 
 # instance fields
-.field public appExecutors:Le/f/a/b/s/f/c;
+.field public appExecutors:Le/f/a/b/t/f/c;
 
 .field public attempts:Lcom/fuib/android/spot/data/socket/SocketConnectionAttempts;
 
@@ -59,7 +59,7 @@
 
 .field public connectivityCheckRequest:Ll/y;
 
-.field public deviceIdCache:Le/f/a/b/s/f/w;
+.field public deviceIdCache:Le/f/a/b/t/f/w;
 
 .field public failListener:Lcom/fuib/android/spot/data/socket/SocketConnection$FailListener;
 
@@ -73,7 +73,7 @@
 
 .field public isOnlyAuthInitMessages:Z
 
-.field public jwtCache:Le/f/a/b/s/f/j0;
+.field public jwtCache:Le/f/a/b/t/f/j0;
 
 .field public messageResponseFactory:Lcom/fuib/android/spot/data/api/common/MessageResponseFactory;
 
@@ -107,7 +107,7 @@
 
 
 # direct methods
-.method public constructor <init>(Le/f/a/b/s/f/c;Le/h/c/f;Le/f/a/b/s/f/i;Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;Le/f/a/b/s/f/j0;Le/f/a/b/s/f/w;Lcom/fuib/android/spot/data/api/common/MessageResponseFactory;Lcom/fuib/android/spot/data/socket/RequestQueueManager;Lcom/fuib/android/spot/data/socket/ReplicateHandler;Le/f/a/b/s/f/a0;)V
+.method public constructor <init>(Le/f/a/b/t/f/c;Le/h/c/f;Le/f/a/b/t/f/i;Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;Le/f/a/b/t/f/j0;Le/f/a/b/t/f/w;Lcom/fuib/android/spot/data/api/common/MessageResponseFactory;Lcom/fuib/android/spot/data/socket/RequestQueueManager;Lcom/fuib/android/spot/data/socket/ReplicateHandler;Le/f/a/b/t/f/a0;)V
     .locals 2
 
     .line 1
@@ -184,7 +184,7 @@
     iput-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->socketListener:Ll/f0;
 
     .line 14
-    iput-object p1, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iput-object p1, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
     .line 15
     iput-object p2, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->gson:Le/h/c/f;
@@ -193,10 +193,10 @@
     iput-object p4, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->timeoutErrorDelegate:Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;
 
     .line 17
-    iput-object p5, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->jwtCache:Le/f/a/b/s/f/j0;
+    iput-object p5, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->jwtCache:Le/f/a/b/t/f/j0;
 
     .line 18
-    iput-object p6, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->deviceIdCache:Le/f/a/b/s/f/w;
+    iput-object p6, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->deviceIdCache:Le/f/a/b/t/f/w;
 
     .line 19
     iput-object p7, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->messageResponseFactory:Lcom/fuib/android/spot/data/api/common/MessageResponseFactory;
@@ -213,7 +213,7 @@
     iput-object p9, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->replicateHandler:Lcom/fuib/android/spot/data/socket/ReplicateHandler;
 
     .line 23
-    invoke-virtual {p10}, Le/f/a/b/s/f/a0;->b()Ljava/lang/String;
+    invoke-virtual {p10}, Le/f/a/b/t/f/a0;->c()Ljava/lang/String;
 
     move-result-object p2
 
@@ -224,7 +224,7 @@
 
     invoke-direct {p2}, Ll/y$a;-><init>()V
 
-    invoke-virtual {p3}, Le/f/a/b/s/f/i;->a()Ljava/lang/String;
+    invoke-virtual {p3}, Le/f/a/b/t/f/i;->a()Ljava/lang/String;
 
     move-result-object p3
 
@@ -237,22 +237,22 @@
     iput-object p2, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->connectivityCheckRequest:Ll/y;
 
     .line 25
-    iget-object p2, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->jwtCache:Le/f/a/b/s/f/j0;
+    iget-object p2, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->jwtCache:Le/f/a/b/t/f/j0;
 
-    invoke-virtual {p2}, Le/f/a/b/s/f/j0;->b()Lb/p/o;
+    invoke-virtual {p2}, Le/f/a/b/t/f/j0;->b()Lb/p/o;
 
     move-result-object p2
 
-    new-instance p3, Le/f/a/b/s/e/l;
+    new-instance p3, Le/f/a/b/t/e/l;
 
-    invoke-direct {p3, p0}, Le/f/a/b/s/e/l;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;)V
+    invoke-direct {p3, p0}, Le/f/a/b/t/e/l;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;)V
 
     invoke-virtual {p2, p3}, Landroidx/lifecycle/LiveData;->observeForever(Lb/p/p;)V
 
     .line 26
-    new-instance p2, Le/f/a/b/s/e/r;
+    new-instance p2, Le/f/a/b/t/e/r;
 
-    invoke-direct {p2, p0, p1}, Le/f/a/b/s/e/r;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Le/f/a/b/s/f/c;)V
+    invoke-direct {p2, p0, p1}, Le/f/a/b/t/e/r;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Le/f/a/b/t/f/c;)V
 
     .line 27
     iget-object p1, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->queueManager:Lcom/fuib/android/spot/data/socket/RequestQueueManager;
@@ -280,20 +280,20 @@
     return-object p1
 .end method
 
-.method public static synthetic access$100(Lcom/fuib/android/spot/data/socket/WebSocketClient;)Le/f/a/b/s/f/c;
+.method public static synthetic access$100(Lcom/fuib/android/spot/data/socket/WebSocketClient;)Le/f/a/b/t/f/c;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iget-object p0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
     return-object p0
 .end method
 
-.method public static synthetic access$1000(Lcom/fuib/android/spot/data/socket/WebSocketClient;)Le/f/a/b/s/f/j0;
+.method public static synthetic access$1000(Lcom/fuib/android/spot/data/socket/WebSocketClient;)Le/f/a/b/t/f/j0;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->jwtCache:Le/f/a/b/s/f/j0;
+    iget-object p0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->jwtCache:Le/f/a/b/t/f/j0;
 
     return-object p0
 .end method
@@ -410,13 +410,13 @@
     .locals 3
 
     .line 4
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v1, "SOCKET_LOG"
 
     const-string v2, "connect"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5
     iget-boolean v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->isAllowedToBeConnected:Z
@@ -427,15 +427,15 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/c;->d()Ljava/util/concurrent/Executor;
+    invoke-virtual {v0}, Le/f/a/b/t/f/c;->d()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    new-instance v1, Le/f/a/b/s/e/u;
+    new-instance v1, Le/f/a/b/t/e/u;
 
-    invoke-direct {v1, p0}, Le/f/a/b/s/e/u;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;)V
+    invoke-direct {v1, p0}, Le/f/a/b/t/e/u;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -446,7 +446,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -464,18 +464,18 @@
 
     const-string v2, "SOCKET_LOG"
 
-    invoke-virtual {v0, v2, v1}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v1}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
-    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/c;->d()Ljava/util/concurrent/Executor;
+    invoke-virtual {v0}, Le/f/a/b/t/f/c;->d()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    new-instance v1, Le/f/a/b/s/e/p;
+    new-instance v1, Le/f/a/b/t/e/p;
 
-    invoke-direct {v1, p0, p1}, Le/f/a/b/s/e/p;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;I)V
+    invoke-direct {v1, p0, p1}, Le/f/a/b/t/e/p;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;I)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -495,7 +495,7 @@
 
     move-result-object v0
 
-    invoke-interface {v0}, Ll/e;->t()Ll/a0;
+    invoke-interface {v0}, Ll/e;->r()Ll/a0;
 
     move-result-object v0
 
@@ -567,15 +567,15 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/c;->c()Ljava/util/concurrent/Executor;
+    invoke-virtual {v0}, Le/f/a/b/t/f/c;->c()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    new-instance v1, Le/f/a/b/s/e/s;
+    new-instance v1, Le/f/a/b/t/e/s;
 
-    invoke-direct {v1, p0, p1}, Le/f/a/b/s/e/s;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Lcom/fuib/android/spot/data/socket/SocketConnection$Error;)V
+    invoke-direct {v1, p0, p1}, Le/f/a/b/t/e/s;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Lcom/fuib/android/spot/data/socket/SocketConnection$Error;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -586,15 +586,15 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/c;->c()Ljava/util/concurrent/Executor;
+    invoke-virtual {v0}, Le/f/a/b/t/f/c;->c()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    new-instance v1, Le/f/a/b/s/e/n;
+    new-instance v1, Le/f/a/b/t/e/n;
 
-    invoke-direct {v1, p0}, Le/f/a/b/s/e/n;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;)V
+    invoke-direct {v1, p0}, Le/f/a/b/t/e/n;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -605,15 +605,15 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/c;->c()Ljava/util/concurrent/Executor;
+    invoke-virtual {v0}, Le/f/a/b/t/f/c;->c()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    new-instance v1, Le/f/a/b/s/e/q;
+    new-instance v1, Le/f/a/b/t/e/q;
 
-    invoke-direct {v1, p0}, Le/f/a/b/s/e/q;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;)V
+    invoke-direct {v1, p0}, Le/f/a/b/t/e/q;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -635,15 +635,15 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/c;->d()Ljava/util/concurrent/Executor;
+    invoke-virtual {v0}, Le/f/a/b/t/f/c;->d()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    new-instance v1, Le/f/a/b/s/e/m;
+    new-instance v1, Le/f/a/b/t/e/m;
 
-    invoke-direct {v1, p0, p1}, Le/f/a/b/s/e/m;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Ljava/lang/String;)V
+    invoke-direct {v1, p0, p1}, Le/f/a/b/t/e/m;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Ljava/lang/String;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -663,11 +663,11 @@
     if-eqz v0, :cond_0
 
     .line 21
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v2, "Connecting is on a way.."
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
@@ -686,11 +686,11 @@
     invoke-interface {v0, v2, v3}, Ll/e0;->close(ILjava/lang/String;)Z
 
     .line 24
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v2, "connect(): socket was not null, we should set it null on disconnect"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -698,11 +698,11 @@
 
     .line 25
     :catch_0
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v2, "connect(): socket was null already, nothing interesting, just read next line"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 26
     :cond_1
@@ -749,7 +749,7 @@
 
     .line 28
     :goto_1
-    sget-object v4, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v4, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -765,7 +765,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v1, v5}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v4, v1, v5}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz v0, :cond_7
 
@@ -779,9 +779,9 @@
     invoke-virtual {v0, v4}, Ll/y$a;->b(Ljava/lang/String;)Ll/y$a;
 
     .line 30
-    iget-object v4, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->jwtCache:Le/f/a/b/s/f/j0;
+    iget-object v4, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->jwtCache:Le/f/a/b/t/f/j0;
 
-    invoke-virtual {v4}, Le/f/a/b/s/f/j0;->a()Ljava/lang/String;
+    invoke-virtual {v4}, Le/f/a/b/t/f/j0;->a()Ljava/lang/String;
 
     move-result-object v4
 
@@ -804,9 +804,9 @@
 
     .line 34
     :cond_5
-    iget-object v2, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->deviceIdCache:Le/f/a/b/s/f/w;
+    iget-object v2, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->deviceIdCache:Le/f/a/b/t/f/w;
 
-    invoke-virtual {v2}, Le/f/a/b/s/f/w;->a()Ljava/lang/String;
+    invoke-virtual {v2}, Le/f/a/b/t/f/w;->a()Ljava/lang/String;
 
     move-result-object v2
 
@@ -824,7 +824,7 @@
     move-result-object v0
 
     .line 37
-    sget-object v2, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v2, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -844,10 +844,10 @@
 
     move-result-object v4
 
-    invoke-virtual {v2, v1, v4}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v1, v4}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 38
-    sget-object v2, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v2, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -867,7 +867,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v2, v1, v4}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v1, v4}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 39
     iget-object v1, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->wsClient:Ll/v;
@@ -904,7 +904,7 @@
     .locals 4
 
     .line 43
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -922,7 +922,7 @@
 
     const-string v2, "SOCKET_LOG"
 
-    invoke-virtual {v0, v2, v1}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v1}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -947,7 +947,7 @@
     if-eqz v0, :cond_0
 
     .line 48
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -963,7 +963,7 @@
 
     move-result-object p1
 
-    invoke-virtual {v0, v2, p1}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, p1}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
@@ -1089,13 +1089,13 @@
     .locals 3
 
     .line 12
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v1, "SOCKET_LOG"
 
     const-string v2, "public connect network IO"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 13
     iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->timeoutErrorDelegate:Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;
@@ -1132,17 +1132,17 @@
     return-void
 .end method
 
-.method public synthetic a(Le/f/a/b/s/f/c;Ljava/util/Queue;)V
+.method public synthetic a(Le/f/a/b/t/f/c;Ljava/util/Queue;)V
     .locals 1
 
     .line 2
-    invoke-virtual {p1}, Le/f/a/b/s/f/c;->d()Ljava/util/concurrent/Executor;
+    invoke-virtual {p1}, Le/f/a/b/t/f/c;->d()Ljava/util/concurrent/Executor;
 
     move-result-object p1
 
-    new-instance v0, Le/f/a/b/s/e/o;
+    new-instance v0, Le/f/a/b/t/e/o;
 
-    invoke-direct {v0, p0, p2}, Le/f/a/b/s/e/o;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Ljava/util/Queue;)V
+    invoke-direct {v0, p0, p2}, Le/f/a/b/t/e/o;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Ljava/util/Queue;)V
 
     invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -1227,7 +1227,7 @@
 
     .line 9
     :goto_2
-    sget-object v3, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v3, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1279,7 +1279,7 @@
 
     const-string v4, "SOCKET_LOG"
 
-    invoke-virtual {v3, v4, v1}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v3, v4, v1}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz v2, :cond_4
 
@@ -1357,13 +1357,13 @@
     .locals 4
 
     .line 1
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v1, "SOCKET_LOG"
 
     const-string v2, "public disconnect network IO"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
@@ -1381,11 +1381,11 @@
     if-eqz v0, :cond_0
 
     .line 5
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v2, "socket is not null so close it"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     :try_start_0
@@ -1403,11 +1403,11 @@
 
     .line 7
     :catch_0
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v2, "disconnect(): socket was null already, nothing interesting, just read next line"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
     :goto_0
@@ -1463,15 +1463,15 @@
     invoke-virtual {v0, v1}, Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;->cancelTimeoutError(Ljava/lang/String;)V
 
     .line 13
-    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/c;->c()Ljava/util/concurrent/Executor;
+    invoke-virtual {v0}, Le/f/a/b/t/f/c;->c()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    new-instance v1, Le/f/a/b/s/e/t;
+    new-instance v1, Le/f/a/b/t/e/t;
 
-    invoke-direct {v1, p0, p1}, Le/f/a/b/s/e/t;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Lcom/fuib/android/spot/data/api/common/RawApiResponse;)V
+    invoke-direct {v1, p0, p1}, Le/f/a/b/t/e/t;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Lcom/fuib/android/spot/data/api/common/RawApiResponse;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -1497,7 +1497,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1517,7 +1517,7 @@
 
     const-string v2, "SOCKET_LOG"
 
-    invoke-virtual {v0, v2, v1}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v1}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->replicateHandler:Lcom/fuib/android/spot/data/socket/ReplicateHandler;
@@ -1527,15 +1527,15 @@
     invoke-virtual {v0, v1}, Lcom/fuib/android/spot/data/socket/ReplicateHandler;->onHandled(Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/c;->c()Ljava/util/concurrent/Executor;
+    invoke-virtual {v0}, Le/f/a/b/t/f/c;->c()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    new-instance v1, Le/f/a/b/s/e/j;
+    new-instance v1, Le/f/a/b/t/e/j;
 
-    invoke-direct {v1, p0, p1}, Le/f/a/b/s/e/j;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Lcom/fuib/android/spot/data/api/common/RawApiResponse;)V
+    invoke-direct {v1, p0, p1}, Le/f/a/b/t/e/j;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Lcom/fuib/android/spot/data/api/common/RawApiResponse;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -1546,13 +1546,13 @@
     .locals 3
 
     .line 1
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v1, "SOCKET_LOG"
 
     const-string v2, "public connect"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
@@ -1560,15 +1560,15 @@
     iput-boolean v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->isAllowedToBeConnected:Z
 
     .line 3
-    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/c;->d()Ljava/util/concurrent/Executor;
+    invoke-virtual {v0}, Le/f/a/b/t/f/c;->d()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    new-instance v1, Le/f/a/b/s/e/w;
+    new-instance v1, Le/f/a/b/t/e/w;
 
-    invoke-direct {v1, p0, p1, p2}, Le/f/a/b/s/e/w;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Lcom/fuib/android/spot/data/socket/SocketConnection$SuccessListener;Lcom/fuib/android/spot/data/socket/SocketConnection$FailListener;)V
+    invoke-direct {v1, p0, p1, p2}, Le/f/a/b/t/e/w;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Lcom/fuib/android/spot/data/socket/SocketConnection$SuccessListener;Lcom/fuib/android/spot/data/socket/SocketConnection$FailListener;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -1596,13 +1596,13 @@
     .locals 3
 
     .line 1
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v1, "SOCKET_LOG"
 
     const-string v2, "public disconnect"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -1610,15 +1610,15 @@
     iput-boolean v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->isAllowedToBeConnected:Z
 
     .line 3
-    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/c;->d()Ljava/util/concurrent/Executor;
+    invoke-virtual {v0}, Le/f/a/b/t/f/c;->d()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    new-instance v1, Le/f/a/b/s/e/i;
+    new-instance v1, Le/f/a/b/t/e/i;
 
-    invoke-direct {v1, p0}, Le/f/a/b/s/e/i;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;)V
+    invoke-direct {v1, p0}, Le/f/a/b/t/e/i;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -1701,7 +1701,7 @@
     .line 8
     :cond_2
     :try_start_0
-    sget-object v3, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v3, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1717,7 +1717,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v2, v4}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v3, v2, v4}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 9
     iget-object v3, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->socket:Ll/e0;
@@ -1747,18 +1747,18 @@
 
     .line 12
     :catch_0
-    sget-object p1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object p1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v0, "emit wasn\'t success, socket now is null"
 
-    invoke-virtual {p1, v2, v0}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v2, v0}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return v1
 
     .line 13
     :cond_4
     :goto_1
-    sget-object p1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object p1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1794,7 +1794,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1, v2, v0}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v2, v0}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return v1
 .end method
@@ -1803,15 +1803,15 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/c;->d()Ljava/util/concurrent/Executor;
+    invoke-virtual {v0}, Le/f/a/b/t/f/c;->d()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    new-instance v1, Le/f/a/b/s/e/k;
+    new-instance v1, Le/f/a/b/t/e/k;
 
-    invoke-direct {v1, p0, p1}, Le/f/a/b/s/e/k;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Lcom/fuib/android/spot/data/api/common/RawApiResponse;)V
+    invoke-direct {v1, p0, p1}, Le/f/a/b/t/e/k;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Lcom/fuib/android/spot/data/api/common/RawApiResponse;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -1834,15 +1834,15 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/s/f/c;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/socket/WebSocketClient;->appExecutors:Le/f/a/b/t/f/c;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/c;->d()Ljava/util/concurrent/Executor;
+    invoke-virtual {v0}, Le/f/a/b/t/f/c;->d()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    new-instance v1, Le/f/a/b/s/e/v;
+    new-instance v1, Le/f/a/b/t/e/v;
 
-    invoke-direct {v1, p0, p1}, Le/f/a/b/s/e/v;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Lcom/fuib/android/spot/data/socket/SocketListener;)V
+    invoke-direct {v1, p0, p1}, Le/f/a/b/t/e/v;-><init>(Lcom/fuib/android/spot/data/socket/WebSocketClient;Lcom/fuib/android/spot/data/socket/SocketListener;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 

@@ -740,7 +740,7 @@
 .method public c(I)Lb/k/e/h$d;
     .locals 0
 
-    .line 1
+    .line 2
     iput p1, p0, Lb/k/e/h$d;->k:I
 
     return-object p0
@@ -749,7 +749,7 @@
 .method public c(Ljava/lang/CharSequence;)Lb/k/e/h$d;
     .locals 1
 
-    .line 2
+    .line 3
     iget-object v0, p0, Lb/k/e/h$d;->N:Landroid/app/Notification;
 
     invoke-static {p1}, Lb/k/e/h$d;->d(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
@@ -757,6 +757,15 @@
     move-result-object p1
 
     iput-object p1, v0, Landroid/app/Notification;->tickerText:Ljava/lang/CharSequence;
+
+    return-object p0
+.end method
+
+.method public c(Z)Lb/k/e/h$d;
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lb/k/e/h$d;->m:Z
 
     return-object p0
 .end method

@@ -3,12 +3,12 @@
 .source "Okio.java"
 
 # interfaces
-.implements Lm/s;
+.implements Lm/t;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lm/l;->a(Ljava/io/InputStream;Lm/t;)Lm/s;
+    value = Lm/l;->a(Ljava/io/InputStream;Lm/u;)Lm/t;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field public final synthetic c:Lm/t;
+.field public final synthetic c:Lm/u;
 
 .field public final synthetic d:Ljava/io/InputStream;
 
 
 # direct methods
-.method public constructor <init>(Lm/t;Ljava/io/InputStream;)V
+.method public constructor <init>(Lm/u;Ljava/io/InputStream;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lm/l$b;->c:Lm/t;
+    iput-object p1, p0, Lm/l$b;->c:Lm/u;
 
     iput-object p2, p0, Lm/l$b;->d:Ljava/io/InputStream;
 
@@ -55,19 +55,19 @@
     .line 1
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lm/l$b;->c:Lm/t;
+    iget-object v0, p0, Lm/l$b;->c:Lm/u;
 
-    invoke-virtual {v0}, Lm/t;->e()V
+    invoke-virtual {v0}, Lm/u;->e()V
 
     const/4 v0, 0x1
 
     .line 2
-    invoke-virtual {p1, v0}, Lm/c;->b(I)Lm/o;
+    invoke-virtual {p1, v0}, Lm/c;->b(I)Lm/p;
 
     move-result-object v0
 
     .line 3
-    iget v1, v0, Lm/o;->c:I
+    iget v1, v0, Lm/p;->c:I
 
     rsub-int v1, v1, 0x2000
 
@@ -82,9 +82,9 @@
     .line 4
     iget-object p2, p0, Lm/l$b;->d:Ljava/io/InputStream;
 
-    iget-object v1, v0, Lm/o;->a:[B
+    iget-object v1, v0, Lm/p;->a:[B
 
-    iget v2, v0, Lm/o;->c:I
+    iget v2, v0, Lm/p;->c:I
 
     invoke-virtual {p2, v1, v2, p3}, Ljava/io/InputStream;->read([BII)I
 
@@ -100,11 +100,11 @@
 
     .line 5
     :cond_1
-    iget p3, v0, Lm/o;->c:I
+    iget p3, v0, Lm/p;->c:I
 
     add-int/2addr p3, p2
 
-    iput p3, v0, Lm/o;->c:I
+    iput p3, v0, Lm/p;->c:I
 
     .line 6
     iget-wide v0, p1, Lm/c;->d:J
@@ -173,11 +173,11 @@
     return-void
 .end method
 
-.method public i()Lm/t;
+.method public i()Lm/u;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lm/l$b;->c:Lm/t;
+    iget-object v0, p0, Lm/l$b;->c:Lm/u;
 
     return-object v0
 .end method

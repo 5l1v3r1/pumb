@@ -95,7 +95,7 @@
 
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/expandableFAB/ExtendableFAB$b;->c:Lcom/fuib/android/spot/presentation/common/widget/expandableFAB/ExtendableFAB;
 
-    sget v1, Le/f/a/b/n;->action_extendable:I
+    sget v1, Le/f/a/b/o;->action_extendable:I
 
     invoke-virtual {v0, v1}, Lcom/fuib/android/spot/presentation/common/widget/expandableFAB/ExtendableFAB;->_$_findCachedViewById(I)Landroid/view/View;
 

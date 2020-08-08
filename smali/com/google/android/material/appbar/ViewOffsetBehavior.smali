@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public a:Le/h/a/b/b/a;
+.field public a:Le/h/a/c/b/a;
 
 .field public b:I
 
@@ -64,12 +64,12 @@
     .locals 1
 
     .line 12
-    iget-object v0, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/b/b/a;
+    iget-object v0, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/c/b/a;
 
     if-eqz v0, :cond_0
 
     .line 13
-    invoke-virtual {v0, p1}, Le/h/a/b/b/a;->b(I)Z
+    invoke-virtual {v0, p1}, Le/h/a/c/b/a;->b(I)Z
 
     move-result p1
 
@@ -98,27 +98,27 @@
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/material/appbar/ViewOffsetBehavior;->b(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/b/b/a;
+    iget-object p1, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/c/b/a;
 
     if-nez p1, :cond_0
 
     .line 3
-    new-instance p1, Le/h/a/b/b/a;
+    new-instance p1, Le/h/a/c/b/a;
 
-    invoke-direct {p1, p2}, Le/h/a/b/b/a;-><init>(Landroid/view/View;)V
+    invoke-direct {p1, p2}, Le/h/a/c/b/a;-><init>(Landroid/view/View;)V
 
-    iput-object p1, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/b/b/a;
+    iput-object p1, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/c/b/a;
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/b/b/a;
+    iget-object p1, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/c/b/a;
 
-    invoke-virtual {p1}, Le/h/a/b/b/a;->d()V
+    invoke-virtual {p1}, Le/h/a/c/b/a;->d()V
 
     .line 5
-    iget-object p1, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/b/b/a;
+    iget-object p1, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/c/b/a;
 
-    invoke-virtual {p1}, Le/h/a/b/b/a;->a()V
+    invoke-virtual {p1}, Le/h/a/c/b/a;->a()V
 
     .line 6
     iget p1, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->b:I
@@ -128,9 +128,9 @@
     if-eqz p1, :cond_1
 
     .line 7
-    iget-object p3, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/b/b/a;
+    iget-object p3, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/c/b/a;
 
-    invoke-virtual {p3, p1}, Le/h/a/b/b/a;->b(I)Z
+    invoke-virtual {p3, p1}, Le/h/a/c/b/a;->b(I)Z
 
     .line 8
     iput p2, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->b:I
@@ -142,9 +142,9 @@
     if-eqz p1, :cond_2
 
     .line 10
-    iget-object p3, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/b/b/a;
+    iget-object p3, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/c/b/a;
 
-    invoke-virtual {p3, p1}, Le/h/a/b/b/a;->a(I)Z
+    invoke-virtual {p3, p1}, Le/h/a/c/b/a;->a(I)Z
 
     .line 11
     iput p2, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->c:I
@@ -159,11 +159,11 @@
     .locals 1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/b/b/a;
+    iget-object v0, p0, Lcom/google/android/material/appbar/ViewOffsetBehavior;->a:Le/h/a/c/b/a;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Le/h/a/b/b/a;->c()I
+    invoke-virtual {v0}, Le/h/a/c/b/a;->c()I
 
     move-result v0
 

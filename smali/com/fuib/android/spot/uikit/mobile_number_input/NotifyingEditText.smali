@@ -126,7 +126,7 @@
     .locals 1
 
     .line 3
-    sget v0, Le/f/a/b/y/a;->editTextStyle:I
+    sget v0, Le/f/a/b/z/a;->editTextStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/fuib/android/spot/uikit/mobile_number_input/NotifyingEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 

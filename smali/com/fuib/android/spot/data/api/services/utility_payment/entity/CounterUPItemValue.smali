@@ -183,7 +183,7 @@
 
     iget p1, p0, Lcom/fuib/android/spot/data/api/services/utility_payment/entity/CounterUPItemValue;->dpValues:I
 
-    invoke-static {p3, p4, p1}, Le/f/a/b/s/f/h1;->a(DI)Ljava/lang/String;
+    invoke-static {p3, p4, p1}, Le/f/a/b/t/f/h1;->a(DI)Ljava/lang/String;
 
     move-result-object p1
 
@@ -208,7 +208,7 @@
 
     iget p1, p0, Lcom/fuib/android/spot/data/api/services/utility_payment/entity/CounterUPItemValue;->dpValues:I
 
-    invoke-static {p3, p4, p1}, Le/f/a/b/s/f/h1;->a(DI)Ljava/lang/String;
+    invoke-static {p3, p4, p1}, Le/f/a/b/t/f/h1;->a(DI)Ljava/lang/String;
 
     move-result-object p1
 

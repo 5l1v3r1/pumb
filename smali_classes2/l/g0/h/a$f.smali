@@ -186,7 +186,7 @@
 
     sget-object v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
-    invoke-static {p0, v0, v1}, Ll/g0/c;->a(Lm/s;ILjava/util/concurrent/TimeUnit;)Z
+    invoke-static {p0, v0, v1}, Ll/g0/c;->a(Lm/t;ILjava/util/concurrent/TimeUnit;)Z
 
     move-result v0
 

@@ -50,17 +50,17 @@
 
 
 # instance fields
-.field public final a:Le/f/a/b/v/b/e/c;
+.field public final a:Le/f/a/b/w/b/e/c;
 
 
 # direct methods
-.method public constructor <init>(Le/f/a/b/v/b/e/c;)V
+.method public constructor <init>(Le/f/a/b/w/b/e/c;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/fuib/android/spot/presentation/tab/main/deposits/open/DepositCalculatorValidator;->a:Le/f/a/b/v/b/e/c;
+    iput-object p1, p0, Lcom/fuib/android/spot/presentation/tab/main/deposits/open/DepositCalculatorValidator;->a:Le/f/a/b/w/b/e/c;
 
     return-void
 .end method
@@ -136,11 +136,11 @@
     :cond_2
     new-instance p1, Lcom/fuib/android/spot/presentation/tab/main/deposits/open/DepositCalculatorValidator$OutOfMaxLimit;
 
-    const p2, 0x7f1203b1
+    const p2, 0x7f1203db
 
-    iget-object p3, p0, Lcom/fuib/android/spot/presentation/tab/main/deposits/open/DepositCalculatorValidator;->a:Le/f/a/b/v/b/e/c;
+    iget-object p3, p0, Lcom/fuib/android/spot/presentation/tab/main/deposits/open/DepositCalculatorValidator;->a:Le/f/a/b/w/b/e/c;
 
-    invoke-virtual {p3, p7, p5, p6}, Le/f/a/b/v/b/e/c;->a(Ljava/lang/String;J)Ljava/lang/String;
+    invoke-virtual {p3, p7, p5, p6}, Le/f/a/b/w/b/e/c;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p3
 
@@ -152,11 +152,11 @@
     :cond_3
     new-instance p1, Lcom/fuib/android/spot/presentation/tab/main/deposits/open/DepositCalculatorValidator$OutOfMinLimit;
 
-    const p2, 0x7f1203b2
+    const p2, 0x7f1203dc
 
-    iget-object p5, p0, Lcom/fuib/android/spot/presentation/tab/main/deposits/open/DepositCalculatorValidator;->a:Le/f/a/b/v/b/e/c;
+    iget-object p5, p0, Lcom/fuib/android/spot/presentation/tab/main/deposits/open/DepositCalculatorValidator;->a:Le/f/a/b/w/b/e/c;
 
-    invoke-virtual {p5, p7, p3, p4}, Le/f/a/b/v/b/e/c;->a(Ljava/lang/String;J)Ljava/lang/String;
+    invoke-virtual {p5, p7, p3, p4}, Le/f/a/b/w/b/e/c;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p3
 

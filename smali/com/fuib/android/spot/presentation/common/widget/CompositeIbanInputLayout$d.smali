@@ -44,7 +44,24 @@
 
     move-result p1
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_1
+
+    iget-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/CompositeIbanInputLayout$d;->c:Lcom/fuib/android/spot/presentation/common/widget/CompositeIbanInputLayout;
+
+    invoke-static {p1}, Lcom/fuib/android/spot/presentation/common/widget/CompositeIbanInputLayout;->c(Lcom/fuib/android/spot/presentation/common/widget/CompositeIbanInputLayout;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+
+    move-result p1
+
+    if-gez p5, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    if-le p1, p5, :cond_1
 
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/CompositeIbanInputLayout$d;->c:Lcom/fuib/android/spot/presentation/common/widget/CompositeIbanInputLayout;
 
@@ -66,15 +83,16 @@
 
     xor-int/lit8 p1, p1, 0x1
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_1
 
     const-string p1, ""
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_0
+    :cond_1
+    :goto_0
     const/4 p1, 0x0
 
-    :goto_0
+    :goto_1
     return-object p1
 .end method

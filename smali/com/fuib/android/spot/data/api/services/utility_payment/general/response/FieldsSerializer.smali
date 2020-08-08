@@ -74,9 +74,9 @@
 
     .line 3
     :cond_0
-    sget-object p2, Le/f/a/b/s/f/i0;->d:Le/f/a/b/s/f/i0;
+    sget-object p2, Le/f/a/b/t/f/i0;->d:Le/f/a/b/t/f/i0;
 
-    invoke-virtual {p2}, Le/f/a/b/s/f/i0;->b()Le/h/c/f;
+    invoke-virtual {p2}, Le/f/a/b/t/f/i0;->b()Le/h/c/f;
 
     move-result-object p2
 

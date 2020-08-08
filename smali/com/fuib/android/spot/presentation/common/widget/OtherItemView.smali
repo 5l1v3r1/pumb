@@ -81,13 +81,13 @@
     .line 1
     invoke-direct {p0, p1, p2, p3}, Landroidx/constraintlayout/widget/ConstraintLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const p1, 0x7f0d00cf
+    const p1, 0x7f0d00d8
 
     .line 2
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/widget/OtherItemView;->a(I)V
 
     .line 3
-    sget p1, Le/f/a/b/n;->arrow:I
+    sget p1, Le/f/a/b/o;->arrow:I
 
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/widget/OtherItemView;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -95,7 +95,7 @@
 
     check-cast p1, Landroid/widget/ImageView;
 
-    const p2, 0x7f080170
+    const p2, 0x7f080175
 
     invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -174,16 +174,16 @@
     return-void
 .end method
 
-.method public final a(Le/f/a/b/v/b/o/l;)V
+.method public final a(Le/f/a/b/w/b/o/l;)V
     .locals 2
 
-    const v0, 0x7f0d00cf
+    const v0, 0x7f0d00d8
 
     .line 4
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/widget/OtherItemView;->a(I)V
 
     .line 5
-    sget v0, Le/f/a/b/n;->image:I
+    sget v0, Le/f/a/b/o;->image:I
 
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/widget/OtherItemView;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -191,14 +191,14 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    invoke-virtual {p1}, Le/f/a/b/v/b/o/l;->a()I
+    invoke-virtual {p1}, Le/f/a/b/w/b/o/l;->a()I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 6
-    sget v0, Le/f/a/b/n;->title:I
+    sget v0, Le/f/a/b/o;->title:I
 
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/widget/OtherItemView;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -206,7 +206,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    invoke-virtual {p1}, Le/f/a/b/v/b/o/l;->b()I
+    invoke-virtual {p1}, Le/f/a/b/w/b/o/l;->b()I
 
     move-result p1
 
@@ -223,7 +223,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    sget p1, Le/f/a/b/n;->topBorder:I
+    sget p1, Le/f/a/b/o;->topBorder:I
 
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/widget/OtherItemView;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -239,7 +239,7 @@
 
     .line 2
     :cond_0
-    sget p1, Le/f/a/b/n;->topBorder:I
+    sget p1, Le/f/a/b/o;->topBorder:I
 
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/widget/OtherItemView;->_$_findCachedViewById(I)Landroid/view/View;
 

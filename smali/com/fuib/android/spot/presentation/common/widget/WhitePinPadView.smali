@@ -39,7 +39,7 @@
 .method public getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0d0100
+    const v0, 0x7f0d010b
 
     return v0
 .end method

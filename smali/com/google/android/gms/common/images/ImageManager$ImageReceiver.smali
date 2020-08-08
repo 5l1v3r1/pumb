@@ -23,7 +23,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
-            "Le/h/a/a/d/k/a;",
+            "Le/h/a/b/d/k/a;",
             ">;"
         }
     .end annotation

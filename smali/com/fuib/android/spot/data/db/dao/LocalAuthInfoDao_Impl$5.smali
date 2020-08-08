@@ -47,7 +47,7 @@
 
 # virtual methods
 .method public compute()Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;
-    .locals 13
+    .locals 14
 
     .line 2
     iget-object v0, p0, Lcom/fuib/android/spot/data/db/dao/LocalAuthInfoDao_Impl$5;->_observer:Lb/u/d$c;
@@ -153,40 +153,47 @@
 
     move-result v9
 
+    const-string v10, "securityCorrelationId"
+
     .line 14
-    invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
+    invoke-interface {v0, v10}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
     move-result v10
 
-    if-eqz v10, :cond_5
-
     .line 15
-    new-instance v10, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;
+    invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
 
-    invoke-direct {v10}, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;-><init>()V
+    move-result v11
+
+    if-eqz v11, :cond_5
 
     .line 16
-    invoke-interface {v0, v2}, Landroid/database/Cursor;->getLong(I)J
+    new-instance v11, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;
 
-    move-result-wide v11
-
-    iput-wide v11, v10, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->id:J
+    invoke-direct {v11}, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;-><init>()V
 
     .line 17
+    invoke-interface {v0, v2}, Landroid/database/Cursor;->getLong(I)J
+
+    move-result-wide v12
+
+    iput-wide v12, v11, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->id:J
+
+    .line 18
     invoke-interface {v0, v3}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    iput-object v2, v10, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->phone:Ljava/lang/String;
+    iput-object v2, v11, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->phone:Ljava/lang/String;
 
-    .line 18
+    .line 19
     invoke-interface {v0, v4}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    iput-object v2, v10, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->key:Ljava/lang/String;
+    iput-object v2, v11, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->key:Ljava/lang/String;
 
-    .line 19
+    .line 20
     invoke-interface {v0, v5}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v2
@@ -202,11 +209,11 @@
     :cond_1
     const/4 v2, 0x0
 
-    .line 20
-    :goto_0
-    iput-boolean v2, v10, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->isTouch:Z
-
     .line 21
+    :goto_0
+    iput-boolean v2, v11, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->isTouch:Z
+
+    .line 22
     invoke-interface {v0, v6}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v2
@@ -220,11 +227,11 @@
     :cond_2
     const/4 v2, 0x0
 
-    .line 22
-    :goto_1
-    iput-boolean v2, v10, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->isPin:Z
-
     .line 23
+    :goto_1
+    iput-boolean v2, v11, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->isPin:Z
+
+    .line 24
     invoke-interface {v0, v7}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v2
@@ -238,11 +245,11 @@
     :cond_3
     const/4 v2, 0x0
 
-    .line 24
-    :goto_2
-    iput-boolean v2, v10, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->isFirstRun:Z
-
     .line 25
+    :goto_2
+    iput-boolean v2, v11, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->isFirstRun:Z
+
+    .line 26
     invoke-interface {v0, v8}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v2
@@ -251,36 +258,43 @@
 
     const/4 v1, 0x1
 
-    .line 26
-    :cond_4
-    iput-boolean v1, v10, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->isAccountHasPin:Z
-
     .line 27
+    :cond_4
+    iput-boolean v1, v11, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->isAccountHasPin:Z
+
+    .line 28
     invoke-interface {v0, v9}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v10, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->resetPwCorrelationId:Ljava/lang/String;
+    iput-object v1, v11, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->resetPwCorrelationId:Ljava/lang/String;
+
+    .line 29
+    invoke-interface {v0, v10}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v11, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->securityCorrelationId:Ljava/lang/String;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_3
 
     :cond_5
-    const/4 v10, 0x0
+    const/4 v11, 0x0
 
-    .line 28
+    .line 30
     :goto_3
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    return-object v10
+    return-object v11
 
     :catchall_0
     move-exception v1
 
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    .line 29
+    .line 31
     throw v1
 .end method
 

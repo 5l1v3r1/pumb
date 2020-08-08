@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public q()I
+.method public r()I
     .locals 1
 
     .line 1
@@ -38,7 +38,7 @@
     return v0
 .end method
 
-.method public r()J
+.method public s()J
     .locals 2
 
     .line 1

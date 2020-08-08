@@ -1,123 +1,54 @@
-.class public final Le/f/a/b/x/k;
+.class public final synthetic Le/f/a/b/x/k;
 .super Ljava/lang/Object;
-.source "QuickAuthAvailabilityProvider_Factory.java"
+.source "lambda"
 
 # interfaces
-.implements Lf/d/d;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lf/d/d<",
-        "Le/f/a/b/x/j;",
-        ">;"
-    }
-.end annotation
+.implements Lb/p/p;
 
 
 # instance fields
-.field public final a:Lj/a/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj/a/a<",
-            "Le/f/a/b/s/d/d;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private final synthetic a:Le/f/a/b/x/l0$i;
+
+.field private final synthetic b:Lb/p/m;
+
+.field private final synthetic c:Landroidx/lifecycle/LiveData;
+
+.field private final synthetic d:Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;
 
 
 # direct methods
-.method public constructor <init>(Lj/a/a;)V
+.method public synthetic constructor <init>(Le/f/a/b/x/l0$i;Lb/p/m;Landroidx/lifecycle/LiveData;Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj/a/a<",
-            "Le/f/a/b/s/d/d;",
-            ">;)V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Le/f/a/b/x/k;->a:Lj/a/a;
+    iput-object p1, p0, Le/f/a/b/x/k;->a:Le/f/a/b/x/l0$i;
+
+    iput-object p2, p0, Le/f/a/b/x/k;->b:Lb/p/m;
+
+    iput-object p3, p0, Le/f/a/b/x/k;->c:Landroidx/lifecycle/LiveData;
+
+    iput-object p4, p0, Le/f/a/b/x/k;->d:Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;
 
     return-void
 .end method
 
-.method public static a(Lj/a/a;)Le/f/a/b/x/k;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj/a/a<",
-            "Le/f/a/b/s/d/d;",
-            ">;)",
-            "Le/f/a/b/x/k;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Le/f/a/b/x/k;
-
-    invoke-direct {v0, p0}, Le/f/a/b/x/k;-><init>(Lj/a/a;)V
-
-    return-object v0
-.end method
-
-.method public static b(Lj/a/a;)Le/f/a/b/x/j;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj/a/a<",
-            "Le/f/a/b/s/d/d;",
-            ">;)",
-            "Le/f/a/b/x/j;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Le/f/a/b/x/j;
-
-    invoke-interface {p0}, Lj/a/a;->get()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Le/f/a/b/s/d/d;
-
-    invoke-direct {v0, p0}, Le/f/a/b/x/j;-><init>(Le/f/a/b/s/d/d;)V
-
-    return-object v0
-.end method
-
 
 # virtual methods
-.method public get()Le/f/a/b/x/j;
-    .locals 1
+.method public final onChanged(Ljava/lang/Object;)V
+    .locals 4
 
-    .line 2
-    iget-object v0, p0, Le/f/a/b/x/k;->a:Lj/a/a;
+    iget-object v0, p0, Le/f/a/b/x/k;->a:Le/f/a/b/x/l0$i;
 
-    invoke-static {v0}, Le/f/a/b/x/k;->b(Lj/a/a;)Le/f/a/b/x/j;
+    iget-object v1, p0, Le/f/a/b/x/k;->b:Lb/p/m;
 
-    move-result-object v0
+    iget-object v2, p0, Le/f/a/b/x/k;->c:Landroidx/lifecycle/LiveData;
 
-    return-object v0
-.end method
+    iget-object v3, p0, Le/f/a/b/x/k;->d:Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;
 
-.method public bridge synthetic get()Ljava/lang/Object;
-    .locals 1
+    check-cast p1, Lcom/fuib/android/spot/data/db/entities/SettingsWrapperEntity;
 
-    .line 1
-    invoke-virtual {p0}, Le/f/a/b/x/k;->get()Le/f/a/b/x/j;
+    invoke-virtual {v0, v1, v2, v3, p1}, Le/f/a/b/x/l0$i;->a(Lb/p/m;Landroidx/lifecycle/LiveData;Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;Lcom/fuib/android/spot/data/db/entities/SettingsWrapperEntity;)V
 
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

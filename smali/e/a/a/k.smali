@@ -1,210 +1,315 @@
-.class public final Le/a/a/k;
+.class public interface abstract Le/a/a/k;
 .super Ljava/lang/Object;
-.source "LottieResult.java"
+.source "LottieProperty.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<V:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+# static fields
+.field public static final A:Ljava/lang/Float;
 
+.field public static final B:Ljava/lang/Float;
 
-# instance fields
-.field public final a:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TV;"
-        }
-    .end annotation
-.end field
+.field public static final C:Landroid/graphics/ColorFilter;
 
-.field public final b:Ljava/lang/Throwable;
+.field public static final D:[Ljava/lang/Integer;
+
+.field public static final a:Ljava/lang/Integer;
+
+.field public static final b:Ljava/lang/Integer;
+
+.field public static final c:Ljava/lang/Integer;
+
+.field public static final d:Ljava/lang/Integer;
+
+.field public static final e:Landroid/graphics/PointF;
+
+.field public static final f:Landroid/graphics/PointF;
+
+.field public static final g:Landroid/graphics/PointF;
+
+.field public static final h:Landroid/graphics/PointF;
+
+.field public static final i:Ljava/lang/Float;
+
+.field public static final j:Landroid/graphics/PointF;
+
+.field public static final k:Le/a/a/y/d;
+
+.field public static final l:Ljava/lang/Float;
+
+.field public static final m:Ljava/lang/Float;
+
+.field public static final n:Ljava/lang/Float;
+
+.field public static final o:Ljava/lang/Float;
+
+.field public static final p:Ljava/lang/Float;
+
+.field public static final q:Ljava/lang/Float;
+
+.field public static final r:Ljava/lang/Float;
+
+.field public static final s:Ljava/lang/Float;
+
+.field public static final t:Ljava/lang/Float;
+
+.field public static final u:Ljava/lang/Float;
+
+.field public static final v:Ljava/lang/Float;
+
+.field public static final w:Ljava/lang/Float;
+
+.field public static final x:Ljava/lang/Float;
+
+.field public static final y:Ljava/lang/Float;
+
+.field public static final z:Ljava/lang/Float;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TV;)V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Le/a/a/k;->a:Ljava/lang/Object;
-
-    const/4 p1, 0x0
-
-    .line 3
-    iput-object p1, p0, Le/a/a/k;->b:Ljava/lang/Throwable;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/Throwable;)V
-    .locals 0
-
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 5
-    iput-object p1, p0, Le/a/a/k;->b:Ljava/lang/Throwable;
-
-    const/4 p1, 0x0
-
-    .line 6
-    iput-object p1, p0, Le/a/a/k;->a:Ljava/lang/Object;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a()Ljava/lang/Throwable;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Le/a/a/k;->b:Ljava/lang/Throwable;
-
-    return-object v0
-.end method
-
-.method public b()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TV;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Le/a/a/k;->a:Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public static constructor <clinit>()V
+    .locals 2
 
     const/4 v0, 0x1
 
-    if-ne p0, p1, :cond_0
-
-    return v0
-
     .line 1
-    :cond_0
-    instance-of v1, p1, Le/a/a/k;
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_1
-
-    return v2
-
-    .line 2
-    :cond_1
-    check-cast p1, Le/a/a/k;
-
-    .line 3
-    invoke-virtual {p0}, Le/a/a/k;->b()Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_2
-
-    invoke-virtual {p0}, Le/a/a/k;->b()Ljava/lang/Object;
-
-    move-result-object v1
-
-    invoke-virtual {p1}, Le/a/a/k;->b()Ljava/lang/Object;
-
-    move-result-object v3
-
-    invoke-virtual {v1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
-    return v0
-
-    .line 4
-    :cond_2
-    invoke-virtual {p0}, Le/a/a/k;->a()Ljava/lang/Throwable;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
-    if-eqz v0, :cond_3
-
-    invoke-virtual {p1}, Le/a/a/k;->a()Ljava/lang/Throwable;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_3
-
-    .line 5
-    invoke-virtual {p0}, Le/a/a/k;->a()Ljava/lang/Throwable;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p0}, Le/a/a/k;->a()Ljava/lang/Throwable;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
-
-    :cond_3
-    return v2
-.end method
-
-.method public hashCode()I
-    .locals 3
+    sput-object v0, Le/a/a/k;->a:Ljava/lang/Integer;
 
     const/4 v0, 0x2
 
-    new-array v0, v0, [Ljava/lang/Object;
+    .line 2
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 1
-    invoke-virtual {p0}, Le/a/a/k;->b()Ljava/lang/Object;
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->b:Ljava/lang/Integer;
+
+    const/4 v0, 0x3
+
+    .line 3
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->c:Ljava/lang/Integer;
+
+    const/4 v0, 0x4
+
+    .line 4
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->d:Ljava/lang/Integer;
+
+    .line 5
+    new-instance v0, Landroid/graphics/PointF;
+
+    invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
+
+    sput-object v0, Le/a/a/k;->e:Landroid/graphics/PointF;
+
+    .line 6
+    new-instance v0, Landroid/graphics/PointF;
+
+    invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
+
+    sput-object v0, Le/a/a/k;->f:Landroid/graphics/PointF;
+
+    .line 7
+    new-instance v0, Landroid/graphics/PointF;
+
+    invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
+
+    sput-object v0, Le/a/a/k;->g:Landroid/graphics/PointF;
+
+    .line 8
+    new-instance v0, Landroid/graphics/PointF;
+
+    invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
+
+    sput-object v0, Le/a/a/k;->h:Landroid/graphics/PointF;
+
+    const/4 v0, 0x0
+
+    .line 9
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->i:Ljava/lang/Float;
+
+    .line 10
+    new-instance v1, Landroid/graphics/PointF;
+
+    invoke-direct {v1}, Landroid/graphics/PointF;-><init>()V
+
+    sput-object v1, Le/a/a/k;->j:Landroid/graphics/PointF;
+
+    .line 11
+    new-instance v1, Le/a/a/y/d;
+
+    invoke-direct {v1}, Le/a/a/y/d;-><init>()V
+
+    sput-object v1, Le/a/a/k;->k:Le/a/a/y/d;
+
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    .line 12
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v1
 
-    const/4 v2, 0x0
+    sput-object v1, Le/a/a/k;->l:Ljava/lang/Float;
 
-    aput-object v1, v0, v2
+    .line 13
+    sput-object v0, Le/a/a/k;->m:Ljava/lang/Float;
 
-    invoke-virtual {p0}, Le/a/a/k;->a()Ljava/lang/Throwable;
+    .line 14
+    sput-object v0, Le/a/a/k;->n:Ljava/lang/Float;
 
-    move-result-object v1
+    const/high16 v0, 0x40000000    # 2.0f
 
-    const/4 v2, 0x1
+    .line 15
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    aput-object v1, v0, v2
+    move-result-object v0
 
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+    sput-object v0, Le/a/a/k;->o:Ljava/lang/Float;
 
-    move-result v0
+    const/high16 v0, 0x40400000    # 3.0f
 
-    return v0
+    .line 16
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->p:Ljava/lang/Float;
+
+    const/high16 v0, 0x40800000    # 4.0f
+
+    .line 17
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->q:Ljava/lang/Float;
+
+    const/high16 v0, 0x40a00000    # 5.0f
+
+    .line 18
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->r:Ljava/lang/Float;
+
+    const/high16 v0, 0x40c00000    # 6.0f
+
+    .line 19
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->s:Ljava/lang/Float;
+
+    const/high16 v0, 0x40e00000    # 7.0f
+
+    .line 20
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->t:Ljava/lang/Float;
+
+    const/high16 v0, 0x41000000    # 8.0f
+
+    .line 21
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->u:Ljava/lang/Float;
+
+    const/high16 v0, 0x41100000    # 9.0f
+
+    .line 22
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->v:Ljava/lang/Float;
+
+    const/high16 v0, 0x41200000    # 10.0f
+
+    .line 23
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->w:Ljava/lang/Float;
+
+    const/high16 v0, 0x41300000    # 11.0f
+
+    .line 24
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->x:Ljava/lang/Float;
+
+    const/high16 v0, 0x41400000    # 12.0f
+
+    .line 25
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->y:Ljava/lang/Float;
+
+    const v0, 0x4141999a    # 12.1f
+
+    .line 26
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->z:Ljava/lang/Float;
+
+    const/high16 v0, 0x41500000    # 13.0f
+
+    .line 27
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->A:Ljava/lang/Float;
+
+    const/high16 v0, 0x41600000    # 14.0f
+
+    .line 28
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    sput-object v0, Le/a/a/k;->B:Ljava/lang/Float;
+
+    .line 29
+    new-instance v0, Landroid/graphics/ColorFilter;
+
+    invoke-direct {v0}, Landroid/graphics/ColorFilter;-><init>()V
+
+    sput-object v0, Le/a/a/k;->C:Landroid/graphics/ColorFilter;
+
+    const/4 v0, 0x0
+
+    new-array v0, v0, [Ljava/lang/Integer;
+
+    .line 30
+    sput-object v0, Le/a/a/k;->D:[Ljava/lang/Integer;
+
+    return-void
 .end method

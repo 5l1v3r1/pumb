@@ -116,7 +116,7 @@
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p0, v2}, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity$a;-><init>(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;Le/h/a/a/b/a/h/b/v;)V
+    invoke-direct {v1, p0, v2}, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity$a;-><init>(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;Le/h/a/b/b/a/h/b/v;)V
 
     const/4 v3, 0x0
 
@@ -179,7 +179,7 @@
     move-result-object p1
 
     .line 6
-    invoke-static {p0}, Le/h/a/a/b/a/h/b/m;->a(Landroid/content/Context;)Le/h/a/a/b/a/h/b/m;
+    invoke-static {p0}, Le/h/a/b/b/a/h/b/m;->a(Landroid/content/Context;)Le/h/a/b/b/a/h/b/m;
 
     move-result-object v1
 
@@ -190,7 +190,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2, p1}, Le/h/a/a/b/a/h/b/m;->a(Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;)V
+    invoke-virtual {v1, v2, p1}, Le/h/a/b/b/a/h/b/m;->a(Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;)V
 
     .line 8
     invoke-virtual {p3, v0}, Landroid/content/Intent;->removeExtra(Ljava/lang/String;)V

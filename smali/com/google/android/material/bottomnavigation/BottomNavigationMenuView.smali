@@ -244,9 +244,9 @@
     .line 22
     iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->c:Landroidx/transition/TransitionSet;
 
-    new-instance v0, Le/h/a/b/r/h;
+    new-instance v0, Le/h/a/c/r/h;
 
-    invoke-direct {v0}, Le/h/a/b/r/h;-><init>()V
+    invoke-direct {v0}, Le/h/a/c/r/h;-><init>()V
 
     invoke-virtual {p1, v0}, Landroidx/transition/TransitionSet;->a(Landroidx/transition/Transition;)Landroidx/transition/TransitionSet;
 

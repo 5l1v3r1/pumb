@@ -171,7 +171,7 @@
     invoke-virtual {p1, v1, v0}, Lo/a/a$c;->b(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 3
-    invoke-static {}, Le/f/a/b/s/f/a;->i()Landroidx/lifecycle/LiveData;
+    invoke-static {}, Le/f/a/b/t/f/a;->i()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 

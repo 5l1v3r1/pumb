@@ -47,7 +47,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Le/f/a/b/s/f/e;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Le/f/a/b/t/f/e;)V
     .locals 9
 
     .line 1
@@ -70,7 +70,7 @@
 
     move-object v7, p6
 
-    invoke-direct/range {v1 .. v7}, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckTmpPasswordRequestData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Le/f/a/b/s/f/e;)V
+    invoke-direct/range {v1 .. v7}, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckTmpPasswordRequestData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Le/f/a/b/t/f/e;)V
 
     .line 3
     invoke-direct {p0, v0, v8}, Lcom/fuib/android/spot/data/api/common/ApiRequest;-><init>(Lcom/fuib/android/spot/data/api/common/NetRequest$Type;Lcom/fuib/android/spot/data/api/common/ApiRequestData;)V

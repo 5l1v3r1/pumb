@@ -1,79 +1,149 @@
 .class public final Le/h/a/a/i/b/e;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.super Le/h/a/a/i/b/k;
+.source "com.google.android.datatransport:transport-backend-cct@@2.2.0"
 
 
 # instance fields
-.field public final synthetic c:Le/h/a/a/i/b/l5;
-
-.field public final synthetic d:Le/h/a/a/i/b/b;
+.field public final a:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Le/h/a/a/i/b/r;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Le/h/a/a/i/b/b;Le/h/a/a/i/b/l5;)V
-    .locals 0
+.method public constructor <init>(Ljava/util/List;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Le/h/a/a/i/b/r;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
-    iput-object p1, p0, Le/h/a/a/i/b/e;->d:Le/h/a/a/i/b/b;
+    invoke-direct {p0}, Le/h/a/a/i/b/k;-><init>()V
 
-    iput-object p2, p0, Le/h/a/a/i/b/e;->c:Le/h/a/a/i/b/l5;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Le/h/a/a/i/b/e;->c:Le/h/a/a/i/b/l5;
-
-    invoke-interface {v0}, Le/h/a/a/i/b/l5;->b()Le/h/a/a/i/b/c9;
-
-    invoke-static {}, Le/h/a/a/i/b/c9;->a()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
+    if-eqz p1, :cond_0
 
     .line 2
-    iget-object v0, p0, Le/h/a/a/i/b/e;->c:Le/h/a/a/i/b/l5;
-
-    invoke-interface {v0}, Le/h/a/a/i/b/l5;->a()Le/h/a/a/i/b/g4;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Le/h/a/a/i/b/g4;->a(Ljava/lang/Runnable;)V
+    iput-object p1, p0, Le/h/a/a/i/b/e;->a:Ljava/util/List;
 
     return-void
 
     .line 3
     :cond_0
-    iget-object v0, p0, Le/h/a/a/i/b/e;->d:Le/h/a/a/i/b/b;
+    new-instance p1, Ljava/lang/NullPointerException;
 
-    invoke-virtual {v0}, Le/h/a/a/i/b/b;->d()Z
+    const-string v0, "Null logRequests"
 
-    move-result v0
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
-    .line 4
-    iget-object v1, p0, Le/h/a/a/i/b/e;->d:Le/h/a/a/i/b/b;
+    throw p1
+.end method
 
-    const-wide/16 v2, 0x0
 
-    invoke-static {v1, v2, v3}, Le/h/a/a/i/b/b;->a(Le/h/a/a/i/b/b;J)J
+# virtual methods
+.method public a()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Le/h/a/a/i/b/r;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Le/h/a/a/i/b/e;->a:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    if-ne p1, p0, :cond_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    .line 1
+    :cond_0
+    instance-of v0, p1, Le/h/a/a/i/b/k;
 
     if-eqz v0, :cond_1
 
-    .line 5
-    iget-object v0, p0, Le/h/a/a/i/b/e;->d:Le/h/a/a/i/b/b;
+    .line 2
+    check-cast p1, Le/h/a/a/i/b/k;
 
-    invoke-virtual {v0}, Le/h/a/a/i/b/b;->c()V
+    .line 3
+    iget-object v0, p0, Le/h/a/a/i/b/e;->a:Ljava/util/List;
+
+    invoke-virtual {p1}, Le/h/a/a/i/b/k;->a()Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-interface {v0, p1}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
 
     :cond_1
-    return-void
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Le/h/a/a/i/b/e;->a:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->hashCode()I
+
+    move-result v0
+
+    const v1, 0xf4243
+
+    xor-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "BatchedLogRequest{logRequests="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Le/h/a/a/i/b/e;->a:Ljava/util/List;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, "}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

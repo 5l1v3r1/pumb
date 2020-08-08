@@ -63,7 +63,7 @@
     :cond_0
     iget-object v0, p0, Ld/a/a/h$b;->b:Ld/a/a/h;
 
-    invoke-virtual {v0}, Ld/a/a/h;->c()V
+    invoke-virtual {v0}, Ld/a/a/h;->cancel()V
 
     .line 5
     :cond_1
@@ -80,7 +80,7 @@
     .line 1
     iget-object v0, p0, Ld/a/a/h$b;->b:Ld/a/a/h;
 
-    invoke-virtual {v0}, Ld/a/a/h;->c()V
+    invoke-virtual {v0}, Ld/a/a/h;->cancel()V
 
     .line 2
     iget-object v0, p0, Ld/a/a/h$b;->a:Ld/a/a/g$c;

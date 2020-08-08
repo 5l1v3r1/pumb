@@ -64,14 +64,14 @@
     if-eqz p4, :cond_5
 
     .line 6
-    invoke-virtual {p4}, Ll/a0;->B()J
+    invoke-virtual {p4}, Ll/a0;->E()J
 
     move-result-wide p1
 
     iput-wide p1, p0, Ll/g0/e/c$a;->i:J
 
     .line 7
-    invoke-virtual {p4}, Ll/a0;->z()J
+    invoke-virtual {p4}, Ll/a0;->C()J
 
     move-result-wide p1
 
@@ -393,7 +393,7 @@
     iget-object v0, p0, Ll/g0/e/c$a;->c:Ll/a0;
 
     .line 10
-    invoke-virtual {v0}, Ll/a0;->A()Ll/y;
+    invoke-virtual {v0}, Ll/a0;->D()Ll/y;
 
     move-result-object v0
 
@@ -709,7 +709,7 @@
     .line 21
     iget-object v0, p0, Ll/g0/e/c$a;->c:Ll/a0;
 
-    invoke-virtual {v0}, Ll/a0;->x()Ll/a0$a;
+    invoke-virtual {v0}, Ll/a0;->A()Ll/a0$a;
 
     move-result-object v0
 

@@ -140,10 +140,27 @@
     :cond_2
     invoke-interface {p1, v1, v0}, Lb/w/a/d;->a(ILjava/lang/String;)V
 
-    :goto_2
-    const/16 v0, 0x9
-
     .line 20
+    :goto_2
+    iget-object v0, p2, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->securityCorrelationId:Ljava/lang/String;
+
+    const/16 v1, 0x9
+
+    if-nez v0, :cond_3
+
+    .line 21
+    invoke-interface {p1, v1}, Lb/w/a/d;->a(I)V
+
+    goto :goto_3
+
+    .line 22
+    :cond_3
+    invoke-interface {p1, v1, v0}, Lb/w/a/d;->a(ILjava/lang/String;)V
+
+    :goto_3
+    const/16 v0, 0xa
+
+    .line 23
     iget-wide v1, p2, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->id:J
 
     invoke-interface {p1, v0, v1, v2}, Lb/w/a/d;->a(IJ)V
@@ -165,7 +182,7 @@
 .method public createQuery()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "UPDATE OR ABORT `auth_info` SET `id` = ?,`phone` = ?,`key` = ?,`isTouch` = ?,`isPin` = ?,`isFirstRun` = ?,`isAccountHasPin` = ?,`resetPwCorrelationId` = ? WHERE `id` = ?"
+    const-string v0, "UPDATE OR ABORT `auth_info` SET `id` = ?,`phone` = ?,`key` = ?,`isTouch` = ?,`isPin` = ?,`isFirstRun` = ?,`isAccountHasPin` = ?,`resetPwCorrelationId` = ?,`securityCorrelationId` = ? WHERE `id` = ?"
 
     return-object v0
 .end method

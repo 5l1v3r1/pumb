@@ -4,11 +4,15 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:I
 
-.field public final b:Ljava/lang/String;
+.field public final b:I
 
-.field public c:Landroid/graphics/Bitmap;
+.field public final c:Ljava/lang/String;
+
+.field public final d:Ljava/lang/String;
+
+.field public e:Landroid/graphics/Bitmap;
 
 
 # direct methods
@@ -19,10 +23,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p3, p0, Le/a/a/g;->a:Ljava/lang/String;
+    iput p1, p0, Le/a/a/g;->a:I
 
     .line 3
-    iput-object p4, p0, Le/a/a/g;->b:Ljava/lang/String;
+    iput p2, p0, Le/a/a/g;->b:I
+
+    .line 4
+    iput-object p3, p0, Le/a/a/g;->c:Ljava/lang/String;
+
+    .line 5
+    iput-object p4, p0, Le/a/a/g;->d:Ljava/lang/String;
 
     return-void
 .end method
@@ -33,7 +43,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Le/a/a/g;->c:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Le/a/a/g;->e:Landroid/graphics/Bitmap;
 
     return-object v0
 .end method
@@ -42,7 +52,7 @@
     .locals 0
 
     .line 2
-    iput-object p1, p0, Le/a/a/g;->c:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Le/a/a/g;->e:Landroid/graphics/Bitmap;
 
     return-void
 .end method
@@ -51,16 +61,34 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Le/a/a/g;->b:Ljava/lang/String;
+    iget-object v0, p0, Le/a/a/g;->d:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public c()Ljava/lang/String;
+.method public c()I
     .locals 1
 
     .line 1
-    iget-object v0, p0, Le/a/a/g;->a:Ljava/lang/String;
+    iget v0, p0, Le/a/a/g;->b:I
+
+    return v0
+.end method
+
+.method public d()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Le/a/a/g;->c:Ljava/lang/String;
 
     return-object v0
+.end method
+
+.method public e()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Le/a/a/g;->a:I
+
+    return v0
 .end method

@@ -66,7 +66,7 @@
 
 
 # virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView;Le/f/a/b/v/b/m/s;Le/f/a/b/r/c/l/s/p0;)V
+.method public final a(Landroidx/recyclerview/widget/RecyclerView;Le/f/a/b/w/b/m/s;Le/f/a/b/s/c/l/s/p0;)V
     .locals 2
 
     if-eqz p1, :cond_0
@@ -82,12 +82,12 @@
     invoke-direct {v1, v0, v0}, Lcom/fuib/android/spot/presentation/tab/services/utilities/FieldsAdapterHelper$Companion$setupFieldListForDisplay$1$layoutManager$1;-><init>(Landroid/content/Context;Landroid/content/Context;)V
 
     .line 3
-    new-instance v0, Le/f/a/b/v/f/h/e0/z;
+    new-instance v0, Le/f/a/b/w/f/k/e0/z;
 
-    invoke-direct {v0, p2}, Le/f/a/b/v/f/h/e0/z;-><init>(Le/f/a/b/v/b/m/s;)V
+    invoke-direct {v0, p2}, Le/f/a/b/w/f/k/e0/z;-><init>(Le/f/a/b/w/b/m/s;)V
 
     .line 4
-    invoke-virtual {v0, p3}, Le/f/a/b/v/f/h/e0/a;->a(Le/f/a/b/r/c/l/s/p0;)V
+    invoke-virtual {v0, p3}, Le/f/a/b/w/f/k/e0/a;->a(Le/f/a/b/s/c/l/s/p0;)V
 
     .line 5
     invoke-virtual {p1, v1}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$o;)V
@@ -116,7 +116,7 @@
 
     move-result-object p1
 
-    sget-object p2, Le/f/a/b/v/f/h/e0/k0;->GROUP:Le/f/a/b/v/f/h/e0/k0;
+    sget-object p2, Le/f/a/b/w/f/k/e0/k0;->GROUP:Le/f/a/b/w/f/k/e0/k0;
 
     invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
 

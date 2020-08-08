@@ -1,9 +1,9 @@
 .class public final Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment;
-.super Le/f/a/b/v/b/d/e;
+.super Le/f/a/b/w/b/d/e;
 .source "Transfer3DSFragment.kt"
 
 # interfaces
-.implements Le/f/a/b/v/f/i/y/d;
+.implements Le/f/a/b/w/f/l/y/d;
 
 
 # annotations
@@ -16,10 +16,10 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Le/f/a/b/v/b/d/e<",
-        "Le/f/a/b/v/f/i/p/b;",
+        "Le/f/a/b/w/b/d/e<",
+        "Le/f/a/b/w/f/l/p/b;",
         ">;",
-        "Le/f/a/b/v/f/i/y/d;"
+        "Le/f/a/b/w/f/l/y/d;"
     }
 .end annotation
 
@@ -122,7 +122,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Le/f/a/b/v/b/d/e;-><init>()V
+    invoke-direct {p0}, Le/f/a/b/w/b/d/e;-><init>()V
 
     return-void
 .end method
@@ -178,21 +178,21 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v1, Le/f/a/b/v/b/m/j;->a:Le/f/a/b/v/b/m/j;
+    sget-object v1, Le/f/a/b/w/b/m/j;->a:Le/f/a/b/w/b/m/j;
 
     .line 3
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->v()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v2
 
-    const v0, 0x7f120138
+    const v0, 0x7f12015e
 
     .line 4
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
 
-    const v0, 0x7f12009c
+    const v0, 0x7f1200a9
 
     .line 5
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -219,7 +219,7 @@
     const/4 v12, 0x0
 
     .line 7
-    invoke-static/range {v1 .. v12}, Le/f/a/b/v/b/m/j;->a(Le/f/a/b/v/b/m/j;Landroid/app/Activity;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;IIZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+    invoke-static/range {v1 .. v12}, Le/f/a/b/w/b/m/j;->a(Le/f/a/b/w/b/m/j;Landroid/app/Activity;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;IIZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
 
     .line 8
     :cond_0
@@ -239,7 +239,7 @@
     .end annotation
 
     .line 3
-    invoke-super {p0, p1, p2}, Le/f/a/b/v/b/d/e;->a(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Le/f/a/b/w/b/d/e;->a(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 4
     new-instance p2, Lb/p/o;
@@ -249,10 +249,10 @@
     iput-object p2, p0, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment;->y0:Lb/p/o;
 
     .line 5
-    invoke-virtual {p0}, Le/f/a/b/v/b/d/e;->p1()V
+    invoke-virtual {p0}, Le/f/a/b/w/b/d/e;->p1()V
 
     .line 6
-    sget p2, Le/f/a/b/n;->progress_general:I
+    sget p2, Le/f/a/b/o;->progress_general:I
 
     invoke-virtual {p0, p2}, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment;->i(I)Landroid/view/View;
 
@@ -382,17 +382,17 @@
 
     .line 20
     :cond_1
-    invoke-virtual {p0}, Le/f/a/b/v/b/f/c;->d1()Le/f/a/b/v/b/n/a;
+    invoke-virtual {p0}, Le/f/a/b/w/b/f/c;->d1()Le/f/a/b/w/b/n/a;
 
     move-result-object p1
 
-    check-cast p1, Le/f/a/b/v/f/i/p/b;
+    check-cast p1, Le/f/a/b/w/f/l/p/b;
 
-    invoke-virtual {p1}, Le/f/a/b/v/f/i/p/b;->v()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p1}, Le/f/a/b/w/f/l/p/b;->y()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
-    invoke-virtual {p0}, Le/f/a/b/v/b/f/c;->Z0()Lb/p/i;
+    invoke-virtual {p0}, Le/f/a/b/w/b/f/c;->Z0()Lb/p/i;
 
     move-result-object v0
 
@@ -410,7 +410,7 @@
     invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     :cond_2
-    invoke-virtual {p0}, Le/f/a/b/v/b/f/c;->Z0()Lb/p/i;
+    invoke-virtual {p0}, Le/f/a/b/w/b/f/c;->Z0()Lb/p/i;
 
     move-result-object p2
 
@@ -429,13 +429,13 @@
         value = {
             "()",
             "Ljava/lang/Class<",
-            "Le/f/a/b/v/f/i/p/b;",
+            "Le/f/a/b/w/f/l/p/b;",
             ">;"
         }
     .end annotation
 
     .line 1
-    const-class v0, Le/f/a/b/v/f/i/p/b;
+    const-class v0, Le/f/a/b/w/f/l/p/b;
 
     return-object v0
 .end method
@@ -498,7 +498,7 @@
 .method public synthetic n0()V
     .locals 0
 
-    invoke-super {p0}, Le/f/a/b/v/b/d/e;->n0()V
+    invoke-super {p0}, Le/f/a/b/w/b/d/e;->n0()V
 
     invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment;->I0()V
 
@@ -508,7 +508,7 @@
 .method public s1()I
     .locals 1
 
-    const v0, 0x7f0d008a
+    const v0, 0x7f0d008f
 
     return v0
 .end method

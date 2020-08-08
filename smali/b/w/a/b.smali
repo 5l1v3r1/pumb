@@ -25,13 +25,13 @@
 .method public abstract isOpen()Z
 .end method
 
-.method public abstract s()V
-.end method
-
 .method public abstract t()V
 .end method
 
-.method public abstract u()Ljava/util/List;
+.method public abstract u()V
+.end method
+
+.method public abstract v()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -44,8 +44,8 @@
     .end annotation
 .end method
 
-.method public abstract v()Z
+.method public abstract w()Z
 .end method
 
-.method public abstract w()V
+.method public abstract x()V
 .end method

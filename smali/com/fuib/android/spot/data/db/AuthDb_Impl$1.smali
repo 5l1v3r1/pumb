@@ -35,7 +35,7 @@
 .method public createAllTables(Lb/w/a/b;)V
     .locals 1
 
-    const-string v0, "CREATE TABLE IF NOT EXISTS `auth_info` (`id` INTEGER NOT NULL, `phone` TEXT, `key` TEXT, `isTouch` INTEGER NOT NULL, `isPin` INTEGER NOT NULL, `isFirstRun` INTEGER NOT NULL, `isAccountHasPin` INTEGER NOT NULL, `resetPwCorrelationId` TEXT, PRIMARY KEY(`id`))"
+    const-string v0, "CREATE TABLE IF NOT EXISTS `auth_info` (`id` INTEGER NOT NULL, `phone` TEXT, `key` TEXT, `isTouch` INTEGER NOT NULL, `isPin` INTEGER NOT NULL, `isFirstRun` INTEGER NOT NULL, `isAccountHasPin` INTEGER NOT NULL, `resetPwCorrelationId` TEXT, `securityCorrelationId` TEXT, PRIMARY KEY(`id`))"
 
     .line 1
     invoke-interface {p1, v0}, Lb/w/a/b;->b(Ljava/lang/String;)V
@@ -55,7 +55,7 @@
     .line 4
     invoke-interface {p1, v0}, Lb/w/a/b;->b(Ljava/lang/String;)V
 
-    const-string v0, "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"c588bb7baee8a7262bd75afb8faa577d\")"
+    const-string v0, "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"a7a1fe7d7562ec32ac7c0ed27da8b6c9\")"
 
     .line 5
     invoke-interface {p1, v0}, Lb/w/a/b;->b(Ljava/lang/String;)V
@@ -202,7 +202,7 @@
     .line 1
     new-instance v0, Ljava/util/HashMap;
 
-    const/16 v1, 0x8
+    const/16 v1, 0x9
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
 
@@ -287,28 +287,39 @@
     invoke-virtual {v0, v9, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
+    new-instance v1, Lb/u/l/b$a;
+
+    const-string v9, "securityCorrelationId"
+
+    invoke-direct {v1, v9, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+
+    invoke-virtual {v0, v9, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 11
     new-instance v1, Ljava/util/HashSet;
 
     invoke-direct {v1, v7}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 11
+    .line 12
     new-instance v9, Ljava/util/HashSet;
 
     invoke-direct {v9, v7}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 12
+    .line 13
     new-instance v10, Lb/u/l/b;
 
     const-string v11, "auth_info"
 
     invoke-direct {v10, v11, v0, v1, v9}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
-    .line 13
-    invoke-static {p1, v11}, Lb/u/l/b;->a(Lb/w/a/b;Ljava/lang/String;)Lb/u/l/b;
+    const-string v0, "auth_info"
+
+    .line 14
+    invoke-static {p1, v0}, Lb/u/l/b;->a(Lb/w/a/b;Ljava/lang/String;)Lb/u/l/b;
 
     move-result-object v0
 
-    .line 14
+    .line 15
     invoke-virtual {v10, v0}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -317,21 +328,21 @@
 
     if-eqz v1, :cond_2
 
-    .line 15
+    .line 16
     new-instance v0, Ljava/util/HashMap;
 
     const/4 v1, 0x2
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
 
-    .line 16
+    .line 17
     new-instance v1, Lb/u/l/b$a;
 
     invoke-direct {v1, v2, v3, v4, v4}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 17
+    .line 18
     new-instance v1, Lb/u/l/b$a;
 
     const-string v10, "udid"
@@ -340,17 +351,17 @@
 
     invoke-virtual {v0, v10, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 18
+    .line 19
     new-instance v1, Ljava/util/HashSet;
 
     invoke-direct {v1, v7}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 19
+    .line 20
     new-instance v11, Ljava/util/HashSet;
 
     invoke-direct {v11, v7}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 20
+    .line 21
     new-instance v12, Lb/u/l/b;
 
     const-string v13, "device_id"
@@ -359,93 +370,93 @@
 
     const-string v0, "device_id"
 
-    .line 21
+    .line 22
     invoke-static {p1, v0}, Lb/u/l/b;->a(Lb/w/a/b;Ljava/lang/String;)Lb/u/l/b;
 
     move-result-object v0
 
-    .line 22
+    .line 23
     invoke-virtual {v12, v0}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 23
+    .line 24
     new-instance v0, Ljava/util/HashMap;
 
     const/16 v1, 0xb
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
 
-    .line 24
+    .line 25
     new-instance v1, Lb/u/l/b$a;
 
     invoke-direct {v1, v2, v3, v4, v4}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 25
+    .line 26
     new-instance v1, Lb/u/l/b$a;
 
     invoke-direct {v1, v10, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     invoke-virtual {v0, v10, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 26
+    .line 27
     new-instance v1, Lb/u/l/b$a;
 
     invoke-direct {v1, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     invoke-virtual {v0, v5, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 27
-    new-instance v1, Lb/u/l/b$a;
-
-    const-string v2, "psw"
-
-    invoke-direct {v1, v2, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
-
-    const-string v2, "psw"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 28
     new-instance v1, Lb/u/l/b$a;
 
-    const-string v2, "authKey"
+    const-string v2, "psw"
 
     invoke-direct {v1, v2, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v2, "authKey"
+    const-string v2, "psw"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 29
     new-instance v1, Lb/u/l/b$a;
 
-    const-string v2, "authType"
+    const-string v2, "authKey"
 
     invoke-direct {v1, v2, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v2, "authType"
+    const-string v2, "authKey"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 30
     new-instance v1, Lb/u/l/b$a;
 
-    const-string v2, "jwt"
+    const-string v2, "authType"
 
     invoke-direct {v1, v2, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v2, "jwt"
+    const-string v2, "authType"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 31
     new-instance v1, Lb/u/l/b$a;
 
+    const-string v2, "jwt"
+
+    invoke-direct {v1, v2, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+
+    const-string v2, "jwt"
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 32
+    new-instance v1, Lb/u/l/b$a;
+
     const-string v2, "pin"
 
     invoke-direct {v1, v2, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
@@ -454,46 +465,46 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 32
+    .line 33
     new-instance v1, Lb/u/l/b$a;
 
     invoke-direct {v1, v8, v3, v4, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     invoke-virtual {v0, v8, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 33
-    new-instance v1, Lb/u/l/b$a;
-
-    const-string v2, "hasFpSensor"
-
-    invoke-direct {v1, v2, v3, v4, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
-
-    const-string v2, "hasFpSensor"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 34
     new-instance v1, Lb/u/l/b$a;
 
-    const-string v2, "isBlockSuggestTouchEnter"
+    const-string v2, "hasFpSensor"
 
     invoke-direct {v1, v2, v3, v4, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v2, "isBlockSuggestTouchEnter"
+    const-string v2, "hasFpSensor"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 35
+    new-instance v1, Lb/u/l/b$a;
+
+    const-string v2, "isBlockSuggestTouchEnter"
+
+    invoke-direct {v1, v2, v3, v4, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+
+    const-string v2, "isBlockSuggestTouchEnter"
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 36
     new-instance v1, Ljava/util/HashSet;
 
     invoke-direct {v1, v7}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 36
+    .line 37
     new-instance v2, Ljava/util/HashSet;
 
     invoke-direct {v2, v7}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 37
+    .line 38
     new-instance v3, Lb/u/l/b;
 
     const-string v4, "session"
@@ -502,12 +513,12 @@
 
     const-string v0, "session"
 
-    .line 38
+    .line 39
     invoke-static {p1, v0}, Lb/u/l/b;->a(Lb/w/a/b;Ljava/lang/String;)Lb/u/l/b;
 
     move-result-object p1
 
-    .line 39
+    .line 40
     invoke-virtual {v3, p1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -516,7 +527,7 @@
 
     return-void
 
-    .line 40
+    .line 41
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -542,7 +553,7 @@
 
     throw v0
 
-    .line 41
+    .line 42
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -568,7 +579,7 @@
 
     throw p1
 
-    .line 42
+    .line 43
     :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 

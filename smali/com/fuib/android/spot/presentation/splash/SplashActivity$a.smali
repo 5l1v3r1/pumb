@@ -62,22 +62,22 @@
     .line 2
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/splash/SplashActivity$a;->a:Lcom/fuib/android/spot/presentation/splash/SplashActivity;
 
-    invoke-virtual {v0}, Lcom/fuib/android/spot/presentation/splash/SplashActivity;->E()Le/f/a/b/u/j;
+    invoke-virtual {v0}, Lcom/fuib/android/spot/presentation/splash/SplashActivity;->E()Le/f/a/b/v/j;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Le/f/a/b/u/j;->d()Ljava/lang/String;
+    invoke-virtual {v0}, Le/f/a/b/v/j;->d()Ljava/lang/String;
 
     move-result-object v0
 
     .line 3
     iget-object v1, p0, Lcom/fuib/android/spot/presentation/splash/SplashActivity$a;->a:Lcom/fuib/android/spot/presentation/splash/SplashActivity;
 
-    invoke-virtual {v1}, Lcom/fuib/android/spot/presentation/splash/SplashActivity;->E()Le/f/a/b/u/j;
+    invoke-virtual {v1}, Lcom/fuib/android/spot/presentation/splash/SplashActivity;->E()Le/f/a/b/v/j;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Le/f/a/b/u/j;->b()V
+    invoke-virtual {v1}, Le/f/a/b/v/j;->b()V
 
     return-object v0
 .end method

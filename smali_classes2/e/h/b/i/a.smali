@@ -1,192 +1,52 @@
-.class public Le/h/b/i/a;
+.class public final synthetic Le/h/b/i/a;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-common@@19.0.0"
+.source "com.google.firebase:firebase-common@@19.3.0"
+
+# interfaces
+.implements Le/h/b/e/g;
 
 
-# instance fields
-.field public final a:Landroid/content/Context;
-
-.field public final b:Landroid/content/SharedPreferences;
-
-.field public final c:Ljava/util/concurrent/atomic/AtomicBoolean;
+# static fields
+.field public static final a:Le/h/b/i/a;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Le/h/b/f/c;)V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Le/h/b/i/a;
 
-    .line 2
-    invoke-static {p1}, Le/h/b/i/a;->a(Landroid/content/Context;)Landroid/content/Context;
+    invoke-direct {v0}, Le/h/b/i/a;-><init>()V
 
-    move-result-object p3
-
-    iput-object p3, p0, Le/h/b/i/a;->a:Landroid/content/Context;
-
-    .line 3
-    new-instance p3, Ljava/lang/StringBuilder;
-
-    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "com.google.firebase.common.prefs:"
-
-    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    const/4 p3, 0x0
-
-    .line 4
-    invoke-virtual {p1, p2, p3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    move-result-object p1
-
-    iput-object p1, p0, Le/h/b/i/a;->b:Landroid/content/SharedPreferences;
-
-    .line 5
-    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    invoke-virtual {p0}, Le/h/b/i/a;->b()Z
-
-    move-result p2
-
-    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
-
-    iput-object p1, p0, Le/h/b/i/a;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sput-object v0, Le/h/b/i/a;->a:Le/h/b/i/a;
 
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;)Landroid/content/Context;
-    .locals 2
+.method public constructor <init>()V
+    .locals 0
 
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/16 v1, 0x18
+    return-void
+.end method
 
-    if-lt v0, v1, :cond_1
+.method public static a()Le/h/b/e/g;
+    .locals 1
 
-    .line 2
-    invoke-static {p0}, Lb/k/f/a;->d(Landroid/content/Context;)Z
+    sget-object v0, Le/h/b/i/a;->a:Le/h/b/i/a;
 
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    invoke-static {p0}, Lb/k/f/a;->a(Landroid/content/Context;)Landroid/content/Context;
-
-    move-result-object p0
-
-    :cond_1
-    :goto_0
-    return-object p0
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public a()Z
-    .locals 1
+.method public a(Le/h/b/e/e;)Ljava/lang/Object;
+    .locals 0
 
-    .line 4
-    iget-object v0, p0, Le/h/b/i/a;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
+    invoke-static {p1}, Le/h/b/i/b;->a(Le/h/b/e/e;)Le/h/b/i/c;
 
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+    move-result-object p1
 
-    move-result v0
-
-    return v0
-.end method
-
-.method public final b()Z
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Le/h/b/i/a;->b:Landroid/content/SharedPreferences;
-
-    const-string v1, "firebase_data_collection_default_enabled"
-
-    invoke-interface {v0, v1}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
-
-    move-result v0
-
-    const/4 v2, 0x1
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-object v0, p0, Le/h/b/i/a;->b:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    return v0
-
-    .line 3
-    :cond_0
-    :try_start_0
-    iget-object v0, p0, Le/h/b/i/a;->a:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    .line 4
-    iget-object v3, p0, Le/h/b/i/a;->a:Landroid/content/Context;
-
-    .line 5
-    invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v3
-
-    const/16 v4, 0x80
-
-    .line 6
-    invoke-virtual {v0, v3, v4}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    .line 7
-    iget-object v3, v0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
-
-    if-eqz v3, :cond_1
-
-    iget-object v3, v0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
-
-    .line 8
-    invoke-virtual {v3, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    .line 9
-    iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
-
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v0
-    :try_end_0
-    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return v0
-
-    :catch_0
-    :cond_1
-    return v2
+    return-object p1
 .end method

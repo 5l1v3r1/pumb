@@ -43,6 +43,11 @@
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     .line 2
+    iget-object v1, p0, Lcom/fuib/android/spot/presentation/tab/MainActivity$e;->a:Lcom/fuib/android/spot/presentation/tab/MainActivity;
+
+    invoke-static {v1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->c(Lcom/fuib/android/spot/presentation/tab/MainActivity;)V
+
+    .line 3
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result p1
@@ -55,7 +60,7 @@
 
     sparse-switch p1, :sswitch_data_0
 
-    .line 3
+    .line 4
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/MainActivity$e;->a:Lcom/fuib/android/spot/presentation/tab/MainActivity;
 
     invoke-static {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->b(Lcom/fuib/android/spot/presentation/tab/MainActivity;)Ljava/lang/String;
@@ -74,19 +79,19 @@
 
     goto/16 :goto_0
 
-    .line 4
+    .line 5
     :sswitch_0
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/MainActivity$e;->a:Lcom/fuib/android/spot/presentation/tab/MainActivity;
 
-    invoke-virtual {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->G()Le/f/a/b/v/b/d/h;
+    invoke-virtual {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->G()Le/f/a/b/w/b/d/h;
 
     move-result-object p1
 
-    sget-object v0, Le/f/a/b/v/b/d/f;->TRANSFERS_MAIN_90:Le/f/a/b/v/b/d/f;
+    sget-object v0, Le/f/a/b/w/b/d/f;->TRANSFERS_MAIN_90:Le/f/a/b/w/b/d/f;
 
-    invoke-virtual {p1, v0, v2}, Le/f/a/b/v/b/d/h;->a(Le/f/a/b/v/b/d/f;Landroid/os/Bundle;)V
+    invoke-virtual {p1, v0, v2}, Le/f/a/b/w/b/d/h;->a(Le/f/a/b/w/b/d/f;Landroid/os/Bundle;)V
 
-    .line 5
+    .line 6
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/MainActivity$e;->a:Lcom/fuib/android/spot/presentation/tab/MainActivity;
 
     invoke-static {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->b(Lcom/fuib/android/spot/presentation/tab/MainActivity;)Ljava/lang/String;
@@ -105,19 +110,19 @@
 
     goto :goto_0
 
-    .line 6
+    .line 7
     :sswitch_1
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/MainActivity$e;->a:Lcom/fuib/android/spot/presentation/tab/MainActivity;
 
-    invoke-virtual {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->G()Le/f/a/b/v/b/d/h;
+    invoke-virtual {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->G()Le/f/a/b/w/b/d/h;
 
     move-result-object p1
 
-    sget-object v0, Le/f/a/b/v/b/d/f;->SERVICES_MAIN:Le/f/a/b/v/b/d/f;
+    sget-object v0, Le/f/a/b/w/b/d/f;->SERVICES_MAIN:Le/f/a/b/w/b/d/f;
 
-    invoke-virtual {p1, v0, v2}, Le/f/a/b/v/b/d/h;->a(Le/f/a/b/v/b/d/f;Landroid/os/Bundle;)V
+    invoke-virtual {p1, v0, v2}, Le/f/a/b/w/b/d/h;->a(Le/f/a/b/w/b/d/f;Landroid/os/Bundle;)V
 
-    .line 7
+    .line 8
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/MainActivity$e;->a:Lcom/fuib/android/spot/presentation/tab/MainActivity;
 
     invoke-static {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->b(Lcom/fuib/android/spot/presentation/tab/MainActivity;)Ljava/lang/String;
@@ -136,19 +141,19 @@
 
     goto :goto_0
 
-    .line 8
+    .line 9
     :sswitch_2
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/MainActivity$e;->a:Lcom/fuib/android/spot/presentation/tab/MainActivity;
 
-    invoke-virtual {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->G()Le/f/a/b/v/b/d/h;
+    invoke-virtual {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->G()Le/f/a/b/w/b/d/h;
 
     move-result-object p1
 
-    sget-object v0, Le/f/a/b/v/b/d/f;->NOTIFICATIONS:Le/f/a/b/v/b/d/f;
+    sget-object v0, Le/f/a/b/w/b/d/f;->NOTIFICATIONS:Le/f/a/b/w/b/d/f;
 
-    invoke-virtual {p1, v0, v2}, Le/f/a/b/v/b/d/h;->a(Le/f/a/b/v/b/d/f;Landroid/os/Bundle;)V
+    invoke-virtual {p1, v0, v2}, Le/f/a/b/w/b/d/h;->a(Le/f/a/b/w/b/d/f;Landroid/os/Bundle;)V
 
-    .line 9
+    .line 10
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/MainActivity$e;->a:Lcom/fuib/android/spot/presentation/tab/MainActivity;
 
     invoke-static {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->b(Lcom/fuib/android/spot/presentation/tab/MainActivity;)Ljava/lang/String;
@@ -167,28 +172,28 @@
 
     goto :goto_0
 
-    .line 10
+    .line 11
     :sswitch_3
-    sget-object p1, Le/f/a/b/v/f/e/a;->n:Le/f/a/b/v/f/e/a$a;
+    sget-object p1, Le/f/a/b/w/f/h/a;->n:Le/f/a/b/w/f/h/a$a;
 
-    invoke-virtual {p1}, Le/f/a/b/v/f/e/a$a;->i()Ljava/lang/String;
+    invoke-virtual {p1}, Le/f/a/b/w/f/h/a$a;->i()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v0, p1, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 11
+    .line 12
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/MainActivity$e;->a:Lcom/fuib/android/spot/presentation/tab/MainActivity;
 
-    invoke-virtual {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->G()Le/f/a/b/v/b/d/h;
+    invoke-virtual {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->G()Le/f/a/b/w/b/d/h;
 
     move-result-object p1
 
-    sget-object v2, Le/f/a/b/v/b/d/f;->MAIN:Le/f/a/b/v/b/d/f;
+    sget-object v2, Le/f/a/b/w/b/d/f;->MAIN:Le/f/a/b/w/b/d/f;
 
-    invoke-virtual {p1, v2, v0}, Le/f/a/b/v/b/d/h;->a(Le/f/a/b/v/b/d/f;Landroid/os/Bundle;)V
+    invoke-virtual {p1, v2, v0}, Le/f/a/b/w/b/d/h;->a(Le/f/a/b/w/b/d/f;Landroid/os/Bundle;)V
 
-    .line 12
+    .line 13
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/MainActivity$e;->a:Lcom/fuib/android/spot/presentation/tab/MainActivity;
 
     invoke-static {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->b(Lcom/fuib/android/spot/presentation/tab/MainActivity;)Ljava/lang/String;
@@ -208,13 +213,11 @@
     :goto_0
     return v1
 
-    nop
-
     :sswitch_data_0
     .sparse-switch
-        0x7f0a0054 -> :sswitch_3
-        0x7f0a005a -> :sswitch_2
-        0x7f0a005b -> :sswitch_1
-        0x7f0a005e -> :sswitch_0
+        0x7f0a0056 -> :sswitch_3
+        0x7f0a005c -> :sswitch_2
+        0x7f0a005d -> :sswitch_1
+        0x7f0a0060 -> :sswitch_0
     .end sparse-switch
 .end method

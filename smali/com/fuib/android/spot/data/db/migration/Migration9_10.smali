@@ -45,11 +45,11 @@
 # instance fields
 .field public final authDb:Lcom/fuib/android/spot/data/db/AuthDb;
 
-.field public final deviceIdCache:Le/f/a/b/s/f/w;
+.field public final deviceIdCache:Le/f/a/b/t/f/w;
 
 
 # direct methods
-.method public constructor <init>(Lcom/fuib/android/spot/data/db/AuthDb;Le/f/a/b/s/f/w;)V
+.method public constructor <init>(Lcom/fuib/android/spot/data/db/AuthDb;Le/f/a/b/t/f/w;)V
     .locals 2
 
     const/16 v0, 0x9
@@ -61,7 +61,7 @@
 
     iput-object p1, p0, Lcom/fuib/android/spot/data/db/migration/Migration9_10;->authDb:Lcom/fuib/android/spot/data/db/AuthDb;
 
-    iput-object p2, p0, Lcom/fuib/android/spot/data/db/migration/Migration9_10;->deviceIdCache:Le/f/a/b/s/f/w;
+    iput-object p2, p0, Lcom/fuib/android/spot/data/db/migration/Migration9_10;->deviceIdCache:Le/f/a/b/t/f/w;
 
     return-void
 .end method
@@ -595,9 +595,9 @@
     iput-object v0, v1, Lcom/fuib/android/spot/data/db/entities/DeviceId;->udid:Ljava/lang/String;
 
     .line 8
-    iget-object v2, p0, Lcom/fuib/android/spot/data/db/migration/Migration9_10;->deviceIdCache:Le/f/a/b/s/f/w;
+    iget-object v2, p0, Lcom/fuib/android/spot/data/db/migration/Migration9_10;->deviceIdCache:Le/f/a/b/t/f/w;
 
-    invoke-virtual {v2, v0}, Le/f/a/b/s/f/w;->a(Ljava/lang/String;)V
+    invoke-virtual {v2, v0}, Le/f/a/b/t/f/w;->a(Ljava/lang/String;)V
 
     .line 9
     iget-object v0, p0, Lcom/fuib/android/spot/data/db/migration/Migration9_10;->authDb:Lcom/fuib/android/spot/data/db/AuthDb;

@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T:",
-        "Le/f/a/b/t/f;",
+        "Le/f/a/b/u/g;",
         ">",
         "Landroid/app/Application;",
         "Lf/c/d;",
@@ -31,11 +31,11 @@
 
 
 # static fields
-.field public static x:Le/f/a/b/s/f/m0;
+.field public static x:Le/f/a/b/t/f/m0;
 
 
 # instance fields
-.field public c:Le/f/a/b/t/f;
+.field public c:Le/f/a/b/u/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -77,27 +77,27 @@
 
 .field public h:Lcom/fuib/android/spot/di/AbstractApp$c;
 
-.field public i:Le/f/a/b/v/b/d/h;
+.field public i:Le/f/a/b/w/b/d/h;
 
 .field public j:Lcom/fuib/android/spot/presentation/common/util/KeyboardController;
 
-.field public k:Le/f/a/b/v/b/m/b0/b;
+.field public k:Le/f/a/b/w/b/m/b0/b;
 
-.field public l:Le/f/a/b/u/j;
+.field public l:Le/f/a/b/v/j;
 
-.field public m:Le/f/a/b/w/f2;
+.field public m:Le/f/a/b/x/f2;
 
-.field public n:Le/f/a/b/w/h0;
+.field public n:Le/f/a/b/x/h0;
 
-.field public o:Le/f/a/b/v/f/e/m/c;
+.field public o:Le/f/a/b/w/f/h/m/c;
 
-.field public p:Le/f/a/b/s/f/a0;
+.field public p:Le/f/a/b/t/f/a0;
 
 .field public q:Lcom/fuib/android/spot/data/db/IsDatabasesReady;
 
-.field public r:Le/f/a/b/s/d/i;
+.field public r:Le/f/a/b/t/d/i;
 
-.field public s:Le/f/a/b/w/y0;
+.field public s:Le/f/a/b/x/y0;
 
 .field public t:Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;
 
@@ -117,7 +117,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lb/p/p<",
-            "Le/f/a/b/v/b/d/f;",
+            "Le/f/a/b/w/b/d/f;",
             ">;"
         }
     .end annotation
@@ -129,9 +129,9 @@
     .locals 1
 
     .line 1
-    sget-object v0, Le/f/a/b/s/f/m0;->REGULAR:Le/f/a/b/s/f/m0;
+    sget-object v0, Le/f/a/b/t/f/m0;->REGULAR:Le/f/a/b/t/f/m0;
 
-    sput-object v0, Lcom/fuib/android/spot/di/AbstractApp;->x:Le/f/a/b/s/f/m0;
+    sput-object v0, Lcom/fuib/android/spot/di/AbstractApp;->x:Le/f/a/b/t/f/m0;
 
     return-void
 .end method
@@ -164,9 +164,9 @@
     iput-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->v:Lb/p/p;
 
     .line 5
-    new-instance v0, Le/f/a/b/t/a;
+    new-instance v0, Le/f/a/b/u/b;
 
-    invoke-direct {v0, p0}, Le/f/a/b/t/a;-><init>(Lcom/fuib/android/spot/di/AbstractApp;)V
+    invoke-direct {v0, p0}, Le/f/a/b/u/b;-><init>(Lcom/fuib/android/spot/di/AbstractApp;)V
 
     iput-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->w:Lb/p/p;
 
@@ -182,29 +182,29 @@
     return p1
 .end method
 
-.method public static n()V
+.method public static p()V
     .locals 3
 
     .line 1
-    sget-object v0, Le/f/a/b/s/f/m0;->REGULAR:Le/f/a/b/s/f/m0;
+    sget-object v0, Le/f/a/b/t/f/m0;->REGULAR:Le/f/a/b/t/f/m0;
 
-    sput-object v0, Lcom/fuib/android/spot/di/AbstractApp;->x:Le/f/a/b/s/f/m0;
+    sput-object v0, Lcom/fuib/android/spot/di/AbstractApp;->x:Le/f/a/b/t/f/m0;
 
     .line 2
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v1, "LAUNCH_TYPE"
 
     const-string v2, "resetLaunchStartPoint()"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a()Le/f/a/b/t/f;
+.method public abstract a()Le/f/a/b/u/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
@@ -221,18 +221,18 @@
     return-void
 .end method
 
-.method public synthetic a(Le/f/a/b/v/b/d/f;)V
+.method public synthetic a(Le/f/a/b/w/b/d/f;)V
     .locals 1
 
     .line 3
-    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->m()V
+    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->o()V
 
     if-eqz p1, :cond_0
 
     .line 4
-    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->i:Le/f/a/b/v/b/d/h;
+    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->i:Le/f/a/b/w/b/d/h;
 
-    invoke-virtual {v0, p1}, Le/f/a/b/v/b/d/h;->a(Le/f/a/b/v/b/d/f;)V
+    invoke-virtual {v0, p1}, Le/f/a/b/w/b/d/h;->a(Le/f/a/b/w/b/d/f;)V
 
     :cond_0
     return-void
@@ -304,18 +304,37 @@
     return-object v0
 .end method
 
-.method public f()V
-    .locals 1
+.method public final f()V
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->c:Le/f/a/b/t/f;
+    new-instance v0, Landroid/os/Handler;
 
-    invoke-virtual {v0, p0}, Le/f/a/b/t/f;->a(Lcom/fuib/android/spot/di/AbstractApp;)V
+    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
+
+    new-instance v1, Le/f/a/b/u/a;
+
+    invoke-direct {v1, p0}, Le/f/a/b/u/a;-><init>(Lcom/fuib/android/spot/di/AbstractApp;)V
+
+    const-wide/16 v2, 0x64
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     return-void
 .end method
 
-.method public g()Z
+.method public g()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->c:Le/f/a/b/u/g;
+
+    invoke-virtual {v0, p0}, Le/f/a/b/u/g;->a(Lcom/fuib/android/spot/di/AbstractApp;)V
+
+    return-void
+.end method
+
+.method public h()Z
     .locals 1
 
     .line 1
@@ -324,7 +343,34 @@
     return v0
 .end method
 
-.method public h()V
+.method public synthetic i()V
+    .locals 2
+
+    .line 1
+    sget-object v0, Le/f/a/b/t/f/k1/c;->f:Le/f/a/b/t/f/k1/c$c;
+
+    invoke-static {p0}, Lcom/google/firebase/analytics/FirebaseAnalytics;->getInstance(Landroid/content/Context;)Lcom/google/firebase/analytics/FirebaseAnalytics;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Le/f/a/b/t/f/k1/c$c;->a(Lcom/google/firebase/analytics/FirebaseAnalytics;)V
+
+    .line 2
+    invoke-static {}, Lcom/google/firebase/messaging/FirebaseMessaging;->b()Lcom/google/firebase/messaging/FirebaseMessaging;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/google/firebase/messaging/FirebaseMessaging;->a(Z)V
+
+    .line 3
+    invoke-static {p0}, Lcom/google/firebase/FirebaseApp;->a(Landroid/content/Context;)Lcom/google/firebase/FirebaseApp;
+
+    return-void
+.end method
+
+.method public j()V
     .locals 3
 
     .line 1
@@ -339,20 +385,20 @@
     invoke-virtual {v0, v1}, Landroidx/lifecycle/LiveData;->removeObserver(Lb/p/p;)V
 
     .line 2
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v1, "AbstractApp"
 
     const-string v2, "onAppBackground"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->l:Le/f/a/b/u/j;
+    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->l:Le/f/a/b/v/j;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Le/f/a/b/u/j;->a(Z)V
+    invoke-virtual {v0, v1}, Le/f/a/b/v/j;->a(Z)V
 
     const/4 v0, 0x0
 
@@ -376,21 +422,21 @@
     invoke-virtual {v1, p0, v2}, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;->a(Lcom/fuib/android/spot/di/AbstractApp;Landroid/app/Activity;)V
 
     .line 7
-    iget-object v1, p0, Lcom/fuib/android/spot/di/AbstractApp;->l:Le/f/a/b/u/j;
+    iget-object v1, p0, Lcom/fuib/android/spot/di/AbstractApp;->l:Le/f/a/b/v/j;
 
     new-array v0, v0, [Lkotlin/jvm/functions/Function0;
 
-    invoke-virtual {v1, v0}, Le/f/a/b/u/j;->a([Lkotlin/jvm/functions/Function0;)V
+    invoke-virtual {v1, v0}, Le/f/a/b/v/j;->a([Lkotlin/jvm/functions/Function0;)V
 
     .line 8
-    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->i:Le/f/a/b/v/b/d/h;
+    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->i:Le/f/a/b/w/b/d/h;
 
-    invoke-virtual {v0}, Le/f/a/b/v/b/d/h;->i()V
+    invoke-virtual {v0}, Le/f/a/b/w/b/d/h;->i()V
 
     return-void
 .end method
 
-.method public i()V
+.method public k()V
     .locals 2
 
     .line 1
@@ -407,16 +453,16 @@
     return-void
 .end method
 
-.method public j()V
+.method public l()V
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->m()V
+    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->o()V
 
     .line 2
-    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->k:Le/f/a/b/v/b/m/b0/b;
+    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->k:Le/f/a/b/w/b/m/b0/b;
 
-    invoke-virtual {v0}, Le/f/a/b/v/b/m/b0/b;->a()Landroidx/lifecycle/LiveData;
+    invoke-virtual {v0}, Le/f/a/b/w/b/m/b0/b;->a()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
@@ -427,13 +473,13 @@
     return-void
 .end method
 
-.method public final k()V
+.method public final m()V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->s:Le/f/a/b/w/y0;
+    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->s:Le/f/a/b/x/y0;
 
-    invoke-virtual {v0}, Le/f/a/b/w/y0;->a()Le/f/a/b/w/y0$b;
+    invoke-virtual {v0}, Le/f/a/b/x/y0;->a()Le/f/a/b/x/y0$b;
 
     move-result-object v0
 
@@ -470,18 +516,18 @@
     return-void
 .end method
 
-.method public l()V
+.method public n()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->g()Z
+    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->h()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->j()V
+    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->l()V
 
     goto :goto_0
 
@@ -499,15 +545,15 @@
     return-void
 .end method
 
-.method public final m()V
+.method public final o()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->k:Le/f/a/b/v/b/m/b0/b;
+    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->k:Le/f/a/b/w/b/m/b0/b;
 
     iget-object v1, p0, Lcom/fuib/android/spot/di/AbstractApp;->w:Lb/p/p;
 
-    invoke-virtual {v0, v1}, Le/f/a/b/v/b/m/b0/b;->a(Lb/p/p;)V
+    invoke-virtual {v0, v1}, Le/f/a/b/w/b/m/b0/b;->a(Lb/p/p;)V
 
     return-void
 .end method
@@ -519,13 +565,13 @@
     invoke-super {p0, p1}, Landroid/app/Application;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     .line 2
-    iget-object p1, p0, Lcom/fuib/android/spot/di/AbstractApp;->n:Le/f/a/b/w/h0;
+    iget-object p1, p0, Lcom/fuib/android/spot/di/AbstractApp;->n:Le/f/a/b/x/h0;
 
     invoke-virtual {p0}, Landroid/app/Application;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {p1, v0}, Le/f/a/b/w/h0;->a(Landroid/content/Context;)V
+    invoke-virtual {p1, v0}, Le/f/a/b/x/h0;->a(Landroid/content/Context;)V
 
     return-void
 .end method
@@ -537,40 +583,31 @@
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
 
     .line 2
-    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->a()Le/f/a/b/t/f;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->a()Le/f/a/b/u/g;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->c:Le/f/a/b/t/f;
+    iput-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->c:Le/f/a/b/u/g;
 
     .line 3
-    sget-object v0, Le/f/a/b/s/f/k1/c;->f:Le/f/a/b/s/f/k1/c$c;
-
-    invoke-static {p0}, Lcom/google/firebase/analytics/FirebaseAnalytics;->getInstance(Landroid/content/Context;)Lcom/google/firebase/analytics/FirebaseAnalytics;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Le/f/a/b/s/f/k1/c$c;->a(Lcom/google/firebase/analytics/FirebaseAnalytics;)V
+    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->g()V
 
     .line 4
-    invoke-static {p0}, Lcom/google/firebase/FirebaseApp;->a(Landroid/content/Context;)Lcom/google/firebase/FirebaseApp;
+    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->l:Le/f/a/b/v/j;
+
+    invoke-static {v0}, Lo/a/a;->a(Lo/a/a$c;)V
 
     .line 5
     invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->f()V
 
     .line 6
-    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->l:Le/f/a/b/u/j;
+    new-instance v0, Le/f/a/b/w/b/m/r;
 
-    invoke-static {v0}, Lo/a/a;->a(Lo/a/a$c;)V
-
-    .line 7
-    new-instance v0, Le/f/a/b/v/b/m/r;
-
-    invoke-direct {v0}, Le/f/a/b/v/b/m/r;-><init>()V
+    invoke-direct {v0}, Le/f/a/b/w/b/m/r;-><init>()V
 
     invoke-static {v0}, Ljava/lang/Thread;->setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
-    .line 8
+    .line 7
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -591,38 +628,38 @@
 
     invoke-virtual {v0, v2, v1}, Lo/a/a$c;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 8
+    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->m:Le/f/a/b/x/f2;
+
+    invoke-virtual {v0}, Le/f/a/b/x/f2;->a()V
+
     .line 9
-    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->m:Le/f/a/b/w/f2;
-
-    invoke-virtual {v0}, Le/f/a/b/w/f2;->a()V
-
-    .line 10
-    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->o:Le/f/a/b/v/f/e/m/c;
+    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->o:Le/f/a/b/w/f/h/m/c;
 
     const/4 v1, 0x0
 
-    invoke-interface {v0, v1}, Le/f/a/b/v/b/l/a;->a(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Le/f/a/b/w/b/l/a;->a(Ljava/lang/Object;)V
+
+    .line 10
+    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->r:Le/f/a/b/t/d/i;
+
+    invoke-virtual {v0}, Le/f/a/b/t/d/i;->a()V
 
     .line 11
-    iget-object v0, p0, Lcom/fuib/android/spot/di/AbstractApp;->r:Le/f/a/b/s/d/i;
-
-    invoke-virtual {v0}, Le/f/a/b/s/d/i;->a()V
-
-    .line 12
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_0
 
+    .line 12
+    sget-object v0, Le/f/a/b/t/f/y;->f:Le/f/a/b/t/f/y$a;
+
+    invoke-virtual {v0, p0}, Le/f/a/b/t/f/y$a;->a(Landroid/content/Context;)V
+
     .line 13
-    sget-object v0, Le/f/a/b/s/f/y;->f:Le/f/a/b/s/f/y$a;
-
-    invoke-virtual {v0, p0}, Le/f/a/b/s/f/y$a;->a(Landroid/content/Context;)V
-
-    .line 14
     :cond_0
-    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->k()V
+    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->m()V
 
     return-void
 .end method
@@ -638,7 +675,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {v0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v0
 
@@ -646,7 +683,7 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->l()V
+    invoke-virtual {p0}, Lcom/fuib/android/spot/di/AbstractApp;->n()V
 
     :cond_1
     return-void

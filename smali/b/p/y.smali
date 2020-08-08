@@ -78,7 +78,7 @@
     check-cast v1, Lb/p/v;
 
     .line 5
-    invoke-virtual {v1}, Lb/p/v;->o()V
+    invoke-virtual {v1}, Lb/p/v;->r()V
 
     goto :goto_0
 
@@ -106,7 +106,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Lb/p/v;->p()V
+    invoke-virtual {p1}, Lb/p/v;->s()V
 
     :cond_0
     return-void

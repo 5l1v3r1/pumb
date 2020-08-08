@@ -620,7 +620,7 @@
     .line 38
     iget-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->m:Landroid/animation/ValueAnimator;
 
-    sget-object v2, Le/h/a/b/a/a;->e:Landroid/animation/TimeInterpolator;
+    sget-object v2, Le/h/a/c/a/a;->e:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 

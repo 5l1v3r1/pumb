@@ -3,7 +3,7 @@
 .source "CacheInterceptor.java"
 
 # interfaces
-.implements Lm/s;
+.implements Lm/t;
 
 
 # annotations
@@ -54,7 +54,7 @@
     :try_start_0
     iget-object v1, p0, Ll/g0/e/a$a;->d:Lm/e;
 
-    invoke-interface {v1, p1, p2, p3}, Lm/s;->c(Lm/c;J)J
+    invoke-interface {v1, p1, p2, p3}, Lm/t;->c(Lm/c;J)J
 
     move-result-wide p2
     :try_end_0
@@ -77,7 +77,7 @@
     .line 4
     iget-object p1, p0, Ll/g0/e/a$a;->f:Lm/d;
 
-    invoke-interface {p1}, Lm/r;->close()V
+    invoke-interface {p1}, Lm/s;->close()V
 
     :cond_0
     return-wide v1
@@ -143,7 +143,7 @@
     sget-object v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     .line 2
-    invoke-static {p0, v0, v1}, Ll/g0/c;->a(Lm/s;ILjava/util/concurrent/TimeUnit;)Z
+    invoke-static {p0, v0, v1}, Ll/g0/c;->a(Lm/t;ILjava/util/concurrent/TimeUnit;)Z
 
     move-result v0
 
@@ -163,18 +163,18 @@
     :cond_0
     iget-object v0, p0, Ll/g0/e/a$a;->d:Lm/e;
 
-    invoke-interface {v0}, Lm/s;->close()V
+    invoke-interface {v0}, Lm/t;->close()V
 
     return-void
 .end method
 
-.method public i()Lm/t;
+.method public i()Lm/u;
     .locals 1
 
     .line 1
     iget-object v0, p0, Ll/g0/e/a$a;->d:Lm/e;
 
-    invoke-interface {v0}, Lm/s;->i()Lm/t;
+    invoke-interface {v0}, Lm/t;->i()Lm/u;
 
     move-result-object v0
 

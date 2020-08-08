@@ -67,7 +67,7 @@
     .line 19
     iget-object v0, p0, Lb/t/d/v;->b:Lb/h/d;
 
-    invoke-virtual {v0, p1, p2}, Lb/h/d;->b(J)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Lb/h/d;->c(J)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -1,335 +1,113 @@
 .class public Le/h/a/b/d/a;
-.super Le/h/a/b/w/f;
-.source "BottomAppBarTopEdgeTreatment.java"
+.super Ljava/lang/Object;
 
 # interfaces
-.implements Ljava/lang/Cloneable;
+.implements Landroid/content/ServiceConnection;
 
 
 # instance fields
-.field public c:F
+.field public a:Z
 
-.field public d:F
-
-.field public e:F
-
-.field public f:F
-
-.field public g:F
+.field public final b:Ljava/util/concurrent/BlockingQueue;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/BlockingQueue<",
+            "Landroid/os/IBinder;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(FFF)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Le/h/a/b/w/f;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
 
     .line 2
-    iput p1, p0, Le/h/a/b/d/a;->d:F
+    iput-boolean v0, p0, Le/h/a/b/d/a;->a:Z
 
     .line 3
-    iput p2, p0, Le/h/a/b/d/a;->c:F
+    new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
-    .line 4
-    iput p3, p0, Le/h/a/b/d/a;->f:F
+    invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
-    const/4 p1, 0x0
-
-    cmpg-float p2, p3, p1
-
-    if-ltz p2, :cond_0
-
-    .line 5
-    iput p1, p0, Le/h/a/b/d/a;->g:F
+    iput-object v0, p0, Le/h/a/b/d/a;->b:Ljava/util/concurrent/BlockingQueue;
 
     return-void
-
-    .line 6
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string p2, "cradleVerticalOffset must be positive."
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public a()F
+.method public a(JLjava/util/concurrent/TimeUnit;)Landroid/os/IBinder;
     .locals 1
 
-    .line 15
-    iget v0, p0, Le/h/a/b/d/a;->f:F
-
-    return v0
-.end method
-
-.method public a(F)V
-    .locals 0
-
-    .line 16
-    iput p1, p0, Le/h/a/b/d/a;->f:F
-
-    return-void
-.end method
-
-.method public a(FFFLe/h/a/b/w/m;)V
-    .locals 20
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, p1
-
-    move-object/from16 v9, p4
+    const-string v0, "BlockingServiceConnection.getServiceWithTimeout() called on main thread"
 
     .line 1
-    iget v2, v0, Le/h/a/b/d/a;->e:F
-
-    const/4 v10, 0x0
-
-    cmpl-float v3, v2, v10
-
-    if-nez v3, :cond_0
+    invoke-static {v0}, Le/h/a/b/d/l/u;->c(Ljava/lang/String;)V
 
     .line 2
-    invoke-virtual {v9, v1, v10}, Le/h/a/b/w/m;->a(FF)V
+    iget-boolean v0, p0, Le/h/a/b/d/a;->a:Z
 
-    return-void
+    if-nez v0, :cond_1
+
+    const/4 v0, 0x1
 
     .line 3
-    :cond_0
-    iget v3, v0, Le/h/a/b/d/a;->d:F
-
-    const/high16 v11, 0x40000000    # 2.0f
-
-    mul-float v3, v3, v11
-
-    add-float/2addr v3, v2
-
-    div-float v12, v3, v11
+    iput-boolean v0, p0, Le/h/a/b/d/a;->a:Z
 
     .line 4
-    iget v2, v0, Le/h/a/b/d/a;->c:F
+    iget-object v0, p0, Le/h/a/b/d/a;->b:Ljava/util/concurrent/BlockingQueue;
 
-    mul-float v13, p3, v2
+    invoke-interface {v0, p1, p2, p3}, Ljava/util/concurrent/BlockingQueue;->poll(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/os/IBinder;
+
+    if-eqz p1, :cond_0
+
+    return-object p1
 
     .line 5
-    iget v2, v0, Le/h/a/b/d/a;->g:F
+    :cond_0
+    new-instance p1, Ljava/util/concurrent/TimeoutException;
 
-    add-float v14, p2, v2
+    const-string p2, "Timed out waiting for the service connection"
+
+    invoke-direct {p1, p2}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 
     .line 6
-    iget v2, v0, Le/h/a/b/d/a;->f:F
-
-    mul-float v2, v2, p3
-
-    const/high16 v3, 0x3f800000    # 1.0f
-
-    sub-float v4, v3, p3
-
-    mul-float v4, v4, v12
-
-    add-float v15, v2, v4
-
-    div-float v2, v15, v12
-
-    cmpl-float v2, v2, v3
-
-    if-ltz v2, :cond_1
-
-    .line 7
-    invoke-virtual {v9, v1, v10}, Le/h/a/b/w/m;->a(FF)V
-
-    return-void
-
     :cond_1
-    add-float v2, v12, v13
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    mul-float v2, v2, v2
+    const-string p2, "Cannot call get on this connection more than once"
 
-    add-float v3, v15, v13
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    mul-float v4, v3, v3
+    throw p1
+.end method
 
-    sub-float/2addr v2, v4
+.method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
+    .locals 0
 
-    float-to-double v4, v2
+    .line 1
+    iget-object p1, p0, Le/h/a/b/d/a;->b:Ljava/util/concurrent/BlockingQueue;
 
-    .line 8
-    invoke-static {v4, v5}, Ljava/lang/Math;->sqrt(D)D
-
-    move-result-wide v4
-
-    double-to-float v2, v4
-
-    sub-float v4, v14, v2
-
-    add-float v16, v14, v2
-
-    div-float/2addr v2, v3
-
-    float-to-double v2, v2
-
-    .line 9
-    invoke-static {v2, v3}, Ljava/lang/Math;->atan(D)D
-
-    move-result-wide v2
-
-    invoke-static {v2, v3}, Ljava/lang/Math;->toDegrees(D)D
-
-    move-result-wide v2
-
-    double-to-float v8, v2
-
-    const/high16 v2, 0x42b40000    # 90.0f
-
-    sub-float v17, v2, v8
-
-    .line 10
-    invoke-virtual {v9, v4, v10}, Le/h/a/b/w/m;->a(FF)V
-
-    sub-float v3, v4, v13
-
-    const/4 v5, 0x0
-
-    add-float v6, v4, v13
-
-    mul-float v18, v13, v11
-
-    const/high16 v7, 0x43870000    # 270.0f
-
-    move-object/from16 v2, p4
-
-    move v4, v5
-
-    move v5, v6
-
-    move/from16 v6, v18
-
-    move/from16 v19, v8
-
-    .line 11
-    invoke-virtual/range {v2 .. v8}, Le/h/a/b/w/m;->a(FFFFFF)V
-
-    sub-float v3, v14, v12
-
-    neg-float v2, v12
-
-    sub-float v4, v2, v15
-
-    add-float v5, v14, v12
-
-    sub-float v6, v12, v15
-
-    const/high16 v2, 0x43340000    # 180.0f
-
-    sub-float v7, v2, v17
-
-    mul-float v17, v17, v11
-
-    sub-float v8, v17, v2
-
-    move-object/from16 v2, p4
-
-    .line 12
-    invoke-virtual/range {v2 .. v8}, Le/h/a/b/w/m;->a(FFFFFF)V
-
-    sub-float v3, v16, v13
-
-    const/4 v4, 0x0
-
-    add-float v5, v16, v13
-
-    const/high16 v2, 0x43870000    # 270.0f
-
-    sub-float v7, v2, v19
-
-    move-object/from16 v2, p4
-
-    move/from16 v6, v18
-
-    move/from16 v8, v19
-
-    .line 13
-    invoke-virtual/range {v2 .. v8}, Le/h/a/b/w/m;->a(FFFFFF)V
-
-    .line 14
-    invoke-virtual {v9, v1, v10}, Le/h/a/b/w/m;->a(FF)V
+    invoke-interface {p1, p2}, Ljava/util/concurrent/BlockingQueue;->add(Ljava/lang/Object;)Z
 
     return-void
 .end method
 
-.method public b()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Le/h/a/b/d/a;->d:F
-
-    return v0
-.end method
-
-.method public b(F)V
+.method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 0
-
-    .line 2
-    iput p1, p0, Le/h/a/b/d/a;->d:F
-
-    return-void
-.end method
-
-.method public c()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Le/h/a/b/d/a;->c:F
-
-    return v0
-.end method
-
-.method public c(F)V
-    .locals 0
-
-    .line 2
-    iput p1, p0, Le/h/a/b/d/a;->c:F
-
-    return-void
-.end method
-
-.method public d()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Le/h/a/b/d/a;->e:F
-
-    return v0
-.end method
-
-.method public d(F)V
-    .locals 0
-
-    .line 2
-    iput p1, p0, Le/h/a/b/d/a;->e:F
-
-    return-void
-.end method
-
-.method public e()F
-    .locals 1
-
-    .line 2
-    iget v0, p0, Le/h/a/b/d/a;->g:F
-
-    return v0
-.end method
-
-.method public e(F)V
-    .locals 0
-
-    .line 1
-    iput p1, p0, Le/h/a/b/d/a;->g:F
 
     return-void
 .end method

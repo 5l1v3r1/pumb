@@ -3,14 +3,14 @@
 .source "CustomerServicesService_Factory.java"
 
 # interfaces
-.implements Lf/d/d;
+.implements Lf/d/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lf/d/d<",
+        "Lf/d/e<",
         "Lcom/fuib/android/spot/data/api/services/CustomerServicesService;",
         ">;"
     }
@@ -42,7 +42,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;"
         }
     .end annotation
@@ -52,7 +52,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;"
         }
     .end annotation
@@ -72,10 +72,10 @@
             "Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;)V"
         }
     .end annotation
@@ -110,10 +110,10 @@
             "Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;)",
             "Lcom/fuib/android/spot/data/api/services/CustomerServicesService_Factory;"
         }
@@ -127,13 +127,13 @@
     return-object v0
 .end method
 
-.method public static newCustomerServicesService(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;)Lcom/fuib/android/spot/data/api/services/CustomerServicesService;
+.method public static newCustomerServicesService(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;)Lcom/fuib/android/spot/data/api/services/CustomerServicesService;
     .locals 1
 
     .line 1
     new-instance v0, Lcom/fuib/android/spot/data/api/services/CustomerServicesService;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/fuib/android/spot/data/api/services/CustomerServicesService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/fuib/android/spot/data/api/services/CustomerServicesService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;)V
 
     return-object v0
 .end method
@@ -150,10 +150,10 @@
             "Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;)",
             "Lcom/fuib/android/spot/data/api/services/CustomerServicesService;"
         }
@@ -179,15 +179,15 @@
 
     move-result-object p2
 
-    check-cast p2, Le/f/a/b/s/f/c1;
+    check-cast p2, Le/f/a/b/t/f/c1;
 
     invoke-interface {p3}, Lj/a/a;->get()Ljava/lang/Object;
 
     move-result-object p3
 
-    check-cast p3, Le/f/a/b/s/f/c0;
+    check-cast p3, Le/f/a/b/t/f/c0;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/fuib/android/spot/data/api/services/CustomerServicesService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/fuib/android/spot/data/api/services/CustomerServicesService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;)V
 
     return-object v0
 .end method

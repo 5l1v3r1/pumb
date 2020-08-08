@@ -3,12 +3,15 @@
 .source "BufferedSink.java"
 
 # interfaces
-.implements Lm/r;
+.implements Lm/s;
 .implements Ljava/nio/channels/WritableByteChannel;
 
 
 # virtual methods
 .method public abstract a(Ljava/lang/String;)Lm/d;
+.end method
+
+.method public abstract a(Ljava/lang/String;II)Lm/d;
 .end method
 
 .method public abstract a(Lm/f;)Lm/d;

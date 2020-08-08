@@ -168,20 +168,20 @@
     new-array v0, v0, [[Ljava/lang/String;
 
     .line 8
-    sget-object v1, Le/h/a/a/i/b/p5;->a:[Ljava/lang/String;
+    sget-object v1, Le/h/a/b/i/b/p5;->a:[Ljava/lang/String;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    sget-object v1, Le/h/a/a/i/b/p5;->b:[Ljava/lang/String;
+    sget-object v1, Le/h/a/b/i/b/p5;->b:[Ljava/lang/String;
 
     const/4 v2, 0x1
 
     aput-object v1, v0, v2
 
     .line 9
-    invoke-static {v0}, Le/h/a/a/d/q/b;->a([[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-static {v0}, Le/h/a/b/d/q/b;->a([[Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v0
 

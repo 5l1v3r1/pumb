@@ -56,7 +56,7 @@
     :cond_0
     iget-object p1, p0, Lcom/fuib/android/spot/uikit/household/widget/action/ActionView$a;->c:Lcom/fuib/android/spot/uikit/household/widget/action/ActionView;
 
-    sget v0, Le/f/a/b/y/e;->av_value:I
+    sget v0, Le/f/a/b/z/e;->av_value:I
 
     invoke-virtual {p1, v0}, Lcom/fuib/android/spot/uikit/household/widget/action/ActionView;->a(I)Landroid/view/View;
 

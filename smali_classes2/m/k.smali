@@ -3,7 +3,7 @@
 .source "InflaterSource.java"
 
 # interfaces
-.implements Lm/s;
+.implements Lm/t;
 
 
 # instance fields
@@ -58,7 +58,7 @@
 
 
 # virtual methods
-.method public a()Z
+.method public final a()Z
     .locals 5
 
     .line 1
@@ -90,7 +90,7 @@
     .line 4
     iget-object v0, p0, Lm/k;->c:Lm/e;
 
-    invoke-interface {v0}, Lm/e;->n()Z
+    invoke-interface {v0}, Lm/e;->o()Z
 
     move-result v0
 
@@ -108,12 +108,12 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lm/c;->c:Lm/o;
+    iget-object v0, v0, Lm/c;->c:Lm/p;
 
     .line 6
-    iget v2, v0, Lm/o;->c:I
+    iget v2, v0, Lm/p;->c:I
 
-    iget v3, v0, Lm/o;->b:I
+    iget v3, v0, Lm/p;->b:I
 
     sub-int/2addr v2, v3
 
@@ -122,7 +122,7 @@
     .line 7
     iget-object v2, p0, Lm/k;->d:Ljava/util/zip/Inflater;
 
-    iget-object v0, v0, Lm/o;->a:[B
+    iget-object v0, v0, Lm/p;->a:[B
 
     iget v4, p0, Lm/k;->e:I
 
@@ -207,12 +207,12 @@
 
     .line 3
     :try_start_0
-    invoke-virtual {p1, v1}, Lm/c;->b(I)Lm/o;
+    invoke-virtual {p1, v1}, Lm/c;->b(I)Lm/p;
 
     move-result-object v1
 
     .line 4
-    iget v2, v1, Lm/o;->c:I
+    iget v2, v1, Lm/p;->c:I
 
     rsub-int v2, v2, 0x2000
 
@@ -227,9 +227,9 @@
     .line 5
     iget-object v2, p0, Lm/k;->d:Ljava/util/zip/Inflater;
 
-    iget-object v4, v1, Lm/o;->a:[B
+    iget-object v4, v1, Lm/p;->a:[B
 
-    iget v5, v1, Lm/o;->c:I
+    iget v5, v1, Lm/p;->c:I
 
     invoke-virtual {v2, v4, v5, v3}, Ljava/util/zip/Inflater;->inflate([BII)I
 
@@ -238,11 +238,11 @@
     if-lez v2, :cond_1
 
     .line 6
-    iget p2, v1, Lm/o;->c:I
+    iget p2, v1, Lm/p;->c:I
 
     add-int/2addr p2, v2
 
-    iput p2, v1, Lm/o;->c:I
+    iput p2, v1, Lm/p;->c:I
 
     .line 7
     iget-wide p2, p1, Lm/c;->d:J
@@ -296,21 +296,21 @@
     invoke-virtual {p0}, Lm/k;->b()V
 
     .line 11
-    iget p2, v1, Lm/o;->b:I
+    iget p2, v1, Lm/p;->b:I
 
-    iget p3, v1, Lm/o;->c:I
+    iget p3, v1, Lm/p;->c:I
 
     if-ne p2, p3, :cond_5
 
     .line 12
-    invoke-virtual {v1}, Lm/o;->b()Lm/o;
+    invoke-virtual {v1}, Lm/p;->b()Lm/p;
 
     move-result-object p2
 
-    iput-object p2, p1, Lm/c;->c:Lm/o;
+    iput-object p2, p1, Lm/c;->c:Lm/p;
 
     .line 13
-    invoke-static {v1}, Lm/p;->a(Lm/o;)V
+    invoke-static {v1}, Lm/q;->a(Lm/p;)V
     :try_end_0
     .catch Ljava/util/zip/DataFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -386,18 +386,18 @@
     .line 4
     iget-object v0, p0, Lm/k;->c:Lm/e;
 
-    invoke-interface {v0}, Lm/s;->close()V
+    invoke-interface {v0}, Lm/t;->close()V
 
     return-void
 .end method
 
-.method public i()Lm/t;
+.method public i()Lm/u;
     .locals 1
 
     .line 1
     iget-object v0, p0, Lm/k;->c:Lm/e;
 
-    invoke-interface {v0}, Lm/s;->i()Lm/t;
+    invoke-interface {v0}, Lm/t;->i()Lm/u;
 
     move-result-object v0
 

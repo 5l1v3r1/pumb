@@ -1,129 +1,208 @@
 .class public final Le/f/a/b/y/h;
 .super Ljava/lang/Object;
-.source "R.java"
+.source "EnterHouseNumberPolicy.kt"
 
 
-# static fields
-.field public static final _109_fields_counter_current:I = 0x7f120008
+# instance fields
+.field public final a:Ljava/lang/String;
 
-.field public static final _110_fields_counter_previous:I = 0x7f12000a
+.field public final b:Lkotlin/text/Regex;
 
-.field public static final _60_fields_amount_max:I = 0x7f1200b8
+.field public final c:Lkotlin/text/Regex;
 
-.field public static final _61_fields_amount_min:I = 0x7f1200b9
+.field public final d:Lkotlin/text/Regex;
 
-.field public static final _65_fields_amount_min_and_amount_max:I = 0x7f1200bb
 
-.field public static final _81_fields_date_placeholder:I = 0x7f1200c4
+# direct methods
+.method public constructor <init>()V
+    .locals 2
 
-.field public static final _85_fields_select_amount_value:I = 0x7f1200c6
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public static final abc_action_bar_home_description:I = 0x7f1200d0
+    const-string v0, "EnterHouseNumberPolicy"
 
-.field public static final abc_action_bar_up_description:I = 0x7f1200d1
+    .line 2
+    iput-object v0, p0, Le/f/a/b/y/h;->a:Ljava/lang/String;
 
-.field public static final abc_action_menu_overflow_description:I = 0x7f1200d2
+    .line 3
+    new-instance v0, Lkotlin/text/Regex;
 
-.field public static final abc_action_mode_done:I = 0x7f1200d3
+    const-string v1, "[1-9][0-9]{0,3}[a-zA-Z\u0430-\u044f\u0410-\u042f]?"
 
-.field public static final abc_activity_chooser_view_see_all:I = 0x7f1200d4
+    invoke-direct {v0, v1}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;)V
 
-.field public static final abc_activitychooserview_choose_application:I = 0x7f1200d5
+    iput-object v0, p0, Le/f/a/b/y/h;->b:Lkotlin/text/Regex;
 
-.field public static final abc_capital_off:I = 0x7f1200d6
+    .line 4
+    new-instance v0, Lkotlin/text/Regex;
 
-.field public static final abc_capital_on:I = 0x7f1200d7
+    const-string v1, "[1-9][0-9]{0,3}[/]"
 
-.field public static final abc_menu_alt_shortcut_label:I = 0x7f1200d8
+    invoke-direct {v0, v1}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;)V
 
-.field public static final abc_menu_ctrl_shortcut_label:I = 0x7f1200d9
+    iput-object v0, p0, Le/f/a/b/y/h;->c:Lkotlin/text/Regex;
 
-.field public static final abc_menu_delete_shortcut_label:I = 0x7f1200da
+    .line 5
+    new-instance v0, Lkotlin/text/Regex;
 
-.field public static final abc_menu_enter_shortcut_label:I = 0x7f1200db
+    const-string v1, "[1-9][0-9]{0,3}[/][1-9][0-9]{0,3}[a-zA-Z\u0430-\u044f\u0410-\u042f]?"
 
-.field public static final abc_menu_function_shortcut_label:I = 0x7f1200dc
+    invoke-direct {v0, v1}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;)V
 
-.field public static final abc_menu_meta_shortcut_label:I = 0x7f1200dd
+    iput-object v0, p0, Le/f/a/b/y/h;->d:Lkotlin/text/Regex;
 
-.field public static final abc_menu_shift_shortcut_label:I = 0x7f1200de
+    return-void
+.end method
 
-.field public static final abc_menu_space_shortcut_label:I = 0x7f1200df
 
-.field public static final abc_menu_sym_shortcut_label:I = 0x7f1200e0
+# virtual methods
+.method public final a(Ljava/lang/String;)Z
+    .locals 1
 
-.field public static final abc_prepend_shortcut_label:I = 0x7f1200e1
+    .line 5
+    iget-object v0, p0, Le/f/a/b/y/h;->b:Lkotlin/text/Regex;
 
-.field public static final abc_search_hint:I = 0x7f1200e2
+    invoke-virtual {v0, p1}, Lkotlin/text/Regex;->matches(Ljava/lang/CharSequence;)Z
 
-.field public static final abc_searchview_description_clear:I = 0x7f1200e3
+    move-result v0
 
-.field public static final abc_searchview_description_query:I = 0x7f1200e4
+    if-nez v0, :cond_1
 
-.field public static final abc_searchview_description_search:I = 0x7f1200e5
+    iget-object v0, p0, Le/f/a/b/y/h;->d:Lkotlin/text/Regex;
 
-.field public static final abc_searchview_description_submit:I = 0x7f1200e6
+    invoke-virtual {v0, p1}, Lkotlin/text/Regex;->matches(Ljava/lang/CharSequence;)Z
 
-.field public static final abc_searchview_description_voice:I = 0x7f1200e7
+    move-result p1
 
-.field public static final abc_shareactionprovider_share_with:I = 0x7f1200e8
+    if-eqz p1, :cond_0
 
-.field public static final abc_shareactionprovider_share_with_application:I = 0x7f1200e9
+    goto :goto_0
 
-.field public static final abc_toolbar_collapse_description:I = 0x7f1200ea
+    :cond_0
+    const/4 p1, 0x0
 
-.field public static final amount_input_hint_full:I = 0x7f1200fd
+    goto :goto_1
 
-.field public static final amount_input_hint_short:I = 0x7f1200fe
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
 
-.field public static final amount_input_label:I = 0x7f1200ff
+    :goto_1
+    return p1
+.end method
 
-.field public static final app_name:I = 0x7f120100
+.method public final a(Ljava/lang/String;Ljava/lang/String;I)Z
+    .locals 6
 
-.field public static final appbar_scrolling_view_behavior:I = 0x7f120102
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
 
-.field public static final bottom_sheet_behavior:I = 0x7f12012f
+    if-eqz p1, :cond_0
 
-.field public static final character_counter_content_description:I = 0x7f120171
+    move-object v1, p1
 
-.field public static final character_counter_pattern:I = 0x7f120173
+    goto :goto_0
 
-.field public static final fab_transformation_scrim_behavior:I = 0x7f120216
+    :cond_0
+    const-string v1, ""
 
-.field public static final fab_transformation_sheet_behavior:I = 0x7f120217
+    :goto_0
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-.field public static final hide_bottom_view_on_scroll_behavior:I = 0x7f120241
+    const/4 v1, 0x0
 
-.field public static final input_phone_mask:I = 0x7f120299
+    .line 2
+    :try_start_0
+    invoke-virtual {v0, p3, p2}, Ljava/lang/StringBuilder;->insert(ILjava/lang/String;)Ljava/lang/StringBuilder;
 
-.field public static final label_month:I = 0x7f12029d
+    move-result-object v0
 
-.field public static final label_year:I = 0x7f12029e
+    const-string v2, "result"
 
-.field public static final mtrl_chip_close_icon_content_description:I = 0x7f120343
+    .line 3
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-.field public static final password_toggle_content_description:I = 0x7f1203a8
+    iget-object v2, p0, Le/f/a/b/y/h;->b:Lkotlin/text/Regex;
 
-.field public static final path_password_eye:I = 0x7f1203a9
+    invoke-virtual {v2, v0}, Lkotlin/text/Regex;->matches(Ljava/lang/CharSequence;)Z
 
-.field public static final path_password_eye_mask_strike_through:I = 0x7f1203aa
+    move-result v2
 
-.field public static final path_password_eye_mask_visible:I = 0x7f1203ab
+    if-nez v2, :cond_1
 
-.field public static final path_password_strike_through:I = 0x7f1203ac
+    iget-object v2, p0, Le/f/a/b/y/h;->c:Lkotlin/text/Regex;
 
-.field public static final search_menu_title:I = 0x7f1203da
+    invoke-virtual {v2, v0}, Lkotlin/text/Regex;->matches(Ljava/lang/CharSequence;)Z
 
-.field public static final status_bar_notification_info_overflow:I = 0x7f1203ec
+    move-result v2
 
-.field public static final text_field_horizontal_label:I = 0x7f120412
+    if-nez v2, :cond_1
 
-.field public static final text_field_horizontal_value:I = 0x7f120413
+    iget-object v2, p0, Le/f/a/b/y/h;->d:Lkotlin/text/Regex;
 
-.field public static final text_field_vertical_label:I = 0x7f120414
+    invoke-virtual {v2, v0}, Lkotlin/text/Regex;->matches(Ljava/lang/CharSequence;)Z
 
-.field public static final text_field_vertical_value:I = 0x7f120415
+    move-result p1
+    :try_end_0
+    .catch Ljava/lang/StringIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
-.field public static final text_input_label:I = 0x7f120416
+    if-eqz p1, :cond_2
 
-.field public static final text_input_value:I = 0x7f120417
+    :cond_1
+    const/4 p1, 0x1
+
+    const/4 v1, 0x1
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v0
+
+    .line 4
+    sget-object v2, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
+
+    iget-object v3, p0, Le/f/a/b/y/h;->a:Ljava/lang/String;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "WRONG INDEX AT: isCharAllowed(source="
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, ", candidate="
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, ", index="
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p1, ")\n"
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringIndexOutOfBoundsException;->printStackTrace()V
+
+    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v2, v3, p1}, Le/f/a/b/t/f/f1$a;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_2
+    :goto_1
+    return v1
+.end method

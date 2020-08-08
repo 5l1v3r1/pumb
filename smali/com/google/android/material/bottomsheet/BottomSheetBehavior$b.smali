@@ -52,7 +52,7 @@
     .line 2
     iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$b;->c:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
-    invoke-static {v0}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->a(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;)Le/h/a/b/w/g;
+    invoke-static {v0}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->a(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;)Le/h/a/c/w/g;
 
     move-result-object v0
 
@@ -61,11 +61,11 @@
     .line 3
     iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$b;->c:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
-    invoke-static {v0}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->a(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;)Le/h/a/b/w/g;
+    invoke-static {v0}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->a(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;)Le/h/a/c/w/g;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Le/h/a/b/w/g;->c(F)V
+    invoke-virtual {v0, p1}, Le/h/a/c/w/g;->c(F)V
 
     :cond_0
     return-void

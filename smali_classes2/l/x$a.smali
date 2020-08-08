@@ -93,7 +93,7 @@
 
     invoke-direct {v3, v4}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    invoke-interface {v1, v2, v3}, Ll/f;->a(Ll/e;Ljava/io/IOException;)V
+    invoke-interface {v1, v2, v3}, Ll/f;->onFailure(Ll/e;Ljava/io/IOException;)V
 
     goto :goto_0
 
@@ -103,7 +103,7 @@
 
     iget-object v3, p0, Ll/x$a;->e:Ll/x;
 
-    invoke-interface {v1, v3, v2}, Ll/f;->a(Ll/e;Ll/a0;)V
+    invoke-interface {v1, v3, v2}, Ll/f;->onResponse(Ll/e;Ll/a0;)V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -191,7 +191,7 @@
 
     iget-object v2, p0, Ll/x$a;->e:Ll/x;
 
-    invoke-interface {v0, v2, v1}, Ll/f;->a(Ll/e;Ljava/io/IOException;)V
+    invoke-interface {v0, v2, v1}, Ll/f;->onFailure(Ll/e;Ljava/io/IOException;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

@@ -1,102 +1,186 @@
 .class public final Le/h/a/b/k/a;
 .super Ljava/lang/Object;
-.source "CircularRevealCompat.java"
+
+# interfaces
+.implements Le/h/a/b/d/i/a$d$e;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Le/h/a/b/k/a$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final k:Le/h/a/b/k/a;
+
+
+# instance fields
+.field public final c:Z
+
+.field public final d:Z
+
+.field public final e:Ljava/lang/String;
+
+.field public final f:Z
+
+.field public final g:Ljava/lang/String;
+
+.field public final h:Z
+
+.field public final i:Ljava/lang/Long;
+
+.field public final j:Ljava/lang/Long;
 
 
 # direct methods
-.method public static a(Le/h/a/b/k/c;)Landroid/animation/Animator$AnimatorListener;
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 10
 
-    .line 11
+    .line 1
     new-instance v0, Le/h/a/b/k/a$a;
 
-    invoke-direct {v0, p0}, Le/h/a/b/k/a$a;-><init>(Le/h/a/b/k/c;)V
+    invoke-direct {v0}, Le/h/a/b/k/a$a;-><init>()V
+
+    .line 2
+    new-instance v0, Le/h/a/b/k/a;
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    move-object v1, v0
+
+    .line 3
+    invoke-direct/range {v1 .. v9}, Le/h/a/b/k/a;-><init>(ZZLjava/lang/String;ZLjava/lang/String;ZLjava/lang/Long;Ljava/lang/Long;)V
+
+    .line 4
+    sput-object v0, Le/h/a/b/k/a;->k:Le/h/a/b/k/a;
+
+    return-void
+.end method
+
+.method public constructor <init>(ZZLjava/lang/String;ZLjava/lang/String;ZLjava/lang/Long;Ljava/lang/Long;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 p1, 0x0
+
+    .line 2
+    iput-boolean p1, p0, Le/h/a/b/k/a;->c:Z
+
+    .line 3
+    iput-boolean p1, p0, Le/h/a/b/k/a;->d:Z
+
+    const/4 p2, 0x0
+
+    .line 4
+    iput-object p2, p0, Le/h/a/b/k/a;->e:Ljava/lang/String;
+
+    .line 5
+    iput-boolean p1, p0, Le/h/a/b/k/a;->f:Z
+
+    .line 6
+    iput-boolean p1, p0, Le/h/a/b/k/a;->h:Z
+
+    .line 7
+    iput-object p2, p0, Le/h/a/b/k/a;->g:Ljava/lang/String;
+
+    .line 8
+    iput-object p2, p0, Le/h/a/b/k/a;->i:Ljava/lang/Long;
+
+    .line 9
+    iput-object p2, p0, Le/h/a/b/k/a;->j:Ljava/lang/Long;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/Long;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Le/h/a/b/k/a;->i:Ljava/lang/Long;
 
     return-object v0
 .end method
 
-.method public static a(Le/h/a/b/k/c;FFF)Landroid/animation/Animator;
-    .locals 6
+.method public final b()Ljava/lang/String;
+    .locals 1
 
     .line 1
-    sget-object v0, Le/h/a/b/k/c$c;->a:Landroid/util/Property;
+    iget-object v0, p0, Le/h/a/b/k/a;->g:Ljava/lang/String;
 
-    sget-object v1, Le/h/a/b/k/c$b;->b:Landroid/animation/TypeEvaluator;
-
-    const/4 v2, 0x1
-
-    new-array v3, v2, [Le/h/a/b/k/c$e;
-
-    new-instance v4, Le/h/a/b/k/c$e;
-
-    invoke-direct {v4, p1, p2, p3}, Le/h/a/b/k/c$e;-><init>(FFF)V
-
-    const/4 v5, 0x0
-
-    aput-object v4, v3, v5
-
-    .line 2
-    invoke-static {p0, v0, v1, v3}, Landroid/animation/ObjectAnimator;->ofObject(Ljava/lang/Object;Landroid/util/Property;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/ObjectAnimator;
-
-    move-result-object v0
-
-    .line 3
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v3, 0x15
-
-    if-lt v1, v3, :cond_1
-
-    .line 4
-    invoke-interface {p0}, Le/h/a/b/k/c;->getRevealInfo()Le/h/a/b/k/c$e;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 5
-    iget v1, v1, Le/h/a/b/k/c$e;->c:F
-
-    .line 6
-    check-cast p0, Landroid/view/View;
-
-    float-to-int p1, p1
-
-    float-to-int p2, p2
-
-    .line 7
-    invoke-static {p0, p1, p2, v1, p3}, Landroid/view/ViewAnimationUtils;->createCircularReveal(Landroid/view/View;IIFF)Landroid/animation/Animator;
-
-    move-result-object p0
-
-    .line 8
-    new-instance p1, Landroid/animation/AnimatorSet;
-
-    invoke-direct {p1}, Landroid/animation/AnimatorSet;-><init>()V
-
-    const/4 p2, 0x2
-
-    new-array p2, p2, [Landroid/animation/Animator;
-
-    aput-object v0, p2, v5
-
-    aput-object p0, p2, v2
-
-    .line 9
-    invoke-virtual {p1, p2}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
-
-    return-object p1
-
-    .line 10
-    :cond_0
-    new-instance p0, Ljava/lang/IllegalStateException;
-
-    const-string p1, "Caller must set a non-null RevealInfo before calling this."
-
-    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    :cond_1
     return-object v0
+.end method
+
+.method public final c()Ljava/lang/Long;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Le/h/a/b/k/a;->j:Ljava/lang/Long;
+
+    return-object v0
+.end method
+
+.method public final d()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Le/h/a/b/k/a;->e:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final e()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Le/h/a/b/k/a;->f:Z
+
+    return v0
+.end method
+
+.method public final f()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Le/h/a/b/k/a;->d:Z
+
+    return v0
+.end method
+
+.method public final g()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Le/h/a/b/k/a;->c:Z
+
+    return v0
+.end method
+
+.method public final h()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Le/h/a/b/k/a;->h:Z
+
+    return v0
 .end method

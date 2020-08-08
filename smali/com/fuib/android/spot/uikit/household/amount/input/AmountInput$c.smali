@@ -51,7 +51,7 @@
     .line 2
     iget-object p1, p0, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput$c;->c:Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;
 
-    sget p2, Le/f/a/b/y/e;->amount_input_edit_text:I
+    sget p2, Le/f/a/b/z/e;->amount_input_edit_text:I
 
     invoke-virtual {p1, p2}, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;->a(I)Landroid/view/View;
 
@@ -78,7 +78,7 @@
 
     iget-object v1, p0, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput$c;->c:Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;
 
-    sget v2, Le/f/a/b/y/e;->amount_input_edit_text:I
+    sget v2, Le/f/a/b/z/e;->amount_input_edit_text:I
 
     invoke-virtual {v1, v2}, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;->a(I)Landroid/view/View;
 

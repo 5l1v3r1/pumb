@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/String;Le/f/a/b/s/f/e;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/String;Le/f/a/b/t/f/e;Ljava/lang/String;)V
     .locals 11
 
     .line 1
@@ -40,7 +40,7 @@
 
     move-object/from16 v9, p8
 
-    invoke-direct/range {v1 .. v9}, Lcom/fuib/android/spot/data/api/auth/pasword/request/AuthPassRequestData;-><init>(Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/String;Le/f/a/b/s/f/e;Ljava/lang/String;)V
+    invoke-direct/range {v1 .. v9}, Lcom/fuib/android/spot/data/api/auth/pasword/request/AuthPassRequestData;-><init>(Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/String;Le/f/a/b/t/f/e;Ljava/lang/String;)V
 
     move-object v1, p0
 

@@ -159,7 +159,7 @@
     if-eqz p1, :cond_0
 
     .line 5
-    sget-object p3, Le/f/a/b/o;->MorphingButton:[I
+    sget-object p3, Le/f/a/b/p;->MorphingButton:[I
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -167,7 +167,7 @@
 
     const/4 p3, 0x2
 
-    const v0, 0x7f080299
+    const v0, 0x7f0802aa
 
     .line 6
     invoke-virtual {p2, p3, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -183,7 +183,7 @@
 
     const/4 p3, 0x1
 
-    const v0, 0x7f08029a
+    const v0, 0x7f0802ab
 
     .line 8
     invoke-virtual {p2, p3, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -208,7 +208,7 @@
 
     iput-boolean p3, p0, Lcom/fuib/android/spot/presentation/common/widget/MorphingButton;->f:Z
 
-    const p3, 0x7f08029b
+    const p3, 0x7f0802ac
 
     .line 11
     invoke-static {p1, p3}, Lb/k/f/a;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
@@ -233,7 +233,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f070240
+    const p2, 0x7f070243
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 

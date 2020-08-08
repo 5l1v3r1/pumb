@@ -23,7 +23,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Le/h/a/a/f/a;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Le/h/a/b/f/a;)V
     .locals 0
 
     .line 3
@@ -41,7 +41,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;Le/h/a/a/f/a;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;Le/h/a/b/f/a;)V
     .locals 0
 
     .line 4

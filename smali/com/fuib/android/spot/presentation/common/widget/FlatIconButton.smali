@@ -46,14 +46,14 @@
     iput-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;->k:Ljava/lang/Boolean;
 
     .line 3
-    new-instance p1, Le/f/a/b/v/b/o/a;
+    new-instance p1, Le/f/a/b/w/b/o/a;
 
-    invoke-direct {p1, p0}, Le/f/a/b/v/b/o/a;-><init>(Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;)V
+    invoke-direct {p1, p0}, Le/f/a/b/w/b/o/a;-><init>(Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;)V
 
     iput-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;->m:Landroid/view/View$OnTouchListener;
 
     .line 4
-    sget-object p1, Le/f/a/b/v/b/o/b;->c:Le/f/a/b/v/b/o/b;
+    sget-object p1, Le/f/a/b/w/b/o/b;->c:Le/f/a/b/w/b/o/b;
 
     iput-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;->n:Landroid/view/View$OnTouchListener;
 
@@ -76,14 +76,14 @@
     iput-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;->k:Ljava/lang/Boolean;
 
     .line 7
-    new-instance v0, Le/f/a/b/v/b/o/a;
+    new-instance v0, Le/f/a/b/w/b/o/a;
 
-    invoke-direct {v0, p0}, Le/f/a/b/v/b/o/a;-><init>(Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;)V
+    invoke-direct {v0, p0}, Le/f/a/b/w/b/o/a;-><init>(Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;)V
 
     iput-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;->m:Landroid/view/View$OnTouchListener;
 
     .line 8
-    sget-object v0, Le/f/a/b/v/b/o/b;->c:Le/f/a/b/v/b/o/b;
+    sget-object v0, Le/f/a/b/w/b/o/b;->c:Le/f/a/b/w/b/o/b;
 
     iput-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;->n:Landroid/view/View$OnTouchListener;
 
@@ -109,14 +109,14 @@
     iput-object p3, p0, Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;->k:Ljava/lang/Boolean;
 
     .line 12
-    new-instance p3, Le/f/a/b/v/b/o/a;
+    new-instance p3, Le/f/a/b/w/b/o/a;
 
-    invoke-direct {p3, p0}, Le/f/a/b/v/b/o/a;-><init>(Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;)V
+    invoke-direct {p3, p0}, Le/f/a/b/w/b/o/a;-><init>(Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;)V
 
     iput-object p3, p0, Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;->m:Landroid/view/View$OnTouchListener;
 
     .line 13
-    sget-object p3, Le/f/a/b/v/b/o/b;->c:Le/f/a/b/v/b/o/b;
+    sget-object p3, Le/f/a/b/w/b/o/b;->c:Le/f/a/b/w/b/o/b;
 
     iput-object p3, p0, Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;->n:Landroid/view/View$OnTouchListener;
 
@@ -145,7 +145,7 @@
 
     .line 1
     :cond_0
-    sget-object v0, Le/f/a/b/o;->FlatIconButton:[I
+    sget-object v0, Le/f/a/b/p;->FlatIconButton:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -255,7 +255,7 @@
 
     iget-object v1, p0, Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton;->k:Ljava/lang/Boolean;
 
-    invoke-static {v0, v1}, Le/f/a/b/s/f/p0;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Le/f/a/b/t/f/p0;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 

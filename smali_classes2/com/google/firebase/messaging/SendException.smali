@@ -1,6 +1,6 @@
 .class public final Lcom/google/firebase/messaging/SendException;
 .super Ljava/lang/Exception;
-.source "com.google.firebase:firebase-messaging@@20.0.0"
+.source "com.google.firebase:firebase-messaging@@20.2.1"
 
 
 # direct methods

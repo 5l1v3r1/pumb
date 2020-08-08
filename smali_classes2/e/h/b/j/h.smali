@@ -1,40 +1,34 @@
 .class public final synthetic Le/h/b/j/h;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-messaging@@20.0.0"
+.source "com.google.firebase:firebase-iid@@20.2.1"
 
 # interfaces
-.implements Le/h/a/a/m/c;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Lcom/google/firebase/messaging/zzc;
-
-.field public final b:Landroid/content/Intent;
+.field public final c:Le/h/b/j/f;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/firebase/messaging/zzc;Landroid/content/Intent;)V
+.method public constructor <init>(Le/h/b/j/f;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Le/h/b/j/h;->a:Lcom/google/firebase/messaging/zzc;
-
-    iput-object p2, p0, Le/h/b/j/h;->b:Landroid/content/Intent;
+    iput-object p1, p0, Le/h/b/j/h;->c:Le/h/b/j/f;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Le/h/a/a/m/g;)V
-    .locals 2
+.method public final run()V
+    .locals 1
 
-    iget-object v0, p0, Le/h/b/j/h;->a:Lcom/google/firebase/messaging/zzc;
+    iget-object v0, p0, Le/h/b/j/h;->c:Le/h/b/j/f;
 
-    iget-object v1, p0, Le/h/b/j/h;->b:Landroid/content/Intent;
-
-    invoke-virtual {v0, v1, p1}, Lcom/google/firebase/messaging/zzc;->a(Landroid/content/Intent;Le/h/a/a/m/g;)V
+    invoke-virtual {v0}, Le/h/b/j/f;->c()V
 
     return-void
 .end method

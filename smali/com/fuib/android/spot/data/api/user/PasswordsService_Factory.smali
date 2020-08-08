@@ -3,14 +3,14 @@
 .source "PasswordsService_Factory.java"
 
 # interfaces
-.implements Lf/d/d;
+.implements Lf/d/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lf/d/d<",
+        "Lf/d/e<",
         "Lcom/fuib/android/spot/data/api/user/PasswordsService;",
         ">;"
     }
@@ -42,7 +42,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;"
         }
     .end annotation
@@ -52,7 +52,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;"
         }
     .end annotation
@@ -72,7 +72,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/g;",
+            "Le/f/a/b/t/f/g;",
             ">;"
         }
     .end annotation
@@ -92,16 +92,16 @@
             "Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;",
             "Lj/a/a<",
             "Lcom/fuib/android/spot/data/api/common/AppVersionProvider;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/g;",
+            "Le/f/a/b/t/f/g;",
             ">;)V"
         }
     .end annotation
@@ -142,16 +142,16 @@
             "Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;",
             "Lj/a/a<",
             "Lcom/fuib/android/spot/data/api/common/AppVersionProvider;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/g;",
+            "Le/f/a/b/t/f/g;",
             ">;)",
             "Lcom/fuib/android/spot/data/api/user/PasswordsService_Factory;"
         }
@@ -179,7 +179,7 @@
     return-object v7
 .end method
 
-.method public static newPasswordsService(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/s/f/g;)Lcom/fuib/android/spot/data/api/user/PasswordsService;
+.method public static newPasswordsService(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/t/f/g;)Lcom/fuib/android/spot/data/api/user/PasswordsService;
     .locals 8
 
     .line 1
@@ -199,7 +199,7 @@
 
     move-object v6, p5
 
-    invoke-direct/range {v0 .. v6}, Lcom/fuib/android/spot/data/api/user/PasswordsService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/s/f/g;)V
+    invoke-direct/range {v0 .. v6}, Lcom/fuib/android/spot/data/api/user/PasswordsService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/t/f/g;)V
 
     return-object v7
 .end method
@@ -216,16 +216,16 @@
             "Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;",
             "Lj/a/a<",
             "Lcom/fuib/android/spot/data/api/common/AppVersionProvider;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/g;",
+            "Le/f/a/b/t/f/g;",
             ">;)",
             "Lcom/fuib/android/spot/data/api/user/PasswordsService;"
         }
@@ -259,7 +259,7 @@
 
     move-object v3, p0
 
-    check-cast v3, Le/f/a/b/s/f/c1;
+    check-cast v3, Le/f/a/b/t/f/c1;
 
     .line 5
     invoke-interface {p3}, Lj/a/a;->get()Ljava/lang/Object;
@@ -268,7 +268,7 @@
 
     move-object v4, p0
 
-    check-cast v4, Le/f/a/b/s/f/c0;
+    check-cast v4, Le/f/a/b/t/f/c0;
 
     .line 6
     invoke-interface {p4}, Lj/a/a;->get()Ljava/lang/Object;
@@ -286,11 +286,11 @@
 
     move-object v6, p0
 
-    check-cast v6, Le/f/a/b/s/f/g;
+    check-cast v6, Le/f/a/b/t/f/g;
 
     move-object v0, v7
 
-    invoke-direct/range {v0 .. v6}, Lcom/fuib/android/spot/data/api/user/PasswordsService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/s/f/g;)V
+    invoke-direct/range {v0 .. v6}, Lcom/fuib/android/spot/data/api/user/PasswordsService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/t/f/g;)V
 
     return-object v7
 .end method

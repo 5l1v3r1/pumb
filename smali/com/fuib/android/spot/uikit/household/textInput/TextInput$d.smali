@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/fuib/android/spot/uikit/household/textInput/TextInput;->setOnTextChangedListener(Lkotlin/jvm/functions/Function1;)V
+    value = Lcom/fuib/android/spot/uikit/household/textInput/TextInput;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,15 +18,20 @@
 
 
 # instance fields
-.field public final synthetic c:Lkotlin/jvm/functions/Function1;
+.field public final synthetic c:Lcom/fuib/android/spot/uikit/household/textInput/TextInput;
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
+.method public constructor <init>(Lcom/fuib/android/spot/uikit/household/textInput/TextInput;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/fuib/android/spot/uikit/household/textInput/TextInput$d;->c:Lkotlin/jvm/functions/Function1;
+    iput-object p1, p0, Lcom/fuib/android/spot/uikit/household/textInput/TextInput$d;->c:Lcom/fuib/android/spot/uikit/household/textInput/TextInput;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,24 +55,65 @@
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
 
+    const/4 p2, 0x1
+
+    if-eqz p1, :cond_1
+
     .line 1
-    iget-object p2, p0, Lcom/fuib/android/spot/uikit/household/textInput/TextInput$d;->c:Lkotlin/jvm/functions/Function1;
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
-    if-eqz p1, :cond_0
+    move-result p3
 
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    const/4 p4, 0x0
 
-    move-result-object p1
+    if-nez p3, :cond_0
 
-    if-eqz p1, :cond_0
+    const/4 p3, 0x1
 
     goto :goto_0
 
     :cond_0
-    const-string p1, ""
+    const/4 p3, 0x0
 
     :goto_0
-    invoke-interface {p2, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    if-ne p3, p2, :cond_1
 
+    iget-object p3, p0, Lcom/fuib/android/spot/uikit/household/textInput/TextInput$d;->c:Lcom/fuib/android/spot/uikit/household/textInput/TextInput;
+
+    invoke-static {p3}, Lcom/fuib/android/spot/uikit/household/textInput/TextInput;->c(Lcom/fuib/android/spot/uikit/household/textInput/TextInput;)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_1
+
+    .line 2
+    iget-object p3, p0, Lcom/fuib/android/spot/uikit/household/textInput/TextInput$d;->c:Lcom/fuib/android/spot/uikit/household/textInput/TextInput;
+
+    invoke-static {p3, p4}, Lcom/fuib/android/spot/uikit/household/textInput/TextInput;->a(Lcom/fuib/android/spot/uikit/household/textInput/TextInput;Z)V
+
+    :cond_1
+    if-eqz p1, :cond_2
+
+    .line 3
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+
+    move-result p1
+
+    if-ne p1, p2, :cond_2
+
+    iget-object p1, p0, Lcom/fuib/android/spot/uikit/household/textInput/TextInput$d;->c:Lcom/fuib/android/spot/uikit/household/textInput/TextInput;
+
+    invoke-static {p1}, Lcom/fuib/android/spot/uikit/household/textInput/TextInput;->c(Lcom/fuib/android/spot/uikit/household/textInput/TextInput;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    .line 4
+    iget-object p1, p0, Lcom/fuib/android/spot/uikit/household/textInput/TextInput$d;->c:Lcom/fuib/android/spot/uikit/household/textInput/TextInput;
+
+    invoke-static {p1, p2}, Lcom/fuib/android/spot/uikit/household/textInput/TextInput;->a(Lcom/fuib/android/spot/uikit/household/textInput/TextInput;Z)V
+
+    :cond_2
     return-void
 .end method

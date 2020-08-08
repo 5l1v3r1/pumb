@@ -78,14 +78,14 @@
     iput v0, p0, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->f:I
 
     .line 4
-    new-instance v0, Le/h/a/b/t/d;
+    new-instance v0, Le/h/a/c/t/d;
 
     sget v1, Lcom/google/android/material/R$style;->TextAppearance_MaterialComponents_Badge:I
 
-    invoke-direct {v0, p1, v1}, Le/h/a/b/t/d;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v0, p1, v1}, Le/h/a/c/t/d;-><init>(Landroid/content/Context;I)V
 
     .line 5
-    iget-object v0, v0, Le/h/a/b/t/d;->b:Landroid/content/res/ColorStateList;
+    iget-object v0, v0, Le/h/a/c/t/d;->b:Landroid/content/res/ColorStateList;
 
     invoke-virtual {v0}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 

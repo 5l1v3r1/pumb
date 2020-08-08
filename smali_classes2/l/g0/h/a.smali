@@ -240,14 +240,14 @@
     const-wide/16 v1, 0x0
 
     .line 12
-    invoke-virtual {p0, v1, v2}, Ll/g0/h/a;->b(J)Lm/s;
+    invoke-virtual {p0, v1, v2}, Ll/g0/h/a;->b(J)Lm/t;
 
     move-result-object p1
 
     .line 13
     new-instance v3, Ll/g0/g/h;
 
-    invoke-static {p1}, Lm/l;->a(Lm/s;)Lm/e;
+    invoke-static {p1}, Lm/l;->a(Lm/t;)Lm/e;
 
     move-result-object p1
 
@@ -274,7 +274,7 @@
     if-eqz v1, :cond_1
 
     .line 15
-    invoke-virtual {p1}, Ll/a0;->A()Ll/y;
+    invoke-virtual {p1}, Ll/a0;->D()Ll/y;
 
     move-result-object p1
 
@@ -282,14 +282,14 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Ll/g0/h/a;->a(Ll/s;)Lm/s;
+    invoke-virtual {p0, p1}, Ll/g0/h/a;->a(Ll/s;)Lm/t;
 
     move-result-object p1
 
     .line 16
     new-instance v1, Ll/g0/g/h;
 
-    invoke-static {p1}, Lm/l;->a(Lm/s;)Lm/e;
+    invoke-static {p1}, Lm/l;->a(Lm/t;)Lm/e;
 
     move-result-object p1
 
@@ -308,14 +308,14 @@
     if-eqz p1, :cond_2
 
     .line 18
-    invoke-virtual {p0, v4, v5}, Ll/g0/h/a;->b(J)Lm/s;
+    invoke-virtual {p0, v4, v5}, Ll/g0/h/a;->b(J)Lm/t;
 
     move-result-object p1
 
     .line 19
     new-instance v1, Ll/g0/g/h;
 
-    invoke-static {p1}, Lm/l;->a(Lm/s;)Lm/e;
+    invoke-static {p1}, Lm/l;->a(Lm/t;)Lm/e;
 
     move-result-object p1
 
@@ -327,11 +327,11 @@
     :cond_2
     new-instance p1, Ll/g0/g/h;
 
-    invoke-virtual {p0}, Ll/g0/h/a;->d()Lm/s;
+    invoke-virtual {p0}, Ll/g0/h/a;->d()Lm/t;
 
     move-result-object v1
 
-    invoke-static {v1}, Lm/l;->a(Lm/s;)Lm/e;
+    invoke-static {v1}, Lm/l;->a(Lm/t;)Lm/e;
 
     move-result-object v1
 
@@ -340,7 +340,7 @@
     return-object p1
 .end method
 
-.method public a(J)Lm/r;
+.method public a(J)Lm/s;
     .locals 2
 
     .line 47
@@ -387,7 +387,7 @@
     throw p1
 .end method
 
-.method public a(Ll/y;J)Lm/r;
+.method public a(Ll/y;J)Lm/s;
     .locals 2
 
     const-string v0, "Transfer-Encoding"
@@ -406,7 +406,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Ll/g0/h/a;->c()Lm/r;
+    invoke-virtual {p0}, Ll/g0/h/a;->c()Lm/s;
 
     move-result-object p1
 
@@ -420,7 +420,7 @@
     if-eqz p1, :cond_1
 
     .line 3
-    invoke-virtual {p0, p2, p3}, Ll/g0/h/a;->a(J)Lm/r;
+    invoke-virtual {p0, p2, p3}, Ll/g0/h/a;->a(J)Lm/s;
 
     move-result-object p1
 
@@ -437,7 +437,7 @@
     throw p1
 .end method
 
-.method public a(Ll/s;)Lm/s;
+.method public a(Ll/s;)Lm/t;
     .locals 2
 
     .line 51
@@ -638,25 +638,25 @@
     .locals 2
 
     .line 55
-    invoke-virtual {p1}, Lm/i;->g()Lm/t;
+    invoke-virtual {p1}, Lm/i;->g()Lm/u;
 
     move-result-object v0
 
     .line 56
-    sget-object v1, Lm/t;->d:Lm/t;
+    sget-object v1, Lm/u;->d:Lm/u;
 
-    invoke-virtual {p1, v1}, Lm/i;->a(Lm/t;)Lm/i;
+    invoke-virtual {p1, v1}, Lm/i;->a(Lm/u;)Lm/i;
 
     .line 57
-    invoke-virtual {v0}, Lm/t;->a()Lm/t;
+    invoke-virtual {v0}, Lm/u;->a()Lm/u;
 
     .line 58
-    invoke-virtual {v0}, Lm/t;->b()Lm/t;
+    invoke-virtual {v0}, Lm/u;->b()Lm/u;
 
     return-void
 .end method
 
-.method public b(J)Lm/s;
+.method public b(J)Lm/t;
     .locals 2
 
     .line 2
@@ -714,7 +714,7 @@
     return-void
 .end method
 
-.method public c()Lm/r;
+.method public c()Lm/s;
     .locals 3
 
     .line 1
@@ -780,7 +780,7 @@
     return-void
 .end method
 
-.method public d()Lm/s;
+.method public d()Lm/t;
     .locals 3
 
     .line 1
@@ -853,7 +853,7 @@
 
     iget-wide v1, p0, Ll/g0/h/a;->f:J
 
-    invoke-interface {v0, v1, v2}, Lm/e;->f(J)Ljava/lang/String;
+    invoke-interface {v0, v1, v2}, Lm/e;->g(J)Ljava/lang/String;
 
     move-result-object v0
 

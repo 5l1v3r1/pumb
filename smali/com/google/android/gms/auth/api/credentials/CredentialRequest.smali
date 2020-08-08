@@ -39,9 +39,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Le/h/a/a/b/a/e/e;
+    new-instance v0, Le/h/a/b/b/a/e/e;
 
-    invoke-direct {v0}, Le/h/a/a/b/a/e/e;-><init>()V
+    invoke-direct {v0}, Le/h/a/b/b/a/e/e;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -61,7 +61,7 @@
     iput-boolean p2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->d:Z
 
     .line 4
-    invoke-static {p3}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3}, Le/h/a/b/d/l/u;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p3, [Ljava/lang/String;
 
@@ -135,7 +135,34 @@
 
 
 # virtual methods
-.method public final A()Ljava/lang/String;
+.method public final A()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->g:Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+
+    return-object v0
+.end method
+
+.method public final B()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->f:Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+
+    return-object v0
+.end method
+
+.method public final C()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->j:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final D()Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -144,7 +171,7 @@
     return-object v0
 .end method
 
-.method public final B()Z
+.method public final E()Z
     .locals 1
 
     .line 1
@@ -153,7 +180,7 @@
     return v0
 .end method
 
-.method public final C()Z
+.method public final F()Z
     .locals 1
 
     .line 1
@@ -175,19 +202,19 @@
     .locals 4
 
     .line 1
-    invoke-static {p1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;)I
+    invoke-static {p1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;)I
 
     move-result v0
 
     .line 2
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->C()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->F()Z
 
     move-result v1
 
     const/4 v2, 0x1
 
     .line 3
-    invoke-static {p1, v2, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;IZ)V
+    invoke-static {p1, v2, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;IZ)V
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->g()[Ljava/lang/String;
@@ -199,64 +226,64 @@
     const/4 v3, 0x2
 
     .line 5
-    invoke-static {p1, v3, v1, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;I[Ljava/lang/String;Z)V
+    invoke-static {p1, v3, v1, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;I[Ljava/lang/String;Z)V
 
     .line 6
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->y()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->B()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
 
     move-result-object v1
 
     const/4 v3, 0x3
 
     .line 7
-    invoke-static {p1, v3, v1, p2, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v3, v1, p2, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 8
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->x()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->A()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
 
     move-result-object v1
 
     const/4 v3, 0x4
 
     .line 9
-    invoke-static {p1, v3, v1, p2, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v3, v1, p2, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 10
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->B()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->E()Z
 
     move-result p2
 
     const/4 v1, 0x5
 
     .line 11
-    invoke-static {p1, v1, p2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;IZ)V
+    invoke-static {p1, v1, p2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;IZ)V
 
     .line 12
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->A()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->D()Ljava/lang/String;
 
     move-result-object p2
 
     const/4 v1, 0x6
 
     .line 13
-    invoke-static {p1, v1, p2, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, p2, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 14
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->z()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->C()Ljava/lang/String;
 
     move-result-object p2
 
     const/4 v1, 0x7
 
     .line 15
-    invoke-static {p1, v1, p2, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, p2, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 16
     iget p2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->c:I
 
     const/16 v1, 0x3e8
 
-    invoke-static {p1, v1, p2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, p2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;II)V
 
     .line 17
     iget-boolean p2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->k:Z
@@ -264,37 +291,10 @@
     const/16 v1, 0x8
 
     .line 18
-    invoke-static {p1, v1, p2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;IZ)V
+    invoke-static {p1, v1, p2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;IZ)V
 
     .line 19
-    invoke-static {p1, v0}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;I)V
 
     return-void
-.end method
-
-.method public final x()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->g:Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
-
-    return-object v0
-.end method
-
-.method public final y()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->f:Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
-
-    return-object v0
-.end method
-
-.method public final z()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->j:Ljava/lang/String;
-
-    return-object v0
 .end method

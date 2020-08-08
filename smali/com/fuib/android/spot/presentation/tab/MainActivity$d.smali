@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/fuib/android/spot/presentation/tab/MainActivity;->a(Le/f/a/b/v/b/d/f;)V
+    value = Lcom/fuib/android/spot/presentation/tab/MainActivity;->a(Le/f/a/b/w/b/d/f;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

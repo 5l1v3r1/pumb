@@ -718,7 +718,7 @@
     move-result v3
 
     .line 4
-    invoke-virtual {p1}, Ll/v;->u()I
+    invoke-virtual {p1}, Ll/v;->q()I
 
     move-result v4
 

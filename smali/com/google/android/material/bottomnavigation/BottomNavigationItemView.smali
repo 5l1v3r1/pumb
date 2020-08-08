@@ -240,7 +240,7 @@
     if-ne p1, v0, :cond_0
 
     .line 28
-    sget-boolean p1, Le/h/a/b/c/a;->a:Z
+    sget-boolean p1, Le/h/a/c/c/a;->a:Z
 
     if-eqz p1, :cond_0
 
@@ -475,7 +475,7 @@
     move-result-object v1
 
     .line 7
-    invoke-static {v0, p1, v1}, Le/h/a/b/c/a;->a(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;Landroid/widget/FrameLayout;)V
+    invoke-static {v0, p1, v1}, Le/h/a/c/c/a;->a(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;Landroid/widget/FrameLayout;)V
 
     :cond_1
     return-void
@@ -543,7 +543,7 @@
     move-result-object v1
 
     .line 7
-    invoke-static {v0, p1, v1}, Le/h/a/b/c/a;->b(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;Landroid/widget/FrameLayout;)V
+    invoke-static {v0, p1, v1}, Le/h/a/c/c/a;->b(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;Landroid/widget/FrameLayout;)V
 
     :cond_1
     const/4 p1, 0x0
@@ -576,7 +576,7 @@
     move-result-object v1
 
     .line 4
-    invoke-static {v0, p1, v1}, Le/h/a/b/c/a;->c(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;Landroid/widget/FrameLayout;)V
+    invoke-static {v0, p1, v1}, Le/h/a/c/c/a;->c(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;Landroid/widget/FrameLayout;)V
 
     return-void
 .end method

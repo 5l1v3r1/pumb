@@ -107,14 +107,14 @@
     return-object v0
 .end method
 
-.method public static final create(Ljava/lang/String;Ljava/lang/String;Le/f/a/b/s/d/g;Le/h/c/f;)Lcom/fuib/android/spot/data/db/entities/LogRecord;
+.method public static final create(Ljava/lang/String;Ljava/lang/String;Le/f/a/b/t/d/g;Le/h/c/f;)Lcom/fuib/android/spot/data/db/entities/LogRecord;
     .locals 1
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
     sget-object v0, Lcom/fuib/android/spot/data/db/entities/LogRecord;->Companion:Lcom/fuib/android/spot/data/db/entities/LogRecord$Companion;
 
-    invoke-virtual {v0, p0, p1, p2, p3}, Lcom/fuib/android/spot/data/db/entities/LogRecord$Companion;->create(Ljava/lang/String;Ljava/lang/String;Le/f/a/b/s/d/g;Le/h/c/f;)Lcom/fuib/android/spot/data/db/entities/LogRecord;
+    invoke-virtual {v0, p0, p1, p2, p3}, Lcom/fuib/android/spot/data/db/entities/LogRecord$Companion;->create(Ljava/lang/String;Ljava/lang/String;Le/f/a/b/t/d/g;Le/h/c/f;)Lcom/fuib/android/spot/data/db/entities/LogRecord;
 
     move-result-object p0
 

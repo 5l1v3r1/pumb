@@ -70,7 +70,7 @@
 
 
 # instance fields
-.field public final c:Le/f/a/b/v/f/e/m/j/r/a;
+.field public final c:Le/f/a/b/w/f/h/m/j/r/a;
 
 .field public final d:Landroid/widget/TextView;
 
@@ -115,11 +115,11 @@
     invoke-direct {p0, p1, p2, p3}, Landroidx/constraintlayout/widget/ConstraintLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 2
-    new-instance p2, Le/f/a/b/v/f/e/m/j/r/a;
+    new-instance p2, Le/f/a/b/w/f/h/m/j/r/a;
 
-    invoke-direct {p2}, Le/f/a/b/v/f/e/m/j/r/a;-><init>()V
+    invoke-direct {p2}, Le/f/a/b/w/f/h/m/j/r/a;-><init>()V
 
-    iput-object p2, p0, Lcom/fuib/android/spot/presentation/tab/main/cardsAndAccounts/info/widget/TransactionItemView;->c:Le/f/a/b/v/f/e/m/j/r/a;
+    iput-object p2, p0, Lcom/fuib/android/spot/presentation/tab/main/cardsAndAccounts/info/widget/TransactionItemView;->c:Le/f/a/b/w/f/h/m/j/r/a;
 
     if-nez p1, :cond_0
 
@@ -127,11 +127,11 @@
     invoke-static {}, Lkotlin/jvm/internal/Intrinsics;->throwNpe()V
 
     :cond_0
-    const p2, 0x7f0d00da
+    const p2, 0x7f0d00e3
 
     invoke-static {p1, p2, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    const p1, 0x7f0a0584
+    const p1, 0x7f0a05bb
 
     .line 4
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -146,7 +146,7 @@
 
     iput-object p1, p0, Lcom/fuib/android/spot/presentation/tab/main/cardsAndAccounts/info/widget/TransactionItemView;->d:Landroid/widget/TextView;
 
-    const p1, 0x7f0a0258
+    const p1, 0x7f0a0270
 
     .line 5
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -161,7 +161,7 @@
 
     iput-object p1, p0, Lcom/fuib/android/spot/presentation/tab/main/cardsAndAccounts/info/widget/TransactionItemView;->e:Landroid/widget/ImageView;
 
-    const p1, 0x7f0a0589
+    const p1, 0x7f0a05c0
 
     .line 6
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -176,7 +176,7 @@
 
     iput-object p1, p0, Lcom/fuib/android/spot/presentation/tab/main/cardsAndAccounts/info/widget/TransactionItemView;->f:Landroid/widget/TextView;
 
-    const p1, 0x7f0a050d
+    const p1, 0x7f0a0544
 
     .line 7
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -191,7 +191,7 @@
 
     iput-object p1, p0, Lcom/fuib/android/spot/presentation/tab/main/cardsAndAccounts/info/widget/TransactionItemView;->g:Landroid/widget/TextView;
 
-    const p1, 0x7f0a0588
+    const p1, 0x7f0a05bf
 
     .line 8
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -206,7 +206,7 @@
 
     iput-object p1, p0, Lcom/fuib/android/spot/presentation/tab/main/cardsAndAccounts/info/widget/TransactionItemView;->h:Landroid/widget/TextView;
 
-    const p1, 0x7f0a0504
+    const p1, 0x7f0a053b
 
     .line 9
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -320,13 +320,13 @@
     :goto_0
     iget-object v4, p0, Lcom/fuib/android/spot/presentation/tab/main/cardsAndAccounts/info/widget/TransactionItemView;->d:Landroid/widget/TextView;
 
-    iget-object v5, p0, Lcom/fuib/android/spot/presentation/tab/main/cardsAndAccounts/info/widget/TransactionItemView;->c:Le/f/a/b/v/f/e/m/j/r/a;
+    iget-object v5, p0, Lcom/fuib/android/spot/presentation/tab/main/cardsAndAccounts/info/widget/TransactionItemView;->c:Le/f/a/b/w/f/h/m/j/r/a;
 
     invoke-virtual {p2}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v6
 
-    invoke-virtual {v5, p1, v6, v7}, Le/f/a/b/v/f/e/m/j/r/a;->b(Ljava/lang/String;J)Landroid/text/SpannableString;
+    invoke-virtual {v5, p1, v6, v7}, Le/f/a/b/w/f/h/m/j/r/a;->b(Ljava/lang/String;J)Landroid/text/SpannableString;
 
     move-result-object p1
 
@@ -341,12 +341,12 @@
 
     if-eqz v3, :cond_2
 
-    const v4, 0x7f0600b6
+    const v4, 0x7f0600b9
 
     goto :goto_1
 
     :cond_2
-    const v4, 0x7f060079
+    const v4, 0x7f06007b
 
     :goto_1
     invoke-static {p2, v4}, Lb/k/f/a;->a(Landroid/content/Context;I)I
@@ -360,12 +360,12 @@
 
     if-eqz v3, :cond_3
 
-    const p2, 0x7f08024e
+    const p2, 0x7f08025b
 
     goto :goto_2
 
     :cond_3
-    const p2, 0x7f08024f
+    const p2, 0x7f08025c
 
     :goto_2
     invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageResource(I)V

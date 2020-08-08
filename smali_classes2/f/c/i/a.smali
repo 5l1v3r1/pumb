@@ -100,7 +100,7 @@
     const-string v0, "fragment"
 
     .line 1
-    invoke-static {p0, v0}, Lf/d/h;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p0, v0}, Lf/d/i;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 2
     invoke-static {p0}, Lf/c/i/a;->a(Landroidx/fragment/app/Fragment;)Lf/c/i/b;
@@ -167,7 +167,7 @@
     const-string v2, "%s.supportFragmentInjector() returned null"
 
     .line 9
-    invoke-static {v1, v2, v0}, Lf/d/h;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1, v2, v0}, Lf/d/i;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
     invoke-interface {v1, p0}, Lf/c/b;->a(Ljava/lang/Object;)V

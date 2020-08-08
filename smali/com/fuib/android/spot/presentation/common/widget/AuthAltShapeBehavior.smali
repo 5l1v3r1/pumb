@@ -107,7 +107,7 @@
 
     check-cast p4, Landroid/view/ViewGroup;
 
-    const p5, 0x7f0a0159
+    const p5, 0x7f0a0165
 
     invoke-virtual {p4, p5}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -118,7 +118,7 @@
     .line 2
     iput-object p5, p0, Lcom/fuib/android/spot/presentation/common/widget/AuthAltShapeBehavior;->content:Landroid/view/View;
 
-    const p5, 0x7f0a0284
+    const p5, 0x7f0a029c
 
     .line 3
     invoke-virtual {p2, p5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -230,7 +230,7 @@
 
     if-eqz p4, :cond_5
 
-    const p5, 0x7f0a02ec
+    const p5, 0x7f0a0308
 
     invoke-virtual {p4, p5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -283,7 +283,7 @@
     invoke-static {p5}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     :cond_9
-    const p5, 0x7f0a039a
+    const p5, 0x7f0a03b9
 
     invoke-virtual {v0, p5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

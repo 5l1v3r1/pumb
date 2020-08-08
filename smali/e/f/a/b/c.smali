@@ -21,7 +21,7 @@
 .method public getVersion()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "2.19.2217"
+    const-string v0, "2.21.2420"
 
     return-object v0
 .end method

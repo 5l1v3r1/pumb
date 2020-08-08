@@ -175,7 +175,7 @@
     if-eqz v0, :cond_1
 
     .line 4
-    invoke-virtual {v0}, Lb/n/a/i;->p()V
+    invoke-virtual {v0}, Lb/n/a/i;->s()V
 
     .line 5
     iget-object v0, p0, Lb/n/a/i;->c:Ljava/util/HashMap;
@@ -437,7 +437,7 @@
     return v0
 .end method
 
-.method public p()V
+.method public s()V
     .locals 2
 
     .line 1
@@ -467,7 +467,7 @@
     return-void
 .end method
 
-.method public q()Ljava/util/Collection;
+.method public t()Ljava/util/Collection;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -482,15 +482,6 @@
     iget-object v0, p0, Lb/n/a/i;->b:Ljava/util/HashSet;
 
     return-object v0
-.end method
-
-.method public r()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lb/n/a/i;->f:Z
-
-    return v0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -662,4 +653,13 @@
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public u()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lb/n/a/i;->f:Z
+
+    return v0
 .end method

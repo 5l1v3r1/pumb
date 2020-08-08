@@ -25,3 +25,6 @@
 
 .method public abstract b()Z
 .end method
+
+.method public abstract cancel()V
+.end method

@@ -1,6 +1,6 @@
 .class public Lcom/google/firebase/components/ComponentDiscoveryService;
 .super Landroid/app/Service;
-.source "com.google.firebase:firebase-common@@19.0.0"
+.source "com.google.firebase:firebase-common@@19.3.0"
 
 
 # direct methods

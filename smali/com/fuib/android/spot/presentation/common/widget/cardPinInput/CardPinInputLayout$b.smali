@@ -93,7 +93,7 @@
     .line 1
     iget-object p2, p0, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout$b;->c:Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;
 
-    sget p3, Le/f/a/b/n;->pin_dots:I
+    sget p3, Le/f/a/b/o;->pin_dots:I
 
     invoke-virtual {p2, p3}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 

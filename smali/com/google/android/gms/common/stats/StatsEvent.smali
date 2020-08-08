@@ -17,6 +17,15 @@
 
 
 # virtual methods
+.method public abstract A()J
+.end method
+
+.method public abstract B()J
+.end method
+
+.method public abstract C()Ljava/lang/String;
+.end method
+
 .method public abstract g()I
 .end method
 
@@ -24,7 +33,7 @@
     .locals 8
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->x()J
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->A()J
 
     move-result-wide v0
 
@@ -34,12 +43,12 @@
     move-result v2
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->y()J
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->B()J
 
     move-result-wide v3
 
     .line 4
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->z()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->C()Ljava/lang/String;
 
     move-result-object v5
 
@@ -76,13 +85,4 @@
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public abstract x()J
-.end method
-
-.method public abstract y()J
-.end method
-
-.method public abstract z()Ljava/lang/String;
 .end method

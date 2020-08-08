@@ -3,15 +3,15 @@
 .source "ForwardingSink.java"
 
 # interfaces
-.implements Lm/r;
+.implements Lm/s;
 
 
 # instance fields
-.field public final c:Lm/r;
+.field public final c:Lm/s;
 
 
 # direct methods
-.method public constructor <init>(Lm/r;)V
+.method public constructor <init>(Lm/s;)V
     .locals 1
 
     .line 1
@@ -20,7 +20,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lm/g;->c:Lm/r;
+    iput-object p1, p0, Lm/g;->c:Lm/s;
 
     return-void
 
@@ -41,9 +41,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lm/g;->c:Lm/r;
+    iget-object v0, p0, Lm/g;->c:Lm/s;
 
-    invoke-interface {v0, p1, p2, p3}, Lm/r;->b(Lm/c;J)V
+    invoke-interface {v0, p1, p2, p3}, Lm/s;->b(Lm/c;J)V
 
     return-void
 .end method
@@ -52,9 +52,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lm/g;->c:Lm/r;
+    iget-object v0, p0, Lm/g;->c:Lm/s;
 
-    invoke-interface {v0}, Lm/r;->close()V
+    invoke-interface {v0}, Lm/s;->close()V
 
     return-void
 .end method
@@ -63,20 +63,20 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lm/g;->c:Lm/r;
+    iget-object v0, p0, Lm/g;->c:Lm/s;
 
-    invoke-interface {v0}, Lm/r;->flush()V
+    invoke-interface {v0}, Lm/s;->flush()V
 
     return-void
 .end method
 
-.method public i()Lm/t;
+.method public i()Lm/u;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lm/g;->c:Lm/r;
+    iget-object v0, p0, Lm/g;->c:Lm/s;
 
-    invoke-interface {v0}, Lm/r;->i()Lm/t;
+    invoke-interface {v0}, Lm/s;->i()Lm/u;
 
     move-result-object v0
 
@@ -105,7 +105,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lm/g;->c:Lm/r;
+    iget-object v1, p0, Lm/g;->c:Lm/s;
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

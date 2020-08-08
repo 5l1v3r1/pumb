@@ -21,7 +21,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {p1}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Le/h/a/b/d/l/u;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/String;
 
@@ -38,7 +38,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>([Ljava/lang/String;Ljava/lang/String;Le/h/a/a/d/j/b;)V
+.method public synthetic constructor <init>([Ljava/lang/String;Ljava/lang/String;Le/h/a/b/d/j/b;)V
     .locals 0
 
     const/4 p2, 0x0

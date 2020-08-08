@@ -1,5 +1,5 @@
 .class public final Lcom/fuib/android/spot/presentation/splash/SplashFragment;
-.super Le/f/a/b/v/b/f/e;
+.super Le/f/a/b/w/b/f/e;
 .source "SplashFragment.kt"
 
 
@@ -130,7 +130,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Le/f/a/b/v/b/f/e;-><init>()V
+    invoke-direct {p0}, Le/f/a/b/w/b/f/e;-><init>()V
 
     return-void
 .end method
@@ -271,7 +271,7 @@
 
     neg-float v4, v4
 
-    sget-object v5, Le/f/a/b/v/b/m/a0;->a:Le/f/a/b/v/b/m/a0$a;
+    sget-object v5, Le/f/a/b/w/b/m/a0;->a:Le/f/a/b/w/b/m/a0$a;
 
     const-string v6, "it"
 
@@ -279,7 +279,7 @@
 
     const/high16 v6, 0x41a00000    # 20.0f
 
-    invoke-virtual {v5, v0, v6}, Le/f/a/b/v/b/m/a0$a;->a(Landroid/content/Context;F)F
+    invoke-virtual {v5, v0, v6}, Le/f/a/b/w/b/m/a0$a;->a(Landroid/content/Context;F)F
 
     move-result v0
 
@@ -451,7 +451,7 @@
 .method public a(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
-    const p3, 0x7f0d0087
+    const p3, 0x7f0d008c
 
     const/4 v0, 0x0
 
@@ -467,7 +467,7 @@
     .locals 0
 
     .line 2
-    invoke-super {p0, p1, p2}, Le/f/a/b/v/b/f/e;->a(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Le/f/a/b/w/b/f/e;->a(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 3
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/splash/SplashFragment;->b(Landroid/view/View;)V
@@ -481,7 +481,7 @@
 .method public final b(Landroid/view/View;)V
     .locals 2
 
-    const v0, 0x7f0a02b9
+    const v0, 0x7f0a02d2
 
     .line 1
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -494,7 +494,7 @@
 
     iput-object v0, p0, Lcom/fuib/android/spot/presentation/splash/SplashFragment;->i0:Landroid/view/View;
 
-    const v0, 0x7f0a02ba
+    const v0, 0x7f0a02d3
 
     .line 2
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -507,7 +507,7 @@
 
     iput-object v0, p0, Lcom/fuib/android/spot/presentation/splash/SplashFragment;->j0:Landroid/view/View;
 
-    const v0, 0x7f0a02bb
+    const v0, 0x7f0a02d4
 
     .line 3
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -521,7 +521,7 @@
     iput-object v0, p0, Lcom/fuib/android/spot/presentation/splash/SplashFragment;->k0:Landroid/view/View;
 
     .line 4
-    sget-object v0, Le/f/a/b/v/b/m/a0;->a:Le/f/a/b/v/b/m/a0$a;
+    sget-object v0, Le/f/a/b/w/b/m/a0;->a:Le/f/a/b/w/b/m/a0$a;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -533,7 +533,7 @@
 
     const/high16 v1, 0x43090000    # 137.0f
 
-    invoke-virtual {v0, p1, v1}, Le/f/a/b/v/b/m/a0$a;->a(Landroid/content/Context;F)F
+    invoke-virtual {v0, p1, v1}, Le/f/a/b/w/b/m/a0$a;->a(Landroid/content/Context;F)F
 
     move-result p1
 
@@ -552,28 +552,28 @@
 .method public final c(Landroid/view/View;)V
     .locals 13
 
-    const v0, 0x7f0a060d
+    const v0, 0x7f0a0649
 
     .line 1
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    const v1, 0x7f0a060c
+    const v1, 0x7f0a0648
 
     .line 2
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    const v2, 0x7f0a039a
+    const v2, 0x7f0a03b9
 
     .line 3
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    const v3, 0x7f0a0399
+    const v3, 0x7f0a03b8
 
     .line 4
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -755,7 +755,7 @@
 .method public synthetic n0()V
     .locals 0
 
-    invoke-super {p0}, Le/f/a/b/v/b/f/e;->n0()V
+    invoke-super {p0}, Le/f/a/b/w/b/f/e;->n0()V
 
     invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/splash/SplashFragment;->I0()V
 

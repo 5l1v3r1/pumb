@@ -60,7 +60,7 @@
     const-string v0, "OnBitmapLoadedRunnable must be executed in the main thread"
 
     .line 1
-    invoke-static {v0}, Le/h/a/a/d/l/c;->a(Ljava/lang/String;)V
+    invoke-static {v0}, Le/h/a/b/d/l/c;->a(Ljava/lang/String;)V
 
     .line 2
     iget-object v0, p0, Lcom/google/android/gms/common/images/ImageManager$c;->d:Landroid/graphics/Bitmap;
@@ -127,11 +127,11 @@
 
     move-result-object v2
 
-    new-instance v3, Le/h/a/a/d/k/b;
+    new-instance v3, Le/h/a/b/d/k/b;
 
     iget-object v4, p0, Lcom/google/android/gms/common/images/ImageManager$c;->c:Landroid/net/Uri;
 
-    invoke-direct {v3, v4}, Le/h/a/a/d/k/b;-><init>(Landroid/net/Uri;)V
+    invoke-direct {v3, v4}, Le/h/a/b/d/k/b;-><init>(Landroid/net/Uri;)V
 
     iget-object v4, p0, Lcom/google/android/gms/common/images/ImageManager$c;->d:Landroid/graphics/Bitmap;
 
@@ -175,7 +175,7 @@
 
     move-result-object v5
 
-    check-cast v5, Le/h/a/a/d/k/a;
+    check-cast v5, Le/h/a/b/d/k/a;
 
     if-eqz v0, :cond_3
 
@@ -188,7 +188,7 @@
 
     iget-object v7, p0, Lcom/google/android/gms/common/images/ImageManager$c;->d:Landroid/graphics/Bitmap;
 
-    invoke-virtual {v5, v6, v7, v1}, Le/h/a/a/d/k/a;->a(Landroid/content/Context;Landroid/graphics/Bitmap;Z)V
+    invoke-virtual {v5, v6, v7, v1}, Le/h/a/b/d/k/a;->a(Landroid/content/Context;Landroid/graphics/Bitmap;Z)V
 
     goto :goto_2
 
@@ -222,12 +222,12 @@
 
     iget-object v7, p0, Lcom/google/android/gms/common/images/ImageManager$c;->g:Lcom/google/android/gms/common/images/ImageManager;
 
-    invoke-static {v7}, Lcom/google/android/gms/common/images/ImageManager;->c(Lcom/google/android/gms/common/images/ImageManager;)Le/h/a/a/h/e/d;
+    invoke-static {v7}, Lcom/google/android/gms/common/images/ImageManager;->c(Lcom/google/android/gms/common/images/ImageManager;)Le/h/a/b/h/e/d;
 
     move-result-object v7
 
     .line 18
-    invoke-virtual {v5, v6, v7, v1}, Le/h/a/a/d/k/a;->a(Landroid/content/Context;Le/h/a/a/h/e/d;Z)V
+    invoke-virtual {v5, v6, v7, v1}, Le/h/a/b/d/k/a;->a(Landroid/content/Context;Le/h/a/b/h/e/d;Z)V
 
     .line 19
     :goto_2

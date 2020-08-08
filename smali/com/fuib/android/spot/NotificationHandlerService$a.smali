@@ -40,11 +40,11 @@
     .line 1
     iget-object v0, p0, Lcom/fuib/android/spot/NotificationHandlerService$a;->c:Lcom/fuib/android/spot/NotificationHandlerService;
 
-    invoke-virtual {v0}, Lcom/fuib/android/spot/NotificationHandlerService;->a()Le/f/a/b/s/f/z0;
+    invoke-virtual {v0}, Lcom/fuib/android/spot/NotificationHandlerService;->a()Le/f/a/b/t/f/z0;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/z0;->e()V
+    invoke-virtual {v0}, Le/f/a/b/t/f/z0;->e()V
 
     return-void
 .end method

@@ -54,7 +54,7 @@
 
     move-result-object p1
 
-    sget-object p3, Le/h/a/a/c/d;->SignInButton:[I
+    sget-object p3, Le/h/a/b/c/d;->SignInButton:[I
 
     const/4 v0, 0x0
 
@@ -64,7 +64,7 @@
 
     .line 6
     :try_start_0
-    sget p2, Le/h/a/a/c/d;->SignInButton_buttonSize:I
+    sget p2, Le/h/a/b/c/d;->SignInButton_buttonSize:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -73,7 +73,7 @@
     iput p2, p0, Lcom/google/android/gms/common/SignInButton;->c:I
 
     .line 7
-    sget p2, Le/h/a/a/c/d;->SignInButton_colorScheme:I
+    sget p2, Le/h/a/b/c/d;->SignInButton_colorScheme:I
 
     const/4 p3, 0x2
 
@@ -225,7 +225,7 @@
 
     iget v0, p0, Lcom/google/android/gms/common/SignInButton;->d:I
 
-    invoke-static {p1, p2, v0}, Le/h/a/a/d/l/w;->b(Landroid/content/Context;II)Landroid/view/View;
+    invoke-static {p1, p2, v0}, Le/h/a/b/d/l/v;->b(Landroid/content/Context;II)Landroid/view/View;
 
     move-result-object p2
 

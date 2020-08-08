@@ -40,7 +40,7 @@
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 2
-    sget p1, Le/f/a/b/y/g;->year_label_text_view:I
+    sget p1, Le/f/a/b/z/g;->year_label_text_view:I
 
     iput p1, p0, Lcom/fuib/android/spot/uikit/monthpicker/YearPickerView$d;->c:I
 

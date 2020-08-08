@@ -7,5 +7,5 @@
 .method public abstract a()V
 .end method
 
-.method public abstract body()Lm/r;
+.method public abstract body()Lm/s;
 .end method

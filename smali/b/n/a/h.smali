@@ -2512,7 +2512,7 @@
     :cond_1
     iget-object v0, p0, Lb/n/a/h;->H:Lb/n/a/i;
 
-    invoke-virtual {v0}, Lb/n/a/i;->q()Ljava/util/Collection;
+    invoke-virtual {v0}, Lb/n/a/i;->t()Ljava/util/Collection;
 
     move-result-object v0
 
@@ -4425,7 +4425,7 @@
     .line 276
     iget-object v1, v6, Lb/n/a/h;->H:Lb/n/a/i;
 
-    invoke-virtual {v1}, Lb/n/a/i;->r()Z
+    invoke-virtual {v1}, Lb/n/a/i;->u()Z
 
     move-result v8
 

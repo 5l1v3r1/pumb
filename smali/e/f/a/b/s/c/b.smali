@@ -1,32 +1,102 @@
-.class public Le/f/a/b/s/c/b;
-.super Le/f/a/b/s/c/d;
-.source "ConnectionErrorForm.java"
+.class public final synthetic Le/f/a/b/s/c/b;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static final synthetic $EnumSwitchMapping$0:[I
+
+.field public static final synthetic $EnumSwitchMapping$1:[I
 
 
 # direct methods
-.method public constructor <init>(Lcom/fuib/android/spot/data/api/common/Form;)V
-    .locals 0
+.method public static synthetic constructor <clinit>()V
+    .locals 5
 
-    .line 1
-    invoke-direct {p0}, Le/f/a/b/s/c/d;-><init>()V
+    invoke-static {}, Lcom/fuib/android/spot/data/vo/Status;->values()[Lcom/fuib/android/spot/data/vo/Status;
 
-    .line 2
-    iput-object p1, p0, Le/f/a/b/s/c/d;->a:Lcom/fuib/android/spot/data/api/common/Form;
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Le/f/a/b/s/c/b;->$EnumSwitchMapping$0:[I
+
+    sget-object v0, Le/f/a/b/s/c/b;->$EnumSwitchMapping$0:[I
+
+    sget-object v1, Lcom/fuib/android/spot/data/vo/Status;->LOADING:Lcom/fuib/android/spot/data/vo/Status;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+
+    sget-object v0, Le/f/a/b/s/c/b;->$EnumSwitchMapping$0:[I
+
+    sget-object v1, Lcom/fuib/android/spot/data/vo/Status;->SUCCESS:Lcom/fuib/android/spot/data/vo/Status;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v3, 0x2
+
+    aput v3, v0, v1
+
+    sget-object v0, Le/f/a/b/s/c/b;->$EnumSwitchMapping$0:[I
+
+    sget-object v1, Lcom/fuib/android/spot/data/vo/Status;->ERROR:Lcom/fuib/android/spot/data/vo/Status;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v4, 0x3
+
+    aput v4, v0, v1
+
+    invoke-static {}, Lcom/fuib/android/spot/data/vo/Status;->values()[Lcom/fuib/android/spot/data/vo/Status;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Le/f/a/b/s/c/b;->$EnumSwitchMapping$1:[I
+
+    sget-object v0, Le/f/a/b/s/c/b;->$EnumSwitchMapping$1:[I
+
+    sget-object v1, Lcom/fuib/android/spot/data/vo/Status;->LOADING:Lcom/fuib/android/spot/data/vo/Status;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    aput v2, v0, v1
+
+    sget-object v0, Le/f/a/b/s/c/b;->$EnumSwitchMapping$1:[I
+
+    sget-object v1, Lcom/fuib/android/spot/data/vo/Status;->SUCCESS:Lcom/fuib/android/spot/data/vo/Status;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    aput v3, v0, v1
+
+    sget-object v0, Le/f/a/b/s/c/b;->$EnumSwitchMapping$1:[I
+
+    sget-object v1, Lcom/fuib/android/spot/data/vo/Status;->ERROR:Lcom/fuib/android/spot/data/vo/Status;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    aput v4, v0, v1
 
     return-void
-.end method
-
-.method public static a(Lcom/fuib/android/spot/data/vo/CorezoidFormId;)Le/f/a/b/s/c/b;
-    .locals 1
-
-    .line 1
-    new-instance v0, Le/f/a/b/s/c/b;
-
-    invoke-static {p0}, Lcom/fuib/android/spot/data/api/common/Form;->newInstance(Lcom/fuib/android/spot/data/vo/CorezoidFormId;)Lcom/fuib/android/spot/data/api/common/Form;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Le/f/a/b/s/c/b;-><init>(Lcom/fuib/android/spot/data/api/common/Form;)V
-
-    return-object v0
 .end method

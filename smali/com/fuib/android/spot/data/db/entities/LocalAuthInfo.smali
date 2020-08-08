@@ -20,6 +20,8 @@
 
 .field public resetPwCorrelationId:Ljava/lang/String;
 
+.field public securityCorrelationId:Ljava/lang/String;
+
 
 # direct methods
 .method public constructor <init>()V
@@ -203,6 +205,15 @@
 
     .line 1
     iput-object p1, p0, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->resetPwCorrelationId:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public withSecurityCorrelationId(Ljava/lang/String;)Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->securityCorrelationId:Ljava/lang/String;
 
     return-object p0
 .end method

@@ -3,14 +3,14 @@
 .source "AuthService_Factory.java"
 
 # interfaces
-.implements Lf/d/d;
+.implements Lf/d/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lf/d/d<",
+        "Lf/d/e<",
         "Lcom/fuib/android/spot/data/api/auth/AuthService;",
         ">;"
     }
@@ -32,7 +32,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/g;",
+            "Le/f/a/b/t/f/g;",
             ">;"
         }
     .end annotation
@@ -62,7 +62,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;"
         }
     .end annotation
@@ -72,7 +72,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/o0;",
+            "Le/f/a/b/t/f/o0;",
             ">;"
         }
     .end annotation
@@ -82,7 +82,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;"
         }
     .end annotation
@@ -105,16 +105,16 @@
             "Lcom/fuib/android/spot/data/api/common/AppVersionProvider;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/g;",
+            "Le/f/a/b/t/f/g;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/o0;",
+            "Le/f/a/b/t/f/o0;",
             ">;)V"
         }
     .end annotation
@@ -161,16 +161,16 @@
             "Lcom/fuib/android/spot/data/api/common/AppVersionProvider;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/g;",
+            "Le/f/a/b/t/f/g;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/o0;",
+            "Le/f/a/b/t/f/o0;",
             ">;)",
             "Lcom/fuib/android/spot/data/api/auth/AuthService_Factory;"
         }
@@ -200,7 +200,7 @@
     return-object v8
 .end method
 
-.method public static newAuthService(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/s/f/g;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;Le/f/a/b/s/f/o0;)Lcom/fuib/android/spot/data/api/auth/AuthService;
+.method public static newAuthService(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/t/f/g;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;Le/f/a/b/t/f/o0;)Lcom/fuib/android/spot/data/api/auth/AuthService;
     .locals 9
 
     .line 1
@@ -222,7 +222,7 @@
 
     move-object v7, p6
 
-    invoke-direct/range {v0 .. v7}, Lcom/fuib/android/spot/data/api/auth/AuthService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/s/f/g;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;Le/f/a/b/s/f/o0;)V
+    invoke-direct/range {v0 .. v7}, Lcom/fuib/android/spot/data/api/auth/AuthService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/t/f/g;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;Le/f/a/b/t/f/o0;)V
 
     return-object v8
 .end method
@@ -242,16 +242,16 @@
             "Lcom/fuib/android/spot/data/api/common/AppVersionProvider;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/g;",
+            "Le/f/a/b/t/f/g;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/o0;",
+            "Le/f/a/b/t/f/o0;",
             ">;)",
             "Lcom/fuib/android/spot/data/api/auth/AuthService;"
         }
@@ -294,7 +294,7 @@
 
     move-object v4, p0
 
-    check-cast v4, Le/f/a/b/s/f/g;
+    check-cast v4, Le/f/a/b/t/f/g;
 
     .line 6
     invoke-interface {p4}, Lj/a/a;->get()Ljava/lang/Object;
@@ -303,7 +303,7 @@
 
     move-object v5, p0
 
-    check-cast v5, Le/f/a/b/s/f/c1;
+    check-cast v5, Le/f/a/b/t/f/c1;
 
     .line 7
     invoke-interface {p5}, Lj/a/a;->get()Ljava/lang/Object;
@@ -312,7 +312,7 @@
 
     move-object v6, p0
 
-    check-cast v6, Le/f/a/b/s/f/c0;
+    check-cast v6, Le/f/a/b/t/f/c0;
 
     .line 8
     invoke-interface {p6}, Lj/a/a;->get()Ljava/lang/Object;
@@ -321,11 +321,11 @@
 
     move-object v7, p0
 
-    check-cast v7, Le/f/a/b/s/f/o0;
+    check-cast v7, Le/f/a/b/t/f/o0;
 
     move-object v0, v8
 
-    invoke-direct/range {v0 .. v7}, Lcom/fuib/android/spot/data/api/auth/AuthService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/s/f/g;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;Le/f/a/b/s/f/o0;)V
+    invoke-direct/range {v0 .. v7}, Lcom/fuib/android/spot/data/api/auth/AuthService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/t/f/g;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;Le/f/a/b/t/f/o0;)V
 
     return-object v8
 .end method

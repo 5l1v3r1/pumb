@@ -1,36 +1,34 @@
-.class public final synthetic Le/f/a/b/t/a;
+.class public final Le/f/a/b/t/a;
 .super Ljava/lang/Object;
-.source "lambda"
-
-# interfaces
-.implements Lb/p/p;
+.source "BuildConfig.java"
 
 
-# instance fields
-.field private final synthetic a:Lcom/fuib/android/spot/di/AbstractApp;
+# static fields
+.field public static final a:Ljava/lang/Boolean;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/fuib/android/spot/di/AbstractApp;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Le/f/a/b/t/a;->a:Lcom/fuib/android/spot/di/AbstractApp;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final onChanged(Ljava/lang/Object;)V
+.method public static constructor <clinit>()V
     .locals 1
 
-    iget-object v0, p0, Le/f/a/b/t/a;->a:Lcom/fuib/android/spot/di/AbstractApp;
+    const/4 v0, 0x1
 
-    check-cast p1, Le/f/a/b/v/b/d/f;
+    .line 1
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    invoke-virtual {v0, p1}, Lcom/fuib/android/spot/di/AbstractApp;->a(Le/f/a/b/v/b/d/f;)V
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    sput-object v0, Le/f/a/b/t/a;->a:Ljava/lang/Boolean;
+
+    .line 3
+    new-instance v0, Le/f/a/b/t/a$a;
+
+    invoke-direct {v0}, Le/f/a/b/t/a$a;-><init>()V
 
     return-void
 .end method

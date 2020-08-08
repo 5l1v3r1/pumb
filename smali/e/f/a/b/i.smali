@@ -18,11 +18,11 @@
 
 
 # direct methods
-.method public static a(Lcom/fuib/android/spot/NotificationHandlerService;Le/f/a/b/s/f/z0;)V
+.method public static a(Lcom/fuib/android/spot/NotificationHandlerService;Le/f/a/b/t/f/z0;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/fuib/android/spot/NotificationHandlerService;->c:Le/f/a/b/s/f/z0;
+    iput-object p1, p0, Lcom/fuib/android/spot/NotificationHandlerService;->c:Le/f/a/b/t/f/z0;
 
     return-void
 .end method

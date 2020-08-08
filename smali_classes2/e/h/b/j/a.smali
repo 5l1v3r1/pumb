@@ -1,16 +1,11 @@
-.class public Le/h/b/j/a;
+.class public interface abstract Le/h/b/j/a;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-messaging@@20.0.0"
+.source "com.google.firebase:firebase-iid@@20.2.1"
 
 
-# direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+# virtual methods
+.method public abstract a()Ljava/lang/String;
+.end method
 
-    const-string v0, "[a-zA-Z0-9-_.~%]{1,900}"
-
-    .line 1
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    return-void
+.method public abstract b()Ljava/lang/String;
 .end method

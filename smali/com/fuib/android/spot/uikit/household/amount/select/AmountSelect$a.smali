@@ -48,7 +48,7 @@
 
     iget-object v0, p0, Lcom/fuib/android/spot/uikit/household/amount/select/AmountSelect$a;->c:Lcom/fuib/android/spot/uikit/household/amount/select/AmountSelect;
 
-    invoke-static {v0}, Lcom/fuib/android/spot/uikit/household/amount/select/AmountSelect;->d(Lcom/fuib/android/spot/uikit/household/amount/select/AmountSelect;)Le/f/a/b/y/k/a/b/d;
+    invoke-static {v0}, Lcom/fuib/android/spot/uikit/household/amount/select/AmountSelect;->d(Lcom/fuib/android/spot/uikit/household/amount/select/AmountSelect;)Le/f/a/b/z/k/a/b/d;
 
     move-result-object v0
 
@@ -62,7 +62,7 @@
     :cond_0
     iget-object p1, p0, Lcom/fuib/android/spot/uikit/household/amount/select/AmountSelect$a;->c:Lcom/fuib/android/spot/uikit/household/amount/select/AmountSelect;
 
-    sget v0, Le/f/a/b/y/e;->amount_select_value:I
+    sget v0, Le/f/a/b/z/e;->amount_select_value:I
 
     invoke-virtual {p1, v0}, Lcom/fuib/android/spot/uikit/household/amount/select/AmountSelect;->a(I)Landroid/view/View;
 

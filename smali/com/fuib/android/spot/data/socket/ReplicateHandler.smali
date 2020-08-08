@@ -74,7 +74,7 @@
 
 
 # instance fields
-.field public final deviceIdCache:Le/f/a/b/s/f/w;
+.field public final deviceIdCache:Le/f/a/b/t/f/w;
 
 .field public final gson:Le/h/c/f;
 
@@ -115,7 +115,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Le/h/c/f;Lcom/fuib/android/spot/data/socket/RequestQueueManager;Le/f/a/b/s/f/w;Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;)V
+.method public constructor <init>(Le/h/c/f;Lcom/fuib/android/spot/data/socket/RequestQueueManager;Le/f/a/b/t/f/w;Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;)V
     .locals 0
 
     .line 1
@@ -125,7 +125,7 @@
 
     iput-object p2, p0, Lcom/fuib/android/spot/data/socket/ReplicateHandler;->queueManager:Lcom/fuib/android/spot/data/socket/RequestQueueManager;
 
-    iput-object p3, p0, Lcom/fuib/android/spot/data/socket/ReplicateHandler;->deviceIdCache:Le/f/a/b/s/f/w;
+    iput-object p3, p0, Lcom/fuib/android/spot/data/socket/ReplicateHandler;->deviceIdCache:Le/f/a/b/t/f/w;
 
     iput-object p4, p0, Lcom/fuib/android/spot/data/socket/ReplicateHandler;->timeoutErrorDelegate:Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;
 
@@ -528,9 +528,9 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/fuib/android/spot/data/socket/ReplicateHandler;->deviceIdCache:Le/f/a/b/s/f/w;
+    iget-object v5, p0, Lcom/fuib/android/spot/data/socket/ReplicateHandler;->deviceIdCache:Le/f/a/b/t/f/w;
 
-    invoke-virtual {v5}, Le/f/a/b/s/f/w;->a()Ljava/lang/String;
+    invoke-virtual {v5}, Le/f/a/b/t/f/w;->a()Ljava/lang/String;
 
     move-result-object v5
 
@@ -559,13 +559,13 @@
     if-eqz v4, :cond_2
 
     .line 9
-    sget-object v1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v4, "serializedRq"
 
     invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v1, v5, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     iget-object v1, p0, Lcom/fuib/android/spot/data/socket/ReplicateHandler;->queueManager:Lcom/fuib/android/spot/data/socket/RequestQueueManager;
@@ -576,7 +576,7 @@
 
     .line 11
     :cond_2
-    sget-object v3, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v3, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -596,7 +596,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v3, v5, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v3, v5, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12
     invoke-virtual {v1}, Lcom/fuib/android/spot/data/socket/ReplicateHandler$PendingMessage;->getId()Ljava/lang/String;

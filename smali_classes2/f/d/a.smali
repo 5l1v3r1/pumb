@@ -1,67 +1,90 @@
-.class public final Lf/d/a;
+.class public abstract Lf/d/a;
 .super Ljava/lang/Object;
-.source "DaggerCollections.java"
+.source "AbstractMapFactory.java"
+
+# interfaces
+.implements Lf/d/e;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lf/d/a$a;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Ljava/lang/Object;",
+        "V2:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lf/d/e<",
+        "Ljava/util/Map<",
+        "TK;TV2;>;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "TK;",
+            "Lj/a/a<",
+            "TV;>;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public static a(I)I
-    .locals 1
-
-    const/4 v0, 0x3
-
-    if-ge p0, v0, :cond_0
-
-    add-int/lit8 p0, p0, 0x1
-
-    return p0
-
-    :cond_0
-    const/high16 v0, 0x40000000    # 2.0f
-
-    if-ge p0, v0, :cond_1
-
-    int-to-float p0, p0
-
-    const/high16 v0, 0x3f400000    # 0.75f
-
-    div-float/2addr p0, v0
-
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    add-float/2addr p0, v0
-
-    float-to-int p0, p0
-
-    return p0
-
-    :cond_1
-    const p0, 0x7fffffff
-
-    return p0
-.end method
-
-.method public static b(I)Ljava/util/LinkedHashMap;
-    .locals 1
+.method public constructor <init>(Ljava/util/Map;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<K:",
-            "Ljava/lang/Object;",
-            "V:",
-            "Ljava/lang/Object;",
-            ">(I)",
-            "Ljava/util/LinkedHashMap<",
-            "TK;TV;>;"
+            "(",
+            "Ljava/util/Map<",
+            "TK;",
+            "Lj/a/a<",
+            "TV;>;>;)V"
         }
     .end annotation
 
     .line 1
-    new-instance v0, Ljava/util/LinkedHashMap;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {p0}, Lf/d/a;->a(I)I
+    .line 2
+    invoke-static {p1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
-    move-result p0
+    move-result-object p1
 
-    invoke-direct {v0, p0}, Ljava/util/LinkedHashMap;-><init>(I)V
+    iput-object p1, p0, Lf/d/a;->a:Ljava/util/Map;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "TK;",
+            "Lj/a/a<",
+            "TV;>;>;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lf/d/a;->a:Ljava/util/Map;
 
     return-object v0
 .end method

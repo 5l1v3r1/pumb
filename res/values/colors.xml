@@ -21,6 +21,7 @@
     <color name="bg_utilities">@color/palette_stas_vertiy_bg</color>
     <color name="biometric_error_color">#ffff5722</color>
     <color name="black">@color/palette_stas_vertiy_dark</color>
+    <color name="black_full_transparent">#002c2c3b</color>
     <color name="black_toolbar">@color/deepBlack</color>
     <color name="bottom_navigation_tint">@color/palette_stas_vertiy_grey_50</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
@@ -90,6 +91,7 @@
     <color name="deep_dark_full_transparent">#0010101f</color>
     <color name="default_backdrop_bg_color">@color/palette_stas_vertiy_bg</color>
     <color name="default_bg_color">@color/white</color>
+    <color name="default_card_border_color">@color/palette_stas_vertiy_grey_30</color>
     <color name="default_card_icon_color">@color/black</color>
     <color name="default_dot_color">#ffe8e8e8</color>
     <color name="default_main_text_color">@color/black</color>
@@ -159,6 +161,8 @@
     <color name="grey_60">#ff6d6d7a</color>
     <color name="grey_80">#ff2c2c3b</color>
     <color name="greyish">#ffaaa8a8</color>
+    <color name="highlighted_chip_light_green_next_step">#ffe8f5e9</color>
+    <color name="highlighted_chip_light_red_missing_step">#fffce4ec</color>
     <color name="highlighted_light_green_next_step">#ffe8f5e9</color>
     <color name="highlighted_light_red_missing_step">#fffce4ec</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
@@ -235,6 +239,9 @@
     <color name="mdtp_transparent_black">#7f000000</color>
     <color name="mdtp_white">#ffffffff</color>
     <color name="mine_shaft">#ff303030</color>
+    <color name="month_pager_gradient_center_color">@color/white</color>
+    <color name="month_pager_gradient_end_color">@color/white_full_transparent</color>
+    <color name="month_pager_gradient_start_color">@color/white</color>
     <color name="mtrl_btn_text_color_disabled">#61000000</color>
     <color name="mtrl_btn_transparent_bg_color">#00ffffff</color>
     <color name="mtrl_scrim_color">#52000000</color>

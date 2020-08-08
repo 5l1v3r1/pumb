@@ -1,89 +1,42 @@
 .class public final Le/f/a/b/q;
 .super Ljava/lang/Object;
-.source "TemplateNameValidator_Factory.java"
-
-# interfaces
-.implements Lf/d/d;
+.source "TemplateNameValidator.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lf/d/d<",
-        "Le/f/a/b/p;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final a:Le/f/a/b/q;
+# instance fields
+.field public final a:Lkotlin/text/Regex;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Le/f/a/b/q;
-
-    invoke-direct {v0}, Le/f/a/b/q;-><init>()V
-
-    sput-object v0, Le/f/a/b/q;->a:Le/f/a/b/q;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
-    .locals 0
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    new-instance v0, Lkotlin/text/Regex;
+
+    const-string v1, "^[^<>&]*[\u0430-\u044f\u0410-\u042fa-zA-Z0-9]+[^<>&]*$"
+
+    invoke-direct {v0, v1}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;)V
+
+    iput-object v0, p0, Le/f/a/b/q;->a:Lkotlin/text/Regex;
+
     return-void
-.end method
-
-.method public static a()Le/f/a/b/q;
-    .locals 1
-
-    .line 1
-    sget-object v0, Le/f/a/b/q;->a:Le/f/a/b/q;
-
-    return-object v0
-.end method
-
-.method public static b()Le/f/a/b/p;
-    .locals 1
-
-    .line 1
-    new-instance v0, Le/f/a/b/p;
-
-    invoke-direct {v0}, Le/f/a/b/p;-><init>()V
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public get()Le/f/a/b/p;
-    .locals 1
-
-    .line 2
-    invoke-static {}, Le/f/a/b/q;->b()Le/f/a/b/p;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public bridge synthetic get()Ljava/lang/Object;
+.method public final a(Ljava/lang/String;)Z
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Le/f/a/b/q;->get()Le/f/a/b/p;
+    iget-object v0, p0, Le/f/a/b/q;->a:Lkotlin/text/Regex;
 
-    move-result-object v0
+    invoke-virtual {v0, p1}, Lkotlin/text/Regex;->matches(Ljava/lang/CharSequence;)Z
 
-    return-object v0
+    move-result p1
+
+    return p1
 .end method

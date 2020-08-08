@@ -10,7 +10,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/fuib/android/spot/di/AbstractApp<",
-        "Le/f/a/b/t/n;",
+        "Le/f/a/b/u/o;",
         ">;",
         "Lf/c/d;"
     }
@@ -55,24 +55,24 @@
 
 
 # virtual methods
-.method public bridge synthetic a()Le/f/a/b/t/f;
+.method public bridge synthetic a()Le/f/a/b/u/g;
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/fuib/android/spot/App;->a()Le/f/a/b/t/n;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/App;->a()Le/f/a/b/u/o;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public a()Le/f/a/b/t/n;
+.method public a()Le/f/a/b/u/o;
     .locals 1
 
     .line 2
-    new-instance v0, Le/f/a/b/t/n;
+    new-instance v0, Le/f/a/b/u/o;
 
-    invoke-direct {v0}, Le/f/a/b/t/n;-><init>()V
+    invoke-direct {v0}, Le/f/a/b/u/o;-><init>()V
 
     return-object v0
 .end method

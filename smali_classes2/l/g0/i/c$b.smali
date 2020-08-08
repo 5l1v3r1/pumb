@@ -339,7 +339,7 @@
     .line 30
     iget-object v4, v3, Ll/g0/i/b;->a:Lm/f;
 
-    invoke-virtual {v4}, Lm/f;->e()Lm/f;
+    invoke-virtual {v4}, Lm/f;->f()Lm/f;
 
     move-result-object v4
 

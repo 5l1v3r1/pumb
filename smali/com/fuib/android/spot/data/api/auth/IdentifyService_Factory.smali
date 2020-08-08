@@ -3,14 +3,14 @@
 .source "IdentifyService_Factory.java"
 
 # interfaces
-.implements Lf/d/d;
+.implements Lf/d/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lf/d/d<",
+        "Lf/d/e<",
         "Lcom/fuib/android/spot/data/api/auth/IdentifyService;",
         ">;"
     }
@@ -52,7 +52,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;"
         }
     .end annotation
@@ -62,7 +62,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;"
         }
     .end annotation
@@ -85,10 +85,10 @@
             "Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;)V"
         }
     .end annotation
@@ -129,10 +129,10 @@
             "Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;)",
             "Lcom/fuib/android/spot/data/api/auth/IdentifyService_Factory;"
         }
@@ -158,7 +158,7 @@
     return-object v6
 .end method
 
-.method public static newIdentifyService(Landroid/content/Context;Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;)Lcom/fuib/android/spot/data/api/auth/IdentifyService;
+.method public static newIdentifyService(Landroid/content/Context;Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;)Lcom/fuib/android/spot/data/api/auth/IdentifyService;
     .locals 7
 
     .line 1
@@ -176,7 +176,7 @@
 
     move-object v5, p4
 
-    invoke-direct/range {v0 .. v5}, Lcom/fuib/android/spot/data/api/auth/IdentifyService;-><init>(Landroid/content/Context;Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;)V
+    invoke-direct/range {v0 .. v5}, Lcom/fuib/android/spot/data/api/auth/IdentifyService;-><init>(Landroid/content/Context;Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;)V
 
     return-object v6
 .end method
@@ -196,10 +196,10 @@
             "Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c1;",
+            "Le/f/a/b/t/f/c1;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c0;",
+            "Le/f/a/b/t/f/c0;",
             ">;)",
             "Lcom/fuib/android/spot/data/api/auth/IdentifyService;"
         }
@@ -242,7 +242,7 @@
 
     move-object v4, p0
 
-    check-cast v4, Le/f/a/b/s/f/c1;
+    check-cast v4, Le/f/a/b/t/f/c1;
 
     .line 6
     invoke-interface {p4}, Lj/a/a;->get()Ljava/lang/Object;
@@ -251,11 +251,11 @@
 
     move-object v5, p0
 
-    check-cast v5, Le/f/a/b/s/f/c0;
+    check-cast v5, Le/f/a/b/t/f/c0;
 
     move-object v0, v6
 
-    invoke-direct/range {v0 .. v5}, Lcom/fuib/android/spot/data/api/auth/IdentifyService;-><init>(Landroid/content/Context;Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;)V
+    invoke-direct/range {v0 .. v5}, Lcom/fuib/android/spot/data/api/auth/IdentifyService;-><init>(Landroid/content/Context;Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;)V
 
     return-object v6
 .end method

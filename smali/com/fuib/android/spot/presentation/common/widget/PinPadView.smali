@@ -228,7 +228,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    const v0, 0x7f0a05c0
+    const v0, 0x7f0a05f8
 
     .line 4
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -237,7 +237,7 @@
 
     iput-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/PinPadView;->i:Landroid/view/View;
 
-    const v0, 0x7f0a02cf
+    const v0, 0x7f0a02eb
 
     .line 5
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -246,7 +246,7 @@
 
     iput-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/PinPadView;->h:Landroid/view/View;
 
-    const v0, 0x7f0a02fa
+    const v0, 0x7f0a0316
 
     .line 6
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -337,7 +337,7 @@
 .method public getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0d00ff
+    const v0, 0x7f0d010a
 
     return v0
 .end method
@@ -488,7 +488,7 @@
     return-void
 
     :pswitch_data_0
-    .packed-switch 0x7f0a02c4
+    .packed-switch 0x7f0a02e0
         :pswitch_2
         :pswitch_2
         :pswitch_2

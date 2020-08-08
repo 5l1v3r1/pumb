@@ -3,14 +3,14 @@
 .source "ConnectionController_Factory.java"
 
 # interfaces
-.implements Lf/d/d;
+.implements Lf/d/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lf/d/d<",
+        "Lf/d/e<",
         "Lcom/fuib/android/spot/data/socket/ConnectionController;",
         ">;"
     }

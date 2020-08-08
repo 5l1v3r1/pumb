@@ -42,9 +42,9 @@
     .locals 1
 
     .line 1
-    sget-object v0, Le/f/a/b/s/f/i0;->d:Le/f/a/b/s/f/i0;
+    sget-object v0, Le/f/a/b/t/f/i0;->d:Le/f/a/b/t/f/i0;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/i0;->c()Le/h/c/f;
+    invoke-virtual {v0}, Le/f/a/b/t/f/i0;->c()Le/h/c/f;
 
     move-result-object v0
 

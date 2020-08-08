@@ -47,7 +47,7 @@
 
     xor-int/lit8 v1, v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/google/android/material/textfield/TextInputLayout;->d(Z)V
+    invoke-virtual {v0, v1}, Lcom/google/android/material/textfield/TextInputLayout;->e(Z)V
 
     .line 2
     iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$a;->c:Lcom/google/android/material/textfield/TextInputLayout;

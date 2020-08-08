@@ -18,9 +18,14 @@ unknownFiles:
   LICENSE-junit.txt: '8'
   firebase-analytics.properties: '8'
   firebase-common.properties: '8'
+  firebase-components.properties: '8'
   firebase-core.properties: '8'
+  firebase-datatransport.properties: '8'
+  firebase-encoders-json.properties: '8'
   firebase-iid-interop.properties: '8'
   firebase-iid.properties: '8'
+  firebase-installations-interop.properties: '8'
+  firebase-installations.properties: '8'
   firebase-measurement-connector.properties: '8'
   firebase-messaging.properties: '8'
   play-services-ads-identifier.properties: '8'
@@ -40,6 +45,9 @@ unknownFiles:
   play-services-stats.properties: '8'
   play-services-tasks.properties: '8'
   smartcard_list.txt: '8'
+  transport-api.properties: '8'
+  transport-backend-cct.properties: '8'
+  transport-runtime.properties: '8'
   fabric/com.crashlytics.sdk.android.answers.properties: '8'
   fabric/com.crashlytics.sdk.android.beta.properties: '8'
   fabric/com.crashlytics.sdk.android.crashlytics-core.properties: '8'
@@ -566,5 +574,5 @@ usesFramework:
   tag: null
 version: 2.4.1
 versionInfo:
-  versionCode: '2217'
-  versionName: 2.19.2217
+  versionCode: '2420'
+  versionName: 2.21.2420

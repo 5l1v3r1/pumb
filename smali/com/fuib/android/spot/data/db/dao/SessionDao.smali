@@ -4,6 +4,9 @@
 
 
 # virtual methods
+.method public abstract getAuthType()Lcom/fuib/android/spot/data/db/entities/AuthType;
+.end method
+
 .method public abstract getJwt()Landroidx/lifecycle/LiveData;
     .annotation system Ldalvik/annotation/Signature;
         value = {

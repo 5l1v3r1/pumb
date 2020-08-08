@@ -133,6 +133,74 @@
 
 
 # virtual methods
+.method public getAuthType()Lcom/fuib/android/spot/data/db/entities/AuthType;
+    .locals 4
+
+    const/4 v0, 0x0
+
+    const-string v1, "select authType from session where id=1"
+
+    .line 1
+    invoke-static {v1, v0}, Lb/u/i;->b(Ljava/lang/String;I)Lb/u/i;
+
+    move-result-object v1
+
+    .line 2
+    iget-object v2, p0, Lcom/fuib/android/spot/data/db/dao/SessionDao_Impl;->__db:Lb/u/f;
+
+    invoke-virtual {v2, v1}, Lb/u/f;->query(Lb/w/a/e;)Landroid/database/Cursor;
+
+    move-result-object v2
+
+    .line 3
+    :try_start_0
+    invoke-interface {v2}, Landroid/database/Cursor;->moveToFirst()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    .line 4
+    invoke-interface {v2, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 5
+    iget-object v3, p0, Lcom/fuib/android/spot/data/db/dao/SessionDao_Impl;->__enumConverter:Lcom/fuib/android/spot/data/db/entities/EnumConverter;
+
+    invoke-virtual {v3, v0}, Lcom/fuib/android/spot/data/db/entities/EnumConverter;->toAuthType(Ljava/lang/String;)Lcom/fuib/android/spot/data/db/entities/AuthType;
+
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 6
+    :goto_0
+    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+
+    .line 7
+    invoke-virtual {v1}, Lb/u/i;->b()V
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    .line 8
+    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+
+    .line 9
+    invoke-virtual {v1}, Lb/u/i;->b()V
+
+    .line 10
+    throw v0
+.end method
+
 .method public getJwt()Landroidx/lifecycle/LiveData;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
@@ -639,7 +707,7 @@
 
     .line 6
     :goto_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     move-result p1
 
@@ -713,7 +781,7 @@
     invoke-interface {v0, v1, v2, v3}, Lb/w/a/d;->a(IJ)V
 
     .line 4
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     move-result p1
 
@@ -784,7 +852,7 @@
 
     .line 5
     :goto_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     move-result p1
 
@@ -855,7 +923,7 @@
 
     .line 5
     :goto_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     move-result p1
 
@@ -926,7 +994,7 @@
 
     .line 5
     :goto_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     move-result p1
 
@@ -997,7 +1065,7 @@
 
     .line 5
     :goto_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     move-result p1
 
@@ -1068,7 +1136,7 @@
 
     .line 5
     :goto_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     move-result p1
 

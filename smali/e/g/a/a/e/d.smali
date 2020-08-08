@@ -102,7 +102,7 @@
 
     move-result-object p0
 
-    invoke-interface {v0, p0}, Ln/c/b;->a(Ljava/lang/String;)V
+    invoke-interface {v0, p0}, Ln/c/b;->b(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 

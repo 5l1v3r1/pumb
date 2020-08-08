@@ -1,6 +1,6 @@
 .class public final Le/h/b/e/f;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-common@@19.0.0"
+.source "com.google.firebase:firebase-components@@16.0.0"
 
 
 # annotations
@@ -63,13 +63,16 @@
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;)Le/h/b/e/f;
+.method public static a(Landroid/content/Context;Ljava/lang/Class;)Le/h/b/e/f;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            ")",
+            "Ljava/lang/Class<",
+            "+",
+            "Landroid/app/Service;",
+            ">;)",
             "Le/h/b/e/f<",
             "Landroid/content/Context;",
             ">;"
@@ -83,7 +86,7 @@
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, v2}, Le/h/b/e/f$b;-><init>(Le/h/b/e/f$a;)V
+    invoke-direct {v1, p1, v2}, Le/h/b/e/f$b;-><init>(Ljava/lang/Class;Le/h/b/e/f$a;)V
 
     invoke-direct {v0, p0, v1}, Le/h/b/e/f;-><init>(Ljava/lang/Object;Le/h/b/e/f$c;)V
 

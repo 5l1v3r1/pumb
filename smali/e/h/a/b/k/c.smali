@@ -1,40 +1,130 @@
-.class public interface abstract Le/h/a/b/k/c;
+.class public final Le/h/a/b/k/c;
 .super Ljava/lang/Object;
-.source "CircularRevealWidget.java"
-
-# interfaces
-.implements Le/h/a/b/k/b$a;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Le/h/a/b/k/c$d;,
-        Le/h/a/b/k/c$b;,
-        Le/h/a/b/k/c$c;,
-        Le/h/a/b/k/c$e;
-    }
-.end annotation
+# static fields
+.field public static final a:Le/h/a/b/d/i/a$g;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Le/h/a/b/d/i/a$g<",
+            "Le/h/a/b/k/b/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final b:Le/h/a/b/d/i/a$g;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Le/h/a/b/d/i/a$g<",
+            "Le/h/a/b/k/b/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final c:Le/h/a/b/d/i/a$a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Le/h/a/b/d/i/a$a<",
+            "Le/h/a/b/k/b/a;",
+            "Le/h/a/b/k/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final d:Le/h/a/b/d/i/a$a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Le/h/a/b/d/i/a$a<",
+            "Le/h/a/b/k/b/a;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final e:Le/h/a/b/d/i/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Le/h/a/b/d/i/a<",
+            "Le/h/a/b/k/a;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
-# virtual methods
-.method public abstract a()V
-.end method
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 4
 
-.method public abstract b()V
-.end method
+    .line 1
+    new-instance v0, Le/h/a/b/d/i/a$g;
 
-.method public abstract getCircularRevealScrimColor()I
-.end method
+    invoke-direct {v0}, Le/h/a/b/d/i/a$g;-><init>()V
 
-.method public abstract getRevealInfo()Le/h/a/b/k/c$e;
-.end method
+    sput-object v0, Le/h/a/b/k/c;->a:Le/h/a/b/d/i/a$g;
 
-.method public abstract setCircularRevealOverlayDrawable(Landroid/graphics/drawable/Drawable;)V
-.end method
+    .line 2
+    new-instance v0, Le/h/a/b/d/i/a$g;
 
-.method public abstract setCircularRevealScrimColor(I)V
-.end method
+    invoke-direct {v0}, Le/h/a/b/d/i/a$g;-><init>()V
 
-.method public abstract setRevealInfo(Le/h/a/b/k/c$e;)V
+    sput-object v0, Le/h/a/b/k/c;->b:Le/h/a/b/d/i/a$g;
+
+    .line 3
+    new-instance v0, Le/h/a/b/k/d;
+
+    invoke-direct {v0}, Le/h/a/b/k/d;-><init>()V
+
+    sput-object v0, Le/h/a/b/k/c;->c:Le/h/a/b/d/i/a$a;
+
+    .line 4
+    new-instance v0, Le/h/a/b/k/e;
+
+    invoke-direct {v0}, Le/h/a/b/k/e;-><init>()V
+
+    sput-object v0, Le/h/a/b/k/c;->d:Le/h/a/b/d/i/a$a;
+
+    .line 5
+    new-instance v0, Lcom/google/android/gms/common/api/Scope;
+
+    const-string v1, "profile"
+
+    invoke-direct {v0, v1}, Lcom/google/android/gms/common/api/Scope;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    new-instance v0, Lcom/google/android/gms/common/api/Scope;
+
+    const-string v1, "email"
+
+    invoke-direct {v0, v1}, Lcom/google/android/gms/common/api/Scope;-><init>(Ljava/lang/String;)V
+
+    .line 7
+    new-instance v0, Le/h/a/b/d/i/a;
+
+    sget-object v1, Le/h/a/b/k/c;->c:Le/h/a/b/d/i/a$a;
+
+    sget-object v2, Le/h/a/b/k/c;->a:Le/h/a/b/d/i/a$g;
+
+    const-string v3, "SignIn.API"
+
+    invoke-direct {v0, v3, v1, v2}, Le/h/a/b/d/i/a;-><init>(Ljava/lang/String;Le/h/a/b/d/i/a$a;Le/h/a/b/d/i/a$g;)V
+
+    sput-object v0, Le/h/a/b/k/c;->e:Le/h/a/b/d/i/a;
+
+    .line 8
+    new-instance v0, Le/h/a/b/d/i/a;
+
+    sget-object v1, Le/h/a/b/k/c;->d:Le/h/a/b/d/i/a$a;
+
+    sget-object v2, Le/h/a/b/k/c;->b:Le/h/a/b/d/i/a$g;
+
+    const-string v3, "SignIn.INTERNAL_API"
+
+    invoke-direct {v0, v3, v1, v2}, Le/h/a/b/d/i/a;-><init>(Ljava/lang/String;Le/h/a/b/d/i/a$a;Le/h/a/b/d/i/a$g;)V
+
+    return-void
 .end method

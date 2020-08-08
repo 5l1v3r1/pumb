@@ -103,7 +103,7 @@
     iget-object p1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->d:Lcom/google/android/material/internal/ParcelableSparseArray;
 
     .line 13
-    invoke-static {v0, p1}, Le/h/a/b/c/a;->a(Landroid/content/Context;Lcom/google/android/material/internal/ParcelableSparseArray;)Landroid/util/SparseArray;
+    invoke-static {v0, p1}, Le/h/a/c/c/a;->a(Landroid/content/Context;Lcom/google/android/material/internal/ParcelableSparseArray;)Landroid/util/SparseArray;
 
     move-result-object p1
 
@@ -227,7 +227,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Le/h/a/b/c/a;->a(Landroid/util/SparseArray;)Lcom/google/android/material/internal/ParcelableSparseArray;
+    invoke-static {v1}, Le/h/a/c/c/a;->a(Landroid/util/SparseArray;)Lcom/google/android/material/internal/ParcelableSparseArray;
 
     move-result-object v1
 

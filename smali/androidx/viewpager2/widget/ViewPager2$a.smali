@@ -45,9 +45,9 @@
     iput-boolean v1, v0, Landroidx/viewpager2/widget/ViewPager2;->g:Z
 
     .line 2
-    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/e;
+    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/f;
 
-    invoke-virtual {v0}, Lb/c0/c/e;->g()V
+    invoke-virtual {v0}, Lb/c0/c/f;->g()V
 
     return-void
 .end method

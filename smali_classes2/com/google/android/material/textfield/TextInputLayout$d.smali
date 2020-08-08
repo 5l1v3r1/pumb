@@ -41,7 +41,7 @@
     .line 1
     iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$d;->c:Lcom/google/android/material/textfield/TextInputLayout;
 
-    iget-object v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->o0:Le/h/a/b/r/a;
+    iget-object v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->o0:Le/h/a/c/r/a;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -53,7 +53,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Le/h/a/b/r/a;->e(F)V
+    invoke-virtual {v0, p1}, Le/h/a/c/r/a;->e(F)V
 
     return-void
 .end method

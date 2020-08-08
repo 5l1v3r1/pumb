@@ -49,7 +49,7 @@
     .line 2
     iget-object p1, p0, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput$b;->c:Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;
 
-    sget v0, Le/f/a/b/y/e;->amount_input_edit_text:I
+    sget v0, Le/f/a/b/z/e;->amount_input_edit_text:I
 
     invoke-virtual {p1, v0}, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;->a(I)Landroid/view/View;
 
@@ -64,7 +64,7 @@
     .line 3
     iget-object v0, p0, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput$b;->c:Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;
 
-    sget v1, Le/f/a/b/y/e;->amount_input_edit_text:I
+    sget v1, Le/f/a/b/z/e;->amount_input_edit_text:I
 
     invoke-virtual {v0, v1}, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;->a(I)Landroid/view/View;
 
@@ -79,7 +79,7 @@
     .line 4
     iget-object v0, p0, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput$b;->c:Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;
 
-    sget v1, Le/f/a/b/y/e;->amount_input_edit_text:I
+    sget v1, Le/f/a/b/z/e;->amount_input_edit_text:I
 
     invoke-virtual {v0, v1}, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;->a(I)Landroid/view/View;
 
@@ -106,7 +106,7 @@
     .line 5
     iget-object v0, p0, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput$b;->c:Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;
 
-    sget v1, Le/f/a/b/y/e;->amount_input_edit_text:I
+    sget v1, Le/f/a/b/z/e;->amount_input_edit_text:I
 
     invoke-virtual {v0, v1}, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;->a(I)Landroid/view/View;
 
@@ -136,7 +136,7 @@
 
     iget-object v0, p0, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput$b;->c:Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;
 
-    sget v1, Le/f/a/b/y/e;->amount_input_edit_text:I
+    sget v1, Le/f/a/b/z/e;->amount_input_edit_text:I
 
     invoke-virtual {v0, v1}, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;->a(I)Landroid/view/View;
 

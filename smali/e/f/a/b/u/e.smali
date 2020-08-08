@@ -1,37 +1,34 @@
-.class public final Le/f/a/b/u/e;
+.class public final synthetic Le/f/a/b/u/e;
 .super Ljava/lang/Object;
-.source "FeedbackDialogFragment_MembersInjector.java"
+.source "lambda"
 
 # interfaces
-.implements Lf/b;
+.implements Ljava/lang/Runnable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lf/b<",
-        "Le/f/a/b/u/d;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field private final synthetic c:Lcom/fuib/android/spot/di/AbstractApp;
 
 
 # direct methods
-.method public static a(Le/f/a/b/u/d;Le/f/a/b/u/h;)V
+.method public synthetic constructor <init>(Lcom/fuib/android/spot/di/AbstractApp;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Le/f/a/b/u/d;->m0:Le/f/a/b/u/h;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Le/f/a/b/u/e;->c:Lcom/fuib/android/spot/di/AbstractApp;
 
     return-void
 .end method
 
-.method public static a(Le/f/a/b/u/d;Le/f/a/b/u/j;)V
-    .locals 0
 
-    .line 2
-    iput-object p1, p0, Le/f/a/b/u/d;->n0:Le/f/a/b/u/j;
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    iget-object v0, p0, Le/f/a/b/u/e;->c:Lcom/fuib/android/spot/di/AbstractApp;
+
+    invoke-virtual {v0}, Lcom/fuib/android/spot/di/AbstractApp;->k()V
 
     return-void
 .end method

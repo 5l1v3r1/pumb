@@ -100,7 +100,7 @@
 
     iget-object v0, p0, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput$a;->c:Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;
 
-    sget v1, Le/f/a/b/y/e;->amount_input_edit_text:I
+    sget v1, Le/f/a/b/z/e;->amount_input_edit_text:I
 
     invoke-virtual {v0, v1}, Lcom/fuib/android/spot/uikit/household/amount/input/AmountInput;->a(I)Landroid/view/View;
 

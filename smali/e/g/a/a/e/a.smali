@@ -204,7 +204,7 @@
 
     move-result-object v6
 
-    invoke-interface {v7, v6}, Ln/c/b;->a(Ljava/lang/String;)V
+    invoke-interface {v7, v6}, Ln/c/b;->b(Ljava/lang/String;)V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
     .catchall {:try_start_4 .. :try_end_4} :catchall_0

@@ -1,439 +1,439 @@
 .class public Le/a/a/t/b;
 .super Ljava/lang/Object;
-.source "NetworkCache.java"
+.source "ImageAssetManager.java"
+
+
+# static fields
+.field public static final e:Ljava/lang/Object;
 
 
 # instance fields
 .field public final a:Landroid/content/Context;
 
-.field public final b:Ljava/lang/String;
+.field public b:Ljava/lang/String;
+
+.field public c:Le/a/a/b;
+
+.field public final d:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Le/a/a/g;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Le/a/a/t/b;->e:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/graphics/drawable/Drawable$Callback;Ljava/lang/String;Le/a/a/b;Ljava/util/Map;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/graphics/drawable/Drawable$Callback;",
+            "Ljava/lang/String;",
+            "Le/a/a/b;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Le/a/a/g;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+    iput-object p2, p0, Le/a/a/t/b;->b:Ljava/lang/String;
+
+    .line 3
+    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result p2
+
+    if-nez p2, :cond_0
+
+    iget-object p2, p0, Le/a/a/t/b;->b:Ljava/lang/String;
+
+    .line 4
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->charAt(I)C
+
+    move-result p2
+
+    const/16 v0, 0x2f
+
+    if-eq p2, v0, :cond_0
+
+    .line 5
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v1, p0, Le/a/a/t/b;->b:Ljava/lang/String;
+
+    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    iput-object p2, p0, Le/a/a/t/b;->b:Ljava/lang/String;
+
+    .line 6
+    :cond_0
+    instance-of p2, p1, Landroid/view/View;
+
+    if-nez p2, :cond_1
+
+    const-string p1, "LottieDrawable must be inside of a view for images to work."
+
+    .line 7
+    invoke-static {p1}, Le/a/a/x/d;->b(Ljava/lang/String;)V
+
+    .line 8
+    new-instance p1, Ljava/util/HashMap;
+
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+
+    iput-object p1, p0, Le/a/a/t/b;->d:Ljava/util/Map;
+
+    const/4 p1, 0x0
+
+    .line 9
+    iput-object p1, p0, Le/a/a/t/b;->a:Landroid/content/Context;
+
+    return-void
+
+    .line 10
+    :cond_1
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
     iput-object p1, p0, Le/a/a/t/b;->a:Landroid/content/Context;
 
-    .line 3
-    iput-object p2, p0, Le/a/a/t/b;->b:Ljava/lang/String;
+    .line 11
+    iput-object p4, p0, Le/a/a/t/b;->d:Ljava/util/Map;
+
+    .line 12
+    invoke-virtual {p0, p3}, Le/a/a/t/b;->a(Le/a/a/b;)V
 
     return-void
-.end method
-
-.method public static a(Ljava/lang/String;Le/a/a/t/a;Z)Ljava/lang/String;
-    .locals 3
-
-    .line 31
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "lottie_cache_"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "\\W+"
-
-    const-string v2, ""
-
-    invoke-virtual {p0, v1, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    if-eqz p2, :cond_0
-
-    iget-object p0, p1, Le/a/a/t/a;->extension:Ljava/lang/String;
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p1}, Le/a/a/t/a;->a()Ljava/lang/String;
-
-    move-result-object p0
-
-    :goto_0
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 
 # virtual methods
-.method public a()Lb/k/n/d;
-    .locals 5
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lb/k/n/d<",
-            "Le/a/a/t/a;",
-            "Ljava/io/InputStream;",
-            ">;"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
-
-    .line 1
-    :try_start_0
-    iget-object v1, p0, Le/a/a/t/b;->b:Ljava/lang/String;
-
-    invoke-virtual {p0, v1}, Le/a/a/t/b;->a(Ljava/lang/String;)Ljava/io/File;
-
-    move-result-object v1
-    :try_end_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    if-nez v1, :cond_0
-
-    return-object v0
+.method public a(Ljava/lang/String;)Landroid/graphics/Bitmap;
+    .locals 7
 
     .line 2
-    :cond_0
-    :try_start_1
-    new-instance v2, Ljava/io/FileInputStream;
+    iget-object v0, p0, Le/a/a/t/b;->d:Ljava/util/Map;
 
-    invoke-direct {v2, v1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
-    :try_end_1
-    .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
-
-    .line 3
-    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    const-string v3, ".zip"
+    check-cast v0, Le/a/a/g;
 
-    invoke-virtual {v0, v3}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    const/4 v1, 0x0
 
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 4
-    sget-object v0, Le/a/a/t/a;->Zip:Le/a/a/t/a;
-
-    goto :goto_0
-
-    .line 5
-    :cond_1
-    sget-object v0, Le/a/a/t/a;->Json:Le/a/a/t/a;
-
-    .line 6
-    :goto_0
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "Cache hit for "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v4, p0, Le/a/a/t/b;->b:Ljava/lang/String;
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v4, " at "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v1}, Le/a/a/c;->b(Ljava/lang/String;)V
-
-    .line 7
-    new-instance v1, Lb/k/n/d;
-
-    invoke-direct {v1, v0, v2}, Lb/k/n/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    if-nez v0, :cond_0
 
     return-object v1
 
-    :catch_0
-    return-object v0
-.end method
+    .line 3
+    :cond_0
+    invoke-virtual {v0}, Le/a/a/g;->a()Landroid/graphics/Bitmap;
 
-.method public a(Ljava/io/InputStream;Le/a/a/t/a;)Ljava/io/File;
-    .locals 4
+    move-result-object v2
+
+    if-eqz v2, :cond_1
+
+    return-object v2
+
+    .line 4
+    :cond_1
+    iget-object v2, p0, Le/a/a/t/b;->c:Le/a/a/b;
+
+    if-eqz v2, :cond_3
+
+    .line 5
+    invoke-interface {v2, v0}, Le/a/a/b;->a(Le/a/a/g;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    .line 6
+    invoke-virtual {p0, p1, v0}, Le/a/a/t/b;->a(Ljava/lang/String;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+
+    :cond_2
+    return-object v0
+
+    .line 7
+    :cond_3
+    invoke-virtual {v0}, Le/a/a/g;->b()Ljava/lang/String;
+
+    move-result-object v2
 
     .line 8
-    iget-object v0, p0, Le/a/a/t/b;->b:Ljava/lang/String;
+    new-instance v3, Landroid/graphics/BitmapFactory$Options;
 
-    const/4 v1, 0x1
+    invoke-direct {v3}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    invoke-static {v0, p2, v1}, Le/a/a/t/b;->a(Ljava/lang/String;Le/a/a/t/a;Z)Ljava/lang/String;
-
-    move-result-object p2
+    const/4 v4, 0x1
 
     .line 9
-    new-instance v0, Ljava/io/File;
+    iput-boolean v4, v3, Landroid/graphics/BitmapFactory$Options;->inScaled:Z
 
-    iget-object v1, p0, Le/a/a/t/b;->a:Landroid/content/Context;
+    const/16 v5, 0xa0
 
-    invoke-virtual {v1}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
+    .line 10
+    iput v5, v3, Landroid/graphics/BitmapFactory$Options;->inDensity:I
+
+    const-string v5, "data:"
+
+    .line 11
+    invoke-virtual {v2, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_4
+
+    const-string v5, "base64,"
+
+    invoke-virtual {v2, v5}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
+
+    move-result v5
+
+    if-lez v5, :cond_4
+
+    const/16 v0, 0x2c
+
+    .line 12
+    :try_start_0
+    invoke-virtual {v2, v0}, Ljava/lang/String;->indexOf(I)I
+
+    move-result v0
+
+    add-int/2addr v0, v4
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v2}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 13
+    array-length v1, v0
+
+    invoke-static {v0, v2, v1, v3}, Landroid/graphics/BitmapFactory;->decodeByteArray([BIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    .line 14
+    invoke-virtual {p0, p1, v0}, Le/a/a/t/b;->a(Ljava/lang/String;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+
+    return-object v0
+
+    :catch_0
+    move-exception p1
+
+    const-string v0, "data URL did not have correct base64 format."
+
+    .line 15
+    invoke-static {v0, p1}, Le/a/a/x/d;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    return-object v1
+
+    .line 16
+    :cond_4
+    :try_start_1
+    iget-object v4, p0, Le/a/a/t/b;->b:Ljava/lang/String;
+
+    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_5
+
+    .line 17
+    iget-object v4, p0, Le/a/a/t/b;->a:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
+
+    move-result-object v4
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v6, p0, Le/a/a/t/b;->b:Ljava/lang/String;
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v4, v2}, Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;
+
+    move-result-object v2
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 18
+    invoke-static {v2, v1, v3}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
-
-    .line 10
-    :try_start_0
-    new-instance p2, Ljava/io/FileOutputStream;
-
-    invoke-direct {p2, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    const/16 v1, 0x400
-
-    :try_start_1
-    new-array v1, v1, [B
-
-    .line 11
-    :goto_0
-    invoke-virtual {p1, v1}, Ljava/io/InputStream;->read([B)I
+    .line 19
+    invoke-virtual {v0}, Le/a/a/g;->e()I
 
     move-result v2
 
-    const/4 v3, -0x1
+    invoke-virtual {v0}, Le/a/a/g;->c()I
 
-    if-eq v2, v3, :cond_0
+    move-result v0
 
-    const/4 v3, 0x0
+    invoke-static {v1, v2, v0}, Le/a/a/x/h;->a(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
 
-    .line 12
-    invoke-virtual {p2, v1, v3, v2}, Ljava/io/OutputStream;->write([BII)V
-
-    goto :goto_0
-
-    .line 13
-    :cond_0
-    invoke-virtual {p2}, Ljava/io/OutputStream;->flush()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 14
-    :try_start_2
-    invoke-virtual {p2}, Ljava/io/OutputStream;->close()V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    .line 15
-    invoke-virtual {p1}, Ljava/io/InputStream;->close()V
-
-    return-object v0
-
-    :catchall_0
-    move-exception v0
-
-    .line 16
-    :try_start_3
-    invoke-virtual {p2}, Ljava/io/OutputStream;->close()V
-
-    .line 17
-    throw v0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    :catchall_1
-    move-exception p2
-
-    .line 18
-    invoke-virtual {p1}, Ljava/io/InputStream;->close()V
-
-    .line 19
-    throw p2
-.end method
-
-.method public final a(Ljava/lang/String;)Ljava/io/File;
-    .locals 4
-
-    .line 27
-    new-instance v0, Ljava/io/File;
-
-    iget-object v1, p0, Le/a/a/t/b;->a:Landroid/content/Context;
-
-    invoke-virtual {v1}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
-
-    move-result-object v1
-
-    sget-object v2, Le/a/a/t/a;->Json:Le/a/a/t/a;
-
-    const/4 v3, 0x0
-
-    invoke-static {p1, v2, v3}, Le/a/a/t/b;->a(Ljava/lang/String;Le/a/a/t/a;Z)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
-
-    .line 28
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    return-object v0
-
-    .line 29
-    :cond_0
-    new-instance v0, Ljava/io/File;
-
-    iget-object v1, p0, Le/a/a/t/b;->a:Landroid/content/Context;
-
-    invoke-virtual {v1}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
-
-    move-result-object v1
-
-    sget-object v2, Le/a/a/t/a;->Zip:Le/a/a/t/a;
-
-    invoke-static {p1, v2, v3}, Le/a/a/t/b;->a(Ljava/lang/String;Le/a/a/t/a;Z)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, v1, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
-
-    .line 30
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    return-object v0
-
-    :cond_1
-    const/4 p1, 0x0
-
-    return-object p1
-.end method
-
-.method public a(Le/a/a/t/a;)V
-    .locals 4
+    move-result-object v0
 
     .line 20
-    iget-object v0, p0, Le/a/a/t/b;->b:Ljava/lang/String;
+    invoke-virtual {p0, p1, v0}, Le/a/a/t/b;->a(Ljava/lang/String;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
-    const/4 v1, 0x1
-
-    invoke-static {v0, p1, v1}, Le/a/a/t/b;->a(Ljava/lang/String;Le/a/a/t/a;Z)Ljava/lang/String;
-
-    move-result-object p1
+    return-object v0
 
     .line 21
-    new-instance v0, Ljava/io/File;
+    :cond_5
+    :try_start_2
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    iget-object v1, p0, Le/a/a/t/b;->a:Landroid/content/Context;
+    const-string v0, "You must set an images folder before loading an image. Set it with LottieComposition#setImagesFolder or LottieDrawable#setImagesFolder"
 
-    invoke-virtual {v1}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    move-result-object v1
+    throw p1
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
 
-    invoke-direct {v0, v1, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    :catch_1
+    move-exception p1
+
+    const-string v0, "Unable to open asset."
 
     .line 22
-    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    invoke-static {v0, p1}, Le/a/a/x/d;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    move-result-object p1
+    return-object v1
+.end method
 
-    const-string v1, ".temp"
-
-    const-string v2, ""
-
-    invoke-virtual {p1, v1, v2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 23
-    new-instance v1, Ljava/io/File;
-
-    invoke-direct {v1, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+.method public final a(Ljava/lang/String;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+    .locals 2
 
     .line 24
-    invoke-virtual {v0, v1}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
+    sget-object v0, Le/a/a/t/b;->e:Ljava/lang/Object;
 
-    move-result p1
+    monitor-enter v0
 
     .line 25
-    new-instance v2, Ljava/lang/StringBuilder;
+    :try_start_0
+    iget-object v1, p0, Le/a/a/t/b;->d:Ljava/util/Map;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v3, "Copying temp file to real file ("
+    move-result-object p1
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    check-cast p1, Le/a/a/g;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p2}, Le/a/a/g;->a(Landroid/graphics/Bitmap;)V
 
-    const-string v3, ")"
+    .line 26
+    monitor-exit v0
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    return-object p2
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :catchall_0
+    move-exception p1
 
-    move-result-object v2
+    .line 27
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-static {v2}, Le/a/a/c;->b(Ljava/lang/String;)V
+    throw p1
+.end method
+
+.method public a(Le/a/a/b;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Le/a/a/t/b;->c:Le/a/a/b;
+
+    return-void
+.end method
+
+.method public a(Landroid/content/Context;)Z
+    .locals 1
 
     if-nez p1, :cond_0
 
-    .line 26
-    new-instance p1, Ljava/lang/StringBuilder;
+    .line 23
+    iget-object v0, p0, Le/a/a/t/b;->a:Landroid/content/Context;
 
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "Unable to rename cache file "
-
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, " to "
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "."
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p1}, Le/a/a/c;->d(Ljava/lang/String;)V
+    if-eqz v0, :cond_1
 
     :cond_0
-    return-void
+    iget-object v0, p0, Le/a/a/t/b;->a:Landroid/content/Context;
+
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    :cond_1
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
 .end method

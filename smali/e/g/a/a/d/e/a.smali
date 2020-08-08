@@ -73,7 +73,7 @@
 
     const-string v1, "Extract Application label"
 
-    invoke-interface {v0, v1}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Ln/c/b;->a(Ljava/lang/String;)V
 
     :cond_0
     const/4 v0, 0x0
@@ -135,7 +135,7 @@
 
     const-string v1, "Get Left PIN try"
 
-    invoke-interface {v0, v1}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Ln/c/b;->a(Ljava/lang/String;)V
 
     .line 7
     :cond_0
@@ -313,7 +313,7 @@
 
     const-string v2, "GET log format"
 
-    invoke-interface {v1, v2}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {v1, v2}, Ln/c/b;->a(Ljava/lang/String;)V
 
     .line 10
     :cond_0
@@ -381,7 +381,7 @@
 
     const-string v2, "No Log format found"
 
-    invoke-interface {v1, v2}, Ln/c/b;->b(Ljava/lang/String;)V
+    invoke-interface {v1, v2}, Ln/c/b;->c(Ljava/lang/String;)V
 
     :goto_0
     return-object v0
@@ -499,7 +499,7 @@
 
     const-string v1, "Get Transaction Counter ATC"
 
-    invoke-interface {v0, v1}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Ln/c/b;->a(Ljava/lang/String;)V
 
     .line 3
     :cond_0
@@ -790,7 +790,7 @@
 
     move-result-object v6
 
-    invoke-interface {v5, v6, v4}, Ln/c/b;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v5, v6, v4}, Ln/c/b;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_3
     :goto_1
@@ -862,7 +862,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Ln/c/b;->a(Ljava/lang/String;)V
 
     .line 3
     :cond_0

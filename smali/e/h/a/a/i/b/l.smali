@@ -1,30 +1,27 @@
-.class public final synthetic Le/h/a/a/i/b/l;
+.class public final Le/h/a/a/i/b/l;
 .super Ljava/lang/Object;
+.source "com.google.android.datatransport:transport-backend-cct@@2.2.0"
 
 # interfaces
-.implements Le/h/a/a/i/b/x2;
+.implements Le/h/b/g/c;
 
 
-# static fields
-.field public static final a:Le/h/a/a/i/b/x2;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Le/h/b/g/c<",
+        "Le/h/a/a/i/b/e;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Le/h/a/a/i/b/l;
-
-    invoke-direct {v0}, Le/h/a/a/i/b/l;-><init>()V
-
-    sput-object v0, Le/h/a/a/i/b/l;->a:Le/h/a/a/i/b/x2;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,12 +29,22 @@
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
+.method public a(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 1
 
-    invoke-static {}, Le/h/a/a/i/b/j;->G0()Ljava/lang/Boolean;
+    .line 1
+    check-cast p1, Le/h/a/a/i/b/e;
 
-    move-result-object v0
+    check-cast p2, Le/h/b/g/d;
 
-    return-object v0
+    .line 2
+    invoke-virtual {p1}, Le/h/a/a/i/b/e;->a()Ljava/util/List;
+
+    move-result-object p1
+
+    const-string v0, "logRequest"
+
+    invoke-interface {p2, v0, p1}, Le/h/b/g/d;->a(Ljava/lang/String;Ljava/lang/Object;)Le/h/b/g/d;
+
+    return-void
 .end method

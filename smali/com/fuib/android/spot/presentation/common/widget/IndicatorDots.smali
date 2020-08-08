@@ -72,7 +72,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0700e9
+    const v1, 0x7f0700ea
 
     invoke-static {v0, v1}, Lcom/andrognito/pinlockview/ResourceUtils;->b(Landroid/content/Context;I)F
 
@@ -95,7 +95,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0700ea
+    const v3, 0x7f0700eb
 
     invoke-static {v2, v3}, Lcom/andrognito/pinlockview/ResourceUtils;->b(Landroid/content/Context;I)F
 
@@ -111,7 +111,7 @@
 
     const/4 v0, 0x2
 
-    const v2, 0x7f080138
+    const v2, 0x7f08013a
 
     .line 8
     invoke-virtual {p2, v0, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -122,7 +122,7 @@
 
     const/4 v0, 0x1
 
-    const v2, 0x7f080137
+    const v2, 0x7f080139
 
     .line 9
     invoke-virtual {p2, v0, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -131,7 +131,7 @@
 
     iput v0, p0, Lcom/fuib/android/spot/presentation/common/widget/IndicatorDots;->g:I
 
-    const v0, 0x7f080158
+    const v0, 0x7f08015a
 
     .line 10
     invoke-virtual {p2, v1, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I

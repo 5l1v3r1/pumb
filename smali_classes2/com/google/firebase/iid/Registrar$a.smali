@@ -1,9 +1,9 @@
 .class public final Lcom/google/firebase/iid/Registrar$a;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-iid@@20.0.0"
+.source "com.google.firebase:firebase-iid@@20.2.1"
 
 # interfaces
-.implements Le/h/b/g/b/a;
+.implements Le/h/b/j/b/a;
 
 
 # annotations

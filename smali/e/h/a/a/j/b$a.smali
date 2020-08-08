@@ -1,5 +1,6 @@
-.class public Le/h/a/a/j/b$a;
-.super Le/h/a/a/d/i/h;
+.class public synthetic Le/h/a/a/j/b$a;
+.super Ljava/lang/Object;
+.source "com.google.android.datatransport:transport-runtime@@2.2.0"
 
 
 # annotations
@@ -8,42 +9,6 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x9
-    name = "a"
+    accessFlags = 0x1009
+    name = null
 .end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Le/h/a/a/d/i/h<",
-        "Le/h/a/a/j/b$b;",
-        ">;"
-    }
-.end annotation
-
-
-# direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Le/h/a/a/d/i/h;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public b()Ljava/lang/String;
-    .locals 1
-
-    invoke-virtual {p0}, Le/h/a/a/d/i/h;->a()Le/h/a/a/d/i/i;
-
-    move-result-object v0
-
-    check-cast v0, Le/h/a/a/j/b$b;
-
-    invoke-interface {v0}, Le/h/a/a/j/b$b;->f()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method

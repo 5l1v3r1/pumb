@@ -3,12 +3,12 @@
 .source "Okio.java"
 
 # interfaces
-.implements Lm/r;
+.implements Lm/s;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lm/l;->a(Ljava/io/OutputStream;Lm/t;)Lm/r;
+    value = Lm/l;->a(Ljava/io/OutputStream;Lm/u;)Lm/s;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field public final synthetic c:Lm/t;
+.field public final synthetic c:Lm/u;
 
 .field public final synthetic d:Ljava/io/OutputStream;
 
 
 # direct methods
-.method public constructor <init>(Lm/t;Ljava/io/OutputStream;)V
+.method public constructor <init>(Lm/u;Ljava/io/OutputStream;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lm/l$a;->c:Lm/t;
+    iput-object p1, p0, Lm/l$a;->c:Lm/u;
 
     iput-object p2, p0, Lm/l$a;->d:Ljava/io/OutputStream;
 
@@ -49,7 +49,7 @@
 
     move-wide v4, p2
 
-    invoke-static/range {v0 .. v5}, Lm/u;->a(JJJ)V
+    invoke-static/range {v0 .. v5}, Lm/v;->a(JJJ)V
 
     :cond_0
     :goto_0
@@ -60,17 +60,17 @@
     if-lez v2, :cond_1
 
     .line 2
-    iget-object v0, p0, Lm/l$a;->c:Lm/t;
+    iget-object v0, p0, Lm/l$a;->c:Lm/u;
 
-    invoke-virtual {v0}, Lm/t;->e()V
+    invoke-virtual {v0}, Lm/u;->e()V
 
     .line 3
-    iget-object v0, p1, Lm/c;->c:Lm/o;
+    iget-object v0, p1, Lm/c;->c:Lm/p;
 
     .line 4
-    iget v1, v0, Lm/o;->c:I
+    iget v1, v0, Lm/p;->c:I
 
-    iget v2, v0, Lm/o;->b:I
+    iget v2, v0, Lm/p;->b:I
 
     sub-int/2addr v1, v2
 
@@ -85,18 +85,18 @@
     .line 5
     iget-object v1, p0, Lm/l$a;->d:Ljava/io/OutputStream;
 
-    iget-object v3, v0, Lm/o;->a:[B
+    iget-object v3, v0, Lm/p;->a:[B
 
-    iget v4, v0, Lm/o;->b:I
+    iget v4, v0, Lm/p;->b:I
 
     invoke-virtual {v1, v3, v4, v2}, Ljava/io/OutputStream;->write([BII)V
 
     .line 6
-    iget v1, v0, Lm/o;->b:I
+    iget v1, v0, Lm/p;->b:I
 
     add-int/2addr v1, v2
 
-    iput v1, v0, Lm/o;->b:I
+    iput v1, v0, Lm/p;->b:I
 
     int-to-long v1, v2
 
@@ -110,21 +110,21 @@
     iput-wide v3, p1, Lm/c;->d:J
 
     .line 8
-    iget v1, v0, Lm/o;->b:I
+    iget v1, v0, Lm/p;->b:I
 
-    iget v2, v0, Lm/o;->c:I
+    iget v2, v0, Lm/p;->c:I
 
     if-ne v1, v2, :cond_0
 
     .line 9
-    invoke-virtual {v0}, Lm/o;->b()Lm/o;
+    invoke-virtual {v0}, Lm/p;->b()Lm/p;
 
     move-result-object v1
 
-    iput-object v1, p1, Lm/c;->c:Lm/o;
+    iput-object v1, p1, Lm/c;->c:Lm/p;
 
     .line 10
-    invoke-static {v0}, Lm/p;->a(Lm/o;)V
+    invoke-static {v0}, Lm/q;->a(Lm/p;)V
 
     goto :goto_0
 
@@ -154,11 +154,11 @@
     return-void
 .end method
 
-.method public i()Lm/t;
+.method public i()Lm/u;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lm/l$a;->c:Lm/t;
+    iget-object v0, p0, Lm/l$a;->c:Lm/u;
 
     return-object v0
 .end method

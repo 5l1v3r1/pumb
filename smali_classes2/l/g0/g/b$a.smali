@@ -19,11 +19,11 @@
 
 
 # direct methods
-.method public constructor <init>(Lm/r;)V
+.method public constructor <init>(Lm/s;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lm/g;-><init>(Lm/r;)V
+    invoke-direct {p0, p1}, Lm/g;-><init>(Lm/s;)V
 
     return-void
 .end method

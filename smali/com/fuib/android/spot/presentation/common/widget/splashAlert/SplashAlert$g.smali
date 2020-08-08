@@ -96,7 +96,7 @@
     .locals 4
 
     .line 1
-    sget-object p1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object p1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     .line 2
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/splashAlert/SplashAlert$g;->a:Lcom/fuib/android/spot/presentation/common/widget/splashAlert/SplashAlert;
@@ -155,7 +155,7 @@
     move-result-object v1
 
     .line 4
-    invoke-virtual {p1, v0, v1}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/splashAlert/SplashAlert$g;->a:Lcom/fuib/android/spot/presentation/common/widget/splashAlert/SplashAlert;

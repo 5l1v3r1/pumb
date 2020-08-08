@@ -27,9 +27,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Le/h/a/a/k/b/i;
+    new-instance v0, Le/h/a/b/k/b/i;
 
-    invoke-direct {v0}, Le/h/a/a/k/b/i;-><init>()V
+    invoke-direct {v0}, Le/h/a/b/k/b/i;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/signin/internal/zaj;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -86,6 +86,15 @@
 
 
 # virtual methods
+.method public final A()Lcom/google/android/gms/common/internal/ResolveAccountResponse;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/signin/internal/zaj;->e:Lcom/google/android/gms/common/internal/ResolveAccountResponse;
+
+    return-object v0
+.end method
+
 .method public final g()Lcom/google/android/gms/common/ConnectionResult;
     .locals 1
 
@@ -99,7 +108,7 @@
     .locals 4
 
     .line 1
-    invoke-static {p1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;)I
+    invoke-static {p1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;)I
 
     move-result v0
 
@@ -108,7 +117,7 @@
 
     const/4 v2, 0x1
 
-    invoke-static {p1, v2, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;II)V
 
     .line 3
     iget-object v1, p0, Lcom/google/android/gms/signin/internal/zaj;->d:Lcom/google/android/gms/common/ConnectionResult;
@@ -118,7 +127,7 @@
     const/4 v3, 0x2
 
     .line 4
-    invoke-static {p1, v3, v1, p2, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v3, v1, p2, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 5
     iget-object v1, p0, Lcom/google/android/gms/signin/internal/zaj;->e:Lcom/google/android/gms/common/internal/ResolveAccountResponse;
@@ -126,19 +135,10 @@
     const/4 v3, 0x3
 
     .line 6
-    invoke-static {p1, v3, v1, p2, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v3, v1, p2, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 7
-    invoke-static {p1, v0}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;I)V
 
     return-void
-.end method
-
-.method public final x()Lcom/google/android/gms/common/internal/ResolveAccountResponse;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/signin/internal/zaj;->e:Lcom/google/android/gms/common/internal/ResolveAccountResponse;
-
-    return-object v0
 .end method

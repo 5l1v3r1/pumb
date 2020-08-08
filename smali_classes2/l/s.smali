@@ -624,7 +624,7 @@
 
     .line 54
     :goto_4
-    invoke-virtual {v0}, Lm/c;->n()Z
+    invoke-virtual {v0}, Lm/c;->o()Z
 
     move-result v2
 

@@ -40,7 +40,7 @@
     .line 1
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput$o;->c:Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput;
 
-    sget v1, Le/f/a/b/n;->input_payment_purpose:I
+    sget v1, Le/f/a/b/o;->input_payment_purpose:I
 
     invoke-virtual {v0, v1}, Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -50,7 +50,7 @@
 
     iget-object v1, p0, Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput$o;->c:Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput;
 
-    sget v2, Le/f/a/b/n;->input_payment_purpose:I
+    sget v2, Le/f/a/b/o;->input_payment_purpose:I
 
     invoke-virtual {v1, v2}, Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput;->_$_findCachedViewById(I)Landroid/view/View;
 

@@ -1,6 +1,6 @@
 .class public Lcom/google/firebase/FirebaseApp$d;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-common@@19.0.0"
+.source "com.google.firebase:firebase-common@@19.3.0"
 
 # interfaces
 .implements Ljava/util/concurrent/Executor;

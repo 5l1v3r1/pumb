@@ -3,7 +3,7 @@
 .source "GzipSource.java"
 
 # interfaces
-.implements Lm/s;
+.implements Lm/t;
 
 
 # instance fields
@@ -19,7 +19,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lm/s;)V
+.method public constructor <init>(Lm/t;)V
     .locals 2
 
     .line 1
@@ -49,7 +49,7 @@
     iput-object v0, p0, Lm/j;->e:Ljava/util/zip/Inflater;
 
     .line 5
-    invoke-static {p1}, Lm/l;->a(Lm/s;)Lm/e;
+    invoke-static {p1}, Lm/l;->a(Lm/t;)Lm/e;
 
     move-result-object p1
 
@@ -91,7 +91,7 @@
 
     const-wide/16 v1, 0xa
 
-    invoke-interface {v0, v1, v2}, Lm/e;->g(J)V
+    invoke-interface {v0, v1, v2}, Lm/e;->h(J)V
 
     .line 2
     iget-object v0, v6, Lm/j;->d:Lm/e;
@@ -174,7 +174,7 @@
 
     const-wide/16 v1, 0x2
 
-    invoke-interface {v0, v1, v2}, Lm/e;->g(J)V
+    invoke-interface {v0, v1, v2}, Lm/e;->h(J)V
 
     if-eqz v10, :cond_2
 
@@ -201,7 +201,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lm/c;->o()S
+    invoke-virtual {v0}, Lm/c;->p()S
 
     move-result v0
 
@@ -210,7 +210,7 @@
 
     int-to-long v11, v0
 
-    invoke-interface {v1, v11, v12}, Lm/e;->g(J)V
+    invoke-interface {v1, v11, v12}, Lm/e;->h(J)V
 
     if-eqz v10, :cond_3
 
@@ -353,7 +353,7 @@
     .line 21
     iget-object v0, v6, Lm/j;->d:Lm/e;
 
-    invoke-interface {v0}, Lm/e;->o()S
+    invoke-interface {v0}, Lm/e;->p()S
 
     move-result v0
 
@@ -432,13 +432,13 @@
     .locals 5
 
     .line 23
-    iget-object p1, p1, Lm/c;->c:Lm/o;
+    iget-object p1, p1, Lm/c;->c:Lm/p;
 
     .line 24
     :goto_0
-    iget v0, p1, Lm/o;->c:I
+    iget v0, p1, Lm/p;->c:I
 
-    iget v1, p1, Lm/o;->b:I
+    iget v1, p1, Lm/p;->b:I
 
     sub-int v2, v0, v1
 
@@ -454,7 +454,7 @@
 
     sub-long/2addr p2, v0
 
-    iget-object p1, p1, Lm/o;->f:Lm/o;
+    iget-object p1, p1, Lm/p;->f:Lm/p;
 
     goto :goto_0
 
@@ -467,7 +467,7 @@
     if-lez v2, :cond_1
 
     .line 25
-    iget v2, p1, Lm/o;->b:I
+    iget v2, p1, Lm/p;->b:I
 
     int-to-long v2, v2
 
@@ -476,7 +476,7 @@
     long-to-int p2, v2
 
     .line 26
-    iget p3, p1, Lm/o;->c:I
+    iget p3, p1, Lm/p;->c:I
 
     sub-int/2addr p3, p2
 
@@ -491,7 +491,7 @@
     .line 27
     iget-object v2, p0, Lm/j;->g:Ljava/util/zip/CRC32;
 
-    iget-object v3, p1, Lm/o;->a:[B
+    iget-object v3, p1, Lm/p;->a:[B
 
     invoke-virtual {v2, v3, p2, p3}, Ljava/util/zip/CRC32;->update([BII)V
 
@@ -500,7 +500,7 @@
     sub-long/2addr p4, p2
 
     .line 28
-    iget-object p1, p1, Lm/o;->f:Lm/o;
+    iget-object p1, p1, Lm/p;->f:Lm/p;
 
     move-wide p2, v0
 
@@ -637,7 +637,7 @@
     .line 12
     iget-object p1, p0, Lm/j;->d:Lm/e;
 
-    invoke-interface {p1}, Lm/e;->n()Z
+    invoke-interface {p1}, Lm/e;->o()Z
 
     move-result p1
 
@@ -693,13 +693,13 @@
     return-void
 .end method
 
-.method public i()Lm/t;
+.method public i()Lm/u;
     .locals 1
 
     .line 1
     iget-object v0, p0, Lm/j;->d:Lm/e;
 
-    invoke-interface {v0}, Lm/s;->i()Lm/t;
+    invoke-interface {v0}, Lm/t;->i()Lm/u;
 
     move-result-object v0
 

@@ -1,6 +1,6 @@
 .class public final Lcom/google/firebase/iid/Registrar;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-iid@@20.0.0"
+.source "com.google.firebase:firebase-iid@@20.2.1"
 
 # interfaces
 .implements Le/h/b/e/h;
@@ -54,74 +54,92 @@
     const-class v2, Lcom/google/firebase/FirebaseApp;
 
     .line 3
-    invoke-static {v2}, Le/h/b/e/n;->a(Ljava/lang/Class;)Le/h/b/e/n;
+    invoke-static {v2}, Le/h/b/e/n;->b(Ljava/lang/Class;)Le/h/b/e/n;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Le/h/b/e/d$b;->a(Le/h/b/e/n;)Le/h/b/e/d$b;
 
-    const-class v2, Le/h/b/f/d;
+    const-class v2, Le/h/b/h/d;
 
     .line 4
-    invoke-static {v2}, Le/h/b/e/n;->a(Ljava/lang/Class;)Le/h/b/e/n;
+    invoke-static {v2}, Le/h/b/e/n;->b(Ljava/lang/Class;)Le/h/b/e/n;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Le/h/b/e/d$b;->a(Le/h/b/e/n;)Le/h/b/e/d$b;
 
-    const-class v2, Le/h/b/k/g;
+    const-class v2, Le/h/b/o/h;
 
     .line 5
-    invoke-static {v2}, Le/h/b/e/n;->a(Ljava/lang/Class;)Le/h/b/e/n;
+    invoke-static {v2}, Le/h/b/e/n;->b(Ljava/lang/Class;)Le/h/b/e/n;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Le/h/b/e/d$b;->a(Le/h/b/e/n;)Le/h/b/e/d$b;
 
-    sget-object v2, Le/h/b/g/m;->a:Le/h/b/e/g;
+    const-class v2, Le/h/b/i/c;
 
     .line 6
-    invoke-virtual {v1, v2}, Le/h/b/e/d$b;->a(Le/h/b/e/g;)Le/h/b/e/d$b;
+    invoke-static {v2}, Le/h/b/e/n;->b(Ljava/lang/Class;)Le/h/b/e/n;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Le/h/b/e/d$b;->a(Le/h/b/e/n;)Le/h/b/e/d$b;
+
+    const-class v2, Le/h/b/l/g;
 
     .line 7
-    invoke-virtual {v1}, Le/h/b/e/d$b;->a()Le/h/b/e/d$b;
+    invoke-static {v2}, Le/h/b/e/n;->b(Ljava/lang/Class;)Le/h/b/e/n;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Le/h/b/e/d$b;->a(Le/h/b/e/n;)Le/h/b/e/d$b;
+
+    sget-object v2, Le/h/b/j/s;->a:Le/h/b/e/g;
 
     .line 8
+    invoke-virtual {v1, v2}, Le/h/b/e/d$b;->a(Le/h/b/e/g;)Le/h/b/e/d$b;
+
+    .line 9
+    invoke-virtual {v1}, Le/h/b/e/d$b;->a()Le/h/b/e/d$b;
+
+    .line 10
     invoke-virtual {v1}, Le/h/b/e/d$b;->b()Le/h/b/e/d;
 
     move-result-object v1
 
-    .line 9
-    const-class v2, Le/h/b/g/b/a;
+    .line 11
+    const-class v2, Le/h/b/j/b/a;
 
-    .line 10
+    .line 12
     invoke-static {v2}, Le/h/b/e/d;->a(Ljava/lang/Class;)Le/h/b/e/d$b;
 
     move-result-object v2
 
-    .line 11
-    invoke-static {v0}, Le/h/b/e/n;->a(Ljava/lang/Class;)Le/h/b/e/n;
+    .line 13
+    invoke-static {v0}, Le/h/b/e/n;->b(Ljava/lang/Class;)Le/h/b/e/n;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Le/h/b/e/d$b;->a(Le/h/b/e/n;)Le/h/b/e/d$b;
 
-    sget-object v0, Le/h/b/g/n;->a:Le/h/b/e/g;
+    sget-object v0, Le/h/b/j/t;->a:Le/h/b/e/g;
 
-    .line 12
+    .line 14
     invoke-virtual {v2, v0}, Le/h/b/e/d$b;->a(Le/h/b/e/g;)Le/h/b/e/d$b;
 
-    .line 13
+    .line 15
     invoke-virtual {v2}, Le/h/b/e/d$b;->b()Le/h/b/e/d;
 
     move-result-object v0
 
     const-string v2, "fire-iid"
 
-    const-string v3, "20.0.0"
+    const-string v3, "20.2.1"
 
-    .line 14
-    invoke-static {v2, v3}, Le/h/b/k/f;->a(Ljava/lang/String;Ljava/lang/String;)Le/h/b/e/d;
+    .line 16
+    invoke-static {v2, v3}, Le/h/b/o/g;->a(Ljava/lang/String;Ljava/lang/String;)Le/h/b/e/d;
 
     move-result-object v2
 
@@ -141,7 +159,7 @@
 
     aput-object v2, v3, v0
 
-    .line 15
+    .line 17
     invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0

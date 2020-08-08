@@ -1,6 +1,6 @@
 .class public final Lcom/google/firebase/iid/FirebaseInstanceId$a;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-iid@@20.0.0"
+.source "com.google.firebase:firebase-iid@@20.2.1"
 
 
 # annotations
@@ -17,14 +17,14 @@
 # instance fields
 .field public a:Z
 
-.field public final b:Le/h/b/f/d;
+.field public final b:Le/h/b/h/d;
 
 .field public c:Z
 
-.field public d:Le/h/b/f/b;
+.field public d:Le/h/b/h/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Le/h/b/f/b<",
+            "Le/h/b/h/b<",
             "Le/h/b/a;",
             ">;"
         }
@@ -37,7 +37,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/firebase/iid/FirebaseInstanceId;Le/h/b/f/d;)V
+.method public constructor <init>(Lcom/google/firebase/iid/FirebaseInstanceId;Le/h/b/h/d;)V
     .locals 0
 
     .line 1
@@ -46,13 +46,106 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->b:Le/h/b/f/d;
+    iput-object p2, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->b:Le/h/b/h/d;
 
     return-void
 .end method
 
 
 # virtual methods
+.method public final declared-synchronized a(Z)V
+    .locals 3
+
+    monitor-enter p0
+
+    .line 6
+    :try_start_0
+    invoke-virtual {p0}, Lcom/google/firebase/iid/FirebaseInstanceId$a;->b()V
+
+    .line 7
+    iget-object v0, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->d:Le/h/b/h/b;
+
+    if-eqz v0, :cond_0
+
+    .line 8
+    iget-object v0, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->b:Le/h/b/h/d;
+
+    const-class v1, Le/h/b/a;
+
+    iget-object v2, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->d:Le/h/b/h/b;
+
+    invoke-interface {v0, v1, v2}, Le/h/b/h/d;->b(Ljava/lang/Class;Le/h/b/h/b;)V
+
+    const/4 v0, 0x0
+
+    .line 9
+    iput-object v0, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->d:Le/h/b/h/b;
+
+    .line 10
+    :cond_0
+    iget-object v0, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->f:Lcom/google/firebase/iid/FirebaseInstanceId;
+
+    .line 11
+    invoke-static {v0}, Lcom/google/firebase/iid/FirebaseInstanceId;->a(Lcom/google/firebase/iid/FirebaseInstanceId;)Lcom/google/firebase/FirebaseApp;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/google/firebase/FirebaseApp;->b()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "com.google.firebase.messaging"
+
+    const/4 v2, 0x0
+
+    .line 12
+    invoke-virtual {v0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    .line 13
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    const-string v1, "auto_init"
+
+    .line 14
+    invoke-interface {v0, v1, p1}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    .line 15
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    if-eqz p1, :cond_1
+
+    .line 16
+    iget-object v0, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->f:Lcom/google/firebase/iid/FirebaseInstanceId;
+
+    invoke-static {v0}, Lcom/google/firebase/iid/FirebaseInstanceId;->b(Lcom/google/firebase/iid/FirebaseInstanceId;)V
+
+    .line 17
+    :cond_1
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->e:Ljava/lang/Boolean;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 18
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
+.end method
+
 .method public final declared-synchronized a()Z
     .locals 1
 
@@ -167,20 +260,20 @@
     if-eqz v0, :cond_1
 
     .line 6
-    new-instance v0, Le/h/b/g/o0;
+    new-instance v0, Le/h/b/j/a1;
 
-    invoke-direct {v0, p0}, Le/h/b/g/o0;-><init>(Lcom/google/firebase/iid/FirebaseInstanceId$a;)V
+    invoke-direct {v0, p0}, Le/h/b/j/a1;-><init>(Lcom/google/firebase/iid/FirebaseInstanceId$a;)V
 
-    iput-object v0, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->d:Le/h/b/f/b;
+    iput-object v0, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->d:Le/h/b/h/b;
 
     .line 7
-    iget-object v0, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->b:Le/h/b/f/d;
+    iget-object v0, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->b:Le/h/b/h/d;
 
     const-class v1, Le/h/b/a;
 
-    iget-object v2, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->d:Le/h/b/f/b;
+    iget-object v2, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->d:Le/h/b/h/b;
 
-    invoke-interface {v0, v1, v2}, Le/h/b/f/d;->a(Ljava/lang/Class;Le/h/b/f/b;)V
+    invoke-interface {v0, v1, v2}, Le/h/b/h/d;->a(Ljava/lang/Class;Le/h/b/h/b;)V
 
     :cond_1
     const/4 v0, 0x1
@@ -310,7 +403,7 @@
 .method public final d()Z
     .locals 4
 
-    const-string v0, "e.h.b.j.a"
+    const-string v0, "com.google.firebase.messaging.FirebaseMessaging"
 
     const/4 v1, 0x1
 

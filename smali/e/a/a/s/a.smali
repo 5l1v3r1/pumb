@@ -1,123 +1,63 @@
 .class public Le/a/a/s/a;
-.super Ljava/lang/Object;
-.source "CubicCurveData.java"
-
-
-# instance fields
-.field public final a:Landroid/graphics/PointF;
-
-.field public final b:Landroid/graphics/PointF;
-
-.field public final c:Landroid/graphics/PointF;
+.super Landroid/graphics/Paint;
+.source "LPaint.java"
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance v0, Landroid/graphics/PointF;
-
-    invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
-
-    iput-object v0, p0, Le/a/a/s/a;->a:Landroid/graphics/PointF;
-
-    .line 3
-    new-instance v0, Landroid/graphics/PointF;
-
-    invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
-
-    iput-object v0, p0, Le/a/a/s/a;->b:Landroid/graphics/PointF;
-
-    .line 4
-    new-instance v0, Landroid/graphics/PointF;
-
-    invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
-
-    iput-object v0, p0, Le/a/a/s/a;->c:Landroid/graphics/PointF;
+    invoke-direct {p0}, Landroid/graphics/Paint;-><init>()V
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/graphics/PointF;Landroid/graphics/PointF;Landroid/graphics/PointF;)V
+.method public constructor <init>(I)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1}, Landroid/graphics/Paint;-><init>(I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(ILandroid/graphics/PorterDuff$Mode;)V
     .locals 0
 
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Landroid/graphics/Paint;-><init>(I)V
 
     .line 6
-    iput-object p1, p0, Le/a/a/s/a;->a:Landroid/graphics/PointF;
+    new-instance p1, Landroid/graphics/PorterDuffXfermode;
 
-    .line 7
-    iput-object p2, p0, Le/a/a/s/a;->b:Landroid/graphics/PointF;
+    invoke-direct {p1, p2}, Landroid/graphics/PorterDuffXfermode;-><init>(Landroid/graphics/PorterDuff$Mode;)V
 
-    .line 8
-    iput-object p3, p0, Le/a/a/s/a;->c:Landroid/graphics/PointF;
+    invoke-virtual {p0, p1}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/graphics/PorterDuff$Mode;)V
+    .locals 1
+
+    .line 3
+    invoke-direct {p0}, Landroid/graphics/Paint;-><init>()V
+
+    .line 4
+    new-instance v0, Landroid/graphics/PorterDuffXfermode;
+
+    invoke-direct {v0, p1}, Landroid/graphics/PorterDuffXfermode;-><init>(Landroid/graphics/PorterDuff$Mode;)V
+
+    invoke-virtual {p0, v0}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Landroid/graphics/PointF;
-    .locals 1
-
-    .line 2
-    iget-object v0, p0, Le/a/a/s/a;->a:Landroid/graphics/PointF;
-
-    return-object v0
-.end method
-
-.method public a(FF)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Le/a/a/s/a;->a:Landroid/graphics/PointF;
-
-    invoke-virtual {v0, p1, p2}, Landroid/graphics/PointF;->set(FF)V
-
-    return-void
-.end method
-
-.method public b()Landroid/graphics/PointF;
-    .locals 1
-
-    .line 2
-    iget-object v0, p0, Le/a/a/s/a;->b:Landroid/graphics/PointF;
-
-    return-object v0
-.end method
-
-.method public b(FF)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Le/a/a/s/a;->b:Landroid/graphics/PointF;
-
-    invoke-virtual {v0, p1, p2}, Landroid/graphics/PointF;->set(FF)V
-
-    return-void
-.end method
-
-.method public c()Landroid/graphics/PointF;
-    .locals 1
-
-    .line 2
-    iget-object v0, p0, Le/a/a/s/a;->c:Landroid/graphics/PointF;
-
-    return-object v0
-.end method
-
-.method public c(FF)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Le/a/a/s/a;->c:Landroid/graphics/PointF;
-
-    invoke-virtual {v0, p1, p2}, Landroid/graphics/PointF;->set(FF)V
+.method public setTextLocales(Landroid/os/LocaleList;)V
+    .locals 0
 
     return-void
 .end method

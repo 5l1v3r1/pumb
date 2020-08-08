@@ -41,7 +41,7 @@
 
 
 # instance fields
-.field public a:Le/f/a/b/s/f/a0;
+.field public a:Le/f/a/b/t/f/a0;
 
 
 # direct methods
@@ -101,14 +101,14 @@
     if-eqz p1, :cond_6
 
     .line 3
-    iget-object p1, p0, Lcom/fuib/android/spot/data/util/EndpointSwitchBroadcastReceiver;->a:Le/f/a/b/s/f/a0;
+    iget-object p1, p0, Lcom/fuib/android/spot/data/util/EndpointSwitchBroadcastReceiver;->a:Le/f/a/b/t/f/a0;
 
     if-nez p1, :cond_1
 
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     :cond_1
-    invoke-virtual {p1}, Le/f/a/b/s/f/a0;->g()V
+    invoke-virtual {p1}, Le/f/a/b/t/f/a0;->h()V
 
     goto :goto_1
 
@@ -123,14 +123,14 @@
     if-eqz p1, :cond_6
 
     .line 5
-    iget-object p1, p0, Lcom/fuib/android/spot/data/util/EndpointSwitchBroadcastReceiver;->a:Le/f/a/b/s/f/a0;
+    iget-object p1, p0, Lcom/fuib/android/spot/data/util/EndpointSwitchBroadcastReceiver;->a:Le/f/a/b/t/f/a0;
 
     if-nez p1, :cond_3
 
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     :cond_3
-    invoke-virtual {p1}, Le/f/a/b/s/f/a0;->f()V
+    invoke-virtual {p1}, Le/f/a/b/t/f/a0;->g()V
 
     goto :goto_1
 
@@ -145,28 +145,28 @@
     if-eqz p1, :cond_6
 
     .line 7
-    iget-object p1, p0, Lcom/fuib/android/spot/data/util/EndpointSwitchBroadcastReceiver;->a:Le/f/a/b/s/f/a0;
+    iget-object p1, p0, Lcom/fuib/android/spot/data/util/EndpointSwitchBroadcastReceiver;->a:Le/f/a/b/t/f/a0;
 
     if-nez p1, :cond_5
 
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     :cond_5
-    invoke-virtual {p1}, Le/f/a/b/s/f/a0;->h()V
+    invoke-virtual {p1}, Le/f/a/b/t/f/a0;->i()V
 
     goto :goto_1
 
     .line 8
     :cond_6
     :goto_0
-    iget-object p1, p0, Lcom/fuib/android/spot/data/util/EndpointSwitchBroadcastReceiver;->a:Le/f/a/b/s/f/a0;
+    iget-object p1, p0, Lcom/fuib/android/spot/data/util/EndpointSwitchBroadcastReceiver;->a:Le/f/a/b/t/f/a0;
 
     if-nez p1, :cond_7
 
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     :cond_7
-    invoke-virtual {p1}, Le/f/a/b/s/f/a0;->f()V
+    invoke-virtual {p1}, Le/f/a/b/t/f/a0;->g()V
 
     :goto_1
     const/4 p1, 0x0

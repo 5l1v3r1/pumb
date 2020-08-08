@@ -50,7 +50,7 @@
     const-string v0, "LoadBitmapFromDiskRunnable can\'t be executed in the main thread"
 
     .line 1
-    invoke-static {v0}, Le/h/a/a/d/l/c;->b(Ljava/lang/String;)V
+    invoke-static {v0}, Le/h/a/b/d/l/c;->b(Ljava/lang/String;)V
 
     .line 2
     iget-object v0, p0, Lcom/google/android/gms/common/images/ImageManager$b;->d:Landroid/os/ParcelFileDescriptor;

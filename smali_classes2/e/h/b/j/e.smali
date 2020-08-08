@@ -1,317 +1,321 @@
 .class public final Le/h/b/j/e;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-messaging@@20.0.0"
+.source "com.google.firebase:firebase-iid@@20.2.1"
+
+
+# static fields
+.field public static e:Le/h/b/j/e;
 
 
 # instance fields
-.field public final a:Ljava/util/concurrent/Executor;
+.field public final a:Landroid/content/Context;
 
-.field public final b:Landroid/content/Context;
+.field public final b:Ljava/util/concurrent/ScheduledExecutorService;
 
-.field public final c:Le/h/b/j/l;
+.field public c:Le/h/b/j/f;
+
+.field public d:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Le/h/b/j/l;Ljava/util/concurrent/Executor;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Ljava/util/concurrent/ScheduledExecutorService;)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p3, p0, Le/h/b/j/e;->a:Ljava/util/concurrent/Executor;
+    new-instance v0, Le/h/b/j/f;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Le/h/b/j/f;-><init>(Le/h/b/j/e;Le/h/b/j/g;)V
+
+    iput-object v0, p0, Le/h/b/j/e;->c:Le/h/b/j/f;
+
+    const/4 v0, 0x1
 
     .line 3
-    iput-object p1, p0, Le/h/b/j/e;->b:Landroid/content/Context;
+    iput v0, p0, Le/h/b/j/e;->d:I
 
     .line 4
-    iput-object p2, p0, Le/h/b/j/e;->c:Le/h/b/j/l;
+    iput-object p2, p0, Le/h/b/j/e;->b:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 5
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    iput-object p1, p0, Le/h/b/j/e;->a:Landroid/content/Context;
 
     return-void
 .end method
 
+.method public static synthetic a(Le/h/b/j/e;)Landroid/content/Context;
+    .locals 0
 
-# virtual methods
-.method public final a()Z
-    .locals 9
+    .line 15
+    iget-object p0, p0, Le/h/b/j/e;->a:Landroid/content/Context;
+
+    return-object p0
+.end method
+
+.method public static declared-synchronized a(Landroid/content/Context;)Le/h/b/j/e;
+    .locals 6
+
+    const-class v0, Le/h/b/j/e;
+
+    monitor-enter v0
 
     .line 1
-    iget-object v0, p0, Le/h/b/j/e;->c:Le/h/b/j/l;
+    :try_start_0
+    sget-object v1, Le/h/b/j/e;->e:Le/h/b/j/e;
 
-    const-string v1, "gcm.n.noui"
+    if-nez v1, :cond_0
 
-    invoke-virtual {v0, v1}, Le/h/b/j/l;->b(Ljava/lang/String;)Z
+    .line 2
+    new-instance v1, Le/h/b/j/e;
+
+    .line 3
+    invoke-static {}, Le/h/a/b/h/g/a;->a()Le/h/a/b/h/g/b;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    new-instance v4, Le/h/a/b/d/q/s/b;
+
+    const-string v5, "MessengerIpcClient"
+
+    invoke-direct {v4, v5}, Le/h/a/b/d/q/s/b;-><init>(Ljava/lang/String;)V
+
+    sget v5, Le/h/a/b/h/g/f;->a:I
+
+    .line 4
+    invoke-interface {v2, v3, v4, v5}, Le/h/a/b/h/g/b;->a(ILjava/util/concurrent/ThreadFactory;I)Ljava/util/concurrent/ScheduledExecutorService;
+
+    move-result-object v2
+
+    invoke-direct {v1, p0, v2}, Le/h/b/j/e;-><init>(Landroid/content/Context;Ljava/util/concurrent/ScheduledExecutorService;)V
+
+    sput-object v1, Le/h/b/j/e;->e:Le/h/b/j/e;
+
+    .line 5
+    :cond_0
+    sget-object p0, Le/h/b/j/e;->e:Le/h/b/j/e;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit v0
+
+    return-object p0
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+
+    throw p0
+.end method
+
+.method public static synthetic b(Le/h/b/j/e;)Ljava/util/concurrent/ScheduledExecutorService;
+    .locals 0
+
+    .line 2
+    iget-object p0, p0, Le/h/b/j/e;->b:Ljava/util/concurrent/ScheduledExecutorService;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final declared-synchronized a()I
+    .locals 2
+
+    monitor-enter p0
+
+    .line 14
+    :try_start_0
+    iget v0, p0, Le/h/b/j/e;->d:I
+
+    add-int/lit8 v1, v0, 0x1
+
+    iput v1, p0, Le/h/b/j/e;->d:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
+    return v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
+.method public final a(ILandroid/os/Bundle;)Le/h/a/b/m/g;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Landroid/os/Bundle;",
+            ")",
+            "Le/h/a/b/m/g<",
+            "Ljava/lang/Void;",
+            ">;"
+        }
+    .end annotation
+
+    .line 6
+    new-instance p1, Le/h/b/j/n;
+
+    invoke-virtual {p0}, Le/h/b/j/e;->a()I
 
     move-result v0
 
-    const/4 v1, 0x1
+    const/4 v1, 0x2
+
+    invoke-direct {p1, v0, v1, p2}, Le/h/b/j/n;-><init>(IILandroid/os/Bundle;)V
+
+    invoke-virtual {p0, p1}, Le/h/b/j/e;->a(Le/h/b/j/p;)Le/h/a/b/m/g;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final declared-synchronized a(Le/h/b/j/p;)Le/h/a/b/m/g;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Le/h/b/j/p<",
+            "TT;>;)",
+            "Le/h/a/b/m/g<",
+            "TT;>;"
+        }
+    .end annotation
+
+    monitor-enter p0
+
+    :try_start_0
+    const-string v0, "MessengerIpcClient"
+
+    const/4 v1, 0x3
+
+    .line 7
+    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    move-result v0
 
     if-eqz v0, :cond_0
 
-    return v1
-
-    .line 2
-    :cond_0
-    iget-object v0, p0, Le/h/b/j/e;->b:Landroid/content/Context;
-
-    const-string v2, "keyguard"
-
-    .line 3
-    invoke-virtual {v0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    .line 8
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
-    check-cast v0, Landroid/app/KeyguardManager;
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    .line 4
-    invoke-virtual {v0}, Landroid/app/KeyguardManager;->inKeyguardRestrictedInputMode()Z
+    move-result-object v1
 
-    move-result v0
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
 
-    const/4 v2, 0x0
+    move-result v1
 
-    if-nez v0, :cond_3
+    add-int/lit8 v1, v1, 0x9
 
-    .line 5
-    invoke-static {}, Le/h/a/a/d/q/n;->g()Z
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v1, "Queueing "
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 9
+    :cond_0
+    iget-object v0, p0, Le/h/b/j/e;->c:Le/h/b/j/f;
+
+    invoke-virtual {v0, p1}, Le/h/b/j/f;->a(Le/h/b/j/p;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    const-wide/16 v3, 0xa
-
-    .line 6
-    invoke-static {v3, v4}, Landroid/os/SystemClock;->sleep(J)V
-
-    .line 7
-    :cond_1
-    invoke-static {}, Landroid/os/Process;->myPid()I
-
-    move-result v0
-
-    .line 8
-    iget-object v3, p0, Le/h/b/j/e;->b:Landroid/content/Context;
-
-    const-string v4, "activity"
-
-    invoke-virtual {v3, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/app/ActivityManager;
-
-    .line 9
-    invoke-virtual {v3}, Landroid/app/ActivityManager;->getRunningAppProcesses()Ljava/util/List;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_3
-
     .line 10
-    invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    new-instance v0, Le/h/b/j/f;
 
-    move-result-object v3
+    const/4 v1, 0x0
 
-    :cond_2
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+    invoke-direct {v0, p0, v1}, Le/h/b/j/f;-><init>(Le/h/b/j/e;Le/h/b/j/g;)V
 
-    move-result v4
-
-    if-eqz v4, :cond_3
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iput-object v0, p0, Le/h/b/j/e;->c:Le/h/b/j/f;
 
     .line 11
-    iget v5, v4, Landroid/app/ActivityManager$RunningAppProcessInfo;->pid:I
+    iget-object v0, p0, Le/h/b/j/e;->c:Le/h/b/j/f;
 
-    if-ne v5, v0, :cond_2
+    invoke-virtual {v0, p1}, Le/h/b/j/f;->a(Le/h/b/j/p;)Z
 
     .line 12
-    iget v0, v4, Landroid/app/ActivityManager$RunningAppProcessInfo;->importance:I
+    :cond_1
+    iget-object p1, p1, Le/h/b/j/p;->b:Le/h/a/b/m/h;
 
-    const/16 v3, 0x64
+    invoke-virtual {p1}, Le/h/a/b/m/h;->a()Le/h/a/b/m/g;
 
-    if-ne v0, v3, :cond_3
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_3
-    const/4 v0, 0x0
-
-    :goto_0
-    if-eqz v0, :cond_4
-
-    return v2
+    move-result-object p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 13
-    :cond_4
-    iget-object v0, p0, Le/h/b/j/e;->c:Le/h/b/j/l;
+    monitor-exit p0
 
-    const-string v3, "gcm.n.image"
+    return-object p1
 
-    invoke-virtual {v0, v3}, Le/h/b/j/l;->a(Ljava/lang/String;)Ljava/lang/String;
+    :catchall_0
+    move-exception p1
 
-    move-result-object v0
+    monitor-exit p0
 
-    .line 14
-    invoke-static {v0}, Le/h/b/j/k;->e(Ljava/lang/String;)Le/h/b/j/k;
+    throw p1
+.end method
 
-    move-result-object v0
+.method public final b(ILandroid/os/Bundle;)Le/h/a/b/m/g;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Landroid/os/Bundle;",
+            ")",
+            "Le/h/a/b/m/g<",
+            "Landroid/os/Bundle;",
+            ">;"
+        }
+    .end annotation
 
-    if-eqz v0, :cond_5
+    .line 1
+    new-instance p1, Le/h/b/j/r;
 
-    .line 15
-    iget-object v3, p0, Le/h/b/j/e;->a:Ljava/util/concurrent/Executor;
-
-    invoke-virtual {v0, v3}, Le/h/b/j/k;->a(Ljava/util/concurrent/Executor;)V
-
-    .line 16
-    :cond_5
-    iget-object v3, p0, Le/h/b/j/e;->b:Landroid/content/Context;
-
-    iget-object v4, p0, Le/h/b/j/e;->c:Le/h/b/j/l;
-
-    .line 17
-    invoke-static {v3, v4}, Le/h/b/j/d;->a(Landroid/content/Context;Le/h/b/j/l;)Le/h/b/j/c;
-
-    move-result-object v3
-
-    .line 18
-    iget-object v4, v3, Le/h/b/j/c;->a:Lb/k/e/h$d;
-
-    if-eqz v0, :cond_6
-
-    .line 19
-    :try_start_0
-    invoke-virtual {v0}, Le/h/b/j/k;->a()Le/h/a/a/m/g;
-
-    move-result-object v5
-
-    const-wide/16 v6, 0x5
-
-    sget-object v8, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
-
-    invoke-static {v5, v6, v7, v8}, Le/h/a/a/m/j;->a(Le/h/a/a/m/g;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Landroid/graphics/Bitmap;
-
-    .line 20
-    invoke-virtual {v4, v5}, Lb/k/e/h$d;->b(Landroid/graphics/Bitmap;)Lb/k/e/h$d;
-
-    .line 21
-    new-instance v6, Lb/k/e/h$b;
-
-    invoke-direct {v6}, Lb/k/e/h$b;-><init>()V
-
-    invoke-virtual {v6, v5}, Lb/k/e/h$b;->b(Landroid/graphics/Bitmap;)Lb/k/e/h$b;
-
-    const/4 v5, 0x0
-
-    invoke-virtual {v6, v5}, Lb/k/e/h$b;->a(Landroid/graphics/Bitmap;)Lb/k/e/h$b;
-
-    invoke-virtual {v4, v6}, Lb/k/e/h$d;->a(Lb/k/e/h$e;)Lb/k/e/h$d;
-    :try_end_0
-    .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/util/concurrent/TimeoutException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_1
-
-    .line 22
-    :catch_0
-    invoke-virtual {v0}, Le/h/b/j/k;->close()V
-
-    goto :goto_1
-
-    .line 23
-    :catch_1
-    invoke-virtual {v0}, Le/h/b/j/k;->close()V
-
-    .line 24
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
-
-    goto :goto_1
-
-    :catch_2
-    move-exception v0
-
-    .line 25
-    invoke-virtual {v0}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/String;->length()I
-
-    move-result v4
-
-    add-int/lit8 v4, v4, 0x1a
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5, v4}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v4, "Failed to download image: "
-
-    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    :cond_6
-    :goto_1
-    const/4 v0, 0x3
-
-    const-string v4, "FirebaseMessaging"
-
-    .line 26
-    invoke-static {v4, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    invoke-virtual {p0}, Le/h/b/j/e;->a()I
 
     move-result v0
 
-    .line 27
-    iget-object v0, p0, Le/h/b/j/e;->b:Landroid/content/Context;
+    const/4 v1, 0x1
 
-    const-string v4, "notification"
+    invoke-direct {p1, v0, v1, p2}, Le/h/b/j/r;-><init>(IILandroid/os/Bundle;)V
 
-    .line 28
-    invoke-virtual {v0, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Le/h/b/j/e;->a(Le/h/b/j/p;)Le/h/a/b/m/g;
 
-    move-result-object v0
+    move-result-object p1
 
-    check-cast v0, Landroid/app/NotificationManager;
-
-    .line 29
-    iget-object v4, v3, Le/h/b/j/c;->b:Ljava/lang/String;
-
-    iget-object v3, v3, Le/h/b/j/c;->a:Lb/k/e/h$d;
-
-    invoke-virtual {v3}, Lb/k/e/h$d;->a()Landroid/app/Notification;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v4, v2, v3}, Landroid/app/NotificationManager;->notify(Ljava/lang/String;ILandroid/app/Notification;)V
-
-    return v1
+    return-object p1
 .end method

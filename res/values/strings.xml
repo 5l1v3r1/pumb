@@ -38,8 +38,8 @@ login to PUMB Online"</string>
     <string name="_146_hh_template_save_template_changes">Save template changes</string>
     <string name="_147_fingerprint_auth_alt_pin_header">Thank you!</string>
     <string name="_148_hh_list_services">Services</string>
-    <string name="_149_hh_list_pay_for_address">Pay by address</string>
-    <string name="_150_hh_list_pay_for_services">Pay for services</string>
+    <string name="_149_hh_list_pay_for_address">Addresses</string>
+    <string name="_150_hh_list_pay_for_services">Services</string>
     <string name="_151_hh_list_add_address">Add address</string>
     <string name="_152_hh_list_no_addresses">"Add your address.
 You will be able to pay for utilities added to the address easier and faster."</string>
@@ -95,7 +95,7 @@ You will be able to pay for utilities added to the address easier and faster."</
     <string name="_235_hh_add_template_to_address">Add to address</string>
     <string name="_237_push_sys_perm_disabled_alert_title">Notification settings</string>
     <string name="_238_push_alert_title">Push-notifications</string>
-    <string name="_242_hh_delete_error_subtitle">An error occurred.</string>
+    <string name="_242_hh_delete_error_subtitle">An error occurred. Retry?</string>
     <string name="_243_hh_delete_error_retry_btn">Retry</string>
     <string name="_245_hh_whats_new">From now, you can add your addresses and link utilities to them. This will allow you to handle your households in a more efficient way.</string>
     <string name="_246_hh_whats_new_header">Household utility payments</string>
@@ -142,8 +142,21 @@ You will be able to pay for utilities added to the address easier and faster."</
     <string name="_315_ce_ninja_convert_button">Convert currency</string>
     <string name="_316_ce_whats_new_header">Currency exchange</string>
     <string name="_317_ce_whats_new_body">From now you can buy and sell currency in the application. New functionality is available in the Transactions menu.</string>
+    <string name="_318_hh_history_tab_title">History</string>
+    <string name="_319_hh_history_no_entries">You did not pay for services this month. Please select another period.</string>
     <string name="_31_iban_deposit_payout">Account for deposit payout</string>
+    <string name="_321_hh_history_no_entries_error_android_text">Unable to get history for selected period.</string>
+    <string name="_322_hh_history_no_entries_error_android_button">Retry</string>
+    <string name="_323_hh_history_details_header">Payment details</string>
+    <string name="_324_hh_history_details_requisites">Requisites</string>
+    <string name="_325_hh_history_requisites_mfo">Bank code</string>
+    <string name="_326_hh_history_requisites_account">Account number</string>
+    <string name="_327_hh_history_requisites_okpo">Tax ID</string>
+    <string name="_328_hh_history_requisites_details">Payment purpose</string>
     <string name="_32_iban_interest_payout">Account for % payout</string>
+    <string name="_331_hh_history_details_company">Vendor name</string>
+    <string name="_333_hh_history_details_invalid_status_header">Processing payment</string>
+    <string name="_334_hh_history_details_invalid_status_body">Your payment is being processed, please check the status later.</string>
     <string name="_335_dark_theme_menu_switch_android">Dark mode</string>
     <string name="_337_notification_history_whats_new_title">Messages history</string>
     <string name="_338_notification_history_whats_new_description">Now you can view all messages about transactions on accounts and cards in the Notifications menu of the application</string>
@@ -163,18 +176,43 @@ You will be able to pay for utilities added to the address easier and faster."</
     <string name="_365_set_card_pin_code_atm_activation_alert_header">Activate PIN code</string>
     <string name="_368_operation_cancel_dialog_body">Are you sure you want to cancel operation? Entered data will be lost.</string>
     <string name="_371_push_activation_dialog_header">Notifications settings</string>
+    <string name="_375_hh_history_unable_to_load_detailed_operation">Failed to load operation details.</string>
+    <string name="_376_hh_history_requisites_bank_name">Bank name</string>
+    <string name="_377_hh_history_processing">Processing</string>
+    <string name="_378_hh_history_error">Error</string>
+    <string name="_379_hh_history_paid">Paid</string>
+    <string name="_380_hh_history_payment_details_unavailable">Operation details are not available</string>
+    <string name="_381_utillity_payments_header">Payments for services</string>
+    <string name="_384_hh_history_send_receipt_btn">Send the receipt</string>
+    <string name="_385_hh_history_e_mail">Email</string>
+    <string name="_386_hh_history_send_btn">Send</string>
+    <string name="_387_hh_history_send_receipt_header">Send the receipt</string>
+    <string name="_388_hh_history_send_receipt_description">Send the receipt to email</string>
+    <string name="_389_hh_history_error_empty_email">Please enter your email address</string>
     <string name="_38_login_enter_phone_error">Enter valid phone number.</string>
-    <string name="_397_notification_history_debt_card_title">Debit card</string>
-    <string name="_398_notification_history_cred_card_title">Credit card</string>
-    <string name="_399_notification_history_balance_after_title">Balance after</string>
+    <string name="_390_hh_history_error_incorrect_email">Please enter valid email address</string>
+    <string name="_391_hh_history_send_receipt_success">The receipt was successfully sent to the specified email address</string>
+    <string name="_392_hh_history_send_receipt_error">An error occurred while sending the receipt. Please try again later.</string>
+    <string name="_393_hh_history_whats_new_header">Send a services receipt</string>
+    <string name="_394_hh_history_whats_new_body">You can now view history of payments for services and send a services receipt by email from payment details on the \"History\" tab of the \"Services\" menu.</string>
+    <string name="_395_hh_history_whats_new_button">Try it now</string>
+    <string name="_397_notification_history_debt_card_title">Дебетна картка</string>
+    <string name="_398_notification_history_cred_card_title">Кредитна картка</string>
+    <string name="_399_notification_history_balance_after_title">Баланс після</string>
     <string name="_39_ninja_a2mfo_payment_purpose">Transfer to an account in another bank</string>
-    <string name="_400_notification_history_own_balance_title">Own funds</string>
-    <string name="_401_notification_history_account_number_title">Account number</string>
-    <string name="_402_notification_history_embossing_name_title">Holder name</string>
-    <string name="_403_notification_history_exchange_rate_title">Rate</string>
-    <string name="_404_notification_history_commission_title">Commission</string>
+    <string name="_400_notification_history_own_balance_title">Власні кошти</string>
+    <string name="_401_notification_history_account_number_title">Номер рахунку</string>
+    <string name="_402_notification_history_embossing_name_title">"Ім'я власника"</string>
+    <string name="_403_notification_history_exchange_rate_title">Курс:</string>
+    <string name="_404_notification_history_commission_title">Комісія:</string>
     <string name="_405_notification_history_btn_to_list">My messages</string>
+    <string name="_406_notification_history_in_currency_operation_title">У валюті операції:</string>
+    <string name="_407_reset_app_pass_enter_pin_header">Enter the pin code of the card</string>
+    <string name="_408_reset_app_pass_enter_pin_alert">Please enter your card PIN to continue</string>
+    <string name="_409_auth_app_pass_enter_pin_header">Authorization confirmation</string>
     <string name="_40_ninja_a2fuid_payment_purpose">Transfer to an account in FUIB</string>
+    <string name="_410_auth_app_pass_enter_pin_title">To confirm authorization enter the number of your FUIB card</string>
+    <string name="_414_biometric_prompt_critical_error">Biometric authentication error</string>
     <string name="_44_activate_card_nfc_activation">Hold the card you want to activate against the back of your device.</string>
     <string name="_44_activate_card_nfc_activation_title">Card activation using NFC</string>
     <string name="_45_mobile_refill_final_success">Payment is sent to processing.</string>
@@ -398,7 +436,7 @@ It is easy to do and always at hand."</string>
     <string name="character_counter_pattern">%1$d / %2$d</string>
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
-    <string name="com.crashlytics.android.build_id">78fd66f8-aaaa-423e-8cd2-2da04a54d8af</string>
+    <string name="com.crashlytics.android.build_id">10f4569d-8ea5-4091-8752-291804633d2e</string>
     <string name="com_facebook_device_auth_instructions">Visit &lt;b>facebook.com/device&lt;/b> and enter the code shown above.</string>
     <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
     <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
@@ -426,6 +464,7 @@ It is easy to do and always at hand."</string>
     <string name="common_another_bank">Another bank</string>
     <string name="common_attention_word">Attention</string>
     <string name="common_confirm">Confirm</string>
+    <string name="common_done_word">Done</string>
     <string name="common_google_play_services_enable_button">Enable</string>
     <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -819,6 +858,7 @@ by "</string>
     <string name="main_card_account_settings_subtitle">Card settings</string>
     <string name="main_card_account_settings_withdrawal_limits">Limits on cash withdrawal</string>
     <string name="main_general_form_title">Main</string>
+    <string name="masked_card_number">**** %s</string>
     <string name="mdtp_am">am</string>
     <item type="string" name="mdtp_ampm_circle_radius_multiplier">0.22</item>
     <string name="mdtp_cancel">@android:string/cancel</string>
@@ -953,6 +993,7 @@ by "</string>
     <string name="other_header_settings">Main settings</string>
     <string name="other_phone_list_title">Choose number</string>
     <string name="other_pin_created_success_info">Your PIN has been set.</string>
+    <string name="other_pin_reuse">Reuse existing PIN</string>
     <string name="other_privacy_label"><u>Privacy policy</u></string>
     <string name="other_title">Contact us</string>
     <string name="other_toolbar_title">Other</string>
@@ -965,6 +1006,7 @@ by "</string>
     <string name="password_recovery_info">Enter data for password recovery</string>
     <string name="password_recovery_main_title">Password recovery</string>
     <string name="password_recovery_phone_input_error">Enter a phone number</string>
+    <string name="password_recovery_pin_input_hint">•</string>
     <string name="password_recovery_taxid_error">To change password please contact the bank branch</string>
     <string name="password_recovery_taxid_hint">Tax ID</string>
     <string name="password_recovery_text_cvv_hint">*The last three digits printed on the back side of the card</string>
@@ -1127,8 +1169,8 @@ by "</string>
     <string name="transfers_a2a_confirmed_to_the_main">To the main page</string>
     <string name="transfers_a2a_error_not_enough_money">Insufficient funds on the card</string>
     <string name="transfers_a2a_inner_title">Money transfer</string>
-    <string name="transfers_amount_input_hint_full">0.00</string>
-    <string name="transfers_amount_input_hint_medium">0.0</string>
+    <string name="transfers_amount_input_hint_full">0%s00</string>
+    <string name="transfers_amount_input_hint_medium">0%s0</string>
     <string name="transfers_amount_input_hint_short">0</string>
     <string name="transfers_button_proceed">Send Money</string>
     <string name="transfers_card_cvv">CVV:</string>
@@ -1240,5 +1282,5 @@ amount"</string>
     <string name="wocr_toggle_flash">Toggle flash</string>
     <string name="wrong_date">Invalid date</string>
     <string name="wrong_end_date_error">Period end date can not be earlier than period start date</string>
-    <item type="string" name="APKTOOL_DUMMY_186">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ac">false</item>
 </resources>

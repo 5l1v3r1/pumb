@@ -41,7 +41,7 @@
 
 
 # direct methods
-.method public constructor <init>(IILm/s;)V
+.method public constructor <init>(IILm/t;)V
     .locals 1
 
     .line 2
@@ -85,7 +85,7 @@
     iput p2, p0, Ll/g0/i/c$a;->d:I
 
     .line 10
-    invoke-static {p3}, Lm/l;->a(Lm/s;)Lm/e;
+    invoke-static {p3}, Lm/l;->a(Lm/t;)Lm/e;
 
     move-result-object p1
 
@@ -94,11 +94,11 @@
     return-void
 .end method
 
-.method public constructor <init>(ILm/s;)V
+.method public constructor <init>(ILm/t;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p1, p2}, Ll/g0/i/c$a;-><init>(IILm/s;)V
+    invoke-direct {p0, p1, p1, p2}, Ll/g0/i/c$a;-><init>(IILm/t;)V
 
     return-void
 .end method
@@ -616,7 +616,7 @@
 
     int-to-long v3, v0
 
-    invoke-interface {v2, v3, v4}, Lm/e;->e(J)[B
+    invoke-interface {v2, v3, v4}, Lm/e;->f(J)[B
 
     move-result-object v0
 
@@ -728,7 +728,7 @@
     :goto_0
     iget-object v0, p0, Ll/g0/i/c$a;->b:Lm/e;
 
-    invoke-interface {v0}, Lm/e;->n()Z
+    invoke-interface {v0}, Lm/e;->o()Z
 
     move-result v0
 

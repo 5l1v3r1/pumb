@@ -154,7 +154,7 @@
     .line 6
     iget-object p3, p0, Lcom/fuib/android/spot/presentation/common/widget/ScreenShapeLayout;->attrs:Landroid/util/AttributeSet;
 
-    sget-object v0, Le/f/a/b/o;->ScreenShapeLayout:[I
+    sget-object v0, Le/f/a/b/p;->ScreenShapeLayout:[I
 
     invoke-virtual {p1, p3, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -530,7 +530,7 @@
     .line 1
     invoke-super/range {p0 .. p5}, Landroidx/constraintlayout/widget/ConstraintLayout;->onLayout(ZIIII)V
 
-    const p1, 0x7f0a0284
+    const p1, 0x7f0a029c
 
     .line 2
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;

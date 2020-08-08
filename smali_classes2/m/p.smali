@@ -1,175 +1,441 @@
 .class public final Lm/p;
 .super Ljava/lang/Object;
-.source "SegmentPool.java"
+.source "Segment.java"
 
 
-# static fields
-.field public static a:Lm/o;
+# instance fields
+.field public final a:[B
 
-.field public static b:J
+.field public b:I
+
+.field public c:I
+
+.field public d:Z
+
+.field public e:Z
+
+.field public f:Lm/p;
+
+.field public g:Lm/p;
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const/16 v0, 0x2000
+
+    new-array v0, v0, [B
+
+    .line 2
+    iput-object v0, p0, Lm/p;->a:[B
+
+    const/4 v0, 0x1
+
+    .line 3
+    iput-boolean v0, p0, Lm/p;->e:Z
+
+    const/4 v0, 0x0
+
+    .line 4
+    iput-boolean v0, p0, Lm/p;->d:Z
+
     return-void
 .end method
 
-.method public static a()Lm/o;
-    .locals 6
-
-    .line 1
-    const-class v0, Lm/p;
-
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    sget-object v1, Lm/p;->a:Lm/o;
-
-    if-eqz v1, :cond_0
-
-    .line 3
-    sget-object v1, Lm/p;->a:Lm/o;
-
-    .line 4
-    iget-object v2, v1, Lm/o;->f:Lm/o;
-
-    sput-object v2, Lm/p;->a:Lm/o;
-
-    const/4 v2, 0x0
+.method public constructor <init>([BIIZZ)V
+    .locals 0
 
     .line 5
-    iput-object v2, v1, Lm/o;->f:Lm/o;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 6
-    sget-wide v2, Lm/p;->b:J
-
-    const-wide/16 v4, 0x2000
-
-    sub-long/2addr v2, v4
-
-    sput-wide v2, Lm/p;->b:J
+    iput-object p1, p0, Lm/p;->a:[B
 
     .line 7
-    monitor-exit v0
-
-    return-object v1
+    iput p2, p0, Lm/p;->b:I
 
     .line 8
-    :cond_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    iput p3, p0, Lm/p;->c:I
 
     .line 9
-    new-instance v0, Lm/o;
+    iput-boolean p4, p0, Lm/p;->d:Z
 
-    invoke-direct {v0}, Lm/o;-><init>()V
+    .line 10
+    iput-boolean p5, p0, Lm/p;->e:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(I)Lm/p;
+    .locals 5
+
+    if-lez p1, :cond_1
+
+    .line 5
+    iget v0, p0, Lm/p;->c:I
+
+    iget v1, p0, Lm/p;->b:I
+
+    sub-int/2addr v0, v1
+
+    if-gt p1, v0, :cond_1
+
+    const/16 v0, 0x400
+
+    if-lt p1, v0, :cond_0
+
+    .line 6
+    invoke-virtual {p0}, Lm/p;->c()Lm/p;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    invoke-static {}, Lm/q;->a()Lm/p;
+
+    move-result-object v0
+
+    .line 8
+    iget-object v1, p0, Lm/p;->a:[B
+
+    iget v2, p0, Lm/p;->b:I
+
+    iget-object v3, v0, Lm/p;->a:[B
+
+    const/4 v4, 0x0
+
+    invoke-static {v1, v2, v3, v4, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 9
+    :goto_0
+    iget v1, v0, Lm/p;->b:I
+
+    add-int/2addr v1, p1
+
+    iput v1, v0, Lm/p;->c:I
+
+    .line 10
+    iget v1, p0, Lm/p;->b:I
+
+    add-int/2addr v1, p1
+
+    iput v1, p0, Lm/p;->b:I
+
+    .line 11
+    iget-object p1, p0, Lm/p;->g:Lm/p;
+
+    invoke-virtual {p1, v0}, Lm/p;->a(Lm/p;)Lm/p;
 
     return-object v0
 
-    :catchall_0
-    move-exception v1
+    .line 12
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    .line 10
-    :try_start_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
 
-    throw v1
+    throw p1
 .end method
 
-.method public static a(Lm/o;)V
-    .locals 8
+.method public final a(Lm/p;)Lm/p;
+    .locals 1
 
-    .line 11
-    iget-object v0, p0, Lm/o;->f:Lm/o;
+    .line 1
+    iput-object p0, p1, Lm/p;->g:Lm/p;
 
-    if-nez v0, :cond_2
+    .line 2
+    iget-object v0, p0, Lm/p;->f:Lm/p;
 
-    iget-object v0, p0, Lm/o;->g:Lm/o;
+    iput-object v0, p1, Lm/p;->f:Lm/p;
 
-    if-nez v0, :cond_2
+    .line 3
+    iget-object v0, p0, Lm/p;->f:Lm/p;
 
-    .line 12
-    iget-boolean v0, p0, Lm/o;->d:Z
+    iput-object p1, v0, Lm/p;->g:Lm/p;
 
-    if-eqz v0, :cond_0
+    .line 4
+    iput-object p1, p0, Lm/p;->f:Lm/p;
 
-    return-void
+    return-object p1
+.end method
+
+.method public final a()V
+    .locals 4
 
     .line 13
-    :cond_0
-    const-class v0, Lm/p;
+    iget-object v0, p0, Lm/p;->g:Lm/p;
 
-    monitor-enter v0
+    if-eq v0, p0, :cond_3
 
     .line 14
-    :try_start_0
-    sget-wide v1, Lm/p;->b:J
+    iget-boolean v1, v0, Lm/p;->e:Z
 
-    const-wide/16 v3, 0x2000
-
-    add-long/2addr v1, v3
-
-    const-wide/32 v5, 0x10000
-
-    cmp-long v7, v1, v5
-
-    if-lez v7, :cond_1
-
-    monitor-exit v0
+    if-nez v1, :cond_0
 
     return-void
 
     .line 15
-    :cond_1
-    sget-wide v1, Lm/p;->b:J
+    :cond_0
+    iget v1, p0, Lm/p;->c:I
 
-    add-long/2addr v1, v3
+    iget v2, p0, Lm/p;->b:I
 
-    sput-wide v1, Lm/p;->b:J
+    sub-int/2addr v1, v2
 
     .line 16
-    sget-object v1, Lm/p;->a:Lm/o;
+    iget v2, v0, Lm/p;->c:I
 
-    iput-object v1, p0, Lm/o;->f:Lm/o;
+    rsub-int v2, v2, 0x2000
 
-    const/4 v1, 0x0
+    iget-boolean v3, v0, Lm/p;->d:Z
 
-    .line 17
-    iput v1, p0, Lm/o;->c:I
+    if-eqz v3, :cond_1
 
-    iput v1, p0, Lm/o;->b:I
+    const/4 v0, 0x0
 
-    .line 18
-    sput-object p0, Lm/p;->a:Lm/o;
+    goto :goto_0
 
-    .line 19
-    monitor-exit v0
+    :cond_1
+    iget v0, v0, Lm/p;->b:I
+
+    :goto_0
+    add-int/2addr v2, v0
+
+    if-le v1, v2, :cond_2
 
     return-void
 
-    :catchall_0
-    move-exception p0
+    .line 17
+    :cond_2
+    iget-object v0, p0, Lm/p;->g:Lm/p;
 
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {p0, v0, v1}, Lm/p;->a(Lm/p;I)V
 
-    throw p0
+    .line 18
+    invoke-virtual {p0}, Lm/p;->b()Lm/p;
+
+    .line 19
+    invoke-static {p0}, Lm/q;->a(Lm/p;)V
+
+    return-void
 
     .line 20
+    :cond_3
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    invoke-direct {v0}, Ljava/lang/IllegalStateException;-><init>()V
+
+    throw v0
+.end method
+
+.method public final a(Lm/p;I)V
+    .locals 4
+
+    .line 21
+    iget-boolean v0, p1, Lm/p;->e:Z
+
+    if-eqz v0, :cond_3
+
+    .line 22
+    iget v0, p1, Lm/p;->c:I
+
+    add-int v1, v0, p2
+
+    const/16 v2, 0x2000
+
+    if-le v1, v2, :cond_2
+
+    .line 23
+    iget-boolean v1, p1, Lm/p;->d:Z
+
+    if-nez v1, :cond_1
+
+    add-int v1, v0, p2
+
+    .line 24
+    iget v3, p1, Lm/p;->b:I
+
+    sub-int/2addr v1, v3
+
+    if-gt v1, v2, :cond_0
+
+    .line 25
+    iget-object v1, p1, Lm/p;->a:[B
+
+    sub-int/2addr v0, v3
+
+    const/4 v2, 0x0
+
+    invoke-static {v1, v3, v1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 26
+    iget v0, p1, Lm/p;->c:I
+
+    iget v1, p1, Lm/p;->b:I
+
+    sub-int/2addr v0, v1
+
+    iput v0, p1, Lm/p;->c:I
+
+    .line 27
+    iput v2, p1, Lm/p;->b:I
+
+    goto :goto_0
+
+    .line 28
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
+
+    throw p1
+
+    .line 29
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
+
+    throw p1
+
+    .line 30
     :cond_2
-    new-instance p0, Ljava/lang/IllegalArgumentException;
+    :goto_0
+    iget-object v0, p0, Lm/p;->a:[B
 
-    invoke-direct {p0}, Ljava/lang/IllegalArgumentException;-><init>()V
+    iget v1, p0, Lm/p;->b:I
 
-    throw p0
+    iget-object v2, p1, Lm/p;->a:[B
+
+    iget v3, p1, Lm/p;->c:I
+
+    invoke-static {v0, v1, v2, v3, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 31
+    iget v0, p1, Lm/p;->c:I
+
+    add-int/2addr v0, p2
+
+    iput v0, p1, Lm/p;->c:I
+
+    .line 32
+    iget p1, p0, Lm/p;->b:I
+
+    add-int/2addr p1, p2
+
+    iput p1, p0, Lm/p;->b:I
+
+    return-void
+
+    .line 33
+    :cond_3
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
+
+    throw p1
+.end method
+
+.method public final b()Lm/p;
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lm/p;->f:Lm/p;
+
+    const/4 v1, 0x0
+
+    if-eq v0, p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move-object v0, v1
+
+    .line 2
+    :goto_0
+    iget-object v2, p0, Lm/p;->g:Lm/p;
+
+    iget-object v3, p0, Lm/p;->f:Lm/p;
+
+    iput-object v3, v2, Lm/p;->f:Lm/p;
+
+    .line 3
+    iget-object v3, p0, Lm/p;->f:Lm/p;
+
+    iput-object v2, v3, Lm/p;->g:Lm/p;
+
+    .line 4
+    iput-object v1, p0, Lm/p;->f:Lm/p;
+
+    .line 5
+    iput-object v1, p0, Lm/p;->g:Lm/p;
+
+    return-object v0
+.end method
+
+.method public final c()Lm/p;
+    .locals 7
+
+    const/4 v0, 0x1
+
+    .line 1
+    iput-boolean v0, p0, Lm/p;->d:Z
+
+    .line 2
+    new-instance v0, Lm/p;
+
+    iget-object v2, p0, Lm/p;->a:[B
+
+    iget v3, p0, Lm/p;->b:I
+
+    iget v4, p0, Lm/p;->c:I
+
+    const/4 v5, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v6}, Lm/p;-><init>([BIIZZ)V
+
+    return-object v0
+.end method
+
+.method public final d()Lm/p;
+    .locals 7
+
+    .line 1
+    new-instance v6, Lm/p;
+
+    iget-object v0, p0, Lm/p;->a:[B
+
+    invoke-virtual {v0}, [B->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v1, v0
+
+    check-cast v1, [B
+
+    iget v2, p0, Lm/p;->b:I
+
+    iget v3, p0, Lm/p;->c:I
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x1
+
+    move-object v0, v6
+
+    invoke-direct/range {v0 .. v5}, Lm/p;-><init>([BIIZZ)V
+
+    return-object v6
 .end method

@@ -4,8 +4,8 @@
 
 
 # virtual methods
-.method public abstract a(Ll/e;Ljava/io/IOException;)V
+.method public abstract onFailure(Ll/e;Ljava/io/IOException;)V
 .end method
 
-.method public abstract a(Ll/e;Ll/a0;)V
+.method public abstract onResponse(Ll/e;Ll/a0;)V
 .end method

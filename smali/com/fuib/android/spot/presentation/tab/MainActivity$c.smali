@@ -54,24 +54,24 @@
     .line 1
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/MainActivity$c;->a:Lcom/fuib/android/spot/presentation/tab/MainActivity;
 
-    invoke-virtual {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->G()Le/f/a/b/v/b/d/h;
+    invoke-virtual {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->G()Le/f/a/b/w/b/d/h;
 
     move-result-object p1
 
-    sget-object v0, Le/f/a/b/v/b/d/f;->NOTIFICATION_DETAILS:Le/f/a/b/v/b/d/f;
+    sget-object v0, Le/f/a/b/w/b/d/f;->NOTIFICATION_DETAILS:Le/f/a/b/w/b/d/f;
 
-    invoke-virtual {p1, v0}, Le/f/a/b/v/b/d/h;->a(Le/f/a/b/v/b/d/f;)V
+    invoke-virtual {p1, v0}, Le/f/a/b/w/b/d/h;->a(Le/f/a/b/w/b/d/f;)V
 
     .line 2
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/MainActivity$c;->a:Lcom/fuib/android/spot/presentation/tab/MainActivity;
 
-    invoke-virtual {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->H()Le/f/a/b/s/f/z0;
+    invoke-virtual {p1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->H()Le/f/a/b/t/f/z0;
 
     move-result-object p1
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0}, Le/f/a/b/s/f/z0;->b(Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Le/f/a/b/t/f/z0;->b(Ljava/lang/String;)V
 
     :cond_0
     return-void

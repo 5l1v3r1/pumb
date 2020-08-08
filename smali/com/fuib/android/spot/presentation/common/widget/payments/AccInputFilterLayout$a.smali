@@ -48,7 +48,7 @@
 
     const-string v3, "Acc"
 
-    const v4, 0x7f1200f1
+    const v4, 0x7f120117
 
     .line 1
     invoke-direct {v1, v3, v2, v4}, Lcom/fuib/android/spot/presentation/common/widget/payments/AccInputFilterLayout$a;-><init>(Ljava/lang/String;II)V
@@ -63,7 +63,7 @@
 
     const-string v3, "IBAN"
 
-    const v4, 0x7f1200ce
+    const v4, 0x7f1200f4
 
     .line 2
     invoke-direct {v1, v3, v2, v4}, Lcom/fuib/android/spot/presentation/common/widget/payments/AccInputFilterLayout$a;-><init>(Ljava/lang/String;II)V

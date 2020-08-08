@@ -34,6 +34,18 @@
     .end annotation
 .end field
 
+.field public static final enum AUTH_CHECK_CARD_36:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    .annotation runtime Le/h/c/v/c;
+        value = "36.auth_check_card"
+    .end annotation
+.end field
+
+.field public static final enum AUTH_CHECK_CARD_PIN_37:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    .annotation runtime Le/h/c/v/c;
+        value = "37.auth_check_card_pin"
+    .end annotation
+.end field
+
 .field public static final enum AUTH_PASSWORD_30:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
     .annotation runtime Le/h/c/v/c;
         value = "30.authentication"
@@ -260,6 +272,8 @@
 
 .field public static final enum HH_ENTER_ADRESS_LIST_OF_OPTIONS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
+.field public static final enum HH_HISTORY_DETAILS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
 .field public static final enum HH_LINK_UTILITY_CATEGORY_275:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
     .annotation runtime Le/h/c/v/c;
         value = "275.hh_link_utility_category"
@@ -289,6 +303,8 @@
         value = "290.hh_save_utility"
     .end annotation
 .end field
+
+.field public static final enum HH_SEND_RECEIPT:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
 .field public static final enum LOAN_DETAILS_160:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
     .annotation runtime Le/h/c/v/c;
@@ -389,6 +405,12 @@
 .field public static final enum RECOVERY_PASSWORD_PHONE_41:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
     .annotation runtime Le/h/c/v/c;
         value = "41.recovery_password_phone"
+    .end annotation
+.end field
+
+.field public static final enum RECOVERY_PASSWORD_PIN_42:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    .annotation runtime Le/h/c/v/c;
+        value = "42.recovery_password_pin"
     .end annotation
 .end field
 
@@ -718,886 +740,941 @@
 
     const/16 v15, 0xe
 
-    const-string v14, "RECOVERY_PASSWORD_SECRET_40"
+    const-string v14, "AUTH_CHECK_CARD_36"
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->RECOVERY_PASSWORD_SECRET_40:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->AUTH_CHECK_CARD_36:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 16
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "RECOVERY_PASSWORD_PHONE_41"
+    const-string v14, "AUTH_CHECK_CARD_PIN_37"
 
     const/16 v15, 0xf
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->RECOVERY_PASSWORD_PHONE_41:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->AUTH_CHECK_CARD_PIN_37:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 17
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "MAIN"
+    const-string v14, "RECOVERY_PASSWORD_SECRET_40"
 
     const/16 v15, 0x10
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MAIN:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->RECOVERY_PASSWORD_SECRET_40:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 18
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "ACCOUNT_CARD_INFO_51"
+    const-string v14, "RECOVERY_PASSWORD_PHONE_41"
 
     const/16 v15, 0x11
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->ACCOUNT_CARD_INFO_51:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->RECOVERY_PASSWORD_PHONE_41:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 19
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "DEBIT_CARD_SETTINGS_52"
+    const-string v14, "RECOVERY_PASSWORD_PIN_42"
 
     const/16 v15, 0x12
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEBIT_CARD_SETTINGS_52:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->RECOVERY_PASSWORD_PIN_42:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 20
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "DEBIT_ACCOUNT_INFO_53"
+    const-string v14, "MAIN"
 
     const/16 v15, 0x13
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEBIT_ACCOUNT_INFO_53:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MAIN:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 21
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "GET_OVERDRAFT_INFO_54"
+    const-string v14, "ACCOUNT_CARD_INFO_51"
 
     const/16 v15, 0x14
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->GET_OVERDRAFT_INFO_54:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->ACCOUNT_CARD_INFO_51:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 22
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "CREDIT_CARD_SETTINGS_62"
+    const-string v14, "DEBIT_CARD_SETTINGS_52"
 
     const/16 v15, 0x15
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CREDIT_CARD_SETTINGS_62:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEBIT_CARD_SETTINGS_52:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 23
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "CREDIT_ACCOUNT_INFO_63"
+    const-string v14, "DEBIT_ACCOUNT_INFO_53"
 
     const/16 v15, 0x16
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CREDIT_ACCOUNT_INFO_63:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEBIT_ACCOUNT_INFO_53:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 24
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "CARD_LIMITS_ATM_65"
+    const-string v14, "GET_OVERDRAFT_INFO_54"
 
     const/16 v15, 0x17
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_ATM_65:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->GET_OVERDRAFT_INFO_54:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 25
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "CARD_LIMITS_POS_66"
+    const-string v14, "CREDIT_CARD_SETTINGS_62"
 
     const/16 v15, 0x18
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_POS_66:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CREDIT_CARD_SETTINGS_62:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 26
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "CARD_LIMITS_OPERATIONS_COUNT_67"
+    const-string v14, "CREDIT_ACCOUNT_INFO_63"
 
     const/16 v15, 0x19
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_OPERATIONS_COUNT_67:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CREDIT_ACCOUNT_INFO_63:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 27
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "CARD_LIMITS_MAX_AMOUNT_68"
+    const-string v14, "CARD_LIMITS_ATM_65"
 
     const/16 v15, 0x1a
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_MAX_AMOUNT_68:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_ATM_65:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 28
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "CARD_ACTIVATION_ENTER_NUMBER_70"
+    const-string v14, "CARD_LIMITS_POS_66"
 
     const/16 v15, 0x1b
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_ACTIVATION_ENTER_NUMBER_70:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_POS_66:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 29
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "CURRENT_ACCOUNT_INFO_73"
+    const-string v14, "CARD_LIMITS_OPERATIONS_COUNT_67"
 
     const/16 v15, 0x1c
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CURRENT_ACCOUNT_INFO_73:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_OPERATIONS_COUNT_67:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 30
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "EXTERNAL_CARD_SETTINGS_80"
+    const-string v14, "CARD_LIMITS_MAX_AMOUNT_68"
 
     const/16 v15, 0x1d
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_SETTINGS_80:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_MAX_AMOUNT_68:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 31
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "CARD_PIN_CHANGE_85"
+    const-string v14, "CARD_ACTIVATION_ENTER_NUMBER_70"
 
     const/16 v15, 0x1e
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_PIN_CHANGE_85:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_ACTIVATION_ENTER_NUMBER_70:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 32
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "CREDIT_FUNDS_INFO_64"
+    const-string v14, "CURRENT_ACCOUNT_INFO_73"
 
     const/16 v15, 0x1f
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CREDIT_FUNDS_INFO_64:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CURRENT_ACCOUNT_INFO_73:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 33
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TRANSFERS_MAIN_90"
+    const-string v14, "EXTERNAL_CARD_SETTINGS_80"
 
     const/16 v15, 0x20
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFERS_MAIN_90:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_SETTINGS_80:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 34
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TRANSFER_SETUP_95"
+    const-string v14, "CARD_PIN_CHANGE_85"
 
     const/16 v15, 0x21
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_SETUP_95:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_PIN_CHANGE_85:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 35
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TRANSFER_FROM_100"
+    const-string v14, "CREDIT_FUNDS_INFO_64"
 
     const/16 v15, 0x22
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_FROM_100:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CREDIT_FUNDS_INFO_64:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 36
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TRANSFER_FROM_100_ROOT"
+    const-string v14, "TRANSFERS_MAIN_90"
 
     const/16 v15, 0x23
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_FROM_100_ROOT:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFERS_MAIN_90:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 37
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TRANSFER_TO_101"
+    const-string v14, "TRANSFER_SETUP_95"
 
     const/16 v15, 0x24
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_TO_101:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_SETUP_95:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 38
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TRANSFER_TO_ACC_102"
+    const-string v14, "TRANSFER_FROM_100"
 
     const/16 v15, 0x25
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_TO_ACC_102:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_FROM_100:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 39
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TRANSFER_TO_CARD_103"
+    const-string v14, "TRANSFER_FROM_100_ROOT"
 
     const/16 v15, 0x26
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_TO_CARD_103:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_FROM_100_ROOT:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 40
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TRANSFER_AMOUNT_105"
+    const-string v14, "TRANSFER_TO_101"
 
     const/16 v15, 0x27
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_AMOUNT_105:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_TO_101:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 41
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TRANSFER_VALIDATION_PASSED_109"
+    const-string v14, "TRANSFER_TO_ACC_102"
 
     const/16 v15, 0x28
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_VALIDATION_PASSED_109:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_TO_ACC_102:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 42
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TRANSFER_COMPLETED_110"
+    const-string v14, "TRANSFER_TO_CARD_103"
 
     const/16 v15, 0x29
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_COMPLETED_110:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_TO_CARD_103:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 43
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "P2P_TRANSFER_AMOUNT_120"
+    const-string v14, "TRANSFER_AMOUNT_105"
 
     const/16 v15, 0x2a
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->P2P_TRANSFER_AMOUNT_120:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_AMOUNT_105:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 44
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "P2P_TRANSFER_CONFIRM_121"
+    const-string v14, "TRANSFER_VALIDATION_PASSED_109"
 
     const/16 v15, 0x2b
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->P2P_TRANSFER_CONFIRM_121:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_VALIDATION_PASSED_109:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 45
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TRANSFER_3DS_122"
+    const-string v14, "TRANSFER_COMPLETED_110"
 
     const/16 v15, 0x2c
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_3DS_122:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_COMPLETED_110:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 46
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TRANSFER_OTP_123"
+    const-string v14, "P2P_TRANSFER_AMOUNT_120"
 
     const/16 v15, 0x2d
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_OTP_123:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->P2P_TRANSFER_AMOUNT_120:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 47
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "DEPOSIT_DETAILS_140"
+    const-string v14, "P2P_TRANSFER_CONFIRM_121"
 
     const/16 v15, 0x2e
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_DETAILS_140:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->P2P_TRANSFER_CONFIRM_121:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 48
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "DEPOSIT_CALCULATOR_145"
+    const-string v14, "TRANSFER_3DS_122"
 
     const/16 v15, 0x2f
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_CALCULATOR_145:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_3DS_122:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 49
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "DEPOSIT_BRANCH_SELECTION_150"
+    const-string v14, "TRANSFER_OTP_123"
 
     const/16 v15, 0x30
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_BRANCH_SELECTION_150:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_OTP_123:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 50
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "DEPOSIT_PROGRAMS_155"
+    const-string v14, "DEPOSIT_DETAILS_140"
 
     const/16 v15, 0x31
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_PROGRAMS_155:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_DETAILS_140:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 51
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "LOAN_DETAILS_160"
+    const-string v14, "DEPOSIT_CALCULATOR_145"
 
     const/16 v15, 0x32
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->LOAN_DETAILS_160:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_CALCULATOR_145:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 52
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "FRAUD_RULES_LIST_180"
+    const-string v14, "DEPOSIT_BRANCH_SELECTION_150"
 
     const/16 v15, 0x33
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_LIST_180:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_BRANCH_SELECTION_150:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 53
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "FRAUD_RULES_CREATE_SELECT_PERIOD_181"
+    const-string v14, "DEPOSIT_PROGRAMS_155"
 
     const/16 v15, 0x34
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_SELECT_PERIOD_181:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_PROGRAMS_155:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 54
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "FRAUD_RULES_CREATE_SELECT_RULE_TYPE_182"
+    const-string v14, "LOAN_DETAILS_160"
 
     const/16 v15, 0x35
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_SELECT_RULE_TYPE_182:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->LOAN_DETAILS_160:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 55
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "FRAUD_RULES_CREATE_SELECT_COUNTRIES_183"
+    const-string v14, "FRAUD_RULES_LIST_180"
 
     const/16 v15, 0x36
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_SELECT_COUNTRIES_183:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_LIST_180:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 56
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "FRAUD_RULES_CREATE_PREVIEW_184"
+    const-string v14, "FRAUD_RULES_CREATE_SELECT_PERIOD_181"
 
     const/16 v15, 0x37
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_PREVIEW_184:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_SELECT_PERIOD_181:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 57
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "FRAUD_RULES_REVIEW_185"
+    const-string v14, "FRAUD_RULES_CREATE_SELECT_RULE_TYPE_182"
 
     const/16 v15, 0x38
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_REVIEW_185:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_SELECT_RULE_TYPE_182:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 58
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "CATEGORIES_190"
+    const-string v14, "FRAUD_RULES_CREATE_SELECT_COUNTRIES_183"
 
     const/16 v15, 0x39
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CATEGORIES_190:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_SELECT_COUNTRIES_183:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 59
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "MOBILE_REPLENISHMENT_200"
+    const-string v14, "FRAUD_RULES_CREATE_PREVIEW_184"
 
     const/16 v15, 0x3a
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MOBILE_REPLENISHMENT_200:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_PREVIEW_184:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 60
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "UTILITY_PAYMENT_SERVICES_210"
+    const-string v14, "FRAUD_RULES_REVIEW_185"
 
     const/16 v15, 0x3b
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->UTILITY_PAYMENT_SERVICES_210:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_REVIEW_185:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 61
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "UTILITY_PAYMENT_START_FIELDS_220"
+    const-string v14, "CATEGORIES_190"
 
     const/16 v15, 0x3c
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->UTILITY_PAYMENT_START_FIELDS_220:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CATEGORIES_190:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 62
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "UTILITY_PAYMENT_FINAL_FIELDS_225"
+    const-string v14, "MOBILE_REPLENISHMENT_200"
 
     const/16 v15, 0x3d
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->UTILITY_PAYMENT_FINAL_FIELDS_225:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MOBILE_REPLENISHMENT_200:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 63
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "MY_TEMPLATES_230"
+    const-string v14, "UTILITY_PAYMENT_SERVICES_210"
 
     const/16 v15, 0x3e
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MY_TEMPLATES_230:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->UTILITY_PAYMENT_SERVICES_210:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 64
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "MIGRATE_TEMPLATE_TO_IBAN"
+    const-string v14, "UTILITY_PAYMENT_START_FIELDS_220"
 
     const/16 v15, 0x3f
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MIGRATE_TEMPLATE_TO_IBAN:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->UTILITY_PAYMENT_START_FIELDS_220:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 65
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TEMPLATE_EDITOR_240"
+    const-string v14, "UTILITY_PAYMENT_FINAL_FIELDS_225"
 
     const/16 v15, 0x40
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TEMPLATE_EDITOR_240:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->UTILITY_PAYMENT_FINAL_FIELDS_225:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 66
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TEMPLATE_CREATOR_241"
+    const-string v14, "MY_TEMPLATES_230"
 
     const/16 v15, 0x41
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TEMPLATE_CREATOR_241:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MY_TEMPLATES_230:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 67
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "SERVICES_MAIN_250"
+    const-string v14, "MIGRATE_TEMPLATE_TO_IBAN"
 
     const/16 v15, 0x42
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->SERVICES_MAIN_250:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MIGRATE_TEMPLATE_TO_IBAN:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 68
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "HH_ENTER_ADDRESS_260"
+    const-string v14, "TEMPLATE_EDITOR_240"
 
     const/16 v15, 0x43
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_ENTER_ADDRESS_260:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TEMPLATE_EDITOR_240:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 69
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "HH_PLANT_TEMPLATE_DURING_CREATION_265"
+    const-string v14, "TEMPLATE_CREATOR_241"
 
     const/16 v15, 0x44
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_PLANT_TEMPLATE_DURING_CREATION_265:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TEMPLATE_CREATOR_241:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 70
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "HH_DETAILS_270"
+    const-string v14, "SERVICES_MAIN_250"
 
     const/16 v15, 0x45
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_DETAILS_270:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->SERVICES_MAIN_250:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 71
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "HH_LINK_UTILITY_CATEGORY_275"
+    const-string v14, "HH_ENTER_ADDRESS_260"
 
     const/16 v15, 0x46
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_LINK_UTILITY_CATEGORY_275:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_ENTER_ADDRESS_260:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 72
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "HH_LINK_UTILITY_SERVICE_280"
+    const-string v14, "HH_PLANT_TEMPLATE_DURING_CREATION_265"
 
     const/16 v15, 0x47
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_LINK_UTILITY_SERVICE_280:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_PLANT_TEMPLATE_DURING_CREATION_265:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 73
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "HH_LINK_UTILITY_FIELDS_285"
+    const-string v14, "HH_DETAILS_270"
 
     const/16 v15, 0x48
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_LINK_UTILITY_FIELDS_285:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_DETAILS_270:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 74
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "HH_SAVE_UTILITY_290"
+    const-string v14, "HH_LINK_UTILITY_CATEGORY_275"
 
     const/16 v15, 0x49
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_SAVE_UTILITY_290:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_LINK_UTILITY_CATEGORY_275:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 75
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "EXTERNAL_CARD_ADD_300"
+    const-string v14, "HH_LINK_UTILITY_SERVICE_280"
 
     const/16 v15, 0x4a
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_ADD_300:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_LINK_UTILITY_SERVICE_280:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 76
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "EXTERNAL_CARD_ADDED_305"
+    const-string v14, "HH_LINK_UTILITY_FIELDS_285"
 
     const/16 v15, 0x4b
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_ADDED_305:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_LINK_UTILITY_FIELDS_285:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 77
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "EXTERNAL_CARD_REMOVED_306"
+    const-string v14, "HH_SAVE_UTILITY_290"
 
     const/16 v15, 0x4c
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_REMOVED_306:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_SAVE_UTILITY_290:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 78
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "CURRENCY_CALCULATOR_330"
+    const-string v14, "EXTERNAL_CARD_ADD_300"
 
     const/16 v15, 0x4d
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CURRENCY_CALCULATOR_330:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_ADD_300:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 79
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "OTHER"
+    const-string v14, "EXTERNAL_CARD_ADDED_305"
 
     const/16 v15, 0x4e
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_ADDED_305:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 80
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "OTHER_CREATE_PIN_501"
+    const-string v14, "EXTERNAL_CARD_REMOVED_306"
 
     const/16 v15, 0x4f
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CREATE_PIN_501:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_REMOVED_306:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 81
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "OTHER_PIN_CREATED_502"
+    const-string v14, "CURRENCY_CALCULATOR_330"
 
     const/16 v15, 0x50
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_PIN_CREATED_502:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CURRENCY_CALCULATOR_330:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 82
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "OTHER_CHANGE_PIN_BY_PIN_515"
+    const-string v14, "OTHER"
 
     const/16 v15, 0x51
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_BY_PIN_515:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 83
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "OTHER_CHANGE_PIN_BY_PASSWORD_516"
+    const-string v14, "OTHER_CREATE_PIN_501"
 
     const/16 v15, 0x52
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_BY_PASSWORD_516:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CREATE_PIN_501:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 84
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "OTHER_CHANGE_PIN_CREATE_PIN_517"
+    const-string v14, "OTHER_PIN_CREATED_502"
 
     const/16 v15, 0x53
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_CREATE_PIN_517:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_PIN_CREATED_502:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 85
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "OTHER_CHANGE_PIN_SUCCESS_518"
+    const-string v14, "OTHER_CHANGE_PIN_BY_PIN_515"
 
     const/16 v15, 0x54
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_SUCCESS_518:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_BY_PIN_515:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 86
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "SERVER_MAINTENANCE"
+    const-string v14, "OTHER_CHANGE_PIN_BY_PASSWORD_516"
 
     const/16 v15, 0x55
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->SERVER_MAINTENANCE:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_BY_PASSWORD_516:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 87
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "YOU_ARE_OUTDATED_666"
+    const-string v14, "OTHER_CHANGE_PIN_CREATE_PIN_517"
 
     const/16 v15, 0x56
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->YOU_ARE_OUTDATED_666:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_CREATE_PIN_517:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 88
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "ERROR"
+    const-string v14, "OTHER_CHANGE_PIN_SUCCESS_518"
 
     const/16 v15, 0x57
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->ERROR:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_SUCCESS_518:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 89
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "NO_CONNECTION"
+    const-string v14, "SERVER_MAINTENANCE"
 
     const/16 v15, 0x58
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->NO_CONNECTION:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->SERVER_MAINTENANCE:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 90
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "SERVICE_UNEXPECTEDLY_UNAVAILABLE"
+    const-string v14, "YOU_ARE_OUTDATED_666"
 
     const/16 v15, 0x59
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->SERVICE_UNEXPECTEDLY_UNAVAILABLE:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->YOU_ARE_OUTDATED_666:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 91
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "TECHNICAL_LIST_OF_OPTIONS"
+    const-string v14, "ERROR"
 
     const/16 v15, 0x5a
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TECHNICAL_LIST_OF_OPTIONS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->ERROR:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 92
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "HH_ENTER_ADRESS_LIST_OF_OPTIONS"
+    const-string v14, "NO_CONNECTION"
 
     const/16 v15, 0x5b
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_ENTER_ADRESS_LIST_OF_OPTIONS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->NO_CONNECTION:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 93
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "NOTIFICATION_HISTORY"
+    const-string v14, "SERVICE_UNEXPECTEDLY_UNAVAILABLE"
 
     const/16 v15, 0x5c
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->NOTIFICATION_HISTORY:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->SERVICE_UNEXPECTEDLY_UNAVAILABLE:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 94
     new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const-string v14, "NOTIFICATION_DETAILS"
+    const-string v14, "TECHNICAL_LIST_OF_OPTIONS"
 
     const/16 v15, 0x5d
 
     invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
 
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TECHNICAL_LIST_OF_OPTIONS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    .line 95
+    new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    const-string v14, "HH_ENTER_ADRESS_LIST_OF_OPTIONS"
+
+    const/16 v15, 0x5e
+
+    invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_ENTER_ADRESS_LIST_OF_OPTIONS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    .line 96
+    new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    const-string v14, "NOTIFICATION_HISTORY"
+
+    const/16 v15, 0x5f
+
+    invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->NOTIFICATION_HISTORY:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    .line 97
+    new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    const-string v14, "NOTIFICATION_DETAILS"
+
+    const/16 v15, 0x60
+
+    invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
+
     sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->NOTIFICATION_DETAILS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    const/16 v0, 0x5e
+    .line 98
+    new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    const-string v14, "HH_HISTORY_DETAILS"
+
+    const/16 v15, 0x61
+
+    invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_HISTORY_DETAILS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    .line 99
+    new-instance v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    const-string v14, "HH_SEND_RECEIPT"
+
+    const/16 v15, 0x62
+
+    invoke-direct {v0, v14, v15}, Lcom/fuib/android/spot/data/vo/CorezoidFormId;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_SEND_RECEIPT:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    const/16 v0, 0x63
 
     new-array v0, v0, [Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    .line 95
+    .line 100
     sget-object v14, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->AUTHENTICATION_10:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     aput-object v14, v0, v1
@@ -1656,489 +1733,519 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->RECOVERY_PASSWORD_SECRET_40:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->AUTH_CHECK_CARD_36:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0xe
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->RECOVERY_PASSWORD_PHONE_41:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->AUTH_CHECK_CARD_PIN_37:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0xf
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MAIN:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->RECOVERY_PASSWORD_SECRET_40:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x10
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->ACCOUNT_CARD_INFO_51:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->RECOVERY_PASSWORD_PHONE_41:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x11
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEBIT_CARD_SETTINGS_52:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->RECOVERY_PASSWORD_PIN_42:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x12
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEBIT_ACCOUNT_INFO_53:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MAIN:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x13
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->GET_OVERDRAFT_INFO_54:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->ACCOUNT_CARD_INFO_51:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x14
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CREDIT_CARD_SETTINGS_62:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEBIT_CARD_SETTINGS_52:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x15
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CREDIT_ACCOUNT_INFO_63:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEBIT_ACCOUNT_INFO_53:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x16
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_ATM_65:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->GET_OVERDRAFT_INFO_54:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x17
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_POS_66:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CREDIT_CARD_SETTINGS_62:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x18
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_OPERATIONS_COUNT_67:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CREDIT_ACCOUNT_INFO_63:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x19
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_MAX_AMOUNT_68:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_ATM_65:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x1a
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_ACTIVATION_ENTER_NUMBER_70:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_POS_66:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x1b
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CURRENT_ACCOUNT_INFO_73:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_OPERATIONS_COUNT_67:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x1c
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_SETTINGS_80:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_LIMITS_MAX_AMOUNT_68:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x1d
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_PIN_CHANGE_85:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_ACTIVATION_ENTER_NUMBER_70:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x1e
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CREDIT_FUNDS_INFO_64:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CURRENT_ACCOUNT_INFO_73:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x1f
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFERS_MAIN_90:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_SETTINGS_80:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x20
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_SETUP_95:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CARD_PIN_CHANGE_85:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x21
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_FROM_100:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CREDIT_FUNDS_INFO_64:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x22
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_FROM_100_ROOT:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFERS_MAIN_90:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x23
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_TO_101:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_SETUP_95:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x24
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_TO_ACC_102:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_FROM_100:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x25
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_TO_CARD_103:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_FROM_100_ROOT:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x26
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_AMOUNT_105:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_TO_101:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x27
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_VALIDATION_PASSED_109:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_TO_ACC_102:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x28
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_COMPLETED_110:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_TO_CARD_103:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x29
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->P2P_TRANSFER_AMOUNT_120:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_AMOUNT_105:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x2a
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->P2P_TRANSFER_CONFIRM_121:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_VALIDATION_PASSED_109:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x2b
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_3DS_122:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_COMPLETED_110:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x2c
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_OTP_123:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->P2P_TRANSFER_AMOUNT_120:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x2d
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_DETAILS_140:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->P2P_TRANSFER_CONFIRM_121:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x2e
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_CALCULATOR_145:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_3DS_122:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x2f
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_BRANCH_SELECTION_150:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TRANSFER_OTP_123:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x30
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_PROGRAMS_155:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_DETAILS_140:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x31
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->LOAN_DETAILS_160:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_CALCULATOR_145:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x32
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_LIST_180:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_BRANCH_SELECTION_150:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x33
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_SELECT_PERIOD_181:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->DEPOSIT_PROGRAMS_155:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x34
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_SELECT_RULE_TYPE_182:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->LOAN_DETAILS_160:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x35
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_SELECT_COUNTRIES_183:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_LIST_180:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x36
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_PREVIEW_184:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_SELECT_PERIOD_181:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x37
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_REVIEW_185:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_SELECT_RULE_TYPE_182:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x38
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CATEGORIES_190:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_SELECT_COUNTRIES_183:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x39
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MOBILE_REPLENISHMENT_200:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_CREATE_PREVIEW_184:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x3a
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->UTILITY_PAYMENT_SERVICES_210:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->FRAUD_RULES_REVIEW_185:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x3b
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->UTILITY_PAYMENT_START_FIELDS_220:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CATEGORIES_190:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x3c
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->UTILITY_PAYMENT_FINAL_FIELDS_225:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MOBILE_REPLENISHMENT_200:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x3d
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MY_TEMPLATES_230:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->UTILITY_PAYMENT_SERVICES_210:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x3e
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MIGRATE_TEMPLATE_TO_IBAN:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->UTILITY_PAYMENT_START_FIELDS_220:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x3f
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TEMPLATE_EDITOR_240:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->UTILITY_PAYMENT_FINAL_FIELDS_225:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x40
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TEMPLATE_CREATOR_241:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MY_TEMPLATES_230:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x41
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->SERVICES_MAIN_250:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->MIGRATE_TEMPLATE_TO_IBAN:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x42
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_ENTER_ADDRESS_260:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TEMPLATE_EDITOR_240:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x43
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_PLANT_TEMPLATE_DURING_CREATION_265:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TEMPLATE_CREATOR_241:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x44
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_DETAILS_270:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->SERVICES_MAIN_250:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x45
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_LINK_UTILITY_CATEGORY_275:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_ENTER_ADDRESS_260:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x46
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_LINK_UTILITY_SERVICE_280:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_PLANT_TEMPLATE_DURING_CREATION_265:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x47
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_LINK_UTILITY_FIELDS_285:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_DETAILS_270:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x48
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_SAVE_UTILITY_290:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_LINK_UTILITY_CATEGORY_275:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x49
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_ADD_300:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_LINK_UTILITY_SERVICE_280:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x4a
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_ADDED_305:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_LINK_UTILITY_FIELDS_285:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x4b
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_REMOVED_306:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_SAVE_UTILITY_290:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x4c
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CURRENCY_CALCULATOR_330:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_ADD_300:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x4d
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_ADDED_305:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x4e
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CREATE_PIN_501:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->EXTERNAL_CARD_REMOVED_306:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x4f
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_PIN_CREATED_502:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CURRENCY_CALCULATOR_330:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x50
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_BY_PIN_515:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x51
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_BY_PASSWORD_516:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CREATE_PIN_501:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x52
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_CREATE_PIN_517:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_PIN_CREATED_502:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x53
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_SUCCESS_518:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_BY_PIN_515:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x54
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->SERVER_MAINTENANCE:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_BY_PASSWORD_516:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x55
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->YOU_ARE_OUTDATED_666:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_CREATE_PIN_517:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x56
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->ERROR:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->OTHER_CHANGE_PIN_SUCCESS_518:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x57
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->NO_CONNECTION:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->SERVER_MAINTENANCE:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x58
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->SERVICE_UNEXPECTEDLY_UNAVAILABLE:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->YOU_ARE_OUTDATED_666:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x59
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TECHNICAL_LIST_OF_OPTIONS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->ERROR:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x5a
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_ENTER_ADRESS_LIST_OF_OPTIONS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->NO_CONNECTION:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x5b
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->NOTIFICATION_HISTORY:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->SERVICE_UNEXPECTEDLY_UNAVAILABLE:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x5c
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->NOTIFICATION_DETAILS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->TECHNICAL_LIST_OF_OPTIONS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     const/16 v2, 0x5d
 
     aput-object v1, v0, v2
 
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_ENTER_ADRESS_LIST_OF_OPTIONS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    const/16 v2, 0x5e
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->NOTIFICATION_HISTORY:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    const/16 v2, 0x5f
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->NOTIFICATION_DETAILS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    const/16 v2, 0x60
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_HISTORY_DETAILS:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    const/16 v2, 0x61
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->HH_SEND_RECEIPT:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    const/16 v2, 0x62
+
+    aput-object v1, v0, v2
+
     sput-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->$VALUES:[Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    .line 96
+    .line 101
     new-instance v0, Le/h/c/f;
 
     invoke-direct {v0}, Le/h/c/f;-><init>()V

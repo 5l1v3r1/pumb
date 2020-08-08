@@ -3,7 +3,7 @@
 .source "DispatchingAndroidInjector_Factory.java"
 
 # interfaces
-.implements Lf/d/d;
+.implements Lf/d/e;
 
 
 # annotations
@@ -13,7 +13,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lf/d/d<",
+        "Lf/d/e<",
         "Ldagger/android/DispatchingAndroidInjector<",
         "TT;>;>;"
     }

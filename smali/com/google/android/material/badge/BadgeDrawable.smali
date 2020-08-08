@@ -3,7 +3,7 @@
 .source "BadgeDrawable.java"
 
 # interfaces
-.implements Le/h/a/b/r/g$b;
+.implements Le/h/a/c/r/g$b;
 
 
 # annotations
@@ -31,9 +31,9 @@
     .end annotation
 .end field
 
-.field public final d:Le/h/a/b/w/g;
+.field public final d:Le/h/a/c/w/g;
 
-.field public final e:Le/h/a/b/r/g;
+.field public final e:Le/h/a/c/r/g;
 
 .field public final f:Landroid/graphics/Rect;
 
@@ -109,7 +109,7 @@
     iput-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->c:Ljava/lang/ref/WeakReference;
 
     .line 3
-    invoke-static {p1}, Le/h/a/b/r/i;->b(Landroid/content/Context;)V
+    invoke-static {p1}, Le/h/a/c/r/i;->b(Landroid/content/Context;)V
 
     .line 4
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -124,11 +124,11 @@
     iput-object v1, p0, Lcom/google/android/material/badge/BadgeDrawable;->f:Landroid/graphics/Rect;
 
     .line 6
-    new-instance v1, Le/h/a/b/w/g;
+    new-instance v1, Le/h/a/c/w/g;
 
-    invoke-direct {v1}, Le/h/a/b/w/g;-><init>()V
+    invoke-direct {v1}, Le/h/a/c/w/g;-><init>()V
 
-    iput-object v1, p0, Lcom/google/android/material/badge/BadgeDrawable;->d:Le/h/a/b/w/g;
+    iput-object v1, p0, Lcom/google/android/material/badge/BadgeDrawable;->d:Le/h/a/c/w/g;
 
     .line 7
     sget v1, Lcom/google/android/material/R$dimen;->mtrl_badge_radius:I
@@ -164,16 +164,16 @@
     iput v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->h:F
 
     .line 10
-    new-instance v0, Le/h/a/b/r/g;
+    new-instance v0, Le/h/a/c/r/g;
 
-    invoke-direct {v0, p0}, Le/h/a/b/r/g;-><init>(Le/h/a/b/r/g$b;)V
+    invoke-direct {v0, p0}, Le/h/a/c/r/g;-><init>(Le/h/a/c/r/g$b;)V
 
-    iput-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/b/r/g;
+    iput-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/c/r/g;
 
     .line 11
-    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/b/r/g;
+    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/c/r/g;
 
-    invoke-virtual {v0}, Le/h/a/b/r/g;->b()Landroid/text/TextPaint;
+    invoke-virtual {v0}, Le/h/a/c/r/g;->b()Landroid/text/TextPaint;
 
     move-result-object v0
 
@@ -200,7 +200,7 @@
     .locals 0
 
     .line 22
-    invoke-static {p0, p1, p2}, Le/h/a/b/t/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
+    invoke-static {p0, p1, p2}, Le/h/a/c/t/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object p0
 
@@ -281,18 +281,18 @@
     move-result-object p1
 
     .line 29
-    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->d:Le/h/a/b/w/g;
+    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->d:Le/h/a/c/w/g;
 
-    invoke-virtual {v0}, Le/h/a/b/w/g;->h()Landroid/content/res/ColorStateList;
+    invoke-virtual {v0}, Le/h/a/c/w/g;->h()Landroid/content/res/ColorStateList;
 
     move-result-object v0
 
     if-eq v0, p1, :cond_0
 
     .line 30
-    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->d:Le/h/a/b/w/g;
+    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->d:Le/h/a/c/w/g;
 
-    invoke-virtual {v0, p1}, Le/h/a/b/w/g;->a(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {v0, p1}, Le/h/a/c/w/g;->a(Landroid/content/res/ColorStateList;)V
 
     .line 31
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
@@ -390,9 +390,9 @@
     move-result-object v0
 
     .line 47
-    iget-object v2, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/b/r/g;
+    iget-object v2, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/c/r/g;
 
-    invoke-virtual {v2, v0}, Le/h/a/b/r/g;->a(Ljava/lang/String;)F
+    invoke-virtual {v2, v0}, Le/h/a/c/r/g;->a(Ljava/lang/String;)F
 
     move-result v0
 
@@ -545,7 +545,7 @@
     move v4, p4
 
     .line 11
-    invoke-static/range {v0 .. v5}, Le/h/a/b/r/i;->c(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
+    invoke-static/range {v0 .. v5}, Le/h/a/c/r/i;->c(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
@@ -640,9 +640,9 @@
     move-result-object v1
 
     .line 56
-    iget-object v2, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/b/r/g;
+    iget-object v2, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/c/r/g;
 
-    invoke-virtual {v2}, Le/h/a/b/r/g;->b()Landroid/text/TextPaint;
+    invoke-virtual {v2}, Le/h/a/c/r/g;->b()Landroid/text/TextPaint;
 
     move-result-object v2
 
@@ -670,10 +670,10 @@
 
     add-float/2addr v3, v0
 
-    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/b/r/g;
+    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/c/r/g;
 
     .line 59
-    invoke-virtual {v0}, Le/h/a/b/r/g;->b()Landroid/text/TextPaint;
+    invoke-virtual {v0}, Le/h/a/c/r/g;->b()Landroid/text/TextPaint;
 
     move-result-object v0
 
@@ -760,13 +760,13 @@
     return-void
 .end method
 
-.method public final a(Le/h/a/b/t/d;)V
+.method public final a(Le/h/a/c/t/d;)V
     .locals 2
 
     .line 33
-    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/b/r/g;
+    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/c/r/g;
 
-    invoke-virtual {v0}, Le/h/a/b/r/g;->a()Le/h/a/b/t/d;
+    invoke-virtual {v0}, Le/h/a/c/r/g;->a()Le/h/a/c/t/d;
 
     move-result-object v0
 
@@ -790,9 +790,9 @@
 
     .line 35
     :cond_1
-    iget-object v1, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/b/r/g;
+    iget-object v1, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/c/r/g;
 
-    invoke-virtual {v1, p1, v0}, Le/h/a/b/r/g;->a(Le/h/a/b/t/d;Landroid/content/Context;)V
+    invoke-virtual {v1, p1, v0}, Le/h/a/c/r/g;->a(Le/h/a/c/t/d;Landroid/content/Context;)V
 
     .line 36
     invoke-virtual {p0}, Lcom/google/android/material/badge/BadgeDrawable;->h()V
@@ -1040,9 +1040,9 @@
     invoke-static {v0, p1}, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->d(Lcom/google/android/material/badge/BadgeDrawable$SavedState;I)I
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/b/r/g;
+    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/c/r/g;
 
-    invoke-virtual {v0}, Le/h/a/b/r/g;->b()Landroid/text/TextPaint;
+    invoke-virtual {v0}, Le/h/a/c/r/g;->b()Landroid/text/TextPaint;
 
     move-result-object v0
 
@@ -1053,9 +1053,9 @@
     if-eq v0, p1, :cond_0
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/b/r/g;
+    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/c/r/g;
 
-    invoke-virtual {v0}, Le/h/a/b/r/g;->b()Landroid/text/TextPaint;
+    invoke-virtual {v0}, Le/h/a/c/r/g;->b()Landroid/text/TextPaint;
 
     move-result-object v0
 
@@ -1102,11 +1102,11 @@
     invoke-virtual {p0}, Lcom/google/android/material/badge/BadgeDrawable;->i()V
 
     .line 5
-    iget-object p1, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/b/r/g;
+    iget-object p1, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/c/r/g;
 
     const/4 v0, 0x1
 
-    invoke-virtual {p1, v0}, Le/h/a/b/r/g;->a(Z)V
+    invoke-virtual {p1, v0}, Le/h/a/c/r/g;->a(Z)V
 
     .line 6
     invoke-virtual {p0}, Lcom/google/android/material/badge/BadgeDrawable;->h()V
@@ -1149,9 +1149,9 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->d:Le/h/a/b/w/g;
+    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->d:Le/h/a/c/w/g;
 
-    invoke-virtual {v0, p1}, Le/h/a/b/w/g;->draw(Landroid/graphics/Canvas;)V
+    invoke-virtual {v0, p1}, Le/h/a/c/w/g;->draw(Landroid/graphics/Canvas;)V
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/badge/BadgeDrawable;->g()Z
@@ -1218,11 +1218,11 @@
     invoke-static {v0, p1}, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->b(Lcom/google/android/material/badge/BadgeDrawable$SavedState;I)I
 
     .line 6
-    iget-object p1, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/b/r/g;
+    iget-object p1, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/c/r/g;
 
     const/4 v0, 0x1
 
-    invoke-virtual {p1, v0}, Le/h/a/b/r/g;->a(Z)V
+    invoke-virtual {p1, v0}, Le/h/a/c/r/g;->a(Z)V
 
     .line 7
     invoke-virtual {p0}, Lcom/google/android/material/badge/BadgeDrawable;->h()V
@@ -1261,11 +1261,11 @@
 
     .line 3
     :cond_0
-    new-instance v1, Le/h/a/b/t/d;
+    new-instance v1, Le/h/a/c/t/d;
 
-    invoke-direct {v1, v0, p1}, Le/h/a/b/t/d;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v1, v0, p1}, Le/h/a/c/t/d;-><init>(Landroid/content/Context;I)V
 
-    invoke-virtual {p0, v1}, Lcom/google/android/material/badge/BadgeDrawable;->a(Le/h/a/b/t/d;)V
+    invoke-virtual {p0, v1}, Lcom/google/android/material/badge/BadgeDrawable;->a(Le/h/a/c/t/d;)V
 
     return-void
 .end method
@@ -1413,7 +1413,7 @@
     if-nez v2, :cond_3
 
     .line 8
-    sget-boolean v5, Le/h/a/b/c/a;->a:Z
+    sget-boolean v5, Le/h/a/c/c/a;->a:Z
 
     if-eqz v5, :cond_5
 
@@ -1446,14 +1446,14 @@
 
     iget v5, p0, Lcom/google/android/material/badge/BadgeDrawable;->p:F
 
-    invoke-static {v0, v1, v2, v4, v5}, Le/h/a/b/c/a;->a(Landroid/graphics/Rect;FFFF)V
+    invoke-static {v0, v1, v2, v4, v5}, Le/h/a/c/c/a;->a(Landroid/graphics/Rect;FFFF)V
 
     .line 13
-    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->d:Le/h/a/b/w/g;
+    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->d:Le/h/a/c/w/g;
 
     iget v1, p0, Lcom/google/android/material/badge/BadgeDrawable;->n:F
 
-    invoke-virtual {v0, v1}, Le/h/a/b/w/g;->a(F)V
+    invoke-virtual {v0, v1}, Le/h/a/c/w/g;->a(F)V
 
     .line 14
     iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->f:Landroid/graphics/Rect;
@@ -1465,7 +1465,7 @@
     if-nez v0, :cond_6
 
     .line 15
-    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->d:Le/h/a/b/w/g;
+    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->d:Le/h/a/c/w/g;
 
     iget-object v1, p0, Lcom/google/android/material/badge/BadgeDrawable;->f:Landroid/graphics/Rect;
 
@@ -1533,9 +1533,9 @@
     invoke-static {v0, p1}, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->f(Lcom/google/android/material/badge/BadgeDrawable$SavedState;I)I
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/b/r/g;
+    iget-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->e:Le/h/a/c/r/g;
 
-    invoke-virtual {v0}, Le/h/a/b/r/g;->b()Landroid/text/TextPaint;
+    invoke-virtual {v0}, Le/h/a/c/r/g;->b()Landroid/text/TextPaint;
 
     move-result-object v0
 

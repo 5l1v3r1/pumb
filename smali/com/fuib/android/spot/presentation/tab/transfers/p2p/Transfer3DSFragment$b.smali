@@ -71,13 +71,13 @@
     .line 2
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment$b;->c:Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment;
 
-    invoke-virtual {p1}, Le/f/a/b/v/b/f/c;->d1()Le/f/a/b/v/b/n/a;
+    invoke-virtual {p1}, Le/f/a/b/w/b/f/c;->d1()Le/f/a/b/w/b/n/a;
 
     move-result-object p1
 
-    check-cast p1, Le/f/a/b/v/f/i/p/b;
+    check-cast p1, Le/f/a/b/w/f/l/p/b;
 
-    invoke-virtual {p1}, Le/f/a/b/v/f/i/p/b;->t()V
+    invoke-virtual {p1}, Le/f/a/b/w/f/l/p/b;->w()V
 
     .line 3
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment$b;->c:Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment;

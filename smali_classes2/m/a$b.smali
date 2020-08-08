@@ -3,12 +3,12 @@
 .source "AsyncTimeout.java"
 
 # interfaces
-.implements Lm/s;
+.implements Lm/t;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lm/a;->a(Lm/s;)Lm/s;
+    value = Lm/a;->a(Lm/t;)Lm/t;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,19 +18,19 @@
 
 
 # instance fields
-.field public final synthetic c:Lm/s;
+.field public final synthetic c:Lm/t;
 
 .field public final synthetic d:Lm/a;
 
 
 # direct methods
-.method public constructor <init>(Lm/a;Lm/s;)V
+.method public constructor <init>(Lm/a;Lm/t;)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Lm/a$b;->d:Lm/a;
 
-    iput-object p2, p0, Lm/a$b;->c:Lm/s;
+    iput-object p2, p0, Lm/a$b;->c:Lm/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,9 +49,9 @@
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Lm/a$b;->c:Lm/s;
+    iget-object v0, p0, Lm/a$b;->c:Lm/t;
 
-    invoke-interface {v0, p1, p2, p3}, Lm/s;->c(Lm/c;J)J
+    invoke-interface {v0, p1, p2, p3}, Lm/t;->c(Lm/c;J)J
 
     move-result-wide p1
     :try_end_0
@@ -102,17 +102,22 @@
     .locals 3
 
     .line 1
-    :try_start_0
-    iget-object v0, p0, Lm/a$b;->c:Lm/s;
+    iget-object v0, p0, Lm/a$b;->d:Lm/a;
 
-    invoke-interface {v0}, Lm/s;->close()V
+    invoke-virtual {v0}, Lm/a;->g()V
+
+    .line 2
+    :try_start_0
+    iget-object v0, p0, Lm/a$b;->c:Lm/t;
+
+    invoke-interface {v0}, Lm/t;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     const/4 v0, 0x1
 
-    .line 2
+    .line 3
     iget-object v1, p0, Lm/a$b;->d:Lm/a;
 
     invoke-virtual {v1, v0}, Lm/a;->a(Z)V
@@ -127,7 +132,7 @@
     :catch_0
     move-exception v0
 
-    .line 3
+    .line 4
     :try_start_1
     iget-object v1, p0, Lm/a$b;->d:Lm/a;
 
@@ -139,7 +144,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 4
+    .line 5
     :goto_0
     iget-object v1, p0, Lm/a$b;->d:Lm/a;
 
@@ -150,7 +155,7 @@
     throw v0
 .end method
 
-.method public i()Lm/t;
+.method public i()Lm/u;
     .locals 1
 
     .line 1
@@ -171,7 +176,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lm/a$b;->c:Lm/s;
+    iget-object v1, p0, Lm/a$b;->c:Lm/t;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

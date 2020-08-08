@@ -36,21 +36,10 @@
     return-void
 .end method
 
-.method public static a(Lm/r;)Lm/d;
+.method public static a(Lm/s;)Lm/d;
     .locals 1
 
     .line 2
-    new-instance v0, Lm/m;
-
-    invoke-direct {v0, p0}, Lm/m;-><init>(Lm/r;)V
-
-    return-object v0
-.end method
-
-.method public static a(Lm/s;)Lm/e;
-    .locals 1
-
-    .line 1
     new-instance v0, Lm/n;
 
     invoke-direct {v0, p0}, Lm/n;-><init>(Lm/s;)V
@@ -58,7 +47,18 @@
     return-object v0
 .end method
 
-.method public static a(Ljava/io/OutputStream;Lm/t;)Lm/r;
+.method public static a(Lm/t;)Lm/e;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lm/o;
+
+    invoke-direct {v0, p0}, Lm/o;-><init>(Lm/t;)V
+
+    return-object v0
+.end method
+
+.method public static a(Ljava/io/OutputStream;Lm/u;)Lm/s;
     .locals 1
 
     if-eqz p0, :cond_1
@@ -68,7 +68,7 @@
     .line 3
     new-instance v0, Lm/l$a;
 
-    invoke-direct {v0, p1, p0}, Lm/l$a;-><init>(Lm/t;Ljava/io/OutputStream;)V
+    invoke-direct {v0, p1, p0}, Lm/l$a;-><init>(Lm/u;Ljava/io/OutputStream;)V
 
     return-object v0
 
@@ -93,7 +93,7 @@
     throw p0
 .end method
 
-.method public static a(Ljava/net/Socket;)Lm/r;
+.method public static a(Ljava/net/Socket;)Lm/s;
     .locals 1
 
     if-eqz p0, :cond_1
@@ -115,12 +115,12 @@
 
     move-result-object p0
 
-    invoke-static {p0, v0}, Lm/l;->a(Ljava/io/OutputStream;Lm/t;)Lm/r;
+    invoke-static {p0, v0}, Lm/l;->a(Ljava/io/OutputStream;Lm/u;)Lm/s;
 
     move-result-object p0
 
     .line 9
-    invoke-virtual {v0, p0}, Lm/a;->a(Lm/r;)Lm/r;
+    invoke-virtual {v0, p0}, Lm/a;->a(Lm/s;)Lm/s;
 
     move-result-object p0
 
@@ -147,22 +147,22 @@
     throw p0
 .end method
 
-.method public static a(Ljava/io/InputStream;)Lm/s;
+.method public static a(Ljava/io/InputStream;)Lm/t;
     .locals 1
 
     .line 12
-    new-instance v0, Lm/t;
+    new-instance v0, Lm/u;
 
-    invoke-direct {v0}, Lm/t;-><init>()V
+    invoke-direct {v0}, Lm/u;-><init>()V
 
-    invoke-static {p0, v0}, Lm/l;->a(Ljava/io/InputStream;Lm/t;)Lm/s;
+    invoke-static {p0, v0}, Lm/l;->a(Ljava/io/InputStream;Lm/u;)Lm/t;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static a(Ljava/io/InputStream;Lm/t;)Lm/s;
+.method public static a(Ljava/io/InputStream;Lm/u;)Lm/t;
     .locals 1
 
     if-eqz p0, :cond_1
@@ -172,7 +172,7 @@
     .line 13
     new-instance v0, Lm/l$b;
 
-    invoke-direct {v0, p1, p0}, Lm/l$b;-><init>(Lm/t;Ljava/io/InputStream;)V
+    invoke-direct {v0, p1, p0}, Lm/l$b;-><init>(Lm/u;Ljava/io/InputStream;)V
 
     return-object v0
 
@@ -237,7 +237,7 @@
     return p0
 .end method
 
-.method public static b(Ljava/net/Socket;)Lm/s;
+.method public static b(Ljava/net/Socket;)Lm/t;
     .locals 1
 
     if-eqz p0, :cond_1
@@ -259,12 +259,12 @@
 
     move-result-object p0
 
-    invoke-static {p0, v0}, Lm/l;->a(Ljava/io/InputStream;Lm/t;)Lm/s;
+    invoke-static {p0, v0}, Lm/l;->a(Ljava/io/InputStream;Lm/u;)Lm/t;
 
     move-result-object p0
 
     .line 4
-    invoke-virtual {v0, p0}, Lm/a;->a(Lm/s;)Lm/s;
+    invoke-virtual {v0, p0}, Lm/a;->a(Lm/t;)Lm/t;
 
     move-result-object p0
 

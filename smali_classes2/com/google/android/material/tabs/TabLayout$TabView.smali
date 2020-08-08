@@ -448,7 +448,7 @@
     iget-object v3, v3, Lcom/google/android/material/tabs/TabLayout;->n:Landroid/content/res/ColorStateList;
 
     .line 17
-    invoke-static {v3}, Le/h/a/b/u/b;->a(Landroid/content/res/ColorStateList;)Landroid/content/res/ColorStateList;
+    invoke-static {v3}, Le/h/a/c/u/b;->a(Landroid/content/res/ColorStateList;)Landroid/content/res/ColorStateList;
 
     move-result-object v3
 
@@ -735,7 +735,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v3}, Le/h/a/b/r/j;->a(Landroid/content/Context;I)F
+    invoke-static {v2, v3}, Le/h/a/c/r/j;->a(Landroid/content/Context;I)F
 
     move-result v2
 
@@ -839,7 +839,7 @@
 
     .line 4
     :cond_0
-    sget-boolean v0, Le/h/a/b/c/a;->a:Z
+    sget-boolean v0, Le/h/a/c/c/a;->a:Z
 
     if-eqz v0, :cond_1
 
@@ -878,7 +878,7 @@
     .locals 4
 
     .line 2
-    sget-boolean v0, Le/h/a/b/c/a;->a:Z
+    sget-boolean v0, Le/h/a/c/c/a;->a:Z
 
     const/4 v1, 0x0
 
@@ -958,7 +958,7 @@
     move-result-object v1
 
     .line 13
-    invoke-static {v0, p1, v1}, Le/h/a/b/c/a;->a(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;Landroid/widget/FrameLayout;)V
+    invoke-static {v0, p1, v1}, Le/h/a/c/c/a;->a(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;Landroid/widget/FrameLayout;)V
 
     .line 14
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$TabView;->f:Landroid/view/View;
@@ -971,7 +971,7 @@
     .locals 4
 
     .line 1
-    sget-boolean v0, Le/h/a/b/c/a;->a:Z
+    sget-boolean v0, Le/h/a/c/c/a;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -1040,7 +1040,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, p1, v1}, Le/h/a/b/c/a;->c(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;Landroid/widget/FrameLayout;)V
+    invoke-static {v0, p1, v1}, Le/h/a/c/c/a;->c(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;Landroid/widget/FrameLayout;)V
 
     :cond_0
     return-void
@@ -1147,7 +1147,7 @@
     move-result-object v2
 
     .line 7
-    invoke-static {v0, v1, v2}, Le/h/a/b/c/a;->b(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;Landroid/widget/FrameLayout;)V
+    invoke-static {v0, v1, v2}, Le/h/a/c/c/a;->b(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;Landroid/widget/FrameLayout;)V
 
     const/4 v0, 0x0
 

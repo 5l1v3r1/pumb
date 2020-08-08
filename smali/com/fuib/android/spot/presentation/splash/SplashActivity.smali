@@ -47,9 +47,9 @@
 
 
 # instance fields
-.field public H:Le/f/a/b/u/j;
+.field public H:Le/f/a/b/v/j;
 
-.field public I:Le/f/a/b/w/l0;
+.field public I:Le/f/a/b/x/l0;
 
 
 # direct methods
@@ -77,11 +77,11 @@
     return-void
 .end method
 
-.method public final E()Le/f/a/b/u/j;
+.method public final E()Le/f/a/b/v/j;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/presentation/splash/SplashActivity;->H:Le/f/a/b/u/j;
+    iget-object v0, p0, Lcom/fuib/android/spot/presentation/splash/SplashActivity;->H:Le/f/a/b/v/j;
 
     if-nez v0, :cond_0
 
@@ -109,21 +109,21 @@
 
     move-result-object v0
 
-    const v1, 0x7f12029a
+    const v1, 0x7f1202c1
 
     .line 2
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v2, 0x7f12029c
+    const v2, 0x7f1202c3
 
     .line 3
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v3, 0x7f12029b
+    const v3, 0x7f1202c2
 
     .line 4
     invoke-virtual {p0, v3}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
@@ -145,9 +145,9 @@
 
     if-eqz p1, :cond_0
 
-    sget-object p1, Le/f/a/b/s/f/m0;->SHORTCUT_MOBILE:Le/f/a/b/s/f/m0;
+    sget-object p1, Le/f/a/b/t/f/m0;->SHORTCUT_MOBILE:Le/f/a/b/t/f/m0;
 
-    sput-object p1, Lcom/fuib/android/spot/di/AbstractApp;->x:Le/f/a/b/s/f/m0;
+    sput-object p1, Lcom/fuib/android/spot/di/AbstractApp;->x:Le/f/a/b/t/f/m0;
 
     goto :goto_0
 
@@ -159,9 +159,9 @@
 
     if-eqz p1, :cond_1
 
-    sget-object p1, Le/f/a/b/s/f/m0;->SHORTCUT_TRANSFERS:Le/f/a/b/s/f/m0;
+    sget-object p1, Le/f/a/b/t/f/m0;->SHORTCUT_TRANSFERS:Le/f/a/b/t/f/m0;
 
-    sput-object p1, Lcom/fuib/android/spot/di/AbstractApp;->x:Le/f/a/b/s/f/m0;
+    sput-object p1, Lcom/fuib/android/spot/di/AbstractApp;->x:Le/f/a/b/t/f/m0;
 
     goto :goto_0
 
@@ -173,15 +173,15 @@
 
     if-eqz p1, :cond_2
 
-    sget-object p1, Le/f/a/b/s/f/m0;->SHORTCUT_TEMPLATES:Le/f/a/b/s/f/m0;
+    sget-object p1, Le/f/a/b/t/f/m0;->SHORTCUT_TEMPLATES:Le/f/a/b/t/f/m0;
 
-    sput-object p1, Lcom/fuib/android/spot/di/AbstractApp;->x:Le/f/a/b/s/f/m0;
+    sput-object p1, Lcom/fuib/android/spot/di/AbstractApp;->x:Le/f/a/b/t/f/m0;
 
     goto :goto_0
 
     .line 10
     :cond_2
-    iget-object p1, p0, Lcom/fuib/android/spot/presentation/splash/SplashActivity;->I:Le/f/a/b/w/l0;
+    iget-object p1, p0, Lcom/fuib/android/spot/presentation/splash/SplashActivity;->I:Le/f/a/b/x/l0;
 
     if-nez p1, :cond_3
 
@@ -192,11 +192,11 @@
     :cond_3
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0}, Le/f/a/b/w/l0;->a(Ljava/lang/Runnable;)V
+    invoke-virtual {p1, v0}, Le/f/a/b/x/l0;->a(Ljava/lang/Runnable;)V
 
     .line 11
     :goto_0
-    sget-object p1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object p1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -206,7 +206,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/fuib/android/spot/di/AbstractApp;->x:Le/f/a/b/s/f/m0;
+    sget-object v1, Lcom/fuib/android/spot/di/AbstractApp;->x:Le/f/a/b/t/f/m0;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -216,7 +216,7 @@
 
     const-string v1, "LAUNCH_TYPE"
 
-    invoke-virtual {p1, v1, v0}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v1, v0}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -264,7 +264,7 @@
 
     invoke-direct {v0, p0}, Lcom/fuib/android/spot/presentation/splash/SplashActivity$a;-><init>(Lcom/fuib/android/spot/presentation/splash/SplashActivity;)V
 
-    const-string v1, "01b43c3401024b56acc594cdb93ab549"
+    const-string v1, "d790425a136045eeb158055fe2d9ddb6"
 
     invoke-static {p0, v1, v0}, Lk/a/a/b;->a(Landroid/content/Context;Ljava/lang/String;Lk/a/a/c;)V
 

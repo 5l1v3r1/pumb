@@ -1,6 +1,6 @@
 .class public final Le/h/b/e/n;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-common@@19.0.0"
+.source "com.google.firebase:firebase-components@@16.0.0"
 
 
 # instance fields
@@ -35,7 +35,7 @@
     const-string v0, "Null dependency anInterface."
 
     .line 2
-    invoke-static {p1, v0}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Le/h/b/e/r;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Class;
 
@@ -51,6 +51,27 @@
 .end method
 
 .method public static a(Ljava/lang/Class;)Le/h/b/e/n;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "*>;)",
+            "Le/h/b/e/n;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Le/h/b/e/n;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1, v1}, Le/h/b/e/n;-><init>(Ljava/lang/Class;II)V
+
+    return-object v0
+.end method
+
+.method public static b(Ljava/lang/Class;)Le/h/b/e/n;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -73,7 +94,7 @@
     return-object v0
 .end method
 
-.method public static b(Ljava/lang/Class;)Le/h/b/e/n;
+.method public static c(Ljava/lang/Class;)Le/h/b/e/n;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -136,7 +157,7 @@
 .method public c()Z
     .locals 2
 
-    .line 1
+    .line 2
     iget v0, p0, Le/h/b/e/n;->b:I
 
     const/4 v1, 0x1

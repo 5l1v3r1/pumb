@@ -29,9 +29,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Le/h/a/a/b/a/d/e;
+    new-instance v0, Le/h/a/b/b/a/d/e;
 
-    invoke-direct {v0}, Le/h/a/a/b/a/d/e;-><init>()V
+    invoke-direct {v0}, Le/h/a/b/b/a/d/e;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -61,6 +61,24 @@
 
 
 # virtual methods
+.method public A()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->f:Z
+
+    return v0
+.end method
+
+.method public B()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->d:Z
+
+    return v0
+.end method
+
 .method public g()J
     .locals 2
 
@@ -74,7 +92,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;)I
+    invoke-static {p1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;)I
 
     move-result p2
 
@@ -83,17 +101,17 @@
 
     const/4 v1, 0x1
 
-    invoke-static {p1, v1, v0}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v0}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;II)V
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->y()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->B()Z
 
     move-result v0
 
     const/4 v1, 0x2
 
     .line 4
-    invoke-static {p1, v1, v0}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;IZ)V
+    invoke-static {p1, v1, v0}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;IZ)V
 
     .line 5
     invoke-virtual {p0}, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->g()J
@@ -103,38 +121,20 @@
     const/4 v2, 0x3
 
     .line 6
-    invoke-static {p1, v2, v0, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;IJ)V
+    invoke-static {p1, v2, v0, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;IJ)V
 
     .line 7
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->x()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->A()Z
 
     move-result v0
 
     const/4 v1, 0x4
 
     .line 8
-    invoke-static {p1, v1, v0}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;IZ)V
+    invoke-static {p1, v1, v0}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;IZ)V
 
     .line 9
-    invoke-static {p1, p2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;I)V
 
     return-void
-.end method
-
-.method public x()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->f:Z
-
-    return v0
-.end method
-
-.method public y()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->d:Z
-
-    return v0
 .end method

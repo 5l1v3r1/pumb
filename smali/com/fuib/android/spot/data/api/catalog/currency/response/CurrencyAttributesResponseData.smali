@@ -222,11 +222,11 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Le/f/a/b/s/f/k1/c;->f:Le/f/a/b/s/f/k1/c$c;
+    sget-object v0, Le/f/a/b/t/f/k1/c;->f:Le/f/a/b/t/f/k1/c$c;
 
     const-string v2, "UNKNOWN, it is completely empty!"
 
-    invoke-virtual {v0, v2}, Le/f/a/b/s/f/k1/c$c;->c(Ljava/lang/String;)V
+    invoke-virtual {v0, v2}, Le/f/a/b/t/f/k1/c$c;->c(Ljava/lang/String;)V
 
     return v1
 
@@ -374,7 +374,7 @@
     if-eqz v0, :cond_7
 
     .line 12
-    sget-object v1, Le/f/a/b/s/f/k1/c;->f:Le/f/a/b/s/f/k1/c$c;
+    sget-object v1, Le/f/a/b/t/f/k1/c;->f:Le/f/a/b/t/f/k1/c$c;
 
     iget-object v3, p0, Lcom/fuib/android/spot/data/api/common/ApiResponseData;->responseData:Lcom/fuib/android/spot/data/api/common/CorezoidDataResponse;
 
@@ -390,7 +390,7 @@
     const-string v3, "REQUEST IS NULL"
 
     :goto_4
-    invoke-virtual {v1, v3}, Le/f/a/b/s/f/k1/c$c;->c(Ljava/lang/String;)V
+    invoke-virtual {v1, v3}, Le/f/a/b/t/f/k1/c$c;->c(Ljava/lang/String;)V
 
     :cond_7
     xor-int/2addr v0, v2

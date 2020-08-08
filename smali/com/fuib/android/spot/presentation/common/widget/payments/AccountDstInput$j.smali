@@ -42,7 +42,7 @@
     .line 1
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput$j;->c:Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput;
 
-    sget p2, Le/f/a/b/n;->rb_mfo_another_bank:I
+    sget p2, Le/f/a/b/o;->rb_mfo_another_bank:I
 
     invoke-virtual {p1, p2}, Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput;->_$_findCachedViewById(I)Landroid/view/View;
 

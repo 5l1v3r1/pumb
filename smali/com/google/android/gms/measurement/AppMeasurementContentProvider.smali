@@ -84,7 +84,7 @@
     const/4 v1, 0x0
 
     .line 2
-    invoke-static {v0, v1}, Le/h/a/a/i/b/m4;->a(Landroid/content/Context;Lcom/google/android/gms/internal/measurement/zzx;)Le/h/a/a/i/b/m4;
+    invoke-static {v0, v1}, Le/h/a/b/i/b/m4;->a(Landroid/content/Context;Lcom/google/android/gms/internal/measurement/zzx;)Le/h/a/b/i/b/m4;
 
     const/4 v0, 0x0
 

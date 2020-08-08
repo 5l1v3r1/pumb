@@ -267,7 +267,7 @@
     move-result-object v5
 
     .line 5
-    invoke-static {v3, v4, v5}, Lf/d/h;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v4, v5}, Lf/d/i;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast v3, Lf/c/b;
 

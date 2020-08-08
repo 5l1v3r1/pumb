@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/fuib/android/spot/presentation/tab/services/utilities/FieldsAdapterHelper$Companion;->a(Landroidx/recyclerview/widget/RecyclerView;Le/f/a/b/v/b/m/s;Le/f/a/b/r/c/l/s/p0;)V
+    value = Lcom/fuib/android/spot/presentation/tab/services/utilities/FieldsAdapterHelper$Companion;->a(Landroidx/recyclerview/widget/RecyclerView;Le/f/a/b/w/b/m/s;Le/f/a/b/s/c/l/s/p0;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

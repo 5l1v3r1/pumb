@@ -41,7 +41,7 @@
     invoke-super {p0, p1, p2}, Landroid/os/ResultReceiver;->onReceiveResult(ILandroid/os/Bundle;)V
 
     .line 2
-    sget-object p2, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object p2, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -61,7 +61,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p2, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p2, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 p2, 0x2
 
@@ -71,7 +71,7 @@
 
     .line 3
     :cond_0
-    sget-object p1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object p1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -79,7 +79,7 @@
 
     const-string v0, "KeyboardController: Keyboard was shown"
 
-    invoke-virtual {p1, p2, v0}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, p2, v0}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4
     iget-object p1, p0, Lcom/fuib/android/spot/presentation/common/util/KeyboardController$1;->c:Lcom/fuib/android/spot/presentation/common/util/KeyboardController;

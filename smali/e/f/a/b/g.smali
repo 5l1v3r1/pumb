@@ -3,7 +3,7 @@
 .source "App.kt"
 
 # interfaces
-.implements Le/f/a/b/s/d/c;
+.implements Le/f/a/b/t/d/c;
 
 
 # direct methods

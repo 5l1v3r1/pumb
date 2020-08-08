@@ -3,7 +3,7 @@
 .source "Http2Stream.java"
 
 # interfaces
-.implements Lm/s;
+.implements Lm/t;
 
 
 # annotations
@@ -175,7 +175,7 @@
     :cond_2
     iget-object v2, p0, Ll/g0/i/h$b;->c:Lm/c;
 
-    invoke-interface {p1, v2, p2, p3}, Lm/s;->c(Lm/c;J)J
+    invoke-interface {p1, v2, p2, p3}, Lm/t;->c(Lm/c;J)J
 
     move-result-wide v2
 
@@ -215,7 +215,7 @@
 
     iget-object v1, p0, Ll/g0/i/h$b;->c:Lm/c;
 
-    invoke-virtual {v0, v1}, Lm/c;->a(Lm/s;)J
+    invoke-virtual {v0, v1}, Lm/c;->a(Lm/t;)J
 
     if-eqz v8, :cond_4
 
@@ -611,7 +611,7 @@
     throw v1
 .end method
 
-.method public i()Lm/t;
+.method public i()Lm/u;
     .locals 1
 
     .line 1

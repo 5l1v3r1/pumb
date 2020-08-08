@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public A:Le/f/a/b/u/f;
+.field public A:Le/f/a/b/v/f;
 
-.field public B:Le/f/a/b/u/i;
+.field public B:Le/f/a/b/v/i;
 
 .field public C:Lcom/fuib/android/spot/data/api/common/NavIdController;
 
@@ -47,13 +47,13 @@
     .end annotation
 .end field
 
-.field public v:Le/f/a/b/v/b/m/s;
+.field public v:Le/f/a/b/w/b/m/s;
 
-.field public w:Le/f/a/b/s/f/a0;
+.field public w:Le/f/a/b/t/f/a0;
 
-.field public x:Le/f/a/b/s/f/c;
+.field public x:Le/f/a/b/t/f/c;
 
-.field public y:Le/f/a/b/v/b/d/h;
+.field public y:Le/f/a/b/w/b/d/h;
 
 .field public z:Le/f/a/b/a;
 
@@ -86,13 +86,13 @@
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;Le/f/a/b/v/b/d/f;Landroid/os/Bundle;)Landroid/content/Intent;
+.method public static a(Landroid/content/Context;Le/f/a/b/w/b/d/f;Landroid/os/Bundle;)Landroid/content/Intent;
     .locals 2
 
     .line 5
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->a()Ljava/lang/Class;
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->a()Ljava/lang/Class;
 
     move-result-object v1
 
@@ -105,7 +105,7 @@
 
     .line 7
     :cond_0
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->e()Z
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->e()Z
 
     move-result p0
 
@@ -124,7 +124,7 @@
 
     .line 9
     :cond_1
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     move-result-object p0
 
@@ -145,13 +145,13 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->B:Le/f/a/b/u/i;
+    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->B:Le/f/a/b/v/i;
 
-    new-instance v1, Le/f/a/b/v/b/a/c;
+    new-instance v1, Le/f/a/b/w/b/a/c;
 
-    invoke-direct {v1, p0}, Le/f/a/b/v/b/a/c;-><init>(Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;)V
+    invoke-direct {v1, p0}, Le/f/a/b/w/b/a/c;-><init>(Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;)V
 
-    invoke-virtual {v0, p0, v1}, Le/f/a/b/u/i;->a(Landroid/app/Activity;Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {v0, p0, v1}, Le/f/a/b/v/i;->a(Landroid/app/Activity;Lkotlin/jvm/functions/Function1;)V
 
     return-void
 .end method
@@ -169,8 +169,8 @@
             "()",
             "Ljava/util/List<",
             "Lkotlin/Pair<",
-            "Le/f/a/b/v/b/m/t;",
-            "Le/f/a/b/v/b/m/o;",
+            "Le/f/a/b/w/b/m/t;",
+            "Le/f/a/b/w/b/m/o;",
             ">;>;"
         }
     .end annotation
@@ -217,9 +217,9 @@
 
     move-result-object v0
 
-    sget-object v2, Le/f/a/b/u/d;->s0:Le/f/a/b/u/d$a;
+    sget-object v2, Le/f/a/b/v/d;->s0:Le/f/a/b/v/d$a;
 
-    invoke-virtual {v2}, Le/f/a/b/u/d$a;->a()Ljava/lang/String;
+    invoke-virtual {v2}, Le/f/a/b/v/d$a;->a()Ljava/lang/String;
 
     move-result-object v2
 
@@ -233,9 +233,9 @@
 
     .line 72
     :cond_1
-    sget-object v0, Le/f/a/b/u/d;->s0:Le/f/a/b/u/d$a;
+    sget-object v0, Le/f/a/b/v/d;->s0:Le/f/a/b/v/d$a;
 
-    invoke-virtual {v0, p1}, Le/f/a/b/u/d$a;->a(Ljava/lang/String;)Le/f/a/b/u/d;
+    invoke-virtual {v0, p1}, Le/f/a/b/v/d$a;->a(Ljava/lang/String;)Le/f/a/b/v/d;
 
     move-result-object p1
 
@@ -243,9 +243,9 @@
 
     move-result-object v0
 
-    sget-object v2, Le/f/a/b/u/d;->s0:Le/f/a/b/u/d$a;
+    sget-object v2, Le/f/a/b/v/d;->s0:Le/f/a/b/v/d$a;
 
-    invoke-virtual {v2}, Le/f/a/b/u/d$a;->a()Ljava/lang/String;
+    invoke-virtual {v2}, Le/f/a/b/v/d$a;->a()Ljava/lang/String;
 
     move-result-object v2
 
@@ -307,17 +307,17 @@
     return-void
 .end method
 
-.method public a(Le/f/a/b/v/b/d/f;)V
+.method public a(Le/f/a/b/w/b/d/f;)V
     .locals 0
 
     return-void
 .end method
 
-.method public a(Le/f/a/b/v/b/d/f;Landroid/os/Bundle;)V
+.method public a(Le/f/a/b/w/b/d/f;Landroid/os/Bundle;)V
     .locals 8
 
     .line 15
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -341,7 +341,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 16
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->C:Lcom/fuib/android/spot/data/api/common/NavIdController;
@@ -369,7 +369,7 @@
     if-eqz p1, :cond_15
 
     .line 18
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->b()Ljava/util/concurrent/Callable;
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->b()Ljava/util/concurrent/Callable;
 
     move-result-object v0
 
@@ -388,7 +388,7 @@
 
     .line 20
     :cond_2
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->c()Z
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->c()Z
 
     move-result v0
 
@@ -403,7 +403,7 @@
 
     .line 22
     :cond_3
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->b()Ljava/util/concurrent/Callable;
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->b()Ljava/util/concurrent/Callable;
 
     move-result-object v0
 
@@ -411,47 +411,47 @@
 
     move-result-object v0
 
-    check-cast v0, Le/f/a/b/v/b/f/c;
+    check-cast v0, Le/f/a/b/w/b/f/c;
 
-    invoke-virtual {v0, p2}, Le/f/a/b/v/b/f/c;->n(Landroid/os/Bundle;)Le/f/a/b/v/b/f/c;
+    invoke-virtual {v0, p2}, Le/f/a/b/w/b/f/c;->n(Landroid/os/Bundle;)Le/f/a/b/w/b/f/c;
 
     move-result-object p2
 
     .line 23
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     move-result-object v0
 
-    invoke-virtual {p2, v0}, Le/f/a/b/v/b/f/c;->a(Lcom/fuib/android/spot/data/vo/CorezoidFormId;)V
+    invoke-virtual {p2, v0}, Le/f/a/b/w/b/f/c;->a(Lcom/fuib/android/spot/data/vo/CorezoidFormId;)V
 
     .line 24
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v0
 
-    invoke-static {v0, p2}, Le/f/a/b/s/f/p0;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p2}, Le/f/a/b/t/f/p0;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
     .line 25
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Le/f/a/b/v/b/f/c;->g1()Z
+    invoke-virtual {p1}, Le/f/a/b/w/b/f/c;->g1()Z
 
     move-result p1
 
     if-nez p1, :cond_4
 
     .line 26
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Le/f/a/b/v/b/f/c;->i1()V
+    invoke-virtual {p1}, Le/f/a/b/w/b/f/c;->i1()V
 
     .line 27
     :cond_4
@@ -477,7 +477,7 @@
 
     .line 28
     :cond_5
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -495,7 +495,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     move-result-object v5
 
@@ -505,44 +505,44 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v3, v4}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v4}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 29
-    invoke-virtual {p2}, Le/f/a/b/v/b/f/c;->b1()Ljava/lang/String;
+    invoke-virtual {p2}, Le/f/a/b/w/b/f/c;->b1()Ljava/lang/String;
 
     move-result-object v0
 
     const-string v3, ""
 
     .line 30
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v4
 
     if-eqz v4, :cond_6
 
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Le/f/a/b/v/b/f/c;->Y0()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    invoke-virtual {v4}, Le/f/a/b/w/b/f/c;->Y0()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     move-result-object v4
 
     if-eqz v4, :cond_6
 
     .line 31
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Le/f/a/b/v/b/f/c;->b1()Ljava/lang/String;
+    invoke-virtual {v3}, Le/f/a/b/w/b/f/c;->b1()Ljava/lang/String;
 
     move-result-object v3
 
     .line 32
     :cond_6
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->r()Z
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->s()Z
 
     move-result v4
 
@@ -578,20 +578,20 @@
     move-result-object v6
 
     .line 35
-    sget-object v7, Le/f/a/b/v/b/f/c;->r0:Le/f/a/b/v/b/f/c$a;
+    sget-object v7, Le/f/a/b/w/b/f/c;->r0:Le/f/a/b/w/b/f/c$a;
 
-    invoke-virtual {v7, v6}, Le/f/a/b/v/b/f/c$a;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v7, v6}, Le/f/a/b/w/b/f/c$a;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
     .line 36
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     move-result-object v7
 
     if-eqz v7, :cond_7
 
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     move-result-object v7
 
@@ -657,20 +657,20 @@
     move-result-object v6
 
     .line 40
-    sget-object v7, Le/f/a/b/v/b/f/c;->r0:Le/f/a/b/v/b/f/c$a;
+    sget-object v7, Le/f/a/b/w/b/f/c;->r0:Le/f/a/b/w/b/f/c$a;
 
-    invoke-virtual {v7, v6}, Le/f/a/b/v/b/f/c$a;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v7, v6}, Le/f/a/b/w/b/f/c$a;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
     .line 41
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     move-result-object v7
 
     if-eqz v7, :cond_b
 
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     move-result-object v7
 
@@ -738,14 +738,14 @@
     if-eqz v4, :cond_f
 
     .line 48
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->e()Z
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->e()Z
 
     move-result v7
 
     if-eqz v7, :cond_f
 
     .line 49
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     move-result-object v2
 
@@ -808,14 +808,14 @@
     check-cast v4, Landroidx/fragment/app/Fragment;
 
     .line 55
-    instance-of v7, v4, Le/f/a/b/v/b/f/e;
+    instance-of v7, v4, Le/f/a/b/w/b/f/e;
 
     if-eqz v7, :cond_10
 
     .line 56
-    check-cast v4, Le/f/a/b/v/b/f/e;
+    check-cast v4, Le/f/a/b/w/b/f/e;
 
-    invoke-virtual {v4}, Le/f/a/b/v/b/f/e;->T0()V
+    invoke-virtual {v4}, Le/f/a/b/w/b/f/e;->T0()V
 
     goto :goto_6
 
@@ -834,7 +834,7 @@
 
     .line 58
     :goto_7
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/f;->d()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     move-result-object v3
 
@@ -866,7 +866,7 @@
     .line 61
     :cond_14
     :goto_8
-    invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->a(Le/f/a/b/v/b/d/f;)V
+    invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->a(Le/f/a/b/w/b/d/f;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -959,8 +959,8 @@
             "(",
             "Ljava/util/List<",
             "Lkotlin/Pair<",
-            "Le/f/a/b/v/b/m/t;",
-            "Le/f/a/b/v/b/m/o;",
+            "Le/f/a/b/w/b/m/t;",
+            "Le/f/a/b/w/b/m/o;",
             ">;>;)V"
         }
     .end annotation
@@ -989,7 +989,7 @@
     check-cast v0, Lkotlin/Pair;
 
     .line 74
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->w()Le/f/a/b/v/b/m/s;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->w()Le/f/a/b/w/b/m/s;
 
     move-result-object v1
 
@@ -997,25 +997,25 @@
 
     move-result-object v2
 
-    check-cast v2, Le/f/a/b/v/b/m/t;
+    check-cast v2, Le/f/a/b/w/b/m/t;
 
     invoke-virtual {v0}, Lkotlin/Pair;->getSecond()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Le/f/a/b/v/b/m/o;
+    check-cast v0, Le/f/a/b/w/b/m/o;
 
-    invoke-virtual {v1, v2, v0}, Le/f/a/b/v/b/m/s;->a(Le/f/a/b/v/b/m/t;Le/f/a/b/v/b/m/o;)V
+    invoke-virtual {v1, v2, v0}, Le/f/a/b/w/b/m/s;->a(Le/f/a/b/w/b/m/t;Le/f/a/b/w/b/m/o;)V
 
     goto :goto_0
 
     .line 75
     :cond_1
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->w()Le/f/a/b/v/b/m/s;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->w()Le/f/a/b/w/b/m/s;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Le/f/a/b/v/b/m/s;->a()V
+    invoke-virtual {p1}, Le/f/a/b/w/b/m/s;->a()V
 
     return-void
 .end method
@@ -1024,7 +1024,7 @@
     .locals 4
 
     .line 11
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1056,10 +1056,10 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v0
 
@@ -1068,13 +1068,13 @@
     .line 13
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    new-instance v1, Le/f/a/b/v/b/a/e;
+    new-instance v1, Le/f/a/b/w/b/a/e;
 
-    invoke-direct {v1, p2}, Le/f/a/b/v/b/a/e;-><init>(Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity$a;)V
+    invoke-direct {v1, p2}, Le/f/a/b/w/b/a/e;-><init>(Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity$a;)V
 
     xor-int/lit8 p1, p1, 0x1
 
-    invoke-virtual {v0, v1, p1}, Le/f/a/b/v/b/f/c;->a(Ljava/lang/Runnable;Z)V
+    invoke-virtual {v0, v1, p1}, Le/f/a/b/w/b/f/c;->a(Ljava/lang/Runnable;Z)V
 
     goto :goto_0
 
@@ -1092,7 +1092,7 @@
     .line 67
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->D:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
-    invoke-static {p1, v0}, Le/f/a/b/s/f/p0;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Le/f/a/b/t/f/p0;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -1246,7 +1246,7 @@
     .line 10
     :cond_2
     :goto_1
-    sget-object p1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object p1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1256,14 +1256,14 @@
 
     move-result-object v0
 
-    invoke-virtual {p1, v0, v1}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
     .line 11
     :cond_3
     :goto_2
-    sget-object p1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object p1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1273,7 +1273,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1, v0, v1}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -1321,14 +1321,14 @@
     move-result v2
 
     .line 5
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v3
 
     if-eqz v3, :cond_1
 
     .line 6
-    invoke-virtual {v3}, Le/f/a/b/v/b/f/e;->W0()Z
+    invoke-virtual {v3}, Le/f/a/b/w/b/f/e;->W0()Z
 
     move-result v4
 
@@ -1345,7 +1345,7 @@
     if-eqz v3, :cond_2
 
     .line 7
-    invoke-virtual {v3}, Le/f/a/b/v/b/f/c;->c1()Landroid/view/View;
+    invoke-virtual {v3}, Le/f/a/b/w/b/f/c;->c1()Landroid/view/View;
 
     move-result-object v5
 
@@ -1390,7 +1390,7 @@
 
     .line 11
     :cond_3
-    invoke-virtual {v3, p1}, Le/f/a/b/v/b/f/c;->a(Landroid/view/MotionEvent;)V
+    invoke-virtual {v3, p1}, Le/f/a/b/w/b/f/c;->a(Landroid/view/MotionEvent;)V
 
     .line 12
     invoke-virtual {p0}, Landroid/app/Activity;->getCurrentFocus()Landroid/view/View;
@@ -1445,13 +1445,13 @@
 
     .line 19
     :cond_8
-    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->A:Le/f/a/b/u/f;
+    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->A:Le/f/a/b/v/f;
 
-    new-instance v1, Le/f/a/b/v/b/a/a;
+    new-instance v1, Le/f/a/b/w/b/a/a;
 
-    invoke-direct {v1, p0}, Le/f/a/b/v/b/a/a;-><init>(Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;)V
+    invoke-direct {v1, p0}, Le/f/a/b/w/b/a/a;-><init>(Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;)V
 
-    invoke-virtual {v0, v1}, Le/f/a/b/u/f;->a(Lkotlin/jvm/functions/Function0;)V
+    invoke-virtual {v0, v1}, Le/f/a/b/v/f;->a(Lkotlin/jvm/functions/Function0;)V
 
     .line 20
     new-instance v0, Ljava/lang/ref/WeakReference;
@@ -1509,20 +1509,20 @@
     float-to-int v2, v2
 
     .line 27
-    instance-of v3, v0, Le/f/a/b/y/k/a/a/h;
+    instance-of v3, v0, Le/f/a/b/z/k/a/a/h;
 
     if-eqz v3, :cond_9
 
     .line 28
-    check-cast v0, Le/f/a/b/y/k/a/a/h;
+    check-cast v0, Le/f/a/b/z/k/a/a/h;
 
-    invoke-interface {v0}, Le/f/a/b/y/k/a/a/h;->getControlView()Landroid/view/View;
+    invoke-interface {v0}, Le/f/a/b/z/k/a/a/h;->getControlView()Landroid/view/View;
 
     move-result-object v0
 
     .line 29
     :cond_9
-    invoke-static {v0}, Le/f/a/b/v/f/b;->a(Landroid/view/View;)Landroid/graphics/Rect;
+    invoke-static {v0}, Le/f/a/b/w/f/b;->a(Landroid/view/View;)Landroid/graphics/Rect;
 
     move-result-object v0
 
@@ -1580,10 +1580,10 @@
 
     move-result-object v0
 
-    sget-object v1, Le/f/a/b/u/d;->s0:Le/f/a/b/u/d$a;
+    sget-object v1, Le/f/a/b/v/d;->s0:Le/f/a/b/v/d$a;
 
     .line 2
-    invoke-virtual {v1}, Le/f/a/b/u/d$a;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Le/f/a/b/v/d$a;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1605,11 +1605,11 @@
     :cond_0
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->z:Le/f/a/b/a;
 
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v1
 
-    invoke-virtual {v0, p0, v1}, Le/f/a/b/a;->a(Landroid/app/Activity;Le/f/a/b/v/b/f/c;)Z
+    invoke-virtual {v0, p0, v1}, Le/f/a/b/a;->a(Landroid/app/Activity;Le/f/a/b/w/b/f/c;)Z
 
     move-result v0
 
@@ -1619,7 +1619,7 @@
 
     .line 6
     :cond_1
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v0
 
@@ -1632,11 +1632,11 @@
 
     .line 8
     :cond_2
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Le/f/a/b/v/b/f/e;->S0()Le/f/a/b/v/b/d/f;
+    invoke-virtual {v0}, Le/f/a/b/w/b/f/e;->S0()Le/f/a/b/w/b/d/f;
 
     move-result-object v0
 
@@ -1645,17 +1645,17 @@
     const/4 v1, 0x0
 
     .line 9
-    invoke-virtual {p0, v0, v1}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->a(Le/f/a/b/v/b/d/f;Landroid/os/Bundle;)V
+    invoke-virtual {p0, v0, v1}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->a(Le/f/a/b/w/b/d/f;Landroid/os/Bundle;)V
 
     return-void
 
     .line 10
     :cond_3
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Le/f/a/b/v/b/f/e;->L0()Z
+    invoke-virtual {v0}, Le/f/a/b/w/b/f/e;->L0()Z
 
     move-result v0
 
@@ -1710,7 +1710,7 @@
     invoke-virtual {p0, v1}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->a(Ljava/util/List;)V
 
     .line 4
-    sget-object v1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1742,16 +1742,16 @@
 
     move-result-object p1
 
-    invoke-virtual {v1, v2, p1}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, p1}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentActivity;->i()Lb/n/a/g;
 
     move-result-object p1
 
-    new-instance v0, Le/f/a/b/v/b/a/b;
+    new-instance v0, Le/f/a/b/w/b/a/b;
 
-    invoke-direct {v0, p0}, Le/f/a/b/v/b/a/b;-><init>(Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;)V
+    invoke-direct {v0, p0}, Le/f/a/b/w/b/a/b;-><init>(Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;)V
 
     invoke-virtual {p1, v0}, Lb/n/a/g;->a(Lb/n/a/g$c;)V
 
@@ -1762,7 +1762,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1774,7 +1774,7 @@
 
     const-string v2, "onDestroy"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onDestroy()V
@@ -1791,7 +1791,7 @@
     iput-boolean v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->E:Z
 
     .line 2
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1803,7 +1803,7 @@
 
     const-string v2, "onPause"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3
     invoke-super {p0}, Landroidx/fragment/app/FragmentActivity;->onPause()V
@@ -1818,7 +1818,7 @@
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onPostResume()V
 
     .line 2
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1830,7 +1830,7 @@
 
     const-string v2, "onPostResume"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -1839,18 +1839,18 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->w:Le/f/a/b/s/f/a0;
+    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->w:Le/f/a/b/t/f/a0;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/a0;->d()Z
+    invoke-virtual {v0}, Le/f/a/b/t/f/a0;->e()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->w:Le/f/a/b/s/f/a0;
+    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->w:Le/f/a/b/t/f/a0;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/a0;->e()V
+    invoke-virtual {v0}, Le/f/a/b/t/f/a0;->f()V
 
     .line 3
     invoke-virtual {p0}, Landroid/app/Activity;->finishAndRemoveTask()V
@@ -1869,7 +1869,7 @@
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    sget-object v1, Le/f/a/b/v/b/a/d;->c:Le/f/a/b/v/b/a/d;
+    sget-object v1, Le/f/a/b/w/b/a/d;->c:Le/f/a/b/w/b/a/d;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -1878,7 +1878,7 @@
     invoke-super {p0}, Landroidx/fragment/app/FragmentActivity;->onResume()V
 
     .line 7
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1890,7 +1890,7 @@
 
     const-string v2, "onResume"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
@@ -1907,7 +1907,7 @@
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onStart()V
 
     .line 2
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1919,7 +1919,7 @@
 
     const-string v2, "onStart"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3
     invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->v()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
@@ -1932,7 +1932,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v1
 
@@ -1942,14 +1942,14 @@
 
     .line 5
     :cond_1
-    sget-object v1, Le/f/a/b/v/b/d/f;->Companion:Le/f/a/b/v/b/d/f$k2;
+    sget-object v1, Le/f/a/b/w/b/d/f;->Companion:Le/f/a/b/w/b/d/f$p2;
 
-    invoke-virtual {v1, v0}, Le/f/a/b/v/b/d/f$k2;->a(Lcom/fuib/android/spot/data/vo/CorezoidFormId;)Le/f/a/b/v/b/d/f;
+    invoke-virtual {v1, v0}, Le/f/a/b/w/b/d/f$p2;->a(Lcom/fuib/android/spot/data/vo/CorezoidFormId;)Le/f/a/b/w/b/d/f;
 
     move-result-object v0
 
     .line 6
-    sget-object v1, Le/f/a/b/v/b/d/f;->UNKNOWN:Le/f/a/b/v/b/d/f;
+    sget-object v1, Le/f/a/b/w/b/d/f;->UNKNOWN:Le/f/a/b/w/b/d/f;
 
     if-ne v0, v1, :cond_2
 
@@ -1960,7 +1960,7 @@
 
     check-cast v0, Lcom/fuib/android/spot/App;
 
-    invoke-virtual {v0}, Lcom/fuib/android/spot/di/AbstractApp;->l()V
+    invoke-virtual {v0}, Lcom/fuib/android/spot/di/AbstractApp;->n()V
 
     return-void
 
@@ -1974,7 +1974,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->a(Le/f/a/b/v/b/d/f;Landroid/os/Bundle;)V
+    invoke-virtual {p0, v0, v1}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->a(Le/f/a/b/w/b/d/f;Landroid/os/Bundle;)V
 
     return-void
 .end method
@@ -1983,7 +1983,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1995,7 +1995,7 @@
 
     const-string v2, "onStop"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onStop()V
@@ -2024,7 +2024,7 @@
     return-void
 .end method
 
-.method public s()Le/f/a/b/v/b/f/c;
+.method public s()Le/f/a/b/w/b/f/c;
     .locals 3
 
     .line 1
@@ -2048,12 +2048,12 @@
 
     .line 2
     :cond_0
-    instance-of v2, v0, Le/f/a/b/v/b/f/c;
+    instance-of v2, v0, Le/f/a/b/w/b/f/c;
 
     if-eqz v2, :cond_1
 
     .line 3
-    check-cast v0, Le/f/a/b/v/b/f/c;
+    check-cast v0, Le/f/a/b/w/b/f/c;
 
     return-object v0
 
@@ -2064,7 +2064,7 @@
 .method public t()I
     .locals 1
 
-    const v0, 0x7f060048
+    const v0, 0x7f060049
 
     return v0
 .end method
@@ -2072,7 +2072,7 @@
 .method public u()I
     .locals 1
 
-    const v0, 0x7f0a0202
+    const v0, 0x7f0a0212
 
     return v0
 .end method
@@ -2107,31 +2107,31 @@
     return-object v0
 .end method
 
-.method public w()Le/f/a/b/v/b/m/s;
+.method public w()Le/f/a/b/w/b/m/s;
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->v:Le/f/a/b/v/b/m/s;
+    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->v:Le/f/a/b/w/b/m/s;
 
     if-nez v0, :cond_0
 
     .line 2
-    new-instance v0, Le/f/a/b/v/b/m/s;
+    new-instance v0, Le/f/a/b/w/b/m/s;
 
     .line 3
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->x:Le/f/a/b/s/f/c;
+    iget-object v2, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->x:Le/f/a/b/t/f/c;
 
-    invoke-direct {v0, p0, v1, v2}, Le/f/a/b/v/b/m/s;-><init>(Landroid/content/Context;Landroid/view/LayoutInflater;Le/f/a/b/s/f/c;)V
+    invoke-direct {v0, p0, v1, v2}, Le/f/a/b/w/b/m/s;-><init>(Landroid/content/Context;Landroid/view/LayoutInflater;Le/f/a/b/t/f/c;)V
 
-    iput-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->v:Le/f/a/b/v/b/m/s;
+    iput-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->v:Le/f/a/b/w/b/m/s;
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->v:Le/f/a/b/v/b/m/s;
+    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->v:Le/f/a/b/w/b/m/s;
 
     return-object v0
 .end method
@@ -2160,17 +2160,17 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v0
 
     if-eqz v0, :cond_3
 
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Le/f/a/b/v/b/f/c;->Y0()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    invoke-virtual {v0}, Le/f/a/b/w/b/f/c;->Y0()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     move-result-object v0
 
@@ -2180,11 +2180,11 @@
 
     .line 2
     :cond_0
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Le/f/a/b/v/b/f/c;->Y0()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+    invoke-virtual {v0}, Le/f/a/b/w/b/f/c;->Y0()Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     move-result-object v0
 
@@ -2192,18 +2192,18 @@
     iput-object v0, p0, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->D:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
 
     .line 4
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Le/f/a/b/v/b/f/c;->i1()V
+    invoke-virtual {v1}, Le/f/a/b/w/b/f/c;->i1()V
 
     .line 5
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Le/f/a/b/v/b/f/c;->X0()Ljava/util/List;
+    invoke-virtual {v1}, Le/f/a/b/w/b/f/c;->X0()Ljava/util/List;
 
     move-result-object v1
 
@@ -2214,11 +2214,11 @@
     if-nez v1, :cond_1
 
     .line 6
-    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/v/b/f/c;
+    invoke-virtual {p0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->s()Le/f/a/b/w/b/f/c;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Le/f/a/b/v/b/f/c;->X0()Ljava/util/List;
+    invoke-virtual {v1}, Le/f/a/b/w/b/f/c;->X0()Ljava/util/List;
 
     move-result-object v1
 
@@ -2238,20 +2238,20 @@
 
     move-result-object v2
 
-    check-cast v2, Le/f/a/b/v/b/f/c;
+    check-cast v2, Le/f/a/b/w/b/f/c;
 
     .line 8
-    invoke-virtual {v2}, Le/f/a/b/v/b/f/c;->i1()V
+    invoke-virtual {v2}, Le/f/a/b/w/b/f/c;->i1()V
 
     goto :goto_0
 
     .line 9
     :cond_1
-    invoke-static {v0}, Le/f/a/b/v/b/d/f;->a(Lcom/fuib/android/spot/data/vo/CorezoidFormId;)Le/f/a/b/v/b/d/f;
+    invoke-static {v0}, Le/f/a/b/w/b/d/f;->a(Lcom/fuib/android/spot/data/vo/CorezoidFormId;)Le/f/a/b/w/b/d/f;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->a(Le/f/a/b/v/b/d/f;)V
+    invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/activity/AbstractActivity;->a(Le/f/a/b/w/b/d/f;)V
 
     const/4 v0, 0x0
 
@@ -2290,14 +2290,14 @@
     move-result-object v1
 
     .line 13
-    instance-of v2, v1, Le/f/a/b/v/b/f/c;
+    instance-of v2, v1, Le/f/a/b/w/b/f/c;
 
     if-eqz v2, :cond_2
 
     .line 14
-    check-cast v1, Le/f/a/b/v/b/f/c;
+    check-cast v1, Le/f/a/b/w/b/f/c;
 
-    invoke-virtual {v1}, Le/f/a/b/v/b/f/c;->k1()V
+    invoke-virtual {v1}, Le/f/a/b/w/b/f/c;->k1()V
 
     :cond_2
     add-int/lit8 v0, v0, 0x1

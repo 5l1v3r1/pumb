@@ -3,7 +3,7 @@
 .source "AlphaLatchProgressBar.kt"
 
 # interfaces
-.implements Le/f/a/b/v/b/o/s/a;
+.implements Le/f/a/b/w/b/o/s/a;
 
 
 # annotations
@@ -53,7 +53,7 @@
 
 
 # instance fields
-.field public final c:Le/f/a/b/v/b/o/s/b;
+.field public final c:Le/f/a/b/w/b/o/s/b;
 
 
 # direct methods
@@ -64,11 +64,11 @@
     invoke-direct {p0, p1}, Landroid/widget/ProgressBar;-><init>(Landroid/content/Context;)V
 
     .line 2
-    new-instance p1, Le/f/a/b/v/b/o/s/b;
+    new-instance p1, Le/f/a/b/w/b/o/s/b;
 
-    invoke-direct {p1}, Le/f/a/b/v/b/o/s/b;-><init>()V
+    invoke-direct {p1}, Le/f/a/b/w/b/o/s/b;-><init>()V
 
-    iput-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/v/b/o/s/b;
+    iput-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/w/b/o/s/b;
 
     return-void
 .end method
@@ -80,11 +80,11 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/ProgressBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 4
-    new-instance p1, Le/f/a/b/v/b/o/s/b;
+    new-instance p1, Le/f/a/b/w/b/o/s/b;
 
-    invoke-direct {p1}, Le/f/a/b/v/b/o/s/b;-><init>()V
+    invoke-direct {p1}, Le/f/a/b/w/b/o/s/b;-><init>()V
 
-    iput-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/v/b/o/s/b;
+    iput-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/w/b/o/s/b;
 
     return-void
 .end method
@@ -96,11 +96,11 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ProgressBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 6
-    new-instance p1, Le/f/a/b/v/b/o/s/b;
+    new-instance p1, Le/f/a/b/w/b/o/s/b;
 
-    invoke-direct {p1}, Le/f/a/b/v/b/o/s/b;-><init>()V
+    invoke-direct {p1}, Le/f/a/b/w/b/o/s/b;-><init>()V
 
-    iput-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/v/b/o/s/b;
+    iput-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/w/b/o/s/b;
 
     return-void
 .end method
@@ -112,11 +112,11 @@
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/ProgressBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     .line 8
-    new-instance p1, Le/f/a/b/v/b/o/s/b;
+    new-instance p1, Le/f/a/b/w/b/o/s/b;
 
-    invoke-direct {p1}, Le/f/a/b/v/b/o/s/b;-><init>()V
+    invoke-direct {p1}, Le/f/a/b/w/b/o/s/b;-><init>()V
 
-    iput-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/v/b/o/s/b;
+    iput-object p1, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/w/b/o/s/b;
 
     return-void
 .end method
@@ -127,9 +127,9 @@
     .locals 1
 
     .line 2
-    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/v/b/o/s/b;
+    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/w/b/o/s/b;
 
-    invoke-virtual {v0}, Le/f/a/b/v/b/o/s/b;->a()V
+    invoke-virtual {v0}, Le/f/a/b/w/b/o/s/b;->a()V
 
     return-void
 .end method
@@ -138,9 +138,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/v/b/o/s/b;
+    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/w/b/o/s/b;
 
-    invoke-virtual {v0, p0, p1}, Le/f/a/b/v/b/o/s/b;->a(Landroid/view/View;F)V
+    invoke-virtual {v0, p0, p1}, Le/f/a/b/w/b/o/s/b;->a(Landroid/view/View;F)V
 
     return-void
 .end method
@@ -149,9 +149,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/v/b/o/s/b;
+    iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/alpha_latch/AlphaLatchProgressBar;->c:Le/f/a/b/w/b/o/s/b;
 
-    invoke-virtual {v0, p1}, Le/f/a/b/v/b/o/s/b;->a(F)F
+    invoke-virtual {v0, p1}, Le/f/a/b/w/b/o/s/b;->a(F)F
 
     move-result p1
 

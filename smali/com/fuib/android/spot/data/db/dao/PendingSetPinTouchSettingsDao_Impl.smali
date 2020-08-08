@@ -96,7 +96,7 @@
 
     .line 3
     :try_start_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     .line 4
     iget-object v1, p0, Lcom/fuib/android/spot/data/db/dao/PendingSetPinTouchSettingsDao_Impl;->__db:Lb/u/f;
@@ -560,7 +560,7 @@
 
     .line 6
     :goto_2
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     .line 7
     iget-object p1, p0, Lcom/fuib/android/spot/data/db/dao/PendingSetPinTouchSettingsDao_Impl;->__db:Lb/u/f;
@@ -662,7 +662,7 @@
 
     .line 6
     :goto_2
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     .line 7
     iget-object p1, p0, Lcom/fuib/android/spot/data/db/dao/PendingSetPinTouchSettingsDao_Impl;->__db:Lb/u/f;

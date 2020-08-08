@@ -66,7 +66,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f070128
+    const v2, 0x7f07012b
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -75,7 +75,7 @@
     mul-float v0, v0, v1
 
     .line 4
-    sget-object v1, Le/f/a/b/s/f/z;->a:Le/f/a/b/s/f/z$a;
+    sget-object v1, Le/f/a/b/t/f/z;->a:Le/f/a/b/t/f/z$a;
 
     iget-object v2, p0, Lcom/fuib/android/spot/presentation/common/widget/splashAlert/SplashAlert$i;->c:Lcom/fuib/android/spot/presentation/common/widget/splashAlert/SplashAlert;
 
@@ -93,7 +93,7 @@
 
     move-result v3
 
-    invoke-virtual {v1, v2, v3}, Le/f/a/b/s/f/z$a;->a(Landroid/content/Context;F)F
+    invoke-virtual {v1, v2, v3}, Le/f/a/b/t/f/z$a;->a(Landroid/content/Context;F)F
 
     move-result v1
 

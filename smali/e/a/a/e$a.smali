@@ -1,4 +1,4 @@
-.class public final Le/a/a/e$a;
+.class public Le/a/a/e$a;
 .super Ljava/lang/Object;
 .source "LottieCompositionFactory.java"
 
@@ -8,11 +8,11 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Le/a/a/e;->a(Ljava/lang/String;Ljava/util/concurrent/Callable;)Le/a/a/l;
+    value = Le/a/a/e;->a(Ljava/lang/String;Ljava/util/concurrent/Callable;)Le/a/a/m;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x9
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "Le/a/a/h<",
-        "Ljava/lang/Throwable;",
+        "Le/a/a/d;",
         ">;"
     }
 .end annotation
@@ -44,18 +44,7 @@
 
 
 # virtual methods
-.method public bridge synthetic a(Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    check-cast p1, Ljava/lang/Throwable;
-
-    invoke-virtual {p0, p1}, Le/a/a/e$a;->a(Ljava/lang/Throwable;)V
-
-    return-void
-.end method
-
-.method public a(Ljava/lang/Throwable;)V
+.method public a(Le/a/a/d;)V
     .locals 1
 
     .line 2
@@ -66,6 +55,17 @@
     iget-object v0, p0, Le/a/a/e$a;->a:Ljava/lang/String;
 
     invoke-interface {p1, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public bridge synthetic a(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Le/a/a/d;
+
+    invoke-virtual {p0, p1}, Le/a/a/e$a;->a(Le/a/a/d;)V
 
     return-void
 .end method

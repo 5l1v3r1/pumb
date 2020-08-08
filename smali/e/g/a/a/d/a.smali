@@ -425,7 +425,7 @@
 
     move-result-object v2
 
-    invoke-interface {v1, v2}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {v1, v2}, Ln/c/b;->a(Ljava/lang/String;)V
 
     :cond_0
     const/4 v1, 0x0
@@ -496,7 +496,7 @@
 
     const-string v1, "(FCI) Issuer Discretionary Data is already present"
 
-    invoke-interface {p1, v1}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {p1, v1}, Ln/c/b;->a(Ljava/lang/String;)V
 
     :cond_2
     return-object v0
@@ -672,7 +672,7 @@
 
     const-string v1, "Try to read card with AID"
 
-    invoke-interface {v0, v1}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Ln/c/b;->a(Ljava/lang/String;)V
 
     .line 3
     :cond_0
@@ -823,7 +823,7 @@
 
     const-string v1, "Try to read card with Payment System Environment"
 
-    invoke-interface {v0, v1}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Ln/c/b;->a(Ljava/lang/String;)V
 
     .line 3
     :cond_0
@@ -1026,7 +1026,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Ln/c/b;->a(Ljava/lang/String;)V
 
     :cond_8
     :goto_4
@@ -1080,7 +1080,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Ln/c/b;->a(Ljava/lang/String;)V
 
     .line 3
     :cond_1

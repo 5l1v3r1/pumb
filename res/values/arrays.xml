@@ -11,6 +11,10 @@
         <item>@string/composite_card_input_layout_cvv_right_component_id</item>
         <item>@string/composite_card_input_layout_scan_component_id</item>
     </string-array>
+    <string-array name="CompositeCardInputLayoutAuth">
+        <item>@string/composite_card_input_layout_number_component_id</item>
+        <item>@string/composite_card_input_layout_scan_component_id</item>
+    </string-array>
     <string-array name="CompositeCardInputLayoutPayer">
         <item>@string/composite_card_input_layout_number_component_id</item>
         <item>@string/composite_card_input_layout_exp_date_component_id</item>

@@ -1,0 +1,16 @@
+.class public final Le/f/a/b/w/f/h/m/f/h;
+.super Le/f/a/b/w/f/h/m/f/c;
+.source "CurrentAccountDetailsViewModel.kt"
+
+
+# direct methods
+.method public constructor <init>(Le/f/a/b/x/q0;Lcom/fuib/android/spot/data/api/notification/NotificationsService;)V
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/fuib/android/spot/data/vo/CorezoidFormId;->CURRENT_ACCOUNT_INFO_73:Lcom/fuib/android/spot/data/vo/CorezoidFormId;
+
+    invoke-direct {p0, p1, p2, v0}, Le/f/a/b/w/f/h/m/f/c;-><init>(Le/f/a/b/x/q0;Lcom/fuib/android/spot/data/api/notification/NotificationsService;Lcom/fuib/android/spot/data/vo/CorezoidFormId;)V
+
+    return-void
+.end method

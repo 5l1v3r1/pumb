@@ -3,30 +3,44 @@
 .source "BufferedSource.java"
 
 # interfaces
-.implements Lm/s;
+.implements Lm/t;
 .implements Ljava/nio/channels/ReadableByteChannel;
 
 
 # virtual methods
+.method public abstract a(Lm/m;)I
+.end method
+
 .method public abstract a(B)J
 .end method
 
 .method public abstract a(Lm/c;J)V
 .end method
 
+.method public abstract b(Lm/f;)J
+.end method
+
+.method public abstract c(Lm/f;)J
+.end method
+
 .method public abstract d(J)Lm/f;
 .end method
 
-.method public abstract e(J)[B
+.method public abstract e(J)Z
 .end method
 
-.method public abstract f(J)Ljava/lang/String;
+.method public abstract f(J)[B
 .end method
 
-.method public abstract g(J)V
+.method public abstract g(J)Ljava/lang/String;
 .end method
 
 .method public abstract h()Lm/c;
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end method
+
+.method public abstract h(J)V
 .end method
 
 .method public abstract l()Ljava/lang/String;
@@ -35,13 +49,16 @@
 .method public abstract m()I
 .end method
 
-.method public abstract n()Z
+.method public abstract n()Lm/c;
 .end method
 
-.method public abstract o()S
+.method public abstract o()Z
 .end method
 
-.method public abstract p()J
+.method public abstract p()S
+.end method
+
+.method public abstract q()J
 .end method
 
 .method public abstract readByte()B

@@ -7,8 +7,8 @@
 
 
 # virtual methods
-.method public abstract q()I
+.method public abstract r()I
 .end method
 
-.method public abstract r()J
+.method public abstract s()J
 .end method

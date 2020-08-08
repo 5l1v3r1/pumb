@@ -1,96 +1,40 @@
-.class public final Le/h/b/j/m;
+.class public final synthetic Le/h/b/j/m;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-messaging@@20.0.0"
+.source "com.google.firebase:firebase-iid@@20.2.1"
 
 # interfaces
-.implements Landroid/os/Parcelable$Creator;
+.implements Ljava/lang/Runnable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/firebase/messaging/RemoteMessage;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final c:Le/h/b/j/f;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Le/h/b/j/f;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Le/h/b/j/m;->c:Le/h/b/j/f;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 5
+.method public final run()V
+    .locals 3
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->b(Landroid/os/Parcel;)I
+    iget-object v0, p0, Le/h/b/j/m;->c:Le/h/b/j/f;
 
-    move-result v0
+    const/4 v1, 0x2
 
-    const/4 v1, 0x0
+    const-string v2, "Service disconnected"
 
     .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+    invoke-virtual {v0, v1, v2}, Le/h/b/j/f;->a(ILjava/lang/String;)V
 
-    move-result v2
-
-    if-ge v2, v0, :cond_1
-
-    .line 3
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->a(Landroid/os/Parcel;)I
-
-    move-result v2
-
-    .line 4
-    invoke-static {v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->a(I)I
-
-    move-result v3
-
-    const/4 v4, 0x2
-
-    if-eq v3, v4, :cond_0
-
-    .line 5
-    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->D(Landroid/os/Parcel;I)V
-
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->f(Landroid/os/Parcel;I)Landroid/os/Bundle;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    .line 7
-    :cond_1
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)V
-
-    .line 8
-    new-instance p1, Lcom/google/firebase/messaging/RemoteMessage;
-
-    invoke-direct {p1, v1}, Lcom/google/firebase/messaging/RemoteMessage;-><init>(Landroid/os/Bundle;)V
-
-    return-object p1
-.end method
-
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    new-array p1, p1, [Lcom/google/firebase/messaging/RemoteMessage;
-
-    return-object p1
+    return-void
 .end method

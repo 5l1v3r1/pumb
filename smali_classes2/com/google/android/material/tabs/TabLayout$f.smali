@@ -249,7 +249,7 @@
     iput-object v0, p0, Lcom/google/android/material/tabs/TabLayout$f;->k:Landroid/animation/ValueAnimator;
 
     .line 25
-    sget-object v1, Le/h/a/b/a/a;->b:Landroid/animation/TimeInterpolator;
+    sget-object v1, Le/h/a/c/a/a;->b:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -315,7 +315,7 @@
 
     const/16 v2, 0x18
 
-    invoke-static {v1, v2}, Le/h/a/b/r/j;->a(Landroid/content/Context;I)F
+    invoke-static {v1, v2}, Le/h/a/c/r/j;->a(Landroid/content/Context;I)F
 
     move-result v1
 
@@ -970,7 +970,7 @@
 
     const/16 v6, 0x10
 
-    invoke-static {v4, v6}, Le/h/a/b/r/j;->a(Landroid/content/Context;I)F
+    invoke-static {v4, v6}, Le/h/a/c/r/j;->a(Landroid/content/Context;I)F
 
     move-result v4
 

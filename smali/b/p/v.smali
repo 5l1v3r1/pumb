@@ -68,7 +68,7 @@
 
 
 # virtual methods
-.method public final o()V
+.method public final r()V
     .locals 3
 
     .line 1
@@ -125,12 +125,12 @@
     .line 6
     :cond_1
     :goto_1
-    invoke-virtual {p0}, Lb/p/v;->p()V
+    invoke-virtual {p0}, Lb/p/v;->s()V
 
     return-void
 .end method
 
-.method public p()V
+.method public s()V
     .locals 0
 
     return-void

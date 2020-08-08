@@ -106,9 +106,9 @@
 
     invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p1, ")\n"
+    const/16 p1, 0xa
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -119,7 +119,7 @@
 
 
 # virtual methods
-.method public final create(Ljava/lang/String;Ljava/lang/String;Le/f/a/b/s/d/g;Le/h/c/f;)Lcom/fuib/android/spot/data/db/entities/LogRecord;
+.method public final create(Ljava/lang/String;Ljava/lang/String;Le/f/a/b/t/d/g;Le/h/c/f;)Lcom/fuib/android/spot/data/db/entities/LogRecord;
     .locals 3
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
@@ -174,7 +174,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 7
-    invoke-virtual {p3, v0}, Le/f/a/b/s/d/g;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p3, v0}, Le/f/a/b/t/d/g;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

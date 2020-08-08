@@ -27,7 +27,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Le/h/a/a/f/a;)V
+.method public synthetic constructor <init>(Le/h/a/b/f/a;)V
     .locals 0
 
     .line 2

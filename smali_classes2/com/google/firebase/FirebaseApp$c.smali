@@ -1,9 +1,9 @@
 .class public Lcom/google/firebase/FirebaseApp$c;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-common@@19.0.0"
+.source "com.google.firebase:firebase-common@@19.3.0"
 
 # interfaces
-.implements Le/h/a/a/d/i/n/b$a;
+.implements Le/h/a/b/d/i/n/b$a;
 
 
 # annotations
@@ -69,7 +69,7 @@
     .locals 3
 
     .line 1
-    invoke-static {}, Le/h/a/a/d/q/n;->a()Z
+    invoke-static {}, Le/h/a/b/d/q/n;->a()Z
 
     move-result v0
 
@@ -120,14 +120,14 @@
     if-eqz v1, :cond_1
 
     .line 7
-    invoke-static {p0}, Le/h/a/a/d/i/n/b;->a(Landroid/app/Application;)V
+    invoke-static {p0}, Le/h/a/b/d/i/n/b;->a(Landroid/app/Application;)V
 
     .line 8
-    invoke-static {}, Le/h/a/a/d/i/n/b;->b()Le/h/a/a/d/i/n/b;
+    invoke-static {}, Le/h/a/b/d/i/n/b;->b()Le/h/a/b/d/i/n/b;
 
     move-result-object p0
 
-    invoke-virtual {p0, v0}, Le/h/a/a/d/i/n/b;->a(Le/h/a/a/d/i/n/b$a;)V
+    invoke-virtual {p0, v0}, Le/h/a/b/d/i/n/b;->a(Le/h/a/b/d/i/n/b$a;)V
 
     :cond_1
     :goto_0

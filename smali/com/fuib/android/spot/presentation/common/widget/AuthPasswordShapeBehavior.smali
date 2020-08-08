@@ -116,7 +116,7 @@
 
     check-cast p4, Landroid/view/ViewGroup;
 
-    const p5, 0x7f0a0284
+    const p5, 0x7f0a029c
 
     invoke-virtual {p4, p5}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -127,7 +127,7 @@
     .line 2
     iput-object p5, p0, Lcom/fuib/android/spot/presentation/common/widget/AuthPasswordShapeBehavior;->circleView:Landroid/view/View;
 
-    const p5, 0x7f0a00e1
+    const p5, 0x7f0a00ea
 
     .line 3
     invoke-virtual {p2, p5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -139,7 +139,7 @@
     .line 4
     iput-object p5, p0, Lcom/fuib/android/spot/presentation/common/widget/AuthPasswordShapeBehavior;->buttonView:Landroid/view/View;
 
-    const p5, 0x7f0a0487
+    const p5, 0x7f0a04bb
 
     .line 5
     invoke-virtual {p2, p5}, Landroid/view/View;->findViewById(I)Landroid/view/View;

@@ -1,6 +1,6 @@
 .class public final synthetic Le/h/b/e/c;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-common@@19.0.0"
+.source "com.google.firebase:firebase-components@@16.0.0"
 
 # interfaces
 .implements Le/h/b/e/g;

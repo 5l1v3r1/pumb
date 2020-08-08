@@ -404,7 +404,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v2, p1}, Ln/c/b;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v0, v2, p1}, Ln/c/b;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 9
     :goto_0
@@ -670,7 +670,7 @@
 
     move-result-object v8
 
-    invoke-interface {v7, v8, v5}, Ln/c/b;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v7, v8, v5}, Ln/c/b;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 14
     :goto_1

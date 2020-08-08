@@ -1,6 +1,6 @@
 .class public Lcom/google/firebase/provider/FirebaseInitProvider;
 .super Landroid/content/ContentProvider;
-.source "com.google.firebase:firebase-common@@19.0.0"
+.source "com.google.firebase:firebase-common@@19.3.0"
 
 
 # direct methods
@@ -19,7 +19,7 @@
     const-string v0, "FirebaseInitProvider ProviderInfo cannot be null."
 
     .line 1
-    invoke-static {p0, v0}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0, v0}, Le/h/a/b/d/l/u;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     iget-object p0, p0, Landroid/content/pm/ProviderInfo;->authority:Ljava/lang/String;

@@ -125,22 +125,39 @@
     invoke-interface {p1, v1, v2, v3}, Lb/w/a/d;->a(IJ)V
 
     .line 17
-    iget-object p2, p2, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->resetPwCorrelationId:Ljava/lang/String;
+    iget-object v0, p2, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->resetPwCorrelationId:Ljava/lang/String;
 
-    const/16 v0, 0x8
+    const/16 v1, 0x8
 
-    if-nez p2, :cond_2
+    if-nez v0, :cond_2
 
     .line 18
-    invoke-interface {p1, v0}, Lb/w/a/d;->a(I)V
+    invoke-interface {p1, v1}, Lb/w/a/d;->a(I)V
 
     goto :goto_2
 
     .line 19
     :cond_2
+    invoke-interface {p1, v1, v0}, Lb/w/a/d;->a(ILjava/lang/String;)V
+
+    .line 20
+    :goto_2
+    iget-object p2, p2, Lcom/fuib/android/spot/data/db/entities/LocalAuthInfo;->securityCorrelationId:Ljava/lang/String;
+
+    const/16 v0, 0x9
+
+    if-nez p2, :cond_3
+
+    .line 21
+    invoke-interface {p1, v0}, Lb/w/a/d;->a(I)V
+
+    goto :goto_3
+
+    .line 22
+    :cond_3
     invoke-interface {p1, v0, p2}, Lb/w/a/d;->a(ILjava/lang/String;)V
 
-    :goto_2
+    :goto_3
     return-void
 .end method
 
@@ -158,7 +175,7 @@
 .method public createQuery()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "INSERT OR REPLACE INTO `auth_info`(`id`,`phone`,`key`,`isTouch`,`isPin`,`isFirstRun`,`isAccountHasPin`,`resetPwCorrelationId`) VALUES (?,?,?,?,?,?,?,?)"
+    const-string v0, "INSERT OR REPLACE INTO `auth_info`(`id`,`phone`,`key`,`isTouch`,`isPin`,`isFirstRun`,`isAccountHasPin`,`resetPwCorrelationId`,`securityCorrelationId`) VALUES (?,?,?,?,?,?,?,?,?)"
 
     return-object v0
 .end method

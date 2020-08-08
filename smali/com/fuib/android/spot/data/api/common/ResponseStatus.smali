@@ -14,8 +14,14 @@
 
 .field public static final MAINTENANCE:I = 0x1f7
 
+.field public static final PASS_RECOVERY_LIMIT_EXCEED:I = 0x6a8
+
+.field public static final PASS_RECOVERY_NO_ACTIVE_CARDS:I = 0x6a4
+
 .field public static final TIMEOUT:I = -0x64
 
 .field public static final UNAUTHORIZED:I = 0x191
 
-.field public static final USER_BLOCKED:I = 0x151f
+.field public static final USER_BLOCKED_BY_BANK:I = 0x6a6
+
+.field public static final USER_BLOCKED_BY_CLIENT:I = 0x6a7

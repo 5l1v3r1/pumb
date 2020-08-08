@@ -3,12 +3,12 @@
 .source "AsyncTimeout.java"
 
 # interfaces
-.implements Lm/r;
+.implements Lm/s;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lm/a;->a(Lm/r;)Lm/r;
+    value = Lm/a;->a(Lm/s;)Lm/s;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,19 +18,19 @@
 
 
 # instance fields
-.field public final synthetic c:Lm/r;
+.field public final synthetic c:Lm/s;
 
 .field public final synthetic d:Lm/a;
 
 
 # direct methods
-.method public constructor <init>(Lm/a;Lm/r;)V
+.method public constructor <init>(Lm/a;Lm/s;)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Lm/a$a;->d:Lm/a;
 
-    iput-object p2, p0, Lm/a$a;->c:Lm/r;
+    iput-object p2, p0, Lm/a$a;->c:Lm/s;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +49,7 @@
 
     move-wide v4, p2
 
-    invoke-static/range {v0 .. v5}, Lm/u;->a(JJJ)V
+    invoke-static/range {v0 .. v5}, Lm/v;->a(JJJ)V
 
     :goto_0
     const-wide/16 v0, 0x0
@@ -59,7 +59,7 @@
     if-lez v2, :cond_2
 
     .line 2
-    iget-object v2, p1, Lm/c;->c:Lm/o;
+    iget-object v2, p1, Lm/c;->c:Lm/p;
 
     :goto_1
     const-wide/32 v3, 0x10000
@@ -69,9 +69,9 @@
     if-gez v5, :cond_1
 
     .line 3
-    iget v3, v2, Lm/o;->c:I
+    iget v3, v2, Lm/p;->c:I
 
-    iget v4, v2, Lm/o;->b:I
+    iget v4, v2, Lm/p;->b:I
 
     sub-int/2addr v3, v4
 
@@ -89,7 +89,7 @@
 
     .line 4
     :cond_0
-    iget-object v2, v2, Lm/o;->f:Lm/o;
+    iget-object v2, v2, Lm/p;->f:Lm/p;
 
     goto :goto_1
 
@@ -104,9 +104,9 @@
 
     .line 6
     :try_start_0
-    iget-object v3, p0, Lm/a$a;->c:Lm/r;
+    iget-object v3, p0, Lm/a$a;->c:Lm/s;
 
-    invoke-interface {v3, p1, v0, v1}, Lm/r;->b(Lm/c;J)V
+    invoke-interface {v3, p1, v0, v1}, Lm/s;->b(Lm/c;J)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -164,9 +164,9 @@
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Lm/a$a;->c:Lm/r;
+    iget-object v0, p0, Lm/a$a;->c:Lm/s;
 
-    invoke-interface {v0}, Lm/r;->close()V
+    invoke-interface {v0}, Lm/s;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -221,9 +221,9 @@
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Lm/a$a;->c:Lm/r;
+    iget-object v0, p0, Lm/a$a;->c:Lm/s;
 
-    invoke-interface {v0}, Lm/r;->flush()V
+    invoke-interface {v0}, Lm/s;->flush()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -268,7 +268,7 @@
     throw v0
 .end method
 
-.method public i()Lm/t;
+.method public i()Lm/u;
     .locals 1
 
     .line 1
@@ -289,7 +289,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lm/a$a;->c:Lm/r;
+    iget-object v1, p0, Lm/a$a;->c:Lm/s;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

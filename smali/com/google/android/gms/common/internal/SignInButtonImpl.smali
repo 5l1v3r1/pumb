@@ -110,18 +110,18 @@
     invoke-virtual {p0, v0}, Landroid/widget/Button;->setMinWidth(I)V
 
     .line 6
-    sget v0, Le/h/a/a/c/b;->common_google_signin_btn_icon_dark:I
+    sget v0, Le/h/a/b/c/b;->common_google_signin_btn_icon_dark:I
 
-    sget v1, Le/h/a/a/c/b;->common_google_signin_btn_icon_light:I
+    sget v1, Le/h/a/b/c/b;->common_google_signin_btn_icon_light:I
 
     .line 7
     invoke-static {p3, v0, v1, v1}, Lcom/google/android/gms/common/internal/SignInButtonImpl;->a(IIII)I
 
     move-result v0
 
-    sget v1, Le/h/a/a/c/b;->common_google_signin_btn_text_dark:I
+    sget v1, Le/h/a/b/c/b;->common_google_signin_btn_text_dark:I
 
-    sget v2, Le/h/a/a/c/b;->common_google_signin_btn_text_light:I
+    sget v2, Le/h/a/b/c/b;->common_google_signin_btn_text_light:I
 
     .line 8
     invoke-static {p3, v1, v2, v2}, Lcom/google/android/gms/common/internal/SignInButtonImpl;->a(IIII)I
@@ -178,7 +178,7 @@
     move-result-object v0
 
     .line 11
-    sget v1, Le/h/a/a/c/a;->common_google_signin_btn_tint:I
+    sget v1, Le/h/a/b/c/a;->common_google_signin_btn_tint:I
 
     .line 12
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
@@ -197,9 +197,9 @@
     invoke-virtual {p0, v0}, Landroid/widget/Button;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 16
-    sget v0, Le/h/a/a/c/a;->common_google_signin_btn_text_dark:I
+    sget v0, Le/h/a/b/c/a;->common_google_signin_btn_text_dark:I
 
-    sget v1, Le/h/a/a/c/a;->common_google_signin_btn_text_light:I
+    sget v1, Le/h/a/b/c/a;->common_google_signin_btn_text_light:I
 
     .line 17
     invoke-static {p3, v0, v1, v1}, Lcom/google/android/gms/common/internal/SignInButtonImpl;->a(IIII)I
@@ -211,7 +211,7 @@
 
     move-result-object p3
 
-    invoke-static {p3}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3}, Le/h/a/b/d/l/u;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p3, Landroid/content/res/ColorStateList;
 
@@ -252,7 +252,7 @@
 
     .line 21
     :cond_3
-    sget p2, Le/h/a/a/c/c;->common_signin_button_text_long:I
+    sget p2, Le/h/a/b/c/c;->common_signin_button_text_long:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -264,7 +264,7 @@
 
     .line 22
     :cond_4
-    sget p2, Le/h/a/a/c/c;->common_signin_button_text:I
+    sget p2, Le/h/a/b/c/c;->common_signin_button_text:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -281,7 +281,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Le/h/a/a/d/q/i;->b(Landroid/content/Context;)Z
+    invoke-static {p1}, Le/h/a/b/d/q/i;->b(Landroid/content/Context;)Z
 
     move-result p1
 

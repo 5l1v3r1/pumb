@@ -12,13 +12,13 @@
     move-result v0
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->x()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->A()Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->x()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->A()Ljava/lang/String;
 
     move-result-object p1
 

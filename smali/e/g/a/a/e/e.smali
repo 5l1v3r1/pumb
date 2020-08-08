@@ -149,7 +149,7 @@
     move-result-object p0
 
     .line 8
-    invoke-interface {v1, p0}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {v1, p0}, Ln/c/b;->a(Ljava/lang/String;)V
 
     :cond_1
     if-eqz v0, :cond_2

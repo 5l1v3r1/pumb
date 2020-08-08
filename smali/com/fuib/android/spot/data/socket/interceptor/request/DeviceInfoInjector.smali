@@ -105,13 +105,31 @@
     .line 4
     invoke-interface {p1}, Lcom/fuib/android/spot/data/api/common/NetRequest;->getCorezoidFunctional()Lcom/fuib/android/spot/data/vo/CorezoidBusinessObject;
 
+    move-result-object v0
+
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidBusinessObject;->INIT:Lcom/fuib/android/spot/data/vo/CorezoidBusinessObject;
+
+    if-eq v0, v1, :cond_0
+
+    .line 5
+    invoke-interface {p1}, Lcom/fuib/android/spot/data/api/common/NetRequest;->getCorezoidRequest()Lcom/fuib/android/spot/data/vo/CorezoidRequest;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/fuib/android/spot/data/vo/CorezoidRequest;->CHECK_CUSTOMER_INFO_STEP_PHONE:Lcom/fuib/android/spot/data/vo/CorezoidRequest;
+
+    if-eq v0, v1, :cond_0
+
+    .line 6
+    invoke-interface {p1}, Lcom/fuib/android/spot/data/api/common/NetRequest;->getCorezoidRequest()Lcom/fuib/android/spot/data/vo/CorezoidRequest;
+
     move-result-object p1
 
-    sget-object v0, Lcom/fuib/android/spot/data/vo/CorezoidBusinessObject;->INIT:Lcom/fuib/android/spot/data/vo/CorezoidBusinessObject;
+    sget-object v0, Lcom/fuib/android/spot/data/vo/CorezoidRequest;->CHECK_CUSTOMER_INFO_STEP_TEMP_PWD:Lcom/fuib/android/spot/data/vo/CorezoidRequest;
 
     if-ne p1, v0, :cond_1
 
-    .line 5
+    .line 7
     :cond_0
     iget-object p1, p0, Lcom/fuib/android/spot/data/socket/interceptor/request/DeviceInfoInjector;->gson:Le/h/c/f;
 
@@ -125,7 +143,7 @@
 
     move-result-object p1
 
-    .line 6
+    .line 8
     :try_start_0
     invoke-virtual {p2}, Le/h/c/l;->f()Le/h/c/n;
 
@@ -158,7 +176,7 @@
 
     const-string p2, "DeviceInfoInjector"
 
-    .line 7
+    .line 9
     invoke-static {p2}, Lo/a/a;->a(Ljava/lang/String;)Lo/a/a$c;
 
     move-result-object p2

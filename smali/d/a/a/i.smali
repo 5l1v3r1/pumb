@@ -39,3 +39,9 @@
 
     return v0
 .end method
+
+.method public cancel()V
+    .locals 0
+
+    return-void
+.end method

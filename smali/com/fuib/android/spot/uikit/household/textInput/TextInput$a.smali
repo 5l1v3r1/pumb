@@ -40,12 +40,12 @@
     .line 1
     iget-object p1, p0, Lcom/fuib/android/spot/uikit/household/textInput/TextInput$a;->c:Lcom/fuib/android/spot/uikit/household/textInput/TextInput;
 
-    invoke-static {p1}, Lcom/fuib/android/spot/uikit/household/textInput/TextInput;->c(Lcom/fuib/android/spot/uikit/household/textInput/TextInput;)V
+    invoke-static {p1}, Lcom/fuib/android/spot/uikit/household/textInput/TextInput;->d(Lcom/fuib/android/spot/uikit/household/textInput/TextInput;)V
 
     .line 2
     iget-object p1, p0, Lcom/fuib/android/spot/uikit/household/textInput/TextInput$a;->c:Lcom/fuib/android/spot/uikit/household/textInput/TextInput;
 
-    sget v0, Le/f/a/b/y/e;->text_input_value:I
+    sget v0, Le/f/a/b/z/e;->text_input_value:I
 
     invoke-virtual {p1, v0}, Lcom/fuib/android/spot/uikit/household/textInput/TextInput;->a(I)Landroid/view/View;
 

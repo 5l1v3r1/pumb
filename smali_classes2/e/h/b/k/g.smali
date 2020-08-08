@@ -1,8 +1,0 @@
-.class public interface abstract Le/h/b/k/g;
-.super Ljava/lang/Object;
-.source "com.google.firebase:firebase-common@@19.0.0"
-
-
-# virtual methods
-.method public abstract a()Ljava/lang/String;
-.end method

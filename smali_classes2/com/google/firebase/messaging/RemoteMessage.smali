@@ -1,6 +1,6 @@
 .class public final Lcom/google/firebase/messaging/RemoteMessage;
 .super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
-.source "com.google.firebase:firebase-messaging@@20.0.0"
+.source "com.google.firebase:firebase-messaging@@20.2.1"
 
 
 # static fields
@@ -35,9 +35,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Le/h/b/j/m;
+    new-instance v0, Le/h/b/n/w;
 
-    invoke-direct {v0}, Le/h/b/j/m;-><init>()V
+    invoke-direct {v0}, Le/h/b/n/w;-><init>()V
 
     sput-object v0, Lcom/google/firebase/messaging/RemoteMessage;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -58,6 +58,33 @@
 
 
 # virtual methods
+.method public final A()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->c:Landroid/os/Bundle;
+
+    const-string v1, "google.message_id"
+
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->c:Landroid/os/Bundle;
+
+    const-string v1, "message_id"
+
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    :cond_0
+    return-object v0
+.end method
+
 .method public final g()Ljava/util/Map;
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
@@ -184,7 +211,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;)I
+    invoke-static {p1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;)I
 
     move-result p2
 
@@ -195,37 +222,10 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v1, v0, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
+    invoke-static {p1, v1, v0, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
 
     .line 3
-    invoke-static {p1, p2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;I)V
 
     return-void
-.end method
-
-.method public final x()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->c:Landroid/os/Bundle;
-
-    const-string v1, "google.message_id"
-
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->c:Landroid/os/Bundle;
-
-    const-string v1, "message_id"
-
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    :cond_0
-    return-object v0
 .end method

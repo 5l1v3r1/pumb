@@ -7,7 +7,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lb/h/a<",
-            "Le/h/a/a/d/i/n/e2<",
+            "Le/h/a/b/d/i/n/e2<",
             "*>;",
             "Lcom/google/android/gms/common/ConnectionResult;",
             ">;"
@@ -23,7 +23,7 @@
         value = {
             "(",
             "Lb/h/a<",
-            "Le/h/a/a/d/i/n/e2<",
+            "Le/h/a/b/d/i/n/e2<",
             "*>;",
             "Lcom/google/android/gms/common/ConnectionResult;",
             ">;)V"
@@ -47,7 +47,7 @@
         value = {
             "()",
             "Lb/h/a<",
-            "Le/h/a/a/d/i/n/e2<",
+            "Le/h/a/b/d/i/n/e2<",
             "*>;",
             "Lcom/google/android/gms/common/ConnectionResult;",
             ">;"
@@ -60,21 +60,21 @@
     return-object v0
 .end method
 
-.method public a(Le/h/a/a/d/i/c;)Lcom/google/android/gms/common/ConnectionResult;
+.method public a(Le/h/a/b/d/i/c;)Lcom/google/android/gms/common/ConnectionResult;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Le/h/a/a/d/i/c<",
+            "Le/h/a/b/d/i/c<",
             "+",
-            "Le/h/a/a/d/i/a$d;",
+            "Le/h/a/b/d/i/a$d;",
             ">;)",
             "Lcom/google/android/gms/common/ConnectionResult;"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Le/h/a/a/d/i/c;->g()Le/h/a/a/d/i/n/e2;
+    invoke-virtual {p1}, Le/h/a/b/d/i/c;->g()Le/h/a/b/d/i/n/e2;
 
     move-result-object p1
 
@@ -99,7 +99,7 @@
     const-string v1, "The given API was not part of the availability request."
 
     .line 4
-    invoke-static {v0, v1}, Le/h/a/a/d/l/v;->a(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Le/h/a/b/d/l/u;->a(ZLjava/lang/Object;)V
 
     .line 5
     iget-object v0, p0, Lcom/google/android/gms/common/api/AvailabilityException;->c:Lb/h/a;
@@ -145,7 +145,7 @@
 
     move-result-object v3
 
-    check-cast v3, Le/h/a/a/d/i/n/e2;
+    check-cast v3, Le/h/a/b/d/i/n/e2;
 
     .line 3
     iget-object v4, p0, Lcom/google/android/gms/common/api/AvailabilityException;->c:Lb/h/a;
@@ -157,7 +157,7 @@
     check-cast v4, Lcom/google/android/gms/common/ConnectionResult;
 
     .line 4
-    invoke-virtual {v4}, Lcom/google/android/gms/common/ConnectionResult;->A()Z
+    invoke-virtual {v4}, Lcom/google/android/gms/common/ConnectionResult;->D()Z
 
     move-result v5
 
@@ -167,7 +167,7 @@
 
     .line 5
     :cond_0
-    invoke-virtual {v3}, Le/h/a/a/d/i/n/e2;->a()Ljava/lang/String;
+    invoke-virtual {v3}, Le/h/a/b/d/i/n/e2;->a()Ljava/lang/String;
 
     move-result-object v3
 

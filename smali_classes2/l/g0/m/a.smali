@@ -632,7 +632,7 @@
     move-result-object v0
 
     .line 21
-    invoke-virtual {v0}, Lm/f;->c()Lm/f;
+    invoke-virtual {v0}, Lm/f;->d()Lm/f;
 
     move-result-object v0
 
@@ -1418,11 +1418,11 @@
     int-to-long v5, v3
 
     .line 21
-    invoke-virtual {v0, v2, v5, v6}, Ll/g0/m/d;->a(IJ)Lm/r;
+    invoke-virtual {v0, v2, v5, v6}, Ll/g0/m/d;->a(IJ)Lm/s;
 
     move-result-object v0
 
-    invoke-static {v0}, Lm/l;->a(Lm/r;)Lm/d;
+    invoke-static {v0}, Lm/l;->a(Lm/s;)Lm/d;
 
     move-result-object v0
 
@@ -1430,7 +1430,7 @@
     invoke-interface {v0, v1}, Lm/d;->a(Lm/f;)Lm/d;
 
     .line 23
-    invoke-interface {v0}, Lm/r;->close()V
+    invoke-interface {v0}, Lm/s;->close()V
 
     .line 24
     monitor-enter p0

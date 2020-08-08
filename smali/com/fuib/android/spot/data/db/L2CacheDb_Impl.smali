@@ -20,6 +20,10 @@
 
 .field public volatile _householdDao:Lcom/fuib/android/spot/data/db/dao/HouseholdDao;
 
+.field public volatile _householdHistoryDao:Lcom/fuib/android/spot/data/db/dao/HouseholdHistoryDao;
+
+.field public volatile _householdReceiptEmailDao:Lcom/fuib/android/spot/data/db/dao/HouseholdReceiptEmailDao;
+
 .field public volatile _localDictionariesVersionsDao:Lcom/fuib/android/spot/data/db/dao/LocalDictionariesVersionsDao;
 
 .field public volatile _paymentTemplateDao:Lcom/fuib/android/spot/data/db/dao/PaymentTemplateDao;
@@ -370,20 +374,30 @@
     .line 25
     invoke-interface {v0, v5}, Lb/w/a/b;->b(Ljava/lang/String;)V
 
+    const-string v5, "DELETE FROM `hh_history_item`"
+
     .line 26
+    invoke-interface {v0, v5}, Lb/w/a/b;->b(Ljava/lang/String;)V
+
+    const-string v5, "DELETE FROM `hh_receipt_email`"
+
+    .line 27
+    invoke-interface {v0, v5}, Lb/w/a/b;->b(Ljava/lang/String;)V
+
+    .line 28
     invoke-super {p0}, Lb/u/f;->setTransactionSuccessful()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 27
+    .line 29
     invoke-super {p0}, Lb/u/f;->endTransaction()V
 
     if-nez v1, :cond_3
 
-    .line 28
+    .line 30
     invoke-interface {v0, v3}, Lb/w/a/b;->b(Ljava/lang/String;)V
 
-    .line 29
+    .line 31
     :cond_3
     invoke-interface {v0, v4}, Lb/w/a/b;->d(Ljava/lang/String;)Landroid/database/Cursor;
 
@@ -391,14 +405,14 @@
 
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 30
-    invoke-interface {v0}, Lb/w/a/b;->v()Z
+    .line 32
+    invoke-interface {v0}, Lb/w/a/b;->w()Z
 
     move-result v1
 
     if-nez v1, :cond_4
 
-    .line 31
+    .line 33
     invoke-interface {v0, v2}, Lb/w/a/b;->b(Ljava/lang/String;)V
 
     :cond_4
@@ -407,15 +421,15 @@
     :catchall_0
     move-exception v5
 
-    .line 32
+    .line 34
     invoke-super {p0}, Lb/u/f;->endTransaction()V
 
     if-nez v1, :cond_5
 
-    .line 33
+    .line 35
     invoke-interface {v0, v3}, Lb/w/a/b;->b(Ljava/lang/String;)V
 
-    .line 34
+    .line 36
     :cond_5
     invoke-interface {v0, v4}, Lb/w/a/b;->d(Ljava/lang/String;)Landroid/database/Cursor;
 
@@ -423,23 +437,23 @@
 
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 35
-    invoke-interface {v0}, Lb/w/a/b;->v()Z
+    .line 37
+    invoke-interface {v0}, Lb/w/a/b;->w()Z
 
     move-result v1
 
     if-nez v1, :cond_6
 
-    .line 36
+    .line 38
     invoke-interface {v0, v2}, Lb/w/a/b;->b(Ljava/lang/String;)V
 
-    .line 37
+    .line 39
     :cond_6
     throw v5
 .end method
 
 .method public createInvalidationTracker()Lb/u/d;
-    .locals 20
+    .locals 22
 
     .line 1
     new-instance v0, Lb/u/d;
@@ -482,7 +496,11 @@
 
     const-string v19, "user_notification"
 
-    filled-new-array/range {v1 .. v19}, [Ljava/lang/String;
+    const-string v20, "hh_history_item"
+
+    const-string v21, "hh_receipt_email"
+
+    filled-new-array/range {v1 .. v21}, [Ljava/lang/String;
 
     move-result-object v1
 
@@ -501,13 +519,13 @@
 
     new-instance v1, Lcom/fuib/android/spot/data/db/L2CacheDb_Impl$1;
 
-    const/16 v2, 0xf
+    const/16 v2, 0x11
 
     invoke-direct {v1, p0, v2}, Lcom/fuib/android/spot/data/db/L2CacheDb_Impl$1;-><init>(Lcom/fuib/android/spot/data/db/L2CacheDb_Impl;I)V
 
-    const-string v2, "6129edd3d23e3bc12cb6306686e07c7e"
+    const-string v2, "a21e53a273847b08ecebed3f92ba6cc8"
 
-    const-string v3, "f79026b36f7cafb2bee99eefabe485e3"
+    const-string v3, "450f508dda32f7a428c120263381de8e"
 
     invoke-direct {v0, p1, v1, v2, v3}, Lb/u/h;-><init>(Lb/u/a;Lb/u/h$a;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -770,6 +788,104 @@
     .line 6
     :cond_1
     iget-object v0, p0, Lcom/fuib/android/spot/data/db/L2CacheDb_Impl;->_fraudRulesDao:Lcom/fuib/android/spot/data/db/dao/FraudRulesDao;
+
+    monitor-exit p0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    .line 7
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method public householdHistoryDao()Lcom/fuib/android/spot/data/db/dao/HouseholdHistoryDao;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/fuib/android/spot/data/db/L2CacheDb_Impl;->_householdHistoryDao:Lcom/fuib/android/spot/data/db/dao/HouseholdHistoryDao;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lcom/fuib/android/spot/data/db/L2CacheDb_Impl;->_householdHistoryDao:Lcom/fuib/android/spot/data/db/dao/HouseholdHistoryDao;
+
+    return-object v0
+
+    .line 3
+    :cond_0
+    monitor-enter p0
+
+    .line 4
+    :try_start_0
+    iget-object v0, p0, Lcom/fuib/android/spot/data/db/L2CacheDb_Impl;->_householdHistoryDao:Lcom/fuib/android/spot/data/db/dao/HouseholdHistoryDao;
+
+    if-nez v0, :cond_1
+
+    .line 5
+    new-instance v0, Lcom/fuib/android/spot/data/db/dao/HouseholdHistoryDao_Impl;
+
+    invoke-direct {v0, p0}, Lcom/fuib/android/spot/data/db/dao/HouseholdHistoryDao_Impl;-><init>(Lb/u/f;)V
+
+    iput-object v0, p0, Lcom/fuib/android/spot/data/db/L2CacheDb_Impl;->_householdHistoryDao:Lcom/fuib/android/spot/data/db/dao/HouseholdHistoryDao;
+
+    .line 6
+    :cond_1
+    iget-object v0, p0, Lcom/fuib/android/spot/data/db/L2CacheDb_Impl;->_householdHistoryDao:Lcom/fuib/android/spot/data/db/dao/HouseholdHistoryDao;
+
+    monitor-exit p0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    .line 7
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method public householdReceiptEmailDao()Lcom/fuib/android/spot/data/db/dao/HouseholdReceiptEmailDao;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/fuib/android/spot/data/db/L2CacheDb_Impl;->_householdReceiptEmailDao:Lcom/fuib/android/spot/data/db/dao/HouseholdReceiptEmailDao;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lcom/fuib/android/spot/data/db/L2CacheDb_Impl;->_householdReceiptEmailDao:Lcom/fuib/android/spot/data/db/dao/HouseholdReceiptEmailDao;
+
+    return-object v0
+
+    .line 3
+    :cond_0
+    monitor-enter p0
+
+    .line 4
+    :try_start_0
+    iget-object v0, p0, Lcom/fuib/android/spot/data/db/L2CacheDb_Impl;->_householdReceiptEmailDao:Lcom/fuib/android/spot/data/db/dao/HouseholdReceiptEmailDao;
+
+    if-nez v0, :cond_1
+
+    .line 5
+    new-instance v0, Lcom/fuib/android/spot/data/db/dao/HouseholdReceiptEmailDao_Impl;
+
+    invoke-direct {v0, p0}, Lcom/fuib/android/spot/data/db/dao/HouseholdReceiptEmailDao_Impl;-><init>(Lb/u/f;)V
+
+    iput-object v0, p0, Lcom/fuib/android/spot/data/db/L2CacheDb_Impl;->_householdReceiptEmailDao:Lcom/fuib/android/spot/data/db/dao/HouseholdReceiptEmailDao;
+
+    .line 6
+    :cond_1
+    iget-object v0, p0, Lcom/fuib/android/spot/data/db/L2CacheDb_Impl;->_householdReceiptEmailDao:Lcom/fuib/android/spot/data/db/dao/HouseholdReceiptEmailDao;
 
     monitor-exit p0
 

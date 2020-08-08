@@ -222,7 +222,7 @@
 
     .line 5
     :goto_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     move-result p1
 

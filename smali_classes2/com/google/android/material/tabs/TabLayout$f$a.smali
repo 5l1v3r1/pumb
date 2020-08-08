@@ -67,7 +67,7 @@
     iget v2, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->d:I
 
     .line 3
-    invoke-static {v1, v2, p1}, Le/h/a/b/a/a;->a(IIF)I
+    invoke-static {v1, v2, p1}, Le/h/a/c/a/a;->a(IIF)I
 
     move-result v1
 
@@ -76,7 +76,7 @@
     iget v3, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->f:I
 
     .line 4
-    invoke-static {v2, v3, p1}, Le/h/a/b/a/a;->a(IIF)I
+    invoke-static {v2, v3, p1}, Le/h/a/c/a/a;->a(IIF)I
 
     move-result p1
 

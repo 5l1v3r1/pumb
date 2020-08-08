@@ -39,10 +39,10 @@
 
 
 # virtual methods
-.method public a(Ll/e;Ljava/io/IOException;)V
+.method public onFailure(Ll/e;Ljava/io/IOException;)V
     .locals 1
 
-    .line 13
+    .line 1
     iget-object p1, p0, Ll/g0/m/a$b;->b:Ll/g0/m/a;
 
     const/4 v0, 0x0
@@ -52,7 +52,7 @@
     return-void
 .end method
 
-.method public a(Ll/e;Ll/a0;)V
+.method public onResponse(Ll/e;Ll/a0;)V
     .locals 3
 
     .line 1

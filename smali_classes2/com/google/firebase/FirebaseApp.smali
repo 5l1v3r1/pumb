@@ -1,6 +1,6 @@
 .class public Lcom/google/firebase/FirebaseApp;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-common@@19.0.0"
+.source "com.google.firebase:firebase-common@@19.3.0"
 
 
 # annotations
@@ -48,7 +48,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Le/h/b/e/q<",
-            "Le/h/b/i/a;",
+            "Le/h/b/m/a;",
             ">;"
         }
     .end annotation
@@ -96,7 +96,7 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Le/h/b/c;)V
-    .locals 6
+    .locals 7
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -130,7 +130,7 @@
     invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
 
     .line 6
-    invoke-static {p1}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Le/h/a/b/d/l/u;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object v0, p1
 
@@ -139,12 +139,12 @@
     iput-object v0, p0, Lcom/google/firebase/FirebaseApp;->a:Landroid/content/Context;
 
     .line 7
-    invoke-static {p2}, Le/h/a/a/d/l/v;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2}, Le/h/a/b/d/l/u;->b(Ljava/lang/String;)Ljava/lang/String;
 
     iput-object p2, p0, Lcom/google/firebase/FirebaseApp;->b:Ljava/lang/String;
 
     .line 8
-    invoke-static {p3}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3}, Le/h/a/b/d/l/u;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object p2, p3
 
@@ -153,107 +153,144 @@
     iput-object p2, p0, Lcom/google/firebase/FirebaseApp;->c:Le/h/b/c;
 
     .line 9
-    invoke-static {p1}, Le/h/b/e/f;->a(Landroid/content/Context;)Le/h/b/e/f;
+    const-class p2, Lcom/google/firebase/components/ComponentDiscoveryService;
+
+    .line 10
+    invoke-static {p1, p2}, Le/h/b/e/f;->a(Landroid/content/Context;Ljava/lang/Class;)Le/h/b/e/f;
 
     move-result-object p2
 
+    .line 11
     invoke-virtual {p2}, Le/h/b/e/f;->a()Ljava/util/List;
 
     move-result-object p2
 
-    .line 10
-    new-instance v0, Le/h/b/e/l;
-
-    sget-object v2, Lcom/google/firebase/FirebaseApp;->j:Ljava/util/concurrent/Executor;
-
-    const/4 v3, 0x6
-
-    new-array v3, v3, [Le/h/b/e/d;
-
-    const-class v4, Landroid/content/Context;
-
-    new-array v5, v1, [Ljava/lang/Class;
-
-    .line 11
-    invoke-static {p1, v4, v5}, Le/h/b/e/d;->a(Ljava/lang/Object;Ljava/lang/Class;[Ljava/lang/Class;)Le/h/b/e/d;
-
-    move-result-object v4
-
-    aput-object v4, v3, v1
-
-    const-class v4, Lcom/google/firebase/FirebaseApp;
-
-    new-array v5, v1, [Ljava/lang/Class;
-
     .line 12
-    invoke-static {p0, v4, v5}, Le/h/b/e/d;->a(Ljava/lang/Object;Ljava/lang/Class;[Ljava/lang/Class;)Le/h/b/e/d;
+    invoke-static {}, Le/h/b/o/e;->a()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v0
 
-    const/4 v5, 0x1
+    .line 13
+    new-instance v2, Le/h/b/e/l;
 
-    aput-object v4, v3, v5
+    sget-object v3, Lcom/google/firebase/FirebaseApp;->j:Ljava/util/concurrent/Executor;
 
-    const-class v4, Le/h/b/c;
+    const/16 v4, 0x8
+
+    new-array v4, v4, [Le/h/b/e/d;
+
+    const-class v5, Landroid/content/Context;
+
+    new-array v6, v1, [Ljava/lang/Class;
+
+    .line 14
+    invoke-static {p1, v5, v6}, Le/h/b/e/d;->a(Ljava/lang/Object;Ljava/lang/Class;[Ljava/lang/Class;)Le/h/b/e/d;
+
+    move-result-object v5
+
+    aput-object v5, v4, v1
+
+    const-class v5, Lcom/google/firebase/FirebaseApp;
+
+    new-array v6, v1, [Ljava/lang/Class;
+
+    .line 15
+    invoke-static {p0, v5, v6}, Le/h/b/e/d;->a(Ljava/lang/Object;Ljava/lang/Class;[Ljava/lang/Class;)Le/h/b/e/d;
+
+    move-result-object v5
+
+    const/4 v6, 0x1
+
+    aput-object v5, v4, v6
+
+    const-class v5, Le/h/b/c;
 
     new-array v1, v1, [Ljava/lang/Class;
 
-    .line 13
-    invoke-static {p3, v4, v1}, Le/h/b/e/d;->a(Ljava/lang/Object;Ljava/lang/Class;[Ljava/lang/Class;)Le/h/b/e/d;
+    .line 16
+    invoke-static {p3, v5, v1}, Le/h/b/e/d;->a(Ljava/lang/Object;Ljava/lang/Class;[Ljava/lang/Class;)Le/h/b/e/d;
 
     move-result-object p3
 
     const/4 v1, 0x2
 
-    aput-object p3, v3, v1
+    aput-object p3, v4, v1
 
     const-string p3, "fire-android"
 
     const-string v1, ""
 
-    .line 14
-    invoke-static {p3, v1}, Le/h/b/k/f;->a(Ljava/lang/String;Ljava/lang/String;)Le/h/b/e/d;
+    .line 17
+    invoke-static {p3, v1}, Le/h/b/o/g;->a(Ljava/lang/String;Ljava/lang/String;)Le/h/b/e/d;
 
     move-result-object p3
 
     const/4 v1, 0x3
 
-    aput-object p3, v3, v1
+    aput-object p3, v4, v1
 
     const-string p3, "fire-core"
 
-    const-string v1, "19.0.0"
+    const-string v1, "19.3.0"
 
-    .line 15
-    invoke-static {p3, v1}, Le/h/b/k/f;->a(Ljava/lang/String;Ljava/lang/String;)Le/h/b/e/d;
+    .line 18
+    invoke-static {p3, v1}, Le/h/b/o/g;->a(Ljava/lang/String;Ljava/lang/String;)Le/h/b/e/d;
 
     move-result-object p3
 
     const/4 v1, 0x4
 
-    aput-object p3, v3, v1
+    aput-object p3, v4, v1
 
-    .line 16
-    invoke-static {}, Le/h/b/k/c;->b()Le/h/b/e/d;
+    if-eqz v0, :cond_0
+
+    const-string p3, "kotlin"
+
+    .line 19
+    invoke-static {p3, v0}, Le/h/b/o/g;->a(Ljava/lang/String;Ljava/lang/String;)Le/h/b/e/d;
 
     move-result-object p3
 
-    const/4 v1, 0x5
+    goto :goto_0
 
-    aput-object p3, v3, v1
+    :cond_0
+    const/4 p3, 0x0
 
-    invoke-direct {v0, v2, p2, v3}, Le/h/b/e/l;-><init>(Ljava/util/concurrent/Executor;Ljava/lang/Iterable;[Le/h/b/e/d;)V
+    :goto_0
+    const/4 v0, 0x5
 
-    iput-object v0, p0, Lcom/google/firebase/FirebaseApp;->d:Le/h/b/e/l;
+    aput-object p3, v4, v0
 
-    .line 17
+    const/4 p3, 0x6
+
+    .line 20
+    invoke-static {}, Le/h/b/o/c;->b()Le/h/b/e/d;
+
+    move-result-object v0
+
+    aput-object v0, v4, p3
+
+    const/4 p3, 0x7
+
+    .line 21
+    invoke-static {}, Le/h/b/i/b;->a()Le/h/b/e/d;
+
+    move-result-object v0
+
+    aput-object v0, v4, p3
+
+    invoke-direct {v2, v3, p2, v4}, Le/h/b/e/l;-><init>(Ljava/util/concurrent/Executor;Ljava/lang/Iterable;[Le/h/b/e/d;)V
+
+    iput-object v2, p0, Lcom/google/firebase/FirebaseApp;->d:Le/h/b/e/l;
+
+    .line 22
     new-instance p2, Le/h/b/e/q;
 
-    invoke-static {p0, p1}, Le/h/b/b;->a(Lcom/google/firebase/FirebaseApp;Landroid/content/Context;)Le/h/b/h/a;
+    invoke-static {p0, p1}, Le/h/b/b;->a(Lcom/google/firebase/FirebaseApp;Landroid/content/Context;)Le/h/b/k/a;
 
     move-result-object p1
 
-    invoke-direct {p2, p1}, Le/h/b/e/q;-><init>(Le/h/b/h/a;)V
+    invoke-direct {p2, p1}, Le/h/b/e/q;-><init>(Le/h/b/k/a;)V
 
     iput-object p2, p0, Lcom/google/firebase/FirebaseApp;->g:Le/h/b/e/q;
 
@@ -408,12 +445,12 @@
     move-result-object v2
 
     .line 18
-    invoke-static {v1, v2}, Le/h/a/a/d/l/v;->b(ZLjava/lang/Object;)V
+    invoke-static {v1, v2}, Le/h/a/b/d/l/u;->b(ZLjava/lang/Object;)V
 
     const-string v1, "Application context cannot be null."
 
     .line 19
-    invoke-static {p0, v1}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0, v1}, Le/h/a/b/d/l/u;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 20
     new-instance v1, Lcom/google/firebase/FirebaseApp;
@@ -447,11 +484,11 @@
     throw p0
 .end method
 
-.method public static synthetic a(Lcom/google/firebase/FirebaseApp;Landroid/content/Context;)Le/h/b/i/a;
+.method public static synthetic a(Lcom/google/firebase/FirebaseApp;Landroid/content/Context;)Le/h/b/m/a;
     .locals 3
 
     .line 27
-    new-instance v0, Le/h/b/i/a;
+    new-instance v0, Le/h/b/m/a;
 
     .line 28
     invoke-virtual {p0}, Lcom/google/firebase/FirebaseApp;->e()Ljava/lang/String;
@@ -460,16 +497,16 @@
 
     iget-object p0, p0, Lcom/google/firebase/FirebaseApp;->d:Le/h/b/e/l;
 
-    const-class v2, Le/h/b/f/c;
+    const-class v2, Le/h/b/h/c;
 
     .line 29
     invoke-virtual {p0, v2}, Le/h/b/e/a;->a(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object p0
 
-    check-cast p0, Le/h/b/f/c;
+    check-cast p0, Le/h/b/h/c;
 
-    invoke-direct {v0, p1, v1, p0}, Le/h/b/i/a;-><init>(Landroid/content/Context;Ljava/lang/String;Le/h/b/f/c;)V
+    invoke-direct {v0, p1, v1, p0}, Le/h/b/m/a;-><init>(Landroid/content/Context;Ljava/lang/String;Le/h/b/h/c;)V
 
     return-object v0
 .end method
@@ -552,7 +589,7 @@
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 5
-    invoke-static {}, Le/h/a/a/d/q/o;->a()Ljava/lang/String;
+    invoke-static {}, Le/h/a/b/d/q/o;->a()Ljava/lang/String;
 
     move-result-object v3
 
@@ -631,7 +668,7 @@
 
     const-string v1, "FirebaseApp was deleted"
 
-    invoke-static {v0, v1}, Le/h/a/a/d/l/v;->b(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Le/h/a/b/d/l/u;->b(ZLjava/lang/Object;)V
 
     return-void
 .end method
@@ -724,7 +761,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Le/h/a/a/d/q/c;->c([B)Ljava/lang/String;
+    invoke-static {v1}, Le/h/a/b/d/q/c;->c([B)Ljava/lang/String;
 
     move-result-object v1
 
@@ -739,7 +776,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Le/h/b/c;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Le/h/b/c;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -752,7 +789,7 @@
     move-result-object v1
 
     .line 3
-    invoke-static {v1}, Le/h/a/a/d/q/c;->c([B)Ljava/lang/String;
+    invoke-static {v1}, Le/h/a/b/d/q/c;->c([B)Ljava/lang/String;
 
     move-result-object v1
 
@@ -872,9 +909,9 @@
 
     move-result-object v0
 
-    check-cast v0, Le/h/b/i/a;
+    check-cast v0, Le/h/b/m/a;
 
-    invoke-virtual {v0}, Le/h/b/i/a;->a()Z
+    invoke-virtual {v0}, Le/h/b/m/a;->a()Z
 
     move-result v0
 
@@ -885,7 +922,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p0}, Le/h/a/a/d/l/t;->a(Ljava/lang/Object;)Le/h/a/a/d/l/t$a;
+    invoke-static {p0}, Le/h/a/b/d/l/s;->a(Ljava/lang/Object;)Le/h/a/b/d/l/s$a;
 
     move-result-object v0
 
@@ -893,15 +930,15 @@
 
     const-string v2, "name"
 
-    invoke-virtual {v0, v2, v1}, Le/h/a/a/d/l/t$a;->a(Ljava/lang/String;Ljava/lang/Object;)Le/h/a/a/d/l/t$a;
+    invoke-virtual {v0, v2, v1}, Le/h/a/b/d/l/s$a;->a(Ljava/lang/String;Ljava/lang/Object;)Le/h/a/b/d/l/s$a;
 
     iget-object v1, p0, Lcom/google/firebase/FirebaseApp;->c:Le/h/b/c;
 
     const-string v2, "options"
 
-    invoke-virtual {v0, v2, v1}, Le/h/a/a/d/l/t$a;->a(Ljava/lang/String;Ljava/lang/Object;)Le/h/a/a/d/l/t$a;
+    invoke-virtual {v0, v2, v1}, Le/h/a/b/d/l/s$a;->a(Ljava/lang/String;Ljava/lang/Object;)Le/h/a/b/d/l/s$a;
 
-    invoke-virtual {v0}, Le/h/a/a/d/l/t$a;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Le/h/a/b/d/l/s$a;->toString()Ljava/lang/String;
 
     move-result-object v0
 

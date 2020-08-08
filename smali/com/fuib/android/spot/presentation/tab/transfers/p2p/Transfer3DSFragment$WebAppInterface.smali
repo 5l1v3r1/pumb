@@ -107,7 +107,7 @@
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 2
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     sget-object v1, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment;->C0:Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment$a;
 
@@ -135,7 +135,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment$WebAppInterface;->a:Lb/p/o;

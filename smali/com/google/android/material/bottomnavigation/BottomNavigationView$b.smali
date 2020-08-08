@@ -3,7 +3,7 @@
 .source "BottomNavigationView.java"
 
 # interfaces
-.implements Le/h/a/b/r/j$c;
+.implements Le/h/a/c/r/j$c;
 
 
 # annotations
@@ -29,11 +29,11 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;Lb/k/o/d0;Le/h/a/b/r/j$d;)Lb/k/o/d0;
+.method public a(Landroid/view/View;Lb/k/o/d0;Le/h/a/c/r/j$d;)Lb/k/o/d0;
     .locals 2
 
     .line 1
-    iget v0, p3, Le/h/a/b/r/j$d;->d:I
+    iget v0, p3, Le/h/a/c/r/j$d;->d:I
 
     invoke-virtual {p2}, Lb/k/o/d0;->b()I
 
@@ -41,10 +41,10 @@
 
     add-int/2addr v0, v1
 
-    iput v0, p3, Le/h/a/b/r/j$d;->d:I
+    iput v0, p3, Le/h/a/c/r/j$d;->d:I
 
     .line 2
-    invoke-virtual {p3, p1}, Le/h/a/b/r/j$d;->a(Landroid/view/View;)V
+    invoke-virtual {p3, p1}, Le/h/a/c/r/j$d;->a(Landroid/view/View;)V
 
     return-object p2
 .end method

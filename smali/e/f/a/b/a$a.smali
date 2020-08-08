@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Le/f/a/b/a;->a(Landroid/app/Activity;Le/f/a/b/v/b/f/c;)Z
+    value = Le/f/a/b/a;->a(Landroid/app/Activity;Le/f/a/b/w/b/f/c;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

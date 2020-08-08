@@ -463,13 +463,13 @@
     :cond_0
     new-instance v1, Lm/j;
 
-    invoke-static {v0}, Lm/l;->a(Ljava/io/InputStream;)Lm/s;
+    invoke-static {v0}, Lm/l;->a(Ljava/io/InputStream;)Lm/t;
 
     move-result-object v0
 
-    invoke-direct {v1, v0}, Lm/j;-><init>(Lm/s;)V
+    invoke-direct {v1, v0}, Lm/j;-><init>(Lm/t;)V
 
-    invoke-static {v1}, Lm/l;->a(Lm/s;)Lm/e;
+    invoke-static {v1}, Lm/l;->a(Lm/t;)Lm/e;
 
     move-result-object v0
 

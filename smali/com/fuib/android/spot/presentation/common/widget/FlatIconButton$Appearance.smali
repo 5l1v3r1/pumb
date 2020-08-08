@@ -67,11 +67,11 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080223
+    const v3, 0x7f08022b
 
-    const v4, 0x7f0600ac
+    const v4, 0x7f0600af
 
-    const v5, 0x7f120104
+    const v5, 0x7f12012a
 
     const/4 v6, 0x1
 
@@ -88,9 +88,9 @@
 
     const/4 v10, 0x1
 
-    const v11, 0x7f08024a
+    const v11, 0x7f080257
 
-    const v12, 0x7f0600ac
+    const v12, 0x7f0600af
 
     const v13, 0x7f120017
 
@@ -109,11 +109,11 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f080222
+    const v4, 0x7f08022a
 
-    const v5, 0x7f06015d
+    const v5, 0x7f060165
 
-    const v6, 0x7f120105
+    const v6, 0x7f12012b
 
     const/4 v7, 0x0
 
@@ -130,9 +130,9 @@
 
     const/4 v10, 0x3
 
-    const v11, 0x7f080247
+    const v11, 0x7f080254
 
-    const v12, 0x7f06015d
+    const v12, 0x7f060165
 
     const v13, 0x7f120018
 
@@ -147,13 +147,13 @@
     .line 5
     new-instance v0, Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton$Appearance;
 
-    const v1, 0x7f06015d
+    const v1, 0x7f060165
 
     const/4 v2, 0x4
 
     const-string v3, "PIN_CREATED_MIN"
 
-    const v4, 0x7f080223
+    const v4, 0x7f08022b
 
     invoke-direct {v0, v3, v2, v4, v1}, Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton$Appearance;-><init>(Ljava/lang/String;III)V
 
@@ -166,7 +166,7 @@
 
     const-string v4, "TOUCH_CREATED_MIN"
 
-    const v5, 0x7f08024a
+    const v5, 0x7f080257
 
     invoke-direct {v0, v4, v3, v5, v1}, Lcom/fuib/android/spot/presentation/common/widget/FlatIconButton$Appearance;-><init>(Ljava/lang/String;III)V
 
@@ -179,11 +179,11 @@
 
     const/4 v8, 0x6
 
-    const v9, 0x7f080231
+    const v9, 0x7f08023a
 
-    const v10, 0x7f0600ac
+    const v10, 0x7f0600af
 
-    const v11, 0x7f120106
+    const v11, 0x7f12012c
 
     const/4 v12, 0x1
 
@@ -200,11 +200,11 @@
 
     const/4 v15, 0x7
 
-    const v16, 0x7f080247
+    const v16, 0x7f080254
 
-    const v17, 0x7f06015d
+    const v17, 0x7f060165
 
-    const v18, 0x7f120106
+    const v18, 0x7f12012c
 
     const/16 v19, 0x1
 

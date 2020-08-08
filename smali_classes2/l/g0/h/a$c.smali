@@ -3,7 +3,7 @@
 .source "Http1Codec.java"
 
 # interfaces
-.implements Lm/r;
+.implements Lm/s;
 
 
 # annotations
@@ -41,11 +41,11 @@
 
     iget-object v0, v0, Ll/g0/h/a;->d:Lm/d;
 
-    invoke-interface {v0}, Lm/r;->i()Lm/t;
+    invoke-interface {v0}, Lm/s;->i()Lm/u;
 
     move-result-object v0
 
-    invoke-direct {p1, v0}, Lm/i;-><init>(Lm/t;)V
+    invoke-direct {p1, v0}, Lm/i;-><init>(Lm/u;)V
 
     iput-object p1, p0, Ll/g0/h/a$c;->c:Lm/i;
 
@@ -92,7 +92,7 @@
 
     iget-object v0, v0, Ll/g0/h/a;->d:Lm/d;
 
-    invoke-interface {v0, p1, p2, p3}, Lm/r;->b(Lm/c;J)V
+    invoke-interface {v0, p1, p2, p3}, Lm/s;->b(Lm/c;J)V
 
     .line 5
     iget-object p1, p0, Ll/g0/h/a$c;->e:Ll/g0/h/a;
@@ -217,7 +217,7 @@
     throw v0
 .end method
 
-.method public i()Lm/t;
+.method public i()Lm/u;
     .locals 1
 
     .line 1

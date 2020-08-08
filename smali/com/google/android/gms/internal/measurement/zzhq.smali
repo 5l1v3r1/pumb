@@ -3,7 +3,7 @@
 
 
 # direct methods
-.method public constructor <init>(Le/h/a/a/h/h/n5;)V
+.method public constructor <init>(Le/h/a/b/h/h/n5;)V
     .locals 0
 
     const-string p1, "Message was missing required fields.  (Lite runtime could not determine which fields were missing)."

@@ -11,7 +11,7 @@
         0x3
     }
     d1 = {
-        "\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0018\u00002\u00020\u0001B7\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u00a2\u0006\u0002\u0010\u000eJ*\u0010\u000f\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00120\u00110\u00102\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00142\u0006\u0010\u0016\u001a\u00020\u0014J2\u0010\u0017\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00180\u00110\u00102\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0016\u001a\u00020\u00142\u0006\u0010\u0019\u001a\u00020\u00142\u0006\u0010\u001a\u001a\u00020\u0014J\u001a\u0010\u001b\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u001c0\u00110\u00102\u0006\u0010\u001d\u001a\u00020\u0014R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001e"
+        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0018\u00002\u00020\u0001B7\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u00a2\u0006\u0002\u0010\u000eJ*\u0010\u000f\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00120\u00110\u00102\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00142\u0006\u0010\u0016\u001a\u00020\u0014J2\u0010\u0017\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00180\u00110\u00102\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0016\u001a\u00020\u00142\u0006\u0010\u0019\u001a\u00020\u00142\u0006\u0010\u001a\u001a\u00020\u0014J\u001a\u0010\u001b\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u001c0\u00110\u00102\u0006\u0010\u001d\u001a\u00020\u0014J*\u0010\u001e\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u001f0\u00110\u00102\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010 \u001a\u00020\u00142\u0006\u0010\u0016\u001a\u00020\u0014R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006!"
     }
     d2 = {
         "Lcom/fuib/android/spot/data/api/user/PasswordsService;",
@@ -44,6 +44,9 @@
         "recoverPasswordStepPhone",
         "Lcom/fuib/android/spot/data/api/user/password/reset/response/CheckCustomerInfoPhoneResponseData;",
         "phone",
+        "recoverPasswordStepPin",
+        "Lcom/fuib/android/spot/data/api/user/password/reset/response/CheckCustomerInfoPinResponseData;",
+        "pin",
         "data_generalRelease"
     }
     k = 0x1
@@ -56,25 +59,25 @@
 
 
 # instance fields
-.field public final appTypeProvider:Le/f/a/b/s/f/g;
+.field public final appTypeProvider:Le/f/a/b/t/f/g;
 
 .field public final appVersionProvider:Lcom/fuib/android/spot/data/api/common/AppVersionProvider;
 
-.field public final settingsCache:Le/f/a/b/s/f/c1;
+.field public final settingsCache:Le/f/a/b/t/f/c1;
 
 
 # direct methods
-.method public constructor <init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/s/f/g;)V
+.method public constructor <init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;Lcom/fuib/android/spot/data/api/common/AppVersionProvider;Le/f/a/b/t/f/g;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/fuib/android/spot/data/api/common/AbstractService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/fuib/android/spot/data/api/common/AbstractService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;)V
 
-    iput-object p3, p0, Lcom/fuib/android/spot/data/api/user/PasswordsService;->settingsCache:Le/f/a/b/s/f/c1;
+    iput-object p3, p0, Lcom/fuib/android/spot/data/api/user/PasswordsService;->settingsCache:Le/f/a/b/t/f/c1;
 
     iput-object p5, p0, Lcom/fuib/android/spot/data/api/user/PasswordsService;->appVersionProvider:Lcom/fuib/android/spot/data/api/common/AppVersionProvider;
 
-    iput-object p6, p0, Lcom/fuib/android/spot/data/api/user/PasswordsService;->appTypeProvider:Le/f/a/b/s/f/g;
+    iput-object p6, p0, Lcom/fuib/android/spot/data/api/user/PasswordsService;->appTypeProvider:Le/f/a/b/t/f/g;
 
     return-void
 .end method
@@ -119,16 +122,16 @@
     move-result-object v5
 
     .line 3
-    iget-object v0, p0, Lcom/fuib/android/spot/data/api/user/PasswordsService;->appTypeProvider:Le/f/a/b/s/f/g;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/api/user/PasswordsService;->appTypeProvider:Le/f/a/b/t/f/g;
 
-    invoke-interface {v0}, Le/f/a/b/s/f/g;->a()Le/f/a/b/s/f/e;
+    invoke-interface {v0}, Le/f/a/b/t/f/g;->a()Le/f/a/b/t/f/e;
 
     move-result-object v6
 
     .line 4
-    iget-object v0, p0, Lcom/fuib/android/spot/data/api/user/PasswordsService;->settingsCache:Le/f/a/b/s/f/c1;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/api/user/PasswordsService;->settingsCache:Le/f/a/b/t/f/c1;
 
-    invoke-virtual {v0}, Le/f/a/b/s/f/i1;->a()Ljava/lang/Object;
+    invoke-virtual {v0}, Le/f/a/b/t/f/i1;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -165,7 +168,7 @@
     move-object v3, p3
 
     .line 5
-    invoke-direct/range {v0 .. v6}, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckTmpPasswordRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Le/f/a/b/s/f/e;)V
+    invoke-direct/range {v0 .. v6}, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckTmpPasswordRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Le/f/a/b/t/f/e;)V
 
     invoke-virtual {p0, v7}, Lcom/fuib/android/spot/data/api/common/AbstractService;->executeRequest(Lcom/fuib/android/spot/data/api/common/ApiRequest;)Landroidx/lifecycle/LiveData;
 
@@ -230,7 +233,7 @@
 .end method
 
 .method public final recoverPasswordStepPhone(Ljava/lang/String;)Landroidx/lifecycle/LiveData;
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -246,7 +249,13 @@
     .line 1
     new-instance v0, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckCustomerInfoPhoneRequest;
 
-    invoke-direct {v0, p1}, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckCustomerInfoPhoneRequest;-><init>(Ljava/lang/String;)V
+    iget-object v1, p0, Lcom/fuib/android/spot/data/api/user/PasswordsService;->appVersionProvider:Lcom/fuib/android/spot/data/api/common/AppVersionProvider;
+
+    invoke-interface {v1}, Lcom/fuib/android/spot/data/api/common/AppVersionProvider;->getVersion()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, p1, v1}, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckCustomerInfoPhoneRequest;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/data/api/common/AbstractService;->executeRequest(Lcom/fuib/android/spot/data/api/common/ApiRequest;)Landroidx/lifecycle/LiveData;
 
@@ -263,6 +272,48 @@
     const-string v0, "Transformations.switchMa\u2026ta::class.java)\n        }"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p1
+.end method
+
+.method public final recoverPasswordStepPin(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroidx/lifecycle/LiveData;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ")",
+            "Landroidx/lifecycle/LiveData<",
+            "Lcom/fuib/android/spot/data/api/common/ApiResponse<",
+            "Lcom/fuib/android/spot/data/api/user/password/reset/response/CheckCustomerInfoPinResponseData;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckCustomerInfoPinRequest;
+
+    invoke-direct {v0, p1, p3, p2}, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckCustomerInfoPinRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {p0, v0}, Lcom/fuib/android/spot/data/api/common/AbstractService;->executeRequest(Lcom/fuib/android/spot/data/api/common/ApiRequest;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    .line 2
+    new-instance p2, Lcom/fuib/android/spot/data/api/user/PasswordsService$recoverPasswordStepPin$1;
+
+    invoke-direct {p2, p0}, Lcom/fuib/android/spot/data/api/user/PasswordsService$recoverPasswordStepPin$1;-><init>(Lcom/fuib/android/spot/data/api/user/PasswordsService;)V
+
+    .line 3
+    invoke-static {p1, p2}, Lb/p/u;->b(Landroidx/lifecycle/LiveData;Lb/c/a/c/a;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    const-string p2, "Transformations.switchMa\u2026ta::class.java)\n        }"
+
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method

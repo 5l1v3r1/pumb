@@ -170,40 +170,40 @@
 
 .field public static final abc_vector_test:I = 0x7f0800cc
 
-.field public static final notification_action_background:I = 0x7f080286
+.field public static final notification_action_background:I = 0x7f080297
 
-.field public static final notification_bg:I = 0x7f080287
+.field public static final notification_bg:I = 0x7f080298
 
-.field public static final notification_bg_low:I = 0x7f080288
+.field public static final notification_bg_low:I = 0x7f080299
 
-.field public static final notification_bg_low_normal:I = 0x7f080289
+.field public static final notification_bg_low_normal:I = 0x7f08029a
 
-.field public static final notification_bg_low_pressed:I = 0x7f08028a
+.field public static final notification_bg_low_pressed:I = 0x7f08029b
 
-.field public static final notification_bg_normal:I = 0x7f08028b
+.field public static final notification_bg_normal:I = 0x7f08029c
 
-.field public static final notification_bg_normal_pressed:I = 0x7f08028c
+.field public static final notification_bg_normal_pressed:I = 0x7f08029d
 
-.field public static final notification_icon_background:I = 0x7f08028d
+.field public static final notification_icon_background:I = 0x7f08029e
 
-.field public static final notification_template_icon_bg:I = 0x7f08028e
+.field public static final notification_template_icon_bg:I = 0x7f08029f
 
-.field public static final notification_template_icon_low_bg:I = 0x7f08028f
+.field public static final notification_template_icon_low_bg:I = 0x7f0802a0
 
-.field public static final notification_tile_bg:I = 0x7f080290
+.field public static final notification_tile_bg:I = 0x7f0802a1
 
-.field public static final notify_panel_notification_icon_bg:I = 0x7f080291
+.field public static final notify_panel_notification_icon_bg:I = 0x7f0802a2
 
-.field public static final tooltip_frame_dark:I = 0x7f0802a8
+.field public static final tooltip_frame_dark:I = 0x7f0802b9
 
-.field public static final tooltip_frame_light:I = 0x7f0802a9
+.field public static final tooltip_frame_light:I = 0x7f0802ba
 
-.field public static final wocr_card_frame_rect_corner_top_left:I = 0x7f0802b3
+.field public static final wocr_card_frame_rect_corner_top_left:I = 0x7f0802c4
 
-.field public static final wocr_card_frame_rect_line_top:I = 0x7f0802b4
+.field public static final wocr_card_frame_rect_line_top:I = 0x7f0802c5
 
-.field public static final wocr_frame_rect_gradient:I = 0x7f0802b5
+.field public static final wocr_frame_rect_gradient:I = 0x7f0802c6
 
-.field public static final wocr_ic_flash:I = 0x7f0802b6
+.field public static final wocr_ic_flash:I = 0x7f0802c7
 
-.field public static final wocr_manual_input_button:I = 0x7f0802b7
+.field public static final wocr_manual_input_button:I = 0x7f0802c8

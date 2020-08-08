@@ -30,9 +30,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Le/h/a/a/d/t;
+    new-instance v0, Le/h/a/b/d/t;
 
-    invoke-direct {v0}, Le/h/a/a/d/t;-><init>()V
+    invoke-direct {v0}, Le/h/a/b/d/t;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/common/Feature;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -59,6 +59,26 @@
 
 
 # virtual methods
+.method public A()J
+    .locals 5
+
+    .line 1
+    iget-wide v0, p0, Lcom/google/android/gms/common/Feature;->e:J
+
+    const-wide/16 v2, -0x1
+
+    cmp-long v4, v0, v2
+
+    if-nez v4, :cond_0
+
+    iget v0, p0, Lcom/google/android/gms/common/Feature;->d:I
+
+    int-to-long v0, v0
+
+    :cond_0
+    return-wide v0
+.end method
+
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
 
@@ -109,11 +129,11 @@
 
     .line 5
     :cond_1
-    invoke-virtual {p0}, Lcom/google/android/gms/common/Feature;->x()J
+    invoke-virtual {p0}, Lcom/google/android/gms/common/Feature;->A()J
 
     move-result-wide v2
 
-    invoke-virtual {p1}, Lcom/google/android/gms/common/Feature;->x()J
+    invoke-virtual {p1}, Lcom/google/android/gms/common/Feature;->A()J
 
     move-result-wide v4
 
@@ -154,7 +174,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-virtual {p0}, Lcom/google/android/gms/common/Feature;->x()J
+    invoke-virtual {p0}, Lcom/google/android/gms/common/Feature;->A()J
 
     move-result-wide v1
 
@@ -166,7 +186,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Le/h/a/a/d/l/t;->a([Ljava/lang/Object;)I
+    invoke-static {v0}, Le/h/a/b/d/l/s;->a([Ljava/lang/Object;)I
 
     move-result v0
 
@@ -177,7 +197,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p0}, Le/h/a/a/d/l/t;->a(Ljava/lang/Object;)Le/h/a/a/d/l/t$a;
+    invoke-static {p0}, Le/h/a/b/d/l/s;->a(Ljava/lang/Object;)Le/h/a/b/d/l/s$a;
 
     move-result-object v0
 
@@ -188,10 +208,10 @@
 
     const-string v2, "name"
 
-    invoke-virtual {v0, v2, v1}, Le/h/a/a/d/l/t$a;->a(Ljava/lang/String;Ljava/lang/Object;)Le/h/a/a/d/l/t$a;
+    invoke-virtual {v0, v2, v1}, Le/h/a/b/d/l/s$a;->a(Ljava/lang/String;Ljava/lang/Object;)Le/h/a/b/d/l/s$a;
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/common/Feature;->x()J
+    invoke-virtual {p0}, Lcom/google/android/gms/common/Feature;->A()J
 
     move-result-wide v1
 
@@ -201,10 +221,10 @@
 
     const-string v2, "version"
 
-    invoke-virtual {v0, v2, v1}, Le/h/a/a/d/l/t$a;->a(Ljava/lang/String;Ljava/lang/Object;)Le/h/a/a/d/l/t$a;
+    invoke-virtual {v0, v2, v1}, Le/h/a/b/d/l/s$a;->a(Ljava/lang/String;Ljava/lang/Object;)Le/h/a/b/d/l/s$a;
 
     .line 4
-    invoke-virtual {v0}, Le/h/a/a/d/l/t$a;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Le/h/a/b/d/l/s$a;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -215,7 +235,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;)I
+    invoke-static {p1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;)I
 
     move-result p2
 
@@ -229,7 +249,7 @@
     const/4 v2, 0x0
 
     .line 3
-    invoke-static {p1, v1, v0, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v0, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
     iget v0, p0, Lcom/google/android/gms/common/Feature;->d:I
@@ -237,40 +257,20 @@
     const/4 v1, 0x2
 
     .line 5
-    invoke-static {p1, v1, v0}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v0}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;II)V
 
     .line 6
-    invoke-virtual {p0}, Lcom/google/android/gms/common/Feature;->x()J
+    invoke-virtual {p0}, Lcom/google/android/gms/common/Feature;->A()J
 
     move-result-wide v0
 
     const/4 v2, 0x3
 
     .line 7
-    invoke-static {p1, v2, v0, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;IJ)V
+    invoke-static {p1, v2, v0, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;IJ)V
 
     .line 8
-    invoke-static {p1, p2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;I)V
 
     return-void
-.end method
-
-.method public x()J
-    .locals 5
-
-    .line 1
-    iget-wide v0, p0, Lcom/google/android/gms/common/Feature;->e:J
-
-    const-wide/16 v2, -0x1
-
-    cmp-long v4, v0, v2
-
-    if-nez v4, :cond_0
-
-    iget v0, p0, Lcom/google/android/gms/common/Feature;->d:I
-
-    int-to-long v0, v0
-
-    :cond_0
-    return-wide v0
 .end method

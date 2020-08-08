@@ -10,7 +10,7 @@
     const-string v0, "activity"
 
     .line 1
-    invoke-static {p0, v0}, Lf/d/h;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p0, v0}, Lf/d/i;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 2
     invoke-virtual {p0}, Landroid/app/Activity;->getApplication()Landroid/app/Application;
@@ -39,7 +39,7 @@
 
     const-string v2, "%s.activityInjector() returned null"
 
-    invoke-static {v1, v2, v0}, Lf/d/h;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1, v2, v0}, Lf/d/i;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
     invoke-interface {v1, p0}, Lf/c/b;->a(Ljava/lang/Object;)V
@@ -96,7 +96,7 @@
     const-string v0, "service"
 
     .line 12
-    invoke-static {p0, v0}, Lf/d/h;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p0, v0}, Lf/d/i;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 13
     invoke-virtual {p0}, Landroid/app/Service;->getApplication()Landroid/app/Application;
@@ -124,7 +124,7 @@
 
     const-string v2, "%s.serviceInjector() returned null"
 
-    invoke-static {v1, v2, v0}, Lf/d/h;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1, v2, v0}, Lf/d/i;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 17
     invoke-interface {v1, p0}, Lf/c/b;->a(Ljava/lang/Object;)V
@@ -181,12 +181,12 @@
     const-string v0, "broadcastReceiver"
 
     .line 22
-    invoke-static {p0, v0}, Lf/d/h;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p0, v0}, Lf/d/i;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "context"
 
     .line 23
-    invoke-static {p1, v0}, Lf/d/h;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Lf/d/i;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 24
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -218,7 +218,7 @@
     const-string v1, "%s.broadcastReceiverInjector() returned null"
 
     .line 29
-    invoke-static {v0, v1, p1}, Lf/d/h;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v1, p1}, Lf/d/i;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 30
     invoke-interface {v0, p0}, Lf/c/b;->a(Ljava/lang/Object;)V
@@ -275,7 +275,7 @@
     const-string v0, "contentProvider"
 
     .line 35
-    invoke-static {p0, v0}, Lf/d/h;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p0, v0}, Lf/d/i;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 36
     invoke-virtual {p0}, Landroid/content/ContentProvider;->getContext()Landroid/content/Context;
@@ -311,7 +311,7 @@
     const-string v2, "%s.contentProviderInjector() returned null"
 
     .line 41
-    invoke-static {v1, v2, v0}, Lf/d/h;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1, v2, v0}, Lf/d/i;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 42
     invoke-interface {v1, p0}, Lf/c/b;->a(Ljava/lang/Object;)V

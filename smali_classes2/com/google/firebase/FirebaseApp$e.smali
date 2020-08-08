@@ -1,6 +1,6 @@
 .class public Lcom/google/firebase/FirebaseApp$e;
 .super Landroid/content/BroadcastReceiver;
-.source "com.google.firebase:firebase-common@@19.0.0"
+.source "com.google.firebase:firebase-common@@19.3.0"
 
 
 # annotations

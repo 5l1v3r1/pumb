@@ -107,7 +107,7 @@
 
     const-string v1, "CPLC data not valid"
 
-    invoke-interface {p0, v1}, Ln/c/b;->a(Ljava/lang/String;)V
+    invoke-interface {p0, v1}, Ln/c/b;->b(Ljava/lang/String;)V
 
     :cond_2
     :goto_1

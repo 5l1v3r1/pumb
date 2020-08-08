@@ -1,1077 +1,706 @@
 .class public Le/a/a/v/c;
-.super Le/a/a/v/a;
-.source "LottieValueAnimator.java"
-
-# interfaces
-.implements Landroid/view/Choreographer$FrameCallback;
+.super Ljava/lang/Object;
+.source "NetworkFetcher.java"
 
 
 # instance fields
-.field public e:F
+.field public final a:Landroid/content/Context;
 
-.field public f:Z
+.field public final b:Ljava/lang/String;
 
-.field public g:J
-
-.field public h:F
-
-.field public i:I
-
-.field public j:F
-
-.field public k:F
-
-.field public l:Le/a/a/d;
-
-.field public m:Z
+.field public final c:Le/a/a/v/b;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 3
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Le/a/a/v/a;-><init>()V
-
-    const/high16 v0, 0x3f800000    # 1.0f
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput v0, p0, Le/a/a/v/c;->e:F
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
-    const/4 v0, 0x0
+    move-result-object p1
+
+    iput-object p1, p0, Le/a/a/v/c;->a:Landroid/content/Context;
 
     .line 3
-    iput-boolean v0, p0, Le/a/a/v/c;->f:Z
+    iput-object p2, p0, Le/a/a/v/c;->b:Ljava/lang/String;
 
-    const-wide/16 v1, 0x0
+    if-nez p3, :cond_0
+
+    const/4 p1, 0x0
 
     .line 4
-    iput-wide v1, p0, Le/a/a/v/c;->g:J
+    iput-object p1, p0, Le/a/a/v/c;->c:Le/a/a/v/b;
 
-    const/4 v1, 0x0
+    goto :goto_0
 
     .line 5
-    iput v1, p0, Le/a/a/v/c;->h:F
+    :cond_0
+    new-instance p1, Le/a/a/v/b;
 
-    .line 6
-    iput v0, p0, Le/a/a/v/c;->i:I
+    iget-object p2, p0, Le/a/a/v/c;->a:Landroid/content/Context;
 
-    const/high16 v1, -0x31000000
+    invoke-direct {p1, p2}, Le/a/a/v/b;-><init>(Landroid/content/Context;)V
 
-    .line 7
-    iput v1, p0, Le/a/a/v/c;->j:F
+    iput-object p1, p0, Le/a/a/v/c;->c:Le/a/a/v/b;
 
-    const/high16 v1, 0x4f000000
-
-    .line 8
-    iput v1, p0, Le/a/a/v/c;->k:F
-
-    .line 9
-    iput-boolean v0, p0, Le/a/a/v/c;->m:Z
-
+    :goto_0
     return-void
+.end method
+
+.method public static a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Le/a/a/l;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ")",
+            "Le/a/a/l<",
+            "Le/a/a/d;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Le/a/a/v/c;
+
+    invoke-direct {v0, p0, p1, p2}, Le/a/a/v/c;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Le/a/a/v/c;->d()Le/a/a/l;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public a(F)V
-    .locals 0
-
-    .line 19
-    iput p1, p0, Le/a/a/v/c;->e:F
-
-    return-void
-.end method
-
-.method public a(I)V
-    .locals 2
-
-    .line 10
-    iget v0, p0, Le/a/a/v/c;->h:F
-
-    int-to-float p1, p1
-
-    cmpl-float v0, v0, p1
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 11
-    :cond_0
-    invoke-virtual {p0}, Le/a/a/v/c;->j()F
-
-    move-result v0
-
-    invoke-virtual {p0}, Le/a/a/v/c;->i()F
-
-    move-result v1
-
-    invoke-static {p1, v0, v1}, Le/a/a/v/e;->a(FFF)F
-
-    move-result p1
-
-    iput p1, p0, Le/a/a/v/c;->h:F
-
-    .line 12
-    invoke-static {}, Ljava/lang/System;->nanoTime()J
-
-    move-result-wide v0
-
-    iput-wide v0, p0, Le/a/a/v/c;->g:J
-
-    .line 13
-    invoke-virtual {p0}, Le/a/a/v/a;->c()V
-
-    return-void
-.end method
-
-.method public a(II)V
-    .locals 3
-
-    .line 14
-    iget-object v0, p0, Le/a/a/v/c;->l:Le/a/a/d;
-
-    if-nez v0, :cond_0
-
-    const v0, -0x800001
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {v0}, Le/a/a/d;->k()F
-
-    move-result v0
-
-    .line 15
-    :goto_0
-    iget-object v1, p0, Le/a/a/v/c;->l:Le/a/a/d;
-
-    if-nez v1, :cond_1
-
-    const v1, 0x7f7fffff    # Float.MAX_VALUE
-
-    goto :goto_1
-
-    :cond_1
-    invoke-virtual {v1}, Le/a/a/d;->e()F
-
-    move-result v1
-
-    :goto_1
-    int-to-float p1, p1
-
-    .line 16
-    invoke-static {p1, v0, v1}, Le/a/a/v/e;->a(FFF)F
-
-    move-result v2
-
-    iput v2, p0, Le/a/a/v/c;->j:F
-
-    int-to-float p2, p2
-
-    .line 17
-    invoke-static {p2, v0, v1}, Le/a/a/v/e;->a(FFF)F
-
-    move-result v0
-
-    iput v0, p0, Le/a/a/v/c;->k:F
-
-    .line 18
-    iget v0, p0, Le/a/a/v/c;->h:F
-
-    invoke-static {v0, p1, p2}, Le/a/a/v/e;->a(FFF)F
-
-    move-result p1
-
-    float-to-int p1, p1
-
-    invoke-virtual {p0, p1}, Le/a/a/v/c;->a(I)V
-
-    return-void
-.end method
-
-.method public a(Le/a/a/d;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Le/a/a/v/c;->l:Le/a/a/d;
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 2
-    :goto_0
-    iput-object p1, p0, Le/a/a/v/c;->l:Le/a/a/d;
-
-    if-eqz v0, :cond_1
-
-    .line 3
-    iget v0, p0, Le/a/a/v/c;->j:F
-
-    .line 4
-    invoke-virtual {p1}, Le/a/a/d;->k()F
-
-    move-result v1
-
-    invoke-static {v0, v1}, Ljava/lang/Math;->max(FF)F
-
-    move-result v0
-
-    float-to-int v0, v0
-
-    iget v1, p0, Le/a/a/v/c;->k:F
-
-    .line 5
-    invoke-virtual {p1}, Le/a/a/d;->e()F
-
-    move-result p1
-
-    invoke-static {v1, p1}, Ljava/lang/Math;->min(FF)F
-
-    move-result p1
-
-    float-to-int p1, p1
-
-    .line 6
-    invoke-virtual {p0, v0, p1}, Le/a/a/v/c;->a(II)V
-
-    goto :goto_1
-
-    .line 7
-    :cond_1
-    invoke-virtual {p1}, Le/a/a/d;->k()F
-
-    move-result v0
-
-    float-to-int v0, v0
-
-    invoke-virtual {p1}, Le/a/a/d;->e()F
-
-    move-result p1
-
-    float-to-int p1, p1
-
-    invoke-virtual {p0, v0, p1}, Le/a/a/v/c;->a(II)V
-
-    .line 8
-    :goto_1
-    iget p1, p0, Le/a/a/v/c;->h:F
-
-    float-to-int p1, p1
-
-    invoke-virtual {p0, p1}, Le/a/a/v/c;->a(I)V
-
-    .line 9
-    invoke-static {}, Ljava/lang/System;->nanoTime()J
-
-    move-result-wide v0
-
-    iput-wide v0, p0, Le/a/a/v/c;->g:J
-
-    return-void
-.end method
-
-.method public b(I)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Le/a/a/v/c;->j:F
-
-    float-to-int v0, v0
-
-    invoke-virtual {p0, v0, p1}, Le/a/a/v/c;->a(II)V
-
-    return-void
-.end method
-
-.method public c(I)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Le/a/a/v/c;->k:F
-
-    float-to-int v0, v0
-
-    invoke-virtual {p0, p1, v0}, Le/a/a/v/c;->a(II)V
-
-    return-void
-.end method
-
-.method public c(Z)V
-    .locals 1
-
-    .line 2
-    invoke-static {}, Landroid/view/Choreographer;->getInstance()Landroid/view/Choreographer;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Landroid/view/Choreographer;->removeFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x0
-
-    .line 3
-    iput-boolean p1, p0, Le/a/a/v/c;->m:Z
-
-    :cond_0
-    return-void
-.end method
-
-.method public cancel()V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Le/a/a/v/a;->a()V
-
-    .line 2
-    invoke-virtual {p0}, Le/a/a/v/c;->o()V
-
-    return-void
-.end method
-
-.method public d()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 1
-    iput-object v0, p0, Le/a/a/v/c;->l:Le/a/a/d;
-
-    const/high16 v0, -0x31000000
-
-    .line 2
-    iput v0, p0, Le/a/a/v/c;->j:F
-
-    const/high16 v0, 0x4f000000
-
-    .line 3
-    iput v0, p0, Le/a/a/v/c;->k:F
-
-    return-void
-.end method
-
-.method public doFrame(J)V
+.method public final a()Le/a/a/d;
     .locals 4
 
-    .line 1
-    invoke-virtual {p0}, Le/a/a/v/c;->n()V
-
     .line 2
-    iget-object p1, p0, Le/a/a/v/c;->l:Le/a/a/d;
+    iget-object v0, p0, Le/a/a/v/c;->c:Le/a/a/v/b;
 
-    if-eqz p1, :cond_6
-
-    invoke-virtual {p0}, Le/a/a/v/c;->isRunning()Z
-
-    move-result p1
-
-    if-nez p1, :cond_0
-
-    goto/16 :goto_3
-
-    .line 3
-    :cond_0
-    invoke-static {}, Ljava/lang/System;->nanoTime()J
-
-    move-result-wide p1
-
-    .line 4
-    iget-wide v0, p0, Le/a/a/v/c;->g:J
-
-    sub-long v0, p1, v0
-
-    .line 5
-    invoke-virtual {p0}, Le/a/a/v/c;->h()F
-
-    move-result v2
-
-    long-to-float v0, v0
-
-    div-float/2addr v0, v2
-
-    .line 6
-    iget v1, p0, Le/a/a/v/c;->h:F
-
-    invoke-virtual {p0}, Le/a/a/v/c;->l()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    neg-float v0, v0
-
-    :cond_1
-    add-float/2addr v1, v0
-
-    iput v1, p0, Le/a/a/v/c;->h:F
-
-    .line 7
-    iget v0, p0, Le/a/a/v/c;->h:F
-
-    invoke-virtual {p0}, Le/a/a/v/c;->j()F
-
-    move-result v1
-
-    invoke-virtual {p0}, Le/a/a/v/c;->i()F
-
-    move-result v2
-
-    invoke-static {v0, v1, v2}, Le/a/a/v/e;->b(FFF)Z
-
-    move-result v0
-
-    xor-int/lit8 v0, v0, 0x1
-
-    .line 8
-    iget v1, p0, Le/a/a/v/c;->h:F
-
-    invoke-virtual {p0}, Le/a/a/v/c;->j()F
-
-    move-result v2
-
-    invoke-virtual {p0}, Le/a/a/v/c;->i()F
-
-    move-result v3
-
-    invoke-static {v1, v2, v3}, Le/a/a/v/e;->a(FFF)F
-
-    move-result v1
-
-    iput v1, p0, Le/a/a/v/c;->h:F
-
-    .line 9
-    iput-wide p1, p0, Le/a/a/v/c;->g:J
-
-    .line 10
-    invoke-virtual {p0}, Le/a/a/v/a;->c()V
-
-    if-eqz v0, :cond_5
-
-    .line 11
-    invoke-virtual {p0}, Landroid/animation/ValueAnimator;->getRepeatCount()I
-
-    move-result v0
-
-    const/4 v1, -0x1
-
-    if-eq v0, v1, :cond_2
-
-    iget v0, p0, Le/a/a/v/c;->i:I
-
-    invoke-virtual {p0}, Landroid/animation/ValueAnimator;->getRepeatCount()I
-
-    move-result v1
-
-    if-lt v0, v1, :cond_2
-
-    .line 12
-    invoke-virtual {p0}, Le/a/a/v/c;->i()F
-
-    move-result p1
-
-    iput p1, p0, Le/a/a/v/c;->h:F
-
-    .line 13
-    invoke-virtual {p0}, Le/a/a/v/c;->o()V
-
-    .line 14
-    invoke-virtual {p0}, Le/a/a/v/c;->l()Z
-
-    move-result p1
-
-    invoke-virtual {p0, p1}, Le/a/a/v/a;->a(Z)V
-
-    goto :goto_2
-
-    .line 15
-    :cond_2
-    invoke-virtual {p0}, Le/a/a/v/a;->b()V
-
-    .line 16
-    iget v0, p0, Le/a/a/v/c;->i:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    iput v0, p0, Le/a/a/v/c;->i:I
-
-    .line 17
-    invoke-virtual {p0}, Landroid/animation/ValueAnimator;->getRepeatMode()I
-
-    move-result v0
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_3
-
-    .line 18
-    iget-boolean v0, p0, Le/a/a/v/c;->f:Z
-
-    xor-int/lit8 v0, v0, 0x1
-
-    iput-boolean v0, p0, Le/a/a/v/c;->f:Z
-
-    .line 19
-    invoke-virtual {p0}, Le/a/a/v/c;->p()V
-
-    goto :goto_1
-
-    .line 20
-    :cond_3
-    invoke-virtual {p0}, Le/a/a/v/c;->l()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    invoke-virtual {p0}, Le/a/a/v/c;->i()F
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_4
-    invoke-virtual {p0}, Le/a/a/v/c;->j()F
-
-    move-result v0
-
-    :goto_0
-    iput v0, p0, Le/a/a/v/c;->h:F
-
-    .line 21
-    :goto_1
-    iput-wide p1, p0, Le/a/a/v/c;->g:J
-
-    .line 22
-    :cond_5
-    :goto_2
-    invoke-virtual {p0}, Le/a/a/v/c;->u()V
-
-    :cond_6
-    :goto_3
-    return-void
-.end method
-
-.method public e()V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Le/a/a/v/c;->o()V
-
-    .line 2
-    invoke-virtual {p0}, Le/a/a/v/c;->l()Z
-
-    move-result v0
-
-    invoke-virtual {p0, v0}, Le/a/a/v/a;->a(Z)V
-
-    return-void
-.end method
-
-.method public f()F
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Le/a/a/v/c;->l:Le/a/a/d;
+    const/4 v1, 0x0
 
     if-nez v0, :cond_0
 
-    const/4 v0, 0x0
-
-    return v0
-
-    .line 2
-    :cond_0
-    iget v1, p0, Le/a/a/v/c;->h:F
-
-    invoke-virtual {v0}, Le/a/a/d;->k()F
-
-    move-result v0
-
-    sub-float/2addr v1, v0
-
-    iget-object v0, p0, Le/a/a/v/c;->l:Le/a/a/d;
-
-    invoke-virtual {v0}, Le/a/a/d;->e()F
-
-    move-result v0
-
-    iget-object v2, p0, Le/a/a/v/c;->l:Le/a/a/d;
-
-    invoke-virtual {v2}, Le/a/a/d;->k()F
-
-    move-result v2
-
-    sub-float/2addr v0, v2
-
-    div-float/2addr v1, v0
-
-    return v1
-.end method
-
-.method public g()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Le/a/a/v/c;->h:F
-
-    return v0
-.end method
-
-.method public getAnimatedFraction()F
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Le/a/a/v/c;->l:Le/a/a/d;
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x0
-
-    return v0
-
-    .line 2
-    :cond_0
-    invoke-virtual {p0}, Le/a/a/v/c;->l()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
+    return-object v1
 
     .line 3
-    invoke-virtual {p0}, Le/a/a/v/c;->i()F
+    :cond_0
+    iget-object v2, p0, Le/a/a/v/c;->b:Ljava/lang/String;
 
-    move-result v0
-
-    iget v1, p0, Le/a/a/v/c;->h:F
-
-    sub-float/2addr v0, v1
-
-    invoke-virtual {p0}, Le/a/a/v/c;->i()F
-
-    move-result v1
-
-    invoke-virtual {p0}, Le/a/a/v/c;->j()F
-
-    move-result v2
-
-    :goto_0
-    sub-float/2addr v1, v2
-
-    div-float/2addr v0, v1
-
-    return v0
-
-    .line 4
-    :cond_1
-    iget v0, p0, Le/a/a/v/c;->h:F
-
-    invoke-virtual {p0}, Le/a/a/v/c;->j()F
-
-    move-result v1
-
-    sub-float/2addr v0, v1
-
-    invoke-virtual {p0}, Le/a/a/v/c;->i()F
-
-    move-result v1
-
-    invoke-virtual {p0}, Le/a/a/v/c;->j()F
-
-    move-result v2
-
-    goto :goto_0
-.end method
-
-.method public getAnimatedValue()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Le/a/a/v/c;->f()F
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-virtual {v0, v2}, Le/a/a/v/b;->a(Ljava/lang/String;)Lb/k/n/d;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    if-nez v0, :cond_1
 
-.method public getDuration()J
-    .locals 2
+    return-object v1
 
-    .line 1
-    iget-object v0, p0, Le/a/a/v/c;->l:Le/a/a/d;
+    .line 4
+    :cond_1
+    iget-object v2, v0, Lb/k/n/d;->a:Ljava/lang/Object;
 
-    if-nez v0, :cond_0
+    check-cast v2, Le/a/a/v/a;
 
-    const-wide/16 v0, 0x0
+    .line 5
+    iget-object v0, v0, Lb/k/n/d;->b:Ljava/lang/Object;
+
+    check-cast v0, Ljava/io/InputStream;
+
+    .line 6
+    sget-object v3, Le/a/a/v/a;->ZIP:Le/a/a/v/a;
+
+    if-ne v2, v3, :cond_2
+
+    .line 7
+    new-instance v2, Ljava/util/zip/ZipInputStream;
+
+    invoke-direct {v2, v0}, Ljava/util/zip/ZipInputStream;-><init>(Ljava/io/InputStream;)V
+
+    iget-object v0, p0, Le/a/a/v/c;->b:Ljava/lang/String;
+
+    invoke-static {v2, v0}, Le/a/a/e;->a(Ljava/util/zip/ZipInputStream;Ljava/lang/String;)Le/a/a/l;
+
+    move-result-object v0
 
     goto :goto_0
 
-    :cond_0
-    invoke-virtual {v0}, Le/a/a/d;->c()F
+    .line 8
+    :cond_2
+    iget-object v2, p0, Le/a/a/v/c;->b:Ljava/lang/String;
 
-    move-result v0
+    invoke-static {v0, v2}, Le/a/a/e;->b(Ljava/io/InputStream;Ljava/lang/String;)Le/a/a/l;
 
-    float-to-long v0, v0
+    move-result-object v0
 
+    .line 9
     :goto_0
-    return-wide v0
+    invoke-virtual {v0}, Le/a/a/l;->b()Ljava/lang/Object;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_3
+
+    .line 10
+    invoke-virtual {v0}, Le/a/a/l;->b()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Le/a/a/d;
+
+    return-object v0
+
+    :cond_3
+    return-object v1
 .end method
 
-.method public final h()F
+.method public final a(Ljava/net/HttpURLConnection;)Ljava/lang/String;
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Le/a/a/v/c;->l:Le/a/a/d;
+    .line 11
+    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
-    if-nez v0, :cond_0
+    .line 12
+    new-instance v0, Ljava/io/BufferedReader;
 
-    const v0, 0x7f7fffff    # Float.MAX_VALUE
+    new-instance v1, Ljava/io/InputStreamReader;
 
-    return v0
+    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
+    move-result-object p1
+
+    invoke-direct {v1, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
+
+    invoke-direct {v0, v1}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+
+    .line 13
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 14
+    :goto_0
+    :try_start_0
+    invoke-virtual {v0}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 15
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0xa
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    .line 16
     :cond_0
-    const v1, 0x4e6e6b28    # 1.0E9f
+    :try_start_1
+    invoke-virtual {v0}, Ljava/io/BufferedReader;->close()V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 2
-    invoke-virtual {v0}, Le/a/a/d;->g()F
+    .line 17
+    :catch_0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result v0
+    move-result-object p1
 
-    div-float/2addr v1, v0
+    return-object p1
 
-    iget v0, p0, Le/a/a/v/c;->e:F
+    :catchall_0
+    move-exception p1
 
-    invoke-static {v0}, Ljava/lang/Math;->abs(F)F
+    goto :goto_1
 
-    move-result v0
+    :catch_1
+    move-exception p1
 
-    div-float/2addr v1, v0
+    .line 18
+    :try_start_2
+    throw p1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    return v1
+    .line 19
+    :goto_1
+    :try_start_3
+    invoke-virtual {v0}, Ljava/io/BufferedReader;->close()V
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
+
+    .line 20
+    :catch_2
+    throw p1
 .end method
 
-.method public i()F
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Le/a/a/v/c;->l:Le/a/a/d;
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x0
-
-    return v0
-
-    .line 2
-    :cond_0
-    iget v1, p0, Le/a/a/v/c;->k:F
-
-    const/high16 v2, 0x4f000000
-
-    cmpl-float v2, v1, v2
-
-    if-nez v2, :cond_1
-
-    invoke-virtual {v0}, Le/a/a/d;->e()F
-
-    move-result v1
-
-    :cond_1
-    return v1
-.end method
-
-.method public isRunning()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Le/a/a/v/c;->m:Z
-
-    return v0
-.end method
-
-.method public j()F
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Le/a/a/v/c;->l:Le/a/a/d;
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x0
-
-    return v0
-
-    .line 2
-    :cond_0
-    iget v1, p0, Le/a/a/v/c;->j:F
-
-    const/high16 v2, -0x31000000
-
-    cmpl-float v2, v1, v2
-
-    if-nez v2, :cond_1
-
-    invoke-virtual {v0}, Le/a/a/d;->k()F
-
-    move-result v1
-
-    :cond_1
-    return v1
-.end method
-
-.method public k()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Le/a/a/v/c;->e:F
-
-    return v0
-.end method
-
-.method public final l()Z
+.method public final b()Le/a/a/l;
     .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Le/a/a/l<",
+            "Le/a/a/d;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    invoke-virtual {p0}, Le/a/a/v/c;->k()F
+    :try_start_0
+    invoke-virtual {p0}, Le/a/a/v/c;->c()Le/a/a/l;
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    .line 2
+    new-instance v1, Le/a/a/l;
+
+    invoke-direct {v1, v0}, Le/a/a/l;-><init>(Ljava/lang/Throwable;)V
+
+    return-object v1
+.end method
+
+.method public final b(Ljava/net/HttpURLConnection;)Le/a/a/l;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/net/HttpURLConnection;",
+            ")",
+            "Le/a/a/l<",
+            "Le/a/a/d;",
+            ">;"
+        }
+    .end annotation
+
+    .line 3
+    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getContentType()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    const-string v0, "application/json"
+
+    :cond_0
+    const-string v1, "application/zip"
+
+    .line 4
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     const/4 v1, 0x0
 
-    cmpg-float v0, v0, v1
+    if-eqz v0, :cond_2
 
-    if-gez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public m()V
-    .locals 2
-
-    const/4 v0, 0x1
-
-    .line 1
-    iput-boolean v0, p0, Le/a/a/v/c;->m:Z
-
-    .line 2
-    invoke-virtual {p0}, Le/a/a/v/c;->l()Z
-
-    move-result v0
-
-    invoke-virtual {p0, v0}, Le/a/a/v/a;->b(Z)V
-
-    .line 3
-    invoke-virtual {p0}, Le/a/a/v/c;->l()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {p0}, Le/a/a/v/c;->i()F
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p0}, Le/a/a/v/c;->j()F
-
-    move-result v0
-
-    :goto_0
-    float-to-int v0, v0
-
-    invoke-virtual {p0, v0}, Le/a/a/v/c;->a(I)V
-
-    .line 4
-    invoke-static {}, Ljava/lang/System;->nanoTime()J
-
-    move-result-wide v0
-
-    iput-wide v0, p0, Le/a/a/v/c;->g:J
-
-    const/4 v0, 0x0
+    const-string v0, "Handling zip response."
 
     .line 5
-    iput v0, p0, Le/a/a/v/c;->i:I
+    invoke-static {v0}, Le/a/a/x/d;->a(Ljava/lang/String;)V
 
     .line 6
-    invoke-virtual {p0}, Le/a/a/v/c;->n()V
+    sget-object v0, Le/a/a/v/a;->ZIP:Le/a/a/v/a;
 
-    return-void
-.end method
+    .line 7
+    iget-object v2, p0, Le/a/a/v/c;->c:Le/a/a/v/b;
 
-.method public n()V
-    .locals 1
+    if-nez v2, :cond_1
 
-    .line 1
-    invoke-virtual {p0}, Le/a/a/v/c;->isRunning()Z
+    .line 8
+    new-instance v2, Ljava/util/zip/ZipInputStream;
 
-    move-result v0
+    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
-    if-eqz v0, :cond_0
+    move-result-object p1
 
-    const/4 v0, 0x0
+    invoke-direct {v2, p1}, Ljava/util/zip/ZipInputStream;-><init>(Ljava/io/InputStream;)V
 
-    .line 2
-    invoke-virtual {p0, v0}, Le/a/a/v/c;->c(Z)V
+    invoke-static {v2, v1}, Le/a/a/e;->a(Ljava/util/zip/ZipInputStream;Ljava/lang/String;)Le/a/a/l;
 
-    .line 3
-    invoke-static {}, Landroid/view/Choreographer;->getInstance()Landroid/view/Choreographer;
+    move-result-object p1
 
-    move-result-object v0
+    goto :goto_0
 
-    invoke-virtual {v0, p0}, Landroid/view/Choreographer;->postFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public o()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    .line 1
-    invoke-virtual {p0, v0}, Le/a/a/v/c;->c(Z)V
-
-    return-void
-.end method
-
-.method public p()V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Le/a/a/v/c;->k()F
-
-    move-result v0
-
-    neg-float v0, v0
-
-    invoke-virtual {p0, v0}, Le/a/a/v/c;->a(F)V
-
-    return-void
-.end method
-
-.method public setRepeatMode(I)V
-    .locals 1
-
-    .line 1
-    invoke-super {p0, p1}, Landroid/animation/ValueAnimator;->setRepeatMode(I)V
-
-    const/4 v0, 0x2
-
-    if-eq p1, v0, :cond_0
-
-    .line 2
-    iget-boolean p1, p0, Le/a/a/v/c;->f:Z
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x0
-
-    .line 3
-    iput-boolean p1, p0, Le/a/a/v/c;->f:Z
-
-    .line 4
-    invoke-virtual {p0}, Le/a/a/v/c;->p()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public final u()V
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Le/a/a/v/c;->l:Le/a/a/d;
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    iget v0, p0, Le/a/a/v/c;->h:F
-
-    iget v1, p0, Le/a/a/v/c;->j:F
-
-    cmpg-float v1, v0, v1
-
-    if-ltz v1, :cond_1
-
-    iget v1, p0, Le/a/a/v/c;->k:F
-
-    cmpl-float v0, v0, v1
-
-    if-gtz v0, :cond_1
-
-    return-void
-
-    .line 3
+    .line 9
     :cond_1
-    new-instance v0, Ljava/lang/IllegalStateException;
+    iget-object v1, p0, Le/a/a/v/c;->b:Ljava/lang/String;
 
-    const/4 v1, 0x3
+    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
-    new-array v1, v1, [Ljava/lang/Object;
+    move-result-object p1
 
-    const/4 v2, 0x0
+    invoke-virtual {v2, v1, p1, v0}, Le/a/a/v/b;->a(Ljava/lang/String;Ljava/io/InputStream;Le/a/a/v/a;)Ljava/io/File;
 
-    iget v3, p0, Le/a/a/v/c;->j:F
+    move-result-object p1
 
-    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    .line 10
+    new-instance v1, Ljava/util/zip/ZipInputStream;
 
-    move-result-object v3
+    new-instance v2, Ljava/io/FileInputStream;
 
-    aput-object v3, v1, v2
+    invoke-direct {v2, p1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
-    const/4 v2, 0x1
+    invoke-direct {v1, v2}, Ljava/util/zip/ZipInputStream;-><init>(Ljava/io/InputStream;)V
 
-    iget v3, p0, Le/a/a/v/c;->k:F
+    iget-object p1, p0, Le/a/a/v/c;->b:Ljava/lang/String;
 
-    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-static {v1, p1}, Le/a/a/e;->a(Ljava/util/zip/ZipInputStream;Ljava/lang/String;)Le/a/a/l;
 
-    move-result-object v3
+    move-result-object p1
 
-    aput-object v3, v1, v2
+    goto :goto_0
 
-    const/4 v2, 0x2
+    :cond_2
+    const-string v0, "Received json response."
 
-    iget v3, p0, Le/a/a/v/c;->h:F
+    .line 11
+    invoke-static {v0}, Le/a/a/x/d;->a(Ljava/lang/String;)V
 
-    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    .line 12
+    sget-object v0, Le/a/a/v/a;->JSON:Le/a/a/v/a;
 
-    move-result-object v3
+    .line 13
+    iget-object v2, p0, Le/a/a/v/c;->c:Le/a/a/v/b;
 
-    aput-object v3, v1, v2
+    if-nez v2, :cond_3
 
-    const-string v2, "Frame must be [%f,%f]. It is %f"
+    .line 14
+    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
-    invoke-static {v2, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    move-result-object p1
+
+    invoke-static {p1, v1}, Le/a/a/e;->b(Ljava/io/InputStream;Ljava/lang/String;)Le/a/a/l;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    .line 15
+    :cond_3
+    iget-object v1, p0, Le/a/a/v/c;->b:Ljava/lang/String;
+
+    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+
+    move-result-object p1
+
+    invoke-virtual {v2, v1, p1, v0}, Le/a/a/v/b;->a(Ljava/lang/String;Ljava/io/InputStream;Le/a/a/v/a;)Ljava/io/File;
+
+    move-result-object p1
+
+    .line 16
+    new-instance v1, Ljava/io/FileInputStream;
+
+    new-instance v2, Ljava/io/File;
+
+    invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v2, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-direct {v1, v2}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    iget-object p1, p0, Le/a/a/v/c;->b:Ljava/lang/String;
+
+    invoke-static {v1, p1}, Le/a/a/e;->b(Ljava/io/InputStream;Ljava/lang/String;)Le/a/a/l;
+
+    move-result-object p1
+
+    .line 17
+    :goto_0
+    iget-object v1, p0, Le/a/a/v/c;->c:Le/a/a/v/b;
+
+    if-eqz v1, :cond_4
+
+    invoke-virtual {p1}, Le/a/a/l;->b()Ljava/lang/Object;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    if-eqz v1, :cond_4
 
-    throw v0
+    .line 18
+    iget-object v1, p0, Le/a/a/v/c;->c:Le/a/a/v/b;
+
+    iget-object v2, p0, Le/a/a/v/c;->b:Ljava/lang/String;
+
+    invoke-virtual {v1, v2, v0}, Le/a/a/v/b;->a(Ljava/lang/String;Le/a/a/v/a;)V
+
+    :cond_4
+    return-object p1
+.end method
+
+.method public final c()Le/a/a/l;
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Le/a/a/l<",
+            "Le/a/a/d;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "Fetching "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Le/a/a/v/c;->b:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Le/a/a/x/d;->a(Ljava/lang/String;)V
+
+    .line 2
+    new-instance v0, Ljava/net/URL;
+
+    iget-object v1, p0, Le/a/a/v/c;->b:Ljava/lang/String;
+
+    invoke-direct {v0, v1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/net/HttpURLConnection;
+
+    const-string v1, "GET"
+
+    .line 3
+    invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+
+    .line 4
+    :try_start_0
+    invoke-virtual {v0}, Ljava/net/HttpURLConnection;->connect()V
+
+    .line 5
+    invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
+
+    move-result-object v1
+
+    if-nez v1, :cond_2
+
+    invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getResponseCode()I
+
+    move-result v1
+
+    const/16 v2, 0xc8
+
+    if-eq v1, v2, :cond_0
+
+    goto :goto_1
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, v0}, Le/a/a/v/c;->b(Ljava/net/HttpURLConnection;)Le/a/a/l;
+
+    move-result-object v1
+
+    .line 7
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Completed fetch from network. Success: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Le/a/a/l;->b()Ljava/lang/Object;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_1
+
+    const/4 v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v3, 0x0
+
+    :goto_0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Le/a/a/x/d;->a(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 8
+    invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
+
+    return-object v1
+
+    .line 9
+    :cond_2
+    :goto_1
+    :try_start_1
+    invoke-virtual {p0, v0}, Le/a/a/v/c;->a(Ljava/net/HttpURLConnection;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 10
+    new-instance v2, Le/a/a/l;
+
+    new-instance v3, Ljava/lang/IllegalArgumentException;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "Unable to fetch "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v5, p0, Le/a/a/v/c;->b:Ljava/lang/String;
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v5, ". Failed with "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getResponseCode()I
+
+    move-result v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v5, "\n"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v3, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    invoke-direct {v2, v3}, Le/a/a/l;-><init>(Ljava/lang/Throwable;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 11
+    invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
+
+    return-object v2
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_2
+
+    :catch_0
+    move-exception v1
+
+    .line 12
+    :try_start_2
+    new-instance v2, Le/a/a/l;
+
+    invoke-direct {v2, v1}, Le/a/a/l;-><init>(Ljava/lang/Throwable;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 13
+    invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
+
+    return-object v2
+
+    :goto_2
+    invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
+
+    throw v1
+.end method
+
+.method public d()Le/a/a/l;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Le/a/a/l<",
+            "Le/a/a/d;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Le/a/a/v/c;->a()Le/a/a/d;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    new-instance v1, Le/a/a/l;
+
+    invoke-direct {v1, v0}, Le/a/a/l;-><init>(Ljava/lang/Object;)V
+
+    return-object v1
+
+    .line 3
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "Animation for "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Le/a/a/v/c;->b:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, " not found in cache. Fetching from network."
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Le/a/a/x/d;->a(Ljava/lang/String;)V
+
+    .line 4
+    invoke-virtual {p0}, Le/a/a/v/c;->b()Le/a/a/l;
+
+    move-result-object v0
+
+    return-object v0
 .end method

@@ -135,7 +135,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lm/f;->c()Lm/f;
+    invoke-virtual {p0}, Lm/f;->d()Lm/f;
 
     move-result-object p0
 
@@ -158,7 +158,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lm/f;->d()Lm/f;
+    invoke-virtual {p0}, Lm/f;->e()Lm/f;
 
     move-result-object p0
 

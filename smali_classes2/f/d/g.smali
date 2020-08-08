@@ -1,19 +1,9 @@
 .class public final Lf/d/g;
 .super Ljava/lang/Object;
-.source "MapProviderFactory.java"
-
-# interfaces
-.implements Lf/d/d;
-.implements Lf/a;
+.source "MapBuilder.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lf/d/g$b;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -21,17 +11,7 @@
         "V:",
         "Ljava/lang/Object;",
         ">",
-        "Ljava/lang/Object;",
-        "Lf/d/d<",
-        "Ljava/util/Map<",
-        "TK;",
-        "Lj/a/a<",
-        "TV;>;>;>;",
-        "Lf/a<",
-        "Ljava/util/Map<",
-        "TK;",
-        "Lj/a/a<",
-        "TV;>;>;>;"
+        "Ljava/lang/Object;"
     }
 .end annotation
 
@@ -41,32 +21,21 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
-            "TK;",
-            "Lj/a/a<",
-            "TV;>;>;"
+            "TK;TV;>;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Map;)V
+.method public constructor <init>(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Map<",
-            "TK;",
-            "Lj/a/a<",
-            "TV;>;>;)V"
-        }
-    .end annotation
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
-    invoke-static {p1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+    .line 2
+    invoke-static {p1}, Lf/d/b;->b(I)Ljava/util/LinkedHashMap;
 
     move-result-object p1
 
@@ -75,17 +44,8 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/util/Map;Lf/d/g$a;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1}, Lf/d/g;-><init>(Ljava/util/Map;)V
-
-    return-void
-.end method
-
-.method public static a(I)Lf/d/g$b;
-    .locals 2
+.method public static a(I)Lf/d/g;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -93,48 +53,72 @@
             "V:",
             "Ljava/lang/Object;",
             ">(I)",
-            "Lf/d/g$b<",
+            "Lf/d/g<",
             "TK;TV;>;"
         }
     .end annotation
 
     .line 1
-    new-instance v0, Lf/d/g$b;
+    new-instance v0, Lf/d/g;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lf/d/g$b;-><init>(ILf/d/g$a;)V
+    invoke-direct {v0, p0}, Lf/d/g;-><init>(I)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public bridge synthetic get()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lf/d/g;->get()Ljava/util/Map;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public get()Ljava/util/Map;
+.method public a(Ljava/lang/Object;Ljava/lang/Object;)Lf/d/g;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
-            "Ljava/util/Map<",
-            "TK;",
-            "Lj/a/a<",
-            "TV;>;>;"
+            "(TK;TV;)",
+            "Lf/d/g<",
+            "TK;TV;>;"
         }
     .end annotation
 
     .line 2
     iget-object v0, p0, Lf/d/g;->a:Ljava/util/Map;
+
+    invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object p0
+.end method
+
+.method public a()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "TK;TV;>;"
+        }
+    .end annotation
+
+    .line 3
+    iget-object v0, p0, Lf/d/g;->a:Ljava/util/Map;
+
+    invoke-interface {v0}, Ljava/util/Map;->size()I
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 4
+    iget-object v0, p0, Lf/d/g;->a:Ljava/util/Map;
+
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+
+    move-result-object v0
+
+    return-object v0
+
+    .line 5
+    :cond_0
+    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
+
+    move-result-object v0
 
     return-object v0
 .end method

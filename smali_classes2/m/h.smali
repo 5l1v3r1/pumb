@@ -3,15 +3,15 @@
 .source "ForwardingSource.java"
 
 # interfaces
-.implements Lm/s;
+.implements Lm/t;
 
 
 # instance fields
-.field public final c:Lm/s;
+.field public final c:Lm/t;
 
 
 # direct methods
-.method public constructor <init>(Lm/s;)V
+.method public constructor <init>(Lm/t;)V
     .locals 1
 
     .line 1
@@ -20,7 +20,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lm/h;->c:Lm/s;
+    iput-object p1, p0, Lm/h;->c:Lm/t;
 
     return-void
 
@@ -37,11 +37,11 @@
 
 
 # virtual methods
-.method public final a()Lm/s;
+.method public final a()Lm/t;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lm/h;->c:Lm/s;
+    iget-object v0, p0, Lm/h;->c:Lm/t;
 
     return-object v0
 .end method
@@ -50,20 +50,20 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lm/h;->c:Lm/s;
+    iget-object v0, p0, Lm/h;->c:Lm/t;
 
-    invoke-interface {v0}, Lm/s;->close()V
+    invoke-interface {v0}, Lm/t;->close()V
 
     return-void
 .end method
 
-.method public i()Lm/t;
+.method public i()Lm/u;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lm/h;->c:Lm/s;
+    iget-object v0, p0, Lm/h;->c:Lm/t;
 
-    invoke-interface {v0}, Lm/s;->i()Lm/t;
+    invoke-interface {v0}, Lm/t;->i()Lm/u;
 
     move-result-object v0
 
@@ -92,7 +92,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lm/h;->c:Lm/s;
+    iget-object v1, p0, Lm/h;->c:Lm/t;
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

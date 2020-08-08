@@ -1,14 +1,14 @@
 .class public Le/a/a/m$a;
 .super Ljava/lang/Object;
-.source "PerformanceTracker.java"
+.source "LottieTask.java"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Le/a/a/m;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Le/a/a/m;->a()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,16 +16,9 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lb/k/n/d<",
-        "Ljava/lang/String;",
-        "Ljava/lang/Float;",
-        ">;>;"
-    }
-.end annotation
+
+# instance fields
+.field public final synthetic c:Le/a/a/m;
 
 
 # direct methods
@@ -33,6 +26,8 @@
     .locals 0
 
     .line 1
+    iput-object p1, p0, Le/a/a/m$a;->c:Le/a/a/m;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,74 +35,56 @@
 
 
 # virtual methods
-.method public a(Lb/k/n/d;Lb/k/n/d;)I
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lb/k/n/d<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Float;",
-            ">;",
-            "Lb/k/n/d<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Float;",
-            ">;)I"
-        }
-    .end annotation
+.method public run()V
+    .locals 2
 
     .line 1
-    iget-object p1, p1, Lb/k/n/d;->b:Ljava/lang/Object;
+    iget-object v0, p0, Le/a/a/m$a;->c:Le/a/a/m;
 
-    check-cast p1, Ljava/lang/Float;
+    invoke-static {v0}, Le/a/a/m;->a(Le/a/a/m;)Le/a/a/l;
 
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
+    move-result-object v0
 
-    move-result p1
+    if-nez v0, :cond_0
+
+    return-void
 
     .line 2
-    iget-object p2, p2, Lb/k/n/d;->b:Ljava/lang/Object;
-
-    check-cast p2, Ljava/lang/Float;
-
-    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
-
-    move-result p2
-
-    cmpl-float v0, p2, p1
-
-    if-lez v0, :cond_0
-
-    const/4 p1, 0x1
-
-    return p1
-
     :cond_0
-    cmpl-float p1, p1, p2
+    iget-object v0, p0, Le/a/a/m$a;->c:Le/a/a/m;
 
-    if-lez p1, :cond_1
+    invoke-static {v0}, Le/a/a/m;->a(Le/a/a/m;)Le/a/a/l;
 
-    const/4 p1, -0x1
+    move-result-object v0
 
-    return p1
+    .line 3
+    invoke-virtual {v0}, Le/a/a/l;->b()Ljava/lang/Object;
 
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    .line 4
+    iget-object v1, p0, Le/a/a/m$a;->c:Le/a/a/m;
+
+    invoke-virtual {v0}, Le/a/a/l;->b()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Le/a/a/m;->a(Le/a/a/m;Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    .line 5
     :cond_1
-    const/4 p1, 0x0
+    iget-object v1, p0, Le/a/a/m$a;->c:Le/a/a/m;
 
-    return p1
-.end method
+    invoke-virtual {v0}, Le/a/a/l;->a()Ljava/lang/Throwable;
 
-.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
+    move-result-object v0
 
-    .line 1
-    check-cast p1, Lb/k/n/d;
+    invoke-static {v1, v0}, Le/a/a/m;->a(Le/a/a/m;Ljava/lang/Throwable;)V
 
-    check-cast p2, Lb/k/n/d;
-
-    invoke-virtual {p0, p1, p2}, Le/a/a/m$a;->a(Lb/k/n/d;Lb/k/n/d;)I
-
-    move-result p1
-
-    return p1
+    :goto_0
+    return-void
 .end method

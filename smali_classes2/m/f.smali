@@ -345,7 +345,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 2
+    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -354,7 +354,7 @@
 
     if-nez v0, :cond_1
 
-    .line 3
+    .line 2
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -365,7 +365,7 @@
 
     const/4 v1, 0x0
 
-    .line 4
+    .line 3
     :goto_0
     array-length v2, v0
 
@@ -373,7 +373,7 @@
 
     mul-int/lit8 v2, v1, 0x2
 
-    .line 5
+    .line 4
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v3
@@ -386,7 +386,7 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    .line 6
+    .line 5
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -399,14 +399,14 @@
 
     int-to-byte v2, v3
 
-    .line 7
+    .line 6
     aput-byte v2, v0, v1
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 8
+    .line 7
     :cond_0
     invoke-static {v0}, Lm/f;->a([B)Lm/f;
 
@@ -414,7 +414,7 @@
 
     return-object p0
 
-    .line 9
+    .line 8
     :cond_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -436,7 +436,7 @@
 
     throw v0
 
-    .line 10
+    .line 9
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -455,7 +455,7 @@
     .line 1
     new-instance v0, Lm/f;
 
-    sget-object v1, Lm/u;->a:Ljava/nio/charset/Charset;
+    sget-object v1, Lm/v;->a:Ljava/nio/charset/Charset;
 
     invoke-virtual {p0, v1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
@@ -804,7 +804,7 @@
     if-gt p3, v1, :cond_0
 
     .line 23
-    invoke-static {v0, p1, p2, p3, p4}, Lm/u;->a([BI[BII)Z
+    invoke-static {v0, p1, p2, p3, p4}, Lm/v;->a([BI[BII)Z
 
     move-result p1
 
@@ -931,15 +931,11 @@
     return p1
 .end method
 
-.method public c()Lm/f;
+.method public c()[B
     .locals 1
 
-    const-string v0, "SHA-1"
-
-    .line 1
-    invoke-virtual {p0, v0}, Lm/f;->b(Ljava/lang/String;)Lm/f;
-
-    move-result-object v0
+    .line 10
+    iget-object v0, p0, Lm/f;->c:[B
 
     return-object v0
 .end method
@@ -960,7 +956,7 @@
 .method public d()Lm/f;
     .locals 1
 
-    const-string v0, "SHA-256"
+    const-string v0, "SHA-1"
 
     .line 4
     invoke-virtual {p0, v0}, Lm/f;->b(Ljava/lang/String;)Lm/f;
@@ -971,6 +967,67 @@
 .end method
 
 .method public e()Lm/f;
+    .locals 1
+
+    const-string v0, "SHA-256"
+
+    .line 1
+    invoke-virtual {p0, v0}, Lm/f;->b(Ljava/lang/String;)Lm/f;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 5
+
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_0
+
+    return v0
+
+    .line 1
+    :cond_0
+    instance-of v1, p1, Lm/f;
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_1
+
+    check-cast p1, Lm/f;
+
+    .line 2
+    invoke-virtual {p1}, Lm/f;->size()I
+
+    move-result v1
+
+    iget-object v3, p0, Lm/f;->c:[B
+
+    array-length v4, v3
+
+    if-ne v1, v4, :cond_1
+
+    array-length v1, v3
+
+    .line 3
+    invoke-virtual {p1, v2, v3, v2, v1}, Lm/f;->a(I[BII)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public f()Lm/f;
     .locals 6
 
     const/4 v0, 0x0
@@ -1060,55 +1117,7 @@
     return-object p0
 .end method
 
-.method public equals(Ljava/lang/Object;)Z
-    .locals 5
-
-    const/4 v0, 0x1
-
-    if-ne p1, p0, :cond_0
-
-    return v0
-
-    .line 1
-    :cond_0
-    instance-of v1, p1, Lm/f;
-
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_1
-
-    check-cast p1, Lm/f;
-
-    .line 2
-    invoke-virtual {p1}, Lm/f;->size()I
-
-    move-result v1
-
-    iget-object v3, p0, Lm/f;->c:[B
-
-    array-length v4, v3
-
-    if-ne v1, v4, :cond_1
-
-    array-length v1, v3
-
-    .line 3
-    invoke-virtual {p1, v2, v3, v2, v1}, Lm/f;->a(I[BII)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public f()[B
+.method public g()[B
     .locals 1
 
     .line 1
@@ -1120,32 +1129,6 @@
 
     check-cast v0, [B
 
-    return-object v0
-.end method
-
-.method public g()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lm/f;->e:Ljava/lang/String;
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    new-instance v0, Ljava/lang/String;
-
-    iget-object v1, p0, Lm/f;->c:[B
-
-    sget-object v2, Lm/u;->a:Ljava/nio/charset/Charset;
-
-    invoke-direct {v0, v1, v2}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
-
-    iput-object v0, p0, Lm/f;->e:Ljava/lang/String;
-
-    :goto_0
     return-object v0
 .end method
 
@@ -1171,6 +1154,32 @@
 
     :goto_0
     return v0
+.end method
+
+.method public r()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lm/f;->e:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    new-instance v0, Ljava/lang/String;
+
+    iget-object v1, p0, Lm/f;->c:[B
+
+    sget-object v2, Lm/v;->a:Ljava/nio/charset/Charset;
+
+    invoke-direct {v0, v1, v2}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    iput-object v0, p0, Lm/f;->e:Ljava/lang/String;
+
+    :goto_0
+    return-object v0
 .end method
 
 .method public size()I
@@ -1200,7 +1209,7 @@
 
     .line 2
     :cond_0
-    invoke-virtual {p0}, Lm/f;->g()Ljava/lang/String;
+    invoke-virtual {p0}, Lm/f;->r()Ljava/lang/String;
 
     move-result-object v0
 

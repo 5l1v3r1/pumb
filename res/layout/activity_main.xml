@@ -2,7 +2,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/default_backdrop_bg_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <FrameLayout android:id="@id/form_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_scrollFlags="enterAlways|scroll|snap" />
-    <com.google.android.material.bottomnavigation.BottomNavigationView android:layout_gravity="bottom" android:id="@id/bottom_navigation" app:labelVisibilityMode="labeled" app:menu="@menu/bottom_navigation_menu" style="@style/BottomNavigationView.Ripple" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:layout_gravity="bottom" android:id="@id/bottom_navigation" android:visibility="gone" app:labelVisibilityMode="labeled" app:menu="@menu/bottom_navigation_menu" style="@style/BottomNavigationView.Ripple" />
     <include layout="@layout/layout_whats_new" />
     <include layout="@layout/layout_rate_us" />
     <include layout="@layout/layout_transfer_receiver_selector" />

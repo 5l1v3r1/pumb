@@ -131,7 +131,7 @@
 
 
 # virtual methods
-.method public final a(Le/h/a/a/h/h/n5;)Lcom/google/android/gms/internal/measurement/zzfi;
+.method public final a(Le/h/a/b/h/h/n5;)Lcom/google/android/gms/internal/measurement/zzfi;
     .locals 0
 
     return-object p0

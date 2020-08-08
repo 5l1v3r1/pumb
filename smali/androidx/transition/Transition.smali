@@ -749,7 +749,7 @@
     .line 154
     iget-object p2, p0, Lb/y/z;->c:Lb/h/d;
 
-    invoke-virtual {p2, v1, v2}, Lb/h/d;->c(J)I
+    invoke-virtual {p2, v1, v2}, Lb/h/d;->d(J)I
 
     move-result p2
 
@@ -758,7 +758,7 @@
     .line 155
     iget-object p1, p0, Lb/y/z;->c:Lb/h/d;
 
-    invoke-virtual {p1, v1, v2}, Lb/h/d;->b(J)Ljava/lang/Object;
+    invoke-virtual {p1, v1, v2}, Lb/h/d;->c(J)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -1054,7 +1054,7 @@
     return-object p0
 .end method
 
-.method public static u()Lb/h/a;
+.method public static q()Lb/h/a;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1983,7 +1983,7 @@
     invoke-virtual {p0, v0, v1}, Landroidx/transition/Transition;->a(Lb/y/z;Lb/y/z;)V
 
     .line 192
-    invoke-static {}, Landroidx/transition/Transition;->u()Lb/h/a;
+    invoke-static {}, Landroidx/transition/Transition;->q()Lb/h/a;
 
     move-result-object v0
 
@@ -2171,7 +2171,7 @@
     move-object/from16 v7, p1
 
     .line 66
-    invoke-static {}, Landroidx/transition/Transition;->u()Lb/h/a;
+    invoke-static {}, Landroidx/transition/Transition;->q()Lb/h/a;
 
     move-result-object v8
 
@@ -3295,7 +3295,7 @@
 
     move-result-wide v3
 
-    invoke-virtual {p4, v3, v4}, Lb/h/d;->b(J)Ljava/lang/Object;
+    invoke-virtual {p4, v3, v4}, Lb/h/d;->c(J)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -4298,7 +4298,7 @@
     if-nez v0, :cond_3
 
     .line 6
-    invoke-static {}, Landroidx/transition/Transition;->u()Lb/h/a;
+    invoke-static {}, Landroidx/transition/Transition;->q()Lb/h/a;
 
     move-result-object v0
 
@@ -4594,7 +4594,7 @@
     if-nez v0, :cond_2
 
     .line 4
-    invoke-static {}, Landroidx/transition/Transition;->u()Lb/h/a;
+    invoke-static {}, Landroidx/transition/Transition;->q()Lb/h/a;
 
     move-result-object v0
 
@@ -4820,7 +4820,7 @@
     invoke-virtual {p0}, Landroidx/transition/Transition;->p()V
 
     .line 2
-    invoke-static {}, Landroidx/transition/Transition;->u()Lb/h/a;
+    invoke-static {}, Landroidx/transition/Transition;->q()Lb/h/a;
 
     move-result-object v0
 

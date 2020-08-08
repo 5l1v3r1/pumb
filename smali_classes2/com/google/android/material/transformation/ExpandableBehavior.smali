@@ -71,14 +71,14 @@
     if-nez p3, :cond_1
 
     .line 3
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/transformation/ExpandableBehavior;->e(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)Le/h/a/b/p/b;
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/transformation/ExpandableBehavior;->e(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)Le/h/a/c/p/b;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
     .line 4
-    invoke-interface {p1}, Le/h/a/b/p/b;->a()Z
+    invoke-interface {p1}, Le/h/a/c/p/b;->a()Z
 
     move-result p3
 
@@ -89,7 +89,7 @@
     if-eqz p3, :cond_1
 
     .line 5
-    invoke-interface {p1}, Le/h/a/b/p/b;->a()Z
+    invoke-interface {p1}, Le/h/a/c/p/b;->a()Z
 
     move-result p3
 
@@ -115,7 +115,7 @@
 
     new-instance v1, Lcom/google/android/material/transformation/ExpandableBehavior$a;
 
-    invoke-direct {v1, p0, p2, p3, p1}, Lcom/google/android/material/transformation/ExpandableBehavior$a;-><init>(Lcom/google/android/material/transformation/ExpandableBehavior;Landroid/view/View;ILe/h/a/b/p/b;)V
+    invoke-direct {v1, p0, p2, p3, p1}, Lcom/google/android/material/transformation/ExpandableBehavior$a;-><init>(Lcom/google/android/material/transformation/ExpandableBehavior;Landroid/view/View;ILe/h/a/c/p/b;)V
 
     .line 8
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
@@ -166,10 +166,10 @@
     .locals 1
 
     .line 1
-    check-cast p3, Le/h/a/b/p/b;
+    check-cast p3, Le/h/a/c/p/b;
 
     .line 2
-    invoke-interface {p3}, Le/h/a/b/p/b;->a()Z
+    invoke-interface {p3}, Le/h/a/c/p/b;->a()Z
 
     move-result p1
 
@@ -181,7 +181,7 @@
     if-eqz p1, :cond_1
 
     .line 4
-    invoke-interface {p3}, Le/h/a/b/p/b;->a()Z
+    invoke-interface {p3}, Le/h/a/c/p/b;->a()Z
 
     move-result p1
 
@@ -204,7 +204,7 @@
 
     check-cast p1, Landroid/view/View;
 
-    invoke-interface {p3}, Le/h/a/b/p/b;->a()Z
+    invoke-interface {p3}, Le/h/a/c/p/b;->a()Z
 
     move-result p3
 
@@ -220,7 +220,7 @@
     return p1
 .end method
 
-.method public e(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)Le/h/a/b/p/b;
+.method public e(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)Le/h/a/c/p/b;
     .locals 5
 
     .line 1
@@ -253,7 +253,7 @@
     if-eqz v4, :cond_0
 
     .line 5
-    check-cast v3, Le/h/a/b/p/b;
+    check-cast v3, Le/h/a/c/p/b;
 
     return-object v3
 

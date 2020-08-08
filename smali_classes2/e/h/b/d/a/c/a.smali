@@ -54,17 +54,17 @@
 
     check-cast v1, Landroid/content/Context;
 
-    const-class v2, Le/h/b/f/d;
+    const-class v2, Le/h/b/h/d;
 
     .line 4
     invoke-interface {p1, v2}, Le/h/b/e/e;->a(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Le/h/b/f/d;
+    check-cast p1, Le/h/b/h/d;
 
     .line 5
-    invoke-static {v0, v1, p1}, Le/h/b/d/a/b;->a(Lcom/google/firebase/FirebaseApp;Landroid/content/Context;Le/h/b/f/d;)Le/h/b/d/a/a;
+    invoke-static {v0, v1, p1}, Le/h/b/d/a/b;->a(Lcom/google/firebase/FirebaseApp;Landroid/content/Context;Le/h/b/h/d;)Le/h/b/d/a/a;
 
     move-result-object p1
 

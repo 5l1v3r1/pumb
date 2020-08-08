@@ -2,11 +2,11 @@
 .super Landroid/content/BroadcastReceiver;
 
 # interfaces
-.implements Le/h/a/a/i/b/e4;
+.implements Le/h/a/b/i/b/e4;
 
 
 # instance fields
-.field public a:Le/h/a/a/i/b/c4;
+.field public a:Le/h/a/b/i/b/c4;
 
 
 # direct methods
@@ -42,23 +42,23 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurementInstallReferrerReceiver;->a:Le/h/a/a/i/b/c4;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurementInstallReferrerReceiver;->a:Le/h/a/b/i/b/c4;
 
     if-nez v0, :cond_0
 
     .line 2
-    new-instance v0, Le/h/a/a/i/b/c4;
+    new-instance v0, Le/h/a/b/i/b/c4;
 
-    invoke-direct {v0, p0}, Le/h/a/a/i/b/c4;-><init>(Le/h/a/a/i/b/e4;)V
+    invoke-direct {v0, p0}, Le/h/a/b/i/b/c4;-><init>(Le/h/a/b/i/b/e4;)V
 
-    iput-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurementInstallReferrerReceiver;->a:Le/h/a/a/i/b/c4;
+    iput-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurementInstallReferrerReceiver;->a:Le/h/a/b/i/b/c4;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurementInstallReferrerReceiver;->a:Le/h/a/a/i/b/c4;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurementInstallReferrerReceiver;->a:Le/h/a/b/i/b/c4;
 
     .line 4
-    invoke-virtual {v0, p1, p2}, Le/h/a/a/i/b/c4;->a(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v0, p1, p2}, Le/h/a/b/i/b/c4;->a(Landroid/content/Context;Landroid/content/Intent;)V
 
     return-void
 .end method

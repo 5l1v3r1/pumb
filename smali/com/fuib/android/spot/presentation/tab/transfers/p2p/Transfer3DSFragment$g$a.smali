@@ -50,17 +50,17 @@
 
     iget-object v0, v0, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment$g;->a:Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment;
 
-    invoke-virtual {v0}, Le/f/a/b/v/b/f/c;->d1()Le/f/a/b/v/b/n/a;
+    invoke-virtual {v0}, Le/f/a/b/w/b/f/c;->d1()Le/f/a/b/w/b/n/a;
 
     move-result-object v0
 
-    check-cast v0, Le/f/a/b/v/f/i/p/b;
+    check-cast v0, Le/f/a/b/w/f/l/p/b;
 
     iget-boolean v1, p0, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment$g$a;->d:Z
 
     iget-object v2, p0, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment$g$a;->e:Lcom/fuib/android/spot/data/db/entities/P2PAcsResult;
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/v/f/i/p/b;->a(ZLcom/fuib/android/spot/data/db/entities/P2PAcsResult;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/w/f/l/p/b;->a(ZLcom/fuib/android/spot/data/db/entities/P2PAcsResult;)V
 
     return-void
 .end method

@@ -212,7 +212,7 @@
         0x7f04017f
         0x7f040180
         0x7f040181
-        0x7f040361
+        0x7f040365
     .end array-data
 
     :array_3
@@ -248,8 +248,8 @@
         0x7f040167
         0x7f040168
         0x7f0401d9
-        0x7f04029f
-        0x7f0402d5
-        0x7f0402db
+        0x7f0402a3
+        0x7f0402d9
+        0x7f0402df
     .end array-data
 .end method

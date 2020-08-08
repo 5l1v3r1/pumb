@@ -141,7 +141,7 @@
 
     .line 3
     :try_start_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     .line 4
     iget-object v1, p0, Lcom/fuib/android/spot/data/db/dao/PaymentTemplateDao_Impl;->__db:Lb/u/f;
@@ -210,7 +210,7 @@
 
     .line 14
     :goto_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     .line 15
     iget-object p1, p0, Lcom/fuib/android/spot/data/db/dao/PaymentTemplateDao_Impl;->__db:Lb/u/f;
@@ -279,7 +279,7 @@
 
     .line 5
     :goto_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     .line 6
     iget-object p1, p0, Lcom/fuib/android/spot/data/db/dao/PaymentTemplateDao_Impl;->__db:Lb/u/f;
@@ -348,7 +348,7 @@
 
     .line 5
     :goto_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     .line 6
     iget-object p1, p0, Lcom/fuib/android/spot/data/db/dao/PaymentTemplateDao_Impl;->__db:Lb/u/f;
@@ -417,7 +417,7 @@
 
     .line 5
     :goto_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     .line 6
     iget-object p1, p0, Lcom/fuib/android/spot/data/db/dao/PaymentTemplateDao_Impl;->__db:Lb/u/f;
@@ -545,7 +545,7 @@
 
     .line 12
     :try_start_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     .line 13
     iget-object p1, p0, Lcom/fuib/android/spot/data/db/dao/PaymentTemplateDao_Impl;->__db:Lb/u/f;
@@ -8097,7 +8097,7 @@
 
     .line 16
     :try_start_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     .line 17
     iget-object p1, p0, Lcom/fuib/android/spot/data/db/dao/PaymentTemplateDao_Impl;->__db:Lb/u/f;

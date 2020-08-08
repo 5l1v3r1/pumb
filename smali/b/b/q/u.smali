@@ -679,7 +679,7 @@
     .line 40
     :cond_0
     :try_start_1
-    invoke-virtual {v0, p2, p3}, Lb/h/d;->b(J)Ljava/lang/Object;
+    invoke-virtual {v0, p2, p3}, Lb/h/d;->c(J)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -714,7 +714,7 @@
     .line 43
     :cond_1
     :try_start_2
-    invoke-virtual {v0, p2, p3}, Lb/h/d;->a(J)V
+    invoke-virtual {v0, p2, p3}, Lb/h/d;->b(J)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

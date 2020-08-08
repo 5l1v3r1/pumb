@@ -49,11 +49,11 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p2, p3, p4, p5}, Lcom/fuib/android/spot/data/api/common/AbstractService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;)V
+    invoke-direct {p0, p2, p3, p4, p5}, Lcom/fuib/android/spot/data/api/common/AbstractService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;)V
 
     iput-object p1, p0, Lcom/fuib/android/spot/data/api/auth/IdentifyService;->context:Landroid/content/Context;
 
@@ -96,7 +96,7 @@
 
     iget-object v2, p0, Lcom/fuib/android/spot/data/api/auth/IdentifyService;->context:Landroid/content/Context;
 
-    invoke-static {v2}, Le/f/a/b/s/f/h1;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v2}, Le/f/a/b/t/f/h1;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 

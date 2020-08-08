@@ -1,111 +1,67 @@
 .class public final Lf/d/b;
 .super Ljava/lang/Object;
-.source "DelegateFactory.java"
-
-# interfaces
-.implements Lf/d/d;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lf/d/d<",
-        "TT;>;"
-    }
-.end annotation
-
-
-# instance fields
-.field public a:Lj/a/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj/a/a<",
-            "TT;>;"
-        }
-    .end annotation
-.end field
+.source "DaggerCollections.java"
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a(Lj/a/a;)V
+.method public static a(I)I
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj/a/a<",
-            "TT;>;)V"
-        }
-    .end annotation
 
-    if-eqz p1, :cond_1
+    const/4 v0, 0x3
 
-    .line 1
-    iget-object v0, p0, Lf/d/b;->a:Lj/a/a;
+    if-ge p0, v0, :cond_0
 
-    if-nez v0, :cond_0
+    add-int/lit8 p0, p0, 0x1
 
-    .line 2
-    iput-object p1, p0, Lf/d/b;->a:Lj/a/a;
+    return p0
 
-    return-void
-
-    .line 3
     :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
+    const/high16 v0, 0x40000000    # 2.0f
 
-    invoke-direct {p1}, Ljava/lang/IllegalStateException;-><init>()V
+    if-ge p0, v0, :cond_1
 
-    throw p1
+    int-to-float p0, p0
 
-    .line 4
+    const/high16 v0, 0x3f400000    # 0.75f
+
+    div-float/2addr p0, v0
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    add-float/2addr p0, v0
+
+    float-to-int p0, p0
+
+    return p0
+
     :cond_1
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    const p0, 0x7fffffff
 
-    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
-
-    throw p1
+    return p0
 .end method
 
-.method public get()Ljava/lang/Object;
+.method public static b(I)Ljava/util/LinkedHashMap;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()TT;"
+            "<K:",
+            "Ljava/lang/Object;",
+            "V:",
+            "Ljava/lang/Object;",
+            ">(I)",
+            "Ljava/util/LinkedHashMap<",
+            "TK;TV;>;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lf/d/b;->a:Lj/a/a;
+    new-instance v0, Ljava/util/LinkedHashMap;
 
-    if-eqz v0, :cond_0
+    invoke-static {p0}, Lf/d/b;->a(I)I
 
-    .line 2
-    invoke-interface {v0}, Lj/a/a;->get()Ljava/lang/Object;
+    move-result p0
 
-    move-result-object v0
+    invoke-direct {v0, p0}, Ljava/util/LinkedHashMap;-><init>(I)V
 
     return-object v0
-
-    .line 3
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    invoke-direct {v0}, Ljava/lang/IllegalStateException;-><init>()V
-
-    throw v0
 .end method

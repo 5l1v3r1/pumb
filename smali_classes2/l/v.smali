@@ -888,7 +888,7 @@
     return-object v0
 .end method
 
-.method public u()I
+.method public q()I
     .locals 1
 
     .line 1

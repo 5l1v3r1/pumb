@@ -21,5 +21,5 @@
 .method public abstract cancel()V
 .end method
 
-.method public abstract t()Ll/a0;
+.method public abstract r()Ll/a0;
 .end method

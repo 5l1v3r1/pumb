@@ -3,12 +3,12 @@
 .source "LottieDrawable.java"
 
 # interfaces
-.implements Le/a/a/f$l;
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Le/a/a/f;->b(I)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Le/a/a/f;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,19 +18,15 @@
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Le/a/a/f;
+.field public final synthetic c:Le/a/a/f;
 
 
 # direct methods
-.method public constructor <init>(Le/a/a/f;I)V
+.method public constructor <init>(Le/a/a/f;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Le/a/a/f$h;->b:Le/a/a/f;
-
-    iput p2, p0, Le/a/a/f$h;->a:I
+    iput-object p1, p0, Le/a/a/f$h;->c:Le/a/a/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,15 +35,37 @@
 
 
 # virtual methods
-.method public a(Le/a/a/d;)V
+.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
     .line 1
-    iget-object p1, p0, Le/a/a/f$h;->b:Le/a/a/f;
+    iget-object p1, p0, Le/a/a/f$h;->c:Le/a/a/f;
 
-    iget v0, p0, Le/a/a/f$h;->a:I
+    invoke-static {p1}, Le/a/a/f;->a(Le/a/a/f;)Le/a/a/u/l/b;
 
-    invoke-virtual {p1, v0}, Le/a/a/f;->b(I)V
+    move-result-object p1
 
+    if-eqz p1, :cond_0
+
+    .line 2
+    iget-object p1, p0, Le/a/a/f$h;->c:Le/a/a/f;
+
+    invoke-static {p1}, Le/a/a/f;->a(Le/a/a/f;)Le/a/a/u/l/b;
+
+    move-result-object p1
+
+    iget-object v0, p0, Le/a/a/f$h;->c:Le/a/a/f;
+
+    invoke-static {v0}, Le/a/a/f;->b(Le/a/a/f;)Le/a/a/x/e;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Le/a/a/x/e;->f()F
+
+    move-result v0
+
+    invoke-virtual {p1, v0}, Le/a/a/u/l/b;->b(F)V
+
+    :cond_0
     return-void
 .end method

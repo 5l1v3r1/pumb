@@ -16,7 +16,7 @@
     .end annotation
 .end field
 
-.field public static p:Le/h/a/a/d/q/e;
+.field public static p:Le/h/a/b/d/q/e;
 
 
 # instance fields
@@ -68,18 +68,18 @@
     .locals 1
 
     .line 1
-    new-instance v0, Le/h/a/a/b/a/h/d;
+    new-instance v0, Le/h/a/b/b/a/h/d;
 
-    invoke-direct {v0}, Le/h/a/a/b/a/h/d;-><init>()V
+    invoke-direct {v0}, Le/h/a/b/b/a/h/d;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 2
-    invoke-static {}, Le/h/a/a/d/q/h;->d()Le/h/a/a/d/q/e;
+    invoke-static {}, Le/h/a/b/d/q/h;->d()Le/h/a/b/d/q/e;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->p:Le/h/a/a/d/q/e;
+    sput-object v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->p:Le/h/a/b/d/q/e;
 
     return-void
 .end method
@@ -198,9 +198,9 @@
     if-nez p7, :cond_0
 
     .line 1
-    sget-object v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->p:Le/h/a/a/d/q/e;
+    sget-object v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->p:Le/h/a/b/d/q/e;
 
-    invoke-interface {v0}, Le/h/a/a/d/q/e;->a()J
+    invoke-interface {v0}, Le/h/a/b/d/q/e;->a()J
 
     move-result-wide v0
 
@@ -231,12 +231,12 @@
     move-result-wide v9
 
     .line 4
-    invoke-static/range {p8 .. p8}, Le/h/a/a/d/l/v;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {p8 .. p8}, Le/h/a/b/d/l/u;->b(Ljava/lang/String;)Ljava/lang/String;
 
     new-instance v12, Ljava/util/ArrayList;
 
     .line 5
-    invoke-static/range {p9 .. p9}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static/range {p9 .. p9}, Le/h/a/b/d/l/u;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object/from16 v0, p9
 
@@ -457,7 +457,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->m:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->g:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -466,7 +466,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->f:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -475,12 +475,39 @@
     .locals 1
 
     .line 1
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->n:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public D()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->m:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public E()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->d:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public F()Ljava/lang/String;
+    .locals 1
+
+    .line 1
     iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->e:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public D()Landroid/net/Uri;
+.method public G()Landroid/net/Uri;
     .locals 1
 
     .line 1
@@ -489,7 +516,7 @@
     return-object v0
 .end method
 
-.method public E()Ljava/util/Set;
+.method public H()Ljava/util/Set;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -515,7 +542,7 @@
     return-object v0
 .end method
 
-.method public F()Ljava/lang/String;
+.method public I()Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -524,7 +551,7 @@
     return-object v0
 .end method
 
-.method public final G()Ljava/lang/String;
+.method public final J()Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -533,11 +560,11 @@
     return-object v0
 .end method
 
-.method public final H()Ljava/lang/String;
+.method public final K()Ljava/lang/String;
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->I()Lorg/json/JSONObject;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->L()Lorg/json/JSONObject;
 
     move-result-object v0
 
@@ -554,7 +581,7 @@
     return-object v0
 .end method
 
-.method public final I()Lorg/json/JSONObject;
+.method public final L()Lorg/json/JSONObject;
     .locals 6
 
     .line 1
@@ -564,7 +591,7 @@
 
     .line 2
     :try_start_0
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->B()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->E()Ljava/lang/String;
 
     move-result-object v1
 
@@ -573,7 +600,7 @@
     const-string v1, "id"
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->B()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->E()Ljava/lang/String;
 
     move-result-object v2
 
@@ -581,7 +608,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->C()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->F()Ljava/lang/String;
 
     move-result-object v1
 
@@ -590,7 +617,7 @@
     const-string v1, "tokenId"
 
     .line 5
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->C()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->F()Ljava/lang/String;
 
     move-result-object v2
 
@@ -598,7 +625,7 @@
 
     .line 6
     :cond_1
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->y()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->B()Ljava/lang/String;
 
     move-result-object v1
 
@@ -607,7 +634,7 @@
     const-string v1, "email"
 
     .line 7
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->y()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->B()Ljava/lang/String;
 
     move-result-object v2
 
@@ -615,7 +642,7 @@
 
     .line 8
     :cond_2
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->x()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->A()Ljava/lang/String;
 
     move-result-object v1
 
@@ -624,7 +651,7 @@
     const-string v1, "displayName"
 
     .line 9
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->x()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->A()Ljava/lang/String;
 
     move-result-object v2
 
@@ -632,7 +659,7 @@
 
     .line 10
     :cond_3
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->A()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->D()Ljava/lang/String;
 
     move-result-object v1
 
@@ -641,7 +668,7 @@
     const-string v1, "givenName"
 
     .line 11
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->A()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->D()Ljava/lang/String;
 
     move-result-object v2
 
@@ -649,7 +676,7 @@
 
     .line 12
     :cond_4
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->z()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->C()Ljava/lang/String;
 
     move-result-object v1
 
@@ -658,7 +685,7 @@
     const-string v1, "familyName"
 
     .line 13
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->z()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->C()Ljava/lang/String;
 
     move-result-object v2
 
@@ -666,7 +693,7 @@
 
     .line 14
     :cond_5
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->D()Landroid/net/Uri;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->G()Landroid/net/Uri;
 
     move-result-object v1
 
@@ -675,7 +702,7 @@
     const-string v1, "photoUrl"
 
     .line 15
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->D()Landroid/net/Uri;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->G()Landroid/net/Uri;
 
     move-result-object v2
 
@@ -687,7 +714,7 @@
 
     .line 16
     :cond_6
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->F()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->I()Ljava/lang/String;
 
     move-result-object v1
 
@@ -696,7 +723,7 @@
     const-string v1, "serverAuthCode"
 
     .line 17
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->F()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->I()Ljava/lang/String;
 
     move-result-object v2
 
@@ -741,7 +768,7 @@
     check-cast v2, [Lcom/google/android/gms/common/api/Scope;
 
     .line 23
-    sget-object v3, Le/h/a/a/b/a/h/c;->c:Ljava/util/Comparator;
+    sget-object v3, Le/h/a/b/b/a/h/c;->c:Ljava/util/Comparator;
 
     invoke-static {v2, v3}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
@@ -824,11 +851,11 @@
     if-eqz v1, :cond_2
 
     .line 6
-    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->E()Ljava/util/Set;
+    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->H()Ljava/util/Set;
 
     move-result-object p1
 
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->E()Ljava/util/Set;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->H()Ljava/util/Set;
 
     move-result-object v1
 
@@ -882,7 +909,7 @@
     mul-int/lit8 v0, v0, 0x1f
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->E()Ljava/util/Set;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->H()Ljava/util/Set;
 
     move-result-object v1
 
@@ -899,7 +926,7 @@
     .locals 5
 
     .line 1
-    invoke-static {p1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;)I
+    invoke-static {p1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;)I
 
     move-result v0
 
@@ -908,10 +935,10 @@
 
     const/4 v2, 0x1
 
-    invoke-static {p1, v2, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;II)V
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->B()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->E()Ljava/lang/String;
 
     move-result-object v1
 
@@ -920,57 +947,57 @@
     const/4 v3, 0x2
 
     .line 4
-    invoke-static {p1, v3, v1, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v3, v1, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 5
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->C()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->F()Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v3, 0x3
 
     .line 6
-    invoke-static {p1, v3, v1, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v3, v1, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 7
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->y()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->B()Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v3, 0x4
 
     .line 8
-    invoke-static {p1, v3, v1, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v3, v1, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 9
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->x()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->A()Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v3, 0x5
 
     .line 10
-    invoke-static {p1, v3, v1, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v3, v1, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 11
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->D()Landroid/net/Uri;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->G()Landroid/net/Uri;
 
     move-result-object v1
 
     const/4 v3, 0x6
 
     .line 12
-    invoke-static {p1, v3, v1, p2, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v3, v1, p2, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 13
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->F()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->I()Ljava/lang/String;
 
     move-result-object p2
 
     const/4 v1, 0x7
 
     .line 14
-    invoke-static {p1, v1, p2, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, p2, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 15
     iget-wide v3, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->j:J
@@ -978,7 +1005,7 @@
     const/16 p2, 0x8
 
     .line 16
-    invoke-static {p1, p2, v3, v4}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;IJ)V
+    invoke-static {p1, p2, v3, v4}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;IJ)V
 
     .line 17
     iget-object p2, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->k:Ljava/lang/String;
@@ -986,64 +1013,37 @@
     const/16 v1, 0x9
 
     .line 18
-    invoke-static {p1, v1, p2, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, p2, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 19
     iget-object p2, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->l:Ljava/util/List;
 
     const/16 v1, 0xa
 
-    invoke-static {p1, v1, p2, v2}, Le/h/a/a/d/l/z/a;->b(Landroid/os/Parcel;ILjava/util/List;Z)V
+    invoke-static {p1, v1, p2, v2}, Le/h/a/b/d/l/y/a;->b(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 20
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->A()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->D()Ljava/lang/String;
 
     move-result-object p2
 
     const/16 v1, 0xb
 
     .line 21
-    invoke-static {p1, v1, p2, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, p2, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 22
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->z()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->C()Ljava/lang/String;
 
     move-result-object p2
 
     const/16 v1, 0xc
 
     .line 23
-    invoke-static {p1, v1, p2, v2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, p2, v2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 24
-    invoke-static {p1, v0}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;I)V
 
     return-void
-.end method
-
-.method public x()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->g:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public y()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->f:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public z()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->n:Ljava/lang/String;
-
-    return-object v0
 .end method

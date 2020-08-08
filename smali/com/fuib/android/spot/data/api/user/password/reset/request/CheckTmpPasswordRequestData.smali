@@ -47,7 +47,7 @@
 
 
 # instance fields
-.field public final appType:Le/f/a/b/s/f/e;
+.field public final appType:Le/f/a/b/t/f/e;
     .annotation runtime Le/h/c/v/c;
         value = "app_type"
     .end annotation
@@ -85,7 +85,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Le/f/a/b/s/f/e;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Le/f/a/b/t/f/e;)V
     .locals 4
 
     .line 1
@@ -109,18 +109,18 @@
 
     iput-object p5, p0, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckTmpPasswordRequestData;->appVersion:Ljava/lang/String;
 
-    iput-object p6, p0, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckTmpPasswordRequestData;->appType:Le/f/a/b/s/f/e;
+    iput-object p6, p0, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckTmpPasswordRequestData;->appType:Le/f/a/b/t/f/e;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final getAppType()Le/f/a/b/s/f/e;
+.method public final getAppType()Le/f/a/b/t/f/e;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckTmpPasswordRequestData;->appType:Le/f/a/b/s/f/e;
+    iget-object v0, p0, Lcom/fuib/android/spot/data/api/user/password/reset/request/CheckTmpPasswordRequestData;->appType:Le/f/a/b/t/f/e;
 
     return-object v0
 .end method

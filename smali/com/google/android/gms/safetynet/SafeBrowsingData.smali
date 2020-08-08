@@ -36,9 +36,9 @@
 
     const-class v0, Lcom/google/android/gms/safetynet/SafeBrowsingData;
 
-    new-instance v0, Le/h/a/a/j/i;
+    new-instance v0, Le/h/a/b/j/i;
 
-    invoke-direct {v0}, Le/h/a/a/j/i;-><init>()V
+    invoke-direct {v0}, Le/h/a/b/j/i;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/safetynet/SafeBrowsingData;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -97,7 +97,31 @@
 
 
 # virtual methods
-.method public A()[B
+.method public A()Landroid/os/ParcelFileDescriptor;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/safetynet/SafeBrowsingData;->e:Landroid/os/ParcelFileDescriptor;
+
+    return-object v0
+.end method
+
+.method public B()J
+    .locals 2
+
+    iget-wide v0, p0, Lcom/google/android/gms/safetynet/SafeBrowsingData;->f:J
+
+    return-wide v0
+.end method
+
+.method public C()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/safetynet/SafeBrowsingData;->c:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public D()[B
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/safetynet/SafeBrowsingData;->g:[B
@@ -105,7 +129,7 @@
     return-object v0
 .end method
 
-.method public final B()Ljava/io/FileOutputStream;
+.method public final E()Ljava/io/FileOutputStream;
     .locals 5
 
     iget-object v0, p0, Lcom/google/android/gms/safetynet/SafeBrowsingData;->i:Ljava/io/File;
@@ -212,7 +236,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/google/android/gms/safetynet/SafeBrowsingData;->B()Ljava/io/FileOutputStream;
+    invoke-virtual {p0}, Lcom/google/android/gms/safetynet/SafeBrowsingData;->E()Ljava/io/FileOutputStream;
 
     move-result-object v0
 
@@ -268,35 +292,11 @@
     or-int/2addr p2, v1
 
     :goto_1
-    invoke-static {p0, p1, p2}, Le/h/a/a/j/i;->a(Lcom/google/android/gms/safetynet/SafeBrowsingData;Landroid/os/Parcel;I)V
+    invoke-static {p0, p1, p2}, Le/h/a/b/j/i;->a(Lcom/google/android/gms/safetynet/SafeBrowsingData;Landroid/os/Parcel;I)V
 
     const/4 p1, 0x0
 
     iput-object p1, p0, Lcom/google/android/gms/safetynet/SafeBrowsingData;->e:Landroid/os/ParcelFileDescriptor;
 
     return-void
-.end method
-
-.method public x()Landroid/os/ParcelFileDescriptor;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/safetynet/SafeBrowsingData;->e:Landroid/os/ParcelFileDescriptor;
-
-    return-object v0
-.end method
-
-.method public y()J
-    .locals 2
-
-    iget-wide v0, p0, Lcom/google/android/gms/safetynet/SafeBrowsingData;->f:J
-
-    return-wide v0
-.end method
-
-.method public z()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/safetynet/SafeBrowsingData;->c:Ljava/lang/String;
-
-    return-object v0
 .end method

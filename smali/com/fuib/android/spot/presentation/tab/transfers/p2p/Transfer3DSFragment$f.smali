@@ -23,7 +23,7 @@
         ">",
         "Ljava/lang/Object;",
         "Lb/p/p<",
-        "Le/f/a/b/a0/e;",
+        "Le/f/a/b/b0/e;",
         ">;"
     }
 .end annotation
@@ -46,22 +46,22 @@
 
 
 # virtual methods
-.method public final a(Le/f/a/b/a0/e;)V
+.method public final a(Le/f/a/b/b0/e;)V
     .locals 9
 
     if-eqz p1, :cond_0
 
     .line 1
-    invoke-virtual {p1}, Le/f/a/b/a0/e;->a()Lcom/fuib/android/spot/data/db/entities/payments/PaymentAttributes;
+    invoke-virtual {p1}, Le/f/a/b/b0/e;->a()Lcom/fuib/android/spot/data/db/entities/payments/PaymentAttributes;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
     .line 2
-    sget-object v0, Le/f/a/b/v/f/i/p/a;->e:Le/f/a/b/v/f/i/p/a$a;
+    sget-object v0, Le/f/a/b/w/f/l/p/a;->e:Le/f/a/b/w/f/l/p/a$a;
 
-    invoke-virtual {v0, p1}, Le/f/a/b/v/f/i/p/a$a;->a(Lcom/fuib/android/spot/data/db/entities/payments/PaymentAttributes;)Le/f/a/b/v/f/i/p/a;
+    invoke-virtual {v0, p1}, Le/f/a/b/w/f/l/p/a$a;->a(Lcom/fuib/android/spot/data/db/entities/payments/PaymentAttributes;)Le/f/a/b/w/f/l/p/a;
 
     move-result-object p1
 
@@ -82,13 +82,13 @@
 
     iget-object v2, p0, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment$f;->a:Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment;
 
-    invoke-virtual {v2}, Le/f/a/b/v/b/f/c;->d1()Le/f/a/b/v/b/n/a;
+    invoke-virtual {v2}, Le/f/a/b/w/b/f/c;->d1()Le/f/a/b/w/b/n/a;
 
     move-result-object v2
 
-    check-cast v2, Le/f/a/b/v/f/i/p/b;
+    check-cast v2, Le/f/a/b/w/f/l/p/b;
 
-    invoke-virtual {v2}, Le/f/a/b/v/b/n/a;->q()Lcom/fuib/android/spot/data/db/entities/AppLocale;
+    invoke-virtual {v2}, Le/f/a/b/w/b/n/a;->t()Lcom/fuib/android/spot/data/db/entities/AppLocale;
 
     move-result-object v2
 
@@ -96,7 +96,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, p1, v2}, Le/f/a/a/a/a;->a(Landroid/content/res/Resources;Le/f/a/b/v/f/i/p/a;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1, p1, v2}, Le/f/a/a/a/a;->a(Landroid/content/res/Resources;Le/f/a/b/w/f/l/p/a;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -129,9 +129,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Le/f/a/b/a0/e;
+    check-cast p1, Le/f/a/b/b0/e;
 
-    invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment$f;->a(Le/f/a/b/a0/e;)V
+    invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment$f;->a(Le/f/a/b/b0/e;)V
 
     return-void
 .end method

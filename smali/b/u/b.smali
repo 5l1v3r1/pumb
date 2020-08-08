@@ -57,7 +57,7 @@
     invoke-virtual {p0, v0, p1}, Lb/u/b;->bind(Lb/w/a/f;Ljava/lang/Object;)V
 
     .line 3
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     move-result p1
     :try_end_0
@@ -114,7 +114,7 @@
     invoke-virtual {p0, v0, v2}, Lb/u/b;->bind(Lb/w/a/f;Ljava/lang/Object;)V
 
     .line 4
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     move-result v2
     :try_end_0
@@ -168,7 +168,7 @@
     invoke-virtual {p0, v0, v4}, Lb/u/b;->bind(Lb/w/a/f;Ljava/lang/Object;)V
 
     .line 9
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     move-result v4
     :try_end_0

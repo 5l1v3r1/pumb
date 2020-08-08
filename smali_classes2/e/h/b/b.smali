@@ -1,9 +1,9 @@
 .class public final synthetic Le/h/b/b;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-common@@19.0.0"
+.source "com.google.firebase:firebase-common@@19.3.0"
 
 # interfaces
-.implements Le/h/b/h/a;
+.implements Le/h/b/k/a;
 
 
 # instance fields
@@ -25,7 +25,7 @@
     return-void
 .end method
 
-.method public static a(Lcom/google/firebase/FirebaseApp;Landroid/content/Context;)Le/h/b/h/a;
+.method public static a(Lcom/google/firebase/FirebaseApp;Landroid/content/Context;)Le/h/b/k/a;
     .locals 1
 
     new-instance v0, Le/h/b/b;
@@ -44,7 +44,7 @@
 
     iget-object v1, p0, Le/h/b/b;->b:Landroid/content/Context;
 
-    invoke-static {v0, v1}, Lcom/google/firebase/FirebaseApp;->a(Lcom/google/firebase/FirebaseApp;Landroid/content/Context;)Le/h/b/i/a;
+    invoke-static {v0, v1}, Lcom/google/firebase/FirebaseApp;->a(Lcom/google/firebase/FirebaseApp;Landroid/content/Context;)Le/h/b/m/a;
 
     move-result-object v0
 

@@ -3,14 +3,14 @@
 .source "WebSocketClient_Factory.java"
 
 # interfaces
-.implements Lf/d/d;
+.implements Lf/d/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lf/d/d<",
+        "Lf/d/e<",
         "Lcom/fuib/android/spot/data/socket/WebSocketClient;",
         ">;"
     }
@@ -22,7 +22,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c;",
+            "Le/f/a/b/t/f/c;",
             ">;"
         }
     .end annotation
@@ -42,7 +42,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/i;",
+            "Le/f/a/b/t/f/i;",
             ">;"
         }
     .end annotation
@@ -62,7 +62,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/j0;",
+            "Le/f/a/b/t/f/j0;",
             ">;"
         }
     .end annotation
@@ -72,7 +72,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/w;",
+            "Le/f/a/b/t/f/w;",
             ">;"
         }
     .end annotation
@@ -112,7 +112,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lj/a/a<",
-            "Le/f/a/b/s/f/a0;",
+            "Le/f/a/b/t/f/a0;",
             ">;"
         }
     .end annotation
@@ -126,22 +126,22 @@
         value = {
             "(",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c;",
+            "Le/f/a/b/t/f/c;",
             ">;",
             "Lj/a/a<",
             "Le/h/c/f;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/i;",
+            "Le/f/a/b/t/f/i;",
             ">;",
             "Lj/a/a<",
             "Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/j0;",
+            "Le/f/a/b/t/f/j0;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/w;",
+            "Le/f/a/b/t/f/w;",
             ">;",
             "Lj/a/a<",
             "Lcom/fuib/android/spot/data/api/common/MessageResponseFactory;",
@@ -153,7 +153,7 @@
             "Lcom/fuib/android/spot/data/socket/ReplicateHandler;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/a0;",
+            "Le/f/a/b/t/f/a0;",
             ">;)V"
         }
     .end annotation
@@ -200,22 +200,22 @@
         value = {
             "(",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c;",
+            "Le/f/a/b/t/f/c;",
             ">;",
             "Lj/a/a<",
             "Le/h/c/f;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/i;",
+            "Le/f/a/b/t/f/i;",
             ">;",
             "Lj/a/a<",
             "Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/j0;",
+            "Le/f/a/b/t/f/j0;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/w;",
+            "Le/f/a/b/t/f/w;",
             ">;",
             "Lj/a/a<",
             "Lcom/fuib/android/spot/data/api/common/MessageResponseFactory;",
@@ -227,7 +227,7 @@
             "Lcom/fuib/android/spot/data/socket/ReplicateHandler;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/a0;",
+            "Le/f/a/b/t/f/a0;",
             ">;)",
             "Lcom/fuib/android/spot/data/socket/WebSocketClient_Factory;"
         }
@@ -263,7 +263,7 @@
     return-object v11
 .end method
 
-.method public static newWebSocketClient(Le/f/a/b/s/f/c;Le/h/c/f;Le/f/a/b/s/f/i;Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;Le/f/a/b/s/f/j0;Le/f/a/b/s/f/w;Lcom/fuib/android/spot/data/api/common/MessageResponseFactory;Lcom/fuib/android/spot/data/socket/RequestQueueManager;Lcom/fuib/android/spot/data/socket/ReplicateHandler;Le/f/a/b/s/f/a0;)Lcom/fuib/android/spot/data/socket/WebSocketClient;
+.method public static newWebSocketClient(Le/f/a/b/t/f/c;Le/h/c/f;Le/f/a/b/t/f/i;Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;Le/f/a/b/t/f/j0;Le/f/a/b/t/f/w;Lcom/fuib/android/spot/data/api/common/MessageResponseFactory;Lcom/fuib/android/spot/data/socket/RequestQueueManager;Lcom/fuib/android/spot/data/socket/ReplicateHandler;Le/f/a/b/t/f/a0;)Lcom/fuib/android/spot/data/socket/WebSocketClient;
     .locals 12
 
     .line 1
@@ -291,7 +291,7 @@
 
     move-object/from16 v10, p9
 
-    invoke-direct/range {v0 .. v10}, Lcom/fuib/android/spot/data/socket/WebSocketClient;-><init>(Le/f/a/b/s/f/c;Le/h/c/f;Le/f/a/b/s/f/i;Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;Le/f/a/b/s/f/j0;Le/f/a/b/s/f/w;Lcom/fuib/android/spot/data/api/common/MessageResponseFactory;Lcom/fuib/android/spot/data/socket/RequestQueueManager;Lcom/fuib/android/spot/data/socket/ReplicateHandler;Le/f/a/b/s/f/a0;)V
+    invoke-direct/range {v0 .. v10}, Lcom/fuib/android/spot/data/socket/WebSocketClient;-><init>(Le/f/a/b/t/f/c;Le/h/c/f;Le/f/a/b/t/f/i;Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;Le/f/a/b/t/f/j0;Le/f/a/b/t/f/w;Lcom/fuib/android/spot/data/api/common/MessageResponseFactory;Lcom/fuib/android/spot/data/socket/RequestQueueManager;Lcom/fuib/android/spot/data/socket/ReplicateHandler;Le/f/a/b/t/f/a0;)V
 
     return-object v11
 .end method
@@ -302,22 +302,22 @@
         value = {
             "(",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/c;",
+            "Le/f/a/b/t/f/c;",
             ">;",
             "Lj/a/a<",
             "Le/h/c/f;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/i;",
+            "Le/f/a/b/t/f/i;",
             ">;",
             "Lj/a/a<",
             "Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/j0;",
+            "Le/f/a/b/t/f/j0;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/w;",
+            "Le/f/a/b/t/f/w;",
             ">;",
             "Lj/a/a<",
             "Lcom/fuib/android/spot/data/api/common/MessageResponseFactory;",
@@ -329,7 +329,7 @@
             "Lcom/fuib/android/spot/data/socket/ReplicateHandler;",
             ">;",
             "Lj/a/a<",
-            "Le/f/a/b/s/f/a0;",
+            "Le/f/a/b/t/f/a0;",
             ">;)",
             "Lcom/fuib/android/spot/data/socket/WebSocketClient;"
         }
@@ -345,7 +345,7 @@
 
     move-object v1, v0
 
-    check-cast v1, Le/f/a/b/s/f/c;
+    check-cast v1, Le/f/a/b/t/f/c;
 
     .line 3
     invoke-interface {p1}, Lj/a/a;->get()Ljava/lang/Object;
@@ -363,7 +363,7 @@
 
     move-object v3, v0
 
-    check-cast v3, Le/f/a/b/s/f/i;
+    check-cast v3, Le/f/a/b/t/f/i;
 
     .line 5
     invoke-interface {p3}, Lj/a/a;->get()Ljava/lang/Object;
@@ -381,7 +381,7 @@
 
     move-object v5, v0
 
-    check-cast v5, Le/f/a/b/s/f/j0;
+    check-cast v5, Le/f/a/b/t/f/j0;
 
     .line 7
     invoke-interface/range {p5 .. p5}, Lj/a/a;->get()Ljava/lang/Object;
@@ -390,7 +390,7 @@
 
     move-object v6, v0
 
-    check-cast v6, Le/f/a/b/s/f/w;
+    check-cast v6, Le/f/a/b/t/f/w;
 
     .line 8
     invoke-interface/range {p6 .. p6}, Lj/a/a;->get()Ljava/lang/Object;
@@ -426,11 +426,11 @@
 
     move-object v10, v0
 
-    check-cast v10, Le/f/a/b/s/f/a0;
+    check-cast v10, Le/f/a/b/t/f/a0;
 
     move-object v0, v11
 
-    invoke-direct/range {v0 .. v10}, Lcom/fuib/android/spot/data/socket/WebSocketClient;-><init>(Le/f/a/b/s/f/c;Le/h/c/f;Le/f/a/b/s/f/i;Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;Le/f/a/b/s/f/j0;Le/f/a/b/s/f/w;Lcom/fuib/android/spot/data/api/common/MessageResponseFactory;Lcom/fuib/android/spot/data/socket/RequestQueueManager;Lcom/fuib/android/spot/data/socket/ReplicateHandler;Le/f/a/b/s/f/a0;)V
+    invoke-direct/range {v0 .. v10}, Lcom/fuib/android/spot/data/socket/WebSocketClient;-><init>(Le/f/a/b/t/f/c;Le/h/c/f;Le/f/a/b/t/f/i;Lcom/fuib/android/spot/data/socket/RequestTimeoutErrorDelegate;Le/f/a/b/t/f/j0;Le/f/a/b/t/f/w;Lcom/fuib/android/spot/data/api/common/MessageResponseFactory;Lcom/fuib/android/spot/data/socket/RequestQueueManager;Lcom/fuib/android/spot/data/socket/ReplicateHandler;Le/f/a/b/t/f/a0;)V
 
     return-object v11
 .end method

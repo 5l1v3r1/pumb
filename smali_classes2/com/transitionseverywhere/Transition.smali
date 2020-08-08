@@ -778,7 +778,7 @@
     .line 175
     iget-object p2, p0, Le/m/k;->c:Lb/h/d;
 
-    invoke-virtual {p2, v1, v2}, Lb/h/d;->c(J)I
+    invoke-virtual {p2, v1, v2}, Lb/h/d;->d(J)I
 
     move-result p2
 
@@ -787,7 +787,7 @@
     .line 176
     iget-object p1, p0, Le/m/k;->c:Lb/h/d;
 
-    invoke-virtual {p1, v1, v2}, Lb/h/d;->b(J)Ljava/lang/Object;
+    invoke-virtual {p1, v1, v2}, Lb/h/d;->c(J)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -3326,7 +3326,7 @@
 
     move-result-wide v3
 
-    invoke-virtual {p4, v3, v4}, Lb/h/d;->b(J)Ljava/lang/Object;
+    invoke-virtual {p4, v3, v4}, Lb/h/d;->c(J)Ljava/lang/Object;
 
     move-result-object v3
 

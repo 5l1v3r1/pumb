@@ -28,9 +28,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Le/h/a/a/b/a/e/g;
+    new-instance v0, Le/h/a/b/b/a/e/g;
 
-    invoke-direct {v0}, Le/h/a/a/b/a/e/g;-><init>()V
+    invoke-direct {v0}, Le/h/a/b/b/a/e/g;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/api/credentials/IdToken;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -53,7 +53,7 @@
     const-string v1, "account type string cannot be null or empty"
 
     .line 3
-    invoke-static {v0, v1}, Le/h/a/a/d/l/v;->a(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Le/h/a/b/d/l/u;->a(ZLjava/lang/Object;)V
 
     .line 4
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -65,7 +65,7 @@
     const-string v1, "id token string cannot be null or empty"
 
     .line 5
-    invoke-static {v0, v1}, Le/h/a/a/d/l/v;->a(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Le/h/a/b/d/l/u;->a(ZLjava/lang/Object;)V
 
     .line 6
     iput-object p1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->c:Ljava/lang/String;
@@ -78,6 +78,15 @@
 
 
 # virtual methods
+.method public final A()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->d:Ljava/lang/String;
+
+    return-object v0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
@@ -106,7 +115,7 @@
 
     iget-object v3, p1, Lcom/google/android/gms/auth/api/credentials/IdToken;->c:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Le/h/a/a/d/l/t;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Le/h/a/b/d/l/s;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -117,7 +126,7 @@
     iget-object p1, p1, Lcom/google/android/gms/auth/api/credentials/IdToken;->d:Ljava/lang/String;
 
     .line 4
-    invoke-static {v1, p1}, Le/h/a/a/d/l/t;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Le/h/a/b/d/l/s;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -142,7 +151,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;)I
+    invoke-static {p1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;)I
 
     move-result p2
 
@@ -156,29 +165,20 @@
     const/4 v2, 0x1
 
     .line 3
-    invoke-static {p1, v2, v0, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v2, v0, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/IdToken;->x()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/IdToken;->A()Ljava/lang/String;
 
     move-result-object v0
 
     const/4 v2, 0x2
 
     .line 5
-    invoke-static {p1, v2, v0, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v2, v0, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    invoke-static {p1, p2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;I)V
 
     return-void
-.end method
-
-.method public final x()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->d:Ljava/lang/String;
-
-    return-object v0
 .end method

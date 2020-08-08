@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/google/firebase/FirebaseApp$b;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-common@@19.0.0"
+.source "com.google.firebase:firebase-common@@19.3.0"
 
 
 # annotations

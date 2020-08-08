@@ -72,7 +72,7 @@
 
 
 # virtual methods
-.method public final a(Landroid/content/res/Resources;Le/f/a/b/v/f/i/p/a;Ljava/lang/String;)Ljava/lang/String;
+.method public final a(Landroid/content/res/Resources;Le/f/a/b/w/f/l/p/a;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
     .line 15
@@ -123,18 +123,18 @@
     .line 21
     :catch_1
     :goto_0
-    invoke-virtual {p0, v2, p2, p3}, Le/f/a/a/a/a;->a(Ljava/lang/String;Le/f/a/b/v/f/i/p/a;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v2, p2, p3}, Le/f/a/a/a/a;->a(Ljava/lang/String;Le/f/a/b/w/f/l/p/a;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final a(Le/f/a/b/v/f/i/p/a;)Ljava/lang/String;
+.method public final a(Le/f/a/b/w/f/l/p/a;)Ljava/lang/String;
     .locals 4
 
     .line 1
-    invoke-virtual {p1}, Le/f/a/b/v/f/i/p/a;->c()Ljava/lang/String;
+    invoke-virtual {p1}, Le/f/a/b/w/f/l/p/a;->c()Ljava/lang/String;
 
     move-result-object v0
 
@@ -189,7 +189,7 @@
     invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 5
-    invoke-virtual {p1}, Le/f/a/b/v/f/i/p/a;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Le/f/a/b/w/f/l/p/a;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -198,7 +198,7 @@
     .line 6
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Le/f/a/b/v/f/i/p/a;->d()Ljava/lang/String;
+    invoke-virtual {p1}, Le/f/a/b/w/f/l/p/a;->d()Ljava/lang/String;
 
     move-result-object v0
 
@@ -207,7 +207,7 @@
     .line 7
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Le/f/a/b/v/f/i/p/a;->b()Lcom/fuib/android/spot/data/api/transfer/common/AcsModel;
+    invoke-virtual {p1}, Le/f/a/b/w/f/l/p/a;->b()Lcom/fuib/android/spot/data/api/transfer/common/AcsModel;
 
     move-result-object v0
 
@@ -220,7 +220,7 @@
     .line 8
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Le/f/a/b/v/f/i/p/a;->b()Lcom/fuib/android/spot/data/api/transfer/common/AcsModel;
+    invoke-virtual {p1}, Le/f/a/b/w/f/l/p/a;->b()Lcom/fuib/android/spot/data/api/transfer/common/AcsModel;
 
     move-result-object p1
 
@@ -242,13 +242,13 @@
     return-object p1
 .end method
 
-.method public final a(Le/f/a/b/v/f/i/p/a;Ljava/lang/String;)Ljava/lang/String;
+.method public final a(Le/f/a/b/w/f/l/p/a;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     .line 10
     new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, p1}, Le/f/a/a/a/a;->a(Le/f/a/b/v/f/i/p/a;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Le/f/a/a/a/a;->a(Le/f/a/b/w/f/l/p/a;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -279,7 +279,7 @@
     return-object p1
 .end method
 
-.method public final a(Ljava/lang/String;Le/f/a/b/v/f/i/p/a;Ljava/lang/String;)Ljava/lang/String;
+.method public final a(Ljava/lang/String;Le/f/a/b/w/f/l/p/a;Ljava/lang/String;)Ljava/lang/String;
     .locals 16
 
     if-eqz p1, :cond_0
@@ -297,14 +297,14 @@
 
     move-object/from16 v6, p2
 
-    invoke-virtual {v0, v6, v1}, Le/f/a/a/a/a;->a(Le/f/a/b/v/f/i/p/a;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v6, v1}, Le/f/a/a/a/a;->a(Le/f/a/b/w/f/l/p/a;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
 
     .line 23
     sget-object v1, Le/f/a/a/a/a;->a:Ljava/lang/String;
 
-    invoke-virtual/range {p2 .. p2}, Le/f/a/b/v/f/i/p/a;->b()Lcom/fuib/android/spot/data/api/transfer/common/AcsModel;
+    invoke-virtual/range {p2 .. p2}, Le/f/a/b/w/f/l/p/a;->b()Lcom/fuib/android/spot/data/api/transfer/common/AcsModel;
 
     move-result-object v0
 
@@ -327,7 +327,7 @@
     .line 24
     sget-object v11, Le/f/a/a/a/a;->b:Ljava/lang/String;
 
-    invoke-virtual/range {p2 .. p2}, Le/f/a/b/v/f/i/p/a;->b()Lcom/fuib/android/spot/data/api/transfer/common/AcsModel;
+    invoke-virtual/range {p2 .. p2}, Le/f/a/b/w/f/l/p/a;->b()Lcom/fuib/android/spot/data/api/transfer/common/AcsModel;
 
     move-result-object v0
 
@@ -361,7 +361,7 @@
     .line 26
     sget-object v1, Le/f/a/a/a/a;->d:Ljava/lang/String;
 
-    invoke-virtual/range {p2 .. p2}, Le/f/a/b/v/f/i/p/a;->b()Lcom/fuib/android/spot/data/api/transfer/common/AcsModel;
+    invoke-virtual/range {p2 .. p2}, Le/f/a/b/w/f/l/p/a;->b()Lcom/fuib/android/spot/data/api/transfer/common/AcsModel;
 
     move-result-object v2
 

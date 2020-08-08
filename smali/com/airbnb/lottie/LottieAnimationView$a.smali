@@ -20,23 +20,17 @@
     value = {
         "Ljava/lang/Object;",
         "Le/a/a/h<",
-        "Le/a/a/d;",
+        "Ljava/lang/Throwable;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic a:Lcom/airbnb/lottie/LottieAnimationView;
-
-
 # direct methods
-.method public constructor <init>(Lcom/airbnb/lottie/LottieAnimationView;)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/airbnb/lottie/LottieAnimationView$a;->a:Lcom/airbnb/lottie/LottieAnimationView;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,24 +38,41 @@
 
 
 # virtual methods
-.method public a(Le/a/a/d;)V
-    .locals 1
-
-    .line 2
-    iget-object v0, p0, Lcom/airbnb/lottie/LottieAnimationView$a;->a:Lcom/airbnb/lottie/LottieAnimationView;
-
-    invoke-virtual {v0, p1}, Lcom/airbnb/lottie/LottieAnimationView;->setComposition(Le/a/a/d;)V
-
-    return-void
-.end method
-
 .method public bridge synthetic a(Ljava/lang/Object;)V
     .locals 0
 
     .line 1
-    check-cast p1, Le/a/a/d;
+    check-cast p1, Ljava/lang/Throwable;
 
-    invoke-virtual {p0, p1}, Lcom/airbnb/lottie/LottieAnimationView$a;->a(Le/a/a/d;)V
+    invoke-virtual {p0, p1}, Lcom/airbnb/lottie/LottieAnimationView$a;->a(Ljava/lang/Throwable;)V
 
     return-void
+.end method
+
+.method public a(Ljava/lang/Throwable;)V
+    .locals 2
+
+    .line 2
+    invoke-static {p1}, Le/a/a/x/h;->a(Ljava/lang/Throwable;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "Unable to load composition."
+
+    .line 3
+    invoke-static {v0, p1}, Le/a/a/x/d;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    return-void
+
+    .line 4
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "Unable to parse composition"
+
+    invoke-direct {v0, v1, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v0
 .end method

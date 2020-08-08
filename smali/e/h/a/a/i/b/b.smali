@@ -1,221 +1,205 @@
-.class public abstract Le/h/a/a/i/b/b;
-.super Ljava/lang/Object;
+.class public final enum Le/h/a/a/i/b/b;
+.super Ljava/lang/Enum;
+.source "com.google.android.datatransport:transport-backend-cct@@2.2.0"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Le/h/a/a/i/b/b;",
+        ">;"
+    }
+.end annotation
 
 
 # static fields
-.field public static volatile d:Landroid/os/Handler;
+.field public static final enum zza:Le/h/a/a/i/b/b;
 
+.field public static final enum zzb:Le/h/a/a/i/b/b;
 
-# instance fields
-.field public final a:Le/h/a/a/i/b/l5;
+.field public static final enum zzc:Le/h/a/a/i/b/b;
 
-.field public final b:Ljava/lang/Runnable;
+.field public static final enum zzd:Le/h/a/a/i/b/b;
 
-.field public volatile c:J
+.field public static final enum zze:Le/h/a/a/i/b/b;
+
+.field public static final enum zzf:Le/h/a/a/i/b/b;
+
+.field public static final zzg:Landroid/util/SparseArray;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/util/SparseArray<",
+            "Le/h/a/a/i/b/b;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Le/h/a/a/i/b/l5;)V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 9
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Le/h/a/a/i/b/b;
+
+    const/4 v1, 0x0
+
+    const-string v2, "DEFAULT"
+
+    invoke-direct {v0, v2, v1, v1}, Le/h/a/a/i/b/b;-><init>(Ljava/lang/String;II)V
+
+    sput-object v0, Le/h/a/a/i/b/b;->zza:Le/h/a/a/i/b/b;
 
     .line 2
-    invoke-static {p1}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance v0, Le/h/a/a/i/b/b;
+
+    const/4 v2, 0x1
+
+    const-string v3, "UNMETERED_ONLY"
+
+    invoke-direct {v0, v3, v2, v2}, Le/h/a/a/i/b/b;-><init>(Ljava/lang/String;II)V
+
+    sput-object v0, Le/h/a/a/i/b/b;->zzb:Le/h/a/a/i/b/b;
 
     .line 3
-    iput-object p1, p0, Le/h/a/a/i/b/b;->a:Le/h/a/a/i/b/l5;
+    new-instance v0, Le/h/a/a/i/b/b;
+
+    const/4 v3, 0x2
+
+    const-string v4, "UNMETERED_OR_DAILY"
+
+    invoke-direct {v0, v4, v3, v3}, Le/h/a/a/i/b/b;-><init>(Ljava/lang/String;II)V
+
+    sput-object v0, Le/h/a/a/i/b/b;->zzc:Le/h/a/a/i/b/b;
 
     .line 4
-    new-instance v0, Le/h/a/a/i/b/e;
+    new-instance v0, Le/h/a/a/i/b/b;
 
-    invoke-direct {v0, p0, p1}, Le/h/a/a/i/b/e;-><init>(Le/h/a/a/i/b/b;Le/h/a/a/i/b/l5;)V
+    const/4 v4, 0x3
 
-    iput-object v0, p0, Le/h/a/a/i/b/b;->b:Ljava/lang/Runnable;
+    const-string v5, "FAST_IF_RADIO_AWAKE"
 
-    return-void
-.end method
+    invoke-direct {v0, v5, v4, v4}, Le/h/a/a/i/b/b;-><init>(Ljava/lang/String;II)V
 
-.method public static synthetic a(Le/h/a/a/i/b/b;J)J
-    .locals 0
+    sput-object v0, Le/h/a/a/i/b/b;->zzd:Le/h/a/a/i/b/b;
 
-    const-wide/16 p1, 0x0
+    .line 5
+    new-instance v0, Le/h/a/a/i/b/b;
 
-    .line 10
-    iput-wide p1, p0, Le/h/a/a/i/b/b;->c:J
+    const/4 v5, 0x4
 
-    return-wide p1
-.end method
+    const-string v6, "NEVER"
 
+    invoke-direct {v0, v6, v5, v5}, Le/h/a/a/i/b/b;-><init>(Ljava/lang/String;II)V
 
-# virtual methods
-.method public final a()V
-    .locals 2
+    sput-object v0, Le/h/a/a/i/b/b;->zze:Le/h/a/a/i/b/b;
 
-    const-wide/16 v0, 0x0
+    .line 6
+    new-instance v0, Le/h/a/a/i/b/b;
+
+    const/4 v6, -0x1
+
+    const/4 v7, 0x5
+
+    const-string v8, "UNRECOGNIZED"
+
+    invoke-direct {v0, v8, v7, v6}, Le/h/a/a/i/b/b;-><init>(Ljava/lang/String;II)V
+
+    sput-object v0, Le/h/a/a/i/b/b;->zzf:Le/h/a/a/i/b/b;
+
+    const/4 v0, 0x6
+
+    new-array v0, v0, [Le/h/a/a/i/b/b;
+
+    .line 7
+    sget-object v8, Le/h/a/a/i/b/b;->zza:Le/h/a/a/i/b/b;
+
+    aput-object v8, v0, v1
+
+    sget-object v8, Le/h/a/a/i/b/b;->zzb:Le/h/a/a/i/b/b;
+
+    aput-object v8, v0, v2
+
+    sget-object v8, Le/h/a/a/i/b/b;->zzc:Le/h/a/a/i/b/b;
+
+    aput-object v8, v0, v3
+
+    sget-object v8, Le/h/a/a/i/b/b;->zzd:Le/h/a/a/i/b/b;
+
+    aput-object v8, v0, v4
+
+    sget-object v8, Le/h/a/a/i/b/b;->zze:Le/h/a/a/i/b/b;
+
+    aput-object v8, v0, v5
+
+    sget-object v8, Le/h/a/a/i/b/b;->zzf:Le/h/a/a/i/b/b;
+
+    aput-object v8, v0, v7
 
     .line 8
-    iput-wide v0, p0, Le/h/a/a/i/b/b;->c:J
+    new-instance v0, Landroid/util/SparseArray;
+
+    invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
+
+    sput-object v0, Le/h/a/a/i/b/b;->zzg:Landroid/util/SparseArray;
 
     .line 9
-    invoke-virtual {p0}, Le/h/a/a/i/b/b;->b()Landroid/os/Handler;
+    sget-object v0, Le/h/a/a/i/b/b;->zzg:Landroid/util/SparseArray;
 
-    move-result-object v0
+    sget-object v7, Le/h/a/a/i/b/b;->zza:Le/h/a/a/i/b/b;
 
-    iget-object v1, p0, Le/h/a/a/i/b/b;->b:Ljava/lang/Runnable;
+    invoke-virtual {v0, v1, v7}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+    .line 10
+    sget-object v0, Le/h/a/a/i/b/b;->zzg:Landroid/util/SparseArray;
+
+    sget-object v1, Le/h/a/a/i/b/b;->zzb:Le/h/a/a/i/b/b;
+
+    invoke-virtual {v0, v2, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    .line 11
+    sget-object v0, Le/h/a/a/i/b/b;->zzg:Landroid/util/SparseArray;
+
+    sget-object v1, Le/h/a/a/i/b/b;->zzc:Le/h/a/a/i/b/b;
+
+    invoke-virtual {v0, v3, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    .line 12
+    sget-object v0, Le/h/a/a/i/b/b;->zzg:Landroid/util/SparseArray;
+
+    sget-object v1, Le/h/a/a/i/b/b;->zzd:Le/h/a/a/i/b/b;
+
+    invoke-virtual {v0, v4, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    .line 13
+    sget-object v0, Le/h/a/a/i/b/b;->zzg:Landroid/util/SparseArray;
+
+    sget-object v1, Le/h/a/a/i/b/b;->zze:Le/h/a/a/i/b/b;
+
+    invoke-virtual {v0, v5, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    .line 14
+    sget-object v0, Le/h/a/a/i/b/b;->zzg:Landroid/util/SparseArray;
+
+    sget-object v1, Le/h/a/a/i/b/b;->zzf:Le/h/a/a/i/b/b;
+
+    invoke-virtual {v0, v6, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final a(J)V
-    .locals 3
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)V"
+        }
+    .end annotation
 
     .line 1
-    invoke-virtual {p0}, Le/h/a/a/i/b/b;->a()V
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    const-wide/16 v0, 0x0
-
-    cmp-long v2, p1, v0
-
-    if-ltz v2, :cond_0
-
-    .line 2
-    iget-object v0, p0, Le/h/a/a/i/b/b;->a:Le/h/a/a/i/b/l5;
-
-    invoke-interface {v0}, Le/h/a/a/i/b/l5;->d()Le/h/a/a/d/q/e;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Le/h/a/a/d/q/e;->a()J
-
-    move-result-wide v0
-
-    iput-wide v0, p0, Le/h/a/a/i/b/b;->c:J
-
-    .line 3
-    invoke-virtual {p0}, Le/h/a/a/i/b/b;->b()Landroid/os/Handler;
-
-    move-result-object v0
-
-    iget-object v1, p0, Le/h/a/a/i/b/b;->b:Ljava/lang/Runnable;
-
-    invoke-virtual {v0, v1, p1, p2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 4
-    iget-object v0, p0, Le/h/a/a/i/b/b;->a:Le/h/a/a/i/b/l5;
-
-    .line 5
-    invoke-interface {v0}, Le/h/a/a/i/b/l5;->c()Le/h/a/a/i/b/i3;
-
-    move-result-object v0
-
-    .line 6
-    invoke-virtual {v0}, Le/h/a/a/i/b/i3;->s()Le/h/a/a/i/b/k3;
-
-    move-result-object v0
-
-    .line 7
-    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object p1
-
-    const-string p2, "Failed to schedule delayed post. time"
-
-    invoke-virtual {v0, p2, p1}, Le/h/a/a/i/b/k3;->a(Ljava/lang/String;Ljava/lang/Object;)V
-
-    :cond_0
     return-void
-.end method
-
-.method public final b()Landroid/os/Handler;
-    .locals 3
-
-    .line 1
-    sget-object v0, Le/h/a/a/i/b/b;->d:Landroid/os/Handler;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    sget-object v0, Le/h/a/a/i/b/b;->d:Landroid/os/Handler;
-
-    return-object v0
-
-    .line 3
-    :cond_0
-    const-class v0, Le/h/a/a/i/b/b;
-
-    monitor-enter v0
-
-    .line 4
-    :try_start_0
-    sget-object v1, Le/h/a/a/i/b/b;->d:Landroid/os/Handler;
-
-    if-nez v1, :cond_1
-
-    .line 5
-    new-instance v1, Le/h/a/a/h/h/e6;
-
-    iget-object v2, p0, Le/h/a/a/i/b/b;->a:Le/h/a/a/i/b/l5;
-
-    invoke-interface {v2}, Le/h/a/a/i/b/l5;->getContext()Landroid/content/Context;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Le/h/a/a/h/h/e6;-><init>(Landroid/os/Looper;)V
-
-    sput-object v1, Le/h/a/a/i/b/b;->d:Landroid/os/Handler;
-
-    .line 6
-    :cond_1
-    sget-object v1, Le/h/a/a/i/b/b;->d:Landroid/os/Handler;
-
-    monitor-exit v0
-
-    return-object v1
-
-    :catchall_0
-    move-exception v1
-
-    .line 7
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v1
-.end method
-
-.method public abstract c()V
-.end method
-
-.method public final d()Z
-    .locals 5
-
-    .line 1
-    iget-wide v0, p0, Le/h/a/a/i/b/b;->c:J
-
-    const-wide/16 v2, 0x0
-
-    cmp-long v4, v0, v2
-
-    if-eqz v4, :cond_0
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
 .end method

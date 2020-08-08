@@ -821,10 +821,10 @@
     int-to-long v0, p3
 
     .line 88
-    invoke-interface {p2, v0, v1}, Lm/e;->g(J)V
+    invoke-interface {p2, v0, v1}, Lm/e;->h(J)V
 
     .line 89
-    invoke-interface {p2, v5, v0, v1}, Lm/s;->c(Lm/c;J)J
+    invoke-interface {p2, v5, v0, v1}, Lm/t;->c(Lm/c;J)J
 
     .line 90
     invoke-virtual {v5}, Lm/c;->g()J

@@ -1389,12 +1389,12 @@
     return p0
 .end method
 
-.method public static a(Lm/s;ILjava/util/concurrent/TimeUnit;)Z
+.method public static a(Lm/t;ILjava/util/concurrent/TimeUnit;)Z
     .locals 0
 
     .line 8
     :try_start_0
-    invoke-static {p0, p1, p2}, Ll/g0/c;->b(Lm/s;ILjava/util/concurrent/TimeUnit;)Z
+    invoke-static {p0, p1, p2}, Ll/g0/c;->b(Lm/t;ILjava/util/concurrent/TimeUnit;)Z
 
     move-result p0
     :try_end_0
@@ -1699,7 +1699,7 @@
     return v0
 .end method
 
-.method public static b(Lm/s;ILjava/util/concurrent/TimeUnit;)Z
+.method public static b(Lm/t;ILjava/util/concurrent/TimeUnit;)Z
     .locals 11
 
     .line 1
@@ -1708,11 +1708,11 @@
     move-result-wide v0
 
     .line 2
-    invoke-interface {p0}, Lm/s;->i()Lm/t;
+    invoke-interface {p0}, Lm/t;->i()Lm/u;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lm/t;->d()Z
+    invoke-virtual {v2}, Lm/u;->d()Z
 
     move-result v2
 
@@ -1721,11 +1721,11 @@
     if-eqz v2, :cond_0
 
     .line 3
-    invoke-interface {p0}, Lm/s;->i()Lm/t;
+    invoke-interface {p0}, Lm/t;->i()Lm/u;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lm/t;->c()J
+    invoke-virtual {v2}, Lm/u;->c()J
 
     move-result-wide v5
 
@@ -1738,7 +1738,7 @@
 
     .line 4
     :goto_0
-    invoke-interface {p0}, Lm/s;->i()Lm/t;
+    invoke-interface {p0}, Lm/t;->i()Lm/u;
 
     move-result-object v2
 
@@ -1754,7 +1754,7 @@
 
     add-long/2addr p1, v0
 
-    invoke-virtual {v2, p1, p2}, Lm/t;->a(J)Lm/t;
+    invoke-virtual {v2, p1, p2}, Lm/u;->a(J)Lm/u;
 
     .line 5
     :try_start_0
@@ -1766,7 +1766,7 @@
     const-wide/16 v7, 0x2000
 
     .line 6
-    invoke-interface {p0, p1, v7, v8}, Lm/s;->c(Lm/c;J)J
+    invoke-interface {p0, p1, v7, v8}, Lm/t;->c(Lm/c;J)J
 
     move-result-wide v7
 
@@ -1792,23 +1792,23 @@
     if-nez p2, :cond_2
 
     .line 8
-    invoke-interface {p0}, Lm/s;->i()Lm/t;
+    invoke-interface {p0}, Lm/t;->i()Lm/u;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lm/t;->a()Lm/t;
+    invoke-virtual {p0}, Lm/u;->a()Lm/u;
 
     goto :goto_2
 
     .line 9
     :cond_2
-    invoke-interface {p0}, Lm/s;->i()Lm/t;
+    invoke-interface {p0}, Lm/t;->i()Lm/u;
 
     move-result-object p0
 
     add-long/2addr v0, v5
 
-    invoke-virtual {p0, v0, v1}, Lm/t;->a(J)Lm/t;
+    invoke-virtual {p0, v0, v1}, Lm/u;->a(J)Lm/u;
 
     :goto_2
     return p1
@@ -1821,23 +1821,23 @@
     if-nez p2, :cond_3
 
     .line 10
-    invoke-interface {p0}, Lm/s;->i()Lm/t;
+    invoke-interface {p0}, Lm/t;->i()Lm/u;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lm/t;->a()Lm/t;
+    invoke-virtual {p0}, Lm/u;->a()Lm/u;
 
     goto :goto_3
 
     .line 11
     :cond_3
-    invoke-interface {p0}, Lm/s;->i()Lm/t;
+    invoke-interface {p0}, Lm/t;->i()Lm/u;
 
     move-result-object p0
 
     add-long/2addr v0, v5
 
-    invoke-virtual {p0, v0, v1}, Lm/t;->a(J)Lm/t;
+    invoke-virtual {p0, v0, v1}, Lm/u;->a(J)Lm/u;
 
     :goto_3
     throw p1
@@ -1852,23 +1852,23 @@
     if-nez p2, :cond_4
 
     .line 12
-    invoke-interface {p0}, Lm/s;->i()Lm/t;
+    invoke-interface {p0}, Lm/t;->i()Lm/u;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lm/t;->a()Lm/t;
+    invoke-virtual {p0}, Lm/u;->a()Lm/u;
 
     goto :goto_4
 
     .line 13
     :cond_4
-    invoke-interface {p0}, Lm/s;->i()Lm/t;
+    invoke-interface {p0}, Lm/t;->i()Lm/u;
 
     move-result-object p0
 
     add-long/2addr v0, v5
 
-    invoke-virtual {p0, v0, v1}, Lm/t;->a(J)Lm/t;
+    invoke-virtual {p0, v0, v1}, Lm/u;->a(J)Lm/u;
 
     :goto_4
     return p1

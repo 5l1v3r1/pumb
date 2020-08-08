@@ -227,7 +227,7 @@
     .line 1
     iget-object v1, p0, Ll/g0/i/b;->a:Lm/f;
 
-    invoke-virtual {v1}, Lm/f;->g()Ljava/lang/String;
+    invoke-virtual {v1}, Lm/f;->r()Ljava/lang/String;
 
     move-result-object v1
 
@@ -237,7 +237,7 @@
 
     iget-object v1, p0, Ll/g0/i/b;->b:Lm/f;
 
-    invoke-virtual {v1}, Lm/f;->g()Ljava/lang/String;
+    invoke-virtual {v1}, Lm/f;->r()Ljava/lang/String;
 
     move-result-object v1
 

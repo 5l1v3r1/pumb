@@ -10,7 +10,7 @@
 .method public abstract a(Ll/a0;)Ll/b0;
 .end method
 
-.method public abstract a(Ll/y;J)Lm/r;
+.method public abstract a(Ll/y;J)Lm/s;
 .end method
 
 .method public abstract a()V

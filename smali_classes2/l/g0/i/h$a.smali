@@ -3,7 +3,7 @@
 .source "Http2Stream.java"
 
 # interfaces
-.implements Lm/r;
+.implements Lm/s;
 
 
 # annotations
@@ -464,7 +464,7 @@
     throw v1
 .end method
 
-.method public i()Lm/t;
+.method public i()Lm/u;
     .locals 1
 
     .line 1

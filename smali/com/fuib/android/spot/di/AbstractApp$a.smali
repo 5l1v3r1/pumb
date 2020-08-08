@@ -69,20 +69,20 @@
     invoke-virtual {p1, p0}, Landroidx/lifecycle/LiveData;->removeObserver(Lb/p/p;)V
 
     .line 3
-    sget-object p1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object p1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v0, "AbstractApp"
 
     const-string v1, "onAppForeground"
 
-    invoke-virtual {p1, v0, v1}, Le/f/a/b/s/f/f1$a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Le/f/a/b/t/f/f1$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4
     iget-object p1, p0, Lcom/fuib/android/spot/di/AbstractApp$a;->a:Lcom/fuib/android/spot/di/AbstractApp;
 
-    iget-object p1, p1, Lcom/fuib/android/spot/di/AbstractApp;->p:Le/f/a/b/s/f/a0;
+    iget-object p1, p1, Lcom/fuib/android/spot/di/AbstractApp;->p:Le/f/a/b/t/f/a0;
 
-    invoke-virtual {p1}, Le/f/a/b/s/f/a0;->d()Z
+    invoke-virtual {p1}, Le/f/a/b/t/f/a0;->e()Z
 
     move-result p1
 
@@ -112,11 +112,11 @@
     :cond_1
     iget-object p1, p0, Lcom/fuib/android/spot/di/AbstractApp$a;->a:Lcom/fuib/android/spot/di/AbstractApp;
 
-    iget-object p1, p1, Lcom/fuib/android/spot/di/AbstractApp;->l:Le/f/a/b/u/j;
+    iget-object p1, p1, Lcom/fuib/android/spot/di/AbstractApp;->l:Le/f/a/b/v/j;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0}, Le/f/a/b/u/j;->a(Z)V
+    invoke-virtual {p1, v0}, Le/f/a/b/v/j;->a(Z)V
 
     .line 6
     iget-object p1, p0, Lcom/fuib/android/spot/di/AbstractApp$a;->a:Lcom/fuib/android/spot/di/AbstractApp;
@@ -137,9 +137,9 @@
     .line 8
     iget-object p1, p0, Lcom/fuib/android/spot/di/AbstractApp$a;->a:Lcom/fuib/android/spot/di/AbstractApp;
 
-    iget-object p1, p1, Lcom/fuib/android/spot/di/AbstractApp;->i:Le/f/a/b/v/b/d/h;
+    iget-object p1, p1, Lcom/fuib/android/spot/di/AbstractApp;->i:Le/f/a/b/w/b/d/h;
 
-    invoke-virtual {p1}, Le/f/a/b/v/b/d/h;->c()V
+    invoke-virtual {p1}, Le/f/a/b/w/b/d/h;->c()V
 
     :cond_2
     :goto_0

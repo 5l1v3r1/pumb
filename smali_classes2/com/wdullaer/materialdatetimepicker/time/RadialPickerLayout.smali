@@ -349,7 +349,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result v0
 
@@ -359,7 +359,7 @@
     :cond_1
     iget-object v0, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
+    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
 
     move-result v0
 
@@ -369,7 +369,7 @@
     :cond_2
     iget-object v0, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->q()I
+    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
 
     move-result v0
 
@@ -596,13 +596,13 @@
 
     iget-object p2, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {p2}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->q()I
+    invoke-virtual {p2}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
 
     move-result p2
 
     iget-object v0, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
+    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
 
     move-result v0
 
@@ -616,13 +616,13 @@
 
     iget-object p2, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {p2}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->q()I
+    invoke-virtual {p2}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
 
     move-result p2
 
     iget-object v0, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result v0
 
@@ -668,13 +668,13 @@
 
     iget-object p2, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {p2}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
+    invoke-virtual {p2}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
 
     move-result p2
 
     iget-object v0, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result v0
 
@@ -785,7 +785,7 @@
 
     .line 10
     :cond_0
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result p3
 
@@ -799,7 +799,7 @@
     .line 12
     iget-object p2, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->o:Lcom/wdullaer/materialdatetimepicker/time/RadialTextsView;
 
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result p1
 
@@ -809,7 +809,7 @@
 
     .line 13
     :cond_1
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
 
     move-result p3
 
@@ -823,27 +823,27 @@
     .line 15
     iget-object p3, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->n:Lcom/wdullaer/materialdatetimepicker/time/RadialTextsView;
 
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
 
     move-result v3
 
     invoke-virtual {p3, v3}, Lcom/wdullaer/materialdatetimepicker/time/RadialTextsView;->setSelection(I)V
 
     .line 16
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result p3
 
     iget-object v3, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {v3}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {v3}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result v3
 
     if-eq p3, v3, :cond_6
 
     .line 17
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result p3
 
@@ -857,7 +857,7 @@
     .line 19
     iget-object p2, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->o:Lcom/wdullaer/materialdatetimepicker/time/RadialTextsView;
 
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result p1
 
@@ -867,7 +867,7 @@
 
     .line 20
     :cond_2
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->q()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
 
     move-result p3
 
@@ -912,20 +912,20 @@
     invoke-virtual {v3, p3}, Lcom/wdullaer/materialdatetimepicker/time/RadialTextsView;->setSelection(I)V
 
     .line 27
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
 
     move-result p3
 
     iget-object v3, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {v3}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
+    invoke-virtual {v3}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
 
     move-result v3
 
     if-eq p3, v3, :cond_5
 
     .line 28
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
 
     move-result p3
 
@@ -939,7 +939,7 @@
     .line 30
     iget-object p3, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->n:Lcom/wdullaer/materialdatetimepicker/time/RadialTextsView;
 
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
 
     move-result v3
 
@@ -947,20 +947,20 @@
 
     .line 31
     :cond_5
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result p3
 
     iget-object v3, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {v3}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {v3}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result v3
 
     if-eq p3, v3, :cond_6
 
     .line 32
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result p3
 
@@ -974,7 +974,7 @@
     .line 34
     iget-object p2, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->o:Lcom/wdullaer/materialdatetimepicker/time/RadialTextsView;
 
-    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {p1}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result p1
 
@@ -1453,7 +1453,7 @@
     .line 1
     iget-object v0, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->q()I
+    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
 
     move-result v0
 
@@ -1466,7 +1466,7 @@
     .line 1
     iget-object v0, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()Z
+    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->u()Z
 
     move-result v0
 
@@ -1502,7 +1502,7 @@
     .line 1
     iget-object v0, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
+    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
 
     move-result v0
 
@@ -1515,7 +1515,7 @@
     .line 1
     iget-object v0, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
-    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {v0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result v0
 
@@ -2277,14 +2277,14 @@
     iget-object v2, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
     .line 11
-    invoke-virtual {v2}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->q()I
+    invoke-virtual {v2}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
 
     move-result v2
 
     iget-object v3, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
     .line 12
-    invoke-virtual {v3}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
+    invoke-virtual {v3}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
 
     move-result v3
 
@@ -2299,14 +2299,14 @@
     iget-object v2, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
     .line 14
-    invoke-virtual {v2}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->q()I
+    invoke-virtual {v2}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
 
     move-result v2
 
     iget-object v3, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
     .line 15
-    invoke-virtual {v3}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {v3}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result v3
 
@@ -2321,14 +2321,14 @@
     iget-object v2, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
     .line 17
-    invoke-virtual {v2}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->r()I
+    invoke-virtual {v2}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
 
     move-result v2
 
     iget-object v3, p0, Lcom/wdullaer/materialdatetimepicker/time/RadialPickerLayout;->h:Lcom/wdullaer/materialdatetimepicker/time/Timepoint;
 
     .line 18
-    invoke-virtual {v3}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->s()I
+    invoke-virtual {v3}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()I
 
     move-result v3
 

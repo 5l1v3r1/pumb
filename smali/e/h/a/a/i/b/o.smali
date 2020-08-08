@@ -1,41 +1,73 @@
-.class public final synthetic Le/h/a/a/i/b/o;
+.class public Le/h/a/a/i/b/o;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Le/h/a/a/i/b/x2;
-
-
-# static fields
-.field public static final a:Le/h/a/a/i/b/x2;
+.source "com.google.android.datatransport:transport-backend-cct@@2.2.0"
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public static a()Le/h/b/g/a;
+    .locals 3
 
-    new-instance v0, Le/h/a/a/i/b/o;
+    .line 1
+    new-instance v0, Le/h/b/g/h/c;
 
-    invoke-direct {v0}, Le/h/a/a/i/b/o;-><init>()V
+    invoke-direct {v0}, Le/h/b/g/h/c;-><init>()V
 
-    sput-object v0, Le/h/a/a/i/b/o;->a:Le/h/a/a/i/b/x2;
+    new-instance v1, Le/h/a/a/i/b/l;
 
-    return-void
-.end method
+    invoke-direct {v1}, Le/h/a/a/i/b/l;-><init>()V
 
-.method public constructor <init>()V
-    .locals 0
+    .line 2
+    const-class v2, Le/h/a/a/i/b/e;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {v0, v2, v1}, Le/h/b/g/h/c;->a(Ljava/lang/Class;Le/h/b/g/c;)Le/h/b/g/h/c;
 
-    return-void
-.end method
+    new-instance v1, Le/h/a/a/i/b/s;
 
+    invoke-direct {v1}, Le/h/a/a/i/b/s;-><init>()V
 
-# virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 1
+    .line 3
+    const-class v2, Le/h/a/a/i/b/h;
 
-    invoke-static {}, Le/h/a/a/i/b/j;->x0()Ljava/lang/String;
+    invoke-virtual {v0, v2, v1}, Le/h/b/g/h/c;->a(Ljava/lang/Class;Le/h/b/g/c;)Le/h/b/g/h/c;
+
+    new-instance v1, Le/h/a/a/i/b/n;
+
+    invoke-direct {v1}, Le/h/a/a/i/b/n;-><init>()V
+
+    .line 4
+    const-class v2, Le/h/a/a/i/b/f;
+
+    invoke-virtual {v0, v2, v1}, Le/h/b/g/h/c;->a(Ljava/lang/Class;Le/h/b/g/c;)Le/h/b/g/h/c;
+
+    new-instance v1, Le/h/a/a/i/b/q;
+
+    invoke-direct {v1}, Le/h/a/a/i/b/q;-><init>()V
+
+    .line 5
+    const-class v2, Le/h/a/a/i/b/g;
+
+    invoke-virtual {v0, v2, v1}, Le/h/b/g/h/c;->a(Ljava/lang/Class;Le/h/b/g/c;)Le/h/b/g/h/c;
+
+    new-instance v1, Le/h/a/a/i/b/c;
+
+    invoke-direct {v1}, Le/h/a/a/i/b/c;-><init>()V
+
+    .line 6
+    const-class v2, Le/h/a/a/i/b/d;
+
+    invoke-virtual {v0, v2, v1}, Le/h/b/g/h/c;->a(Ljava/lang/Class;Le/h/b/g/c;)Le/h/b/g/h/c;
+
+    new-instance v1, Le/h/a/a/i/b/v;
+
+    invoke-direct {v1}, Le/h/a/a/i/b/v;-><init>()V
+
+    .line 7
+    const-class v2, Le/h/a/a/i/b/j;
+
+    invoke-virtual {v0, v2, v1}, Le/h/b/g/h/c;->a(Ljava/lang/Class;Le/h/b/g/c;)Le/h/b/g/h/c;
+
+    .line 8
+    invoke-virtual {v0}, Le/h/b/g/h/c;->a()Le/h/b/g/a;
 
     move-result-object v0
 

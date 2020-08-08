@@ -57,7 +57,7 @@
     const-class v2, Lcom/google/firebase/FirebaseApp;
 
     .line 3
-    invoke-static {v2}, Le/h/b/e/n;->a(Ljava/lang/Class;)Le/h/b/e/n;
+    invoke-static {v2}, Le/h/b/e/n;->b(Ljava/lang/Class;)Le/h/b/e/n;
 
     move-result-object v2
 
@@ -66,16 +66,16 @@
     const-class v2, Landroid/content/Context;
 
     .line 4
-    invoke-static {v2}, Le/h/b/e/n;->a(Ljava/lang/Class;)Le/h/b/e/n;
+    invoke-static {v2}, Le/h/b/e/n;->b(Ljava/lang/Class;)Le/h/b/e/n;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Le/h/b/e/d$b;->a(Le/h/b/e/n;)Le/h/b/e/d$b;
 
-    const-class v2, Le/h/b/f/d;
+    const-class v2, Le/h/b/h/d;
 
     .line 5
-    invoke-static {v2}, Le/h/b/e/n;->a(Ljava/lang/Class;)Le/h/b/e/n;
+    invoke-static {v2}, Le/h/b/e/n;->b(Ljava/lang/Class;)Le/h/b/e/n;
 
     move-result-object v2
 
@@ -103,7 +103,7 @@
     const-string v2, "16.5.0"
 
     .line 9
-    invoke-static {v1, v2}, Le/h/b/k/f;->a(Ljava/lang/String;Ljava/lang/String;)Le/h/b/e/d;
+    invoke-static {v1, v2}, Le/h/b/o/g;->a(Ljava/lang/String;Ljava/lang/String;)Le/h/b/e/d;
 
     move-result-object v1
 

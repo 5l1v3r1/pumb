@@ -58,7 +58,7 @@
     .line 1
     iget-object p2, p0, Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput$l;->c:Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput;
 
-    sget p3, Le/f/a/b/n;->current_length:I
+    sget p3, Le/f/a/b/o;->current_length:I
 
     invoke-virtual {p2, p3}, Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput;->_$_findCachedViewById(I)Landroid/view/View;
 

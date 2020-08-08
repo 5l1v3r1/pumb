@@ -97,7 +97,7 @@
     :cond_0
     iget-object p2, p0, Lcom/fuib/android/spot/presentation/common/widget/AmountInputView$2;->c:Lcom/fuib/android/spot/presentation/common/widget/AmountInputView;
 
-    invoke-virtual {p2}, Lcom/fuib/android/spot/presentation/common/widget/AmountInputView;->getFrmtr()Le/f/a/b/y/n/c;
+    invoke-virtual {p2}, Lcom/fuib/android/spot/presentation/common/widget/AmountInputView;->getFrmtr()Le/f/a/b/z/n/c;
 
     move-result-object p2
 
@@ -105,7 +105,7 @@
 
     move-result-object p3
 
-    invoke-virtual {p2, p3}, Le/f/a/b/y/n/c;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p2, p3}, Le/f/a/b/z/n/c;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 

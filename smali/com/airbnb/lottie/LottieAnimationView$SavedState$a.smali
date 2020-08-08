@@ -1,4 +1,4 @@
-.class public final Lcom/airbnb/lottie/LottieAnimationView$SavedState$a;
+.class public Lcom/airbnb/lottie/LottieAnimationView$SavedState$a;
 .super Ljava/lang/Object;
 .source "LottieAnimationView.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x9
+    accessFlags = 0x1
     name = null
 .end annotation
 

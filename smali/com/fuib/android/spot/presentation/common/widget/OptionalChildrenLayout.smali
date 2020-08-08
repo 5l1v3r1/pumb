@@ -123,7 +123,7 @@
     iput-object p3, p0, Lcom/fuib/android/spot/presentation/common/widget/OptionalChildrenLayout;->l:Ljava/util/ArrayList;
 
     .line 3
-    sget-object p3, Le/f/a/b/o;->OptionalChildrenLayout:[I
+    sget-object p3, Le/f/a/b/p;->OptionalChildrenLayout:[I
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -430,7 +430,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Le/f/a/b/s/f/p0;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Le/f/a/b/t/f/p0;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -652,7 +652,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120387
+    const v1, 0x7f1203af
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

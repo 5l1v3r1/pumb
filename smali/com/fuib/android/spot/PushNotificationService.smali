@@ -17,7 +17,7 @@
         0x3
     }
     d1 = {
-        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0018\u0000 \u000c2\u00020\u0001:\u0001\u000cB\u0005\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0008H\u0016J\u0010\u0010\t\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u000bH\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\r"
+        "\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0018\u0000 \u00132\u00020\u0001:\u0001\u0013B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0008\u0010\u000b\u001a\u00020\u000cH\u0016J\u0010\u0010\r\u001a\u00020\u000c2\u0006\u0010\u000e\u001a\u00020\u000fH\u0016J\u0010\u0010\u0010\u001a\u00020\u000c2\u0006\u0010\u0011\u001a\u00020\u0012H\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001e\u0010\u0005\u001a\u00020\u00068\u0006@\u0006X\u0087.\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008\"\u0004\u0008\t\u0010\n\u00a8\u0006\u0014"
     }
     d2 = {
         "Lcom/fuib/android/spot/PushNotificationService;",
@@ -25,8 +25,15 @@
         "()V",
         "delivery",
         "Lcom/fuib/android/spot/data/api/user/push_messages/ConfirmPushDelivery;",
-        "onMessageReceived",
+        "endpointToolkit",
+        "Lcom/fuib/android/spot/data/util/EndpointToolkit;",
+        "getEndpointToolkit",
+        "()Lcom/fuib/android/spot/data/util/EndpointToolkit;",
+        "setEndpointToolkit",
+        "(Lcom/fuib/android/spot/data/util/EndpointToolkit;)V",
+        "onCreate",
         "",
+        "onMessageReceived",
         "message",
         "Lcom/google/firebase/messaging/RemoteMessage;",
         "onNewToken",
@@ -46,6 +53,8 @@
 
 # instance fields
 .field public final i:Lcom/fuib/android/spot/data/api/user/push_messages/ConfirmPushDelivery;
+
+.field public j:Le/f/a/b/t/f/a0;
 
 
 # direct methods
@@ -83,7 +92,7 @@
     .locals 7
 
     .line 1
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -93,7 +102,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->x()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->A()Ljava/lang/String;
 
     move-result-object v2
 
@@ -105,7 +114,7 @@
 
     const-string v2, "PushNotificationService"
 
-    invoke-virtual {v0, v2, v1}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v1}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->g()Ljava/util/Map;
@@ -181,11 +190,11 @@
     invoke-virtual {v3, v4, v1, v2, v0}, Le/f/a/b/m;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 7
-    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->x()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->A()Ljava/lang/String;
 
     move-result-object p1
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_4
 
     .line 8
     iget-object v0, p0, Lcom/fuib/android/spot/PushNotificationService;->i:Lcom/fuib/android/spot/data/api/user/push_messages/ConfirmPushDelivery;
@@ -200,19 +209,22 @@
 
     invoke-static {v1, v5}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v2, Le/f/a/b/e;->a:Ljava/lang/Boolean;
+    iget-object v2, p0, Lcom/fuib/android/spot/PushNotificationService;->j:Le/f/a/b/t/f/a0;
 
-    const-string v3, "BuildConfig.DEFAULT_ENV_PROD"
+    if-nez v2, :cond_3
 
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v3, "endpointToolkit"
 
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v2
-
-    invoke-virtual {v0, p1, v1, v2}, Lcom/fuib/android/spot/data/api/user/push_messages/ConfirmPushDelivery;->confirmDelivery(Ljava/lang/String;Landroid/content/Context;Z)V
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     :cond_3
+    invoke-virtual {v2}, Le/f/a/b/t/f/a0;->b()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, p1, v1, v2}, Lcom/fuib/android/spot/data/api/user/push_messages/ConfirmPushDelivery;->confirmDelivery(Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;)V
+
+    :cond_4
     return-void
 .end method
 
@@ -220,13 +232,46 @@
     .locals 2
 
     .line 1
-    sget-object p1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object p1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-string v0, "PushNotificationService"
 
     const-string v1, "Token refreshed"
 
-    invoke-virtual {p1, v0, v1}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
+.end method
+
+.method public onCreate()V
+    .locals 2
+
+    .line 1
+    invoke-super {p0}, Landroid/app/Service;->onCreate()V
+
+    .line 2
+    invoke-virtual {p0}, Landroid/app/Service;->getApplication()Landroid/app/Application;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    check-cast v0, Lcom/fuib/android/spot/App;
+
+    invoke-virtual {v0}, Lcom/fuib/android/spot/di/AbstractApp;->b()Lf/c/b;
+
+    move-result-object v0
+
+    invoke-interface {v0, p0}, Lf/c/b;->a(Ljava/lang/Object;)V
+
+    return-void
+
+    :cond_0
+    new-instance v0, Lkotlin/TypeCastException;
+
+    const-string v1, "null cannot be cast to non-null type com.fuib.android.spot.App"
+
+    invoke-direct {v0, v1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method

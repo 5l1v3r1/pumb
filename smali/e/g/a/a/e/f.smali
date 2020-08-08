@@ -182,7 +182,7 @@
 
     move-result-object v3
 
-    invoke-interface {v2, v3, v1}, Ln/c/b;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v2, v3, v1}, Ln/c/b;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
 
@@ -196,7 +196,7 @@
 
     move-result-object v3
 
-    invoke-interface {v2, v3, v1}, Ln/c/b;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v2, v3, v1}, Ln/c/b;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -332,7 +332,7 @@
 
     move-result-object v3
 
-    invoke-interface {v2, v3, p0}, Ln/c/b;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v2, v3, p0}, Ln/c/b;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -458,7 +458,7 @@
 
     move-result-object v2
 
-    invoke-interface {p1, v2, p0}, Ln/c/b;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {p1, v2, p0}, Ln/c/b;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -589,7 +589,7 @@
 
     move-result-object v2
 
-    invoke-interface {p1, v2, p0}, Ln/c/b;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {p1, v2, p0}, Ln/c/b;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

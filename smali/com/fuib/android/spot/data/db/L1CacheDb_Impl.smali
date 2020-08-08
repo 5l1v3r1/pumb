@@ -475,7 +475,7 @@
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
     .line 27
-    invoke-interface {v0}, Lb/w/a/b;->v()Z
+    invoke-interface {v0}, Lb/w/a/b;->w()Z
 
     move-result v1
 
@@ -507,7 +507,7 @@
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
     .line 32
-    invoke-interface {v0}, Lb/w/a/b;->v()Z
+    invoke-interface {v0}, Lb/w/a/b;->w()Z
 
     move-result v1
 

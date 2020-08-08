@@ -38,9 +38,9 @@
     iput-object v0, p0, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;->c:Landroid/os/Handler;
 
     .line 3
-    new-instance v0, Le/f/a/b/v/b/m/a;
+    new-instance v0, Le/f/a/b/w/b/m/a;
 
-    invoke-direct {v0, p0}, Le/f/a/b/v/b/m/a;-><init>(Lcom/fuib/android/spot/presentation/common/util/KeyboardController;)V
+    invoke-direct {v0, p0}, Le/f/a/b/w/b/m/a;-><init>(Lcom/fuib/android/spot/presentation/common/util/KeyboardController;)V
 
     iput-object v0, p0, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;->e:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
@@ -71,7 +71,7 @@
     .locals 4
 
     .line 45
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-class v1, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;
 
@@ -95,7 +95,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 46
     iget-boolean v0, p0, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;->a:Z
@@ -108,9 +108,9 @@
     :cond_0
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;->c:Landroid/os/Handler;
 
-    new-instance v1, Le/f/a/b/v/b/m/b;
+    new-instance v1, Le/f/a/b/w/b/m/b;
 
-    invoke-direct {v1, p0}, Le/f/a/b/v/b/m/b;-><init>(Lcom/fuib/android/spot/presentation/common/util/KeyboardController;)V
+    invoke-direct {v1, p0}, Le/f/a/b/w/b/m/b;-><init>(Lcom/fuib/android/spot/presentation/common/util/KeyboardController;)V
 
     const-wide/16 v2, 0xa
 
@@ -119,9 +119,9 @@
     .line 48
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;->c:Landroid/os/Handler;
 
-    new-instance v1, Le/f/a/b/v/b/m/c;
+    new-instance v1, Le/f/a/b/w/b/m/c;
 
-    invoke-direct {v1, p0}, Le/f/a/b/v/b/m/c;-><init>(Lcom/fuib/android/spot/presentation/common/util/KeyboardController;)V
+    invoke-direct {v1, p0}, Le/f/a/b/w/b/m/c;-><init>(Lcom/fuib/android/spot/presentation/common/util/KeyboardController;)V
 
     const-wide/16 v2, 0x12c
 
@@ -134,7 +134,7 @@
     .locals 3
 
     .line 10
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-class v1, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;
 
@@ -144,7 +144,7 @@
 
     const-string v2, "KeyboardController: hide by fragment"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 11
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;->b(Landroidx/fragment/app/Fragment;)V
@@ -223,7 +223,7 @@
     .line 18
     const-class v0, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;
 
-    sget-object v1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -231,7 +231,7 @@
 
     const-string v3, "KeyboardController: show"
 
-    invoke-virtual {v1, v2, v3}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 19
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;->b(Landroidx/fragment/app/Fragment;)V
@@ -298,7 +298,7 @@
     .locals 3
 
     .line 3
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-class v1, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;
 
@@ -308,7 +308,7 @@
 
     const-string v2, "KeyboardController: hide by activity"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;->b:Ljava/lang/ref/WeakReference;
@@ -335,7 +335,7 @@
     if-eqz p2, :cond_4
 
     .line 6
-    invoke-virtual {p1}, Lcom/fuib/android/spot/di/AbstractApp;->g()Z
+    invoke-virtual {p1}, Lcom/fuib/android/spot/di/AbstractApp;->h()Z
 
     move-result p1
 
@@ -388,7 +388,7 @@
     .line 27
     const-class v0, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;
 
-    sget-object v1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -396,7 +396,7 @@
 
     const-string v3, "KeyboardController: showKeyboard"
 
-    invoke-virtual {v1, v2, v3}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 28
     iget-object v1, p0, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;->b:Ljava/lang/ref/WeakReference;
@@ -454,7 +454,7 @@
     if-nez v3, :cond_2
 
     .line 33
-    sget-object p1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object p1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -462,7 +462,7 @@
 
     const-string v1, "KeyboardController: fragment.getView() == null"
 
-    invoke-virtual {p1, v0, v1}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
@@ -571,7 +571,7 @@
     .line 44
     :cond_6
     :goto_0
-    sget-object p1, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object p1, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -579,7 +579,7 @@
 
     const-string v1, "KeyboardController: fragment is not resumed or pendingRequests calls has been cleared."
 
-    invoke-virtual {p1, v0, v1}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -599,7 +599,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     const-class v1, Lcom/fuib/android/spot/presentation/common/util/KeyboardController;
 
@@ -609,7 +609,7 @@
 
     const-string v2, "KeyboardController: release"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 

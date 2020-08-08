@@ -61,9 +61,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Le/h/a/a/d/p/e;
+    new-instance v0, Le/h/a/b/d/p/e;
 
-    invoke-direct {v0}, Le/h/a/a/d/p/e;-><init>()V
+    invoke-direct {v0}, Le/h/a/b/d/p/e;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/common/stats/WakeLockEvent;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -238,155 +238,7 @@
 
 
 # virtual methods
-.method public final g()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->e:I
-
-    return v0
-.end method
-
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 4
-
-    .line 1
-    invoke-static {p1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;)I
-
-    move-result p2
-
-    .line 2
-    iget v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->c:I
-
-    const/4 v1, 0x1
-
-    invoke-static {p1, v1, v0}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;II)V
-
-    .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/WakeLockEvent;->x()J
-
-    move-result-wide v0
-
-    const/4 v2, 0x2
-
-    .line 4
-    invoke-static {p1, v2, v0, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;IJ)V
-
-    .line 5
-    iget-object v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->f:Ljava/lang/String;
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x4
-
-    .line 6
-    invoke-static {p1, v2, v0, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    .line 7
-    iget v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->i:I
-
-    const/4 v2, 0x5
-
-    .line 8
-    invoke-static {p1, v2, v0}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;II)V
-
-    .line 9
-    iget-object v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->j:Ljava/util/List;
-
-    const/4 v2, 0x6
-
-    .line 10
-    invoke-static {p1, v2, v0, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/util/List;Z)V
-
-    .line 11
-    iget-wide v2, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->l:J
-
-    const/16 v0, 0x8
-
-    .line 12
-    invoke-static {p1, v0, v2, v3}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;IJ)V
-
-    .line 13
-    iget-object v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->g:Ljava/lang/String;
-
-    const/16 v2, 0xa
-
-    .line 14
-    invoke-static {p1, v2, v0, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    .line 15
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/WakeLockEvent;->g()I
-
-    move-result v0
-
-    const/16 v2, 0xb
-
-    .line 16
-    invoke-static {p1, v2, v0}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;II)V
-
-    .line 17
-    iget-object v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->k:Ljava/lang/String;
-
-    const/16 v2, 0xc
-
-    .line 18
-    invoke-static {p1, v2, v0, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    .line 19
-    iget-object v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->n:Ljava/lang/String;
-
-    const/16 v2, 0xd
-
-    .line 20
-    invoke-static {p1, v2, v0, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    .line 21
-    iget v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->m:I
-
-    const/16 v2, 0xe
-
-    .line 22
-    invoke-static {p1, v2, v0}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;II)V
-
-    .line 23
-    iget v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->o:F
-
-    const/16 v2, 0xf
-
-    .line 24
-    invoke-static {p1, v2, v0}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;IF)V
-
-    .line 25
-    iget-wide v2, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->p:J
-
-    const/16 v0, 0x10
-
-    .line 26
-    invoke-static {p1, v0, v2, v3}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;IJ)V
-
-    .line 27
-    iget-object v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->h:Ljava/lang/String;
-
-    const/16 v2, 0x11
-
-    .line 28
-    invoke-static {p1, v2, v0, v1}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    .line 29
-    iget-boolean v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->q:Z
-
-    const/16 v1, 0x12
-
-    .line 30
-    invoke-static {p1, v1, v0}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;IZ)V
-
-    .line 31
-    invoke-static {p1, p2}, Le/h/a/a/d/l/z/a;->a(Landroid/os/Parcel;I)V
-
-    return-void
-.end method
-
-.method public final x()J
+.method public final A()J
     .locals 2
 
     .line 1
@@ -395,7 +247,7 @@
     return-wide v0
 .end method
 
-.method public final y()J
+.method public final B()J
     .locals 2
 
     .line 1
@@ -404,7 +256,7 @@
     return-wide v0
 .end method
 
-.method public final z()Ljava/lang/String;
+.method public final C()Ljava/lang/String;
     .locals 11
 
     .line 1
@@ -566,4 +418,152 @@
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public final g()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->e:I
+
+    return v0
+.end method
+
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 4
+
+    .line 1
+    invoke-static {p1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;)I
+
+    move-result p2
+
+    .line 2
+    iget v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->c:I
+
+    const/4 v1, 0x1
+
+    invoke-static {p1, v1, v0}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;II)V
+
+    .line 3
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/WakeLockEvent;->A()J
+
+    move-result-wide v0
+
+    const/4 v2, 0x2
+
+    .line 4
+    invoke-static {p1, v2, v0, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;IJ)V
+
+    .line 5
+    iget-object v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->f:Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x4
+
+    .line 6
+    invoke-static {p1, v2, v0, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+
+    .line 7
+    iget v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->i:I
+
+    const/4 v2, 0x5
+
+    .line 8
+    invoke-static {p1, v2, v0}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;II)V
+
+    .line 9
+    iget-object v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->j:Ljava/util/List;
+
+    const/4 v2, 0x6
+
+    .line 10
+    invoke-static {p1, v2, v0, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/util/List;Z)V
+
+    .line 11
+    iget-wide v2, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->l:J
+
+    const/16 v0, 0x8
+
+    .line 12
+    invoke-static {p1, v0, v2, v3}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;IJ)V
+
+    .line 13
+    iget-object v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->g:Ljava/lang/String;
+
+    const/16 v2, 0xa
+
+    .line 14
+    invoke-static {p1, v2, v0, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+
+    .line 15
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/WakeLockEvent;->g()I
+
+    move-result v0
+
+    const/16 v2, 0xb
+
+    .line 16
+    invoke-static {p1, v2, v0}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;II)V
+
+    .line 17
+    iget-object v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->k:Ljava/lang/String;
+
+    const/16 v2, 0xc
+
+    .line 18
+    invoke-static {p1, v2, v0, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+
+    .line 19
+    iget-object v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->n:Ljava/lang/String;
+
+    const/16 v2, 0xd
+
+    .line 20
+    invoke-static {p1, v2, v0, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+
+    .line 21
+    iget v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->m:I
+
+    const/16 v2, 0xe
+
+    .line 22
+    invoke-static {p1, v2, v0}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;II)V
+
+    .line 23
+    iget v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->o:F
+
+    const/16 v2, 0xf
+
+    .line 24
+    invoke-static {p1, v2, v0}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;IF)V
+
+    .line 25
+    iget-wide v2, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->p:J
+
+    const/16 v0, 0x10
+
+    .line 26
+    invoke-static {p1, v0, v2, v3}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;IJ)V
+
+    .line 27
+    iget-object v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->h:Ljava/lang/String;
+
+    const/16 v2, 0x11
+
+    .line 28
+    invoke-static {p1, v2, v0, v1}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+
+    .line 29
+    iget-boolean v0, p0, Lcom/google/android/gms/common/stats/WakeLockEvent;->q:Z
+
+    const/16 v1, 0x12
+
+    .line 30
+    invoke-static {p1, v1, v0}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;IZ)V
+
+    .line 31
+    invoke-static {p1, p2}, Le/h/a/b/d/l/y/a;->a(Landroid/os/Parcel;I)V
+
+    return-void
 .end method

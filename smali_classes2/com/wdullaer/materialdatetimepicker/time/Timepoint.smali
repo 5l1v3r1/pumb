@@ -253,20 +253,11 @@
     return v0
 .end method
 
-.method public q()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->c:I
-
-    return v0
-.end method
-
 .method public r()I
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->d:I
+    iget v0, p0, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->c:I
 
     return v0
 .end method
@@ -275,29 +266,17 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->e:I
+    iget v0, p0, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->d:I
 
     return v0
 .end method
 
-.method public t()Z
-    .locals 2
+.method public t()I
+    .locals 1
 
     .line 1
-    iget v0, p0, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->c:I
+    iget v0, p0, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->e:I
 
-    const/16 v1, 0xc
-
-    if-ge v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
     return v0
 .end method
 
@@ -344,6 +323,27 @@
     return-object v0
 .end method
 
+.method public u()Z
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->c:I
+
+    const/16 v1, 0xc
+
+    if-ge v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
@@ -369,7 +369,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->t()Z
+    invoke-virtual {p0}, Lcom/wdullaer/materialdatetimepicker/time/Timepoint;->u()Z
 
     move-result v0
 

@@ -1,95 +1,123 @@
 .class public final Le/h/a/a/i/b/i;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
+.super Le/h/a/a/i/b/t;
+.source "com.google.android.datatransport:transport-backend-cct@@2.2.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/measurement/internal/zzah;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final a:J
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(J)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Le/h/a/a/i/b/t;-><init>()V
+
+    .line 2
+    iput-wide p1, p0, Le/h/a/a/i/b/i;->a:J
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 5
+.method public a()J
+    .locals 2
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->b(Landroid/os/Parcel;)I
+    iget-wide v0, p0, Le/h/a/a/i/b/i;->a:J
 
-    move-result v0
-
-    const/4 v1, 0x0
-
-    .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
-
-    move-result v2
-
-    if-ge v2, v0, :cond_1
-
-    .line 3
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->a(Landroid/os/Parcel;)I
-
-    move-result v2
-
-    .line 4
-    invoke-static {v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->a(I)I
-
-    move-result v3
-
-    const/4 v4, 0x2
-
-    if-eq v3, v4, :cond_0
-
-    .line 5
-    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->D(Landroid/os/Parcel;I)V
-
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->f(Landroid/os/Parcel;I)Landroid/os/Bundle;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    .line 7
-    :cond_1
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)V
-
-    .line 8
-    new-instance p1, Lcom/google/android/gms/measurement/internal/zzah;
-
-    invoke-direct {p1, v1}, Lcom/google/android/gms/measurement/internal/zzah;-><init>(Landroid/os/Bundle;)V
-
-    return-object p1
+    return-wide v0
 .end method
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+.method public equals(Ljava/lang/Object;)Z
+    .locals 7
+
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_0
+
+    return v0
 
     .line 1
-    new-array p1, p1, [Lcom/google/android/gms/measurement/internal/zzah;
+    :cond_0
+    instance-of v1, p1, Le/h/a/a/i/b/t;
 
-    return-object p1
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_2
+
+    .line 2
+    check-cast p1, Le/h/a/a/i/b/t;
+
+    .line 3
+    iget-wide v3, p0, Le/h/a/a/i/b/i;->a:J
+
+    invoke-virtual {p1}, Le/h/a/a/i/b/t;->a()J
+
+    move-result-wide v5
+
+    cmp-long p1, v3, v5
+
+    if-nez p1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+
+    :cond_2
+    return v2
+.end method
+
+.method public hashCode()I
+    .locals 4
+
+    .line 1
+    iget-wide v0, p0, Le/h/a/a/i/b/i;->a:J
+
+    const/16 v2, 0x20
+
+    ushr-long v2, v0, v2
+
+    xor-long/2addr v0, v2
+
+    long-to-int v1, v0
+
+    const v0, 0xf4243
+
+    xor-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "LogResponse{nextRequestWaitMillis="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-wide v1, p0, Le/h/a/a/i/b/i;->a:J
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v1, "}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

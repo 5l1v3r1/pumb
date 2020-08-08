@@ -40,7 +40,7 @@
     .line 1
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/CompositeIbanInputLayout$c;->c:Lcom/fuib/android/spot/presentation/common/widget/CompositeIbanInputLayout;
 
-    sget v1, Le/f/a/b/n;->text_iban_input:I
+    sget v1, Le/f/a/b/o;->text_iban_input:I
 
     invoke-virtual {v0, v1}, Lcom/fuib/android/spot/presentation/common/widget/CompositeIbanInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -54,7 +54,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f060079
+    const v2, 0x7f06007b
 
     invoke-static {v1, v2}, Lb/k/f/a;->a(Landroid/content/Context;I)I
 

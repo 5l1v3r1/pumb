@@ -90,7 +90,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Le/f/a/b/s/f/f1;->a:Le/f/a/b/s/f/f1$a;
+    sget-object v0, Le/f/a/b/t/f/f1;->a:Le/f/a/b/t/f/f1$a;
 
     sget-object v1, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment;->C0:Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment$a;
 
@@ -100,7 +100,7 @@
 
     const-string v2, "3DS result dispatched to the observer"
 
-    invoke-virtual {v0, v1, v2}, Le/f/a/b/s/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Le/f/a/b/t/f/f1$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     invoke-virtual {p1}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
@@ -152,7 +152,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Le/f/a/b/v/b/f/e;->d(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Le/f/a/b/w/b/f/e;->d(Ljava/lang/String;)V
 
     .line 7
     iget-object v1, p0, Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment$g;->a:Lcom/fuib/android/spot/presentation/tab/transfers/p2p/Transfer3DSFragment;

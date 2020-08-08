@@ -37,6 +37,7 @@
     <dimen name="_4dp">4.0dip</dimen>
     <dimen name="_50dp">50.0dip</dimen>
     <dimen name="_54dp">54.0dip</dimen>
+    <dimen name="_56dp">56.0dip</dimen>
     <dimen name="_5dp">5.0dip</dimen>
     <dimen name="_64dp">64.0dip</dimen>
     <dimen name="_6dp">6.0dip</dimen>
@@ -290,6 +291,8 @@
     <dimen name="divider_height">0.5dip</dimen>
     <dimen name="divider_margin_deposits_credits">18.0dip</dimen>
     <dimen name="dst_account_input_height">100.0dip</dimen>
+    <dimen name="enter_card_pin_container_margin_top">15.0dip</dimen>
+    <dimen name="enter_card_pin_title_margin_top">45.0dip</dimen>
     <dimen name="enter_password_logo_margin_top">20.0dip</dimen>
     <dimen name="enter_pin_dots_margin_top">18.0dip</dimen>
     <dimen name="enter_pin_logo_margin_top">62.0dip</dimen>
@@ -562,7 +565,7 @@
     <dimen name="notification_top_pad">10.0dip</dimen>
     <dimen name="notification_top_pad_large_text">5.0dip</dimen>
     <dimen name="other_item_height">54.0dip</dimen>
-    <dimen name="otp_sheet_height">540.0dip</dimen>
+    <dimen name="otp_sheet_height">560.0dip</dimen>
     <dimen name="password_change_input_hint_text_size">16.0dip</dimen>
     <dimen name="password_change_input_text_size">16.0dip</dimen>
     <dimen name="password_change_margin_top">12.0dip</dimen>

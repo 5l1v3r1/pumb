@@ -48,13 +48,13 @@
 
 .field public m:Lb/t/d/p;
 
-.field public n:Lb/c0/c/e;
+.field public n:Lb/c0/c/f;
 
 .field public o:Lb/c0/c/b;
 
-.field public p:Lb/c0/c/c;
+.field public p:Lb/c0/c/d;
 
-.field public q:Lb/c0/c/d;
+.field public q:Lb/c0/c/e;
 
 .field public r:Landroidx/recyclerview/widget/RecyclerView$l;
 
@@ -272,6 +272,74 @@
     return-void
 .end method
 
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    .locals 1
+
+    .line 37
+    invoke-direct {p0, p1, p2, p3, p4}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+
+    .line 38
+    new-instance p3, Landroid/graphics/Rect;
+
+    invoke-direct {p3}, Landroid/graphics/Rect;-><init>()V
+
+    iput-object p3, p0, Landroidx/viewpager2/widget/ViewPager2;->c:Landroid/graphics/Rect;
+
+    .line 39
+    new-instance p3, Landroid/graphics/Rect;
+
+    invoke-direct {p3}, Landroid/graphics/Rect;-><init>()V
+
+    iput-object p3, p0, Landroidx/viewpager2/widget/ViewPager2;->d:Landroid/graphics/Rect;
+
+    .line 40
+    new-instance p3, Lb/c0/c/b;
+
+    const/4 p4, 0x3
+
+    invoke-direct {p3, p4}, Lb/c0/c/b;-><init>(I)V
+
+    iput-object p3, p0, Landroidx/viewpager2/widget/ViewPager2;->e:Lb/c0/c/b;
+
+    const/4 p3, 0x0
+
+    .line 41
+    iput-boolean p3, p0, Landroidx/viewpager2/widget/ViewPager2;->g:Z
+
+    .line 42
+    new-instance p4, Landroidx/viewpager2/widget/ViewPager2$a;
+
+    invoke-direct {p4, p0}, Landroidx/viewpager2/widget/ViewPager2$a;-><init>(Landroidx/viewpager2/widget/ViewPager2;)V
+
+    iput-object p4, p0, Landroidx/viewpager2/widget/ViewPager2;->h:Landroidx/recyclerview/widget/RecyclerView$i;
+
+    const/4 p4, -0x1
+
+    .line 43
+    iput p4, p0, Landroidx/viewpager2/widget/ViewPager2;->j:I
+
+    const/4 v0, 0x0
+
+    .line 44
+    iput-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->r:Landroidx/recyclerview/widget/RecyclerView$l;
+
+    .line 45
+    iput-boolean p3, p0, Landroidx/viewpager2/widget/ViewPager2;->s:Z
+
+    const/4 p3, 0x1
+
+    .line 46
+    iput-boolean p3, p0, Landroidx/viewpager2/widget/ViewPager2;->t:Z
+
+    .line 47
+    iput p4, p0, Landroidx/viewpager2/widget/ViewPager2;->u:I
+
+    .line 48
+    invoke-virtual {p0, p1, p2}, Landroidx/viewpager2/widget/ViewPager2;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-void
+.end method
+
 
 # virtual methods
 .method public final a()Landroidx/recyclerview/widget/RecyclerView$p;
@@ -346,9 +414,9 @@
 
     if-ne p1, v0, :cond_3
 
-    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/e;
+    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/f;
 
-    invoke-virtual {v0}, Lb/c0/c/e;->e()Z
+    invoke-virtual {v0}, Lb/c0/c/f;->e()Z
 
     move-result v0
 
@@ -381,26 +449,26 @@
     invoke-virtual {v2}, Landroidx/viewpager2/widget/ViewPager2$e;->g()V
 
     .line 40
-    iget-object v2, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/e;
+    iget-object v2, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/f;
 
-    invoke-virtual {v2}, Lb/c0/c/e;->e()Z
+    invoke-virtual {v2}, Lb/c0/c/f;->e()Z
 
     move-result v2
 
     if-nez v2, :cond_5
 
     .line 41
-    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/e;
+    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/f;
 
-    invoke-virtual {v0}, Lb/c0/c/e;->b()D
+    invoke-virtual {v0}, Lb/c0/c/f;->b()D
 
     move-result-wide v0
 
     .line 42
     :cond_5
-    iget-object v2, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/e;
+    iget-object v2, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/f;
 
-    invoke-virtual {v2, p1, p2}, Lb/c0/c/e;->a(IZ)V
+    invoke-virtual {v2, p1, p2}, Lb/c0/c/f;->a(IZ)V
 
     if-nez p2, :cond_6
 
@@ -555,22 +623,22 @@
     invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->addOnChildAttachStateChangeListener(Landroidx/recyclerview/widget/RecyclerView$p;)V
 
     .line 11
-    new-instance p1, Lb/c0/c/e;
+    new-instance p1, Lb/c0/c/f;
 
-    invoke-direct {p1, p0}, Lb/c0/c/e;-><init>(Landroidx/viewpager2/widget/ViewPager2;)V
+    invoke-direct {p1, p0}, Lb/c0/c/f;-><init>(Landroidx/viewpager2/widget/ViewPager2;)V
 
-    iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/e;
+    iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/f;
 
     .line 12
-    new-instance p1, Lb/c0/c/c;
+    new-instance p1, Lb/c0/c/d;
 
-    iget-object p2, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/e;
+    iget-object p2, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/f;
 
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->l:Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-direct {p1, p0, p2, v0}, Lb/c0/c/c;-><init>(Landroidx/viewpager2/widget/ViewPager2;Lb/c0/c/e;Landroidx/recyclerview/widget/RecyclerView;)V
+    invoke-direct {p1, p0, p2, v0}, Lb/c0/c/d;-><init>(Landroidx/viewpager2/widget/ViewPager2;Lb/c0/c/f;Landroidx/recyclerview/widget/RecyclerView;)V
 
-    iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2;->p:Lb/c0/c/c;
+    iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2;->p:Lb/c0/c/d;
 
     .line 13
     new-instance p1, Landroidx/viewpager2/widget/ViewPager2$l;
@@ -589,7 +657,7 @@
     .line 15
     iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2;->l:Landroidx/recyclerview/widget/RecyclerView;
 
-    iget-object p2, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/e;
+    iget-object p2, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/f;
 
     invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->addOnScrollListener(Landroidx/recyclerview/widget/RecyclerView$s;)V
 
@@ -603,11 +671,11 @@
     iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2;->o:Lb/c0/c/b;
 
     .line 17
-    iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/e;
+    iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/f;
 
     iget-object p2, p0, Landroidx/viewpager2/widget/ViewPager2;->o:Lb/c0/c/b;
 
-    invoke-virtual {p1, p2}, Lb/c0/c/e;->a(Landroidx/viewpager2/widget/ViewPager2$i;)V
+    invoke-virtual {p1, p2}, Lb/c0/c/f;->a(Landroidx/viewpager2/widget/ViewPager2$i;)V
 
     .line 18
     new-instance p1, Landroidx/viewpager2/widget/ViewPager2$b;
@@ -646,18 +714,18 @@
     invoke-virtual {p1, p2}, Lb/c0/c/b;->a(Landroidx/viewpager2/widget/ViewPager2$i;)V
 
     .line 24
-    new-instance p1, Lb/c0/c/d;
+    new-instance p1, Lb/c0/c/e;
 
     iget-object p2, p0, Landroidx/viewpager2/widget/ViewPager2;->i:Landroidx/recyclerview/widget/LinearLayoutManager;
 
-    invoke-direct {p1, p2}, Lb/c0/c/d;-><init>(Landroidx/recyclerview/widget/LinearLayoutManager;)V
+    invoke-direct {p1, p2}, Lb/c0/c/e;-><init>(Landroidx/recyclerview/widget/LinearLayoutManager;)V
 
-    iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2;->q:Lb/c0/c/d;
+    iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2;->q:Lb/c0/c/e;
 
     .line 25
     iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2;->o:Lb/c0/c/b;
 
-    iget-object p2, p0, Landroidx/viewpager2/widget/ViewPager2;->q:Lb/c0/c/d;
+    iget-object p2, p0, Landroidx/viewpager2/widget/ViewPager2;->q:Lb/c0/c/e;
 
     invoke-virtual {p1, p2}, Lb/c0/c/b;->a(Landroidx/viewpager2/widget/ViewPager2$i;)V
 
@@ -693,6 +761,17 @@
     invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView$g;->a(Landroidx/recyclerview/widget/RecyclerView$i;)V
 
     :cond_0
+    return-void
+.end method
+
+.method public a(Landroidx/viewpager2/widget/ViewPager2$i;)V
+    .locals 1
+
+    .line 48
+    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->e:Lb/c0/c/b;
+
+    invoke-virtual {v0, p1}, Lb/c0/c/b;->a(Landroidx/viewpager2/widget/ViewPager2$i;)V
+
     return-void
 .end method
 
@@ -786,9 +865,9 @@
     .locals 1
 
     .line 10
-    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->p:Lb/c0/c/c;
+    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->p:Lb/c0/c/d;
 
-    invoke-virtual {v0}, Lb/c0/c/c;->a()Z
+    invoke-virtual {v0}, Lb/c0/c/d;->a()Z
 
     move-result v0
 
@@ -916,9 +995,9 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->q:Lb/c0/c/d;
+    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->q:Lb/c0/c/e;
 
-    invoke-virtual {v0}, Lb/c0/c/d;->a()Landroidx/viewpager2/widget/ViewPager2$k;
+    invoke-virtual {v0}, Lb/c0/c/e;->a()Landroidx/viewpager2/widget/ViewPager2$k;
 
     move-result-object v0
 
@@ -928,9 +1007,9 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/e;
+    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/f;
 
-    invoke-virtual {v0}, Lb/c0/c/e;->b()D
+    invoke-virtual {v0}, Lb/c0/c/f;->b()D
 
     move-result-wide v0
 
@@ -956,9 +1035,9 @@
     move-result v1
 
     .line 4
-    iget-object v3, p0, Landroidx/viewpager2/widget/ViewPager2;->q:Lb/c0/c/d;
+    iget-object v3, p0, Landroidx/viewpager2/widget/ViewPager2;->q:Lb/c0/c/e;
 
-    invoke-virtual {v3, v2, v0, v1}, Lb/c0/c/d;->a(IFI)V
+    invoke-virtual {v3, v2, v0, v1}, Lb/c0/c/e;->a(IFI)V
 
     return-void
 .end method
@@ -1254,9 +1333,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/e;
+    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->n:Lb/c0/c/f;
 
-    invoke-virtual {v0}, Lb/c0/c/e;->c()I
+    invoke-virtual {v0}, Lb/c0/c/f;->c()I
 
     move-result v0
 
@@ -1838,9 +1917,9 @@
     .line 9
     :cond_2
     :goto_0
-    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->q:Lb/c0/c/d;
+    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->q:Lb/c0/c/e;
 
-    invoke-virtual {v0}, Lb/c0/c/d;->a()Landroidx/viewpager2/widget/ViewPager2$k;
+    invoke-virtual {v0}, Lb/c0/c/e;->a()Landroidx/viewpager2/widget/ViewPager2$k;
 
     move-result-object v0
 
@@ -1850,9 +1929,9 @@
 
     .line 10
     :cond_3
-    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->q:Lb/c0/c/d;
+    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2;->q:Lb/c0/c/e;
 
-    invoke-virtual {v0, p1}, Lb/c0/c/d;->a(Landroidx/viewpager2/widget/ViewPager2$k;)V
+    invoke-virtual {v0, p1}, Lb/c0/c/e;->a(Landroidx/viewpager2/widget/ViewPager2$k;)V
 
     .line 11
     invoke-virtual {p0}, Landroidx/viewpager2/widget/ViewPager2;->e()V

@@ -41,7 +41,7 @@
 
 
 # instance fields
-.field public H:Le/f/a/b/s/f/a0;
+.field public H:Le/f/a/b/t/f/a0;
 
 
 # direct methods
@@ -125,14 +125,14 @@
     if-eqz p1, :cond_8
 
     .line 4
-    iget-object p1, p0, Lcom/fuib/android/spot/presentation/common/util/EndpointActivity;->H:Le/f/a/b/s/f/a0;
+    iget-object p1, p0, Lcom/fuib/android/spot/presentation/common/util/EndpointActivity;->H:Le/f/a/b/t/f/a0;
 
     if-nez p1, :cond_3
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     :cond_3
-    invoke-virtual {p1}, Le/f/a/b/s/f/a0;->f()V
+    invoke-virtual {p1}, Le/f/a/b/t/f/a0;->g()V
 
     goto :goto_1
 
@@ -147,14 +147,14 @@
     if-eqz p1, :cond_8
 
     .line 6
-    iget-object p1, p0, Lcom/fuib/android/spot/presentation/common/util/EndpointActivity;->H:Le/f/a/b/s/f/a0;
+    iget-object p1, p0, Lcom/fuib/android/spot/presentation/common/util/EndpointActivity;->H:Le/f/a/b/t/f/a0;
 
     if-nez p1, :cond_5
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     :cond_5
-    invoke-virtual {p1}, Le/f/a/b/s/f/a0;->h()V
+    invoke-virtual {p1}, Le/f/a/b/t/f/a0;->i()V
 
     goto :goto_1
 
@@ -169,14 +169,14 @@
     if-eqz p1, :cond_8
 
     .line 8
-    iget-object p1, p0, Lcom/fuib/android/spot/presentation/common/util/EndpointActivity;->H:Le/f/a/b/s/f/a0;
+    iget-object p1, p0, Lcom/fuib/android/spot/presentation/common/util/EndpointActivity;->H:Le/f/a/b/t/f/a0;
 
     if-nez p1, :cond_7
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     :cond_7
-    invoke-virtual {p1}, Le/f/a/b/s/f/a0;->g()V
+    invoke-virtual {p1}, Le/f/a/b/t/f/a0;->h()V
 
     .line 9
     :cond_8
@@ -202,7 +202,7 @@
 .method public t()I
     .locals 1
 
-    const v0, 0x7f060195
+    const v0, 0x7f06019d
 
     return v0
 .end method

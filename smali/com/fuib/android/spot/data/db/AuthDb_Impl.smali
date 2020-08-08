@@ -198,7 +198,7 @@
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
     .line 10
-    invoke-interface {v2}, Lb/w/a/b;->v()Z
+    invoke-interface {v2}, Lb/w/a/b;->w()Z
 
     move-result v1
 
@@ -224,7 +224,7 @@
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
     .line 14
-    invoke-interface {v2}, Lb/w/a/b;->v()Z
+    invoke-interface {v2}, Lb/w/a/b;->w()Z
 
     move-result v1
 
@@ -267,13 +267,13 @@
 
     new-instance v1, Lcom/fuib/android/spot/data/db/AuthDb_Impl$1;
 
-    const/4 v2, 0x3
+    const/4 v2, 0x4
 
     invoke-direct {v1, p0, v2}, Lcom/fuib/android/spot/data/db/AuthDb_Impl$1;-><init>(Lcom/fuib/android/spot/data/db/AuthDb_Impl;I)V
 
-    const-string v2, "c588bb7baee8a7262bd75afb8faa577d"
+    const-string v2, "a7a1fe7d7562ec32ac7c0ed27da8b6c9"
 
-    const-string v3, "9b3ab12af395f4c76c2684702766ec1d"
+    const-string v3, "fdf277dffce9c684f311d837f37f0ef2"
 
     invoke-direct {v0, p1, v1, v2, v3}, Lb/u/h;-><init>(Lb/u/a;Lb/u/h$a;Ljava/lang/String;Ljava/lang/String;)V
 

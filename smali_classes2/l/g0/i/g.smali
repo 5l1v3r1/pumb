@@ -77,7 +77,7 @@
 
     const/16 v0, 0x1000
 
-    invoke-direct {p1, v0, p2}, Ll/g0/i/c$a;-><init>(ILm/s;)V
+    invoke-direct {p1, v0, p2}, Ll/g0/i/c$a;-><init>(ILm/t;)V
 
     iput-object p1, p0, Ll/g0/i/g;->f:Ll/g0/i/c$a;
 
@@ -307,7 +307,7 @@
     new-array v0, v3, [Ljava/lang/Object;
 
     .line 7
-    invoke-virtual {p1}, Lm/f;->g()Ljava/lang/String;
+    invoke-virtual {p1}, Lm/f;->r()Ljava/lang/String;
 
     move-result-object p1
 
@@ -469,7 +469,7 @@
 
     const-wide/16 v2, 0x9
 
-    invoke-interface {v1, v2, v3}, Lm/e;->g(J)V
+    invoke-interface {v1, v2, v3}, Lm/e;->h(J)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -850,7 +850,7 @@
     .line 1
     iget-object v0, p0, Ll/g0/i/g;->c:Lm/e;
 
-    invoke-interface {v0}, Lm/s;->close()V
+    invoke-interface {v0}, Lm/t;->close()V
 
     return-void
 .end method

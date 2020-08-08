@@ -6,57 +6,23 @@
 # static fields
 .field public static a:Z = false
 
-.field public static final b:Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static b:Z = false
 
-.field public static c:Z
+.field public static c:[Ljava/lang/String;
 
-.field public static d:[Ljava/lang/String;
+.field public static d:[J
 
-.field public static e:[J
+.field public static e:I
 
 .field public static f:I
 
-.field public static g:I
-
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Ljava/util/HashSet;
-
-    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
-
-    sput-object v0, Le/a/a/c;->b:Ljava/util/Set;
-
-    const/4 v0, 0x0
-
-    .line 2
-    sput-boolean v0, Le/a/a/c;->c:Z
-
-    .line 3
-    sput v0, Le/a/a/c;->f:I
-
-    .line 4
-    sput v0, Le/a/a/c;->g:I
-
-    return-void
-.end method
-
 .method public static a(Ljava/lang/String;)V
     .locals 4
 
     .line 1
-    sget-boolean v0, Le/a/a/c;->c:Z
+    sget-boolean v0, Le/a/a/c;->b:Z
 
     if-nez v0, :cond_0
 
@@ -64,29 +30,29 @@
 
     .line 2
     :cond_0
-    sget v0, Le/a/a/c;->f:I
+    sget v0, Le/a/a/c;->e:I
 
     const/16 v1, 0x14
 
     if-ne v0, v1, :cond_1
 
     .line 3
-    sget p0, Le/a/a/c;->g:I
+    sget p0, Le/a/a/c;->f:I
 
     add-int/lit8 p0, p0, 0x1
 
-    sput p0, Le/a/a/c;->g:I
+    sput p0, Le/a/a/c;->f:I
 
     return-void
 
     .line 4
     :cond_1
-    sget-object v1, Le/a/a/c;->d:[Ljava/lang/String;
+    sget-object v1, Le/a/a/c;->c:[Ljava/lang/String;
 
     aput-object p0, v1, v0
 
     .line 5
-    sget-object v1, Le/a/a/c;->e:[J
+    sget-object v1, Le/a/a/c;->d:[J
 
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
@@ -98,29 +64,20 @@
     invoke-static {p0}, Lb/k/k/b;->a(Ljava/lang/String;)V
 
     .line 7
-    sget p0, Le/a/a/c;->f:I
+    sget p0, Le/a/a/c;->e:I
 
     add-int/lit8 p0, p0, 0x1
 
-    sput p0, Le/a/a/c;->f:I
+    sput p0, Le/a/a/c;->e:I
 
     return-void
 .end method
 
-.method public static b(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    sget-boolean p0, Le/a/a/c;->a:Z
-
-    return-void
-.end method
-
-.method public static c(Ljava/lang/String;)F
+.method public static b(Ljava/lang/String;)F
     .locals 4
 
     .line 1
-    sget v0, Le/a/a/c;->g:I
+    sget v0, Le/a/a/c;->f:I
 
     const/4 v1, 0x0
 
@@ -129,13 +86,13 @@
     add-int/lit8 v0, v0, -0x1
 
     .line 2
-    sput v0, Le/a/a/c;->g:I
+    sput v0, Le/a/a/c;->f:I
 
     return v1
 
     .line 3
     :cond_0
-    sget-boolean v0, Le/a/a/c;->c:Z
+    sget-boolean v0, Le/a/a/c;->b:Z
 
     if-nez v0, :cond_1
 
@@ -143,21 +100,21 @@
 
     .line 4
     :cond_1
-    sget v0, Le/a/a/c;->f:I
+    sget v0, Le/a/a/c;->e:I
 
     add-int/lit8 v0, v0, -0x1
 
-    sput v0, Le/a/a/c;->f:I
+    sput v0, Le/a/a/c;->e:I
 
     .line 5
-    sget v0, Le/a/a/c;->f:I
+    sget v0, Le/a/a/c;->e:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_3
 
     .line 6
-    sget-object v1, Le/a/a/c;->d:[Ljava/lang/String;
+    sget-object v1, Le/a/a/c;->c:[Ljava/lang/String;
 
     aget-object v0, v1, v0
 
@@ -175,9 +132,9 @@
 
     move-result-wide v0
 
-    sget-object p0, Le/a/a/c;->e:[J
+    sget-object p0, Le/a/a/c;->d:[J
 
-    sget v2, Le/a/a/c;->f:I
+    sget v2, Le/a/a/c;->e:I
 
     aget-wide v2, p0, v2
 
@@ -209,9 +166,9 @@
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object p0, Le/a/a/c;->d:[Ljava/lang/String;
+    sget-object p0, Le/a/a/c;->c:[Ljava/lang/String;
 
-    sget v2, Le/a/a/c;->f:I
+    sget v2, Le/a/a/c;->e:I
 
     aget-object p0, p0, v2
 
@@ -238,27 +195,4 @@
     invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p0
-.end method
-
-.method public static d(Ljava/lang/String;)V
-    .locals 1
-
-    .line 1
-    sget-object v0, Le/a/a/c;->b:Ljava/util/Set;
-
-    invoke-interface {v0, p0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    sget-object v0, Le/a/a/c;->b:Ljava/util/Set;
-
-    invoke-interface {v0, p0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
-
-    return-void
 .end method

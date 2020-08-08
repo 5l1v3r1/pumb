@@ -94,9 +94,9 @@
 
 .field public g:Z
 
-.field public h:Le/h/a/b/w/g;
+.field public h:Le/h/a/c/w/g;
 
-.field public i:Le/h/a/b/w/k;
+.field public i:Le/h/a/c/w/k;
 
 .field public j:Z
 
@@ -284,7 +284,7 @@
     sget v6, Lcom/google/android/material/R$styleable;->BottomSheetBehavior_Layout_backgroundTint:I
 
     .line 23
-    invoke-static {p1, v4, v6}, Le/h/a/b/t/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
+    invoke-static {p1, v4, v6}, Le/h/a/c/t/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object v6
 
@@ -432,11 +432,11 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;)Le/h/a/b/w/g;
+.method public static synthetic a(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;)Le/h/a/c/w/g;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/b/w/g;
+    iget-object p0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/c/w/g;
 
     return-object p0
 .end method
@@ -855,39 +855,39 @@
     sget v1, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->K:I
 
     .line 167
-    invoke-static {p1, p2, v0, v1}, Le/h/a/b/w/k;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Le/h/a/b/w/k$b;
+    invoke-static {p1, p2, v0, v1}, Le/h/a/c/w/k;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Le/h/a/c/w/k$b;
 
     move-result-object p2
 
     .line 168
-    invoke-virtual {p2}, Le/h/a/b/w/k$b;->a()Le/h/a/b/w/k;
+    invoke-virtual {p2}, Le/h/a/c/w/k$b;->a()Le/h/a/c/w/k;
 
     move-result-object p2
 
-    iput-object p2, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->i:Le/h/a/b/w/k;
+    iput-object p2, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->i:Le/h/a/c/w/k;
 
     .line 169
-    new-instance p2, Le/h/a/b/w/g;
+    new-instance p2, Le/h/a/c/w/g;
 
-    iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->i:Le/h/a/b/w/k;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->i:Le/h/a/c/w/k;
 
-    invoke-direct {p2, v0}, Le/h/a/b/w/g;-><init>(Le/h/a/b/w/k;)V
+    invoke-direct {p2, v0}, Le/h/a/c/w/g;-><init>(Le/h/a/c/w/k;)V
 
-    iput-object p2, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/b/w/g;
+    iput-object p2, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/c/w/g;
 
     .line 170
-    iget-object p2, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/b/w/g;
+    iget-object p2, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/c/w/g;
 
-    invoke-virtual {p2, p1}, Le/h/a/b/w/g;->a(Landroid/content/Context;)V
+    invoke-virtual {p2, p1}, Le/h/a/c/w/g;->a(Landroid/content/Context;)V
 
     if-eqz p3, :cond_0
 
     if-eqz p4, :cond_0
 
     .line 171
-    iget-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/b/w/g;
+    iget-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/c/w/g;
 
-    invoke-virtual {p1, p4}, Le/h/a/b/w/g;->a(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {p1, p4}, Le/h/a/c/w/g;->a(Landroid/content/res/ColorStateList;)V
 
     goto :goto_0
 
@@ -909,11 +909,11 @@
     invoke-virtual {p1, p3, p2, p4}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
     .line 174
-    iget-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/b/w/g;
+    iget-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/c/w/g;
 
     iget p2, p2, Landroid/util/TypedValue;->data:I
 
-    invoke-virtual {p1, p2}, Le/h/a/b/w/g;->setTint(I)V
+    invoke-virtual {p1, p2}, Le/h/a/c/w/g;->setTint(I)V
 
     :cond_1
     :goto_0
@@ -1940,7 +1940,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/b/w/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/c/w/g;
 
     if-eqz v0, :cond_1
 
@@ -1949,7 +1949,7 @@
 
     .line 21
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/b/w/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/c/w/g;
 
     if-eqz v0, :cond_5
 
@@ -1969,7 +1969,7 @@
 
     .line 24
     :cond_2
-    invoke-virtual {v0, v4}, Le/h/a/b/w/g;->b(F)V
+    invoke-virtual {v0, v4}, Le/h/a/c/w/g;->b(F)V
 
     .line 25
     iget v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->u:I
@@ -1987,7 +1987,7 @@
     iput-boolean v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->j:Z
 
     .line 26
-    iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/b/w/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/c/w/g;
 
     iget-boolean v4, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->j:Z
 
@@ -2001,7 +2001,7 @@
     const/high16 v4, 0x3f800000    # 1.0f
 
     :goto_1
-    invoke-virtual {v0, v4}, Le/h/a/b/w/g;->c(F)V
+    invoke-virtual {v0, v4}, Le/h/a/c/w/g;->c(F)V
 
     .line 27
     :cond_5
@@ -3372,7 +3372,7 @@
     iput-boolean p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->j:Z
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/b/w/g;
+    iget-object v1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->h:Le/h/a/c/w/g;
 
     if-eqz v1, :cond_4
 

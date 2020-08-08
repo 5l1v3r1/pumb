@@ -150,7 +150,7 @@
     invoke-virtual {p0}, Lcom/google/android/material/tabs/TabLayout$g;->i()V
 
     .line 11
-    sget-boolean p1, Le/h/a/b/c/a;->a:Z
+    sget-boolean p1, Le/h/a/c/c/a;->a:Z
 
     if-eqz p1, :cond_2
 

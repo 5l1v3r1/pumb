@@ -197,7 +197,7 @@
 
     move-result-object p1
 
-    invoke-interface {v0, p1, p3}, Ln/c/b;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v0, p1, p3}, Ln/c/b;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     const/4 p1, 0x0
 

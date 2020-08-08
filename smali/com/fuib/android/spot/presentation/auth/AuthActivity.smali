@@ -58,9 +58,9 @@
     if-nez p1, :cond_0
 
     .line 6
-    sget-object p1, Le/f/a/b/v/a/h;->H0:Le/f/a/b/v/a/h$a;
+    sget-object p1, Le/f/a/b/w/a/p;->I0:Le/f/a/b/w/a/p$a;
 
-    invoke-virtual {p1}, Le/f/a/b/v/a/h$a;->a()Le/f/a/b/v/a/h;
+    invoke-virtual {p1}, Le/f/a/b/w/a/p$a;->a()Le/f/a/b/w/a/p;
 
     move-result-object p1
 

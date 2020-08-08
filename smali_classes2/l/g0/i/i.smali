@@ -173,7 +173,7 @@
 
     sget-object v1, Ll/g0/i/d;->a:Lm/f;
 
-    invoke-virtual {v1}, Lm/f;->f()[B
+    invoke-virtual {v1}, Lm/f;->g()[B
 
     move-result-object v1
 
@@ -227,7 +227,7 @@
 
     int-to-long v0, p4
 
-    invoke-interface {p1, p3, v0, v1}, Lm/r;->b(Lm/c;J)V
+    invoke-interface {p1, p3, v0, v1}, Lm/s;->b(Lm/c;J)V
 
     :cond_0
     return-void
@@ -425,7 +425,7 @@
 
     iget-object p3, p0, Ll/g0/i/i;->e:Lm/c;
 
-    invoke-interface {p2, p3, v4, v5}, Lm/r;->b(Lm/c;J)V
+    invoke-interface {p2, p3, v4, v5}, Lm/s;->b(Lm/c;J)V
 
     if-lez v6, :cond_1
 
@@ -913,7 +913,7 @@
 
     iget-object p3, p0, Ll/g0/i/i;->e:Lm/c;
 
-    invoke-interface {p1, p3, v2, v3}, Lm/r;->b(Lm/c;J)V
+    invoke-interface {p1, p3, v2, v3}, Lm/s;->b(Lm/c;J)V
 
     if-lez v4, :cond_2
 
@@ -1251,7 +1251,7 @@
 
     iget-object v1, p0, Ll/g0/i/i;->e:Lm/c;
 
-    invoke-interface {v0, v1, v4, v5}, Lm/r;->b(Lm/c;J)V
+    invoke-interface {v0, v1, v4, v5}, Lm/s;->b(Lm/c;J)V
 
     goto :goto_0
 
@@ -1273,7 +1273,7 @@
     .line 2
     iget-object v0, p0, Ll/g0/i/i;->c:Lm/d;
 
-    invoke-interface {v0}, Lm/r;->close()V
+    invoke-interface {v0}, Lm/s;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

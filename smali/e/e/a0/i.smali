@@ -170,78 +170,78 @@
 
 .field public static final abc_vector_test:I = 0x7f0800cc
 
-.field public static final com_facebook_auth_dialog_background:I = 0x7f080100
+.field public static final com_facebook_auth_dialog_background:I = 0x7f080102
 
-.field public static final com_facebook_auth_dialog_cancel_background:I = 0x7f080101
+.field public static final com_facebook_auth_dialog_cancel_background:I = 0x7f080103
 
-.field public static final com_facebook_auth_dialog_header_background:I = 0x7f080102
+.field public static final com_facebook_auth_dialog_header_background:I = 0x7f080104
 
-.field public static final com_facebook_button_background:I = 0x7f080103
+.field public static final com_facebook_button_background:I = 0x7f080105
 
-.field public static final com_facebook_button_icon:I = 0x7f080104
+.field public static final com_facebook_button_icon:I = 0x7f080106
 
-.field public static final com_facebook_button_icon_blue:I = 0x7f080105
+.field public static final com_facebook_button_icon_blue:I = 0x7f080107
 
-.field public static final com_facebook_button_icon_white:I = 0x7f080106
+.field public static final com_facebook_button_icon_white:I = 0x7f080108
 
-.field public static final com_facebook_button_like_background:I = 0x7f080107
+.field public static final com_facebook_button_like_background:I = 0x7f080109
 
-.field public static final com_facebook_button_like_icon_selected:I = 0x7f080108
+.field public static final com_facebook_button_like_icon_selected:I = 0x7f08010a
 
-.field public static final com_facebook_button_login_background:I = 0x7f080109
+.field public static final com_facebook_button_login_background:I = 0x7f08010b
 
-.field public static final com_facebook_button_login_logo:I = 0x7f08010a
+.field public static final com_facebook_button_login_logo:I = 0x7f08010c
 
-.field public static final com_facebook_button_login_silver_background:I = 0x7f08010b
+.field public static final com_facebook_button_login_silver_background:I = 0x7f08010d
 
-.field public static final com_facebook_close:I = 0x7f08010f
+.field public static final com_facebook_close:I = 0x7f080111
 
-.field public static final com_facebook_favicon_blue:I = 0x7f080110
+.field public static final com_facebook_favicon_blue:I = 0x7f080112
 
-.field public static final com_facebook_profile_picture_blank_portrait:I = 0x7f080111
+.field public static final com_facebook_profile_picture_blank_portrait:I = 0x7f080113
 
-.field public static final com_facebook_profile_picture_blank_square:I = 0x7f080112
+.field public static final com_facebook_profile_picture_blank_square:I = 0x7f080114
 
-.field public static final com_facebook_tooltip_black_background:I = 0x7f080114
+.field public static final com_facebook_tooltip_black_background:I = 0x7f080116
 
-.field public static final com_facebook_tooltip_black_bottomnub:I = 0x7f080115
+.field public static final com_facebook_tooltip_black_bottomnub:I = 0x7f080117
 
-.field public static final com_facebook_tooltip_black_topnub:I = 0x7f080116
+.field public static final com_facebook_tooltip_black_topnub:I = 0x7f080118
 
-.field public static final com_facebook_tooltip_black_xout:I = 0x7f080117
+.field public static final com_facebook_tooltip_black_xout:I = 0x7f080119
 
-.field public static final com_facebook_tooltip_blue_background:I = 0x7f080118
+.field public static final com_facebook_tooltip_blue_background:I = 0x7f08011a
 
-.field public static final com_facebook_tooltip_blue_bottomnub:I = 0x7f080119
+.field public static final com_facebook_tooltip_blue_bottomnub:I = 0x7f08011b
 
-.field public static final com_facebook_tooltip_blue_topnub:I = 0x7f08011a
+.field public static final com_facebook_tooltip_blue_topnub:I = 0x7f08011c
 
-.field public static final com_facebook_tooltip_blue_xout:I = 0x7f08011b
+.field public static final com_facebook_tooltip_blue_xout:I = 0x7f08011d
 
-.field public static final notification_action_background:I = 0x7f080286
+.field public static final notification_action_background:I = 0x7f080297
 
-.field public static final notification_bg:I = 0x7f080287
+.field public static final notification_bg:I = 0x7f080298
 
-.field public static final notification_bg_low:I = 0x7f080288
+.field public static final notification_bg_low:I = 0x7f080299
 
-.field public static final notification_bg_low_normal:I = 0x7f080289
+.field public static final notification_bg_low_normal:I = 0x7f08029a
 
-.field public static final notification_bg_low_pressed:I = 0x7f08028a
+.field public static final notification_bg_low_pressed:I = 0x7f08029b
 
-.field public static final notification_bg_normal:I = 0x7f08028b
+.field public static final notification_bg_normal:I = 0x7f08029c
 
-.field public static final notification_bg_normal_pressed:I = 0x7f08028c
+.field public static final notification_bg_normal_pressed:I = 0x7f08029d
 
-.field public static final notification_icon_background:I = 0x7f08028d
+.field public static final notification_icon_background:I = 0x7f08029e
 
-.field public static final notification_template_icon_bg:I = 0x7f08028e
+.field public static final notification_template_icon_bg:I = 0x7f08029f
 
-.field public static final notification_template_icon_low_bg:I = 0x7f08028f
+.field public static final notification_template_icon_low_bg:I = 0x7f0802a0
 
-.field public static final notification_tile_bg:I = 0x7f080290
+.field public static final notification_tile_bg:I = 0x7f0802a1
 
-.field public static final notify_panel_notification_icon_bg:I = 0x7f080291
+.field public static final notify_panel_notification_icon_bg:I = 0x7f0802a2
 
-.field public static final tooltip_frame_dark:I = 0x7f0802a8
+.field public static final tooltip_frame_dark:I = 0x7f0802b9
 
-.field public static final tooltip_frame_light:I = 0x7f0802a9
+.field public static final tooltip_frame_light:I = 0x7f0802ba

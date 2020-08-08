@@ -128,13 +128,13 @@
     .line 2
     iput p2, p0, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->c:I
 
-    const p2, 0x7f0d00e6
+    const p2, 0x7f0d00ef
 
     .line 3
     invoke-static {p1, p2, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
     .line 4
-    sget p1, Le/f/a/b/n;->pin_dots:I
+    sget p1, Le/f/a/b/o;->pin_dots:I
 
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -147,7 +147,7 @@
     invoke-virtual {p1, p2}, Lcom/fuib/android/spot/presentation/common/widget/IndicatorDots;->a(I)V
 
     .line 5
-    sget p1, Le/f/a/b/n;->focus_catcher:I
+    sget p1, Le/f/a/b/o;->focus_catcher:I
 
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -176,7 +176,7 @@
     invoke-virtual {p1, p2}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     .line 6
-    sget p1, Le/f/a/b/n;->view_card_back:I
+    sget p1, Le/f/a/b/o;->view_card_back:I
 
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -189,7 +189,7 @@
     invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 7
-    sget p1, Le/f/a/b/n;->focus_catcher:I
+    sget p1, Le/f/a/b/o;->focus_catcher:I
 
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -204,7 +204,7 @@
     invoke-virtual {p1, p2}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 8
-    sget p1, Le/f/a/b/n;->pin_dots:I
+    sget p1, Le/f/a/b/o;->pin_dots:I
 
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -212,7 +212,7 @@
 
     check-cast p1, Lcom/fuib/android/spot/presentation/common/widget/IndicatorDots;
 
-    invoke-static {p1}, Le/f/a/b/v/b/b/b;->a(Landroid/view/View;)Landroid/animation/ObjectAnimator;
+    invoke-static {p1}, Le/f/a/b/w/b/b/b;->a(Landroid/view/View;)Landroid/animation/ObjectAnimator;
 
     move-result-object p1
 
@@ -311,7 +311,7 @@
     .locals 2
 
     .line 2
-    sget v0, Le/f/a/b/n;->pin_dots:I
+    sget v0, Le/f/a/b/o;->pin_dots:I
 
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -322,7 +322,7 @@
     invoke-virtual {v0}, Lcom/fuib/android/spot/presentation/common/widget/IndicatorDots;->b()V
 
     .line 3
-    sget v0, Le/f/a/b/n;->focus_catcher:I
+    sget v0, Le/f/a/b/o;->focus_catcher:I
 
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -347,7 +347,7 @@
     .locals 2
 
     .line 2
-    sget v0, Le/f/a/b/n;->pin_dots:I
+    sget v0, Le/f/a/b/o;->pin_dots:I
 
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -358,7 +358,7 @@
     invoke-virtual {v0}, Lcom/fuib/android/spot/presentation/common/widget/IndicatorDots;->a()V
 
     .line 3
-    sget v0, Le/f/a/b/n;->focus_catcher:I
+    sget v0, Le/f/a/b/o;->focus_catcher:I
 
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -391,7 +391,7 @@
     invoke-super {p0}, Landroid/view/ViewGroup;->clearFocus()V
 
     .line 2
-    sget v0, Le/f/a/b/n;->focus_catcher:I
+    sget v0, Le/f/a/b/o;->focus_catcher:I
 
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -408,7 +408,7 @@
     .locals 1
 
     .line 1
-    sget v0, Le/f/a/b/n;->focus_catcher:I
+    sget v0, Le/f/a/b/o;->focus_catcher:I
 
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -428,7 +428,7 @@
 
     .line 1
     :cond_0
-    sget-object v0, Le/f/a/b/v/b/o/v/a;->$EnumSwitchMapping$0:[I
+    sget-object v0, Le/f/a/b/w/b/o/v/a;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
@@ -442,13 +442,13 @@
 
     .line 2
     :goto_0
-    sget p1, Le/f/a/b/n;->view_card_back:I
+    sget p1, Le/f/a/b/o;->view_card_back:I
 
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
     move-result-object p1
 
-    const v0, 0x7f080142
+    const v0, 0x7f080144
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -456,13 +456,13 @@
 
     .line 3
     :cond_1
-    sget p1, Le/f/a/b/n;->view_card_back:I
+    sget p1, Le/f/a/b/o;->view_card_back:I
 
     invoke-virtual {p0, p1}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
     move-result-object p1
 
-    const v0, 0x7f080147
+    const v0, 0x7f080149
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -500,7 +500,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    sget v0, Le/f/a/b/n;->progress:I
+    sget v0, Le/f/a/b/o;->progress:I
 
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -534,7 +534,7 @@
     .locals 4
 
     .line 1
-    sget v0, Le/f/a/b/n;->progress:I
+    sget v0, Le/f/a/b/o;->progress:I
 
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -563,7 +563,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
     .line 2
-    sget v0, Le/f/a/b/n;->pin_dots:I
+    sget v0, Le/f/a/b/o;->pin_dots:I
 
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -588,7 +588,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     .line 3
-    sget v0, Le/f/a/b/n;->underline:I
+    sget v0, Le/f/a/b/o;->underline:I
 
     invoke-virtual {p0, v0}, Lcom/fuib/android/spot/presentation/common/widget/cardPinInput/CardPinInputLayout;->_$_findCachedViewById(I)Landroid/view/View;
 

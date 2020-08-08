@@ -11,7 +11,7 @@
         0x3
     }
     d1 = {
-        "\u0000~\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\'\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ(\u0010\u000b\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u000e0\r0\u000c2\u0006\u0010\u000f\u001a\u00020\u00102\u000c\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0012J_\u0010\u0013\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00140\r0\u000c2\u0006\u0010\u0015\u001a\u00020\u00102\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00172\n\u0008\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u00172\n\u0008\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u00102\n\u0008\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00102\n\u0008\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u0017\u00a2\u0006\u0002\u0010\u001dJ\u001a\u0010\u001e\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u000e0\r0\u000c2\u0006\u0010\u000f\u001a\u00020\u0010J\"\u0010\u001f\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u000e0\r0\u000c2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010 \u001a\u00020\u0010J\"\u0010!\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\"0\r0\u000c2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010#\u001a\u00020\u0017J\u0012\u0010$\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020%0\r0\u000cJ/\u0010&\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\'0\r0\u000c2\n\u0008\u0002\u0010(\u001a\u0004\u0018\u00010\u00102\n\u0008\u0002\u0010#\u001a\u0004\u0018\u00010)\u00a2\u0006\u0002\u0010*J7\u0010+\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020,0\r0\u000c2\u0006\u0010-\u001a\u00020\u00102\n\u0008\u0002\u0010(\u001a\u0004\u0018\u00010\u00102\n\u0008\u0002\u0010#\u001a\u0004\u0018\u00010)\u00a2\u0006\u0002\u0010.J*\u0010/\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u0002000\r0\u000c2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0015\u001a\u00020\u00102\u0006\u00101\u001a\u000202\u00a8\u00063"
+        "\u0000\u0094\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\'\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ(\u0010\u000b\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u000e0\r0\u000c2\u0006\u0010\u000f\u001a\u00020\u00102\u000c\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0012J_\u0010\u0013\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00140\r0\u000c2\u0006\u0010\u0015\u001a\u00020\u00102\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00172\n\u0008\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u00172\n\u0008\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u00102\n\u0008\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00102\n\u0008\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u0017\u00a2\u0006\u0002\u0010\u001dJ\u001a\u0010\u001e\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u000e0\r0\u000c2\u0006\u0010\u000f\u001a\u00020\u0010J\"\u0010\u001f\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u000e0\r0\u000c2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010 \u001a\u00020\u0010J\u001a\u0010!\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\"0\r0\u000c2\u0006\u0010#\u001a\u00020\u0010J\"\u0010$\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020%0\r0\u000c2\u0006\u0010&\u001a\u00020\u00102\u0006\u0010\'\u001a\u00020\u0017J\"\u0010(\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020)0\r0\u000c2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\'\u001a\u00020\u0017J\u0012\u0010*\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020+0\r0\u000cJ/\u0010,\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020-0\r0\u000c2\n\u0008\u0002\u0010.\u001a\u0004\u0018\u00010\u00102\n\u0008\u0002\u0010\'\u001a\u0004\u0018\u00010/\u00a2\u0006\u0002\u00100J7\u00101\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u0002020\r0\u000c2\u0006\u00103\u001a\u00020\u00102\n\u0008\u0002\u0010.\u001a\u0004\u0018\u00010\u00102\n\u0008\u0002\u0010\'\u001a\u0004\u0018\u00010/\u00a2\u0006\u0002\u00104J\"\u00105\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u0002060\r0\u000c2\u0006\u0010#\u001a\u00020\u00102\u0006\u00107\u001a\u00020\u0010J*\u00108\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u0002090\r0\u000c2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0015\u001a\u00020\u00102\u0006\u0010:\u001a\u00020;\u00a8\u0006<"
     }
     d2 = {
         "Lcom/fuib/android/spot/data/api/services/house_holds/general/HouseHoldsService;",
@@ -47,9 +47,15 @@
         "deleteHouseholdById",
         "deleteTemplateFromHouseHold",
         "templateId",
+        "getHistoryItemDetails",
+        "Lcom/fuib/android/spot/data/api/services/house_holds/history/details/response/GetUtilityTransferItemDetailsResponseData;",
+        "operationId",
+        "getHistoryItems",
+        "Lcom/fuib/android/spot/data/api/services/house_holds/history/items/response/GetUtilityTransferHistoryResponseData;",
+        "month",
+        "offset",
         "getHouseHoldTemplates",
         "Lcom/fuib/android/spot/data/api/services/house_holds/general/response/GetHouseholdTemplatesResponseData;",
-        "offset",
         "getHouseholds",
         "Lcom/fuib/android/spot/data/api/services/house_holds/general/response/GetHouseholdsResponseData;",
         "searchSettlement",
@@ -61,6 +67,9 @@
         "Lcom/fuib/android/spot/data/api/services/house_holds/general/response/StreetsSearchResponseData;",
         "settlementId",
         "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)Landroidx/lifecycle/LiveData;",
+        "sendReceipt",
+        "Lcom/fuib/android/spot/data/api/services/house_holds/history/receipt/response/SendUtilityTransferReceiptResponseData;",
+        "email",
         "setLinkUtilityToHouseHold",
         "Lcom/fuib/android/spot/data/api/services/house_holds/general/response/LinkUtilityToHouseHoldResponseData;",
         "utility",
@@ -77,11 +86,11 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;)V
+.method public constructor <init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/fuib/android/spot/data/api/common/AbstractService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/fuib/android/spot/data/api/common/AbstractService;-><init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;)V
 
     return-void
 .end method
@@ -402,6 +411,82 @@
     return-object p1
 .end method
 
+.method public final getHistoryItemDetails(Ljava/lang/String;)Landroidx/lifecycle/LiveData;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Landroidx/lifecycle/LiveData<",
+            "Lcom/fuib/android/spot/data/api/common/ApiResponse<",
+            "Lcom/fuib/android/spot/data/api/services/house_holds/history/details/response/GetUtilityTransferItemDetailsResponseData;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lcom/fuib/android/spot/data/api/services/house_holds/history/details/request/GetUtilityTransferItemDetailsRequest;
+
+    invoke-direct {v0, p1}, Lcom/fuib/android/spot/data/api/services/house_holds/history/details/request/GetUtilityTransferItemDetailsRequest;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0, v0}, Lcom/fuib/android/spot/data/api/common/AbstractService;->executeRequest(Lcom/fuib/android/spot/data/api/common/ApiRequest;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    new-instance v0, Lcom/fuib/android/spot/data/api/services/house_holds/general/HouseHoldsService$getHistoryItemDetails$1;
+
+    invoke-direct {v0, p0}, Lcom/fuib/android/spot/data/api/services/house_holds/general/HouseHoldsService$getHistoryItemDetails$1;-><init>(Lcom/fuib/android/spot/data/api/services/house_holds/general/HouseHoldsService;)V
+
+    invoke-static {p1, v0}, Lb/p/u;->b(Landroidx/lifecycle/LiveData;Lb/c/a/c/a;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    const-string v0, "Transformations.switchMa\u2026ta::class.java)\n        }"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p1
+.end method
+
+.method public final getHistoryItems(Ljava/lang/String;I)Landroidx/lifecycle/LiveData;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "I)",
+            "Landroidx/lifecycle/LiveData<",
+            "Lcom/fuib/android/spot/data/api/common/ApiResponse<",
+            "Lcom/fuib/android/spot/data/api/services/house_holds/history/items/response/GetUtilityTransferHistoryResponseData;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lcom/fuib/android/spot/data/api/services/house_holds/history/items/request/GetUtilityTransferHistoryRequest;
+
+    invoke-direct {v0, p1, p2}, Lcom/fuib/android/spot/data/api/services/house_holds/history/items/request/GetUtilityTransferHistoryRequest;-><init>(Ljava/lang/String;I)V
+
+    invoke-virtual {p0, v0}, Lcom/fuib/android/spot/data/api/common/AbstractService;->executeRequest(Lcom/fuib/android/spot/data/api/common/ApiRequest;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    new-instance p2, Lcom/fuib/android/spot/data/api/services/house_holds/general/HouseHoldsService$getHistoryItems$1;
+
+    invoke-direct {p2, p0}, Lcom/fuib/android/spot/data/api/services/house_holds/general/HouseHoldsService$getHistoryItems$1;-><init>(Lcom/fuib/android/spot/data/api/services/house_holds/general/HouseHoldsService;)V
+
+    invoke-static {p1, p2}, Lb/p/u;->b(Landroidx/lifecycle/LiveData;Lb/c/a/c/a;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    const-string p2, "Transformations.switchMa\u2026ta::class.java)\n        }"
+
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p1
+.end method
+
 .method public final getHouseHoldTemplates(Ljava/lang/String;I)Landroidx/lifecycle/LiveData;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
@@ -564,6 +649,45 @@
     invoke-direct {p2, p0}, Lcom/fuib/android/spot/data/api/services/house_holds/general/HouseHoldsService$searchStreets$1;-><init>(Lcom/fuib/android/spot/data/api/services/house_holds/general/HouseHoldsService;)V
 
     .line 3
+    invoke-static {p1, p2}, Lb/p/u;->b(Landroidx/lifecycle/LiveData;Lb/c/a/c/a;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    const-string p2, "Transformations.switchMa\u2026ta::class.java)\n        }"
+
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p1
+.end method
+
+.method public final sendReceipt(Ljava/lang/String;Ljava/lang/String;)Landroidx/lifecycle/LiveData;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ")",
+            "Landroidx/lifecycle/LiveData<",
+            "Lcom/fuib/android/spot/data/api/common/ApiResponse<",
+            "Lcom/fuib/android/spot/data/api/services/house_holds/history/receipt/response/SendUtilityTransferReceiptResponseData;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lcom/fuib/android/spot/data/api/services/house_holds/history/receipt/request/SendUtilityTransferReceiptRequest;
+
+    invoke-direct {v0, p1, p2}, Lcom/fuib/android/spot/data/api/services/house_holds/history/receipt/request/SendUtilityTransferReceiptRequest;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {p0, v0}, Lcom/fuib/android/spot/data/api/common/AbstractService;->executeRequest(Lcom/fuib/android/spot/data/api/common/ApiRequest;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    new-instance p2, Lcom/fuib/android/spot/data/api/services/house_holds/general/HouseHoldsService$sendReceipt$1;
+
+    invoke-direct {p2, p0}, Lcom/fuib/android/spot/data/api/services/house_holds/general/HouseHoldsService$sendReceipt$1;-><init>(Lcom/fuib/android/spot/data/api/services/house_holds/general/HouseHoldsService;)V
+
     invoke-static {p1, p2}, Lb/p/u;->b(Landroidx/lifecycle/LiveData;Lb/c/a/c/a;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public appType:Le/f/a/b/s/f/e;
+.field public appType:Le/f/a/b/t/f/e;
     .annotation runtime Le/h/c/v/c;
         value = "app_type"
     .end annotation
@@ -57,7 +57,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Le/f/a/b/s/f/e;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Le/f/a/b/t/f/e;Ljava/lang/String;)V
     .locals 3
 
     if-eqz p3, :cond_0
@@ -100,7 +100,7 @@
     iput-object p5, p0, Lcom/fuib/android/spot/data/api/auth/touch/request/EnterTouchRequestData;->appVersion:Ljava/lang/String;
 
     .line 8
-    iput-object p6, p0, Lcom/fuib/android/spot/data/api/auth/touch/request/EnterTouchRequestData;->appType:Le/f/a/b/s/f/e;
+    iput-object p6, p0, Lcom/fuib/android/spot/data/api/auth/touch/request/EnterTouchRequestData;->appType:Le/f/a/b/t/f/e;
 
     .line 9
     iput-object p7, p0, Lcom/fuib/android/spot/data/api/auth/touch/request/EnterTouchRequestData;->launchType:Ljava/lang/String;

@@ -51,7 +51,7 @@
     .line 2
     iget-object p1, p0, Lcom/fuib/android/spot/uikit/household/textInput/TextInput$b;->c:Lcom/fuib/android/spot/uikit/household/textInput/TextInput;
 
-    sget p2, Le/f/a/b/y/e;->text_input_value:I
+    sget p2, Le/f/a/b/z/e;->text_input_value:I
 
     invoke-virtual {p1, p2}, Lcom/fuib/android/spot/uikit/household/textInput/TextInput;->a(I)Landroid/view/View;
 
@@ -78,7 +78,7 @@
 
     iget-object v1, p0, Lcom/fuib/android/spot/uikit/household/textInput/TextInput$b;->c:Lcom/fuib/android/spot/uikit/household/textInput/TextInput;
 
-    sget v2, Le/f/a/b/y/e;->text_input_value:I
+    sget v2, Le/f/a/b/z/e;->text_input_value:I
 
     invoke-virtual {v1, v2}, Lcom/fuib/android/spot/uikit/household/textInput/TextInput;->a(I)Landroid/view/View;
 

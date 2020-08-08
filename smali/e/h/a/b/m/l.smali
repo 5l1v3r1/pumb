@@ -1,287 +1,136 @@
-.class public Le/h/a/b/m/l;
+.class public final Le/h/a/b/m/l;
 .super Ljava/lang/Object;
-.source "UtcDates.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic c:Le/h/a/b/m/g;
+
+.field public final synthetic d:Le/h/a/b/m/k;
 
 
 # direct methods
-.method public static a(J)J
-    .locals 1
+.method public constructor <init>(Le/h/a/b/m/k;Le/h/a/b/m/g;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Le/h/a/b/m/l;->d:Le/h/a/b/m/k;
+
+    iput-object p2, p0, Le/h/a/b/m/l;->c:Le/h/a/b/m/g;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Le/h/a/b/m/l;->c:Le/h/a/b/m/g;
+
+    invoke-virtual {v0}, Le/h/a/b/m/g;->c()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Le/h/a/b/m/l;->d:Le/h/a/b/m/k;
+
+    invoke-static {v0}, Le/h/a/b/m/k;->a(Le/h/a/b/m/k;)Le/h/a/b/m/b0;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Le/h/a/b/m/b0;->f()Z
+
+    return-void
+
+    .line 3
+    :cond_0
+    :try_start_0
+    iget-object v0, p0, Le/h/a/b/m/l;->d:Le/h/a/b/m/k;
+
+    invoke-static {v0}, Le/h/a/b/m/k;->b(Le/h/a/b/m/k;)Le/h/a/b/m/a;
+
+    move-result-object v0
+
+    iget-object v1, p0, Le/h/a/b/m/l;->c:Le/h/a/b/m/g;
+
+    invoke-interface {v0, v1}, Le/h/a/b/m/a;->a(Le/h/a/b/m/g;)Ljava/lang/Object;
+
+    move-result-object v0
+    :try_end_0
+    .catch Lcom/google/android/gms/tasks/RuntimeExecutionException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 4
+    iget-object v1, p0, Le/h/a/b/m/l;->d:Le/h/a/b/m/k;
+
+    invoke-static {v1}, Le/h/a/b/m/k;->a(Le/h/a/b/m/k;)Le/h/a/b/m/b0;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Le/h/a/b/m/b0;->a(Ljava/lang/Object;)V
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    .line 5
+    iget-object v1, p0, Le/h/a/b/m/l;->d:Le/h/a/b/m/k;
+
+    invoke-static {v1}, Le/h/a/b/m/k;->a(Le/h/a/b/m/k;)Le/h/a/b/m/b0;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Le/h/a/b/m/b0;->a(Ljava/lang/Exception;)V
+
+    return-void
+
+    :catch_1
+    move-exception v0
+
+    .line 6
+    invoke-virtual {v0}, Ljava/lang/RuntimeException;->getCause()Ljava/lang/Throwable;
+
+    move-result-object v1
+
+    instance-of v1, v1, Ljava/lang/Exception;
+
+    if-eqz v1, :cond_1
+
+    .line 7
+    iget-object v1, p0, Le/h/a/b/m/l;->d:Le/h/a/b/m/k;
+
+    invoke-static {v1}, Le/h/a/b/m/k;->a(Le/h/a/b/m/k;)Le/h/a/b/m/b0;
+
+    move-result-object v1
+
+    invoke-virtual {v0}, Ljava/lang/RuntimeException;->getCause()Ljava/lang/Throwable;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Exception;
+
+    invoke-virtual {v1, v0}, Le/h/a/b/m/b0;->a(Ljava/lang/Exception;)V
+
+    return-void
 
     .line 8
-    invoke-static {}, Le/h/a/b/m/l;->d()Ljava/util/Calendar;
+    :cond_1
+    iget-object v1, p0, Le/h/a/b/m/l;->d:Le/h/a/b/m/k;
 
-    move-result-object v0
+    invoke-static {v1}, Le/h/a/b/m/k;->a(Le/h/a/b/m/k;)Le/h/a/b/m/b0;
 
-    .line 9
-    invoke-virtual {v0, p0, p1}, Ljava/util/Calendar;->setTimeInMillis(J)V
+    move-result-object v1
 
-    .line 10
-    invoke-static {v0}, Le/h/a/b/m/l;->a(Ljava/util/Calendar;)Ljava/util/Calendar;
+    invoke-virtual {v1, v0}, Le/h/a/b/m/b0;->a(Ljava/lang/Exception;)V
 
-    move-result-object p0
-
-    .line 11
-    invoke-virtual {p0}, Ljava/util/Calendar;->getTimeInMillis()J
-
-    move-result-wide p0
-
-    return-wide p0
-.end method
-
-.method public static a(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
-    .locals 0
-    .annotation build Landroid/annotation/TargetApi;
-        value = 0x18
-    .end annotation
-
-    .line 12
-    invoke-static {p0, p1}, Landroid/icu/text/DateFormat;->getInstanceForSkeleton(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
-
-    move-result-object p0
-
-    .line 13
-    invoke-static {}, Le/h/a/b/m/l;->c()Landroid/icu/util/TimeZone;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Landroid/icu/text/DateFormat;->setTimeZone(Landroid/icu/util/TimeZone;)V
-
-    return-object p0
-.end method
-
-.method public static a(Ljava/util/Locale;)Landroid/icu/text/DateFormat;
-    .locals 1
-    .annotation build Landroid/annotation/TargetApi;
-        value = 0x18
-    .end annotation
-
-    const-string v0, "MMMEd"
-
-    .line 16
-    invoke-static {v0, p0}, Le/h/a/b/m/l;->a(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static a(ILjava/util/Locale;)Ljava/text/DateFormat;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljava/text/DateFormat;->getDateInstance(ILjava/util/Locale;)Ljava/text/DateFormat;
-
-    move-result-object p0
-
-    .line 15
-    invoke-static {}, Le/h/a/b/m/l;->a()Ljava/util/TimeZone;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
-
-    return-object p0
-.end method
-
-.method public static a(Ljava/util/Calendar;)Ljava/util/Calendar;
-    .locals 4
-
-    .line 2
-    invoke-static {p0}, Le/h/a/b/m/l;->b(Ljava/util/Calendar;)Ljava/util/Calendar;
-
-    move-result-object p0
-
-    .line 3
-    invoke-static {}, Le/h/a/b/m/l;->d()Ljava/util/Calendar;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    .line 4
-    invoke-virtual {p0, v1}, Ljava/util/Calendar;->get(I)I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    .line 5
-    invoke-virtual {p0, v2}, Ljava/util/Calendar;->get(I)I
-
-    move-result v2
-
-    const/4 v3, 0x5
-
-    .line 6
-    invoke-virtual {p0, v3}, Ljava/util/Calendar;->get(I)I
-
-    move-result p0
-
-    .line 7
-    invoke-virtual {v0, v1, v2, p0}, Ljava/util/Calendar;->set(III)V
-
-    return-object v0
-.end method
-
-.method public static a()Ljava/util/TimeZone;
-    .locals 1
-
-    const-string v0, "UTC"
-
-    .line 1
-    invoke-static {v0}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static b(Ljava/util/Locale;)Ljava/text/DateFormat;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 7
-    invoke-static {v0, p0}, Le/h/a/b/m/l;->a(ILjava/util/Locale;)Ljava/text/DateFormat;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static b(Ljava/lang/String;Ljava/util/Locale;)Ljava/text/SimpleDateFormat;
-    .locals 1
-
-    .line 5
-    new-instance v0, Ljava/text/SimpleDateFormat;
-
-    invoke-direct {v0, p0, p1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
-
-    .line 6
-    invoke-static {}, Le/h/a/b/m/l;->a()Ljava/util/TimeZone;
-
-    move-result-object p0
-
-    invoke-virtual {v0, p0}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
-
-    return-object v0
-.end method
-
-.method public static b()Ljava/util/Calendar;
-    .locals 1
-
-    .line 1
-    invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
-
-    move-result-object v0
-
-    invoke-static {v0}, Le/h/a/b/m/l;->a(Ljava/util/Calendar;)Ljava/util/Calendar;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static b(Ljava/util/Calendar;)Ljava/util/Calendar;
-    .locals 3
-
-    .line 2
-    invoke-static {}, Le/h/a/b/m/l;->a()Ljava/util/TimeZone;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/Calendar;->getInstance(Ljava/util/TimeZone;)Ljava/util/Calendar;
-
-    move-result-object v0
-
-    if-nez p0, :cond_0
-
-    .line 3
-    invoke-virtual {v0}, Ljava/util/Calendar;->clear()V
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    invoke-virtual {p0}, Ljava/util/Calendar;->getTimeInMillis()J
-
-    move-result-wide v1
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/Calendar;->setTimeInMillis(J)V
-
-    :goto_0
-    return-object v0
-.end method
-
-.method public static c(Ljava/util/Locale;)Landroid/icu/text/DateFormat;
-    .locals 1
-    .annotation build Landroid/annotation/TargetApi;
-        value = 0x18
-    .end annotation
-
-    const-string v0, "yMMMEd"
-
-    .line 2
-    invoke-static {v0, p0}, Le/h/a/b/m/l;->a(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static c()Landroid/icu/util/TimeZone;
-    .locals 1
-    .annotation build Landroid/annotation/TargetApi;
-        value = 0x18
-    .end annotation
-
-    const-string v0, "UTC"
-
-    .line 1
-    invoke-static {v0}, Landroid/icu/util/TimeZone;->getTimeZone(Ljava/lang/String;)Landroid/icu/util/TimeZone;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static d(Ljava/util/Locale;)Ljava/text/SimpleDateFormat;
-    .locals 1
-
-    const-string v0, "MMMM, yyyy"
-
-    .line 2
-    invoke-static {v0, p0}, Le/h/a/b/m/l;->b(Ljava/lang/String;Ljava/util/Locale;)Ljava/text/SimpleDateFormat;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static d()Ljava/util/Calendar;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-static {v0}, Le/h/a/b/m/l;->b(Ljava/util/Calendar;)Ljava/util/Calendar;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static e()Ljava/text/SimpleDateFormat;
-    .locals 1
-
-    .line 1
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
-
-    move-result-object v0
-
-    invoke-static {v0}, Le/h/a/b/m/l;->d(Ljava/util/Locale;)Ljava/text/SimpleDateFormat;
-
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

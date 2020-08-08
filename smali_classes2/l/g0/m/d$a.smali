@@ -3,7 +3,7 @@
 .source "WebSocketWriter.java"
 
 # interfaces
-.implements Lm/r;
+.implements Lm/s;
 
 
 # annotations
@@ -238,7 +238,7 @@
     throw v0
 .end method
 
-.method public i()Lm/t;
+.method public i()Lm/u;
     .locals 1
 
     .line 1
@@ -246,7 +246,7 @@
 
     iget-object v0, v0, Ll/g0/m/d;->c:Lm/d;
 
-    invoke-interface {v0}, Lm/r;->i()Lm/t;
+    invoke-interface {v0}, Lm/s;->i()Lm/u;
 
     move-result-object v0
 

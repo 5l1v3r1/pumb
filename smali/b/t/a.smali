@@ -38,12 +38,12 @@
 
 .field public static final layoutManager:I = 0x7f0401d9
 
-.field public static final recyclerViewStyle:I = 0x7f040297
+.field public static final recyclerViewStyle:I = 0x7f04029b
 
-.field public static final reverseLayout:I = 0x7f04029f
+.field public static final reverseLayout:I = 0x7f0402a3
 
-.field public static final spanCount:I = 0x7f0402d5
+.field public static final spanCount:I = 0x7f0402d9
 
-.field public static final stackFromEnd:I = 0x7f0402db
+.field public static final stackFromEnd:I = 0x7f0402df
 
-.field public static final ttcIndex:I = 0x7f040361
+.field public static final ttcIndex:I = 0x7f040365

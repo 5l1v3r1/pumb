@@ -65,7 +65,7 @@
     .line 2
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput$d;->c:Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput;
 
-    invoke-static {v0}, Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput;->a(Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput;)Le/f/a/b/w/c1;
+    invoke-static {v0}, Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput;->a(Lcom/fuib/android/spot/presentation/common/widget/payments/AccountDstInput;)Le/f/a/b/x/c1;
 
     move-result-object v0
 
@@ -82,7 +82,7 @@
     const/4 p1, 0x0
 
     :cond_0
-    invoke-virtual {v0, p1}, Le/f/a/b/w/c1;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Le/f/a/b/x/c1;->a(Ljava/lang/String;)V
 
     return-void
 .end method

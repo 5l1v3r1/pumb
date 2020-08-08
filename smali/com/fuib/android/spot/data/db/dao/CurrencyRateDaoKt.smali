@@ -118,13 +118,13 @@
 
     move-result-object v4
 
-    sget-object v5, Le/f/a/b/s/f/t;->a:Le/f/a/b/s/f/t$a;
+    sget-object v5, Le/f/a/b/t/f/t;->a:Le/f/a/b/t/f/t$a;
 
     invoke-virtual {v2}, Lcom/fuib/android/spot/data/api/dictionary/rates/entity/CurrencyRatesNetworkEntity;->getDate()Ljava/lang/String;
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Le/f/a/b/s/f/t$a;->a(Ljava/lang/String;)J
+    invoke-virtual {v5, v6}, Le/f/a/b/t/f/t$a;->a(Ljava/lang/String;)J
 
     move-result-wide v5
 

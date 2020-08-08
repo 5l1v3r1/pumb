@@ -114,7 +114,7 @@
     .end annotation
 
     .line 2
-    invoke-static {p1}, Le/f/a/b/v/b/o/h;->a(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static {p1}, Le/f/a/b/w/b/o/h;->a(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p1
 

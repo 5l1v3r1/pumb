@@ -1,10 +1,10 @@
 .class public Le/h/b/e/p;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-common@@19.0.0"
+.source "com.google.firebase:firebase-components@@16.0.0"
 
 # interfaces
-.implements Le/h/b/f/d;
-.implements Le/h/b/f/c;
+.implements Le/h/b/h/d;
+.implements Le/h/b/h/c;
 
 
 # instance fields
@@ -15,7 +15,7 @@
             "Ljava/lang/Class<",
             "*>;",
             "Ljava/util/concurrent/ConcurrentHashMap<",
-            "Le/h/b/f/b<",
+            "Le/h/b/h/b<",
             "Ljava/lang/Object;",
             ">;",
             "Ljava/util/concurrent/Executor;",
@@ -28,7 +28,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Queue<",
-            "Le/h/b/f/a<",
+            "Le/h/b/h/a<",
             "*>;>;"
         }
     .end annotation
@@ -64,7 +64,7 @@
     return-void
 .end method
 
-.method public static synthetic a(Ljava/util/Map$Entry;Le/h/b/f/a;)V
+.method public static synthetic a(Ljava/util/Map$Entry;Le/h/b/h/a;)V
     .locals 0
 
     .line 1
@@ -72,25 +72,25 @@
 
     move-result-object p0
 
-    check-cast p0, Le/h/b/f/b;
+    check-cast p0, Le/h/b/h/b;
 
-    invoke-interface {p0, p1}, Le/h/b/f/b;->a(Le/h/b/f/a;)V
+    invoke-interface {p0, p1}, Le/h/b/h/b;->a(Le/h/b/h/a;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized a(Le/h/b/f/a;)Ljava/util/Set;
+.method public final declared-synchronized a(Le/h/b/h/a;)Ljava/util/Set;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Le/h/b/f/a<",
+            "Le/h/b/h/a<",
             "*>;)",
             "Ljava/util/Set<",
             "Ljava/util/Map$Entry<",
-            "Le/h/b/f/b<",
+            "Le/h/b/h/b<",
             "Ljava/lang/Object;",
             ">;",
             "Ljava/util/concurrent/Executor;",
@@ -104,7 +104,7 @@
     :try_start_0
     iget-object v0, p0, Le/h/b/e/p;->a:Ljava/util/Map;
 
-    invoke-virtual {p1}, Le/h/b/f/a;->b()Ljava/lang/Class;
+    invoke-virtual {p1}, Le/h/b/h/a;->b()Ljava/lang/Class;
 
     move-result-object p1
 
@@ -192,10 +192,10 @@
 
     move-result-object v1
 
-    check-cast v1, Le/h/b/f/a;
+    check-cast v1, Le/h/b/h/a;
 
     .line 18
-    invoke-virtual {p0, v1}, Le/h/b/e/p;->b(Le/h/b/f/a;)V
+    invoke-virtual {p0, v1}, Le/h/b/e/p;->b(Le/h/b/h/a;)V
 
     goto :goto_1
 
@@ -214,7 +214,7 @@
     throw v0
 .end method
 
-.method public a(Ljava/lang/Class;Le/h/b/f/b;)V
+.method public a(Ljava/lang/Class;Le/h/b/h/b;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -223,7 +223,7 @@
             ">(",
             "Ljava/lang/Class<",
             "TT;>;",
-            "Le/h/b/f/b<",
+            "Le/h/b/h/b<",
             "-TT;>;)V"
         }
     .end annotation
@@ -231,12 +231,12 @@
     .line 11
     iget-object v0, p0, Le/h/b/e/p;->c:Ljava/util/concurrent/Executor;
 
-    invoke-virtual {p0, p1, v0, p2}, Le/h/b/e/p;->a(Ljava/lang/Class;Ljava/util/concurrent/Executor;Le/h/b/f/b;)V
+    invoke-virtual {p0, p1, v0, p2}, Le/h/b/e/p;->a(Ljava/lang/Class;Ljava/util/concurrent/Executor;Le/h/b/h/b;)V
 
     return-void
 .end method
 
-.method public declared-synchronized a(Ljava/lang/Class;Ljava/util/concurrent/Executor;Le/h/b/f/b;)V
+.method public declared-synchronized a(Ljava/lang/Class;Ljava/util/concurrent/Executor;Le/h/b/h/b;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -246,7 +246,7 @@
             "Ljava/lang/Class<",
             "TT;>;",
             "Ljava/util/concurrent/Executor;",
-            "Le/h/b/f/b<",
+            "Le/h/b/h/b<",
             "-TT;>;)V"
         }
     .end annotation
@@ -255,13 +255,13 @@
 
     .line 4
     :try_start_0
-    invoke-static {p1}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Le/h/b/e/r;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
-    invoke-static {p3}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3}, Le/h/b/e/r;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
-    invoke-static {p2}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Le/h/b/e/r;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
     iget-object v0, p0, Le/h/b/e/p;->a:Ljava/util/Map;
@@ -308,18 +308,18 @@
     throw p1
 .end method
 
-.method public b(Le/h/b/f/a;)V
+.method public b(Le/h/b/h/a;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Le/h/b/f/a<",
+            "Le/h/b/h/a<",
             "*>;)V"
         }
     .end annotation
 
     .line 1
-    invoke-static {p1}, Le/h/a/a/d/l/v;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Le/h/b/e/r;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     monitor-enter p0
@@ -347,7 +347,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 7
-    invoke-virtual {p0, p1}, Le/h/b/e/p;->a(Le/h/b/f/a;)Ljava/util/Set;
+    invoke-virtual {p0, p1}, Le/h/b/e/p;->a(Le/h/b/h/a;)Ljava/util/Set;
 
     move-result-object v0
 
@@ -375,7 +375,7 @@
 
     check-cast v2, Ljava/util/concurrent/Executor;
 
-    invoke-static {v1, p1}, Le/h/b/e/o;->a(Ljava/util/Map$Entry;Le/h/b/f/a;)Ljava/lang/Runnable;
+    invoke-static {v1, p1}, Le/h/b/e/o;->a(Ljava/util/Map$Entry;Le/h/b/h/a;)Ljava/lang/Runnable;
 
     move-result-object v1
 
@@ -394,6 +394,87 @@
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p1
+.end method
+
+.method public declared-synchronized b(Ljava/lang/Class;Le/h/b/h/b;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Class<",
+            "TT;>;",
+            "Le/h/b/h/b<",
+            "-TT;>;)V"
+        }
+    .end annotation
+
+    monitor-enter p0
+
+    .line 10
+    :try_start_0
+    invoke-static {p1}, Le/h/b/e/r;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 11
+    invoke-static {p2}, Le/h/b/e/r;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 12
+    iget-object v0, p0, Le/h/b/e/p;->a:Ljava/util/Map;
+
+    invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v0, :cond_0
+
+    .line 13
+    monitor-exit p0
+
+    return-void
+
+    .line 14
+    :cond_0
+    :try_start_1
+    iget-object v0, p0, Le/h/b/e/p;->a:Ljava/util/Map;
+
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 15
+    invoke-virtual {v0, p2}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 16
+    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->isEmpty()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_1
+
+    .line 17
+    iget-object p2, p0, Le/h/b/e/p;->a:Ljava/util/Map;
+
+    invoke-interface {p2, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 18
+    :cond_1
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
 
     throw p1
 .end method

@@ -23,7 +23,7 @@
     .locals 3
 
     .line 1
-    invoke-static {}, Le/f/a/b/w/y0$b;->values()[Le/f/a/b/w/y0$b;
+    invoke-static {}, Le/f/a/b/x/y0$b;->values()[Le/f/a/b/x/y0$b;
 
     move-result-object v0
 
@@ -36,7 +36,7 @@
     :try_start_0
     sget-object v0, Lcom/fuib/android/spot/di/AbstractApp$b;->a:[I
 
-    sget-object v1, Le/f/a/b/w/y0$b;->DARK:Le/f/a/b/w/y0$b;
+    sget-object v1, Le/f/a/b/x/y0$b;->DARK:Le/f/a/b/x/y0$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -52,7 +52,7 @@
     :try_start_1
     sget-object v0, Lcom/fuib/android/spot/di/AbstractApp$b;->a:[I
 
-    sget-object v1, Le/f/a/b/w/y0$b;->LIGHT:Le/f/a/b/w/y0$b;
+    sget-object v1, Le/f/a/b/x/y0$b;->LIGHT:Le/f/a/b/x/y0$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

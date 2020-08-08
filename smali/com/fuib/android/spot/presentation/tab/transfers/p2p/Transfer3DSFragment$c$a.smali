@@ -59,7 +59,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f0a03fe
+    const v1, 0x7f0a042b
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

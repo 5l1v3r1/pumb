@@ -15,7 +15,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lb/h/e<",
-        "Le/h/a/a/d/k/b;",
+        "Le/h/a/b/d/k/b;",
         "Landroid/graphics/Bitmap;",
         ">;"
     }

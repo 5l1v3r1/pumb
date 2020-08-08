@@ -57,13 +57,13 @@
 
 .field public final endpoint:Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;
 
-.field public final errorInterceptor:Le/f/a/b/s/f/c0;
+.field public final errorInterceptor:Le/f/a/b/t/f/c0;
 
-.field public final settingsCache:Le/f/a/b/s/f/c1;
+.field public final settingsCache:Le/f/a/b/t/f/c1;
 
 
 # direct methods
-.method public constructor <init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;)V
+.method public constructor <init>(Lcom/fuib/android/spot/data/api/common/AppLocaleProvider;Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;)V
     .locals 0
 
     .line 1
@@ -73,9 +73,9 @@
 
     iput-object p2, p0, Lcom/fuib/android/spot/data/api/common/AbstractService;->endpoint:Lcom/fuib/android/spot/data/api/common/ServiceEndpoint;
 
-    iput-object p3, p0, Lcom/fuib/android/spot/data/api/common/AbstractService;->settingsCache:Le/f/a/b/s/f/c1;
+    iput-object p3, p0, Lcom/fuib/android/spot/data/api/common/AbstractService;->settingsCache:Le/f/a/b/t/f/c1;
 
-    iput-object p4, p0, Lcom/fuib/android/spot/data/api/common/AbstractService;->errorInterceptor:Le/f/a/b/s/f/c0;
+    iput-object p4, p0, Lcom/fuib/android/spot/data/api/common/AbstractService;->errorInterceptor:Le/f/a/b/t/f/c0;
 
     return-void
 .end method
@@ -141,9 +141,9 @@
     .line 2
     new-instance v6, Lcom/fuib/android/spot/data/api/common/ResponseLiveData;
 
-    iget-object v1, p0, Lcom/fuib/android/spot/data/api/common/AbstractService;->settingsCache:Le/f/a/b/s/f/c1;
+    iget-object v1, p0, Lcom/fuib/android/spot/data/api/common/AbstractService;->settingsCache:Le/f/a/b/t/f/c1;
 
-    iget-object v2, p0, Lcom/fuib/android/spot/data/api/common/AbstractService;->errorInterceptor:Le/f/a/b/s/f/c0;
+    iget-object v2, p0, Lcom/fuib/android/spot/data/api/common/AbstractService;->errorInterceptor:Le/f/a/b/t/f/c0;
 
     const/4 v3, 0x0
 
@@ -153,7 +153,7 @@
 
     move-object v0, v6
 
-    invoke-direct/range {v0 .. v5}, Lcom/fuib/android/spot/data/api/common/ResponseLiveData;-><init>(Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;Lcom/fuib/android/spot/data/api/common/ResponseMapper;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v0 .. v5}, Lcom/fuib/android/spot/data/api/common/ResponseLiveData;-><init>(Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;Lcom/fuib/android/spot/data/api/common/ResponseMapper;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     invoke-virtual {v6, p1, p2}, Lcom/fuib/android/spot/data/api/common/ResponseLiveData;->withValue(Lcom/fuib/android/spot/data/api/common/RawApiResponse;Ljava/lang/Class;)Lcom/fuib/android/spot/data/api/common/ResponseLiveData;
 
@@ -182,11 +182,11 @@
     .line 1
     new-instance v0, Lcom/fuib/android/spot/data/api/common/ResponseLiveData;
 
-    iget-object v1, p0, Lcom/fuib/android/spot/data/api/common/AbstractService;->settingsCache:Le/f/a/b/s/f/c1;
+    iget-object v1, p0, Lcom/fuib/android/spot/data/api/common/AbstractService;->settingsCache:Le/f/a/b/t/f/c1;
 
-    iget-object v2, p0, Lcom/fuib/android/spot/data/api/common/AbstractService;->errorInterceptor:Le/f/a/b/s/f/c0;
+    iget-object v2, p0, Lcom/fuib/android/spot/data/api/common/AbstractService;->errorInterceptor:Le/f/a/b/t/f/c0;
 
-    invoke-direct {v0, v1, v2, p3}, Lcom/fuib/android/spot/data/api/common/ResponseLiveData;-><init>(Le/f/a/b/s/f/c1;Le/f/a/b/s/f/c0;Lcom/fuib/android/spot/data/api/common/ResponseMapper;)V
+    invoke-direct {v0, v1, v2, p3}, Lcom/fuib/android/spot/data/api/common/ResponseLiveData;-><init>(Le/f/a/b/t/f/c1;Le/f/a/b/t/f/c0;Lcom/fuib/android/spot/data/api/common/ResponseMapper;)V
 
     invoke-virtual {v0, p1, p2}, Lcom/fuib/android/spot/data/api/common/ResponseLiveData;->withValue(Lcom/fuib/android/spot/data/api/common/RawApiResponse;Ljava/lang/Class;)Lcom/fuib/android/spot/data/api/common/ResponseLiveData;
 

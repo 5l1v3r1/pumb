@@ -118,7 +118,36 @@
 
 
 # virtual methods
-.method public A()Ll/y;
+.method public A()Ll/a0$a;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ll/a0$a;
+
+    invoke-direct {v0, p0}, Ll/a0$a;-><init>(Ll/a0;)V
+
+    return-object v0
+.end method
+
+.method public B()Ll/a0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Ll/a0;->l:Ll/a0;
+
+    return-object v0
+.end method
+
+.method public C()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Ll/a0;->n:J
+
+    return-wide v0
+.end method
+
+.method public D()Ll/y;
     .locals 1
 
     .line 1
@@ -127,7 +156,7 @@
     return-object v0
 .end method
 
-.method public B()J
+.method public E()J
     .locals 2
 
     .line 1
@@ -342,33 +371,4 @@
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public x()Ll/a0$a;
-    .locals 1
-
-    .line 1
-    new-instance v0, Ll/a0$a;
-
-    invoke-direct {v0, p0}, Ll/a0$a;-><init>(Ll/a0;)V
-
-    return-object v0
-.end method
-
-.method public y()Ll/a0;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Ll/a0;->l:Ll/a0;
-
-    return-object v0
-.end method
-
-.method public z()J
-    .locals 2
-
-    .line 1
-    iget-wide v0, p0, Ll/a0;->n:J
-
-    return-wide v0
 .end method

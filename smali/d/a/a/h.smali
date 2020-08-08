@@ -469,7 +469,7 @@
     return v1
 .end method
 
-.method public c()V
+.method public cancel()V
     .locals 2
 
     .line 1

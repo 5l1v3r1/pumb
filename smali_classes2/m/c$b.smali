@@ -22,7 +22,7 @@
 
 .field public d:Z
 
-.field public e:Lm/o;
+.field public e:Lm/p;
 
 .field public f:J
 
@@ -58,7 +58,7 @@
 
 
 # virtual methods
-.method public a()I
+.method public final a()I
     .locals 5
 
     .line 1
@@ -114,7 +114,7 @@
     throw v0
 .end method
 
-.method public a(J)I
+.method public final a(J)I
     .locals 12
 
     const-wide/16 v0, -0x1
@@ -144,10 +144,10 @@
     const-wide/16 v1, 0x0
 
     .line 6
-    iget-object v0, v0, Lm/c;->c:Lm/o;
+    iget-object v0, v0, Lm/c;->c:Lm/p;
 
     .line 7
-    iget-object v5, p0, Lm/c$b;->e:Lm/o;
+    iget-object v5, p0, Lm/c$b;->e:Lm/p;
 
     if-eqz v5, :cond_2
 
@@ -156,7 +156,7 @@
 
     iget v8, p0, Lm/c$b;->h:I
 
-    iget v9, v5, Lm/o;->b:I
+    iget v9, v5, Lm/p;->b:I
 
     sub-int/2addr v8, v9
 
@@ -197,9 +197,9 @@
 
     .line 9
     :goto_1
-    iget v0, v5, Lm/o;->c:I
+    iget v0, v5, Lm/p;->c:I
 
-    iget v3, v5, Lm/o;->b:I
+    iget v3, v5, Lm/p;->b:I
 
     sub-int v4, v0, v3
 
@@ -218,7 +218,7 @@
     add-long/2addr v1, v3
 
     .line 10
-    iget-object v5, v5, Lm/o;->f:Lm/o;
+    iget-object v5, v5, Lm/p;->f:Lm/p;
 
     goto :goto_1
 
@@ -233,12 +233,12 @@
     if-lez v0, :cond_4
 
     .line 11
-    iget-object v5, v5, Lm/o;->g:Lm/o;
+    iget-object v5, v5, Lm/p;->g:Lm/p;
 
     .line 12
-    iget v0, v5, Lm/o;->c:I
+    iget v0, v5, Lm/p;->c:I
 
-    iget v3, v5, Lm/o;->b:I
+    iget v3, v5, Lm/p;->b:I
 
     sub-int/2addr v0, v3
 
@@ -254,33 +254,33 @@
 
     if-eqz v0, :cond_6
 
-    iget-boolean v0, v5, Lm/o;->d:Z
+    iget-boolean v0, v5, Lm/p;->d:Z
 
     if-eqz v0, :cond_6
 
     .line 14
-    invoke-virtual {v5}, Lm/o;->d()Lm/o;
+    invoke-virtual {v5}, Lm/p;->d()Lm/p;
 
     move-result-object v0
 
     .line 15
     iget-object v3, p0, Lm/c$b;->c:Lm/c;
 
-    iget-object v4, v3, Lm/c;->c:Lm/o;
+    iget-object v4, v3, Lm/c;->c:Lm/p;
 
     if-ne v4, v5, :cond_5
 
     .line 16
-    iput-object v0, v3, Lm/c;->c:Lm/o;
+    iput-object v0, v3, Lm/c;->c:Lm/p;
 
     .line 17
     :cond_5
-    invoke-virtual {v5, v0}, Lm/o;->a(Lm/o;)Lm/o;
+    invoke-virtual {v5, v0}, Lm/p;->a(Lm/p;)Lm/p;
 
     .line 18
-    iget-object v3, v0, Lm/o;->g:Lm/o;
+    iget-object v3, v0, Lm/p;->g:Lm/p;
 
-    invoke-virtual {v3}, Lm/o;->b()Lm/o;
+    invoke-virtual {v3}, Lm/p;->b()Lm/p;
 
     goto :goto_3
 
@@ -289,18 +289,18 @@
 
     .line 19
     :goto_3
-    iput-object v0, p0, Lm/c$b;->e:Lm/o;
+    iput-object v0, p0, Lm/c$b;->e:Lm/p;
 
     .line 20
     iput-wide p1, p0, Lm/c$b;->f:J
 
     .line 21
-    iget-object v3, v0, Lm/o;->a:[B
+    iget-object v3, v0, Lm/p;->a:[B
 
     iput-object v3, p0, Lm/c$b;->g:[B
 
     .line 22
-    iget v3, v0, Lm/o;->b:I
+    iget v3, v0, Lm/p;->b:I
 
     sub-long/2addr p1, v1
 
@@ -311,7 +311,7 @@
     iput v3, p0, Lm/c$b;->h:I
 
     .line 23
-    iget p1, v0, Lm/o;->c:I
+    iget p1, v0, Lm/p;->c:I
 
     iput p1, p0, Lm/c$b;->i:I
 
@@ -329,7 +329,7 @@
     const/4 v0, 0x0
 
     .line 25
-    iput-object v0, p0, Lm/c$b;->e:Lm/o;
+    iput-object v0, p0, Lm/c$b;->e:Lm/p;
 
     .line 26
     iput-wide p1, p0, Lm/c$b;->f:J
@@ -401,7 +401,7 @@
     iput-object v0, p0, Lm/c$b;->c:Lm/c;
 
     .line 3
-    iput-object v0, p0, Lm/c$b;->e:Lm/o;
+    iput-object v0, p0, Lm/c$b;->e:Lm/p;
 
     const-wide/16 v1, -0x1
 

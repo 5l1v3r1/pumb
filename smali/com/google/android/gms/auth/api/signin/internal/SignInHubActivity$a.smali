@@ -41,7 +41,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;Le/h/a/a/b/a/h/b/v;)V
+.method public synthetic constructor <init>(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;Le/h/a/b/b/a/h/b/v;)V
     .locals 0
 
     .line 2
@@ -66,16 +66,16 @@
     .end annotation
 
     .line 1
-    new-instance p1, Le/h/a/a/b/a/h/b/f;
+    new-instance p1, Le/h/a/b/b/a/h/b/f;
 
     iget-object p2, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity$a;->a:Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;
 
     .line 2
-    invoke-static {}, Le/h/a/a/d/i/d;->h()Ljava/util/Set;
+    invoke-static {}, Le/h/a/b/d/i/d;->h()Ljava/util/Set;
 
     move-result-object v0
 
-    invoke-direct {p1, p2, v0}, Le/h/a/a/b/a/h/b/f;-><init>(Landroid/content/Context;Ljava/util/Set;)V
+    invoke-direct {p1, p2, v0}, Le/h/a/b/b/a/h/b/f;-><init>(Landroid/content/Context;Ljava/util/Set;)V
 
     return-object p1
 .end method

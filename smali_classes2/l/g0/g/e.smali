@@ -216,7 +216,7 @@
     .locals 8
 
     .line 1
-    invoke-virtual {p0}, Ll/a0;->A()Ll/y;
+    invoke-virtual {p0}, Ll/a0;->D()Ll/y;
 
     move-result-object v0
 

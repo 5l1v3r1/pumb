@@ -86,7 +86,7 @@
 
     move-result-object v0
 
-    invoke-interface {p2, v0}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {p2, v0}, Ln/c/b;->a(Ljava/lang/String;)V
 
     :cond_0
     return-object p1
@@ -438,7 +438,7 @@
 
     move-result-object v4
 
-    invoke-interface {v3, v4}, Ln/c/b;->c(Ljava/lang/String;)V
+    invoke-interface {v3, v4}, Ln/c/b;->a(Ljava/lang/String;)V
 
     .line 10
     :cond_1
@@ -893,7 +893,7 @@
 
     move-result-object v2
 
-    invoke-interface {v1, v2, p1}, Ln/c/b;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v1, v2, p1}, Ln/c/b;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 8
     :cond_0

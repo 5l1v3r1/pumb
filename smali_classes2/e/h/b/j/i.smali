@@ -1,42 +1,36 @@
 .class public final synthetic Le/h/b/j/i;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-messaging@@20.0.0"
+.source "com.google.firebase:firebase-iid@@20.2.1"
 
 # interfaces
-.implements Ljava/util/concurrent/Executor;
+.implements Landroid/os/Handler$Callback;
 
 
-# static fields
-.field public static final a:Ljava/util/concurrent/Executor;
+# instance fields
+.field public final a:Le/h/b/j/f;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Le/h/b/j/i;
-
-    invoke-direct {v0}, Le/h/b/j/i;-><init>()V
-
-    sput-object v0, Le/h/b/j/i;->a:Ljava/util/concurrent/Executor;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Le/h/b/j/f;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Le/h/b/j/i;->a:Le/h/b/j/f;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final execute(Ljava/lang/Runnable;)V
-    .locals 0
+.method public final handleMessage(Landroid/os/Message;)Z
+    .locals 1
 
-    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+    iget-object v0, p0, Le/h/b/j/i;->a:Le/h/b/j/f;
 
-    return-void
+    invoke-virtual {v0, p1}, Le/h/b/j/f;->a(Landroid/os/Message;)Z
+
+    move-result p1
+
+    return p1
 .end method

@@ -6,7 +6,9 @@
     <item type="id" name="acc_deposit_value" />
     <item type="id" name="acc_interest_label" />
     <item type="id" name="acc_interest_value" />
+    <item type="id" name="acc_number_label" />
     <item type="id" name="acc_number_title" />
+    <item type="id" name="acc_number_value" />
     <item type="id" name="accessibility_action_clickable_span" />
     <item type="id" name="accessibility_custom_action_0" />
     <item type="id" name="accessibility_custom_action_1" />
@@ -77,6 +79,8 @@
     <item type="id" name="action_transfers" />
     <item type="id" name="actions" />
     <item type="id" name="activity_chooser_view_content" />
+    <item type="id" name="additional_amount_label" />
+    <item type="id" name="additional_amount_value" />
     <item type="id" name="agreement_check" />
     <item type="id" name="alertTitle" />
     <item type="id" name="amount" />
@@ -107,6 +111,7 @@
     <item type="id" name="app_bar_layout" />
     <item type="id" name="arrow" />
     <item type="id" name="arrow_icon" />
+    <item type="id" name="arrow_left" />
     <item type="id" name="arrow_right" />
     <item type="id" name="arrow_to_bottom" />
     <item type="id" name="arrow_to_top" />
@@ -130,6 +135,8 @@
     <item type="id" name="balance_value" />
     <item type="id" name="balance_value3" />
     <item type="id" name="bankLogo" />
+    <item type="id" name="bank_name_label" />
+    <item type="id" name="bank_name_value" />
     <item type="id" name="border_save_as_template" />
     <item type="id" name="border_saved" />
     <item type="id" name="bottomBorder" />
@@ -167,6 +174,8 @@
     <item type="id" name="btn_primary" />
     <item type="id" name="btn_retry" />
     <item type="id" name="btn_secondary" />
+    <item type="id" name="btn_send" />
+    <item type="id" name="btn_send_receipt" />
     <item type="id" name="btn_to_acc" />
     <item type="id" name="btn_to_card" />
     <item type="id" name="btn_to_the_main" />
@@ -277,6 +286,7 @@
     <item type="id" name="container" />
     <item type="id" name="container_amount" />
     <item type="id" name="container_arrow" />
+    <item type="id" name="container_card" />
     <item type="id" name="container_commission" />
     <item type="id" name="container_create_pin_info" />
     <item type="id" name="container_dark_mode" />
@@ -285,6 +295,7 @@
     <item type="id" name="container_from" />
     <item type="id" name="container_passport" />
     <item type="id" name="container_personal_code" />
+    <item type="id" name="container_pin" />
     <item type="id" name="container_proceed" />
     <item type="id" name="container_purpose_payment" />
     <item type="id" name="container_push" />
@@ -297,6 +308,7 @@
     <item type="id" name="container_touch" />
     <item type="id" name="container_transfer_confirm_action" />
     <item type="id" name="container_transfer_receiver_action" />
+    <item type="id" name="container_under" />
     <item type="id" name="container_whats_new" />
     <item type="id" name="container_whats_new_page" />
     <item type="id" name="content" />
@@ -355,6 +367,10 @@
     <item type="id" name="details_title" />
     <item type="id" name="dialog_button" />
     <item type="id" name="dialog_spinner" />
+    <item type="id" name="digit_1" />
+    <item type="id" name="digit_2" />
+    <item type="id" name="digit_3" />
+    <item type="id" name="digit_4" />
     <item type="id" name="dim" />
     <item type="id" name="dislike" />
     <item type="id" name="dislike_circle" />
@@ -447,6 +463,8 @@
     <item type="id" name="ghost_view" />
     <item type="id" name="ghost_view_holder" />
     <item type="id" name="global_btn_retry" />
+    <item type="id" name="gradient_left" />
+    <item type="id" name="gradient_right" />
     <item type="id" name="group_all_items" />
     <item type="id" name="group_cvv_center" />
     <item type="id" name="group_cvv_right" />
@@ -457,6 +475,7 @@
     <item type="id" name="group_exp_date" />
     <item type="id" name="group_global_error" />
     <item type="id" name="group_layouttransition_backup" />
+    <item type="id" name="group_main" />
     <item type="id" name="group_nfc" />
     <item type="id" name="group_no_households" />
     <item type="id" name="group_no_items" />
@@ -465,6 +484,8 @@
     <item type="id" name="group_open" />
     <item type="id" name="group_proceed" />
     <item type="id" name="group_scan" />
+    <item type="id" name="group_success" />
+    <item type="id" name="group_unavailable" />
     <item type="id" name="guideline" />
     <item type="id" name="guideline_for_bottom" />
     <item type="id" name="guideline_for_top" />
@@ -496,14 +517,16 @@
     <item type="id" name="household_pager" />
     <item type="id" name="household_tabs" />
     <item type="id" name="iban_input" />
-    <item type="id" name="ic_arrow_right" />
     <item type="id" name="ic_delete" />
     <item type="id" name="ic_global_error" />
     <item type="id" name="ic_house" />
+    <item type="id" name="ic_image_success" />
+    <item type="id" name="ic_more" />
     <item type="id" name="ic_no_households" />
     <item type="id" name="ic_open" />
     <item type="id" name="ic_share_iban" />
     <item type="id" name="ic_template" />
+    <item type="id" name="ic_unavailable_error" />
     <item type="id" name="ic_user_settings" />
     <item type="id" name="icon" />
     <item type="id" name="icon_group" />
@@ -603,6 +626,7 @@
     <item type="id" name="items" />
     <item type="id" name="iv_activate_search" />
     <item type="id" name="iv_check" />
+    <item type="id" name="iv_clear" />
     <item type="id" name="iv_clear_search" />
     <item type="id" name="iv_close" />
     <item type="id" name="iv_dislike" />
@@ -612,6 +636,9 @@
     <item type="id" name="iv_logo_part_1" />
     <item type="id" name="iv_logo_part_2" />
     <item type="id" name="iv_logo_part_3" />
+    <item type="id" name="iv_mail_step1" />
+    <item type="id" name="iv_mail_step2" />
+    <item type="id" name="iv_mail_step3" />
     <item type="id" name="iv_ok" />
     <item type="id" name="iv_pay_full" />
     <item type="id" name="iv_pay_part" />
@@ -766,6 +793,7 @@
     <item type="id" name="mfo_label" />
     <item type="id" name="mfo_radio_group" />
     <item type="id" name="mfo_title" />
+    <item type="id" name="mfo_value" />
     <item type="id" name="min_amount" />
     <item type="id" name="min_amount_word" />
     <item type="id" name="min_deposit_amount" />
@@ -781,6 +809,8 @@
     <item type="id" name="month_navigation_fragment_toggle" />
     <item type="id" name="month_navigation_next" />
     <item type="id" name="month_navigation_previous" />
+    <item type="id" name="month_pager" />
+    <item type="id" name="month_selector" />
     <item type="id" name="month_title" />
     <item type="id" name="morphing_parent" />
     <item type="id" name="mtrl_calendar_day_selector_frame" />
@@ -818,6 +848,8 @@
     <item type="id" name="octopus_top" />
     <item type="id" name="off" />
     <item type="id" name="ok_action" />
+    <item type="id" name="okpo_label" />
+    <item type="id" name="okpo_value" />
     <item type="id" name="on" />
     <item type="id" name="open_date" />
     <item type="id" name="options_list" />
@@ -829,6 +861,7 @@
     <item type="id" name="other_deactivate_push_another_device" />
     <item type="id" name="other_email" />
     <item type="id" name="other_exit" />
+    <item type="id" name="other_pin_reuse" />
     <item type="id" name="other_privacy" />
     <item type="id" name="over_limit_head" />
     <item type="id" name="over_limit_value" />
@@ -866,10 +899,15 @@
     <item type="id" name="pin_keyboard" />
     <item type="id" name="pin_pad_view" />
     <item type="id" name="pin_progress" />
+    <item type="id" name="placeholder_acc_label" />
+    <item type="id" name="placeholder_acc_value1" />
+    <item type="id" name="placeholder_acc_value2" />
     <item type="id" name="placeholder_amount" />
     <item type="id" name="placeholder_balance_icon" />
     <item type="id" name="placeholder_balance_label" />
     <item type="id" name="placeholder_balance_value" />
+    <item type="id" name="placeholder_bank_name_label" />
+    <item type="id" name="placeholder_bank_name_value" />
     <item type="id" name="placeholder_constraintLayout" />
     <item type="id" name="placeholder_date" />
     <item type="id" name="placeholder_description_1" />
@@ -880,7 +918,13 @@
     <item type="id" name="placeholder_instrument_icon" />
     <item type="id" name="placeholder_instrument_label" />
     <item type="id" name="placeholder_instrument_value" />
+    <item type="id" name="placeholder_mfo_label" />
+    <item type="id" name="placeholder_mfo_value" />
+    <item type="id" name="placeholder_okpo_label" />
+    <item type="id" name="placeholder_okpo_value" />
     <item type="id" name="placeholder_rate_and_commission" />
+    <item type="id" name="placeholder_receiver_name_label" />
+    <item type="id" name="placeholder_receiver_name_value" />
     <item type="id" name="placeholder_state_icon" />
     <item type="id" name="placeholder_state_txt" />
     <item type="id" name="placeholder_title" />
@@ -911,6 +955,7 @@
     <item type="id" name="progress_pinpad" />
     <item type="id" name="progress_push" />
     <item type="id" name="progress_remind_card_pin" />
+    <item type="id" name="progress_retry" />
     <item type="id" name="progress_rules" />
     <item type="id" name="progress_save" />
     <item type="id" name="progress_save_as_template" />
@@ -922,6 +967,8 @@
     <item type="id" name="progress_touch" />
     <item type="id" name="pull_to_refresh" />
     <item type="id" name="purpose" />
+    <item type="id" name="purpose_label" />
+    <item type="id" name="purpose_value" />
     <item type="id" name="radio" />
     <item type="id" name="radio_button" />
     <item type="id" name="rate" />
@@ -946,6 +993,7 @@
     <item type="id" name="right_side" />
     <item type="id" name="right_suggestion_click_catcher" />
     <item type="id" name="root" />
+    <item type="id" name="root_container" />
     <item type="id" name="root_layout" />
     <item type="id" name="runningTransitions" />
     <item type="id" name="rv_actions" />
@@ -954,6 +1002,7 @@
     <item type="id" name="rv_fields" />
     <item type="id" name="rv_fraud_rules" />
     <item type="id" name="rv_info_card_account" />
+    <item type="id" name="rv_items" />
     <item type="id" name="rv_location_countries" />
     <item type="id" name="rv_notifications" />
     <item type="id" name="rv_services" />
@@ -993,6 +1042,7 @@
     <item type="id" name="sell_label" />
     <item type="id" name="sell_title" />
     <item type="id" name="sell_value" />
+    <item type="id" name="service_name" />
     <item type="id" name="shimmer_account_bank_name" />
     <item type="id" name="shimmer_amount_value" />
     <item type="id" name="shimmer_count_value" />
@@ -1015,6 +1065,7 @@
     <item type="id" name="spinner_later" />
     <item type="id" name="spinner_list" />
     <item type="id" name="spinner_proceed" />
+    <item type="id" name="spinner_sending" />
     <item type="id" name="splash_error" />
     <item type="id" name="split_action_bar" />
     <item type="id" name="srl" />
@@ -1028,6 +1079,8 @@
     <item type="id" name="sub_title" />
     <item type="id" name="submenuarrow" />
     <item type="id" name="submit_area" />
+    <item type="id" name="success_info" />
+    <item type="id" name="success_title" />
     <item type="id" name="surface_view" />
     <item type="id" name="swipe_refresh" />
     <item type="id" name="switch_dark_mode" />
@@ -1270,6 +1323,7 @@
     <item type="id" name="text_transfer_id_value" />
     <item type="id" name="text_update_info" />
     <item type="id" name="text_value" />
+    <item type="id" name="text_view" />
     <item type="id" name="text_warning" />
     <item type="id" name="text_welcome" />
     <item type="id" name="text_withdrawal_limits" />
@@ -1338,6 +1392,7 @@
     <item type="id" name="tv_service" />
     <item type="id" name="tv_street" />
     <item type="id" name="tv_title" />
+    <item type="id" name="tv_unavailable_description" />
     <item type="id" name="unchecked" />
     <item type="id" name="underline" />
     <item type="id" name="up" />
@@ -1352,7 +1407,10 @@
     <item type="id" name="v_barrier" />
     <item type="id" name="value" />
     <item type="id" name="value_description" />
+    <item type="id" name="vendor_name_label" />
+    <item type="id" name="vendor_name_value" />
     <item type="id" name="version" />
+    <item type="id" name="vertical_gl" />
     <item type="id" name="vertical_separator" />
     <item type="id" name="vertical_splitter" />
     <item type="id" name="view" />

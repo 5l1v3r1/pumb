@@ -239,7 +239,7 @@
 
     move-result-object p1
 
-    invoke-interface {p3, p1, p2}, Ln/c/b;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {p3, p1, p2}, Ln/c/b;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
 
@@ -251,7 +251,7 @@
 
     const-string p3, "Parameters of fied.set are not valid"
 
-    invoke-interface {p2, p3, p1}, Ln/c/b;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {p2, p3, p1}, Ln/c/b;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_0
     :goto_0

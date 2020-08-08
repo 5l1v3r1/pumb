@@ -98,7 +98,7 @@
     .line 8
     aget v2, p2, v1
 
-    invoke-static {p0, p1, v2, v0}, Le/h/a/b/t/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;II)I
+    invoke-static {p0, p1, v2, v0}, Le/h/a/c/t/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;II)I
 
     move-result v2
 
@@ -145,7 +145,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {p0, v0, v1}, Le/h/a/b/t/b;->a(Landroid/content/Context;IZ)Z
+    invoke-static {p0, v0, v1}, Le/h/a/c/t/b;->a(Landroid/content/Context;IZ)Z
 
     move-result p0
 

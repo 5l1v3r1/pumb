@@ -140,14 +140,24 @@
     .line 21
     invoke-interface {p1, v0}, Lb/w/a/b;->b(Ljava/lang/String;)V
 
-    const-string v0, "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)"
+    const-string v0, "CREATE TABLE IF NOT EXISTS `hh_history_item` (`operation_id` TEXT NOT NULL, `status` TEXT NOT NULL, `date` TEXT NOT NULL, `amount` INTEGER NOT NULL, `commission` INTEGER NOT NULL, `service_id` INTEGER NOT NULL, `service_name` TEXT NOT NULL, PRIMARY KEY(`operation_id`))"
 
     .line 22
     invoke-interface {p1, v0}, Lb/w/a/b;->b(Ljava/lang/String;)V
 
-    const-string v0, "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"6129edd3d23e3bc12cb6306686e07c7e\")"
+    const-string v0, "CREATE TABLE IF NOT EXISTS `hh_receipt_email` (`id` INTEGER NOT NULL, `email` TEXT NOT NULL, PRIMARY KEY(`id`))"
 
     .line 23
+    invoke-interface {p1, v0}, Lb/w/a/b;->b(Ljava/lang/String;)V
+
+    const-string v0, "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)"
+
+    .line 24
+    invoke-interface {p1, v0}, Lb/w/a/b;->b(Ljava/lang/String;)V
+
+    const-string v0, "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"a21e53a273847b08ecebed3f92ba6cc8\")"
+
+    .line 25
     invoke-interface {p1, v0}, Lb/w/a/b;->b(Ljava/lang/String;)V
 
     return-void
@@ -249,6 +259,16 @@
     const-string v0, "DROP TABLE IF EXISTS `user_notification`"
 
     .line 19
+    invoke-interface {p1, v0}, Lb/w/a/b;->b(Ljava/lang/String;)V
+
+    const-string v0, "DROP TABLE IF EXISTS `hh_history_item`"
+
+    .line 20
+    invoke-interface {p1, v0}, Lb/w/a/b;->b(Ljava/lang/String;)V
+
+    const-string v0, "DROP TABLE IF EXISTS `hh_receipt_email`"
+
+    .line 21
     invoke-interface {p1, v0}, Lb/w/a/b;->b(Ljava/lang/String;)V
 
     return-void
@@ -372,7 +392,7 @@
 .end method
 
 .method public validateMigration(Lb/w/a/b;)V
-    .locals 27
+    .locals 25
 
     move-object/from16 v0, p1
 
@@ -453,7 +473,7 @@
 
     const-string v8, "\n Found:\n"
 
-    if-eqz v2, :cond_12
+    if-eqz v2, :cond_14
 
     .line 10
     new-instance v1, Ljava/util/HashMap;
@@ -529,7 +549,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_11
+    if-eqz v2, :cond_13
 
     .line 20
     new-instance v1, Ljava/util/HashMap;
@@ -592,7 +612,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_10
+    if-eqz v2, :cond_12
 
     .line 29
     new-instance v1, Ljava/util/HashMap;
@@ -644,724 +664,722 @@
 
     invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "amount"
-
     invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 35
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "regular"
+    const-string v12, "regular"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "regular"
+    const-string v12, "regular"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 36
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "icon"
+    const-string v12, "icon"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "icon"
+    const-string v12, "icon"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 37
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "modificationDate"
+    const-string v12, "modificationDate"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "modificationDate"
+    const-string v12, "modificationDate"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 38
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_instrument"
+    const-string v12, "payer_instrument"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_instrument"
+    const-string v12, "payer_instrument"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 39
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_acc_id"
+    const-string v12, "payer_acc_id"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_acc_id"
+    const-string v12, "payer_acc_id"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 40
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_acc_cardId"
+    const-string v12, "payer_acc_cardId"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_acc_cardId"
+    const-string v12, "payer_acc_cardId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 41
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_acc_cardNumber"
+    const-string v12, "payer_acc_cardNumber"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_acc_cardNumber"
+    const-string v12, "payer_acc_cardNumber"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 42
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_acc_accountId"
+    const-string v12, "payer_acc_accountId"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_acc_accountId"
+    const-string v12, "payer_acc_accountId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 43
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_card_id"
+    const-string v12, "payer_card_id"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_card_id"
+    const-string v12, "payer_card_id"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 44
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_card_number"
+    const-string v12, "payer_card_number"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_card_number"
+    const-string v12, "payer_card_number"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 45
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_card_expDate"
+    const-string v12, "payer_card_expDate"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_card_expDate"
+    const-string v12, "payer_card_expDate"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 46
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_card_cvv"
+    const-string v12, "payer_card_cvv"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_card_cvv"
+    const-string v12, "payer_card_cvv"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 47
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_card_bankName"
+    const-string v12, "payer_card_bankName"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_card_bankName"
+    const-string v12, "payer_card_bankName"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 48
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_card_holderName"
+    const-string v12, "payer_card_holderName"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_card_holderName"
+    const-string v12, "payer_card_holderName"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 49
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_card_bankIconId"
+    const-string v12, "payer_card_bankIconId"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_card_bankIconId"
+    const-string v12, "payer_card_bankIconId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 50
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_external_card_token"
+    const-string v12, "payer_external_card_token"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_external_card_token"
+    const-string v12, "payer_external_card_token"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 51
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_external_card_cvv"
+    const-string v12, "payer_external_card_cvv"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_external_card_cvv"
+    const-string v12, "payer_external_card_cvv"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 52
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_deposit_agreementId"
+    const-string v12, "payer_deposit_agreementId"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_deposit_agreementId"
+    const-string v12, "payer_deposit_agreementId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 53
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "payer_deposit_agreementNumber"
+    const-string v12, "payer_deposit_agreementNumber"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "payer_deposit_agreementNumber"
+    const-string v12, "payer_deposit_agreementNumber"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 54
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_instrument"
+    const-string v12, "receiver_instrument"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_instrument"
+    const-string v12, "receiver_instrument"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 55
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_ext_acc_id"
+    const-string v12, "receiver_ext_acc_id"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_ext_acc_id"
+    const-string v12, "receiver_ext_acc_id"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 56
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_ext_acc_number"
+    const-string v12, "receiver_ext_acc_number"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_ext_acc_number"
+    const-string v12, "receiver_ext_acc_number"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 57
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_ext_acc_iban"
+    const-string v12, "receiver_ext_acc_iban"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_ext_acc_iban"
+    const-string v12, "receiver_ext_acc_iban"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 58
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_ext_acc_cc"
+    const-string v12, "receiver_ext_acc_cc"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_ext_acc_cc"
+    const-string v12, "receiver_ext_acc_cc"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 59
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_ext_acc_bankCode"
+    const-string v12, "receiver_ext_acc_bankCode"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_ext_acc_bankCode"
+    const-string v12, "receiver_ext_acc_bankCode"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 60
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_ext_acc_purpose"
+    const-string v12, "receiver_ext_acc_purpose"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_ext_acc_purpose"
+    const-string v12, "receiver_ext_acc_purpose"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 61
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_ext_acc_taxId"
+    const-string v12, "receiver_ext_acc_taxId"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_ext_acc_taxId"
+    const-string v12, "receiver_ext_acc_taxId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 62
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_ext_acc_passport"
+    const-string v12, "receiver_ext_acc_passport"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_ext_acc_passport"
+    const-string v12, "receiver_ext_acc_passport"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 63
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_ext_acc_receiver"
+    const-string v12, "receiver_ext_acc_receiver"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_ext_acc_receiver"
+    const-string v12, "receiver_ext_acc_receiver"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 64
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_ext_acc_bankName"
+    const-string v12, "receiver_ext_acc_bankName"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_ext_acc_bankName"
+    const-string v12, "receiver_ext_acc_bankName"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 65
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_ext_acc_bankIconId"
+    const-string v12, "receiver_ext_acc_bankIconId"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_ext_acc_bankIconId"
+    const-string v12, "receiver_ext_acc_bankIconId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 66
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_fuib_acc_number"
+    const-string v12, "receiver_fuib_acc_number"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_fuib_acc_number"
+    const-string v12, "receiver_fuib_acc_number"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 67
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_fuib_acc_iban"
+    const-string v12, "receiver_fuib_acc_iban"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_fuib_acc_iban"
+    const-string v12, "receiver_fuib_acc_iban"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 68
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_fuib_acc_purpose"
+    const-string v12, "receiver_fuib_acc_purpose"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_fuib_acc_purpose"
+    const-string v12, "receiver_fuib_acc_purpose"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 69
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_fuib_acc_receiver"
+    const-string v12, "receiver_fuib_acc_receiver"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_fuib_acc_receiver"
+    const-string v12, "receiver_fuib_acc_receiver"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 70
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_own_acc_id"
+    const-string v12, "receiver_own_acc_id"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_own_acc_id"
+    const-string v12, "receiver_own_acc_id"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 71
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_own_card_cardId"
+    const-string v12, "receiver_own_card_cardId"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_own_card_cardId"
+    const-string v12, "receiver_own_card_cardId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 72
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_own_card_cardNumber"
+    const-string v12, "receiver_own_card_cardNumber"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_own_card_cardNumber"
+    const-string v12, "receiver_own_card_cardNumber"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 73
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_own_card_accountId"
+    const-string v12, "receiver_own_card_accountId"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_own_card_accountId"
+    const-string v12, "receiver_own_card_accountId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 74
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_card_id"
+    const-string v12, "receiver_card_id"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_card_id"
+    const-string v12, "receiver_card_id"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 75
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_card_number"
+    const-string v12, "receiver_card_number"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_card_number"
+    const-string v12, "receiver_card_number"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 76
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_card_expDate"
+    const-string v12, "receiver_card_expDate"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_card_expDate"
+    const-string v12, "receiver_card_expDate"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 77
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_card_cvv"
+    const-string v12, "receiver_card_cvv"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_card_cvv"
+    const-string v12, "receiver_card_cvv"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 78
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_card_bankName"
+    const-string v12, "receiver_card_bankName"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_card_bankName"
+    const-string v12, "receiver_card_bankName"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 79
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_card_holderName"
+    const-string v12, "receiver_card_holderName"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_card_holderName"
+    const-string v12, "receiver_card_holderName"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 80
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_card_bankIconId"
+    const-string v12, "receiver_card_bankIconId"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_card_bankIconId"
+    const-string v12, "receiver_card_bankIconId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 81
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_service_id"
+    const-string v12, "receiver_service_id"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_service_id"
+    const-string v12, "receiver_service_id"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 82
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_service_value"
+    const-string v12, "receiver_service_value"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_service_value"
+    const-string v12, "receiver_service_value"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 83
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_external_card_token"
+    const-string v12, "receiver_external_card_token"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_external_card_token"
+    const-string v12, "receiver_external_card_token"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 84
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_external_card_cvv"
+    const-string v12, "receiver_external_card_cvv"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_external_card_cvv"
+    const-string v12, "receiver_external_card_cvv"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 85
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_loan_agreementId"
+    const-string v12, "receiver_loan_agreementId"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_loan_agreementId"
+    const-string v12, "receiver_loan_agreementId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 86
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_loan_agreementNumber"
+    const-string v12, "receiver_loan_agreementNumber"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_loan_agreementNumber"
+    const-string v12, "receiver_loan_agreementNumber"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 87
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_deposit_agreementId"
+    const-string v12, "receiver_deposit_agreementId"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_deposit_agreementId"
+    const-string v12, "receiver_deposit_agreementId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 88
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_deposit_agreementNumber"
+    const-string v12, "receiver_deposit_agreementNumber"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_deposit_agreementNumber"
+    const-string v12, "receiver_deposit_agreementNumber"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 89
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_new_deposit_programId"
+    const-string v12, "receiver_new_deposit_programId"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_new_deposit_programId"
+    const-string v12, "receiver_new_deposit_programId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 90
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_new_deposit_subProgramId"
+    const-string v12, "receiver_new_deposit_subProgramId"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_new_deposit_subProgramId"
+    const-string v12, "receiver_new_deposit_subProgramId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 91
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_new_deposit_durationValue"
+    const-string v12, "receiver_new_deposit_durationValue"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_new_deposit_durationValue"
+    const-string v12, "receiver_new_deposit_durationValue"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 92
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_new_deposit_interestRate"
+    const-string v12, "receiver_new_deposit_interestRate"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_new_deposit_interestRate"
+    const-string v12, "receiver_new_deposit_interestRate"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 93
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_new_deposit_interestPaymentPeriod"
+    const-string v12, "receiver_new_deposit_interestPaymentPeriod"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_new_deposit_interestPaymentPeriod"
+    const-string v12, "receiver_new_deposit_interestPaymentPeriod"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 94
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_utility_payment_serviceId"
+    const-string v12, "receiver_utility_payment_serviceId"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_utility_payment_serviceId"
+    const-string v12, "receiver_utility_payment_serviceId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 95
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_utility_payment_serviceName"
+    const-string v12, "receiver_utility_payment_serviceName"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_utility_payment_serviceName"
+    const-string v12, "receiver_utility_payment_serviceName"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 96
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_utility_payment_categoryId"
+    const-string v12, "receiver_utility_payment_categoryId"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_utility_payment_categoryId"
+    const-string v12, "receiver_utility_payment_categoryId"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 97
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_utility_payment_categoryName"
+    const-string v12, "receiver_utility_payment_categoryName"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_utility_payment_categoryName"
+    const-string v12, "receiver_utility_payment_categoryName"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 98
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_utility_payment_isTwoSteps"
+    const-string v12, "receiver_utility_payment_isTwoSteps"
 
-    invoke-direct {v2, v11, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_utility_payment_isTwoSteps"
+    const-string v12, "receiver_utility_payment_isTwoSteps"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 99
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v11, "receiver_utility_payment_fields"
+    const-string v12, "receiver_utility_payment_fields"
 
-    invoke-direct {v2, v11, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v12, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "receiver_utility_payment_fields"
+    const-string v12, "receiver_utility_payment_fields"
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 100
     new-instance v2, Ljava/util/HashSet;
@@ -1369,16 +1387,16 @@
     invoke-direct {v2, v7}, Ljava/util/HashSet;-><init>(I)V
 
     .line 101
-    new-instance v11, Ljava/util/HashSet;
+    new-instance v12, Ljava/util/HashSet;
 
-    invoke-direct {v11, v7}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v12, v7}, Ljava/util/HashSet;-><init>(I)V
 
     .line 102
-    new-instance v12, Lb/u/l/b;
+    new-instance v13, Lb/u/l/b;
 
-    const-string v13, "payment_template"
+    const-string v14, "payment_template"
 
-    invoke-direct {v12, v13, v1, v2, v11}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v13, v14, v1, v2, v12}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
     const-string v1, "payment_template"
 
@@ -1388,11 +1406,11 @@
     move-result-object v1
 
     .line 104
-    invoke-virtual {v12, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v13, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_f
+    if-eqz v2, :cond_11
 
     .line 105
     new-instance v1, Ljava/util/HashMap;
@@ -1402,58 +1420,58 @@
     invoke-direct {v1, v2}, Ljava/util/HashMap;-><init>(I)V
 
     .line 106
-    new-instance v2, Lb/u/l/b$a;
+    new-instance v12, Lb/u/l/b$a;
 
-    const-string v11, "code"
+    const-string v13, "code"
 
-    invoke-direct {v2, v11, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v12, v13, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v13, v12}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 107
-    new-instance v2, Lb/u/l/b$a;
+    new-instance v12, Lb/u/l/b$a;
 
-    const-string v12, "date"
+    const-string v14, "date"
 
-    invoke-direct {v2, v12, v4, v5, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v12, v14, v4, v5, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v12, "date"
-
-    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v14, v12}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 108
-    new-instance v2, Ljava/util/HashSet;
-
-    invoke-direct {v2, v7}, Ljava/util/HashSet;-><init>(I)V
-
-    .line 109
     new-instance v12, Ljava/util/HashSet;
 
-    invoke-direct {v12, v5}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v12, v7}, Ljava/util/HashSet;-><init>(I)V
+
+    .line 109
+    new-instance v15, Ljava/util/HashSet;
+
+    invoke-direct {v15, v5}, Ljava/util/HashSet;-><init>(I)V
 
     .line 110
-    new-instance v13, Lb/u/l/b$d;
+    new-instance v2, Lb/u/l/b$d;
 
-    filled-new-array {v11}, [Ljava/lang/String;
+    filled-new-array {v13}, [Ljava/lang/String;
 
-    move-result-object v14
+    move-result-object v16
 
-    invoke-static {v14}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static/range {v16 .. v16}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v14
+    move-result-object v5
 
-    const-string v15, "index_currency_rates_base_code"
+    move-object/from16 v16, v8
 
-    invoke-direct {v13, v15, v7, v14}, Lb/u/l/b$d;-><init>(Ljava/lang/String;ZLjava/util/List;)V
+    const-string v8, "index_currency_rates_base_code"
 
-    invoke-virtual {v12, v13}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    invoke-direct {v2, v8, v7, v5}, Lb/u/l/b$d;-><init>(Ljava/lang/String;ZLjava/util/List;)V
+
+    invoke-virtual {v15, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 111
-    new-instance v13, Lb/u/l/b;
+    new-instance v2, Lb/u/l/b;
 
-    const-string v14, "currency_rates_base"
+    const-string v5, "currency_rates_base"
 
-    invoke-direct {v13, v14, v1, v2, v12}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v2, v5, v1, v12, v15}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
     const-string v1, "currency_rates_base"
 
@@ -1463,11 +1481,11 @@
     move-result-object v1
 
     .line 113
-    invoke-virtual {v13, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v5
 
-    if-eqz v2, :cond_e
+    if-eqz v5, :cond_10
 
     .line 114
     new-instance v1, Ljava/util/HashMap;
@@ -1479,6 +1497,8 @@
     .line 115
     new-instance v2, Lb/u/l/b$a;
 
+    const/4 v5, 0x1
+
     invoke-direct {v2, v3, v4, v7, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -1486,33 +1506,35 @@
     .line 116
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v12, "rated_code"
+    const-string v8, "rated_code"
 
-    invoke-direct {v2, v12, v6, v5, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v8, v6, v5, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v12, "rated_code"
+    const-string v8, "rated_code"
 
-    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v8, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 117
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v12, "base"
+    const-string v8, "base"
 
-    invoke-direct {v2, v12, v6, v5, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v8, v6, v5, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v8, "base"
+
+    invoke-virtual {v1, v8, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 118
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v13, "rate"
+    const-string v8, "rate"
 
-    const-string v14, "REAL"
+    const-string v12, "REAL"
 
-    invoke-direct {v2, v13, v14, v5, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v8, v12, v5, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    invoke-virtual {v1, v13, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v8, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 119
     new-instance v2, Ljava/util/HashSet;
@@ -1520,76 +1542,76 @@
     invoke-direct {v2, v5}, Ljava/util/HashSet;-><init>(I)V
 
     .line 120
-    new-instance v15, Lb/u/l/b$b;
+    new-instance v5, Lb/u/l/b$b;
+
+    const-string v12, "base"
 
     filled-new-array {v12}, [Ljava/lang/String;
-
-    move-result-object v14
-
-    invoke-static {v14}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v18
-
-    filled-new-array {v11}, [Ljava/lang/String;
-
-    move-result-object v14
-
-    invoke-static {v14}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v19
-
-    const-string v16, "currency_rates_base"
-
-    const-string v17, "CASCADE"
-
-    const-string v20, "NO ACTION"
-
-    move-object v14, v15
-
-    move-object v7, v15
-
-    move-object/from16 v15, v16
-
-    move-object/from16 v16, v17
-
-    move-object/from16 v17, v20
-
-    invoke-direct/range {v14 .. v19}, Lb/u/l/b$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
-
-    invoke-virtual {v2, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    .line 121
-    new-instance v7, Ljava/util/HashSet;
-
-    invoke-direct {v7, v5}, Ljava/util/HashSet;-><init>(I)V
-
-    .line 122
-    new-instance v14, Lb/u/l/b$d;
-
-    const-string v15, "rated_code"
-
-    filled-new-array {v12, v15}, [Ljava/lang/String;
 
     move-result-object v12
 
     invoke-static {v12}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
+    move-result-object v21
+
+    filled-new-array {v13}, [Ljava/lang/String;
+
     move-result-object v12
+
+    invoke-static {v12}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v22
+
+    const-string v18, "currency_rates_base"
+
+    const-string v19, "CASCADE"
+
+    const-string v20, "NO ACTION"
+
+    move-object/from16 v17, v5
+
+    invoke-direct/range {v17 .. v22}, Lb/u/l/b$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
+
+    invoke-virtual {v2, v5}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 121
+    new-instance v5, Ljava/util/HashSet;
+
+    const/4 v12, 0x1
+
+    invoke-direct {v5, v12}, Ljava/util/HashSet;-><init>(I)V
+
+    .line 122
+    new-instance v12, Lb/u/l/b$d;
+
+    const-string v15, "base"
+
+    const-string v7, "rated_code"
+
+    filled-new-array {v15, v7}, [Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v7}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v7
 
     const-string v15, "index_currency_rates_rate_to_base_base_rated_code"
 
-    const/4 v5, 0x0
+    move-object/from16 v18, v11
 
-    invoke-direct {v14, v15, v5, v12}, Lb/u/l/b$d;-><init>(Ljava/lang/String;ZLjava/util/List;)V
+    const/4 v11, 0x0
 
-    invoke-virtual {v7, v14}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    invoke-direct {v12, v15, v11, v7}, Lb/u/l/b$d;-><init>(Ljava/lang/String;ZLjava/util/List;)V
+
+    invoke-virtual {v5, v12}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 123
-    new-instance v5, Lb/u/l/b;
+    new-instance v7, Lb/u/l/b;
 
-    const-string v12, "currency_rates_rate_to_base"
+    const-string v11, "currency_rates_rate_to_base"
 
-    invoke-direct {v5, v12, v1, v2, v7}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v7, v11, v1, v2, v5}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
     const-string v1, "currency_rates_rate_to_base"
 
@@ -1599,11 +1621,11 @@
     move-result-object v1
 
     .line 125
-    invoke-virtual {v5, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_d
+    if-eqz v2, :cond_f
 
     .line 126
     new-instance v1, Ljava/util/HashMap;
@@ -1617,9 +1639,9 @@
 
     const-string v7, "card_id"
 
-    const/4 v12, 0x1
+    const/4 v11, 0x1
 
-    invoke-direct {v5, v7, v6, v12, v12}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v7, v6, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     const-string v7, "card_id"
 
@@ -1630,9 +1652,9 @@
 
     const-string v7, "atm_amount"
 
-    const/4 v14, 0x0
+    const/4 v12, 0x0
 
-    invoke-direct {v5, v7, v4, v12, v14}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v7, v4, v11, v12}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     const-string v7, "atm_amount"
 
@@ -1643,7 +1665,7 @@
 
     const-string v7, "atm_count"
 
-    invoke-direct {v5, v7, v4, v12, v14}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v7, v4, v11, v12}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     const-string v7, "atm_count"
 
@@ -1654,7 +1676,7 @@
 
     const-string v7, "pos_amount"
 
-    invoke-direct {v5, v7, v4, v12, v14}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v7, v4, v11, v12}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     const-string v7, "pos_amount"
 
@@ -1665,7 +1687,7 @@
 
     const-string v7, "pos_count"
 
-    invoke-direct {v5, v7, v4, v12, v14}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v7, v4, v11, v12}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     const-string v7, "pos_count"
 
@@ -1674,19 +1696,19 @@
     .line 132
     new-instance v5, Ljava/util/HashSet;
 
-    invoke-direct {v5, v14}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v5, v12}, Ljava/util/HashSet;-><init>(I)V
 
     .line 133
     new-instance v7, Ljava/util/HashSet;
 
-    invoke-direct {v7, v14}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v7, v12}, Ljava/util/HashSet;-><init>(I)V
 
     .line 134
-    new-instance v12, Lb/u/l/b;
+    new-instance v11, Lb/u/l/b;
 
-    const-string v14, "card_limit"
+    const-string v12, "card_limit"
 
-    invoke-direct {v12, v14, v1, v5, v7}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v11, v12, v1, v5, v7}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
     const-string v1, "card_limit"
 
@@ -1696,11 +1718,11 @@
     move-result-object v1
 
     .line 136
-    invoke-virtual {v12, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
-    if-eqz v5, :cond_c
+    if-eqz v5, :cond_e
 
     .line 137
     new-instance v1, Ljava/util/HashMap;
@@ -1712,9 +1734,9 @@
 
     const-string v7, "symbolCode"
 
-    const/4 v12, 0x1
+    const/4 v11, 0x1
 
-    invoke-direct {v5, v7, v6, v12, v12}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v7, v6, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     const-string v7, "symbolCode"
 
@@ -1725,38 +1747,38 @@
 
     const/4 v7, 0x0
 
-    invoke-direct {v5, v11, v6, v12, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v13, v6, v11, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    invoke-virtual {v1, v11, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v13, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 140
     new-instance v5, Lb/u/l/b$a;
 
-    const-string v11, "names"
+    const-string v12, "names"
 
-    invoke-direct {v5, v11, v6, v12, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v12, v6, v11, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "names"
+    const-string v12, "names"
 
-    invoke-virtual {v1, v11, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 141
     new-instance v5, Lb/u/l/b$a;
 
-    const-string v11, "tags"
+    const-string v12, "tags"
 
-    invoke-direct {v5, v11, v6, v12, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v12, v6, v11, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "tags"
+    const-string v12, "tags"
 
-    invoke-virtual {v1, v11, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 142
     new-instance v5, Lb/u/l/b$a;
 
-    const-string v11, "baseCurrencyCode"
+    const-string v12, "baseCurrencyCode"
 
-    invoke-direct {v5, v11, v6, v12, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v12, v6, v11, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     const-string v11, "baseCurrencyCode"
 
@@ -1791,7 +1813,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_b
+    if-eqz v5, :cond_d
 
     .line 148
     new-instance v1, Ljava/util/HashMap;
@@ -1891,7 +1913,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_a
+    if-eqz v5, :cond_c
 
     .line 160
     new-instance v1, Ljava/util/HashMap;
@@ -1978,7 +2000,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_9
+    if-eqz v5, :cond_b
 
     .line 171
     new-instance v1, Ljava/util/HashMap;
@@ -2022,9 +2044,9 @@
     .line 176
     new-instance v12, Lb/u/l/b;
 
-    const-string v14, "local_dictionaries_versions"
+    const-string v13, "local_dictionaries_versions"
 
-    invoke-direct {v12, v14, v1, v5, v7}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v12, v13, v1, v5, v7}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
     const-string v1, "local_dictionaries_versions"
 
@@ -2038,7 +2060,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_8
+    if-eqz v5, :cond_a
 
     .line 179
     new-instance v1, Ljava/util/HashMap;
@@ -2068,9 +2090,9 @@
     .line 182
     new-instance v5, Lb/u/l/b$a;
 
-    invoke-direct {v5, v13, v4, v7, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v8, v4, v7, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    invoke-virtual {v1, v13, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v8, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 183
     new-instance v5, Lb/u/l/b$a;
@@ -2110,7 +2132,7 @@
 
     invoke-static {v11}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v25
+    move-result-object v23
 
     filled-new-array {v3}, [Ljava/lang/String;
 
@@ -2118,17 +2140,17 @@
 
     invoke-static {v11}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v26
+    move-result-object v24
 
-    const-string v22, "condition"
+    const-string v20, "condition"
 
-    const-string v23, "CASCADE"
+    const-string v21, "CASCADE"
 
-    const-string v24, "NO ACTION"
+    const-string v22, "NO ACTION"
 
-    move-object/from16 v21, v7
+    move-object/from16 v19, v7
 
-    invoke-direct/range {v21 .. v26}, Lb/u/l/b$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
+    invoke-direct/range {v19 .. v24}, Lb/u/l/b$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
 
     invoke-virtual {v5, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -2158,7 +2180,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_7
+    if-eqz v5, :cond_9
 
     .line 191
     new-instance v1, Ljava/util/HashMap;
@@ -2262,127 +2284,129 @@
 
     invoke-direct {v5, v7, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
+    const-string v7, "sorting"
+
     invoke-virtual {v1, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 201
     new-instance v5, Lb/u/l/b$a;
 
-    const-string v12, "withdrawal"
+    const-string v7, "withdrawal"
 
-    invoke-direct {v5, v12, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v7, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v12, "withdrawal"
+    const-string v7, "withdrawal"
 
-    invoke-virtual {v1, v12, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 202
     new-instance v5, Lb/u/l/b$a;
 
-    const-string v12, "replenishment"
+    const-string v7, "replenishment"
 
-    invoke-direct {v5, v12, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v7, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v12, "replenishment"
+    const-string v7, "replenishment"
 
-    invoke-virtual {v1, v12, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 203
     new-instance v5, Lb/u/l/b$a;
 
-    const-string v12, "terminate"
+    const-string v7, "terminate"
 
-    invoke-direct {v5, v12, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v7, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v12, "terminate"
+    const-string v7, "terminate"
 
-    invoke-virtual {v1, v12, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 204
     new-instance v5, Lb/u/l/b$a;
 
-    const-string v12, "capitalization"
+    const-string v7, "capitalization"
 
-    invoke-direct {v5, v12, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v7, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v12, "capitalization"
+    const-string v7, "capitalization"
 
-    invoke-virtual {v1, v12, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 205
     new-instance v5, Lb/u/l/b$a;
 
-    const-string v12, "monthly_payout"
+    const-string v7, "monthly_payout"
 
-    invoke-direct {v5, v12, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v7, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v12, "monthly_payout"
+    const-string v7, "monthly_payout"
 
-    invoke-virtual {v1, v12, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 206
     new-instance v5, Lb/u/l/b$a;
 
-    const-string v12, "max_interest_rate"
+    const-string v7, "max_interest_rate"
 
-    invoke-direct {v5, v12, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v5, v7, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v11, "max_interest_rate"
+    const-string v7, "max_interest_rate"
 
-    invoke-virtual {v1, v11, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 207
     new-instance v5, Ljava/util/HashSet;
 
-    const/4 v11, 0x1
+    const/4 v7, 0x1
 
-    invoke-direct {v5, v11}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v5, v7}, Ljava/util/HashSet;-><init>(I)V
 
     .line 208
-    new-instance v11, Lb/u/l/b$b;
+    new-instance v7, Lb/u/l/b$b;
 
-    const-string v12, "deposit_program_id"
+    const-string v11, "deposit_program_id"
 
-    filled-new-array {v12}, [Ljava/lang/String;
+    filled-new-array {v11}, [Ljava/lang/String;
 
-    move-result-object v12
+    move-result-object v11
 
-    invoke-static {v12}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v11}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v25
+    move-result-object v23
 
     filled-new-array {v3}, [Ljava/lang/String;
 
-    move-result-object v12
+    move-result-object v11
 
-    invoke-static {v12}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v11}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v26
+    move-result-object v24
 
-    const-string v22, "deposit_program"
+    const-string v20, "deposit_program"
 
-    const-string v23, "CASCADE"
+    const-string v21, "CASCADE"
 
-    const-string v24, "NO ACTION"
+    const-string v22, "NO ACTION"
 
-    move-object/from16 v21, v11
+    move-object/from16 v19, v7
 
-    invoke-direct/range {v21 .. v26}, Lb/u/l/b$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
+    invoke-direct/range {v19 .. v24}, Lb/u/l/b$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
 
-    invoke-virtual {v5, v11}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 209
-    new-instance v11, Ljava/util/HashSet;
+    new-instance v7, Ljava/util/HashSet;
 
-    const/4 v12, 0x0
+    const/4 v11, 0x0
 
-    invoke-direct {v11, v12}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v7, v11}, Ljava/util/HashSet;-><init>(I)V
 
     .line 210
-    new-instance v14, Lb/u/l/b;
+    new-instance v12, Lb/u/l/b;
 
-    const-string v15, "condition"
+    const-string v13, "condition"
 
-    invoke-direct {v14, v15, v1, v5, v11}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v12, v13, v1, v5, v7}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
     const-string v1, "condition"
 
@@ -2392,11 +2416,11 @@
     move-result-object v1
 
     .line 212
-    invoke-virtual {v14, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v12, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
-    if-eqz v5, :cond_6
+    if-eqz v5, :cond_8
 
     .line 213
     new-instance v1, Ljava/util/HashMap;
@@ -2408,7 +2432,7 @@
 
     const/4 v5, 0x1
 
-    invoke-direct {v2, v3, v4, v12, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v3, v4, v11, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2417,7 +2441,7 @@
 
     const-string v5, "program_name"
 
-    invoke-direct {v2, v5, v6, v12, v12}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     const-string v5, "program_name"
 
@@ -2426,16 +2450,20 @@
     .line 216
     new-instance v2, Lb/u/l/b$a;
 
-    invoke-direct {v2, v7, v4, v12, v12}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    const-string v5, "sorting"
 
-    invoke-virtual {v1, v7, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-direct {v2, v5, v4, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+
+    const-string v5, "sorting"
+
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 217
     new-instance v2, Lb/u/l/b$a;
 
     const-string v5, "start_color"
 
-    invoke-direct {v2, v5, v6, v12, v12}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     const-string v5, "start_color"
 
@@ -2446,7 +2474,7 @@
 
     const-string v5, "end_color"
 
-    invoke-direct {v2, v5, v6, v12, v12}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v11, v11}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     const-string v5, "end_color"
 
@@ -2455,12 +2483,12 @@
     .line 219
     new-instance v2, Ljava/util/HashSet;
 
-    invoke-direct {v2, v12}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v2, v11}, Ljava/util/HashSet;-><init>(I)V
 
     .line 220
     new-instance v5, Ljava/util/HashSet;
 
-    invoke-direct {v5, v12}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v5, v11}, Ljava/util/HashSet;-><init>(I)V
 
     .line 221
     new-instance v7, Lb/u/l/b;
@@ -2481,7 +2509,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_7
 
     .line 224
     new-instance v1, Ljava/util/HashMap;
@@ -2607,7 +2635,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_6
 
     .line 238
     new-instance v1, Ljava/util/HashMap;
@@ -2784,7 +2812,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_5
 
     .line 257
     new-instance v1, Ljava/util/HashMap;
@@ -2805,20 +2833,22 @@
     .line 259
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "push_state"
+    const-string v7, "push_state"
 
-    const/4 v7, 0x0
+    const/4 v9, 0x0
 
-    invoke-direct {v2, v3, v4, v5, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v7, v4, v5, v9}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v5, "push_state"
+
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 260
     new-instance v2, Lb/u/l/b$a;
 
     const-string v5, "push_state_another"
 
-    invoke-direct {v2, v5, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v4, v9, v9}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     const-string v5, "push_state_another"
 
@@ -2827,20 +2857,24 @@
     .line 261
     new-instance v2, Ljava/util/HashSet;
 
-    invoke-direct {v2, v7}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v2, v9}, Ljava/util/HashSet;-><init>(I)V
 
     .line 262
     new-instance v5, Ljava/util/HashSet;
 
-    invoke-direct {v5, v7}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v5, v9}, Ljava/util/HashSet;-><init>(I)V
 
     .line 263
     new-instance v7, Lb/u/l/b;
 
-    invoke-direct {v7, v3, v1, v2, v5}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    const-string v9, "push_state"
+
+    invoke-direct {v7, v9, v1, v2, v5}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+
+    const-string v1, "push_state"
 
     .line 264
-    invoke-static {v0, v3}, Lb/u/l/b;->a(Lb/w/a/b;Ljava/lang/String;)Lb/u/l/b;
+    invoke-static {v0, v1}, Lb/u/l/b;->a(Lb/w/a/b;Ljava/lang/String;)Lb/u/l/b;
 
     move-result-object v1
 
@@ -2849,7 +2883,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_4
 
     .line 266
     new-instance v1, Ljava/util/HashMap;
@@ -2861,89 +2895,89 @@
     .line 267
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "cc"
+    const-string v5, "cc"
 
-    const/4 v5, 0x1
+    const/4 v7, 0x1
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "cc"
+    const-string v5, "cc"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 268
     new-instance v2, Lb/u/l/b$a;
 
-    const/4 v3, 0x2
+    const-string v5, "oppositeCc"
 
-    const-string v7, "oppositeCc"
+    const/4 v9, 0x2
 
-    invoke-direct {v2, v7, v6, v5, v3}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v9}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "oppositeCc"
+    const-string v5, "oppositeCc"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 269
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "created"
+    const-string v5, "created"
 
-    const/4 v7, 0x0
+    const/4 v9, 0x0
 
-    invoke-direct {v2, v3, v6, v5, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v9}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "created"
+    const-string v5, "created"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 270
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "REAL"
+    const-string v5, "REAL"
 
-    invoke-direct {v2, v13, v3, v5, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v8, v5, v7, v9}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    invoke-virtual {v1, v13, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v8, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 271
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "limit"
+    const-string v5, "limit"
 
-    invoke-direct {v2, v3, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v4, v9, v9}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "limit"
+    const-string v5, "limit"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 272
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "baseCc"
+    const-string v5, "baseCc"
 
-    invoke-direct {v2, v3, v6, v5, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v9}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "baseCc"
+    const-string v5, "baseCc"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 273
     new-instance v2, Ljava/util/HashSet;
 
-    invoke-direct {v2, v7}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v2, v9}, Ljava/util/HashSet;-><init>(I)V
 
     .line 274
-    new-instance v3, Ljava/util/HashSet;
+    new-instance v5, Ljava/util/HashSet;
 
-    invoke-direct {v3, v7}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v5, v9}, Ljava/util/HashSet;-><init>(I)V
 
     .line 275
-    new-instance v5, Lb/u/l/b;
+    new-instance v7, Lb/u/l/b;
 
-    const-string v7, "currency_attributes"
+    const-string v8, "currency_attributes"
 
-    invoke-direct {v5, v7, v1, v2, v3}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v7, v8, v1, v2, v5}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
     const-string v1, "currency_attributes"
 
@@ -2953,11 +2987,11 @@
     move-result-object v1
 
     .line 277
-    invoke-virtual {v5, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_1
+    if-eqz v2, :cond_3
 
     .line 278
     new-instance v1, Ljava/util/HashMap;
@@ -2969,316 +3003,489 @@
     .line 279
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "older_id"
+    const-string v5, "older_id"
 
-    const/4 v5, 0x0
+    const/4 v7, 0x0
 
-    invoke-direct {v2, v3, v4, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "older_id"
+    const-string v5, "older_id"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 280
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "newer_id"
+    const-string v5, "newer_id"
 
-    invoke-direct {v2, v3, v4, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "newer_id"
+    const-string v5, "newer_id"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 281
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "event_id"
+    const-string v5, "event_id"
 
-    const/4 v7, 0x1
+    const/4 v8, 0x1
 
-    invoke-direct {v2, v3, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v4, v8, v8}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "event_id"
+    const-string v5, "event_id"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 282
     new-instance v2, Lb/u/l/b$a;
 
-    invoke-direct {v2, v10, v6, v7, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v10, v6, v8, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     invoke-virtual {v1, v10, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 283
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "final_date"
+    const-string v5, "final_date"
 
-    invoke-direct {v2, v3, v6, v7, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v8, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "final_date"
+    const-string v5, "final_date"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 284
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_date"
+    const-string v5, "attributes_attributes_transaction_date"
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_date"
+    const-string v5, "attributes_attributes_transaction_date"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 285
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_direction"
+    const-string v5, "attributes_attributes_transaction_direction"
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_direction"
+    const-string v5, "attributes_attributes_transaction_direction"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 286
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_title"
+    const-string v5, "attributes_attributes_transaction_title"
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_title"
+    const-string v5, "attributes_attributes_transaction_title"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 287
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_is_successfull"
+    const-string v5, "attributes_attributes_transaction_is_successfull"
 
-    invoke-direct {v2, v3, v4, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_is_successfull"
+    const-string v5, "attributes_attributes_transaction_is_successfull"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 288
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_reject_reason"
+    const-string v5, "attributes_attributes_transaction_reject_reason"
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_reject_reason"
+    const-string v5, "attributes_attributes_transaction_reject_reason"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 289
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_location"
+    const-string v5, "attributes_attributes_transaction_location"
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_location"
+    const-string v5, "attributes_attributes_transaction_location"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 290
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_exchange_rate"
+    const-string v5, "attributes_attributes_transaction_exchange_rate"
 
-    const-string v7, "REAL"
+    const-string v8, "REAL"
 
-    invoke-direct {v2, v3, v7, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v8, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_exchange_rate"
+    const-string v5, "attributes_attributes_transaction_exchange_rate"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 291
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_balance_after"
+    const-string v5, "attributes_attributes_transaction_balance_after"
 
-    invoke-direct {v2, v3, v4, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_balance_after"
+    const-string v5, "attributes_attributes_transaction_balance_after"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 292
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_own_amount"
+    const-string v5, "attributes_attributes_transaction_own_amount"
 
-    invoke-direct {v2, v3, v4, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_own_amount"
+    const-string v5, "attributes_attributes_transaction_own_amount"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 293
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_requisite_account_id"
+    const-string v5, "attributes_attributes_transaction_requisite_account_id"
 
-    invoke-direct {v2, v3, v4, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_requisite_account_id"
+    const-string v5, "attributes_attributes_transaction_requisite_account_id"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 294
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_requisite_account_number"
+    const-string v5, "attributes_attributes_transaction_requisite_account_number"
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_requisite_account_number"
+    const-string v5, "attributes_attributes_transaction_requisite_account_number"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 295
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_requisite_account_type"
+    const-string v5, "attributes_attributes_transaction_requisite_account_type"
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_requisite_account_type"
+    const-string v5, "attributes_attributes_transaction_requisite_account_type"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 296
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_requisite_card_id"
+    const-string v5, "attributes_attributes_transaction_requisite_card_id"
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_requisite_card_id"
+    const-string v5, "attributes_attributes_transaction_requisite_card_id"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 297
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_requisite_card_number"
+    const-string v5, "attributes_attributes_transaction_requisite_card_number"
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_requisite_card_number"
+    const-string v5, "attributes_attributes_transaction_requisite_card_number"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 298
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_requisite_embossing_name"
+    const-string v5, "attributes_attributes_transaction_requisite_embossing_name"
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_requisite_embossing_name"
+    const-string v5, "attributes_attributes_transaction_requisite_embossing_name"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 299
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_amount_value"
+    const-string v5, "attributes_attributes_transaction_amount_value"
 
-    invoke-direct {v2, v3, v4, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_amount_value"
+    const-string v5, "attributes_attributes_transaction_amount_value"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 300
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_amount_currency_code"
+    const-string v5, "attributes_attributes_transaction_amount_currency_code"
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_amount_currency_code"
+    const-string v5, "attributes_attributes_transaction_amount_currency_code"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 301
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_account_amount_value"
+    const-string v5, "attributes_attributes_transaction_account_amount_value"
 
-    invoke-direct {v2, v3, v4, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_account_amount_value"
+    const-string v5, "attributes_attributes_transaction_account_amount_value"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 302
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_account_amount_currency_code"
+    const-string v5, "attributes_attributes_transaction_account_amount_currency_code"
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_account_amount_currency_code"
+    const-string v5, "attributes_attributes_transaction_account_amount_currency_code"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 303
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_commission_value"
+    const-string v5, "attributes_attributes_transaction_commission_value"
 
-    invoke-direct {v2, v3, v4, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v4, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_commission_value"
+    const-string v5, "attributes_attributes_transaction_commission_value"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 304
     new-instance v2, Lb/u/l/b$a;
 
-    const-string v3, "attributes_attributes_transaction_commission_currency_code"
+    const-string v5, "attributes_attributes_transaction_commission_currency_code"
 
-    invoke-direct {v2, v3, v6, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    const-string v3, "attributes_attributes_transaction_commission_currency_code"
+    const-string v5, "attributes_attributes_transaction_commission_currency_code"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 305
     new-instance v2, Ljava/util/HashSet;
 
-    invoke-direct {v2, v5}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v2, v7}, Ljava/util/HashSet;-><init>(I)V
 
     .line 306
-    new-instance v3, Ljava/util/HashSet;
+    new-instance v5, Ljava/util/HashSet;
 
-    invoke-direct {v3, v5}, Ljava/util/HashSet;-><init>(I)V
+    invoke-direct {v5, v7}, Ljava/util/HashSet;-><init>(I)V
 
     .line 307
-    new-instance v4, Lb/u/l/b;
+    new-instance v7, Lb/u/l/b;
 
-    const-string v5, "user_notification"
+    const-string v8, "user_notification"
 
-    invoke-direct {v4, v5, v1, v2, v3}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v7, v8, v1, v2, v5}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
     const-string v1, "user_notification"
 
     .line 308
     invoke-static {v0, v1}, Lb/u/l/b;->a(Lb/w/a/b;Ljava/lang/String;)Lb/u/l/b;
 
-    move-result-object v0
+    move-result-object v1
 
     .line 309
+    invoke-virtual {v7, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 310
+    new-instance v1, Ljava/util/HashMap;
+
+    const/4 v2, 0x7
+
+    invoke-direct {v1, v2}, Ljava/util/HashMap;-><init>(I)V
+
+    .line 311
+    new-instance v2, Lb/u/l/b$a;
+
+    const-string v5, "operation_id"
+
+    const/4 v7, 0x1
+
+    invoke-direct {v2, v5, v6, v7, v7}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+
+    const-string v5, "operation_id"
+
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 312
+    new-instance v2, Lb/u/l/b$a;
+
+    const-string v5, "status"
+
+    const/4 v8, 0x0
+
+    invoke-direct {v2, v5, v6, v7, v8}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+
+    const-string v5, "status"
+
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 313
+    new-instance v2, Lb/u/l/b$a;
+
+    invoke-direct {v2, v14, v6, v7, v8}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+
+    invoke-virtual {v1, v14, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 314
+    new-instance v2, Lb/u/l/b$a;
+
+    move-object/from16 v5, v18
+
+    invoke-direct {v2, v5, v4, v7, v8}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 315
+    new-instance v2, Lb/u/l/b$a;
+
+    const-string v5, "commission"
+
+    invoke-direct {v2, v5, v4, v7, v8}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+
+    const-string v5, "commission"
+
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 316
+    new-instance v2, Lb/u/l/b$a;
+
+    const-string v5, "service_id"
+
+    invoke-direct {v2, v5, v4, v7, v8}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+
+    const-string v5, "service_id"
+
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 317
+    new-instance v2, Lb/u/l/b$a;
+
+    const-string v5, "service_name"
+
+    invoke-direct {v2, v5, v6, v7, v8}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+
+    const-string v5, "service_name"
+
+    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 318
+    new-instance v2, Ljava/util/HashSet;
+
+    invoke-direct {v2, v8}, Ljava/util/HashSet;-><init>(I)V
+
+    .line 319
+    new-instance v5, Ljava/util/HashSet;
+
+    invoke-direct {v5, v8}, Ljava/util/HashSet;-><init>(I)V
+
+    .line 320
+    new-instance v7, Lb/u/l/b;
+
+    const-string v8, "hh_history_item"
+
+    invoke-direct {v7, v8, v1, v2, v5}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+
+    const-string v1, "hh_history_item"
+
+    .line 321
+    invoke-static {v0, v1}, Lb/u/l/b;->a(Lb/w/a/b;Ljava/lang/String;)Lb/u/l/b;
+
+    move-result-object v1
+
+    .line 322
+    invoke-virtual {v7, v1}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 323
+    new-instance v1, Ljava/util/HashMap;
+
+    const/4 v2, 0x2
+
+    invoke-direct {v1, v2}, Ljava/util/HashMap;-><init>(I)V
+
+    .line 324
+    new-instance v2, Lb/u/l/b$a;
+
+    const/4 v5, 0x1
+
+    invoke-direct {v2, v3, v4, v5, v5}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+
+    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 325
+    new-instance v2, Lb/u/l/b$a;
+
+    const-string v3, "email"
+
+    const/4 v4, 0x0
+
+    invoke-direct {v2, v3, v6, v5, v4}, Lb/u/l/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+
+    const-string v3, "email"
+
+    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 326
+    new-instance v2, Ljava/util/HashSet;
+
+    invoke-direct {v2, v4}, Ljava/util/HashSet;-><init>(I)V
+
+    .line 327
+    new-instance v3, Ljava/util/HashSet;
+
+    invoke-direct {v3, v4}, Ljava/util/HashSet;-><init>(I)V
+
+    .line 328
+    new-instance v4, Lb/u/l/b;
+
+    const-string v5, "hh_receipt_email"
+
+    invoke-direct {v4, v5, v1, v2, v3}, Lb/u/l/b;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+
+    const-string v1, "hh_receipt_email"
+
+    .line 329
+    invoke-static {v0, v1}, Lb/u/l/b;->a(Lb/w/a/b;Ljava/lang/String;)Lb/u/l/b;
+
+    move-result-object v0
+
+    .line 330
     invoke-virtual {v4, v0}, Lb/u/l/b;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -3287,7 +3494,7 @@
 
     return-void
 
-    .line 310
+    .line 331
     :cond_0
     new-instance v1, Ljava/lang/IllegalStateException;
 
@@ -3295,13 +3502,15 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "Migration didn\'t properly handle user_notification(com.fuib.android.spot.data.db.entities.user.UserNotification).\n Expected:\n"
+    const-string v3, "Migration didn\'t properly handle hh_receipt_email(com.fuib.android.spot.data.db.entities.services.ReceiptEmailEntity).\n Expected:\n"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v3, v16
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -3313,21 +3522,23 @@
 
     throw v1
 
-    .line 311
     :cond_1
+    move-object/from16 v3, v16
+
+    .line 332
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "Migration didn\'t properly handle currency_attributes(com.fuib.android.spot.data.db.entities.catalog.currency.CurrencyAttributes).\n Expected:\n"
+    const-string v4, "Migration didn\'t properly handle hh_history_item(com.fuib.android.spot.data.db.entities.services.HouseholdHistoryItem).\n Expected:\n"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -3339,21 +3550,23 @@
 
     throw v0
 
-    .line 312
     :cond_2
+    move-object/from16 v3, v16
+
+    .line 333
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "Migration didn\'t properly handle push_state(com.fuib.android.spot.data.db.entities.user.PushState).\n Expected:\n"
+    const-string v4, "Migration didn\'t properly handle user_notification(com.fuib.android.spot.data.db.entities.user.UserNotification).\n Expected:\n"
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -3365,21 +3578,23 @@
 
     throw v0
 
-    .line 313
     :cond_3
+    move-object/from16 v3, v16
+
+    .line 334
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "Migration didn\'t properly handle household(com.fuib.android.spot.data.db.entities.services.Household).\n Expected:\n"
+    const-string v4, "Migration didn\'t properly handle currency_attributes(com.fuib.android.spot.data.db.entities.catalog.currency.CurrencyAttributes).\n Expected:\n"
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -3391,21 +3606,23 @@
 
     throw v0
 
-    .line 314
     :cond_4
+    move-object/from16 v3, v16
+
+    .line 335
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "Migration didn\'t properly handle up_category(com.fuib.android.spot.data.db.entities.services.CategoryDbEntity).\n Expected:\n"
+    const-string v4, "Migration didn\'t properly handle push_state(com.fuib.android.spot.data.db.entities.user.PushState).\n Expected:\n"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -3417,21 +3634,23 @@
 
     throw v0
 
-    .line 315
     :cond_5
+    move-object/from16 v3, v16
+
+    .line 336
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "Migration didn\'t properly handle deposit_program(com.fuib.android.spot.data.db.entities.DepositProgram).\n Expected:\n"
+    const-string v4, "Migration didn\'t properly handle household(com.fuib.android.spot.data.db.entities.services.Household).\n Expected:\n"
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -3443,203 +3662,23 @@
 
     throw v0
 
-    .line 316
     :cond_6
+    move-object/from16 v3, v16
+
+    .line 337
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "Migration didn\'t properly handle condition(com.fuib.android.spot.data.db.entities.Condition).\n Expected:\n"
+    const-string v4, "Migration didn\'t properly handle up_category(com.fuib.android.spot.data.db.entities.services.CategoryDbEntity).\n Expected:\n"
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 317
-    :cond_7
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Migration didn\'t properly handle amount_rate(com.fuib.android.spot.data.db.entities.AmountRate).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 318
-    :cond_8
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Migration didn\'t properly handle local_dictionaries_versions(com.fuib.android.spot.data.db.entities.dictionary.LocalDictionariesVersions).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 319
-    :cond_9
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Migration didn\'t properly handle user_profile(com.fuib.android.spot.data.db.entities.user.UserProfileEntity).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 320
-    :cond_a
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Migration didn\'t properly handle fraud_rule(com.fuib.android.spot.data.db.entities.FraudRule).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 321
-    :cond_b
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Migration didn\'t properly handle country(com.fuib.android.spot.data.db.entities.dictionary.Country).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 322
-    :cond_c
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Migration didn\'t properly handle card_limit(com.fuib.android.spot.data.db.entities.card.CardLimit).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 323
-    :cond_d
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Migration didn\'t properly handle currency_rates_rate_to_base(com.fuib.android.spot.data.db.entities.card.CurrencyRateValueToBase).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -3651,21 +3690,303 @@
 
     throw v0
 
-    .line 324
-    :cond_e
+    :cond_7
+    move-object/from16 v3, v16
+
+    .line 338
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "Migration didn\'t properly handle currency_rates_base(com.fuib.android.spot.data.db.entities.card.BaseCurrency).\n Expected:\n"
+    const-string v4, "Migration didn\'t properly handle deposit_program(com.fuib.android.spot.data.db.entities.DepositProgram).\n Expected:\n"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_8
+    move-object/from16 v3, v16
+
+    .line 339
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Migration didn\'t properly handle condition(com.fuib.android.spot.data.db.entities.Condition).\n Expected:\n"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_9
+    move-object/from16 v3, v16
+
+    .line 340
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Migration didn\'t properly handle amount_rate(com.fuib.android.spot.data.db.entities.AmountRate).\n Expected:\n"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_a
+    move-object/from16 v3, v16
+
+    .line 341
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Migration didn\'t properly handle local_dictionaries_versions(com.fuib.android.spot.data.db.entities.dictionary.LocalDictionariesVersions).\n Expected:\n"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_b
+    move-object/from16 v3, v16
+
+    .line 342
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Migration didn\'t properly handle user_profile(com.fuib.android.spot.data.db.entities.user.UserProfileEntity).\n Expected:\n"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_c
+    move-object/from16 v3, v16
+
+    .line 343
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Migration didn\'t properly handle fraud_rule(com.fuib.android.spot.data.db.entities.FraudRule).\n Expected:\n"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_d
+    move-object/from16 v3, v16
+
+    .line 344
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Migration didn\'t properly handle country(com.fuib.android.spot.data.db.entities.dictionary.Country).\n Expected:\n"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_e
+    move-object/from16 v3, v16
+
+    .line 345
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Migration didn\'t properly handle card_limit(com.fuib.android.spot.data.db.entities.card.CardLimit).\n Expected:\n"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_f
+    move-object/from16 v3, v16
+
+    .line 346
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Migration didn\'t properly handle currency_rates_rate_to_base(com.fuib.android.spot.data.db.entities.card.CurrencyRateValueToBase).\n Expected:\n"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_10
+    move-object/from16 v3, v16
+
+    .line 347
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "Migration didn\'t properly handle currency_rates_base(com.fuib.android.spot.data.db.entities.card.BaseCurrency).\n Expected:\n"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_11
+    move-object v3, v8
+
+    .line 348
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Migration didn\'t properly handle payment_template(com.fuib.android.spot.data.db.entities.PaymentTemplate).\n Expected:\n"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -3677,47 +3998,23 @@
 
     throw v0
 
-    .line 325
-    :cond_f
+    :cond_12
+    move-object v3, v8
+
+    .line 349
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "Migration didn\'t properly handle payment_template(com.fuib.android.spot.data.db.entities.PaymentTemplate).\n Expected:\n"
+    const-string v4, "Migration didn\'t properly handle pending_change_pin(com.fuib.android.spot.data.db.entities.PendingChangePinState).\n Expected:\n"
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 326
-    :cond_10
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Migration didn\'t properly handle pending_change_pin(com.fuib.android.spot.data.db.entities.PendingChangePinState).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -3729,21 +4026,23 @@
 
     throw v0
 
-    .line 327
-    :cond_11
+    :cond_13
+    move-object v3, v8
+
+    .line 350
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "Migration didn\'t properly handle pending_set_pin_touch(com.fuib.android.spot.data.db.entities.PendingSetPinTouchSettings).\n Expected:\n"
+    const-string v4, "Migration didn\'t properly handle pending_set_pin_touch(com.fuib.android.spot.data.db.entities.PendingSetPinTouchSettings).\n Expected:\n"
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -3755,21 +4054,23 @@
 
     throw v0
 
-    .line 328
-    :cond_12
+    :cond_14
+    move-object v3, v8
+
+    .line 351
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "Migration didn\'t properly handle recover_password(com.fuib.android.spot.data.db.entities.RecoverPasswordData).\n Expected:\n"
+    const-string v4, "Migration didn\'t properly handle recover_password(com.fuib.android.spot.data.db.entities.RecoverPasswordData).\n Expected:\n"
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

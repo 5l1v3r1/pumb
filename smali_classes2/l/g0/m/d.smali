@@ -126,7 +126,7 @@
 
 
 # virtual methods
-.method public a(IJ)Lm/r;
+.method public a(IJ)Lm/s;
     .locals 2
 
     .line 10
@@ -255,7 +255,7 @@
     .line 24
     iget-object p1, p0, Ll/g0/m/d;->d:Lm/c;
 
-    invoke-virtual {p1, p2, p3}, Lm/c;->i(J)Lm/c;
+    invoke-virtual {p1, p2, p3}, Lm/c;->j(J)Lm/c;
 
     .line 25
     :goto_1

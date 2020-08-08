@@ -152,7 +152,7 @@
 
     invoke-virtual {p0, p1}, Landroid/widget/RadioGroup;->setOnCheckedChangeListener(Landroid/widget/RadioGroup$OnCheckedChangeListener;)V
 
-    const p1, 0x7f0a01f9
+    const p1, 0x7f0a0209
 
     .line 8
     invoke-virtual {p0, p1}, Landroid/widget/RadioGroup;->check(I)V

@@ -51,7 +51,7 @@
     .line 2
     iget-object v0, p0, Lcom/fuib/android/spot/presentation/tab/MainActivity$a;->c:Lcom/fuib/android/spot/presentation/tab/MainActivity;
 
-    sget v1, Le/f/a/b/n;->bottom_navigation:I
+    sget v1, Le/f/a/b/o;->bottom_navigation:I
 
     invoke-virtual {v0, v1}, Lcom/fuib/android/spot/presentation/tab/MainActivity;->g(I)Landroid/view/View;
 

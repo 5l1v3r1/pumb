@@ -50,7 +50,7 @@
 
 
 # instance fields
-.field public f:Le/f/a/b/v/f/i/f;
+.field public f:Le/f/a/b/w/f/l/f;
 
 
 # direct methods
@@ -223,11 +223,11 @@
 
 
 # virtual methods
-.method public final getPasteListener()Le/f/a/b/v/f/i/f;
+.method public final getPasteListener()Le/f/a/b/w/f/l/f;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/fuib/android/spot/presentation/tab/transfers/DestinationInputView;->f:Le/f/a/b/v/f/i/f;
+    iget-object v0, p0, Lcom/fuib/android/spot/presentation/tab/transfers/DestinationInputView;->f:Le/f/a/b/w/f/l/f;
 
     return-object v0
 .end method
@@ -284,22 +284,22 @@
 
     .line 6
     :cond_3
-    iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/transfers/DestinationInputView;->f:Le/f/a/b/v/f/i/f;
+    iget-object p1, p0, Lcom/fuib/android/spot/presentation/tab/transfers/DestinationInputView;->f:Le/f/a/b/w/f/l/f;
 
     if-eqz p1, :cond_4
 
-    invoke-interface {p1}, Le/f/a/b/v/f/i/f;->a()V
+    invoke-interface {p1}, Le/f/a/b/w/f/l/f;->a()V
 
     :cond_4
     :goto_1
     return v3
 .end method
 
-.method public final setPasteListener(Le/f/a/b/v/f/i/f;)V
+.method public final setPasteListener(Le/f/a/b/w/f/l/f;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/fuib/android/spot/presentation/tab/transfers/DestinationInputView;->f:Le/f/a/b/v/f/i/f;
+    iput-object p1, p0, Lcom/fuib/android/spot/presentation/tab/transfers/DestinationInputView;->f:Le/f/a/b/w/f/l/f;
 
     return-void
 .end method

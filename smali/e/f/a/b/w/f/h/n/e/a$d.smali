@@ -1,0 +1,79 @@
+.class public final Le/f/a/b/w/f/h/n/e/a$d;
+.super Ljava/lang/Object;
+.source "DepositDetailsFragment.kt"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Le/f/a/b/w/f/h/n/e/a;->a(Lcom/fuib/android/spot/data/db/entities/Deposit;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic c:Le/f/a/b/w/f/h/n/e/a;
+
+
+# direct methods
+.method public constructor <init>(Le/f/a/b/w/f/h/n/e/a;)V
+    .locals 0
+
+    iput-object p1, p0, Le/f/a/b/w/f/h/n/e/a$d;->c:Le/f/a/b/w/f/h/n/e/a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 2
+
+    .line 1
+    iget-object p1, p0, Le/f/a/b/w/f/h/n/e/a$d;->c:Le/f/a/b/w/f/h/n/e/a;
+
+    invoke-virtual {p1}, Le/f/a/b/w/f/h/n/e/a;->F1()Le/f/a/b/w/f/h/n/e/g;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Le/f/a/b/w/f/h/n/e/g;->d()Le/f/a/b/w/f/h/n/f/b;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-interface {p1}, Le/f/a/b/w/f/h/n/f/b;->c()Lcom/fuib/android/spot/data/db/entities/Deposit;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 2
+    sget-object v0, Le/f/a/b/s/e/b;->e:Le/f/a/b/s/e/b$a;
+
+    sget-object v1, Le/f/a/b/t/f/k1/c$e;->DEPOSIT_REPLENISHMENT:Le/f/a/b/t/f/k1/c$e;
+
+    invoke-virtual {v0, v1}, Le/f/a/b/s/e/b$a;->a(Le/f/a/b/t/f/k1/c$e;)V
+
+    .line 3
+    iget-object v0, p0, Le/f/a/b/w/f/h/n/e/a$d;->c:Le/f/a/b/w/f/h/n/e/a;
+
+    invoke-virtual {v0}, Le/f/a/b/w/b/f/c;->d1()Le/f/a/b/w/b/n/a;
+
+    move-result-object v0
+
+    check-cast v0, Le/f/a/b/w/f/h/n/e/c;
+
+    invoke-virtual {v0, p1}, Le/f/a/b/w/f/h/n/e/c;->a(Lcom/fuib/android/spot/data/db/entities/Deposit;)V
+
+    :cond_0
+    return-void
+.end method

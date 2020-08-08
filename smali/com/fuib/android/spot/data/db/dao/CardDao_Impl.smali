@@ -111,7 +111,7 @@
 
     .line 8
     :try_start_0
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     .line 9
     iget-object v1, p0, Lcom/fuib/android/spot/data/db/dao/CardDao_Impl;->__db:Lb/u/f;
@@ -1056,7 +1056,7 @@
 
     .line 8
     :goto_1
-    invoke-interface {v0}, Lb/w/a/f;->q()I
+    invoke-interface {v0}, Lb/w/a/f;->r()I
 
     move-result p1
 
